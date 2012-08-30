@@ -1,0 +1,160 @@
+﻿百度：
+名称：/html[1]/body[1]/div[1]/div[1]/div[1]/table[4]/tr[1]/td[1]/a[1]
+地址：/html[1]/body[1]/div[1]/div[1]/div[1]/table[4]/tr[1]/td[1]/font[1]/a[1]/@href[1]
+相关：/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]
+
+
+华军：
+名称：/html[1]/body[1]/div[1]/div[1]/div[3]/div[5]/div[1]/div[1]/dl[1]/dd[1]/div[i*2]/strong[1]/a[1]                  
+地址：/html[1]/body[1]/div[1]/div[1]/div[3]/div[5]/div[1]/div[1]/dl[1]/dd[1]/div[i*2]/strong[1]/a[1]/@href[1]   
+内容：/html[1]/body[1]/div[1]/div[1]/div[3]/div[5]/div[1]/div[1]/dl[1]/dd[1]/p[i]                                                
+日期：/html[1]/body[1]/div[1]/div[1]/div[3]/div[5]/div[1]/div[1]/dl[1]/dd[1]/h4[i*3]                                          
+
+天空：
+地址：/html[1]/body[1]/div[4]/div[3]/div[1]/div[1]/dl[1]/dt/a[1]/@href[1]
+名称：/html[1]/body[1]/div[4]/div[3]/div[1]/div[1]/dl[1]/dt/a[1]/@title[1]
+内容：/html[1]/body[1]/div[4]/div[3]/div[1]/div[1]/dl[1]/dd/p[1]
+日期：/html[1]/body[1]/div[4]/div[3]/div[1]/div[1]/dl[1]/dd/#text[2]
+
+百度：
+http://www.baidu.com/s?wd=%BD%D3%BF%DA&pn=0&usm=1
+http://www.baidu.com/s?wd=%BD%D3%BF%DA&pn=10&usm=1
+http://www.baidu.com/s?wd=%BD%D3%BF%DA&pn=20&usm=1
+http://www.baidu.com/s?wd=%BD%D3%BF%DA&pn=30&usm=1
+http://www.baidu.com/s?wd=%BD%D3%BF%DA&pn=40&usm=1
+http://www.baidu.com/s?wd=%BD%D3%BF%DA&pn=50&usm=1
+
+天空接口：
+http://www.skycn.com/search.php?ss_name=%BD%D3%BF%DA&get=down_times&sf=&page=1  第一页
+http://www.skycn.com/search.php?ss_name=%BD%D3%BF%DA&get=down_times&sf=&page=2  第二页
+
+
+华军接口：
+http://search.newhua.com/search_list.php?searchname=%E6%8E%A5%E5%8F%A3&t=yearip&page=1
+http://search.newhua.com/search_list.php?searchname=%E6%8E%A5%E5%8F%A3&t=yearip&page=2
+
+霏凡接口：
+http://search.crsky.com/search.asp?keyword=接口&sType=ResName&action=s
+
+
+html解析器：
+htmlparser
+微软的mshtml COM组件
+Html jTidy
+htmlagilitypack
+NekoHTML
+mozilla html parser
+Lucene2.0  自带的 html parser
+expat,xerces-c++,Libxml++ 用于专门解析xml的 可结合使用
+
+
+股票webservice接口：http://www.webxml.com.cn/WebServices/ChinaStockWebService.asmx
+
+移动商务应用webservice接口：http://service2.winic.org/Service.asmx
+移动商务应用http接口：http://service.winic.org/sys_port/gateway/?id=userid&pwd=password&to=13928783309,13800008888&content=短信内容&time=定时发送时间
+
+飞信webservice接口：http://io.feirobot.cn/fWebSer.asmx
+飞信http接口：https://sms.api.bz/fetion.php?username=13810282409&password=ddVCY3yenZ&sendto=13810282409&message=短信内容
+
+查询手机：http://www.yodao.com/smartresult-xml/search.s?type=mobile&q=13564370000
+
+本询IP：http://www.yodao.com/smartresult-xml/search.s?type=ip&q=221.123.123.123
+
+身份证：http://www.yodao.com/smartresult-xml/search.s?type=id&q=身份证号码
+
+获取网页验证码webservice接口：http://webservice.webxml.com.cn/WebServices/ValidateCodeWebService.asmx
+
+QQ在线状态查询webservice接口：http://www.webxml.com.cn/webservices/qqOnlineWebService.asmx
+
+火车时刻表webservice接口：http://webservice.webxml.com.cn/WebServices/TrainTimeWebService.asmx
+
+获取随机中英文webservice接口：http://webservice.webxml.com.cn/WebServices/RandomFontsWebService.asmx
+
+多个接口地址：
+http://www.webxml.com.cn/zh_cn/web_services.aspx
+
+实时股票数据接口大全地址:
+http://www.21andy.com/blog/20090530/1313.html
+
+QQ接口：
+http://code.javaeye.com/blog/424663
+
+WebQQ：
+http://webqq.qq.com/
+
+天气预报免费代码：
+地址：http://weather.news.qq.com/inc/ss125.htm
+<IFRAME marginWidth=0 marginHeight=0 src="http://weather.news.qq.com/inc/ss125.htm" frameBorder=0 width=189 height=162 scrolling=no ></IFRAME>
+http://weather.news.qq.com/js/gn.js
+你在上面的JS代码中找到你的城市，用上面的调用代码，替换成你的城市ss***.htm，就可以了。
+
+中国天气网 http://www.weather.com.cn/static/html/weather_cj.shtml
+有些县市并没有在城市下拉列表列出，这时只需在网站上搜索其城市，从得到的链接结果中就可以得到城市代码，替换即可。
+比如：湖南益阳，搜索结果是http://www.weather.com.cn/html/weather/101250701.shtml，替换下面调用代码红字部分，注意数字后加“T”。
+<iframe src="http://m.weather.com.cn/m/p5/weather1.htm?id=101010100T" width="458" height="142" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
+
+地图免费代码：
+<EMBED src=http://uu.51ditu.com/uu/uu.swf width=890 height=580 type=application/x-shockwave-flash allowFullScreen='false' allowNetworking='internal' allowScriptAccess='never'>
+
+在线日历：
+http://www.zptc.cn/service/wnl.htm
+
+火车查询：
+<form name="f_train" target="_blank" action="http://piao.kuxun.cn/search.php" method=get>
+<table width="90%" border="0" cellspacing="3" cellpadding="3" align="center">
+  <tr> 
+          <td width="40"><img src="train.gif">&nbsp;<b>火车查询</b></td>
+  </tr>
+  <tr> 
+    <td valign="top">
+        <input type=hidden name=T value='Train'>
+        <input type=hidden name=OEM value='baidu'>
+        <span class="fontsize12hui"><span class="p4">出发地：</span> 
+        <input name="From" type="text" id="from"  style="width:80px">
+        <span class="p4">目的地：</span>  
+        <input name="q" type="text" id="to" style="width:80px">
+        &nbsp;
+        <input type="submit" name="Submit" value="查询">
+        <br>
+        </span>
+  </td>
+  </tr>
+</table>
+</form>
+
+手机号码归属地查询：
+<form name="f_cellphone" method="POST" action="http://www.imobile.com.cn/simcard.php" target="_blank"> 
+<table width="90%" border="0" cellspacing="3" cellpadding="3" align="center">
+  <tr> 
+          <td ><img src="cellphone.gif">&nbsp;<b >手机号码查询</b></td>
+  </tr>
+  <tr> 
+    <td valign="top">手机号码： 
+      <input name="mob" maxlength="11" type="text" size=36 id="mob" style="width:111px">
+      &nbsp; 
+      <input type="submit" value="查询" name="submit">
+    </td>
+  </tr>
+</table>
+</form >
+
+
+身份证号查询：
+http://qq.ip138.com/idsearch/index.asp
+
+在线翻译：
+<form id="dictF" method="get" target="_top" action="http://dict.iciba.com/search" onsubmit="if(this.s.value == '') return false;else {window.open('http://dict.iciba.com/'+encodeURIComponent(this.s.value)+'/','','');return false;}">
+请输入您要翻译的内容：<input id="s" type="text" name="s" value="" class="hide_input" autocomplete="off" maxlength="2048" style="width:220px" />&nbsp;&nbsp;<input type="submit" value="翻译" />
+</form>
+
+用户名：  cninterface/andyleedotnet 
+ 密码：  800108miibeian 
+ 手机、邮件验证码：  98880766 
+上海美橙科技信息发展有限公司  61.152.96.248  虚拟主机  上海  
+
+陶科  20:12:42
+0x7c754eed
+陶科  20:12:16
+用户名446669
+陶科  20:14:19
+你的目录是  /www/weiduo

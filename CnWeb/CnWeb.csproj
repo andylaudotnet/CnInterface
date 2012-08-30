@@ -1,0 +1,542 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85E98D1B-B18D-42B3-BB9A-19A25FA5ACC6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CnWeb</RootNamespace>
+    <AssemblyName>CnWeb</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="smpapi, Version=1.0.2390.17192, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\imgplayer.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="flight\FlightList.aspx" />
+    <Content Include="flight\Index.aspx" />
+    <Content Include="flight\ShowPrices.aspx" />
+    <Content Include="GoogleResult.aspx" />
+    <Content Include="html\17173Videos.html" />
+    <Content Include="html\56Videos.html" />
+    <Content Include="html\6cnVideos.html" />
+    <Content Include="html\AeebooVideos.html" />
+    <Content Include="html\BaiduVideos.html" />
+    <Content Include="html\buildhtml.txt" />
+    <Content Include="html\BuildHTMLLog.txt" />
+    <Content Include="html\CntvVideos.html" />
+    <Content Include="html\earth.html" />
+    <Content Include="html\earthmap.html" />
+    <Content Include="html\FunshionVideos.html" />
+    <Content Include="html\GoogleVideos.html" />
+    <Content Include="html\HunantvVideos.html" />
+    <Content Include="html\IfengVideos.html" />
+    <Content Include="html\images.xml" />
+    <Content Include="html\JoyVideos.html" />
+    <Content Include="html\Ku6Videos.html" />
+    <Content Include="html\LetvVideos.html" />
+    <Content Include="html\M1905Videos.html" />
+    <Content Include="html\message.html" />
+    <Content Include="html\NewsVideos.html" />
+    <Content Include="html\OpenvVideos.html" />
+    <Content Include="html\PomohoVideos.html" />
+    <Content Include="html\PPLiveVideos.html" />
+    <Content Include="html\PPSVideos.html" />
+    <Content Include="html\QQVideos.html" />
+    <Content Include="html\SinaVideos.html" />
+    <Content Include="html\SohuVideos.html" />
+    <Content Include="html\TencentVideos.html" />
+    <Content Include="html\TudouVideos.html" />
+    <Content Include="html\UUseeVideos.html" />
+    <Content Include="html\video.html" />
+    <Content Include="html\wap.html" />
+    <Content Include="imgtemp\loading.jpg" />
+    <Content Include="imgtemp\news_pic_ws_001.gif" />
+    <Content Include="imgtemp\news_pic_ws_002.gif" />
+    <Content Include="imgtemp\news_pic_ws_003.gif" />
+    <Content Include="imgtemp\news_pic_ws_004.gif" />
+    <Content Include="imgtemp\news_pic_ws_005.gif" />
+    <Content Include="imgtemp\news_pic_ws_007.gif" />
+    <Content Include="imgtemp\news_pic_ws_008.gif" />
+    <Content Include="imgtemp\news_pic_ws_009.gif" />
+    <Content Include="img\earthmap.gif" />
+    <Content Include="img\littlemobile.png" />
+    <Content Include="img\Logo.gif" />
+    <Content Include="img\main.jpg" />
+    <Content Include="img\mobile.png" />
+    <Content Include="img\toolbar.png" />
+    <Content Include="js\imgplayer.js" />
+    <Content Include="js\indexmenu.js" />
+    <Content Include="js\searchads.js" />
+    <Content Include="js\swfobject.js" />
+    <Content Include="js\tagcloud.swf" />
+    <Content Include="js\vediohtml.js" />
+    <Content Include="html\VideoIndex.html" />
+    <Content Include="html\XunleiVideos.html" />
+    <Content Include="html\YoukuVideos.html" />
+    <Content Include="img\bodybackgroud.jpg" />
+    <Content Include="html\baiducode.txt" />
+    <Content Include="css\base.css" />
+    <Content Include="Global.asax" />
+    <Content Include="img\backgroudimage.png" />
+    <Content Include="img\blank.jpg" />
+    <Content Include="img\clocks.gif" />
+    <Content Include="img\logo_cninterface.gif" />
+    <Content Include="img\menuBackGround.jpg" />
+    <Content Include="img\page1search.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\index.js" />
+    <Content Include="js\new_ajax.js" />
+    <Content Include="js\page1result.js" />
+    <Content Include="js\page1search.js" />
+    <Content Include="js\webnews.js" />
+    <Content Include="other\CreateTable.txt" />
+    <Content Include="Page1Result.aspx" />
+    <Content Include="Parse\AutomatismParse.aspx" />
+    <Content Include="Parse\CreateImagesXml.aspx" />
+    <Content Include="Parse\GetBaiduInterface.aspx" />
+    <Content Include="Parse\GetBingInterface.aspx" />
+    <Content Include="Parse\GetDataBuildHtml.aspx" />
+    <Content Include="Parse\GetGoogleInterface.aspx" />
+    <Content Include="Parse\GetGougouInterface.aspx" />
+    <Content Include="Parse\GetSogouInterface.aspx" />
+    <Content Include="Parse\GetSosoInterface.aspx" />
+    <Content Include="Parse\GetYahooInterface.aspx" />
+    <Content Include="Parse\GetYoudaoInterface.aspx" />
+    <Content Include="Parse\img\clocks.gif" />
+    <Content Include="Parse\img\indexHeader.jpg" />
+    <Content Include="Parse\img\menuBackGround.jpg" />
+    <Content Include="Parse\Index.aspx" />
+    <Content Include="Parse\Manualparse.aspx" />
+    <Content Include="Parse\ParseVideos.aspx" />
+    <Content Include="Parse\ParseXPathManage.aspx" />
+    <Content Include="Page1Search.aspx" />
+    <Content Include="Parse\WebNews.aspx" />
+    <Content Include="SelectResult.aspx" />
+    <Content Include="SmsOnline\img\backgroudimage.png" />
+    <Content Include="SmsOnline\img\indexHeader.jpg" />
+    <Content Include="SmsOnline\img\menuBackGround.jpg" />
+    <Content Include="SmsOnline\img\yun123.gif" />
+    <Content Include="SmsOnline\Index.aspx" />
+    <Content Include="SmsOnline\js\index.js" />
+    <Content Include="SmsOnline\js\smssend.js" />
+    <Content Include="SmsOnline\MobileMessages.aspx" />
+    <Content Include="SmsOnline\SmpApiSend.aspx" />
+    <Content Include="SmsOnline\SmsSend.aspx" />
+    <Content Include="user\Register.aspx" />
+    <Content Include="SmsOnline\SmsFetion.aspx" />
+    <Content Include="SmsOnline\SmsNormal.aspx" />
+    <Content Include="SmsOnline\stock.htm" />
+    <None Include="Web References\SmsService\Service.disco" />
+    <None Include="Web References\FetionService\fWebSer.disco" />
+    <Content Include="other\ProjectSql.txt" />
+    <Content Include="user\img\indexHeader.jpg" />
+    <Content Include="user\UserInfoEdit.aspx" />
+    <Content Include="user\UserLogin.aspx" />
+    <None Include="Web References\FlightWebService\Default.disco" />
+    <Content Include="Web.config" />
+    <Content Include="other\InterfacesInfo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="flight\FlightList.aspx.cs">
+      <DependentUpon>FlightList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="flight\FlightList.aspx.designer.cs">
+      <DependentUpon>FlightList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="flight\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="flight\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="flight\ShowPrices.aspx.cs">
+      <DependentUpon>ShowPrices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="flight\ShowPrices.aspx.designer.cs">
+      <DependentUpon>ShowPrices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleResult.aspx.cs">
+      <DependentUpon>GoogleResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoogleResult.aspx.designer.cs">
+      <DependentUpon>GoogleResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page1Result.aspx.cs">
+      <DependentUpon>Page1Result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page1Result.aspx.designer.cs">
+      <DependentUpon>Page1Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\AutomatismParse.aspx.cs">
+      <DependentUpon>AutomatismParse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\AutomatismParse.aspx.designer.cs">
+      <DependentUpon>AutomatismParse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\CreateImagesXml.aspx.cs">
+      <DependentUpon>CreateImagesXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\CreateImagesXml.aspx.designer.cs">
+      <DependentUpon>CreateImagesXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\GetBaiduInterface.aspx.cs">
+      <DependentUpon>GetBaiduInterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\GetBaiduInterface.aspx.designer.cs">
+      <DependentUpon>GetBaiduInterface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\GetBingInterface.aspx.cs">
+      <DependentUpon>GetBingInterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\GetBingInterface.aspx.designer.cs">
+      <DependentUpon>GetBingInterface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\GetDataBuildHtml.aspx.cs">
+      <DependentUpon>GetDataBuildHtml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\GetDataBuildHtml.aspx.designer.cs">
+      <DependentUpon>GetDataBuildHtml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\GetGoogleInterface.aspx.cs">
+      <DependentUpon>GetGoogleInterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\GetGoogleInterface.aspx.designer.cs">
+      <DependentUpon>GetGoogleInterface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\GetGougouInterface.aspx.cs">
+      <DependentUpon>GetGougouInterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\GetGougouInterface.aspx.designer.cs">
+      <DependentUpon>GetGougouInterface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\GetSogouInterface.aspx.cs">
+      <DependentUpon>GetSogouInterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\GetSogouInterface.aspx.designer.cs">
+      <DependentUpon>GetSogouInterface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\GetSosoInterface.aspx.cs">
+      <DependentUpon>GetSosoInterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\GetSosoInterface.aspx.designer.cs">
+      <DependentUpon>GetSosoInterface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\GetYahooInterface.aspx.cs">
+      <DependentUpon>GetYahooInterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\GetYahooInterface.aspx.designer.cs">
+      <DependentUpon>GetYahooInterface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\GetYoudaoInterface.aspx.cs">
+      <DependentUpon>GetYoudaoInterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\GetYoudaoInterface.aspx.designer.cs">
+      <DependentUpon>GetYoudaoInterface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\Manualparse.aspx.cs">
+      <DependentUpon>Manualparse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\Manualparse.aspx.designer.cs">
+      <DependentUpon>Manualparse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\ParseVideos.aspx.cs">
+      <DependentUpon>ParseVideos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseVideos.aspx.designer.cs">
+      <DependentUpon>ParseVideos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\ParseXPathManage.aspx.cs">
+      <DependentUpon>ParseXPathManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseXPathManage.aspx.designer.cs">
+      <DependentUpon>ParseXPathManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parse\WebNews.aspx.cs">
+      <DependentUpon>WebNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parse\WebNews.aspx.designer.cs">
+      <DependentUpon>WebNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Page1Search.aspx.cs">
+      <DependentUpon>Page1Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page1Search.aspx.designer.cs">
+      <DependentUpon>Page1Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectResult.aspx.cs">
+      <DependentUpon>SelectResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectResult.aspx.designer.cs">
+      <DependentUpon>SelectResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmsOnline\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmsOnline\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmsOnline\MobileMessages.aspx.cs">
+      <DependentUpon>MobileMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmsOnline\MobileMessages.aspx.designer.cs">
+      <DependentUpon>MobileMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmsOnline\SmpApiSend.aspx.cs">
+      <DependentUpon>SmpApiSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmsOnline\SmpApiSend.aspx.designer.cs">
+      <DependentUpon>SmpApiSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmsOnline\SmsSend.aspx.cs">
+      <DependentUpon>SmsSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmsOnline\SmsSend.aspx.designer.cs">
+      <DependentUpon>SmsSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmsOnline\SmsFetion.aspx.cs">
+      <DependentUpon>SmsFetion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmsOnline\SmsFetion.aspx.designer.cs">
+      <DependentUpon>SmsFetion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmsOnline\SmsNormal.aspx.cs">
+      <DependentUpon>SmsNormal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmsOnline\SmsNormal.aspx.designer.cs">
+      <DependentUpon>SmsNormal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\UserInfoEdit.aspx.cs">
+      <DependentUpon>UserInfoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\UserInfoEdit.aspx.designer.cs">
+      <DependentUpon>UserInfoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FetionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FlightWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SmsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FetionService\fWebSer.wsdl" />
+    <None Include="Web References\FetionService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FlightWebService\Default.wsdl" />
+    <None Include="Web References\FlightWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SmsService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SmsService\Service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://59.151.1.234/Default.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FlightWebService\</RelPath>
+      <UpdateFromURL>http://59.151.1.234/Default.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CnWeb_FlightWebService_ABEService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://io.feirobot.cn/fWebSer.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FetionService\</RelPath>
+      <UpdateFromURL>http://io.feirobot.cn/fWebSer.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>cnWeb_FetionService_fWebSer</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://service2.winic.org/Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SmsService\</RelPath>
+      <UpdateFromURL>http://service2.winic.org/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>cnWeb_SmsService_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CnBusinessLogic\CnBusinessLogic.csproj">
+      <Project>{E0811615-3ADD-43F6-B70A-32B18BAB6B64}</Project>
+      <Name>CnBusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CnDataAcess\CnDataAcess.csproj">
+      <Project>{2F48BF2C-8BF3-4A9E-9D4E-663B140928DD}</Project>
+      <Name>CnDataAcess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HtmlAgilityPack\HtmlAgilityPack.csproj">
+      <Project>{193BB801-054F-4729-9D5D-FCE1E32594BF}</Project>
+      <Name>HtmlAgilityPack</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3515</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

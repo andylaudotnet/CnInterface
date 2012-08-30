@@ -1,0 +1,192 @@
+<!DOCTYPE html><!--STATUS OK--><html><head>
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv="content-type" content="text/html;charset=gb2312">
+<title>百度搜索_接口      </title>
+<style>
+body,td,.p1,.p2,.i{font-family:arial}
+body{margin:6px 0 0 0;background-color:#fff;color:#000;position:relative}
+input{padding-top:0;padding-bottom:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+table{border:0}
+TD{FONT-SIZE:9pt;LINE-HEIGHT:18px;}
+em{font-style:normal;color:#c60a00}
+a em{text-decoration:underline;}
+.f14{FONT-SIZE:14px}
+.f10{font-size:10.5pt}
+.f16{font-size:16px;font-family:Arial}
+.c{color:#7777CC;}
+.p1{LINE-HEIGHT:120%;margin-left:-12pt}
+.p2{width:100%;LINE-HEIGHT:120%;margin-left:-12pt}
+.i{font-size:16px;line-height:1.4em;height:28px;*height:24px}
+.t{COLOR:#0000cc;TEXT-DECORATION:none}
+a.t:hover{TEXT-DECORATION:underline}
+.p{padding-left:18px;margin:0 0 20px 0;font-size:14px;word-spacing:4px;}
+.f{line-height:115%;*line-height:120%;font-size:100%;width:33.7em;padding-left:15px;word-break:break-all;word-wrap:break-word;}
+.h{margin-left:8px;width:100%}
+.s{width:8%;padding-left:10px; height:25px;}
+.m,a.m:link{COLOR:#666;font-size:100%;}
+a.m:visited{COLOR:#660066;}
+.g{color:#008000; font-size:12px;}
+.r{ word-break:break-all;cursor:hand;width:238px;}
+.bi {background-color:#D9E1F7;height:20px;margin-bottom:12px}
+.pl{padding-left:3px;height:8px;padding-right:2px;font-size:14px;}
+.Tit{height:21px; font-size:14px;}
+.Tit a{color:#0000cc}
+.fB{ font-weight:bold;}
+.mo,a.mo:link,a.mo:visited{COLOR:#666666;font-size:100%;line-height:10px;}
+.htb{margin-bottom:5px;}
+#ft{clear:both;line-height:20px;background:#e6e6e6;text-align:center}
+#ft,#ft *{color:#77C;font-size:12px;font-family:Arial}
+#ft span{color:#666}
+form{margin:0;position:relative;z-index:9}
+.jc a{color:#c60a00}
+.btn{font-size:14px;height:2em;*padding-top:2px;width:5.6em;margin-left:3px}
+.i,.btn{vertical-align:middle;*vertical-align:baseline}
+a font[size="3"] font, font[size="3"] a font { text-decoration: underline}
+
+
+#out{_margin-left:880px;_zoom:1}
+#in{_position:relative;_float:left;_margin-left:-880px;}
+#wrapper{min-width:880px;_zoom:1;}
+
+</style>
+<script>
+function h(obj,url){obj.style.behavior='url(#default#homepage)';obj.setHomePage(url);}
+function G(id){return document.getElementById(id);}
+var location,al_arr=[];
+function ss(w){window.status=w;return true;}
+function cs(){window.status='';}
+
+function al_c(A){while(A.tagName!="TABLE")A=A.parentNode;return A.getAttribute("id")}
+function al_c2(n,c){while(c--){while((n=n.parentNode).tagName!="TABLE");};return n.getAttribute("id");}
+function c(q){var p = window.document.location.href, sQ = '', sV = '', mu='', img = window["BD_PS_C" + (new Date()).getTime()] = new Image();for (v in q) {switch (v) {case "title":sV = encodeURIComponent(q[v].replace(/<[^<>]+>/g, ""));break;case "url":sV = escape(q[v]);break;default:sV = q[v]}sQ += v + "=" + sV + "&"}if (("p2" in q)&&G(q["p1"]).getAttribute("mu") && q["fm"]!="pl") { mu= "&mu=" + escape(G(q["p1"]).getAttribute("mu"));}img.src = "http://s.baidu.com/w.gif?q=%BD%D3%BF%DA&" + sQ + "path=" + p + mu + "&cid=24&qid=b8cb07ab01d9677b&t="+new Date().getTime();return true;}
+
+
+
+function hc(i){
+	var img = window["BD_PS_C"+(new Date()).getTime()]=new Image();
+	img.src = "http://s.baidu.com/w.gif?fm=hp&tn="+i+"&t="+new Date().getTime();
+}
+
+</script>
+</head>
+<body link="#0000cc">
+<div id="out"><div id="in"><div id="wrapper">
+<table width="100%" height="58" align="center" cellpadding="0" cellspacing="0"><tr valign=middle><td width="100%" valign="top" style="padding:4px 0 0 8px;width:137px;" nowrap><a href="/"><img src="http://www.baidu.com/img/logo-yy.gif" border="0" width="137" height="46" alt="到百度首页"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td width="100%" valign="top"><div class="Tit"><a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=%BD%D3%BF%DA"  onmousedown="return c({'fm':'tab','tab':'news'})">新闻</a>&nbsp;&nbsp;&nbsp;<span class="fB">网页</span>&nbsp;&nbsp;&nbsp;<a href="http://tieba.baidu.com/f?kw=%BD%D3%BF%DA"  onmousedown="return c({'fm':'tab','tab':'tieba'})">贴吧</a>&nbsp;&nbsp;&nbsp;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=%BD%D3%BF%DA&fr=wwwt"  onmousedown="return c({'fm':'tab','tab':'zhidao'})">知道</a>&nbsp;&nbsp;&nbsp;<a href="http://mp3.baidu.com/m?tn=baidump3&ct=134217728&lm=-1&word=%BD%D3%BF%DA"  onmousedown="return c({'fm':'tab','tab':'mp3'})">MP3</a>&nbsp;&nbsp;&nbsp;<a href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&word=%BD%D3%BF%DA"  onmousedown="return c({'fm':'tab','tab':'pic'})">图片</a>&nbsp;&nbsp;&nbsp;<a href="http://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&word=%BD%D3%BF%DA"  onmousedown="return c({'fm':'tab','tab':'video'})">视频</a>&nbsp;&nbsp;&nbsp;<a href="http://map.baidu.com/m?word=%BD%D3%BF%DA&fr=ps01000"  onmousedown="return c({'fm':'tab','tab':'map'})">地图</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--bds<a href="$bdDSURL$">硬盘</a>&nbsp; --></div><table cellspacing="0" cellpadding="0"><tr><td valign="top" nowrap><form name="f" action="s" ><input type="hidden" name="bs" value="接口"><input type="hidden" name="f" value="8"><input name="wd" id="kw" size="46" class="i" value="接口" maxlength="100"> <input type="submit" value="百度一下" class="btn"> &nbsp;&nbsp;&nbsp;</form></td><td valign="middle" nowrap><a href="http://www.baidu.com/gaoji/preferences.html">设置</a>&nbsp;|&nbsp;<a href="http://www.baidu.com/gaoji/advanced.html">高级搜索</a></td></tr></table></td><td></td></tr></table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="bi"><tr><td nowrap>&nbsp;&nbsp;&nbsp;<a onClick="h(this,'http://www.baidu.com');hc('baidu')" href="#" style="color:#000000 ">把百度设为主页</a></td><td align="right" nowrap>百度一下，找到相关网页约100,000,000篇，用时0.042秒&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></table>
+<table width="30%" border="0" cellpadding="0" cellspacing="0" align="right"><tr>
+<td align="left" style="padding-right:10px">
+<div style="border-left:1px solid #e1e1e1;padding-left:10px;word-break:break-all;word-wrap:break-word;">
+
+<div id="ec_im_container"><div id="bdfs0" style="word-break:break-all;cursor:hand;width:270px;"><a id=dfs0 href="http://www.baidu.com/baidu.php?url=XZtK00jPKwWnM9CYELPkjZvcoabWd0YnuqgEFy_Pg0jpoqZRQGONN1ZlN9_6JFCu69klDX_hn7j98TO1zXlo85oLLg6b66U0KcrZbBAPFpg4funCG1ZaDXhTe_QD.DD_iwnSN7tgU4gF98ButnDRZHEzyTmrMxbzIbAVYra5zC5G69L5lAuEsddO9e5sO9ohSWISZkBHbOjxusLpVg3pvXjNGHSZtnnHnvMt53pOss569evITx_ms4PTnyZFok_1nlmY_1fdmTh84YnXZFok_1nlRYFMskGuh9Js4DYctXZWod_lgYIAZWT1D1wIJs4rMy1GxwYxXejk8vXrHjblTjOYDlTI7h6MeLmXPL4xl5zttregS5lZSEO_mIvEtLlMM9LpOYnrHGSgsOk51mXPLVOZj8dOWSrZIoqNPxm_nYQ7xW3tX-f.U1Yk0ZDqEIrOv6KY5gF1nWnzEIrOv6KGUHYznjD0I1Y0u1dBUW0L0ZNG5gP9UgK_uyNWUvYkP0KWThnqnWnsnHR" target="_blank" onMouseOver="return ss('链接至 www.ti.com.cn')" onMouseOut="cs()"><font size="3">德州仪器 rs232<font color=#C60A00>接口</font></font></a><br><a href="http://www.baidu.com/baidu.php?url=XZtK00jPKwWnM9CYELPkjZvcoabWd0YnuqgEFy_Pg0jpoqZRQGONN1ZlN9_6JFCu69klDX_hn7j98TO1zXlo85oLLg6b66U0KcrZbBAPFpg4funCG1ZaDXhTe_QD.DD_iwnSN7tgU4gF98ButnDRZHEzyTmrMxbzIbAVYra5zC5G69L5lAuEsddO9e5sO9ohSWISZkBHbOjxusLpVg3pvXjNGHSZtnnHnvMt53pOss569evITx_ms4PTnyZFok_1nlmY_1fdmTh84YnXZFok_1nlRYFMskGuh9Js4DYctXZWod_lgYIAZWT1D1wIJs4rMy1GxwYxXejk8vXrHjblTjOYDlTI7h6MeLmXPL4xl5zttregS5lZSEO_mIvEtLlMM9LpOYnrHGSgsOk51mXPLVOZj8dOWSrZIoqNPxm_nYQ7xW3tX-f.U1Yk0ZDqEIrOv6KY5gF1nWnzEIrOv6KGUHYznjD0I1Y0u1dBUW0L0ZNG5gP9UgK_uyNWUvYkP0KWThnqnWnsnHR" target="_blank" id="bdfs0" style="text-decoration:none;"><font size="-1" color="#000000">德州仪器是全球领先的芯片生产商<br>半导体解决方案的专家</font><br><font size="-1" color="#008000">www.ti.com.cn</font></a></div><br><div id="bdfs1" style="word-break:break-all;cursor:hand;width:270px;"><a id=dfs1 href="http://www.baidu.com/baidu.php?url=XZtK00KxufL0Mc96fD2XzqVz-cab3GXBsTo5xxAg8KMtJXbt0Xi-WJPJ04jM8I8sfFJ_cC_EWSCqem87gAvC8OAxCGjZ01usxjMn4H9IVHNgDGH3jAbrB-c5N5xb.7R_ig5W9IqaubkRD1c69B4mLYDs2pSkmuCyrM_zy20.U1Yz0ZDqEIrOv6KY5IHp1qOyGeBvEIrOv6KGUHYznjD0I1Y0u1dBUW0L0ZNG5gP9UgK_uyNWUvYkP0KWThnqPWcsrj6" target="_blank" onMouseOver="return ss('链接至 discoverenter.com')" onMouseOut="cs()"><font size="3">在线支付<font color=#C60A00>接口</font>请选帝亿宝支付</font></a><br><a href="http://www.baidu.com/baidu.php?url=XZtK00KxufL0Mc96fD2XzqVz-cab3GXBsTo5xxAg8KMtJXbt0Xi-WJPJ04jM8I8sfFJ_cC_EWSCqem87gAvC8OAxCGjZ01usxjMn4H9IVHNgDGH3jAbrB-c5N5xb.7R_ig5W9IqaubkRD1c69B4mLYDs2pSkmuCyrM_zy20.U1Yz0ZDqEIrOv6KY5IHp1qOyGeBvEIrOv6KGUHYznjD0I1Y0u1dBUW0L0ZNG5gP9UgK_uyNWUvYkP0KWThnqPWcsrj6" target="_blank" id="bdfs1" style="text-decoration:none;"><font size="-1" color="#000000">Discover Enterprise帝亿宝,您在线支付<font color=#C60A00>接口</font>的首选!快捷,高效,安全的网上信用卡结算..</font><br><font size="-1" color="#008000">discoverenter.com</font></a></div><br><div id="bdfs2" style="word-break:break-all;cursor:hand;width:270px;"><a id=dfs2 href="http://www.baidu.com/baidu.php?url=XZtK00KkEgxRWoGF7qLWAZ__STShHoUtx0ApuLV5YcY5RcJfF_gQkgJGlbDh2sbaCUjDo2BA1IalSQ6B8u2fZgGPXlh5XVIwAO09NRipE6KwkOjzQu4OmjGoASwq.7D_arJevpCY2pSkmuCyrhEFYe70.U1Y10ZDqEIrOv6KY5gF1Pj6dEIrOv6KGUHYznjD0I1Y0u1dBUW0L0ZNG5gP9UgK_uyNWUvYkP0KWThnqPWT1Pf" target="_blank" onMouseOver="return ss('链接至 www.shdqgs.com')" onMouseOut="cs()"><font size="3">上海神引双华电动机保护器</font></a><br><a href="http://www.baidu.com/baidu.php?url=XZtK00KkEgxRWoGF7qLWAZ__STShHoUtx0ApuLV5YcY5RcJfF_gQkgJGlbDh2sbaCUjDo2BA1IalSQ6B8u2fZgGPXlh5XVIwAO09NRipE6KwkOjzQu4OmjGoASwq.7D_arJevpCY2pSkmuCyrhEFYe70.U1Y10ZDqEIrOv6KY5gF1Pj6dEIrOv6KGUHYznjD0I1Y0u1dBUW0L0ZNG5gP9UgK_uyNWUvYkP0KWThnqPWT1Pf" target="_blank" id="bdfs2" style="text-decoration:none;"><font size="-1" color="#000000">上海双华电动机保护器支持rs485<font color=#C60A00>接口</font>产品通过 ISO9001认证,质量有保证.</font><br><font size="-1" color="#008000">www.shdqgs.com</font></a></div><br><div id="bdfs3" style="word-break:break-all;cursor:hand;width:270px;"><a id=dfs3 href="http://www.baidu.com/baidu.php?url=XZtK0008SWGrAZwlaT5oT0Df5lQfPaF6urQX9tSlC_X01ybVu0xg0BOHEzoKXkvaCI-6udkB88Tz4IMultM_uSPtKGTT2C_p4qHR7c6TOPIt15coSI0uz4_hqGHe.7R_KheKGG6q85Zwxa1fXl2r8gCeYREEX-WOgSrx_vUELElgSKObJpSkmuCyrh1GLJ0.U1YY0ZDqEIrOv6KY5gF1Pj6dEIrOv6KGUHYznjD0I1Y0u1dBUW0L0ZNG5gP9UgK_uyNWUvYkP0KWThnqnHm4Pjb" target="_blank" onMouseOver="return ss('链接至 www.adum.com.cn')" onMouseOut="cs()"><font size="3">ADM2483 业界最流行最专业的..</font></a><br><a href="http://www.baidu.com/baidu.php?url=XZtK0008SWGrAZwlaT5oT0Df5lQfPaF6urQX9tSlC_X01ybVu0xg0BOHEzoKXkvaCI-6udkB88Tz4IMultM_uSPtKGTT2C_p4qHR7c6TOPIt15coSI0uz4_hqGHe.7R_KheKGG6q85Zwxa1fXl2r8gCeYREEX-WOgSrx_vUELElgSKObJpSkmuCyrh1GLJ0.U1YY0ZDqEIrOv6KY5gF1Pj6dEIrOv6KGUHYznjD0I1Y0u1dBUW0L0ZNG5gP9UgK_uyNWUvYkP0KWThnqnHm4Pjb" target="_blank" id="bdfs3" style="text-decoration:none;"><font size="-1" color="#000000">ADM2483是ADI公司推出的一款采用磁隔离技术的rs485<font color=#C60A00>接口</font>芯片,可替代传统的光隔485方案</font><br><font size="-1" color="#008000">www.adum.com.cn</font></a></div><br><div id="bdfs4" style="word-break:break-all;cursor:hand;width:270px;"><a id=dfs4 href="http://www.baidu.com/baidu.php?url=XZtK00aA2uoQA8PZay1oMvUXaX9TbijebYap7dalzFLrHBUDnvB4DPlaKQApNl7BCMVrEZLyC1FBlCddtJeeDsBQwW2ZH_2kVUlDN4QbFAQWQAO-kR05HMz10GKi.7b_KrMzuSBFPKhPe2c5wZKtbkEdwxBlW6C5I7ZQYItUrGnxL8mzX5gSc1ZfHPSuMRMeLnNS2hE_yAp7WW3eEAkf.U1Yd0ZDqEIrOv6KY5IQR12EPSQLHEqC0pyYqnW0k0ZTq0ATqmh3sPsKdpHd1mydsUAN-mvqVnHf0mLFW5Hnvrj0d" target="_blank" onMouseOver="return ss('链接至 www.em.avnetasia.com')" onMouseOut="cs()"><font size="3">安富利以太网<font color=#C60A00>接口</font></font></a><br><a href="http://www.baidu.com/baidu.php?url=XZtK00aA2uoQA8PZay1oMvUXaX9TbijebYap7dalzFLrHBUDnvB4DPlaKQApNl7BCMVrEZLyC1FBlCddtJeeDsBQwW2ZH_2kVUlDN4QbFAQWQAO-kR05HMz10GKi.7b_KrMzuSBFPKhPe2c5wZKtbkEdwxBlW6C5I7ZQYItUrGnxL8mzX5gSc1ZfHPSuMRMeLnNS2hE_yAp7WW3eEAkf.U1Yd0ZDqEIrOv6KY5IQR12EPSQLHEqC0pyYqnW0k0ZTq0ATqmh3sPsKdpHd1mydsUAN-mvqVnHf0mLFW5Hnvrj0d" target="_blank" id="bdfs4" style="text-decoration:none;"><font size="-1" color="#000000">安富利亚洲区是领先的以太网<font color=#C60A00>接口</font>分销商,分销世界领先供应商的以太网<font color=#C60A00>接口</font>产品</font><br><font size="-1" color="#008000">www.em.avnetasia.com</font></a></div><br><div id="bdfs5" style="word-break:break-all;cursor:hand;width:270px;"><a id=dfs5 href="http://www.baidu.com/baidu.php?url=XZtK000w4bndS_4MVvTteXxJQQc57RTu73uJDtPgeOQkfSRaaPFEdIXiLoT7oUfQoNCfb7dyFqFR7xlrMDsfxJRD7O900QR2Wmk16pakdOTC0M3pt5CH8EVVbsXg.Db_jNwx7vGh4cQpl4NPxm_nYQZA1_tN0.U1Yv0ZDqEIrOv6KY5yP9UoLHEqJOJ0KGUHYznjD0I1Y0u1dBUW0L0ZNG5gP9UgK_uyNWUvYkP0KWThnqnHRLPjD" target="_blank" onMouseOver="return ss('链接至 www.glinker.cn')" onMouseOut="cs()"><font size="3">供应can<font color=#C60A00>接口</font>卡通讯卡 吉阳光电</font></a><br><a href="http://www.baidu.com/baidu.php?url=XZtK000w4bndS_4MVvTteXxJQQc57RTu73uJDtPgeOQkfSRaaPFEdIXiLoT7oUfQoNCfb7dyFqFR7xlrMDsfxJRD7O900QR2Wmk16pakdOTC0M3pt5CH8EVVbsXg.Db_jNwx7vGh4cQpl4NPxm_nYQZA1_tN0.U1Yv0ZDqEIrOv6KY5yP9UoLHEqJOJ0KGUHYznjD0I1Y0u1dBUW0L0ZNG5gP9UgK_uyNWUvYkP0KWThnqnHRLPjD" target="_blank" id="bdfs5" style="text-decoration:none;"><font size="-1" color="#000000">可直接进行CAN总线数据收发,监控测试<br>所有CAN通讯协议转换器支持二次开发</font><br><font size="-1" color="#008000">www.glinker.cn</font></a></div><br><div id="bdfs6" style="word-break:break-all;cursor:hand;width:270px;"><a id=dfs6 href="http://www.baidu.com/baidu.php?url=XZtK000pPgds7wMO3eTgqLc3lKy0OyTBPisy_3WRalDbEjTw4RdJkfNbNOiTqJsQOg_2yWAmSVEX72nttawVHl-FFdypSA4GrynauUsTXuPg2OyuWdLijohtdkMr.DD_jlZRymJAIQrJB-DDnyxZvHJpSkmuCyrPxuYed.U1YL0ZDqEIrOv6KY5Hm-nbR1PULHEqC0pyYqnW0k0ZTq0ATqmh3sPsKdpHd1mydsUAN-mvqVnHf0mLFW5HmzrHcv" target="_blank" onMouseOver="return ss('链接至 www.volant-eagle.com')" onMouseOut="cs()"><font size="3">宁波鹰翔电子,6.35<font color=#C60A00>接口</font>领航者!</font></a><br><a href="http://www.baidu.com/baidu.php?url=XZtK000pPgds7wMO3eTgqLc3lKy0OyTBPisy_3WRalDbEjTw4RdJkfNbNOiTqJsQOg_2yWAmSVEX72nttawVHl-FFdypSA4GrynauUsTXuPg2OyuWdLijohtdkMr.DD_jlZRymJAIQrJB-DDnyxZvHJpSkmuCyrPxuYed.U1YL0ZDqEIrOv6KY5Hm-nbR1PULHEqC0pyYqnW0k0ZTq0ATqmh3sPsKdpHd1mydsUAN-mvqVnHf0mLFW5HmzrHcv" target="_blank" id="bdfs6" style="text-decoration:none;"><font size="-1" color="#000000">本公司专业生产6.35<font color=#C60A00>接口</font>,音频连接器等舞台演出器材.生产的6.35<font color=#C60A00>接口</font>品质好,具有多年的</font><br><font size="-1" color="#008000">www.volant-eagle.com</font></a></div><br><div id="bdfs7" style="word-break:break-all;cursor:hand;width:270px;"><a id=dfs7 href="http://www.baidu.com/baidu.php?url=XZtK00a2Vn97CAhqLW4Q8R69ZaO_mjOp8wv3Mi9JOtFj6lLHtky0gOk43Ch6S-SVJ_yUaCw14uvtpX0pnN9RsQmcL_0_WGJeC0VL1mawcX5Lh1uaAjRp7nP06_x3.7Y_jRMrOABj9J6RdqBs1f_IMW3ePl6.U1Y30ZDqEIrOv6KY5IQR12EPSQLHEqC0pyYqnW0k0ZTq0ATqmh3sPsKdpHd1mydsUAN-mvqVnHf0mLFW5Hn3rHn" target="_blank" onMouseOver="return ss('链接至 www.ge-ip.com')" onMouseOut="cs()"><font size="3">GE 智能平台提供以太网<font color=#C60A00>接口</font></font></a><br><a href="http://www.baidu.com/baidu.php?url=XZtK00a2Vn97CAhqLW4Q8R69ZaO_mjOp8wv3Mi9JOtFj6lLHtky0gOk43Ch6S-SVJ_yUaCw14uvtpX0pnN9RsQmcL_0_WGJeC0VL1mawcX5Lh1uaAjRp7nP06_x3.7Y_jRMrOABj9J6RdqBs1f_IMW3ePl6.U1Y30ZDqEIrOv6KY5IQR12EPSQLHEqC0pyYqnW0k0ZTq0ATqmh3sPsKdpHd1mydsUAN-mvqVnHf0mLFW5Hn3rHn" target="_blank" id="bdfs7" style="text-decoration:none;"><font size="-1" color="#000000">我们提供从标准空气冷却到加固,<br>导冷等各种加固等级的产品.</font><br><font size="-1" color="#008000">www.ge-ip.com</font></a></div><br></div>
+<script>
+(function(){var _=function(AltA){return document.getElementById(AltA)},U=function(AltA){return document.getElementsByTagName(AltA)},O=function(AltA){AltA=AltA||window.event;this.target=AltA.target||AltA.srcElement};O.add=function(AltA,A,_){if(window.addEventListener)AltA.addEventListener(A,_,false);else AltA.attachEvent("on"+A,_)};var X=function(AltA){var _=new O(AltA);while(_.target.tagName.toLowerCase()!="a")_.target=_.target.parentNode;P(AltA);K();if(H(_.target)!=0)I(_.target)},V=function(){return new Date().getTime()},N=function(AltA){var _=new O(AltA);T++},F=function(){E==0?E=V():E=V()-E},C=function(AltA){G==0?G=AltA.clientX:G=G;L==0?L=AltA.clientY:L=L},K=function(){if(J==0)J=V();AltA=V()-J},P=function(AltA){S=AltA.clientX;Q=AltA.clientY},H=function(AltA){var _=/baidu\.php\?url\=([^\.]+)\./.exec(AltA.href);if(_==null)return 0;_=_[1];dtime=D;W=0;for(var A=0;A<(((T*D)%99)+9);A++){idx=(E*A)%_.length;W+=_.charCodeAt(idx)}},I=function(_){var A=_.innerHTML;if(_.href.indexOf("&ck")==-1)_.href+="&ck="+W+"."+T+"."+E+"."+S+"."+Q+"."+G+"."+L+"."+AltA;if((A.match(/(www\.)|(.*@.*)/i)!=null)&&document.all)A.match(/\<.*\>/i)==null?_.innerHTML=A:_.target.innerTEXT=A},S=0,Q=0,G=0,L=0,E=0,J=0,AltA=0,T=0,W=0,D=34,B=_("ec_im_container"),M=U("div"),A=B.getElementsByTagName("a");O.add(B,"mouseover",C);O.add(B,"mouseover",K);for(var R=0;R<A.length;R++){O.add(A[R],"mousedown",F);O.add(A[R],"mouseup",F);O.add(A[R],"click",X)}for(R=0;R<M.length;R++)O.add(M[R],"mouseover",N)})()
+</script>
+
+<div class="r">
+<div style="background:#EFF2FA;overflow:hidden;padding:0 3px;line-height:29px;height:30px;word-break:normal;">
+<a href="http://www.baidu.com/adrc.php?t=000a00c00f7Ul0D0SOY00FTFK6afbU4Q0000000000000000v3v1bh.THvqYeOp0A3qmh7GuZRkP0K15yc3mvcsPv7Bnj7brHmLPvc0IHdKwHRYwH6LfYn3nRc1rjT4njb3PWTvPH7DnW61fYP7w6K95ywlnAdWXW7GHYIrpRdDuA9upb73ybwonb4luA-2UH7JmNIwrRdRyHwPphV4Hg-pp7KRwhuPfdCsm-fsUywgnj-2UH-4mNfsIYG8HW7uUH-4mNfsUyPciMKfN7R-nYf0uHdCIZwsrBtEui4Bmy-bIi4WUvYE5LF-uhNz5HDsn6KWThnqnHDsP1b" target="_blank" style="font-size:16px">来百度推广您的产品</a>
+</div>
+</div>
+<br />
+
+
+</div>
+<br>
+</td></tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+<script>    var albk_cr = "_1";    function albk_u(o,s){        if(o.href.indexOf('ala0')==-1){o.href+=(o.href.indexOf('?')!=-1)?'&fr='+s:'?fr='+s}    }</script><table cellpadding="0" cellspacing="0" id="1" mu="http://baike.baidu.com/view/159864.htm"><tr><td class="f"><a target="_blank" href="http://baike.baidu.com/view/159864.htm" onmousedown="albk_u(this,'ala0_1'+albk_cr);return c({'fm':'albk','title':this.innerHTML,'url':this.href,'p1':al_c(this)});"><font size="3"><em>接口</em>_百度百科</font></a><br/><font size="-1">        释义    词目:<em>接口</em>    拼音:jīe kǒu    英文:interface    基本解释    <em>接口</em> jiēkǒu    1.    [take up sb.&#39;s remark]∶接着别人的话[...<font color="#666666">共22次编辑</font><br/><a target="_blank" href="http://baike.baidu.com/view/159864.htm" onmousedown="albk_u(this,'ala0_2#1');return c({'fm':'albk','title':this.innerHTML,'url':this.href,'p1':al_c(this),'p2':'1'});">释义</a> - <a target="_blank" href="http://baike.baidu.com/view/159864.htm" onmousedown="albk_u(this,'ala0_2#2');return c({'fm':'albk','title':this.innerHTML,'url':this.href,'p1':al_c(this),'p2':'2'});">接口的概述</a> - <a target="_blank" href="http://baike.baidu.com/view/159864.htm" onmousedown="albk_u(this,'ala0_2#3');return c({'fm':'albk','title':this.innerHTML,'url':this.href,'p1':al_c(this),'p2':'3'});">接口类型(图)</a> - <a target="_blank" href="http://baike.baidu.com/view/159864.htm" onmousedown="albk_u(this,'ala0_2#4');return c({'fm':'albk','title':this.innerHTML,'url':this.href,'p1':al_c(this),'p2':'4'});">数据线接口</a>    <br/><font color="#008000">baike.baidu.com/view/159864.htm 2010-2-17</font></font></td></tr></table><br>
+
+<table border="0" cellpadding="0" cellspacing="0" id="2"><tr><td class=f><a  onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1E4','F2':'4CA6DF6A','F3':'54E5243F','T':'1270780304','title':this.innerHTML,'url':this.href,'p1':2,'y':'9FFFFE7B'})" href="http://www.beareyes.com.cn/2/lib/200512/02/20051202023_2.htm"  target="_blank" ><font size="3">知识百宝囊——认清你身边的PC<em>接口</em>::小熊在线-网络频道</font></a><br><font size=-1>通过大量图片和注释，将告诉你电脑各种<em>接口</em>、插槽、插头的作用…… (5075 字) 第2页：<em>接口</em>列表外部<em>接口</em>：电脑的外设联接<em>接口</em>  插头 插座 名称  USB  IEEE 1394/...<br><font color="#008000">www.beareyes.com.cn/2/lib/200512/02/20051 ... 2005-12-2  </font> - <a href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece763105392230e54f7336b8490423483d25f93130a1c1871e3cc767e0d04ce9b27371caf4b5eedf3366f35033db799ca8f49ddb9922a2f893033041c914165895ff0df037881769f4d99d90e91bbe742e7b9a4a0&p=9b77c64ad79f11a05eec8c3c4f40&user=baidu"  target="_blank"  class="m">百度快照</a> <br></font></td></tr></table><br>
+
+<table border="0" cellpadding="0" cellspacing="0" id="3"><tr><td class=f><a  onmousedown="return c({'fm':'as','F':'779317EA','F1':'9D73F1E4','F2':'4CA6DF6A','F3':'54E5243F','T':'1270780304','title':this.innerHTML,'url':this.href,'p1':3,'y':'DF34EFFD'})" href="http://msdn.microsoft.com/zh-cn/library/87d83y5b(VS.80).aspx"  target="_blank" ><font size="3"><em>接口</em>(C#)</font></a><br><font size=-1><em>接口</em>只包含方法、委托或事件的签名。方法的实现是在实现<em>接口</em>的类中完成的，如下面的示例所示：<br><font color="#008000">msdn.microsoft.com/zh-cn/library/87d83y5b ... 2010-4-3  </font> - <a href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece7631049963045438014638c81552295ce1cd5735b36163bbca66f780704a594207a5ff4191cb9b07d6f3d0676bd9a838f1acabb984c4e9f27437a1e914119c419d89807678b34d507a9f916f0ca8625e5afc5a3ab4325b9&p=8d759a43dd9e12a059b3d53c4205&user=baidu"  target="_blank"  class="m">百度快照</a> <br></font></td></tr></table><br>
+
+<table border="0" cellpadding="0" cellspacing="0" id="4"><tr><td class=f><a  onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1E4','F2':'4CA6DF6A','F3':'54E5243F','T':'1270780304','title':this.innerHTML,'url':this.href,'p1':4,'y':'FEABF7D7'})" href="http://publish.it168.com/cword/1194.shtml"  target="_blank" ><font size="3">外部端口术语解释|笔记本名词解释|什么是外部端口- IT168</font></a><br><font size=-1>IT168术语详解为您提供最新的外部端口术语、笔记本名词解释，什么是外部端口？请看权威的外部端口术语大全。<br><font color="#008000">publish.it168.com/cword/1194.shtml 2010-1-4  </font> - <a href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece76310549036470fc1392bd7a74e39d7974284642c101a39feea627f5052cec67f6c07b8492babaa702d691765eadb9e875dadcd855e2e9f5740676af5&p=8a61d716d9c310ec03bd9b7d0853&user=baidu"  target="_blank"  class="m">百度快照</a> <br></font></td></tr></table><br>
+
+<table border="0" cellpadding="0" cellspacing="0" id="5"><tr><td class=f><a  onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1E4','F2':'4CA6DF6A','F3':'54E5243F','T':'1270780304','title':this.innerHTML,'url':this.href,'p1':5,'y':'7FEF5B83'})" href="http://tech.sina.com.cn/n/2005-01-25/1659514512.shtml"  target="_blank" ><font size="3">笔记本关键字：<em>接口</em>类型_笔记本_科技时代_新浪网</font></a><br><font size=-1>而目前CPU的<em>接口</em>都是针脚式<em>接口</em>，对应到主板上就有相应的插槽类型。CPU<em>接口</em>类型不同，在插孔数、体积、形状都有变化，所以不能互相接插。 Socket 478 Socket 478...<br><font color="#008000">tech.sina.com.cn/n/2005-01-25/1659514512. ... 2010-3-30  </font> - <a href="http://cache.baidu.com/c?m=9d78d513d9d431d94f9b95697d62c0106a40c72362d88a5339968449e07946071037b9ac2755515f8f966b6776fe1403fdf041236b1e7caa9bca8a4dcabbe42a2c9f2742701b9b4216d412a8c84022c220875a9eee43a1e5ae&p=cb759a408f9f12a059a58a6f4d&user=baidu"  target="_blank"  class="m">百度快照</a> <br></font></td></tr></table><br>
+
+<table border="0" cellpadding="0" cellspacing="0" id="6"><tr><td class=f><a  onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1E4','F2':'4CA6DF6A','F3':'54E5243F','T':'1270780304','title':this.innerHTML,'url':this.href,'p1':6,'y':'BEDE9BAB'})" href="http://www.biosrepair.com/pic/pic115.htm"  target="_blank" ><font size="3">bios,<em>接口</em>,端口,USB,PS2,SATA,IDE,<em>接口</em></font></a><br><font size=-1>每台电脑，无论台式机还是笔记本，里里外外都有许多<em>接口</em>和插槽，你全都认识吗？也许你已经对USB、PS/2、VGA等常用<em>接口</em>非常熟悉，但是你知道SCART、HDMI，抑或USB...<br><font color="#008000">www.biosrepair.com/pic/pic115.htm 2008-10-19  </font> - <a href="http://cache.baidu.com/c?m=9d78d513d9d431d94f9b95697d62c0106a40c72362d88a5339968449e07946040223f4bb50724b5992852b2552f4094bea87672f681e62eccad5ca118cb8912f3888506e3643&p=8264c416d9c317ff57ef8c6817&user=baidu"  target="_blank"  class="m">百度快照</a> <br></font></td></tr></table><br>
+
+<table border="0" cellpadding="0" cellspacing="0" id="7"><tr><td class=f><a  onmousedown="return c({'fm':'as','F':'779757EA','F1':'9D73F1E4','F2':'4CA6DF6A','F3':'54E5243F','T':'1270780304','title':this.innerHTML,'url':this.href,'p1':7,'y':'FFAF774F'})" href="http://www.szxyclp.com/cx/eWeb/ButtonImage/standard/505319.html"  target="_blank" ><font size="3">java中的<em>接口</em></font></a><br><font size=-1>讽java中的<em>接口</em>捞.十嚣古溪俗寒擎翎java中的<em>接口</em>障作焚卿针荧咨轧.宴稳歹泥川java中的<em>接口</em>顷<br><font color="#008000">www.szxyclp.com/cx/eWeb/ ... /505319.html 2010-3-18  </font> - <a href="http://cache.baidu.com/c?m=9d78d513d9d431d94f9b95697d62c0106a40c72362d88a5339968449e07946040223f4bb5063584e9894222516af3e0db7af2b237d1e77d2cc98953a9afdd47573f37867254b9b00548045f9980673dc27925de8ac12f0ba8768d5f18c&p=9960df1f85cc40f70dbd9b7d0d7a&user=baidu"  target="_blank"  class="m">百度快照</a> <br></font></td></tr></table><br>
+
+<table border="0" cellpadding="0" cellspacing="0" id="8"><tr><td class=f><a  onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1E4','F2':'4CA6DF6A','F3':'54E5243F','T':'1270780304','title':this.innerHTML,'url':this.href,'p1':8,'y':'FB9FEB3B'})" href="http://family.pconline.com.cn/handbook/mcjs/0707/1048230.html"  target="_blank" ><font size="3">什么是HDMI<em>接口</em>?_液晶电视名词解释_|&gt;&lt;|太平洋电脑网</font></a><br><font size=-1>HDMI是新一代的多媒体<em>接口</em>标准，全称是High-Definition Multimedia Interface，中文意思为高清晰多媒体<em>接口</em>，该标准由索尼、日立、松下、飞利浦、东芝、Silicon image、Th...<br><font color="#008000">family.pconline.com.cn/handbook/mcjs/0707 ... 2010-4-3  </font> - <a href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece76310428439420acb743ca092442288cd13cf334c413037bee4302267558fd826345df91901b7a92b2d665b61aa99cd8a4fc0b8902e25882636671cf11b548c47bb8e1b65972f872a9fb86fe6ad804684d8a1&p=b4769a45c78c0bb908e29279500c&user=baidu"  target="_blank"  class="m">百度快照</a> <br></font></td></tr></table><br>
+
+<table border="0" cellpadding="0" cellspacing="0" id="9"><tr><td class=f><a  onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1E4','F2':'4CA6DF6A','F3':'54E5243F','T':'1270780304','title':this.innerHTML,'url':this.href,'p1':9,'y':'FEBB77FF'})" href="http://book.csdn.net/bookfiles/140/1001405874.shtml"  target="_blank" ><font size="3">4.4 <em>接口</em>：定义和实现<em>接口</em> - 《C#高级编程(第4版)》 - 免费...</font></a><br><font size=-1>许多公司可以实现银行账户，但它们都是彼此赞同表示银行账户的所有类都实现<em>接口</em>IBankAccount。该<em>接口</em>包含一个用于存取款的方法和一个返回余额的属性。这个<em>接口</em>还允许外部...<br><font color="#008000">book.csdn.net/bookfiles/140/1001405874.shtml 2008-12-3  </font> - <a href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece76310468a3b404380146d96864968d4e414c42246111a3bbaef7c7c4745cec67a651cac4b5ee9f634753d0626a09bbfc9109be4cc3c6ad567627f0bf63705a518b8bb3232b753&p=882a92478ab107e943b2c7710c57&user=baidu"  target="_blank"  class="m">百度快照</a> <br></font></td></tr></table><br>
+<table cellpadding="0" cellspacing="0" id="10" mu="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=%BD%D3%BF%DA&ct=1&fr=ala0"><tr><td class="f" style="padding-bottom:3px;"><font size="3"><a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=%BD%D3%BF%DA&ct=1&fr=ala0" target="_blank" onmousedown="return c({'fm':'alns','title':this.innerHTML,'url':this.href,'p1':al_c(this)});"><em>接口</em>的相关新闻</a></font></td></tr><tr><td class="f"><p style="margin:0;padding:0;margin-left:1em;"><font size="-1"><a href="http://www.donews.com/it/201004/53410.shtm " target="_blank" onmousedown="return c({'fm':'alns','title':this.innerHTML,'url':this.href,'p1':al_c(this),'p2':1});"><em>接口</em>门频发 希捷睿翼移动硬盘步后尘</a> <font color="#008000">DoNews</font>&nbsp;<font color="#666666">23小时前</font><br>继前不久西部数据新款3.5英寸My Book Essential移动硬盘出现USB<em>接口</em>与产品外壳出现偏差,导致“<em>接口</em>门”后,近日笔者收到消费者爆料:希捷睿翼2.5英...</font><br><font size="-1"><a href="http://tech.163.com/digi/10/0409/06/63QD2KQB001618JV.html " target="_blank" onmousedown="return c({'fm':'alns','title':this.innerHTML,'url':this.href,'p1':al_c(this),'p2':2});">存储新里程!双卫士+双<em>接口</em>存储巴士E280上</a> <font color="#008000">网易</font>&nbsp;<font color="#666666">4小时前</font></font><br><font size="-1"><a href="http://mb.it168.com/a2010/0405/869/000000869306.shtml " target="_blank" onmousedown="return c({'fm':'alns','title':this.innerHTML,'url':this.href,'p1':al_c(this),'p2':3});">带视频<em>接口</em>的P55?深度解析技嘉大板H55</a> <font color="#008000">IT168</font>&nbsp;<font color="#666666">10小时前</font></font><br></p></td></tr>
+</table><br>
+
+
+
+
+
+
+
+
+
+
+<br clear=all>
+<div class="p">1&nbsp;<a href="s?wd=%BD%D3%BF%DA&pn=10&usm=1">[2]</a>&nbsp;<a href="s?wd=%BD%D3%BF%DA&pn=20&usm=1">[3]</a>&nbsp;<a href="s?wd=%BD%D3%BF%DA&pn=30&usm=1">[4]</a>&nbsp;<a href="s?wd=%BD%D3%BF%DA&pn=40&usm=1">[5]</a>&nbsp;<a href="s?wd=%BD%D3%BF%DA&pn=50&usm=1">[6]</a>&nbsp;<a href="s?wd=%BD%D3%BF%DA&pn=60&usm=1">[7]</a>&nbsp;<a href="s?wd=%BD%D3%BF%DA&pn=70&usm=1">[8]</a>&nbsp;<a href="s?wd=%BD%D3%BF%DA&pn=80&usm=1">[9]</a>&nbsp;<a href="s?wd=%BD%D3%BF%DA&pn=90&usm=1">[10]</a>&nbsp;<a href="s?wd=%BD%D3%BF%DA&pn=10&usm=1"><font size=3>下一页</font></a>&nbsp;</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background-color:#eff2fa;height:60px;width:100%;clear:both"><table width="96%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0"><tr><td style="font-size:14px;font-weight:bold;height:35px;*height:24px;width:70px;">相关搜索</td><td rowspan="2" valign="middle"><table border="0" cellpadding="0" cellspacing="0"><tr><td nowrap class="f14"><a href="s?wd=hdmi%BD%D3%BF%DA&rsp=0&oq=%BD%D3%BF%DA&f=1">hdmi接口</a></td><td nowrap class="s">&nbsp;</td><td nowrap class="f14"><a href="s?wd=usb%BD%D3%BF%DA&rsp=1&oq=%BD%D3%BF%DA&f=1">usb接口</a></td><td nowrap class="s">&nbsp;</td><td nowrap class="f14"><a href="s?wd=%D3%B2%C5%CC%BD%D3%BF%DA&rsp=2&oq=%BD%D3%BF%DA&f=1">硬盘接口</a></td><td nowrap class="s">&nbsp;</td><td nowrap class="f14"><a href="s?wd=vga%BD%D3%BF%DA&rsp=3&oq=%BD%D3%BF%DA&f=1">vga接口</a></td><td nowrap class="s">&nbsp;</td><td nowrap class="f14"><a href="s?wd=dvi%BD%D3%BF%DA&rsp=4&oq=%BD%D3%BF%DA&f=1">dvi接口</a></td></tr><tr><td nowrap class="f14"><a href="s?wd=%CF%D4%BF%A8%BD%D3%BF%DA&rsp=5&oq=%BD%D3%BF%DA&f=1">显卡接口</a></td><td nowrap class="s">&nbsp;</td><td nowrap class="f14"><a href="s?wd=%BD%E8%BF%DA&rsp=6&oq=%BD%D3%BF%DA&f=1">借口</a></td><td nowrap class="s">&nbsp;</td><td nowrap class="f14"><a href="s?wd=java%20%BD%D3%BF%DA&rsp=7&oq=%BD%D3%BF%DA&f=1">java 接口</a></td><td nowrap class="s">&nbsp;</td><td nowrap class="f14"><a href="s?wd=ide%BD%D3%BF%DA&rsp=8&oq=%BD%D3%BF%DA&f=1">ide接口</a></td><td nowrap class="s">&nbsp;</td><td nowrap class="f14"><a href="s?wd=%CE%A2%BB%FA%D4%AD%C0%ED%D3%EB%BD%D3%BF%DA%BC%BC%CA%F5&rsp=9&oq=%BD%D3%BF%DA&f=1">微机原理与接口技术</a></td></tr></table></td></tr><tr><td>&nbsp;</td></tr></table></div><br>
+
+<table cellpadding="0" cellspacing="0" style="margin-left:18px;height:60px;">
+<form name="f2" action="/s" >
+<tr valign="middle">
+<td nowrap>
+<input type="hidden" name="bs" value="接口">
+
+
+
+
+
+
+
+
+<input type="hidden" name="f" value="8">
+<input name="wd" size="46" class="i" value="接口" maxlength="100">
+<input type="submit" value="百度一下" class="btn"> &nbsp;&nbsp;&nbsp;
+
+</td>
+<td nowrap><a href="/s?wd=%BD%D3%BF%DA&tn=baidufir" onmousedown="return c({'almid':'fir','stl':'link'})">结果中找</a>&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/search/jiqiao.html" target="_blank">帮助</a></td>
+</tr>
+</form>
+</table>
+
+
+
+
+<div id="ft">&copy;2010 Baidu <span>此内容系百度根据您的指令自动搜索的结果，不代表百度赞成被搜索网站的内容或立场</span></div>
+</div></div></div>
+<img src="http://c.baidu.com/c.gif?t=0&q=%BD%D3%BF%DA&p=0&pn=1" style="display:none">
+</body>
+<script>for(ai in al_arr){al_arr[ai]()};c({'fm':'se','T':'1270780304','y':'FFEA5CFD'});if(navigator.cookieEnabled && !/sug?=0/.test(document.cookie)){document.write('<script src=http://www.baidu.com/js/bdsug.js?v=1.1.1.0><\/script>')};window.onunload=function(){};window.onload=function(){document.forms[0].reset();document.forms[document.forms.length-1].reset();};</script>
+</html><!--e31fc4f43f75fb8d-->

@@ -1,0 +1,282 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>接口_雅虎网页搜索</title>
+<link href="/css/17/yahoo" rel="stylesheet" type="text/css" media="screen"><script type="text/javascript">
+function setImgSize(B,D,A){var G=D;var E=A;var F=B.offsetHeight/B.offsetWidth;var C=B.offsetWidth/B.offsetHeight;if(B.offsetWidth>G){B.width=G;B.height=G*F}if(B.offsetHeight>E){B.height=E;B.width=E*C}}function smore(){if(document.getElementById("moremenu").style.display=="block"){document.getElementById("moremenu").style.display="none"}else{document.getElementById("moremenu").style.display="block"}return false}document.onclick=function(B){var B=B||window.event;var A=(B.target)?((B.target.nodeValue==3)?B.target.parentNode:B.target):B.srcElement;if(A.id!="catabtn6"){/*document.getElementById("moremenu").style.display="none"*/}};var Cookie=new Object();Cookie.setCookie=function(C,E,D){var F=C+"="+escape(E);if(D){if(D.expireDays){var B=new Date();var A=D.expireDays*24*3600*1000;B.setTime(B.getTime()+A);F+="; expires="+B.toGMTString()}else{F+="; expires="+D}if(D.path){F+="; path="+D.path}if(D.domain){F+="; domain"+D.domain}if(D.secure){F+="; true"}}document.cookie=F};Cookie.getCookie=function(C){var B=document.cookie.split("; ");var E=new Object();for(var D=0;D<B.length;D++){var A=B[D].split("=");if(A[0]==C){return unescape(A[1])}}return""};Cookie.deleteCookie=function(A){this.setCookie(A,"",{expireDays:-1})}
+var cV=Cookie.getCookie('log_aliyst');if(!cV){cV=Math.round(Math.random()*2147483647)+'.'+Math.round((new Date()).getTime()/1000)+'.1';Cookie.setCookie('log_aliyst',cV,{expireDays:365,path:'/',domain:''})}
+function c(o){if(document.images){var p=window.document.location.href,e=encodeURIComponent||escape,b=new Image(),sQ='',sV='';for(v in o){switch(v){case"title":sV=e(o[v].replace(/<[^<>]+>/g,""));break;case"url":sV=e(o[v]);break;default:sV=o[v]}sQ+=v+"="+sV+"&"}b.src="http://110.75.167.68/0.gif?q=%E6%8E%A5%E5%8F%A3&c="+cV+"&"+sQ+"path="+e(p)+"&t="+new Date().getTime()}return true}
+</script>
+</head><body>
+<div id="doc3" class="yui-t1">
+<!--{start:head -->
+<div id="hd">
+	<!--{{start:sch -->
+	<div class="lg"><a href="http://www.yahoo.cn" name="doc3_lg"><img src="http://cn.yimg.com/yho/logo/search-logo.gif" alt="中国雅虎"></a></div>
+	<div class="schbox">
+		<fieldset>
+		<legend>雅虎全能搜索</legend>
+		<form id="frm_u" name="f" action="/s" method="get">
+		<div class="ttabcon"><ul><li class=on>网页</li><li><a onmousedown="return c({'fm':'tab','tab':'news'})" name="doc3_ntb" href="/s?p=%E6%8E%A5%E5%8F%A3&v=news&pid=hp" >资讯</a></li><li><a onmousedown="return c({'fm':'tab','tab':'music'})" name="doc3_mtb" href="/s?p=%E6%8E%A5%E5%8F%A3&v=music&pid=hp" >音乐</a></li><li><a onmousedown="return c({'fm':'tab','tab':'image'})" name="doc3_itb" href="/s?p=%E6%8E%A5%E5%8F%A3&v=image&pid=hp" >图片</a></li><li><a onmousedown="return c({'fm':'tab','tab':'ks'})" name="doc3_ktb" href="/s?p=%E6%8E%A5%E5%8F%A3&v=ks&pid=hp" >知识堂</a></li></ul></div><div style="clear:both"></div>
+		<div class="tschbox"><input id="p" name="p" type="text" accesskey="s" tabindex="0" maxlength="100" value="接口"><input type="hidden" id="v" name="v" value="web">    <input type=hidden name=pid value="hp"><span class="srh_bn"><button type="submit" >搜索</button></span><div id="sugst"></div></div>
+		
+		</form>
+		</fieldset>
+	</div>
+	<div class="ulink"><a name="doc3_yhfl" href="http://cn.rd.yahoo.com/home/search/onesearch/pro/p2c/daohang/*http://www.koubei.com/">雅虎生活服务</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a name="doc3_hp" href="http://cn.yahoo.com">雅虎首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a name="doc3_yhp" href="http://cn.yahoo.com/allservice/index.html">雅虎大全</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a name="doc3_hlp" href="http://help.cn.yahoo.com/property_ponesearch.html">帮助</a></div>
+	<!--}}end:sch -->
+</div>
+<!--}end:head -->
+<!--{start:body -->
+<div id="bd">
+	<!--{{start:universal stat -->
+	<div class="ustat">
+		<h2 class="web">网页结果</h2>
+		
+		<div class="rltnum">找到相关网页约31,912,430条，用时0.03秒</div>
+	</div>
+	<!--}}end:universal stat -->
+	<div id="yui-main">
+	<div class="yui-b">
+    	<div id="ypri">
+        	<div id="ystcont">	<div id="ystcon"><style>
+.sc3 h3 { font-size:122%;}
+.sc3 {margin:0 0 1.5em 1.5em; zoom:1; width:500px; text-align:left;}
+.sc3 .a {color:#666;}
+.sc3 a b{text-decoration:underline;}
+.sc3 .txtcon { float:left; margin:0; width:500px;}
+.sc3 .txtcon p { font-size:100%; margin-top:.2em; line-height:1.3;}
+.sc3 .txtcon em { display:block;}
+.sc3:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+</style>
+<div class="sc3" id="wiki">
+    <h3><a href="http://203.209.253.250/snap/wikicache.php?title=%E6%8E%A5%E5%8F%A3&sig=708928abc1f87699128d3b4923afc7c1" target="_blank" name="wiki_t"><b>接口</b> - 维基百科</a></h3>
+    <div class="txtcon">
+	<p><b>接口</b>可以指：<b>接口</b> - 是计算机硬件之间或硬件与操作系统的衔接部分。<b>接口</b> - 是计算机软件模块之间的衔接部分。 这是一个消歧义页，罗列了有相同或相近的标题，但内容不同的条目。 如果您是通过某条目的内部链接而转到本页，希望您能协助修正该处的...&nbsp;&nbsp;<a href="http://203.209.253.250/snap/wikicache.php?title=%E6%8E%A5%E5%8F%A3&sig=708928abc1f87699128d3b4923afc7c1" target="_blank" name="wiki_m">更多信息</a>&nbsp; </p>
+    </div>
+</div>
+<!--{{start:SC3 --><!--{{start:yst web -->
+<div class="yst-web">
+<ul>
+<li>
+<h3><a onmousedown="return c({'fm':'result','rank':0,'title':this.innerHTML,'url':this.href})" href="http://bak1.beareyes.com.cn/2/lib/200512/02/20051202023_2.htm" target="_blank" name="doc3_rt">知识百宝囊——认清你身边的PC<b>接口</b>::小熊在线-网络频道</a></h3>
+<p>知识百宝囊——认清你身边的PC<b>接口</b> 〖翻译〗小熊在线—北极熊 北京 2005年12月01日18:50 发表评论 查看评论...PS/2 键盘鼠标<b>接口</b> VGA显示器视频<b>接口</b> DVI数字视频<b>接口</b> RJ45 (LAN /ISDN) 网线<b>接口</b>...</p>
+<em>bak1.beareyes.com.cn/2/lib/200512/02/20...&nbsp;&nbsp;&nbsp;<span class="cdate">2005-12-02</span>&nbsp;&nbsp;&nbsp;<a href="http://203.209.253.250/snap/webcache.php?ei=UTF-8&icp=1&u=bak1.beareyes.com.cn/2/lib/200512/02/20051202023_2.htm&w=%E6%8E%A5%E5%8F%A3&d=ULJqDkLUSq67&sig=1628c246ab864bfe55b2fedf9db26e22&cq=%E6%8E%A5%E5%8F%A3" target=_blank name="doc3_rs">快照</a></em>
+</li><li>
+<h3><a onmousedown="return c({'fm':'result','rank':1,'title':this.innerHTML,'url':this.href})" href="http://search.china.alibaba.com/selloffer/k-%BD%D3%BF%DA_n-y.html" target="_blank" name="doc3_rt"><b>接口</b>批发商-<b>接口</b>制造商-阿里巴巴</a></h3>
+<p>(操盘必备)高速股票数据<b>接口</b>--分析家 操盘手通用 03/25...供应聚酯网污泥脱水网钢卡<b>接口</b>滤网 03/19 品牌:...供应齐纳安全栅<b>接口</b> 03/31 型号:KZX05 产品用途:齐纳安全栅与二次表之间的信号转换...</p>
+<em>search.china.alibaba.com/selloffer/k-接口...&nbsp;&nbsp;&nbsp;<span class="cdate">2010-04-01</span>&nbsp;&nbsp;&nbsp;<a href="http://203.209.253.250/snap/webcache.php?ei=UTF-8&icp=1&u=search.china.alibaba.com/offer/%25E6%258E%25A5%25E5%258F%25A3.html&w=%E6%8E%A5%E5%8F%A3&d=RWdDCkLUUkgF&sig=1628c246ab864bfe55b2fedf9db26e22&cq=%E6%8E%A5%E5%8F%A3" target=_blank name="doc3_rs">快照</a></em>
+</li><li>
+<h3><a onmousedown="return c({'fm':'result','rank':2,'title':this.innerHTML,'url':this.href})" href="http://focus.ti.com.cn/cn/analog/docs/interfacehome.tsp?familyId=361&contentType=4&DCMP=top_level&HQS=v%83+OT+interface" target="_blank" name="doc3_rt"><b>接口</b> IC 和连接解决方案 - TI.com</a></h3>
+<p>德州仪器 (TI) 提供从 CAN、LVDS、RS-485、RS-232 行业标准到 1394 (Firewire)、USB、PCI Cardbus 等等的<b>接口</b> IC 解决方案。...我们提供的<b>接口</b>选择工具将帮助您了解哪些<b>接口</b> IC...</p>
+<em>focus.ti.com.cn/cn/analog/docs/...&amp;...&nbsp;&nbsp;&nbsp;<span class="cdate">2010-03-27</span>&nbsp;&nbsp;&nbsp;<a href="http://203.209.253.250/snap/webcache.php?ei=UTF-8&icp=1&u=www.ti.com.cn/interface&w=%E6%8E%A5%E5%8F%A3&d=JAeOPELUUjNq&sig=1628c246ab864bfe55b2fedf9db26e22&cq=%E6%8E%A5%E5%8F%A3" target=_blank name="doc3_rs">快照</a></em>
+</li><li>
+<h3><a onmousedown="return c({'fm':'result','rank':3,'title':this.innerHTML,'url':this.href})" href="http://www.vlan9.com/interface/a/" target="_blank" name="doc3_rt"><b>接口</b>_Cisco与华为技术网(Vlan9.com<wbr>)</a></h3>
+<p>2009-08-16NE40E能否在一个子<b>接口</b>终结多个外层v<wbr>lan 2009-07-29耳机<b>接口</b>标准统一各厂商几家欢喜几家愁...2009-05-01WAN变LAN,再多一个有线<b>接口</b> 2009-04-11F5 管理<b>接口</b>路由与TMM路由之间关系...</p>
+<em>www.vlan9.com/interface/a&nbsp;&nbsp;&nbsp;<span class="cdate">2009-08-17</span>&nbsp;&nbsp;&nbsp;<a href="http://203.209.253.250/snap/webcache.php?ei=UTF-8&icp=1&u=www.vlan9.com/interface/a/&w=%E6%8E%A5%E5%8F%A3&d=R2bHtELUTXcE&sig=1628c246ab864bfe55b2fedf9db26e22&cq=%E6%8E%A5%E5%8F%A3" target=_blank name="doc3_rs">快照</a></em>
+</li><li>
+<h3><a onmousedown="return c({'fm':'result','rank':4,'title':this.innerHTML,'url':this.href})" href="http://www.chinawe.net/hot/%BD%D3%BF%DA" target="_blank" name="doc3_rt"><b>接口</b>图片_资料_教程_下载 - 中国弱电门户网</a></h3>
+<p>X3650机架式服务器评测-IBM System x3650(79794AC) 创新监听音箱E-MU PM5拆解 系统集成行业前景看好 专利部署态势如何 实用新功能 多款带USB<b>接口</b>无线路由推荐...</p>
+<em>www.chinawe.net/hot/接口&nbsp;&nbsp;&nbsp;<span class="cdate">5 天前</span>&nbsp;&nbsp;&nbsp;<a href="http://203.209.253.250/snap/webcache.php?ei=UTF-8&icp=1&u=www.chinawe.net/hot/%25BD%25D3%25BF%25DA&w=%E6%8E%A5%E5%8F%A3&d=YdrpBELUUlh3&sig=1628c246ab864bfe55b2fedf9db26e22&cq=%E6%8E%A5%E5%8F%A3" target=_blank name="doc3_rs">快照</a></em>
+</li><li>
+<h3><a onmousedown="return c({'fm':'result','rank':5,'title':this.innerHTML,'url':this.href})" href="http://publish.it168.com/cword/2816.shtml" target="_blank" name="doc3_rt">硬盘<b>接口</b>类型术语解释|主板名词解释|什么是硬盘<b>接口</b>类型<wbr>- IT168</a></h3>
+<p>习惯用IDE来称呼最早出现IDE类型硬盘ATA-1<wbr>,这种类型的<b>接口</b>随着<b>接口</b>技术的...发展已经被淘汰了,而其后发展分支出更多类型的硬盘<b>接口</b><wbr>,比如ATA、Ultra ATA、DMA、Ultra DMA等<b>接口</b>都属于IDE硬盘。...</p>
+<em>publish.it168.com/cword/2816.shtml&nbsp;&nbsp;&nbsp;<span class="cdate">2 天前</span>&nbsp;&nbsp;&nbsp;<a href="http://203.209.253.250/snap/webcache.php?ei=UTF-8&icp=1&u=publish.it168.com/cword/2816.shtml&w=%E6%8E%A5%E5%8F%A3&d=ZA8HI0LUUmce&sig=1628c246ab864bfe55b2fedf9db26e22&cq=%E6%8E%A5%E5%8F%A3" target=_blank name="doc3_rs">快照</a></em>
+</li><li>
+<h3><a onmousedown="return c({'fm':'result','rank':6,'title':this.innerHTML,'url':this.href})" href="http://publish.it168.com/cWord/3598.shtml" target="_blank" name="doc3_rt">主要输出<b>接口</b>术语解释|电源名词解释|什么是主要输出<b>接口</b><wbr>- IT168</a></h3>
+<p>电源的主要输出<b>接口</b>是指电源给主板、显卡、硬盘、光驱、软驱等设<wbr>备提供了哪些供电<b>接口</b>。...大部分2.0电源主供电<b>接口</b>都采用"分离式"设计或附送一条24<wbr>Pin20Pin的...4针、6针和8针的辅助供电<b>接口</b>...</p>
+<em>publish.it168.com/cWord/3598.shtml&nbsp;&nbsp;&nbsp;<span class="cdate">2008-11-07</span>&nbsp;&nbsp;&nbsp;<a href="http://203.209.253.250/snap/webcache.php?ei=UTF-8&icp=1&u=publish.it168.com/cWord/3598.shtml&w=%E6%8E%A5%E5%8F%A3&d=aYAcw0LUSr4z&sig=1628c246ab864bfe55b2fedf9db26e22&cq=%E6%8E%A5%E5%8F%A3" target=_blank name="doc3_rs">快照</a></em>
+</li><li>
+<h3><a onmousedown="return c({'fm':'result','rank':7,'title':this.innerHTML,'url':this.href})" href="http://www.hudong.com/wiki/%E6%8E%A5%E5%8F%A3" target="_blank" name="doc3_rt"><b>接口</b>_互动百科</a></h3>
+<p><b>接口</b> 7分 分类:技术 &gt; 科技产品 收藏分享到顶 编辑词条 开心001 人人网 新浪微博 目录 1 <b>接口</b>类型...<b>接口</b>指的是MD产品具有哪些输入输出的<b>接口</b>。 首先作为MD产品,耳机的输出<b>接口</b>自然是必须有的。...</p>
+<em>www.hudong.com/wiki/接口&nbsp;&nbsp;&nbsp;<span class="cdate">6 天前</span>&nbsp;&nbsp;&nbsp;<a href="http://203.209.253.250/snap/webcache.php?ei=UTF-8&icp=1&u=www.hudong.com/wiki/%25E6%258E%25A5%25E5%258F%25A3&w=%E6%8E%A5%E5%8F%A3&d=JoDhiELUUk9T&sig=1628c246ab864bfe55b2fedf9db26e22&cq=%E6%8E%A5%E5%8F%A3" target=_blank name="doc3_rs">快照</a></em>
+</li><li id="zs">
+<h3><a href="http://ks.cn.yahoo.com/question/1407081400584.html" target="_blank">网讯网卡有哪些<b>接口</b>的? - 雅虎知识堂</a></h3>
+<div class="zstr">
+	<div class="qsta"><img src="http://cn.yimg.com/i/onesearch/kt_n002.gif" width="15" height="25"/></div>
+		<div class="qdesc"><p>网卡最终是要与网络进行连接,所以也就必须有一个<b>接口</b>使网线通过<wbr>它与其它计算机网络设备连接起来。...( 1)ISA总线网卡 (2)PCI总线网卡 (3)PCI-X总线网卡 (4)PCMCIA总线网卡 (5)USB总线<b>接口</b>网卡...</p>
+		<em><span class="cdate">状态:已解决&nbsp;&nbsp;&nbsp;好评:0%&nbsp;&nbsp;&nbsp;回答数:3&nbsp;&nbsp;&nbsp;分类:</span><a href="http://ks.cn.yahoo.com/dir/97316687.html" target="_blank">计算机网络</a> &gt; <a href="http://ks.cn.yahoo.com/dir/97316821.html" target="_blank">硬件</a></em><br />
+		<em>ks.cn.yahoo.com/question/1407081400584....&nbsp;&nbsp;&nbsp;<span class="cdate">2009-09-24</span></em>
+	</div>
+</div>
+</li><li>
+<h3><a onmousedown="return c({'fm':'result','rank':9,'title':this.innerHTML,'url':this.href})" href="http://bbs.pcpop.com/061011/754813.html" target="_blank" name="doc3_rt">【MP4_<b>接口</b> 】MP4 论坛</a></h3>
+<p><b>接口</b>的速度、方便程度自然也会影响到音乐或者视频文件的上传或下<wbr>载速率,由于视频文件可能比较大,使用快速的<b>接口</b>比较便于使用。...MP4播放器常见<b>接口</b>有和。 其中USB<b>接口</b>分为USB1.1和USB2.0两种<wbr>,...</p>
+<em>bbs.pcpop.com/061011/754813.html&nbsp;&nbsp;&nbsp;<span class="cdate">2010-04-03</span>&nbsp;&nbsp;&nbsp;<a href="http://203.209.253.250/snap/webcache.php?ei=UTF-8&icp=1&u=bbs.pcpop.com/061011/754813.html&w=%E6%8E%A5%E5%8F%A3&d=Zvt97kLUUliQ&sig=1628c246ab864bfe55b2fedf9db26e22&cq=%E6%8E%A5%E5%8F%A3" target=_blank name="doc3_rs">快照</a></em>
+</li></ul>
+</div>
+<!--}}end:yst web -->
+<!--{{start:page -->
+<div id="page">
+<b>1</b><a onmousedown="return c({'fm':'page','num':2,'url':this.href})" href="/s?p=%E6%8E%A5%E5%8F%A3&pid=hp&v=web&b=10" name="doc3_page">2</a><a onmousedown="return c({'fm':'page','num':3,'url':this.href})" href="/s?p=%E6%8E%A5%E5%8F%A3&pid=hp&v=web&b=20" name="doc3_page">3</a><a onmousedown="return c({'fm':'page','num':4,'url':this.href})" href="/s?p=%E6%8E%A5%E5%8F%A3&pid=hp&v=web&b=30" name="doc3_page">4</a><a onmousedown="return c({'fm':'page','num':5,'url':this.href})" href="/s?p=%E6%8E%A5%E5%8F%A3&pid=hp&v=web&b=40" name="doc3_page">5</a><a onmousedown="return c({'fm':'page','num':6,'url':this.href})" href="/s?p=%E6%8E%A5%E5%8F%A3&pid=hp&v=web&b=50" name="doc3_page">6</a><a onmousedown="return c({'fm':'page','num':7,'url':this.href})" href="/s?p=%E6%8E%A5%E5%8F%A3&pid=hp&v=web&b=60" name="doc3_page">7</a><a onmousedown="return c({'fm':'page','num':8,'url':this.href})" href="/s?p=%E6%8E%A5%E5%8F%A3&pid=hp&v=web&b=70" name="doc3_page">8</a><a onmousedown="return c({'fm':'page','num':9,'url':this.href})" href="/s?p=%E6%8E%A5%E5%8F%A3&pid=hp&v=web&b=80" name="doc3_page">9</a><a onmousedown="return c({'fm':'page','num':10,'url':this.href})" href="/s?p=%E6%8E%A5%E5%8F%A3&pid=hp&v=web&b=90" name="doc3_page">10</a><a href="/s?p=%E6%8E%A5%E5%8F%A3&pid=hp&v=web&b=10" class="nxt" name="doc3_page">下一页&gt;</a></div>
+<!--}}end:page -->
+<!--{{start:bottom sch -->
+<script>
+function fres(form){
+	var p=form.fp.value;
+	var lp=form.lp.value;
+	if(p==lp||p==''){
+		alert('请重新输入查询内容');
+		form.fp.focus();
+		return false;
+	}
+	var np=lp+' '+p;
+	if(np.length>100){
+		alert("您输入的关键词过长，请重新输入");
+		form.fp.focus();
+		return false;
+	}
+	if (form.source != null)
+		form.removeChild(form.source);
+	form.fp.value=np;
+	form.submit();
+	return true;
+}
+function goksTop(){
+	location = 'http://ks.cn.yahoo.com/question/?link=ask_write&title=' + encodeURI(document.getElementById('p').value);
+	return false;
+}
+function goksBtm(){
+	location = 'http://ks.cn.yahoo.com/question/?link=ask_write&title=' + encodeURI(document.getElementById('fp').value);
+	return false;
+}
+</script>
+<div class="bsch">
+<form name="bottom" id="frm_d" action="/s" method="get"><input id="fp" name="p" type="text" accesskey="s" tabindex="0" maxlength="100" value="接口"><input type="hidden" name="lp" value="接口"><input type="hidden" name="v" value="web">    <input type=hidden name=pid value="hp"><span class="srh_bn"><button type="submit" >搜索</button></span><span class="srh_bn"><button onclick="return fres(document.bottom)">在结果中找</button></span><div class="clr"></div>
+<div class="clr"></div>
+<div style="padding-top:20px;padding-bottom:20px;"><a href="http://surveylink.yahoo.com/wix/p5469569.aspx?source=WU" target="_blank" name="doc3_fb">给雅虎提建议</a>
+</div>
+</form>
+</div>
+</div>
+<!--}}end:bottom sch -->
+</div>    <div id="ybar">
+	<div class="p4plist"><div class="p4pshort2">
+<ul><li><a href="http://name.cnnic.cn/cn.dll?name=%BD%D3%BF%DA&pid=L_yahsr" target="_blank" title="通用网址直达 接口" name="doc3_cnnic">通用网址直达<b>接口</b></a></li><li><a href="http://bendi.koubei.com/search/searchstore.html?searchFlag=1&option.key=%BD%D3%BF%DA&source=20S" target="_blank" title="在口碑网查找 接口大全" name="doc3_koubei">在口碑网查找<b>接口</b>大全</a></li><li><a href="http://adtaobao.allyes.cn/main/adfclick?db=adtaobao&bid=12,12,5&cid=22571,8,1&sid=29&show=ignore&url=http://search1.taobao.com/browse/search_auction.htm?commend=all&allyesPara=22571&q=%BD%D3%BF%DA&pid=hp" target="_blank" title="查看更多接口来淘宝网" name="doc3_taobao">查看更多<b>接口</b>来淘宝网</a></li><li><a href="http://search.china.alibaba.com/search/cosite_search.htm?cosite=yahootp&location=yahoocn1229&keywords=%BD%D3%BF%DA&pid=hp" target="_blank" title="点此查看接口在阿里巴巴" name="doc3_ali">点此查看<b>接口</b>在阿里巴巴</a></li><li><a href="http://cn.rd.yahoo.com/home/search/onesearch/pro/p2c/tongpei/*http://bendi.koubei.com/search/yituiguang.html?option.key=%BD%D3%BF%DA&pageNo=1" target="_blank" title="在雅虎生活服务中找接口" name="doc3_fenlei">在雅虎生活服务中找<b>接口</b></a></li></ul>
+</div></div></div></div>
+</div>
+<div style="clear:both;height:0px;overflow:hidden;"></div>
+</div>
+<div id="ysec" class="yui-b"><div id="hotsch" class="filter">
+	<h3>热门搜索：</h3>
+    <ul>    <li><a href="/s?p=%E8%92%8B%E9%9B%AF%E4%B8%BD%E6%96%B0%E7%89%87&v=web&source=KO&pid=hp" name="hotsch_l">蒋雯丽新片</a></li>    <li><a href="/s?p=%E5%A7%9A%E6%99%A8%E7%89%88%E7%A9%BA%E5%A7%90&v=web&source=KO&pid=hp" name="hotsch_l">姚晨版空姐</a></li>    <li><a href="/s?p=%E4%BC%8A%E8%83%BD%E9%9D%99+%E5%93%88%E6%9E%97&v=web&source=KO&pid=hp" name="hotsch_l">伊能静 哈林</a></li>    <li><a href="/s?p=%E6%9C%AA%E6%9D%A5%E8%AD%A6%E5%AF%9F&v=web&source=KO&pid=hp" name="hotsch_l">未来警察</a></li>    <li><a href="/s?p=%E9%83%AD%E5%BE%B7%E7%BA%B2+%E6%9B%B9%E6%93%8D&v=web&source=KO&pid=hp" name="hotsch_l">郭德纲 曹操</a></li>    <li><a href="/s?p=%E5%AE%8B%E6%85%A7%E4%B9%94+%E9%99%88%E5%87%AF%E6%AD%8C&v=web&source=KO&pid=hp" name="hotsch_l">宋慧乔 陈凯歌</a></li>    <li><a href="/s?p=%E7%8E%8B%E8%8F%B2+%E4%BC%A0%E5%A5%87&v=web&source=KO&pid=hp" name="hotsch_l">王菲 传奇</a></li>    <li><a href="/s?p=%E8%B5%B5%E8%96%87+%E6%80%80%E5%AD%95&v=web&source=KO&pid=hp" name="hotsch_l">赵薇 怀孕</a></li>    <li><a href="/s?p=%E5%B0%B1%E6%83%B3%E8%B5%96%E7%9D%80%E4%BD%A0&v=web&source=KO&pid=hp" name="hotsch_l">就想赖着你</a></li>    <li><a href="/s?p=%E9%AB%98%E5%9C%86%E5%9C%86&v=web&source=KO&pid=hp" name="hotsch_l">高圆圆</a></li>    </ul>
+ </div><script type="text/javascript" src="/js/17/ycnlib.js,connection.js,yui_autocomplete.js"></script>
+<script>
+String.prototype.trim = function(){return this.replace(/(^\s*)|(\s*$)/g, "");}
+function replaceAll(text,replacement,target){if(text==null||text=="")return text;if(replacement==null||replacement=="")return text;if(target==null)target="";var returnString="";var index=text.indexOf(replacement);while(index!=-1){if(index!=0)returnString+=text.substring(0,index)+target;text=text.substring(index+replacement.length);index=text.indexOf(replacement)};if(text!="")returnString+=text;return returnString};
+
+/*common*/
+var YUE = YAHOO.util.Event;
+var YUC = YAHOO.util.Connect;
+var YUD = YAHOO.util.Dom;
+YAHOO.namespace("one");
+/*common*/
+
+//sugest
+YAHOO.one.ACFlatData = function(){
+    var oACDS;
+    var oAutoComp0;
+    return {
+        init: function() {
+			var myInput = document.getElementById('p');
+            var myContainer = document.getElementById('sugst');
+            oACDS = new YAHOO.widget.DS_XHR("/homepage/suggestion.inc.php", ["Results","query"]);
+            oACDS.scriptQueryAppend = "source=openresty&v=web";
+            oACDS.responseStripAfter = "<!-"
+            oACDS.queryMatchSubset = false;
+			oACDS.queryMatchCase = false;
+			oACDS.queryMatchContains = false;
+			oACDS.maxCacheEntries = 0;
+			function shorcut(){
+			    if (myInput.value.trim().length < 1) {return false;}
+			    document.location="/s?p=" + encodeURIComponent(myInput.value.trim().replace(/%2F/g, '/'))+"&source=2AK&v="+document.getElementById("v").value+"&pid=hp";
+				(new Image).src='http://count.yisou.yahoo.com/search/yisou?s=2022429805&t='+Math.random();
+				return false;
+			};
+			oAutoComp0 = new YAHOO.widget.AutoComplete(myInput,myContainer,oACDS,{typeAhead:true,queryDelay:0,animVert:false,animHoriz:false,autoHighlight:false,maxResultsDisplayed:10});
+			oAutoComp0._sLastTextboxValue = myInput.value;
+			oAutoComp0.itemSelectEvent.subscribe(shorcut);
+			if((navigator.userAgent.indexOf('MSIE') >= 0) && (navigator.userAgent.indexOf('Opera') < 0)){oAutoComp0.useIFrame=true};
+            oAutoComp0.formatResult = function(oResultItem, sQuery) {
+                var sKey = oResultItem[1].query;
+                var nUrl = oResultItem[1].memo;
+                var scword= oResultItem[1].des;
+				if(nUrl!="-1"&&nUrl!=""){
+					var boldq = "<strong>"+sQuery+"</strong>";
+					var sKeyQuery = replaceAll(nUrl,sQuery,boldq);
+					var aMarkup = ["<div class='scquery'>",sKey,"</div><div class='sugsurl'>",sKeyQuery,"</div>"];
+				}else{
+					var aMarkup = ["<div class='sugquery'>",sKey,"</div>"];
+				};
+				if(scword!="-1"){
+					aMarkup.push(["<div class='scword'>",scword,"</div>"].join(""));
+				};
+                return (aMarkup.join(""));
+            };
+            //oAutoComp0.setFooter('<div class="sugft"><a href="http://hangzhou.koubei.com/?source=217" target="_blank">雅虎生活，口碑相传。体验雅虎生活服务</a></div>');
+        },
+        validateForm: function() {
+            return false;
+        }
+    };
+}();
+//sugest
+
+YUE.onAvailable("p",YAHOO.one.ACFlatData.init);
+</script></div>
+<!--}end:body -->
+</div>
+<!--{start:foot -->
+<div id="ft">
+<div class="bad"></div>
+<!--{{start:copy -->
+<div class="cp1">
+    Copyright © 2010 Yahoo.com.cn&nbsp;<a href="http://misc.yahoo.com.cn/copyright.html" title="" target="_blank">使用须知</a>&nbsp;<a href="http://cn.yahoo.com/copyright2007/index.html" title="" target="_blank">著作权声明</a>&nbsp;雅虎搜索结果均来自相关来源网站，根据有关法律法规和政策，部分搜索结果可能未予显示。根据《信息网络传播权保护条例》未予显示的结果，请点击<a href="http://search.help.cn.yahoo.com/h3_9.html" title="" target="_blank">这里</a>查看。
+</div>
+<!--}}end:copy -->
+</div>
+<!--}end:foot -->
+
+<script>
+YAHOO.namespace('ysch');
+var YUD = YAHOO.util.Dom;
+var YUE = YAHOO.util.Event;
+var lg = function(){if(document.body.clientWidth<985){YUD.get('doc3').style.width='983px';}else{YUD.get('doc3').style.width='auto';}};
+YAHOO.ysch.init = function()
+{
+    if(/*@cc_on !@*/false){
+		var ifrm = document.createElement('iframe');
+		ifrm.style.width = '100%';
+		ifrm.style.position = 'absolute';
+		ifrm.style.top = '-100em';
+		ifrm.style.left = '-100em';
+		ifrm.style.visibility = 'hidden';
+		document.body.appendChild(ifrm);
+		ifrm.onresize = function(e){
+			lg();
+		}
+	}else{
+		window.onresize = function(e){
+			lg();
+		}
+	}
+};
+YUE.onDOMReady(YAHOO.ysch.init);
+</script>
+<!-- {start:datadp -->
+<div id="track"></div>
+<img src="http://count.yisou.yahoo.com/search/yisou?s=2022408472&t=1855538856" width="1" height="1"/>
+<script src="http://klcecart.cn.yahoo.com/datadp/page/2022408472.js"></script>
+<!-- {start:noscript -->
+<noscript>
+<img src="http://klcecart.cn.yahoo.com/v?g=&p=2022408472&e=&r=&f=&n=js&t=1855538856" width="1" height="1"/>
+</noscript>
+<!-- }end:noscript -->
+<!-- }end:datadp -->
+<!-- ws1118.search.cn2.yahoo.com compressed/chunked Fri Apr 9 14:21:48 CST 2010 -->
+<script>
+document.write('<img src="http://110.75.167.68/0.gif?q=%E6%8E%A5%E5%8F%A3&c='+cV+'&fm=allurl&page=1&url=http%3A%2F%2Fbak1.beareyes.com.cn%2F2%2Flib%2F200512%2F02%2F20051202023_2.htm|http%3A%2F%2Fsearch.china.alibaba.com%2Fselloffer%2Fk-%25BD%25D3%25BF%25DA_n-y.html|http%3A%2F%2Ffocus.ti.com.cn%2Fcn%2Fanalog%2Fdocs%2Finterfacehome.tsp%3FfamilyId%3D361%26contentType%3D4%26DCMP%3Dtop_level%26HQS%3Dv%2583%2BOT%2Binterface|http%3A%2F%2Fwww.vlan9.com%2Finterface%2Fa%2F|http%3A%2F%2Fwww.chinawe.net%2Fhot%2F%25BD%25D3%25BF%25DA|http%3A%2F%2Fpublish.it168.com%2Fcword%2F2816.shtml|http%3A%2F%2Fpublish.it168.com%2FcWord%2F3598.shtml|http%3A%2F%2Fwww.hudong.com%2Fwiki%2F%25E6%258E%25A5%25E5%258F%25A3|http%3A%2F%2Fbbs.pcpop.com%2F061011%2F754813.html" style="display:none">');
+</script>
+</body>
+</html>

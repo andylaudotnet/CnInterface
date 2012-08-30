@@ -1,0 +1,1 @@
+document.write("<form action=http://www.feeyo.com/airport_code.asp method=post ><input type=text name=search size=12> <input name=Submit type=submit value=查询全球机场代码 style='border:1px solid #999; padding-top:3px;background:#eee'></form>")

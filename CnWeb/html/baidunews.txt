@@ -1,0 +1,1493 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!--STATUS OK-->
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<title>百度新闻搜索——全球最大的中文新闻平台      </title>
+<meta name="description" content="百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展。" >
+<!--ecombegin--><!--ecomend-->
+<script src="js/news.js?v=1.5"></script>
+<script src="resource/js/usertrack.js?v=20100409"></script>
+<script type="text/javascript" src="resource/js/contentplayer.js"></script>
+<script type="text/javascript" src="resource/js/scrollview.js"></script>
+<script src="resource/js/newsb.js?v=1.4"></script>
+<script type="text/javascript" src="resource/js/hx_sug.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<link href="resource/css/index.css" rel="stylesheet" type="text/css"></link>
+<!--ecombegin-->
+<style type="text/css">
+#local_news, #house_news{display:none;}
+.hide{display:none;}
+</style>
+<!--ecomend-->
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+    ClickMonitor.init('TOP', 'cy=0');
+    var extraInfo = {m:11, c:'top', cy:'0'};
+</script>
+<script type="text/javascript" src="resource/js/usermonitor.js?v=1.1"></script>
+<div id="usrbar"></div><!--ecombegin--><script>enterState("","");</script><!--ecomend-->
+<div id="wrapper">
+	<div id="header">
+	<table width="100%" border=0 cellpadding="0" cellspacing="0" class="htb">
+		<form action=/ns name=fbaidu>
+		<tr><td width=149  valign="top">
+			<div style="width:137px;height:46px"><a href=/view.html><img src="http://img.baidu.com/img/logo-news.gif" width=137 height=46 border=0 alt=百度新闻></a></div>
+			<div align="center" style="margin-top:3px"><!--datebegin--><!--dateend--></div>
+		</td><td >&nbsp;&nbsp;&nbsp;</td>
+		<td width="100%"  valign="top">
+			<div class="tab"><span class="b">新闻</span>&nbsp;&nbsp;&nbsp;<a  href="http://www.baidu.com/" onclick="s(this);">网页</a>&nbsp;&nbsp;&nbsp;<a  href="http://tieba.baidu.com/" onclick="s(this);">贴吧</a>&nbsp;&nbsp;&nbsp;<a  href="http://zhidao.baidu.com/" onclick="s(this);">知道</a>&nbsp;&nbsp;&nbsp;<a href="http://mp3.baidu.com/" onclick="s(this);">MP3</a>&nbsp;&nbsp;&nbsp;<a href="http://image.baidu.com/" onclick="s(this);">图片</a>&nbsp;&nbsp;&nbsp;<a href="http://video.baidu.com/" onclick="s(this);">视频</a>
+			</div>
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr><td nowrap>
+					<input class=formfont id="ww" name=word size=42 tabindex=1>
+					<input type=submit value=百度一下>&nbsp;&nbsp;&nbsp;</td>
+				<td valign="middle" nowrap><a href="http://www.baidu.com/search/news_help.html">帮助</a>&nbsp;|&nbsp;<a href="/advanced_news.html">高级搜索</a>&nbsp;|&nbsp;<A href="/pianhao.html">偏好设置</a></td>
+				</tr>
+			</table>
+            <!--ecombegin--><label style="float:right;width:300px;margin-top:2px;margin-right:6px;text-align:right;font-size:12px;color:#666;">以下新闻由机器每5分钟自动选取更新</label><!--ecomend-->
+			<label for="news"><input type="radio" name="tn" value="news" checked id="news">新闻全文</label>
+			<label for="newstitle" style="padding:0px;"><input type="radio" name="tn" value="newstitle" id="newstitle">新闻标题</label>
+			<input type="hidden" name="from" value="news">
+			<input type="hidden" name="cl" value="2">
+			<input type="hidden" name="rn" value="20">
+			<input type="hidden" name="ct" value="1">
+		</td></tr>
+		</form><script>read_cookie();</script>
+	</table>
+	</div>
+	<div id="nav"><!--ecombegin-->
+        <ul class="nav_aside">
+			<li><a href="/newsgx.html">个性化新闻</a></li>
+			<li><a href="http://www.baidu.com/search/news_more.html" style="*line-height:29px;">更多&gt;&gt;</a></li>
+        </ul><!--ecomend-->
+        <ul class="nav_main">
+            <li style="background-image:none;"><div><a href="/view.html">新闻首页</a></div></li>
+            <li><a href="/n?cmd=1&class=civilnews&pn=1&from=tab">国内</a></li>
+            <li><a href="/n?cmd=1&class=internews&pn=1&from=tab">国际</a></li>
+            <li><a href="/n?cmd=1&class=finannews&pn=1&from=tab">财经</a></li>
+            <li><a href="/n?cmd=1&class=internet&pn=1&from=tab">互联网</a></li>
+            <li><a href="/n?cmd=1&class=housenews&pn=1&from=tab">房产</a></li>
+            <li><a href="/n?cmd=1&class=autonews&pn=1&from=tab">汽车</a></li>
+            <li><a href="/n?cmd=1&class=sportnews&pn=1&from=tab">体育</a></li>
+            <li><a href="/n?cmd=1&class=enternews&pn=1&from=tab">娱乐</a></li>
+            <li><a href="/n?cmd=1&class=gamenews&pn=1&from=tab">游戏</a></li>
+            <li><a href="/n?cmd=1&class=edunews&pn=1&from=tab">教育</a></li>
+            <li><a href="/n?cmd=1&class=healthnews&pn=1&from=tab">健康</a></li>
+            <li><a href="/n?cmd=1&class=technnews&pn=1&from=tab">科技</a></li>
+            <li><a href="/n?cmd=1&class=socianews&pn=1&from=tab">社会</a></li><!--ecombegin-->
+			<li class="new"><a href="/n?cmd=10&class=vid2top&pn=1&from=tab&sub=0">视频</a></li>
+			<li><a href="/n?cmd=9&class=pic2top&pn=1&from=tab&sub=0">图片</a></li>
+            <li><a href="/n?cmd=4&class=rolling&pn=1&from=tab&sub=0">最新</a></li><!--ecomend-->
+        </ul>
+	</div>
+	</div>
+	<div id="container"><div style="min-height:10px; _height:10px;"><a href="" target="_blank" style="font-size:14px; line-height:24px; margin:0 6px;"></a></div>
+	<div class="area" style="margin-top:0;">
+		<div class="content" style="height: 377px;" >
+			<dl  style="height: 375px;">
+				<dt class="tit tit2" style="overflow:hidden;"><!--ecombegin--><div class="ecom"></div><!--ecomend--><b>焦点新闻</b></dt>
+				<dd style="padding-top:3px;">
+					<div class="leftCont leftContMain"><ul class="hotnews">
+    <li class="top">
+        <a href="http://news.baidu.com/z/r/qinghaidizhen/index.html" target="_blank" class="a3" mon="ct=1&a=1&c=top"><font color="#BB2A31"><font color=#000000>玉树地震遇难人数升至617人 9110人受伤</font></font></a></li>
+    <li><a mon="ct=1&a=2&c=top" target="_blank" href="http://www.chinanews.com.cn/gn/news/2010/04-15/2227908.shtml">[余震已达750次]</a>　<a mon="ct=1&a=2&c=top" target="_blank" href="http://society.people.com.cn/GB/41158/11370716.html">[10万灾民需安置]</a>　<a mon="ct=1&a=2&c=top" target="_blank" href="http://news.xinmin.cn/domestic/gnkb/2010/04/15/4450766.html">[各地积极援助灾区]</a>　<a mon="ct=1&a=2&c=top" target="_blank" href="http://news.baidu.com/ns?word=%D3%F1%CA%F7+%B5%D8%D5%F0&ie=gb2312&bs=%D3%F1%CA%F7+%B5%D8%D5%F0&sr=0&cl=2&rn=20&tn=newsA&ct=0&clk=sortbytime">[最新消息]</a></li>
+    <li><a mon="ct=1&a=2&c=top" target="_blank" href="http://tieba.baidu.com/f?kw=%D3%F1%CA%F7%B5%D8%D5%F0%D1%B0%C8%CB">[玉树地震寻人]</a>　<a mon="ct=1&a=2&c=top" target="_blank" href="http://news.enorth.com.cn/system/2010/04/15/004610411.shtml">[动用无人机拍摄灾区资料]</a>　<a mon="ct=1&a=2&c=top" target="_blank" href="http://www.qh.xinhua.org/2010-04/14/content_19515995.htm">[急需物资]</a>　<a mon="ct=1&a=2&c=top" target="_blank" href="http://gongyi.baidu.com/2010-04-14/154026259850.html">[捐赠账号]</a></li>
+    <li><a mon="ct=1&a=2&c=top" target="_blank" href="http://www.cnr.cn/gundong/201004/t20100415_506287953.html">[救援人员已救出2038人]</a>　<a mon="ct=1&a=2&c=top" target="_blank" href="http://www.chinanews.com.cn/shipin/news/2010-04-15/news13774.html">[第一列救灾专车14日从武汉发出]</a></li>
+    <li><a mon="ct=1&a=2&c=top" target="_blank" href="http://china.huanqiu.com/roll/2010-04/779423.html">[老乡跪求救援垮塌的孤儿院]</a>　<a mon="ct=1&a=2&c=top" target="_blank" href="http://live.video.sina.com.cn/room/qinghaitv">[地震新闻直播间]</a>　<a mon="ct=1&a=2&c=top" target="_blank" href="http://tieba.baidu.com/i/72904530/p/11382628?pn=1">[为玉树人民祈福]</a></li>
+</ul>
+                                <ul class="list2">
+                                    <li><a href="/n?cmd=2&class=top&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%65%6e%6f%72%74%68%2e%63%6f%6d%2e%63%6e%2f%73%79%73%74%65%6d%2f%32%30%31%30%2f%30%34%2f%31%35%2f%30%30%34%36%31%30%31%31%37%2e%73%68%74%6d%6c&clk=rrel&cls=top&where=toppage" target="_blank" mon="ct=1&a=2&c=top">胡锦涛抵达巴西 即将出席“金砖四国”峰会(图)</a><i>11:21</i></li>
+                                    <li><a href="/n?cmd=2&class=top&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%6e%65%77%73%2e%63%6f%6d%2e%63%6e%2f%63%6a%2f%63%6a%2d%67%6e%63%6a%2f%6e%65%77%73%2f%32%30%31%30%2f%30%34%2d%31%35%2f%32%32%32%37%33%30%35%2e%73%68%74%6d%6c&clk=rrel&cls=top&where=toppage" target="_blank" mon="ct=1&a=2&c=top">统计局：一季度GDP同比增11.9% CPI上涨2.2%</a><i>10:12</i></li>
+                                    <li><a href="/n?cmd=2&class=top&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%65%2e%63%6e%2f%78%77%7a%78%2f%67%6e%73%7a%2f%67%64%78%77%2f%32%30%31%30%30%34%2f%31%35%2f%74%32%30%31%30%30%34%31%35%5f%32%31%32%37%39%33%36%39%2e%73%68%74%6d%6c&clk=rrel&cls=top&where=toppage" target="_blank" mon="ct=1&a=2&c=top">国家开发银行原副行长王益受贿案一审被判处死缓</a><i>10:41</i></li>
+                                    <li><a href="/n?cmd=2&class=top&page=%68%74%74%70%3a%2f%2f%66%6f%63%75%73%2e%73%63%6f%6c%2e%63%6f%6d%2e%63%6e%2f%7a%67%73%7a%2f%63%6f%6e%74%65%6e%74%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%6f%6e%74%65%6e%74%5f%36%35%39%34%34%38%2e%68%74%6d%3f%6e%6f%64%65%3d%35%34%30&clk=rrel&cls=top&where=toppage" target="_blank" mon="ct=1&a=2&c=top">文强被判死刑欲上诉 其姐姐欲卖房助弟弟打官司</a><i>07:07</i></li>
+                                    <li><a href="/n?cmd=2&class=top&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%65%63%6f%6e%6f%6d%69%63%2f%74%78%74%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%6f%6e%74%65%6e%74%5f%31%39%38%31%39%33%30%34%2e%68%74%6d&clk=rrel&cls=top&where=toppage" target="_blank" mon="ct=1&a=2&c=top">国务院会议严厉表态遏房价过快上涨 引调控猜想</a><i>07:24</i></li>
+                                    <li><a href="/n?cmd=2&class=top&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%65%61%73%74%64%61%79%2e%63%6f%6d%2f%63%2f%32%30%31%30%30%34%31%35%2f%75%31%61%35%31%34%39%37%39%39%2e%68%74%6d%6c&clk=rrel&cls=top&where=toppage" target="_blank" mon="ct=1&a=2&c=top">广西公务员考试泄题事件已刑拘26人批捕22人</a><i>11:16</i></li>
+                                    <li><a href="/n?cmd=2&class=top&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%65%2e%63%6e%2f%6d%61%63%72%6f%2f%6d%6f%72%65%2f%32%30%31%30%30%34%2f%31%35%2f%74%32%30%31%30%30%34%31%35%5f%32%31%32%37%39%33%35%39%2e%73%68%74%6d%6c&clk=rrel&cls=top&where=toppage" target="_blank" mon="ct=1&a=2&c=top">中国农业银行IPO正式上路 九投行分羹“A+H”招股</a><i>10:41</i></li>
+                                    <li><a href="/n?cmd=2&class=top&page=%68%74%74%70%3a%2f%2f%65%6e%76%2e%70%65%6f%70%6c%65%2e%63%6f%6d%2e%63%6e%2f%47%42%2f%31%31%33%37%31%30%32%33%2e%68%74%6d%6c&clk=rrel&cls=top&where=toppage" target="_blank" mon="ct=1&a=2&c=top">湖南儿童医院用工业氧续:被开除党籍者工资照领</a><i>08:14</i></li>
+                                    <li><a href="/n?cmd=2&class=top&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%72%6f%6c%6c%6e%65%77%73%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%34%34%33%36%34%2e%68%74%6d%6c&clk=rrel&cls=top&where=toppage" target="_blank" mon="ct=1&a=2&c=top">湖北男子拘留所“洗脸死” 调查组认定系自杀</a><i>08:17</i></li>
+                                </ul>
+					</div>
+					<div class="rightImg rightImgMain">
+                        <div class="scrollingimg" id="scrollingImg">
+                            <div class="imgview" id="imgView">
+                                <a href="" target="_blank">
+                                <img src="" class="firstimg" alt="">
+                                </a>
+                            </div>
+                            <div class="imgnav" id="imgNav">
+                                <a class="navbtn" index="3" mon="ct=1&a=9&pn=3&col=4" href="javascript:void(0)">3</a>
+                                <a class="navbtn" index="2" mon="ct=1&a=9&pn=2&col=4" href="javascript:void(0)">2</a>
+                                <a class="navbtn" index="1" mon="ct=1&a=9&pn=1&col=4" href="javascript:void(0)">1</a>
+                            </div>
+                            <div class="imgtitle" id="imgTitle">
+                                <a href="" target="_blank"></a>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                        <div id="videopost">
+                            <div id="sv_btn_prev" class="btn_prev btn_prev_off" onmousedown="UserMonitor.send(event, 6, {ct:1, col:5, pn:0})"></div>
+                            <div class="mask">
+                                <div class="img_list" id="img_list">
+                                    <div class="item">
+                                    </div>
+                                    <div class="item">
+                                    </div>
+                                    <div class="item">
+                                    </div>
+                                    <div class="item">
+                                    </div>
+                                    <div class="item">
+                                    </div>
+                                    <div class="item">
+                                    </div>
+                                    <div style="clear:both;" id="empty_item"></div>
+                                </div>
+                            </div>
+                            <div id="sv_btn_next" class="btn_next btn_next_on" onmousedown="UserMonitor.send(event, 6, {ct:1, col:5, pn:0})"></div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+					<div style="clear:both"></div>
+				</dd>
+			</dl>
+		</div><script type="text/javascript" language="javascript">
+<!--
+var cpOptions_1 = {
+getBtns: function(){
+    var a, btns; 
+    btns = G('imgNav').getElementsByTagName('a');
+    a = [];
+    for(var i=btns.length - 1; i>=0; i--){
+        a.push(btns[i]);
+    }
+    return a;
+},
+mainViewContainer: G('imgView'),
+subViewContainer: G('imgTitle'),
+style: {on: 'navbtn curbtn', off: 'navbtn'},
+mainViewTpl: '<a href="#{url}" target="_blank" mon="ct=1&a=12&pn=#{index}&col=4"><img src="#{imgUrl}" class="firstimg"></a>',
+subViewTpl: '<a href="#{url}" target="_blank" mon="ct=1&a=9&pn=#{index}&col=4">#{title}</a>',
+curIndex: 0,
+data: [],
+interval: 5000
+};
+cpOptions_1.data.push({
+'index': 1,
+'title':'僧人下山参与玉树地震救援',
+'url':'http://pic.news.sohu.com/group-210528.shtml#g=210528&p=1834527',
+'imgUrl':'http://news.baidu.com/z/resource/r/image/2010-04-15/986d3c48bb3182cdf3119d8679aa3c69.jpg'
+});
+cpOptions_1.data.push({
+'index': 2,
+'title':'中国国际救援队又救出4名幸存者',
+'url':'http://news.163.com/photonew/00AN0001/8784.html',
+'imgUrl':'http://news.baidu.com/z/resource/r/image/2010-04-15/88e9f8e3feb7568bb2057db4d4d57e86.jpg'
+});
+cpOptions_1.data.push({
+'index': 3,
+'title':'超生妇女亲属被关 政府逼结扎',
+'url':'http://society.huanqiu.com/roll/2010-04/779192.html',
+'imgUrl':'http://news.baidu.com/z/resource/r/image/2010-04-15/225f49cb569ba107c46a330945aa3688.jpg'
+});
+
+
+var cp_1 = new ContentPlayer.Model(cpOptions_1);
+on(window, 'load', function(){
+    cp_1.play(1);
+});
+//-->
+</script><script type="text/javascript" language="javascript">
+<!--
+var svOptions_1 = {
+    list: G('img_list'),
+    getItems: function(){
+        var divs, nodes;
+        nodes = [];
+        divs = G('img_list').getElementsByTagName('div');
+        for(var i=0; i<divs.length - 1; i++){
+            nodes.push(divs[i]);
+        }
+        return nodes;
+    },
+    offset: 111,
+    data: [],
+    windowSize: 2,
+    interval: 50,
+    curIndex: 0,
+    itemTpl: '<a href="#{url}" target="_blank" mon="ct=1&a=12&col=5&pn=#{index}"><img src="#{img_url}"></a><br><a href="#{url}" target="_blank" mon="ct=1&a=9&col=5&pn=#{index}"><span class="video_flag">&nbsp;</span>#{title}</a>',
+    navs: [G('sv_btn_prev'), G('sv_btn_next')],
+    step: 2,
+    style: {
+        pon: 'btn_prev btn_prev_on',
+        poff: 'btn_prev btn_prev_off',
+        non: 'btn_next btn_next_on',
+        noff: 'btn_next btn_next_off'
+    }
+};
+
+svOptions_1.data.push({
+index: 1,
+title: '玉树街头一片废墟 灾民等待救援',
+url: 'http:\/\/v.ku6.com\/show\/EiPk0qLdPfScXpnI.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-15\/3bc35544e8ff5549236abafef0b99383.jpg'
+});
+svOptions_1.data.push({
+index: 2,
+title: '赵普播报玉树地震再度哽咽',
+url: 'http:\/\/tv.sohu.com\/20100415\/n271528930.shtml',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-15\/12bc416ec6e338bedef8811ba01fa1c2.jpg'
+});
+svOptions_1.data.push({
+index: 3,
+title: '劫匪被围扬言自杀与警方对峙',
+url: 'http:\/\/news.joy.cn\/video\/1162219.htm',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-15\/508ed57f081fb207398aacdb41f67ce8.jpg'
+});
+svOptions_1.data.push({
+index: 4,
+title: '实拍青海玉树地震现场',
+url: 'http:\/\/v.ku6.com\/show\/UUfmzR7IxN4p_9Bd.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-15\/8d96a1ff791deac30b183b8845c8417a.jpg'
+});
+svOptions_1.data.push({
+index: 5,
+title: '村民家中饲养小黑熊被视为女儿',
+url: 'http:\/\/video.sina.com.cn\/news\/s\/v\/2010-04-15\/123558643.shtml',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-15\/aee224e97bd6f53a087197fc31d73395.jpg'
+});
+svOptions_1.data.push({
+index: 6,
+title: '夫妻吵架 雨中街头打地铺',
+url: 'http:\/\/v.ku6.com\/show\/J0huDqlSpm8G7K7M.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-15\/a1e97bfc523f69e12576d9c9252f04a9.jpg'
+});
+svOptions_1.data.push({
+index: 7,
+title: '浙江上虞一轿车闹市爆炸',
+url: 'http:\/\/v.ku6.com\/show\/D3QGa5JDW1zPaFqJ.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-15\/1293cf0ea570f38ca3de2c30f2dfcfed.jpg'
+});
+svOptions_1.data.push({
+index: 8,
+title: '深圳流浪汉吃毒西瓜 一死六昏',
+url: 'http:\/\/v.ku6.com\/show\/Y9YiUNt9YQxPo1k-.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-14\/ecd544b6c272690a16701bc935d58d62.jpg'
+});
+svOptions_1.data.push({
+index: 9,
+title: '传胡锦涛将见郝龙斌 国台办回应',
+url: 'http:\/\/space.tv.cctv.com\/video\/VIDE1271215748697889',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-14\/1c131443682a11c57d00630903e26b1d.jpg'
+});
+svOptions_1.data.push({
+index: 10,
+title: '男警察街头扮美少女战士反诈骗',
+url: 'http:\/\/news.qq.com\/a\/20100414\/002377.htm',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-14\/0819b617e30540d793abd6c43fe4e178.jpg'
+});
+svOptions_1.data.push({
+index: 11,
+title: '文强涉黑案宣判现场 市民喊冤',
+url: 'http:\/\/v.ku6.com\/special\/show_3773386\/kKHW1lot0lgtzd6o.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-14\/403fa334ec6c9cbb633cb88c5f9f7eae.jpg'
+});
+svOptions_1.data.push({
+index: 12,
+title: '实拍副局长与情妇床上谈腐败',
+url: 'http:\/\/v.ku6.com\/special\/show_3765401\/HgcYQBPsE-71TXnL.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-14\/b7c892bc0866917660ed7773baa68c3e.jpg'
+});
+svOptions_1.data.push({
+index: 13,
+title: '神秘男子穿超人服敬老院献爱心',
+url: 'http:\/\/v.youku.com\/v_show\/id_XMTY1MDUwNjU2.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-14\/9f1d1739ce781e927c1a2380f3c35e5f.jpg'
+});
+svOptions_1.data.push({
+index: 14,
+title: '拆迁人员持灭火器进行强拆',
+url: 'http:\/\/news.qq.com\/a\/20100414\/001758.htm',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-14\/dc74c96d7c0605db5006d7d24debdafa.jpg'
+});
+svOptions_1.data.push({
+index: 15,
+title: '生蛆鸡蛋做早点 全部供应富士康',
+url: 'http:\/\/v.ku6.com\/show\/NHG60EsPJ672DQjy.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-14\/c1e26646fbe3f3f316e1575ed8c078aa.jpg'
+});
+svOptions_1.data.push({
+index: 16,
+title: '实拍油价上涨数百车辆扎堆加油',
+url: 'http:\/\/v.youku.com\/v_playlist\/f4363429o1p0.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-14\/a0810e01f1bb296f5aa656d95937dcf3.jpg'
+});
+svOptions_1.data.push({
+index: 17,
+title: '青海玉树7.1级地震 居民涌上街',
+url: 'http:\/\/video.sina.com.cn\/news\/c\/v\/2010-04-14\/095858497.shtml',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-14\/7f61b8481fafceb2764f26c84d1a3b7a.jpg'
+});
+svOptions_1.data.push({
+index: 18,
+title: '男老师与女生课堂抡凳互殴',
+url: 'http:\/\/www.56.com\/u57\/v_NTA5MDM5MTA.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/ec33287c1f5d06dfcc493422f3732da6.jpg'
+});
+svOptions_1.data.push({
+index: 19,
+title: '少年骑士戴鬼面具 吓晕拦检警察',
+url: 'http:\/\/6.cn\/watch\/12818248.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/7fdccb2fc061c3b01ef7a22b39a1939f.jpg'
+});
+svOptions_1.data.push({
+index: 20,
+title: '狂犬病?陕西街头惊现“人咬狗”',
+url: 'http:\/\/v.ku6.com\/show\/CCA6j9vEYG7w0M6A.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/ec49d19ad28f5f2450ffbc22410da1bf.jpg'
+});
+svOptions_1.data.push({
+index: 21,
+title: '金店老板用板凳打跑持枪劫匪',
+url: 'http:\/\/www.chinanews.com.cn\/shipin\/news\/2010-04-13\/news13700.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/6b6f7a434c0b720a50b291212727deaa.jpg'
+});
+svOptions_1.data.push({
+index: 22,
+title: '广东惊现“单挑门”两男生对打',
+url: 'http:\/\/tv.sohu.com\/20100413\/n271478606.shtml',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/203f05d644a477885fdcd1c7d3310d46.jpg'
+});
+svOptions_1.data.push({
+index: 23,
+title: '广东数百毒蛇突袭增城中新镇',
+url: 'http:\/\/news.qq.com\/a\/20100413\/001282.htm',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/1cb00890bc89796f68111a95255cdbc1.jpg'
+});
+svOptions_1.data.push({
+index: 24,
+title: '超星级卫生间 便池上有液晶电视',
+url: 'http:\/\/v.youku.com\/v_show\/id_XMTY0ODEwNzcy.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/631e97b447d0ccfafcac9097d95ec07e.jpg'
+});
+svOptions_1.data.push({
+index: 25,
+title: '英摄影师拍下战斗机拦截UFO',
+url: 'http:\/\/video.sina.com.cn\/news\/w\/v\/2010-04-13\/100658440.shtml',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/3b48287378495c51969c4a48c8b398ba.jpg'
+});
+svOptions_1.data.push({
+index: 26,
+title: '啤酒杯垫搭建成房屋创世界纪录',
+url: 'http:\/\/v.youku.com\/v_show\/id_XMTY0NzU5NjQ4.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/6705b99f490d6d2720e4821aab8533d6.jpg'
+});
+svOptions_1.data.push({
+index: 27,
+title: '实拍陕西“砍刀队”砍人现场',
+url: 'http:\/\/v.ku6.com\/special\/show_3772606\/4AqmS3HJA8MhDwDm.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/983db048c160a91c5a292b8bb007a512.jpg'
+});
+svOptions_1.data.push({
+index: 28,
+title: '国际风筝节 搞怪风筝争奇斗艳',
+url: 'http:\/\/v.youku.com\/v_show\/id_XMTY0NzYwMzQ4.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/077975c4c7651205157a68dd98da20eb.jpg'
+});
+svOptions_1.data.push({
+index: 29,
+title: '美爆破达拉斯球场 25秒化为灰烬',
+url: 'http:\/\/news.sohu.com\/20100413\/n271467707.shtml',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/c250664bb4970192e731a6a434e7d5b4.jpg'
+});
+svOptions_1.data.push({
+index: 30,
+title: '上海东方明珠起火 塔尖成焦黑色',
+url: 'http:\/\/news.qq.com\/a\/20100413\/000511.htm',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/e5714399d62f91338f97c45111e0f2fe.jpg'
+});
+svOptions_1.data.push({
+index: 31,
+title: '二手奥拓杯具，现实版争车位',
+url: 'http:\/\/v.youku.com\/v_show\/id_XMTY0NTQ5MjY4.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/347e2eac9839176a0ffc00bc77135ecf.jpg'
+});
+svOptions_1.data.push({
+index: 32,
+title: '郑州动物园用狮虎向体育局索地',
+url: 'http:\/\/v.youku.com\/v_show\/id_XMTY0NTYwNTEy.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-13\/4e488c3e2c86d174be6795aaa17ba53d.jpg'
+});
+svOptions_1.data.push({
+index: 33,
+title: '富二代飙车 扬言拿钱砸死记者',
+url: 'http:\/\/www.56.com\/u62\/v_NTA4NjU2MzU.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-12\/6b12c025ccf2bc0b18c6d225124fda5c.jpg'
+});
+svOptions_1.data.push({
+index: 34,
+title: '央视主播出意外 播报时鼻涕直流',
+url: 'http:\/\/news.sohu.com\/20100412\/n271450235.shtml',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-12\/f14a89f608a13186b8931ff65925e0a4.jpg'
+});
+svOptions_1.data.push({
+index: 35,
+title: '广州数百人暴力收房 285人被捕',
+url: 'http:\/\/real.joy.cn\/video\/1154123.htm',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-12\/2ec50f39ec2286d3d04f30fe5148300c.jpg'
+});
+svOptions_1.data.push({
+index: 36,
+title: '杭州5000人混乱抢房 保安晕倒',
+url: 'http:\/\/v.youku.com\/v_show\/id_XMTY0NTE4ODU2.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-12\/c4403e7f49488b1ca3316e01034339d3.jpg'
+});
+svOptions_1.data.push({
+index: 37,
+title: '波兰总统遗体回国 正查失事原因',
+url: 'http:\/\/news.xinhuanet.com\/video\/2010-04\/12\/c_1227631.htm',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-12\/ead349869e48bf38e8f6efbe21840e2a.jpg'
+});
+svOptions_1.data.push({
+index: 38,
+title: '最雷相亲男遭女嘉宾扔鞋炮轰',
+url: 'http:\/\/6.cn\/watch\/12806390.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-11\/854fdd4f63f2a0307f84b89c35a2ee68.jpg'
+});
+svOptions_1.data.push({
+index: 39,
+title: '凤姐参加<花儿朵朵>晋级视频',
+url: 'http:\/\/you.video.sina.com.cn\/b\/31580457-1314731975.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-11\/4e49bd6069935750cd54a92663b3c56c.jpg'
+});
+svOptions_1.data.push({
+index: 40,
+title: '黑白互杠!脱口秀来宾爆怒摔麦',
+url: 'http:\/\/6.cn\/watch\/12805942.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-11\/1b54ea8e8c2fc60c426123c23ea63f83.jpg'
+});
+svOptions_1.data.push({
+index: 41,
+title: '实拍波兰总统专机坠毁瞬间',
+url: 'http:\/\/www.tudou.com\/programs\/view\/m5W8iq9n9Tk\/',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-11\/ecbbcb314ba1d5766d5bac3b2fa8b105.jpg'
+});
+svOptions_1.data.push({
+index: 42,
+title: '长腿美女裹浴巾搭地铁引关注',
+url: 'http:\/\/6.cn\/watch\/12801077.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-10\/87f17e77c0bcb3a6fde597adf315f950.jpg'
+});
+svOptions_1.data.push({
+index: 43,
+title: '实拍河北唐山地震现场',
+url: 'http:\/\/v.youku.com\/v_show\/id_XMTYzOTIzODYw.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-10\/2db327c15b1c00358a429c18771e3c74.jpg'
+});
+svOptions_1.data.push({
+index: 44,
+title: '三女同逐金像奖 张静初摆酷',
+url: 'http:\/\/v.youku.com\/v_show\/id_XMTYzOTkwOTM2.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-10\/0ac90382d73aec2c0365e16bbb9a8f4a.jpg'
+});
+svOptions_1.data.push({
+index: 45,
+title: '首次公布：王家岭井下救援画面',
+url: 'http:\/\/video.sina.com.cn\/news\/c\/v\/2010-04-09\/182458258.shtml',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-09\/ac548630c16998cc1a240c29d1c1d568.jpg'
+});
+svOptions_1.data.push({
+index: 46,
+title: '北京公职团购房 二环内2000\/平',
+url: 'http:\/\/v.ku6.com\/special\/show_3770755\/WhUfH1HJqiKyHrzX.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-09\/bc4a9f96f38a3f6104aaa0be05e44524.jpg'
+});
+svOptions_1.data.push({
+index: 47,
+title: '内地女星手机遗失 饭局短信曝光',
+url: 'http:\/\/www.56.com\/u87\/v_NTA3OTUyNjA.html',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-09\/76a2bd4db4120be85267ee00b7fe0f8a.jpg'
+});
+svOptions_1.data.push({
+index: 48,
+title: '南非世界杯主题曲MV',
+url: 'http:\/\/ent.qq.com\/a\/20100409\/000378.htm',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-09\/05616b353d5e24625bf167fc39038263.jpg'
+});
+svOptions_1.data.push({
+index: 49,
+title: '监控拍下车主漂移拦截小偷',
+url: 'http:\/\/video.sina.com.cn\/news\/s\/v\/2010-04-09\/113158242.shtml',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-09\/2f42a04eb2727360289e9e5059944717.jpg'
+});
+svOptions_1.data.push({
+index: 50,
+title: '京沈高速烧荒引发12车连撞',
+url: 'http:\/\/video.sina.com.cn\/news\/c\/v\/2010-04-09\/112458239.shtml',
+img_url: 'http:\/\/news.baidu.com\/z\/resource\/r\/image\/2010-04-09\/54c0be4cff741e71c86a1a5ca56118e4.jpg'
+});
+
+
+var sv_1 = new ScrollView.Model(svOptions_1);
+//-->
+</script>
+		<div class="aside" style="width:327px; border:0px; background-color:#fff; position:relative; height:377px; overflow:hidden;">
+            <dl style="border:1px solid #B6C7DB;"  class="hotwords">
+				<dt style="position:relative;"><span><div><a href="z/hotquery/roll/" target="_blank">更多>></a></div><a href="z/hotquery/roll/" target="_blank">新闻热搜词</a></span></dt>
+                <dd><div>
+<a href="http://news.baidu.com/ns?cl=3&ct=9&rn=20&sp=hotquery&word=%CE%C4%C7%BF+%C5%AE%C3%F7%D0%C7" target="_blank" mon="ct=1&a=30">文强 女明星</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%B5%D8%D5%F0+%BE%E8%BF%EE" target="_blank" mon="ct=1&a=30">地震 捐款</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%B9%FA%CE%F1%D4%BA+%D7%A1%B7%BF%CF%FB%B7%D1" target="_blank" mon="ct=1&a=30">国务院 住房消费</a>
+<a href="http://news.baidu.com/ns?cl=3&ct=9&rn=20&sp=hotquery&word=%C3%C0%B9%FA+%BA%CB%B6%EF%D5%A9+%D2%C1%C0%CA" target="_blank" mon="ct=1&a=30">美国 核讹诈 伊朗</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%D3%A1%B6%C8+%C7%BF%B7%E7%B1%A9" target="_blank" mon="ct=1&a=30">印度 强风暴</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%BB%C6%B9%E2%D4%A3+%D6%CA%D6%A4" target="_blank" mon="ct=1&a=30">黄光裕 质证</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%CD%B6%D7%CA%BB%B7%BE%B3+%B6%F1%BB%AF" target="_blank" mon="ct=1&a=30">投资环境 恶化</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%B3%F6%D7%E2%B3%B5+%D5%C7%BC%DB" target="_blank" mon="ct=1&a=30">出租车 涨价</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%CD%B3%BC%C6%BE%D6+%BE%AD%BC%C3%CA%FD%BE%DD" target="_blank" mon="ct=1&a=30">统计局 经济数据</a>
+<a href="http://news.baidu.com/ns?cl=3&ct=9&rn=20&sp=hotquery&word=%B6%FD%BA%A3+%B1%F0%CA%FB" target="_blank" mon="ct=1&a=30">洱海 别墅</a>
+</div>
+<br>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%C7%BF%B2%F0+%C3%F0%BB%F0%C6%F7" target="_blank" mon="ct=1&a=30">强拆 灭火器</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%D6%D0%B9%FA%C5%A9%D2%B5%D2%F8%D0%D0+IPO" target="_blank" mon="ct=1&a=30">农行IPO</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%CE%E2%D5%F2%D3%EE+%C8%CF%D7%EF" target="_blank" mon="ct=1&a=30">吴镇宇 认罪</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%D7%AA%BB%F9%D2%F2%B5%BE%D6%D6" target="_blank" mon="ct=1&a=30">转基因稻种</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%B9%E3%CE%F7+%B9%AB%CE%F1%D4%B1+%BF%BC%CA%D4+%D0%B9%CC%E2" target="_blank" mon="ct=1&a=30">广西 公务员考试 泄题</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%F7%BC%F7%C3%CB%C0" target="_blank" mon="ct=1&a=30">骷髅死</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%B9%E3%D6%DD+%B4%F3%D1%A7%B3%C7%C2%F4%B5%D8" target="_blank" mon="ct=1&a=30">广州 大学城卖地</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%BD%F8%BB%A6%B3%B5%C1%BE+%B0%B2%BC%EC" target="_blank" mon="ct=1&a=30">进沪车辆 安检</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%C9%CF%BA%A3%C5%AE%C4%A3%D0%EC%D3%A8" target="_blank" mon="ct=1&a=30">上海女模 徐莹</a>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=%B8%B1%BE%D6%B3%A4+%C7%E9%B8%BE+%B8%AF%B0%DC" target="_blank" mon="ct=1&a=30">副局长 情妇 腐败</a>
+                    <span style="font-size:0;"></span>
+                </dd>
+			</dl>
+			<dl style="border:1px solid #B6C7DB;margin-top:8px; height:377px;" >
+				<dt><span><div><a href="z/civil_blog/roll/" target="_blank" style="color:#000;">更多>></a></div><a href="z/civil_blog/roll/" target="_blank">博客&nbsp;-&nbsp;论坛</a></span></dt>
+				<dd>
+					<ul class="list">  <li><a href="http://zggjjyd.blog.sohu.com/148441620.html" mon="ct=1&col=1&pn=1"  target="_blank">国家救援队抵达灾区一小时内救出一名幸存者纪实</a></li>
+  <li><a href="http://lombardypoplar.blog.hexun.com/48407437_d.html" mon="ct=1&col=1&pn=2"  target="_blank">亲历者回忆：我们在国外欢迎胡锦涛主席</a></li>
+<li><a href="http://bbs1.people.com.cn/postDetail.do?boardId=1&view=1&id=99006954" target="_blank" mon="ct=1&col=6&pn=1">玉树别哭，我们是你们的亲人</a></li>
+<li><a href="http://bbs.news.163.com/bbs/shishi/173212959.html" target="_blank" mon="ct=1&col=6&pn=2">多行不义必自毙——文二哥魂断“不死神话”</a></li>
+<li><a href="http://bbs.ifeng.com/viewthread.php?tid=4485585" target="_blank" mon="ct=1&col=6&pn=3">副局长“视频门” 好色贪官咋都那么坦白？</a></li>
+
+					</ul>			
+				</dd>
+			</dl>
+            <div style="position:absolute; top:376px; height:0; border:0; border-top:1px solid #B6C7DB; width:327px;"></div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<!--ecombegin--><div align="center" class="ecom"><script>if(!g_f_js){var g_f_js=true;document.write('<script src=\'http://eiv.baidu.com/other/ff.js\'></'+'script>');}</script>
+
+<script src="http://eiv.baidu.com/other/fhn.js"></script><script>if (typeof(cf_hn)=="function") {cf_hn("http://drmcmm.baidu.com/media/id=nWR1nWndn0&gp=402&time=nHcLnHDYrjnYns.swf","984","90","http://www.baidu.com/adrc.php?t=000600000f7Tw6m0U_fA0akwK6jAEtuQ00000000000_0f00v3v1bB.THdCUvd-TA7MufK85y4-ILPBThqLTvR0T1d-uym1ujb4P1fkPjm4Pyfd0ZRqfRRdPDR3PYPjrj7an16LrH04rjmLPWRkwjc3nYPjwRm0mHdbXWK_RHKPU7FDRykwpbN_RNwuUyPlnykpNd-lybwoPR4lRg9rw7bdH-IwnRGVnyG9NdD4HgGPnb4RHg-PfdGCR7w_ubdjyWKBNjKVu7TsrRGVrg-9Nj0sH7wPUyn1Nh-BnYGsR7PpIvPVp1-PIzR1waR1w0K-5y9YIZ0lQzqLILT8UHD3QhPEUiqVmgFougfETvNVuMFEUMf8mgPsXjq1uyd8U1dBuadJuBY4mBudThsq0APzm1YLPH6L","0");}</script>
+
+</div><!--ecomend-->
+	<div class="area">
+		<div class="content">
+		  <dl>
+		    <dt class="tit" ><!--ecombegin--><div><a href=/n?cmd=1&class=shizheng&pn=1>时政要闻</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=taiwan&pn=1>台湾</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=gangaotai&pn=1>港澳</a></div><!--ecomend--><b><a href=/n?cmd=1&class=civilnews&pn=1 class="a2">国内</a></b>&nbsp;&nbsp;&nbsp;&nbsp;<a href=/n?cmd=1&class=civilnews&pn=1 class="ul">进入>></a></dt>
+			<dd>
+				<div class="leftCont">
+					<h2><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%6c%77%67%63%77%2e%63%6f%6d%2f%4e%65%77%73%53%68%6f%77%2e%61%73%70%78%3f%6e%65%77%73%49%64%3d%35%31%30%32&clk=lrel&cls=civilnews&where=toppage" target="_blank" class="a1 f14" mon="ct=0&a=1&c=civilnews">文强大姐:卖房也要上诉</a></h2><i>09:29</i>
+					<ul class="list li2">
+						<li><a href="http://news.mylegist.com/1604/2010-04-15/24501.html" target="_blank" mon="ct=0&a=2&c=civilnews">文强死刑：他就是一个替死鬼！</a></li>
+						<li><a href="http://news.qq.com/a/20100415/002223.htm" target="_blank" mon="ct=0&a=2&c=civilnews">视频：重庆“黑局长”文强被判死刑 表示要上诉</a></li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%79%6f%75%74%68%2e%63%6e%2f%66%7a%2f%32%30%31%30%30%34%2f%74%32%30%31%30%30%34%31%35%5f%31%32%30%34%31%30%36%2e%68%74%6d&clk=rrel&cls=civilnews&where=toppage" target="_blank" mon="ct=0&a=2&c=civilnews">云南大理确认“洱海填湖建别墅”违规 称已处罚</a><i>13:59</i> </li>
+						<li><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%65%6e%74%2e%71%69%61%6e%6c%6f%6e%67%2e%63%6f%6d%2f%34%35%34%33%2f%32%30%31%30%2f%30%34%2f%31%35%2f%33%39%38%32%40%35%36%35%36%31%34%37%2e%68%74%6d&clk=rrel&cls=civilnews&where=toppage" target="_blank" mon="ct=0&a=2&c=civilnews">王益或被判无期魏东自杀牵出刘芳菲</a><i>14:37</i> </li>
+						<li><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%6e%65%6e%2e%63%6f%6d%2e%63%6e%2f%67%75%6f%6e%65%69%67%75%6f%6a%69%2f%33%38%30%2f%33%34%38%35%33%38%30%2e%73%68%74%6d%6c&clk=rrel&cls=civilnews&where=toppage" target="_blank" mon="ct=0&a=2&c=civilnews">忆胡耀邦：毛泽东亲点团中央书记</a><i>08:02</i> </li>
+						<li><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%65%2e%63%6e%2f%78%77%7a%78%2f%67%6e%73%7a%2f%67%64%78%77%2f%32%30%31%30%30%34%2f%31%35%2f%74%32%30%31%30%30%34%31%35%5f%32%31%32%38%30%33%39%37%2e%73%68%74%6d%6c&clk=rrel&cls=civilnews&where=toppage" target="_blank" mon="ct=0&a=2&c=civilnews">国产大飞机四大项目落户南京 合作意向书已签署</a><i>13:14</i> </li>
+						<li><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%69%6e%74%6c%2e%63%65%2e%63%6e%2f%67%6a%7a%78%2f%79%7a%2f%32%30%31%30%30%34%2f%31%35%2f%74%32%30%31%30%30%34%31%35%5f%32%31%32%37%39%38%36%36%2e%73%68%74%6d%6c&clk=rrel&cls=civilnews&where=toppage" target="_blank" mon="ct=0&a=2&c=civilnews">韩国3月份就业增加1.2%</a><i>11:25</i> </li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%64%61%69%6c%79%2e%63%6f%6d%2e%63%6e%2f%64%66%70%64%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%6f%6e%74%65%6e%74%5f%39%37%33%31%39%37%35%2e%68%74%6d&clk=rrel&cls=civilnews&where=toppage" target="_blank" mon="ct=0&a=2&c=civilnews">上海迪斯尼最快5年后开园 已完成97%动迁</a><i>08:58</i> </li>
+						<li><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%77%6f%72%6b%65%72%63%6e%2e%63%6e%2f%63%6f%6e%74%65%6e%74%66%69%6c%65%2f%32%30%31%30%2f%30%34%2f%31%35%2f%30%36%32%36%33%33%35%39%39%34%34%32%38%35%34%2e%68%74%6d%6c&clk=rrel&cls=civilnews&where=toppage" target="_blank" mon="ct=0&a=2&c=civilnews">深圳公布27项改革计划 多数在全国属先行先试</a><i>06:28</i> </li>
+						<li><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%68%75%61%6e%65%74%2e%63%6f%6d%2f%6c%65%67%61%6c%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%5f%31%32%33%34%34%36%36%2e%68%74%6d&clk=rrel&cls=civilnews&where=toppage" target="_blank" mon="ct=0&a=2&c=civilnews">公安部:规范执法办案场所设置 坚决防止非正常死亡</a><i>09:21</i> </li>
+						<li><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%71%69%61%6e%6c%6f%6e%67%2e%63%6f%6d%2f%32%38%38%37%34%2f%32%30%31%30%2f%30%34%2f%31%35%2f%32%35%30%32%40%35%36%35%34%38%31%33%2e%68%74%6d&clk=rrel&cls=civilnews&where=toppage" target="_blank" mon="ct=0&a=2&c=civilnews">五一劳动节假日安排:5月1日至3日放假三天</a><i>10:13</i> </li>
+						<li><a href="/n?cmd=2&class=civilnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%77%6f%72%6b%65%72%63%6e%2e%63%6e%2f%63%6f%6e%74%65%6e%74%66%69%6c%65%2f%32%30%31%30%2f%30%34%2f%31%34%2f%31%37%33%38%32%32%36%34%34%37%37%39%32%38%34%2e%68%74%6d%6c&clk=rrel&cls=civilnews&where=toppage" target="_blank" mon="ct=0&a=2&c=civilnews">兰州将拆除荒废13年的中立桥 原址新建黄河大桥</a><i>04-14 20:56</i> </li>
+					</ul>
+				</div>
+				<div class="rightImg">
+					<table>
+						<tr><td><a href="http://news.qq.com/a/20100414/000097.htm" target="_blank" mon="ct=0&a=12&c=civilnews"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%6d%67%31%2e%67%74%69%6d%67%2e%63%6f%6d%2f%6e%65%77%73%2f%70%69%63%73%2f%33%31%38%38%36%2f%33%31%38%38%36%32%37%38%2e%6a%70%67&fm=30"></a><br><a href="http://news.qq.com/a/20100414/000097.htm" target="_blank" mon="ct=0&a=9&c=civilnews">唐山一劳教所学员“骷髅死” 家属称其遭虐待</a></td></tr>
+						<tr><td><a href="http://news.southcn.com/d/2010-04/15/content_11068580.htm" target="_blank" mon="ct=0&a=12&c=civilnews"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%73%6f%75%74%68%63%6e%2e%63%6f%6d%2f%64%2f%69%6d%61%67%65%73%2f%61%74%74%61%63%68%65%6d%65%6e%74%2f%6a%70%67%2f%73%69%74%65%34%2f%32%30%31%30%30%34%31%35%2f%39%30%66%62%61%36%30%39%39%36%32%61%30%64%33%30%61%39%65%38%31%37%2e%6a%70%67&fm=30"></a><br><a href="http://news.southcn.com/d/2010-04/15/content_11068580.htm" target="_blank" mon="ct=0&a=9&c=civilnews">朱小丹张广宁请辞 新任广州市长周五亮相</a></td></tr>
+					</table>
+				</div>
+				<div style="clear:both"></div>
+			</dd>
+		  </dl>
+		</div>
+		<div class="aside" style="position:relative;">
+            <div id="city_view_bg" class="view_bg"></div>
+            <div id="city_view" class="city_view">
+                <div class="city_list"></div>
+                <div id="btn_back" class="btn_back">返回上一层</div>
+                <div id="btn_close" class="btn_close"></div>
+                <div class="up_triangle"></div>
+            </div>
+            <div id="status" class="loading">正在加载，请稍候...</div>
+			<dl class="aside_s">
+				<dt><span><!--ecombegin--><div><a id="more_link" href="/n?cmd=6&loc=0&name=%B1%B1%BE%A9" target="_blank">更多>></a></div><b id="city_name"><a href="/n?cmd=6&loc=0&name=%B1%B1%BE%A9" target="_blank"><b>地区</b>新闻</a></b><a id="change_city" class="sel_city" href="javascript:void(0);" style="text-decoration:none;">[<b>更换城市</b>]</a><!--ecomend--><b class="hide">港澳台新闻</b></span></dt>
+				<dd>
+					<ul id="local_news" class="list">
+						<li><a href="http://www.chinanews.com.cn/zgqj/news/2010/04-15/2228388.shtml" mon="ct=0&a=27&c=gangaotai" target="_blank">关爱教育 香港慈善团体广东捐资建造教学楼落成</a></li>
+						<li><a href="http://news.southcn.com/h/2010-04/15/content_11088010.htm" mon="ct=0&a=27&c=gangaotai" target="_blank">香港2012年政改方案公布 建议增加立法会议席至70席</a></li>
+						<li><a href="http://www.chinanews.com.cn/ga/ga-cjxw/news/2010/04-15/2228262.shtml" mon="ct=0&a=27&c=gangaotai" target="_blank">迷债事件需问责 香港立法会将召银行高层调查</a></li>
+						<li><a href="http://www.chinanews.com.cn/ga/ga-gaynd/news/2010/04-15/2228012.shtml" mon="ct=0&a=27&c=gangaotai" target="_blank">澳门红十字会拨30万澳门元助青海地震灾区</a></li>
+						<li><a href="http://www.chinanews.com.cn/ga/ga-gamy/news/2010/04-15/2227979.shtml" mon="ct=0&a=27&c=gangaotai" target="_blank">旅游业界称青海地震灾区无香港旅行团</a></li>
+					</ul>
+				</dd>
+			</dl>   
+<!--ecombegin-->
+<script type="text/javascript" language="javascript">
+<!--
+var LocalNewsConfig = {
+        cookieName: 'LOCALGX',
+        cookieDomain: 'news.baidu.com',
+        defaultFailedLocalCity: '港澳台',
+        defaultHouseCity: '北京',
+        defaultFailedHouseCity: '各地',
+        htmlTpl: {
+            city_list: '<a href="javascript:void(0);" prop="#{prop}">#{title}</a> ',
+            city_name_link: '<a href="/n?cmd=6&loc=0&name=%B1%B1%BE%A9" target="_blank"><b>#{city_name}</b>新闻</a>',
+            city_name_no_link: '<b>#{city_name}</b>新闻',
+            local_news: '<li><a href="#{url}" mon="ct=0&a=27&col=8" target="_blank">#{title}</a></li>',
+            house_news: '<li><a href="#{url}" mon="ct=0&a=27&col=9" target="_blank">#{title}</a></li>'
+        },
+        timeout: 5000
+    },
+    localnews_options = {
+        pageType: 'TOP',
+        localIDFromIP: 0,
+        localNameFromIP: '北京',
+        request: {
+            url: 'http://news.baidu.com/json/local/'
+        },
+        data: local_cities,
+        triggerLevel: 2,
+        statusID: 'status',
+        cityNameID: 'city_name',
+        moreLinkID: 'more_link',
+        cityViewID: 'city_view',
+        cityViewBgID: 'city_view_bg',
+        changeCityID: 'change_city',
+        closeBtnID: 'btn_close',
+        backBtnID: 'btn_back',
+        localNewsID: 'local_news',
+        maxItemsShown: 5,
+        timeout: LocalNewsConfig.timeout
+    };
+on(window, 'load', function(){
+    initLocalHotNews(localnews_options);
+});
+-->
+</script>
+<!--ecomend-->
+			<dl class="aside_b">
+				<dt><span>媒体转载排行榜</span></dt>
+				<dd>
+					<ul class="number">
+						<li><span style="color:#FFF; background:url(img/icon.gif?v=1.1) no-repeat -20px -28px;">1</span><a href="http://www.gov.cn/ldhd/2010-04/14/content_1580131.htm" target="_blank" mon="ct=0&a=28&col=3">核安全峰会在华盛顿举行 胡锦涛出席并发表重要讲话</a></li>
+						<li><span style="color:#FFF; background:url(img/icon.gif?v=1.1) no-repeat -20px -28px;">2</span><a href="http://www.cnr.cn/gundong/201004/t20100414_506280692.html" target="_blank" mon="ct=0&a=28&col=3">青海省玉树县今晨发生7.1级地震</a></li>
+						<li><span style="color:#FFF; background:url(img/icon.gif?v=1.1) no-repeat -20px -28px;">3</span><a href="http://xwzx.ndrc.gov.cn/xwfb/t20100413_340179.htm" target="_blank" mon="ct=0&a=28&col=3">国家发展改革委有关负责人就成品油价格调整问题..</a></li>
+						<li><span>4</span><a href="http://news.qianlong.com/28874/2010/04/14/2861@5652170.htm" target="_blank" mon="ct=0&a=28&col=3">实拍青海玉树发生7.1级地震(图)</a></li>
+						<li><span>5</span><a href="http://www.ce.cn/xwzx/gnsz/gdxw/201004/14/t20100414_21273225.shtml" target="_blank" mon="ct=0&a=28&col=3">玉树县地震后到机场道路已损坏 与机场无法联系</a></li>
+						<li><span>6</span><a href="http://www.gov.cn/jrzg/2010-04/13/content_1579676.htm" target="_blank" mon="ct=0&a=28&col=3">哈尔滨遭遇罕见特大降雪 日降雪量近50年来最大</a></li>
+						<li><span>7</span><a href="http://www.yangtse.com/news/gn/201004/t20100414_730203.htm" target="_blank" mon="ct=0&a=28&col=3">湖北当阳市公安局发生爆炸 嫌犯被抓</a></li>
+						<li><span>8</span><a href="http://finance.sina.com.cn/review/20100414/01437743472.shtml" target="_blank" mon="ct=0&a=28&col=3">专家称高油价时代来临 国际油价或阶梯式上涨</a></li>
+                    </ul>			
+				</dd>
+			</dl>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div class="area">
+		<div class="content">
+		  <dl>
+			<dt class="tit"><!--ecombegin--><div><a href=/n?cmd=1&class=mil&pn=1>军事</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=hqsy&pn=1>环球视野</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=renwu&pn=1>国际人物</a></div><!--ecomend--><b><a href=/n?cmd=1&class=internews&pn=1  class="a2">国际</a></b>&nbsp;&nbsp;&nbsp;&nbsp;<a  href=/n?cmd=1&class=internews&pn=1 class="ul">进入>></a></dt>
+			<dd>
+				<div class="leftCont">
+					<h2><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%77%6f%72%6c%64%2e%68%75%61%6e%71%69%75%2e%63%6f%6d%2f%72%6f%6c%6c%2f%32%30%31%30%2d%30%34%2f%37%37%39%34%35%33%2e%68%74%6d%6c&clk=lrel&cls=internews&where=toppage" target="_blank" class="a1 f14" mon="ct=0&a=1&c=internews">美专家关注青海地震 称与全球近几次强震不同</a></h2><i>11:47</i>
+					<ul class="list li2">
+						<li><a href="http://news.sohu.com/20100415/n271533844.shtml" target="_blank" mon="ct=0&a=2&c=internews">玉树地震灾区第一批伤员38人抵达西宁接受治疗</a></li>
+						<li><a href="http://news.sohu.com/20100415/n271534050.shtml" target="_blank" mon="ct=0&a=2&c=internews">组图：玉树震区伤员源源不断空运外地救治</a></li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%6e%65%77%73%2e%63%6f%6d%2e%63%6e%2f%67%6a%2f%67%6a%2d%79%74%2f%6e%65%77%73%2f%32%30%31%30%2f%30%34%2d%31%35%2f%32%32%32%37%38%30%39%2e%73%68%74%6d%6c&clk=rrel&cls=internews&where=toppage" target="_blank" mon="ct=0&a=2&c=internews">强风暴突袭印度孟加拉 至少116死10万民房受损</a><i>11:47</i> </li>
+						<li><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%69%6e%74%6c%2e%63%65%2e%63%6e%2f%71%71%73%73%2f%32%30%31%30%30%34%2f%31%35%2f%74%32%30%31%30%30%34%31%35%5f%32%31%32%38%30%33%34%37%2e%73%68%74%6d%6c&clk=rrel&cls=internews&where=toppage" target="_blank" mon="ct=0&a=2&c=internews">1名平民伤重不治 曼谷流血事件死亡人数升至24人</a><i>13:01</i> </li>
+						<li><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%6e%65%6e%2e%63%6f%6d%2e%63%6e%2f%67%75%6f%6e%65%69%67%75%6f%6a%69%2f%33%35%31%2f%33%34%38%35%33%35%31%2e%73%68%74%6d%6c&clk=rrel&cls=internews&where=toppage" target="_blank" mon="ct=0&a=2&c=internews">吉尔吉斯大局未定 美俄“援助外交”迅即展开</a><i>07:58</i> </li>
+						<li><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%6e%65%77%73%2e%63%6f%6d%2e%63%6e%2f%67%6a%2f%67%6a%2d%6f%7a%2f%6e%65%77%73%2f%32%30%31%30%2f%30%34%2d%31%35%2f%32%32%32%36%39%31%36%2e%73%68%74%6d%6c&clk=rrel&cls=internews&where=toppage" target="_blank" mon="ct=0&a=2&c=internews">数万波兰民众痛悼总统 人龙估计长达1公里（图）</a><i>09:09</i> </li>
+						<li><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%6e%65%77%73%2e%63%6f%6d%2e%63%6e%2f%67%6a%2f%67%6a%2d%7a%64%2f%6e%65%77%73%2f%32%30%31%30%2f%30%34%2d%31%35%2f%32%32%32%37%37%37%38%2e%73%68%74%6d%6c&clk=rrel&cls=internews&where=toppage" target="_blank" mon="ct=0&a=2&c=internews">五角大楼：伊朗需3-5年方可制造出可用核武器</a><i>11:35</i> </li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%65%61%73%74%64%61%79%2e%63%6f%6d%2f%77%2f%32%30%31%30%30%34%31%35%2f%75%31%61%35%31%34%39%31%39%30%2e%68%74%6d%6c&clk=rrel&cls=internews&where=toppage" target="_blank" mon="ct=0&a=2&c=internews">日高官以《旧金山和约》为依据称竹岛为日领土</a><i>08:36</i> </li>
+						<li><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%69%6e%74%65%72%6e%61%74%69%6f%6e%61%6c%2f%74%78%74%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%6f%6e%74%65%6e%74%5f%31%39%38%31%39%37%38%31%2e%68%74%6d&clk=rrel&cls=internews&where=toppage" target="_blank" mon="ct=0&a=2&c=internews">不满福利被砍 纽约门卫下周或半夜集体“消失”</a><i>08:02</i> </li>
+						<li><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%67%62%2e%63%72%69%2e%63%6e%2f%32%37%38%32%34%2f%32%30%31%30%2f%30%34%2f%31%35%2f%32%39%34%35%73%32%38%31%38%35%35%37%2e%68%74%6d&clk=rrel&cls=internews&where=toppage" target="_blank" mon="ct=0&a=2&c=internews">韩国将“天安”舰舰尾打捞到驳船上</a><i>14:39</i> </li>
+						<li><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%69%6e%74%6c%2e%63%65%2e%63%6e%2f%71%71%73%73%2f%32%30%31%30%30%34%2f%31%35%2f%74%32%30%31%30%30%34%31%35%5f%32%31%32%38%31%32%30%37%2e%73%68%74%6d%6c&clk=rrel&cls=internews&where=toppage" target="_blank" mon="ct=0&a=2&c=internews">“金砖四国”峰会将推动四国合作进一步深化</a><i>14:53</i> </li>
+						<li><a href="/n?cmd=2&class=internews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%68%75%61%6e%65%74%2e%63%6f%6d%2f%77%6f%72%6c%64%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%5f%31%32%33%34%38%38%34%2e%68%74%6d&clk=rrel&cls=internews&where=toppage" target="_blank" mon="ct=0&a=2&c=internews">印度东部遭强风暴袭击死亡人数升至120人</a><i>10:55</i> </li>
+					</ul>
+				</div>
+				<div class="rightImg">
+					<table>
+						<tr><td><a href="http://news.workercn.cn/contentfile/2010/04/15/102737172313824.html" target="_blank" mon="ct=0&a=12&c=internews"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%77%6f%72%6b%65%72%63%6e%2e%63%6e%2f%78%77%7a%78%2f%75%70%6c%6f%61%64%66%69%6c%65%2f%32%30%31%30%34%31%35%31%30%32%38%32%30%2e%6a%70%67&fm=30"></a><br><a href="http://news.workercn.cn/contentfile/2010/04/15/102737172313824.html" target="_blank" mon="ct=0&a=9&c=internews">俄总统警告吉尔吉斯斯坦有可能南北分裂（图）</a></td></tr>
+						<tr><td><a href="http://www.gov.cn/ldhd/2010-04/14/content_1580131.htm" target="_blank" mon="ct=0&a=12&c=internews"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%77%77%77%2e%67%6f%76%2e%63%6e%2f%6c%64%68%64%2f%69%6d%61%67%65%73%2f%35%31%30%32%33%38%35%36%32%30%34%38%30%64%32%65%65%37%61%62%30%33%2e%6a%70%67&fm=30"></a><br><a href="http://www.gov.cn/ldhd/2010-04/14/content_1580131.htm" target="_blank" mon="ct=0&a=9&c=internews">核安全峰会在华盛顿举行 胡锦涛出席并发表重要讲话</a></td></tr>
+					</table>
+				</div>
+				<div style="clear:both"></div>
+			</dd>
+		  </dl>
+		</div>
+		<div class="aside">
+			<dl class="aside_b">
+				<dt><span><div><a href="/n?cmd=1&class=mil&pn=1" target="_blank">更多>></a></div><a href="/n?cmd=1&class=mil&pn=1" target="_blank">军事</a></span></dt>
+				<dd>
+					<h4><a href="http://mil.huanqiu.com/Exclusive/2010-04/779733.html" target="_blank" class="a1" mon="ct=0&a=27&c=internews">美国无核世界倡议实则开启新的常规军事竞赛</a></h4>
+					<table>
+						<tr>
+							<td valign="top"><a href="http://news.xinmin.cn/rollnews/2010/04/15/4447686.html" mon="ct=0&a=27&c=internews" target="_blank"><img src="http://t1.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%6d%61%67%65%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%35%2f%32%30%31%30%30%34%31%35%31%30%33%35%32%34%38%30%31%37%33%30%2e%6a%70%67&fm=30"></a></td>
+							<td valign="top">  韩旭东  自核武器来到这个世界上至今，美苏（俄）两大国都时不时地威胁说要使用核武器：朝鲜战争时联合国军统帅麦克阿瑟就曾建 ... </td>
+						</tr>
+					</table>
+					<ul class="list">
+						<li><a href="http://gb.cri.cn/27824/2010/04/15/2945s2818557.htm"  target="_blank" mon="ct=0&a=27&c=internews">韩国将“天安”舰舰尾打捞到驳船上</a></li>
+						<li><a href="http://www.china.com.cn/military/txt/2010-04/15/content_19825208.htm"  target="_blank" mon="ct=0&a=27&c=internews">美国网军可作战军官数量不足 门槛较高技能复杂</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl class="aside_s">
+				<dt><span><div><a href="/n?cmd=1&class=hqsy&pn=1" target="_blank">更多>></a></div><a href="/n?cmd=1&class=hqsy&pn=1" target="_blank">环球视野</a></span></dt>
+				<dd>
+				<ul class="list">
+					<li><a href="http://www.chinadaily.com.cn/hqss/2010-04/15/content_9735078.htm"  target="_blank" mon="ct=0&a=28&c=internews">在她们的爱情里 童话不是梦想</a></li>
+					<li><a href="http://www.chinanews.com.cn/hr/hr-mzhrxw/news/2010/04-15/2228070.shtml"  target="_blank" mon="ct=0&a=28&c=internews">外国孕妇赴美生子激增 国籍福利诱惑大华人也喜欢</a></li>
+					<li><a href="http://world.zjol.com.cn/05world/system/2010/04/15/016521505.shtml"  target="_blank" mon="ct=0&a=28&c=internews">世界恐怖大亨妻子的故事 温柔漂亮忠于丈夫(图)</a></li>
+					<li><a href="http://international.dbw.cn/system/2010/04/15/052454768.shtml"  target="_blank" mon="ct=0&a=28&c=internews">美国司法部长称将“尽快”关闭关塔那摩监狱</a></li>
+					<li><a href="http://finance.jrj.com.cn/2010/04/1511507299550.shtml"  target="_blank" mon="ct=0&a=28&c=internews">博鳌共识：低碳不应是奢侈品</a></li>
+				</ul>
+				</dd>
+			</dl>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+<!--ecombegin--><div align="center" class="ecom"><script>if(!g_f_js){var g_f_js=true;document.write('<script src=\'http://eiv.baidu.com/other/ff.js\'></'+'script>');}</script>
+
+<script>if (typeof(cf)=="function") {cf("http://drmcmm.baidu.com/media/id=nWRLPWTkP0&gp=402&time=nHcLnHc1njnLP6.swf","984","90","http://www.baidu.com/adrc.php?t=00K600c00fDe5sm0To3A0Q_5K6jAEtuQ0000000000000000v3v1bB.THdCUvd-TA7MufK85yF9pywdgvD4P6K15yN-uWPbrHbLPjDYPWbdujR0IHdKwHRYwH6LfYn3nRc1rjT4njb3PWTvPH7DnW61fYP7w6K95ywlnAdWXW7_y-IuX-GDp1NrX-73HbwuPR4gRH72UH7JmNIwrRdlNHPPN7D1HdPpp7KRwhuPfdCsm-fsUywgnj-2UH-4mNfsIYG8HW7uUH-4mNfsUyPciMKfNDR-nYf0uHdCIZwsrBtEILILQhPCpy49uZFYIB4WUvYEuAqxuA7YQhG1Tjq1pyfqmh7GuZN8ugTznjDsnjfknzubmgfqPW6LraudThsqQzR1w-q1I-qWUvw-5Hb1g1Ddrjczn1PxnHD4P1DknjTY0APzm1Yknj04P0","0");}</script>
+
+</div><!--ecomend-->
+	<div class="area">
+		<div class="content">
+		  <dl>
+			<dt class="tit"><!--ecombegin--><div><a href=/n?cmd=1&class=stock&pn=1>股票</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=money&pn=1>理财</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=hongguan&pn=1>宏观经济</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=chanye&pn=1>产业经济</a></div><!--ecomend--><b><a href=/n?cmd=1&class=finannews&pn=1  class="a2">财经</a></b>&nbsp;&nbsp;&nbsp;&nbsp;<a  href=/n?cmd=1&class=finannews&pn=1 class="ul">进入>></a></dt>
+			<dd>
+				<div class="leftCont">
+					<h2><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%73%6f%75%74%68%63%6e%2e%63%6f%6d%2f%7a%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%6f%6e%74%65%6e%74%5f%31%31%30%37%34%38%39%32%2e%68%74%6d&clk=lrel&cls=finannews&where=toppage" target="_blank" class="a1 f14" mon="ct=0&a=1&c=finannews">一季度经济数据公布 GDP同比增长11.9%</a></h2><i>10:09</i>
+					<ul class="list li2">
+						<li><a href="http://finance.sina.com.cn/stock/companyresearch/20100415/14567757729.shtml" target="_blank" mon="ct=0&a=2&c=finannews">哈飞股份：业绩已非市场主要关注点</a></li>
+						<li><a href="http://www.cfi.net.cn/p20100415002007.html" target="_blank" mon="ct=0&a=2&c=finannews">水晶光电:主业为基石拓展新产业</a></li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%65%6e%6f%72%74%68%2e%63%6f%6d%2e%63%6e%2f%73%79%73%74%65%6d%2f%32%30%31%30%2f%30%34%2f%31%35%2f%30%30%34%36%30%39%30%38%30%2e%73%68%74%6d%6c&clk=rrel&cls=finannews&where=toppage" target="_blank" mon="ct=0&a=2&c=finannews">黄光裕首度在法庭亮相 庭前示证对证据颇有异议</a><i>06:48</i> </li>
+						<li><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%6e%72%2e%63%6e%2f%67%75%6e%64%6f%6e%67%2f%32%30%31%30%30%34%2f%74%32%30%31%30%30%34%31%35%5f%35%30%36%32%38%39%32%35%36%2e%68%74%6d%6c&clk=rrel&cls=finannews&where=toppage" target="_blank" mon="ct=0&a=2&c=finannews">谢百三：CPI低于银行利率 不可能加息</a><i>13:29</i> </li>
+						<li><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%68%75%61%6e%65%74%2e%63%6f%6d%2f%66%6f%72%74%75%6e%65%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%5f%31%32%33%34%36%32%34%2e%68%74%6d&clk=rrel&cls=finannews&where=toppage" target="_blank" mon="ct=0&a=2&c=finannews">股指期货明日上市 市场各方厉兵秣马</a><i>09:49</i> </li>
+						<li><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%66%69%6e%61%6e%63%65%2e%65%61%73%74%64%61%79%2e%63%6f%6d%2f%6d%2f%32%30%31%30%30%34%31%35%2f%75%31%61%35%31%34%39%35%38%33%2e%68%74%6d%6c&clk=rrel&cls=finannews&where=toppage" target="_blank" mon="ct=0&a=2&c=finannews">快讯：中国石化领权重股走弱 压制大盘</a><i>10:00</i> </li>
+						<li><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%68%75%61%6e%65%74%2e%63%6f%6d%2f%66%6f%72%74%75%6e%65%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%5f%31%32%33%35%32%34%34%2e%68%74%6d&clk=rrel&cls=finannews&where=toppage" target="_blank" mon="ct=0&a=2&c=finannews">太子奶回应&quot;破产清算&quot;说:已起诉花旗银行索赔10亿元</a><i>14:22</i> </li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%6a%78%6e%65%77%73%2e%6a%78%63%6e%2e%63%6e%2f%35%32%35%2f%32%30%31%30%2d%34%2d%31%35%2f%33%30%31%32%36%40%36%37%39%30%30%31%2e%68%74%6d&clk=rrel&cls=finannews&where=toppage" target="_blank" mon="ct=0&a=2&c=finannews">工信部称抵制铁矿石进口并非政府政策</a><i>15:01</i> </li>
+						<li><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%67%62%2e%63%72%69%2e%63%6e%2f%32%37%38%32%34%2f%32%30%31%30%2f%30%34%2f%31%35%2f%33%33%36%35%73%32%38%31%37%39%32%39%2e%68%74%6d&clk=rrel&cls=finannews&where=toppage" target="_blank" mon="ct=0&a=2&c=finannews">外资企业积极评价中国利用外资新政策</a><i>09:47</i> </li>
+						<li><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%66%69%6e%61%6e%63%65%2e%71%69%61%6e%6c%6f%6e%67%2e%63%6f%6d%2f%33%30%30%35%35%2f%32%30%31%30%2f%30%34%2f%31%35%2f%32%35%33%30%40%35%36%35%35%31%35%36%2e%68%74%6d&clk=rrel&cls=finannews&where=toppage" target="_blank" mon="ct=0&a=2&c=finannews">唐建老鼠仓案余波未了 律师再建议处罚上投摩根</a><i>10:52</i> </li>
+						<li><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%66%69%6e%61%6e%63%65%2e%71%69%61%6e%6c%6f%6e%67%2e%63%6f%6d%2f%33%30%30%35%35%2f%32%30%31%30%2f%30%34%2f%31%35%2f%32%35%33%30%40%35%36%35%34%34%34%33%2e%68%74%6d&clk=rrel&cls=finannews&where=toppage" target="_blank" mon="ct=0&a=2&c=finannews">6家上市银行再融资计划明朗 拟募资1300亿</a><i>09:36</i> </li>
+						<li><a href="/n?cmd=2&class=finannews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%68%75%61%6e%65%74%2e%63%6f%6d%2f%66%6f%72%74%75%6e%65%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%5f%31%32%33%34%35%36%33%2e%68%74%6d&clk=rrel&cls=finannews&where=toppage" target="_blank" mon="ct=0&a=2&c=finannews">塞内加尔怀揣35亿吨铁矿石来华求“开采”</a><i>09:39</i> </li>
+					</ul>
+				</div>
+				<div class="rightImg">
+					<table>
+						<tr><td><a href="http://gold.hexun.com/2010-04-15/123350407.html" target="_blank" mon="ct=0&a=12&c=finannews"><img src="http://t2.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%6d%67%2e%68%65%78%75%6e%2e%63%6f%6d%2f%32%30%31%30%2d%30%34%2d%31%35%2f%31%32%33%33%35%30%34%30%38%2e%6a%70%67&fm=30"></a><br><a href="http://gold.hexun.com/2010-04-15/123350407.html" target="_blank" mon="ct=0&a=9&c=finannews">黄金台：黄金的定价模型</a></td></tr>
+						<tr><td><a href="http://forex.jrj.com.cn/2010/04/1513297299988.shtml" target="_blank" mon="ct=0&a=12&c=finannews"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%6d%67%2e%6a%72%6a%69%6d%67%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%32%30%31%30%30%34%31%35%31%33%32%38%32%37%39%34%33%2e%6a%70%67&fm=30"></a><br><a href="http://forex.jrj.com.cn/2010/04/1513297299988.shtml" target="_blank" mon="ct=0&a=9&c=finannews">赵臻：伯南克重申利率将保持低位一段时间</a></td></tr>
+					</table>
+				</div>
+				<div style="clear:both"></div>
+			</dd>
+		  </dl>
+		</div>
+		<div class="aside">
+			<dl class="aside_b stock_view">
+				<dd>
+					<iframe id="stock_frame" frameborder="0" scrolling="no" src="resource/html/bdhx.html"></iframe>
+                    <div style="margin:0; padding:0; position:relative;">
+                        <form method="post" action="http://baidu.hexun.com/stock/q.php" id="sf2" name="sf2" target="_blank" onsubmit="return submitStockForm(this);">
+                            <input type="text" name="code" id="wd2" style="width:210px;" autocomplete="off" value="代码/名称/拼音">
+                            <input type="submit" value="查询" onmousedown="UserMonitor.send(event, 4, {col:'501', pn:6})">
+                        </form>
+                    </div>
+				</dd>
+			</dl>
+			<dl class="aside_s finance_blog">
+				<dd>
+                    <ul class="list">
+                        <li><a href="http://www.cfi.net.cn/p20100415002046.html" mon="ct=0&col=15&pn=0"  target="_blank">3大利空解析大盘缘何欲涨还跌</a></li>
+                        <li><a href="http://news.xinhuanet.com/video/2010-04/15/content_13358850.htm" mon="ct=0&col=15&pn=1"  target="_blank">赵锡军谈个人投资者如何规避股指期货的风险</a></li>
+                        <li><a href="http://finance.ifeng.com/stock/qqgs/zbsc/20100415/2055631.shtml" mon="ct=0&col=15&pn=2"  target="_blank">亚太股市普遍收涨 日股涨0.6%</a></li>
+                    </ul>
+                    </ul>
+				</dd>
+			</dl>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div class="area">
+		<div class="content">
+		  <dl>
+			<dt class="tit"><!--ecombegin--><div><a href=/n?cmd=1&class=rwdt&pn=1>人物动态</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=gsdt&pn=1>公司动态</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=search_engine&pn=1>搜索引擎</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=e_commerce&pn=1>电子商务</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=online_game&pn=1>网络游戏</a></div><!--ecomend--><b><a href=/n?cmd=1&class=internet&pn=1  class="a2">互联网</a></b>&nbsp;&nbsp;&nbsp;&nbsp;<a  href=/n?cmd=1&class=internet&pn=1 class="ul">进入>></a></dt>
+			<dd>
+				<div class="leftCont">
+					<h2><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%71%71%2e%63%6f%6d%2f%61%2f%32%30%31%30%30%34%31%35%2f%30%30%30%38%33%31%2e%68%74%6d&clk=lrel&cls=internet&where=toppage" target="_blank" class="a1 f14" mon="ct=0&a=1&c=internet">美媒称互联网不能成为“低级趣味的天堂”</a></h2><i>04-14 17:29</i>
+					<ul class="list li2">
+						<li><a href="http://www.wowa.cn/Article/102708.html" target="_blank" mon="ct=0&a=2&c=internet">美国新闻网站拒绝匿名评论</a></li>
+						<li><a href="http://it.southcn.com/9/2010-04/13/content_11004292.htm" target="_blank" mon="ct=0&a=2&c=internet">&quot;纽约时报&quot;等多家报纸网站拒绝匿名评论</a></li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%74%65%63%68%77%65%62%2e%63%6f%6d%2e%63%6e%2f%70%65%6f%70%6c%65%2f%32%30%31%30%2d%30%34%2d%31%35%2f%35%38%30%38%38%32%2e%73%68%74%6d%6c&clk=rrel&cls=internet&where=toppage" target="_blank" mon="ct=0&a=2&c=internet">谷歌中国高管王劲加盟百度 任技术副总裁</a><i>10:55</i> </li>
+						<li><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%69%74%2e%73%6f%68%75%2e%63%6f%6d%2f%32%30%31%30%30%34%31%35%2f%6e%32%37%31%35%31%35%32%35%31%2e%73%68%74%6d%6c&clk=rrel&cls=internet&where=toppage" target="_blank" mon="ct=0&a=2&c=internet">Twitter注册用户突破1亿大关 规模不逊于雅虎</a><i>00:37</i> </li>
+						<li><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%74%65%63%68%77%65%62%2e%63%6f%6d%2e%63%6e%2f%6e%65%77%73%2f%32%30%31%30%2d%30%34%2d%31%35%2f%35%38%30%36%36%33%2e%73%68%74%6d%6c&clk=rrel&cls=internet&where=toppage" target="_blank" mon="ct=0&a=2&c=internet">消息称新浪斥资3亿收购手机下载公司千尺无限</a><i>08:09</i> </li>
+						<li><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%66%7a%6e%65%77%73%2e%63%6f%6d%2e%63%6e%2f%64%73%78%77%2f%32%30%31%30%2d%34%2d%31%35%2f%32%30%31%30%34%31%35%32%58%4a%38%57%4c%32%65%55%54%31%30%31%32%30%2e%73%68%74%6d%6c&clk=rrel&cls=internet&where=toppage" target="_blank" mon="ct=0&a=2&c=internet">厦门网络推手揭秘炒作内幕:一个凤姐可富一个团队</a><i>10:00</i> </li>
+						<li><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%69%72%65%73%65%61%72%63%68%2e%63%6e%2f%63%68%61%72%74%73%2f%31%31%32%38%31%34%2e%73%68%74%6d%6c&clk=rrel&cls=internet&where=toppage" target="_blank" mon="ct=0&a=2&c=internet">2009年全球行为精准广告显著提升广告效果</a><i>08:18</i> </li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%62%61%6e%6b%2e%62%61%69%64%75%2e%63%6f%6d%2f%32%30%31%30%2d%30%34%2d%31%35%2f%31%32%33%33%34%39%36%34%31%2e%68%74%6d%6c&clk=rrel&cls=internet&where=toppage" target="_blank" mon="ct=0&a=2&c=internet">建行调网银交易限额最高至500万元</a><i>13:26</i> </li>
+						<li><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%71%71%2e%63%6f%6d%2f%61%2f%32%30%31%30%30%34%31%35%2f%30%30%32%30%35%36%2e%68%74%6d&clk=rrel&cls=internet&where=toppage" target="_blank" mon="ct=0&a=2&c=internet">农村网民首次过亿 城乡“数字鸿沟”持续拉大</a><i>13:53</i> </li>
+						<li><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%74%65%63%68%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%32%34%37%37%2e%68%74%6d%6c&clk=rrel&cls=internet&where=toppage" target="_blank" mon="ct=0&a=2&c=internet">金山成立安全子公司称将全面互联网化</a><i>15:05</i> </li>
+						<li><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%6e%65%77%73%2e%63%6f%6d%2e%63%6e%2f%63%75%6c%2f%6e%65%77%73%2f%32%30%31%30%2f%30%34%2d%31%35%2f%32%32%32%38%30%35%31%2e%73%68%74%6d%6c&clk=rrel&cls=internet&where=toppage" target="_blank" mon="ct=0&a=2&c=internet">视频行业炒剧成风 《西游记》独播炒至1680万元</a><i>13:45</i> </li>
+						<li><a href="/n?cmd=2&class=internet&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%79%6e%2e%78%69%6e%68%75%61%6e%65%74%2e%63%6f%6d%2f%69%6e%66%6f%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%6f%6e%74%65%6e%74%5f%31%39%35%32%39%33%30%38%2e%68%74%6d&clk=rrel&cls=internet&where=toppage" target="_blank" mon="ct=0&a=2&c=internet">4月至9月云南省开展网站备案活动</a><i>14:08</i> </li>
+					</ul>
+				</div>
+				<div class="rightImg">
+					<table>
+						<tr><td><a href="http://www.techweb.com.cn/news/2010-04-15/580943.shtml" target="_blank" mon="ct=0&a=12&c=internet"><img src="http://news.baidu.com/z/resource/r/image/2010-04-15/1deabd9b2d53c0cf267393540b395fa8.jpg"></a><br><a href="http://www.techweb.com.cn/news/2010-04-15/580943.shtml" target="_blank" mon="ct=0&a=9&c=internet">艺龙全员学习《壹百度》 要求员工人手1本</a></td></tr>
+						<tr><td><a href="http://net.chinabyte.com/264/11215764.shtml" target="_blank" mon="ct=0&a=12&c=internet"><img src="http://t2.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%6d%61%67%65%2e%74%69%61%6e%6a%69%6d%65%64%69%61%2e%63%6f%6d%2f%75%70%6c%6f%61%64%49%6d%61%67%65%73%2f%32%30%31%30%2f%31%30%35%2f%31%59%59%45%36%4e%31%5a%46%35%56%56%2e%6a%70%67&fm=30"></a><br><a href="http://net.chinabyte.com/264/11215764.shtml" target="_blank" mon="ct=0&a=9&c=internet">Twitter称平台应用程序达10万 要增加可用性</a></td></tr>
+					</table>
+				</div>
+				<div style="clear:both"></div>
+			</dd>
+		  </dl>
+		</div>
+		<div class="aside">
+			<dl class="aside_s">
+				<dt><span><div><a href="/n?cmd=1&class=gsdt&pn=1" target="_blank">更多>></a></div><a href="/n?cmd=1&class=gsdt&pn=1" target="_blank">公司动态</a></span></dt>
+				<dd>
+					<ul class="list">
+                            <li><a mon="ct=0&a=27&c=internet" target="_blank" href="http://3c.ycwb.com/2010-04/15/content_2491520.htm">互联网电视牌照开闸 产业发展或遭遇成长之惑</a></li>
+                            <li><a mon="ct=0&a=27&c=internet" target="_blank" href="http://news.beelink.com.cn/20100415/2717607.shtml">完善公关执行渠道 网络发稿网疯狂服务客户</a></li>
+                            <li><a mon="ct=0&a=27&c=internet" target="_blank" href="http://www.chinanews.com.cn/cul/news/2010/04-15/2228051.shtml">视频行业炒剧成风 《西游记》独播炒至1680万元</a></li>
+                            <li><a mon="ct=0&a=27&c=internet" target="_blank" href="http://www.openvoip.cn/Html_Data/2010/04/15/Content_32256.html">金山安全战略首度集中曝光 将全面互联网化</a></li>
+                            <li><a mon="ct=0&a=27&c=internet" target="_blank" href="http://news.yesky.com/6/11216506.shtml">业界观察：谷歌会不会借中国3G浪潮曲线回归</a></li>
+                    </ul>
+				</dd>
+			</dl>
+			<dl class="aside_b">
+				<dt><span><div><a href="/n?cmd=1&class=rwdt&pn=1" target="_blank">更多>></a></div><a href="/n?cmd=1&class=rwdt&pn=1" target="_blank">人物动态</a></span></dt>
+				<dd>
+					<h4><a href="http://news.zgjrw.com/News/2010415/News/695724479500.shtml" target="_blank" class="a1" mon="ct=0&a=28&c=internet">中国最具影响力的25位商界领袖 柳传志排名第一</a></h4>
+					<table>
+						<tr>
+							<td valign="top">  近日，《财富》(中文版)第六次发布中国最具影响力的25位商界领袖。柳传志、张瑞敏、马化腾位列中国最具影响力的商界领袖前三名 ... </td>
+						</tr>
+					</table>
+					<ul class="list">
+						<li><a href="http://www.chinaz.com/News/IT/04151114G2010.html"  target="_blank" mon="ct=0&a=28&c=internet">直播首届Twitter开发者大会现场</a></li>
+						<li><a href="http://tech.xinmin.cn/2010/04/15/4448942.html"  target="_blank" mon="ct=0&a=28&c=internet">消息称NBA中国首席执行官陈永正将离职</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+<!--ecombegin--><div align="center" class="ecom"><script>if(!g_f_js){var g_f_js=true;document.write('<script src=\'http://eiv.baidu.com/other/ff.js\'></'+'script>');}</script>
+
+<script>if (typeof(cf)=="function") {cf("http://drmcmm.baidu.com/media/id=nWR3rH0Yrf&gp=402&time=nHcLnjD4rHnzP6.swf","984","90","http://www.baidu.com/adrc.php?t=00K900c00fAuw6m0M_TA0rsPK6jAEtuQ0000000000000000v3v1bh.THdCUvd-TA7MufK85yF9pywdgvD4PsK15yN-uWPbrHbLPjDYPWbdujR0IHdKwHRYwH6LfYn3nRc1rjT4njb3PWTvPH7DnW61fYP7w6K95ywlnAdWXW7_y-IuX-GDp1NrX-73HbwuPR4gRH72UH7JmNIwrRdlwHFrwA_zHYPpp7KRwhuPfdCsm-fsUywgnj-2UH-4mNfsIYG8HW7uUH-4mNfsUyPciMKfNDR-nYf0uHdCIZwsrBtEUh-ouyFBUB4kTi4WUvYEmvk9TLPxPi4spZ00mLFW5HRknHR3","0");}</script>
+
+</div><!--ecomend-->
+	<div class="area">
+		<div class="content">
+			<dl>
+				<dt class="tit"><!--ecombegin--><div><a href=/n?cmd=1&class=gddt&pn=1>各地动态</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=zcfx&pn=1>政策风向</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=shichangzoushi&pn=1>市场走势</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=autobuy&pn=1>新车</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=daogou&pn=1>导购</a></div><!--ecomend--><b><a href=/n?cmd=1&class=housenews&pn=1  class="a2">房产</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href=/n?cmd=1&class=autonews&pn=1  class="a2">汽车</a></b></dt>
+				<dd>
+                    <table><tr><td>
+						<div class="leftCont">
+							<h3><a class="f12" style="color:#666666;text-decoration:underline;" href=/n?cmd=1&class=housenews&pn=1>房产</a></h3>
+							<ul class="list2">
+								<li><a href="/n?cmd=2&class=housenews&page=%68%74%74%70%3a%2f%2f%73%7a%2e%66%6f%63%75%73%2e%63%6e%2f%6e%65%77%73%2f%32%30%31%30%2d%30%34%2d%31%35%2f%39%30%37%31%31%31%2e%68%74%6d%6c&clk=rrel&cls=housenews&where=toppage" target="_blank" mon="ct=0&a=2&c=housenews">深楼市入调控摸底名单 专家开药方治楼市高烧</a><i>09:52</i></li>
+								<li><a href="/n?cmd=2&class=housenews&page=%68%74%74%70%3a%2f%2f%68%6f%75%73%65%2e%70%65%6f%70%6c%65%2e%63%6f%6d%2e%63%6e%2f%47%42%2f%31%31%33%37%30%39%30%32%2e%68%74%6d%6c&clk=rrel&cls=housenews&where=toppage" target="_blank" mon="ct=0&a=2&c=housenews">一季度沪住房贷款逐月递减 外资行贷款同比多增</a><i>08:10</i></li>
+								<li><a href="/n?cmd=2&class=housenews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%65%2e%63%6e%2f%6d%61%63%72%6f%2f%6d%6f%72%65%2f%32%30%31%30%30%34%2f%31%35%2f%74%32%30%31%30%30%34%31%35%5f%32%31%32%37%39%33%36%37%2e%73%68%74%6d%6c&clk=rrel&cls=housenews&where=toppage" target="_blank" mon="ct=0&a=2&c=housenews">广州多名政协委员称大学城房价不过万才算合理</a><i>10:42</i></li>
+								<li><a href="/n?cmd=2&class=housenews&page=%68%74%74%70%3a%2f%2f%66%69%6e%61%6e%63%65%2e%69%66%65%6e%67%2e%63%6f%6d%2f%72%6f%6c%6c%2f%32%30%31%30%30%34%31%35%2f%32%30%35%35%31%38%33%2e%73%68%74%6d%6c&clk=rrel&cls=housenews&where=toppage" target="_blank" mon="ct=0&a=2&c=housenews">统计局: 房地产投资增长较快与上年基数较低有关</a><i>12:23</i></li>
+								<li><a href="/n?cmd=2&class=housenews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%72%6f%6c%6c%6e%65%77%73%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%34%37%35%32%31%2e%68%74%6d%6c&clk=rrel&cls=housenews&where=toppage" target="_blank" mon="ct=0&a=2&c=housenews">第107届广交会今日开幕 1340家宁波企业参展</a><i>10:30</i></li>
+								<li><a href="/n?cmd=2&class=housenews&page=%68%74%74%70%3a%2f%2f%66%69%6e%61%6e%63%65%2e%69%66%65%6e%67%2e%63%6f%6d%2f%6d%6f%6e%65%79%2f%73%70%65%63%69%61%6c%2f%66%61%6e%67%64%73%6a%2f%32%30%31%30%30%34%31%35%2f%32%30%35%34%30%33%33%2e%73%68%74%6d%6c&clk=rrel&cls=housenews&where=toppage" target="_blank" mon="ct=0&a=2&c=housenews">北京首套房贷有条件7折利率优惠</a><i>08:33</i></li>
+							</ul>
+						</div>
+						</td><td>
+						<div class="rightImg">
+							<table>
+								<tr><td class="unique"><a href="http://news.shangdu.com/dishi/605/2010/04/14/2010-04-14_408572_605.shtml" target="_blank" mon="ct=0&a=12&c=housenews"><img src="http://t2.baidu.com/it/u=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%73%68%61%6e%67%64%75%2e%63%6f%6d%2f%64%69%73%68%69%2f%36%30%35%2f%32%30%31%30%2f%30%34%2f%31%34%2f%69%6d%61%67%65%73%2f%36%30%35%5f%32%30%31%30%30%34%31%34%5f%31%37%36%2e%6a%70%67&fm=30"></a><br><a href="http://news.shangdu.com/dishi/605/2010/04/14/2010-04-14_408572_605.shtml" target="_blank" mon="ct=0&a=9&c=housenews">鹤壁棚改工程已开工20个住宅小区 完成投资7.5亿</a></td></tr>
+							</table>
+						</div>
+						</td></tr>
+                    </table>
+                    <table><tr><td>
+						<div class="leftCont">
+							<h3><a class="f12" style="color:#666666;text-decoration:underline;" href=/n?cmd=1&class=autonews&pn=1>汽车</a></h3>
+							<ul class="list2">
+								<li><a href="/n?cmd=2&class=autonews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%6d%79%63%61%72%31%36%38%2e%63%6f%6d%2f%32%30%31%30%2f%30%34%2f%31%36%33%38%35%31%2e%68%74%6d%6c&clk=rrel&cls=autonews&where=toppage" target="_blank" mon="ct=0&a=2&c=autonews">油价上涨怎么办 4款6万内低油耗车型导购[1]</a><i>10:18</i></li>
+								<li><a href="/n?cmd=2&class=autonews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%6d%79%63%61%72%31%36%38%2e%63%6f%6d%2f%32%30%31%30%2f%30%34%2f%31%36%33%39%32%32%2e%68%74%6d%6c&clk=rrel&cls=autonews&where=toppage" target="_blank" mon="ct=0&a=2&c=autonews">售7.79万/9.69万？比亚迪G3增两款车型</a><i>14:47</i></li>
+								<li><a href="/n?cmd=2&class=autonews&page=%68%74%74%70%3a%2f%2f%61%75%74%6f%2e%73%6f%68%75%2e%63%6f%6d%2f%32%30%31%30%30%34%31%35%2f%6e%32%37%31%35%33%31%33%39%39%2e%73%68%74%6d%6c&clk=rrel&cls=autonews&where=toppage" target="_blank" mon="ct=0&a=2&c=autonews">丰田宣布暂停雷克萨斯GX在美国以外市场销售</a><i>13:29</i></li>
+								<li><a href="/n?cmd=2&class=autonews&page=%68%74%74%70%3a%2f%2f%61%75%74%6f%2e%69%66%65%6e%67%2e%63%6f%6d%2f%6e%65%77%73%2f%64%6f%6d%65%73%74%69%63%69%6e%64%75%73%74%72%79%2f%32%30%31%30%30%34%31%35%2f%32%37%31%39%30%33%2e%73%68%74%6d%6c&clk=rrel&cls=autonews&where=toppage" target="_blank" mon="ct=0&a=2&c=autonews">油价上调每月多花30元油钱 或影响新车销量</a><i>13:29</i></li>
+								<li><a href="/n?cmd=2&class=autonews&page=%68%74%74%70%3a%2f%2f%61%75%74%6f%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%72%6f%6c%6c%6e%65%77%73%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%34%34%31%35%32%2e%68%74%6d%6c&clk=rrel&cls=autonews&where=toppage" target="_blank" mon="ct=0&a=2&c=autonews">车展:900余辆车集体“登台”看到您眼花</a><i>08:07</i></li>
+								<li><a href="/n?cmd=2&class=autonews&page=%68%74%74%70%3a%2f%2f%66%69%6e%61%6e%63%65%2e%65%61%73%74%64%61%79%2e%63%6f%6d%2f%6d%2f%32%30%31%30%30%34%31%35%2f%75%31%61%35%31%34%39%39%36%38%2e%68%74%6d%6c&clk=rrel&cls=autonews&where=toppage" target="_blank" mon="ct=0&a=2&c=autonews">2010年中国车市加速“驶向”1700万销量</a><i>13:12</i></li>
+							</ul>
+						</div>
+						</td><td>
+						<div class="rightImg">
+							<table>
+								<tr><td class="unique"><a href="http://auto.xinmin.cn/rollnews/2010/04/14/4425579.html" target="_blank" mon="ct=0&a=12&c=autonews"><img src="http://t1.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%6d%61%67%65%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%34%2f%32%30%31%30%30%34%31%34%30%37%35%33%35%34%30%36%36%31%38%35%2e%6a%70%67&fm=30"></a><br><a href="http://auto.xinmin.cn/rollnews/2010/04/14/4425579.html" target="_blank" mon="ct=0&a=9&c=autonews">解读戴姆勒雷诺日产联盟 交叉持股共享技术</a></td></tr>
+							</table>
+						</div>
+						</td></tr>
+                    </table>
+                </dd>
+			</dl>
+		</div>
+		<div class="aside" style="position:relative">
+            <div id="city_view_bg_1" class="view_bg house_view_bg"></div>
+            <div id="city_view_1" class="city_view house_view">
+                <div class="city_list city_list_1"></div>
+                <div id="btn_back_1" class="btn_back">返回上一层</div>
+                <div id="btn_close_1" class="btn_close"></div>
+                <div class="up_triangle"></div>
+            </div>
+            <div id="status_1" class="loading">正在加载，请稍候......</div>
+			<dl class="aside_s">
+				<dt><span><b id="city_name_1">各地</b>房产动态<!--ecombegin--><a id="change_city_1" class="sel_city" href="javascript:void(0);" style="text-decoration:none;">[<b>更换城市</b>]</a><!--ecomend--></span></dt>
+				<dd>
+					<ul id="house_news" class="list">
+					  <li><a href="http://fushun.nen.com.cn/74892139309301760/20100415/2283685.shtml"  target="_blank" mon="ct=0&a=27&c=housenews">理性权衡“裸婚”只是传说 零帕族也精彩</a></li>
+					  <li><a href="http://house.hexun.com/2010-04-15/123350572.html"  target="_blank" mon="ct=0&a=27&c=housenews">上海高端住宅表现突出 豪宅领涨大盘</a></li>
+					  <li><a href="http://stock.jrj.com.cn/invest/2010/04/1514497300503.shtml"  target="_blank" mon="ct=0&a=27&c=housenews">盘中：小心深圳楼市的成交天量</a></li>
+					  <li><a href="http://nj.focus.cn/news/2010-04-15/907554.html"  target="_blank" mon="ct=0&a=27&c=housenews">南京三个月卖地挣了66.45亿 &quot;价高者得&quot;难变</a></li>
+					  <li><a href="http://www.cnr.cn/china/gdgg/201004/t20100415_506289513.html"  target="_blank" mon="ct=0&a=27&c=housenews">天津首次建市中心城区限价房 满足夹心层需求</a></li>
+					</ul>
+				</dd>
+			</dl>
+<!--ecombegin-->
+<script type="text/javascript" language="javascript">
+<!--
+var housenews_options = {
+        localIDFromIP: 0,
+        localNameFromIP: '北京',
+        request: {
+            url: 'http://news.baidu.com/json/local/house/',
+            callback: 'bdNewsJsonCallBack_1'
+        },
+        data: house_cities,
+        triggerLevel: 2,
+        statusID: 'status_1',
+        cityNameID: 'city_name_1',
+        cityViewID: 'city_view_1',
+        cityViewBgID: 'city_view_bg_1',
+        changeCityID: 'change_city_1',
+        closeBtnID: 'btn_close_1',
+        backBtnID: 'btn_back_1',
+        localNewsID: 'house_news',
+        maxItemsShown: 5,
+        timeout: LocalNewsConfig.timeout
+    };
+on(window, 'load', function(){
+    initLocalHouseNews(housenews_options);
+});
+-->
+</script>
+<!--ecomend-->
+            <dl class="aside_b">
+				<dt><span><div><a href="/n?cmd=1&class=autobuy&pn=1" target="_blank">更多>></a></div><a href="/n?cmd=1&class=autobuy&pn=1" target="_blank">新车导购</a></span></dt>
+				<dd>
+					<h4><a href="http://www.auto18.com/news/html/2010-04-15/news_20100415174018.html" target="_blank" class="a1" mon="ct=0&a=28&c=autonews">北京车展人数再创新高 将开两条公交专线</a></h4>
+					<table>
+						<tr>
+							<td valign="top">  两年一度的北京国际汽车展览会本月23日将拉开大幕，这一全球汽车行业的顶级盛会将把京城会展经济再一次推向高潮。昨天，车展组 ... </td>
+						</tr>
+					</table>
+					<ul class="list">
+						<li><a href="http://auto.xinmin.cn/rollnews/2010/04/15/4452381.html" target="_blank" mon="ct=0&a=28&c=autonews">众泰版高尔夫谍照泄露 北京车展将亮相</a></li>
+						<li><a href="http://www.chetx.com/news/2010-04-15/219/10251315.htm" target="_blank" mon="ct=0&a=28&c=autonews">战事升级 16款重点合资车齐聚北京车展</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div class="area">
+		<div class="content">
+		  <dl>
+			<dt class="tit"><!--ecombegin--><div><a href=/n?cmd=1&class=nba&pn=1>NBA</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=worldsoccer&pn=1>国际足球</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=chinasoccer&pn=1>国内足球</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=cba&pn=1>CBA</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=othersports&pn=1>综合体育</a></div><!--ecomend--><b><a href=/n?cmd=1&class=sportnews&pn=1  class="a2">体育</a></b>&nbsp;&nbsp;&nbsp;&nbsp;<a  href=/n?cmd=1&class=sportnews&pn=1 class="ul">进入>></a></dt>
+			<dd>
+				<div class="leftCont">
+					<h2><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%31%36%32%31%2e%68%74%6d%6c&clk=lrel&cls=sportnews&where=toppage" target="_blank" class="a1 f14" mon="ct=0&a=1&c=sportnews">火箭三人全勤20年来首次 伤病面前他们是铁人</a></h2><i>14:24</i>
+					<ul class="list li2">
+						<li><a href="http://sports.xinmin.cn/2010/04/15/4452378.html" target="_blank" mon="ct=0&a=2&c=sportnews">小布：期待能拿MIP 巴蒂尔：阿帅应进名人堂</a></li>
+						<li><a href="http://nba.sports.tom.com/2010-04-15/0424/24958343.html" target="_blank" mon="ct=0&a=2&c=sportnews">火箭十大时刻：三人同场30+分 阿帅迎900胜高点</a></li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%72%6f%6c%6c%6e%65%77%73%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%31%32%37%39%2e%68%74%6d%6c&clk=rrel&cls=sportnews&where=toppage" target="_blank" mon="ct=0&a=2&c=sportnews">美媒：热火练兵亦能破网 新锐之战阿联比斯利争辉</a><i>14:03</i> </li>
+						<li><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%72%6f%6c%6c%6e%65%77%73%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%31%31%31%38%2e%68%74%6d%6c&clk=rrel&cls=sportnews&where=toppage" target="_blank" mon="ct=0&a=2&c=sportnews">洪元硕乐观看待客场平局：我相信国安能晋级16强</a><i>13:55</i> </li>
+						<li><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%31%32%35%38%2e%68%74%6d%6c&clk=rrel&cls=sportnews&where=toppage" target="_blank" mon="ct=0&a=2&c=sportnews">ESPN：季后赛首轮对阵出炉 周末点燃首轮战火</a><i>14:03</i> </li>
+						<li><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%31%32%35%36%2e%68%74%6d%6c&clk=rrel&cls=sportnews&where=toppage" target="_blank" mon="ct=0&a=2&c=sportnews">骆明：输巴萨非皇马金元政策之败 输欧冠才是</a><i>14:03</i> </li>
+						<li><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%73%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%6a%2f%32%30%31%30%2d%30%34%2d%31%35%2f%31%32%33%32%34%39%33%39%31%32%36%2e%73%68%74%6d%6c&clk=rrel&cls=sportnews&where=toppage" target="_blank" mon="ct=0&a=2&c=sportnews">沈祥福：今年打基础明天再调整 不能像鲁能那样丢脸</a><i>12:32</i> </li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%31%36%33%2e%63%6f%6d%2f%31%30%2f%30%34%31%35%2f%31%33%2f%36%34%41%4b%46%36%44%33%30%30%30%35%31%43%41%51%2e%68%74%6d%6c&clk=rrel&cls=sportnews&where=toppage" target="_blank" mon="ct=0&a=2&c=sportnews">王静平静接受禁赛四年的处罚 全运会成绩被取消</a><i>13:46</i> </li>
+						<li><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%31%36%33%2e%63%6f%6d%2f%31%30%2f%30%34%31%35%2f%31%33%2f%36%34%41%4c%31%41%56%41%30%30%30%35%31%43%44%47%2e%68%74%6d%6c&clk=rrel&cls=sportnews&where=toppage" target="_blank" mon="ct=0&a=2&c=sportnews">辛吉斯再突然悔婚约 瑞士律师成第11位&quot;前驸马&quot;</a><i>13:56</i> </li>
+						<li><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%30%38%38%30%2e%68%74%6d%6c&clk=rrel&cls=sportnews&where=toppage" target="_blank" mon="ct=0&a=2&c=sportnews">魔兽同时蝉联封盖篮板王 创历史成NBA第一人</a><i>13:42</i> </li>
+						<li><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%63%6e%73%6f%63%63%65%72%2e%74%69%74%61%6e%32%34%2e%63%6f%6d%2f%32%30%31%30%2d%30%34%2d%31%35%2f%36%35%35%39%30%2e%68%74%6d%6c&clk=rrel&cls=sportnews&where=toppage" target="_blank" mon="ct=0&a=2&c=sportnews">孙吉：为申花卖命享受下岗待遇 讨薪门年内有结果</a><i>14:10</i> </li>
+						<li><a href="/n?cmd=2&class=sportnews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%31%36%33%2e%63%6f%6d%2f%31%30%2f%30%34%31%35%2f%30%31%2f%36%34%39%39%52%53%38%38%30%30%30%35%31%43%38%39%2e%68%74%6d%6c&clk=rrel&cls=sportnews&where=toppage" target="_blank" mon="ct=0&a=2&c=sportnews">足协新中层未定韦迪总局&quot;要人&quot; 5新人下周上岗</a><i>01:22</i> </li>
+					</ul>
+				</div>
+				<div class="rightImg">
+					<table>
+						<tr><td><a href="http://sports.163.com/10/0415/13/64AIPC0800052DT2.html" target="_blank" mon="ct=0&a=12&c=sportnews"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%6d%67%34%2e%63%61%63%68%65%2e%6e%65%74%65%61%73%65%2e%63%6f%6d%2f%73%70%6f%72%74%73%2f%32%30%31%30%2f%34%2f%31%35%2f%32%30%31%30%30%34%31%35%31%33%31%37%31%35%34%36%36%36%62%2e%6a%70%67&fm=30"></a><br><a href="http://sports.163.com/10/0415/13/64AIPC0800052DT2.html" target="_blank" mon="ct=0&a=9&c=sportnews">双色球第10042期唐儿蓝球专点：重点大数10、13</a></td></tr>
+						<tr><td><a href="http://www.espnstar.com.cn/pub/f1/2010/0415/157237.htm" target="_blank" mon="ct=0&a=12&c=sportnews"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%77%77%77%2e%65%73%70%6e%73%74%61%72%2e%63%6f%6d%2e%63%6e%2f%76%2f%69%6d%61%67%65%73%2f%75%70%6c%6f%61%64%66%69%6c%65%2f%32%30%31%30%2d%34%2f%32%30%31%30%34%31%35%31%33%31%35%34%30%32%38%31%2e%4a%50%47&fm=30"></a><br><a href="http://www.espnstar.com.cn/pub/f1/2010/0415/157237.htm" target="_blank" mon="ct=0&a=9&c=sportnews">斜风细雨侵袭上海 阿隆索“被困”女车迷</a></td></tr>
+					</table>
+				</div>
+				<div style="clear:both"></div>
+			</dd>
+		  </dl>
+		</div>
+		<div class="aside">
+			<dl class="aside_b">
+				<dt><span><div><a href="/n?cmd=1&class=nba&pn=1" target="_blank">更多>></a></div><a href="/n?cmd=1&class=nba&pn=1" target="_blank">NBA</a></span></dt>
+				<dd>
+					<h4><a href="http://sports.xinmin.cn/2010/04/15/4451621.html" target="_blank" class="a1" mon="ct=0&a=27&c=sportnews">火箭三人全勤20年来首次 伤病面前他们是铁人</a></h4>
+					<table>
+						<tr>
+							<td valign="top"><a href="http://sports.dbw.cn/system/2010/04/12/052446432.shtml" mon="ct=0&a=27&c=sportnews" target="_blank"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%70%69%63%2e%64%62%77%2e%63%6e%2f%30%2f%30%33%2f%32%34%2f%30%36%2f%33%32%34%30%36%32%34%5f%34%37%32%33%37%38%2e%6a%70%67&fm=30"></a></td>
+							<td valign="top">  腾讯体育讯 北京时间4月15日消息，今天休斯敦火箭在常规赛最后一场比赛中以115-123不敌新奥尔良黄蜂结束了本赛季。此役阿里扎得 ... </td>
+						</tr>
+					</table>
+					<ul class="list">
+						<li><a href="http://news.xinmin.cn/rollnews/2010/04/15/4451279.html" target="_blank" mon="ct=0&a=27&c=sportnews">美媒：热火练兵亦能破网 新锐之战阿联比斯利争辉</a></li>
+						<li><a href="http://sports.xinmin.cn/2010/04/15/4451258.html" target="_blank" mon="ct=0&a=27&c=sportnews">ESPN：季后赛首轮对阵出炉 周末点燃首轮战火</a></li>
+					</ul>
+				</dd>
+			</dl>
+            <dl class="aside_s hotwords">
+				<dt style="position:relative;"><span>体育新闻热搜词</span></dt>
+                <dd class="class_hotwords">
+                    <div>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=火箭vs黄蜂直播" target="_blank" mon="ct=0&a=28&col=12">火箭vs黄蜂直播</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=贝伦-罗德里格斯" target="_blank" mon="ct=0&a=28&col=12">贝伦-罗德里格斯</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=国安+川崎+亚冠" target="_blank" mon="ct=0&a=28&col=12">国安 川崎 亚冠</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=骑士+常规赛+老鹰" target="_blank" mon="ct=0&a=28&col=12">骑士 常规赛 老鹰</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=易建联+收官+加时" target="_blank" mon="ct=0&a=28&col=12">易建联 收官 加时</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=乔丹+科比+杜兰特" target="_blank" mon="ct=0&a=28&col=12">乔丹 科比 杜兰特</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=马刺+历史+太阳" target="_blank" mon="ct=0&a=28&col=12">马刺 历史 太阳</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=巴萨+梅西+视频" target="_blank" mon="ct=0&a=28&col=12">巴萨 梅西 视频</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=孔令辉+马苏+牵手门" target="_blank" mon="ct=0&a=28&col=12">孔令辉 马苏</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=卡巴+亚冠+王栋" target="_blank" mon="ct=0&a=28&col=12">卡巴 亚冠 王栋</a>
+
+                    <span style="font-size:0;"></span>
+                    </div>
+                </dd>
+			</dl>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+ <!--ecombegin--><div align="center" class="ecom"><script>if(!g_f_js){var g_f_js=true;document.write('<script src=\'http://eiv.baidu.com/other/ff.js\'></'+'script>');}</script>
+
+
+
+<script>if (typeof(cf)=="function") {cf("http://drmcmm.baidu.com/media/id=nWfknj6drf&gp=402&time=nHcLnjm1nHm3nf.swf","984","90","http://www.baidu.com/adrc.php?t=00KB00c00fZBwfm0eTfA0r4DK6jAEtuQ0000000000000000v3v1bh.THdCUvd-TA7MufK85yF9pywdgvD4r0K15yN-uWPbrHbLPjDYPWbdujR0IHdKwHRYwH6LfYn3nRc1rjT4njb3PWTvPH7DnW61fYP7w6K95ywlnAdWXW7_y-IuX-GDp1NrX-73HbwuPR4gRH72UH7JmNIwrRdlHHNPXbDkHbPpp7KRwhuPfdCsm-fsUywgnj-2UH-4mNfsIYG8HW7uUH-4mNfsUyPciMKfNDR-nYf0uHdCIZwsrBtEILILQM-CuMN8ua4WUvY8mv3E0APzm1YkPHcdnf","0");}</script>
+
+
+
+</div><!--ecomend-->
+	<div class="area">
+		<div class="content">
+		  <dl>
+			<dt class="tit"><!--ecombegin--><div><a href=/n?cmd=1&class=star&pn=1>明星</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=film&pn=1>电影</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=tv&pn=1>电视</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=music&pn=1>音乐</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=zongyi&pn=1>综艺</a></div><!--ecomend--><b><a href=/n?cmd=1&class=enternews&pn=1  class="a2">娱乐</a></b>&nbsp;&nbsp;&nbsp;&nbsp;<a  href=/n?cmd=1&class=enternews&pn=1 class="ul">进入>></a></dt>
+			<dd>
+				<div class="leftCont">
+					<h2><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%65%6e%74%2e%73%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%73%2f%6d%2f%32%30%31%30%2d%30%34%2d%31%35%2f%31%34%35%34%32%39%33%30%34%31%35%2e%73%68%74%6d%6c&clk=lrel&cls=enternews&where=toppage" target="_blank" class="a1 f14" mon="ct=0&a=1&c=enternews">经纪人留言承认赵薇已婚：低调是为了孩子幸福</a></h2><i>14:54</i>
+					<ul class="list li2">
+						<li><a href="http://www.zynews.com/news/2010-04/15/content_701511.htm" target="_blank" mon="ct=0&a=2&c=enternews">赵薇女儿照片叫价百万被骂</a></li>
+						<li><a href="http://ent.mop.com/star/3157369.shtml" target="_blank" mon="ct=0&a=2&c=enternews">赵薇经纪人陈蓉网上留言：大眼睛宝宝很漂亮</a></li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%65%6e%74%2e%73%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%6d%2f%63%2f%32%30%31%30%2d%30%34%2d%31%35%2f%31%35%30%35%32%39%33%30%34%33%39%2e%73%68%74%6d%6c&clk=rrel&cls=enternews&where=toppage" target="_blank" mon="ct=0&a=2&c=enternews">张艺谋新片回归文艺 李雪健奚美娟孙海英扎堆</a><i>15:05</i> </li>
+						<li><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%65%6e%74%2e%73%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%6d%2f%63%2f%32%30%31%30%2d%30%34%2d%31%35%2f%31%32%33%33%32%39%33%30%32%37%35%2e%73%68%74%6d%6c&clk=rrel&cls=enternews&where=toppage" target="_blank" mon="ct=0&a=2&c=enternews">《让子弹飞》成全兄弟俩合作 姜文给足姜武面儿</a><i>12:33</i> </li>
+						<li><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%31%37%32%31%2e%68%74%6d%6c&clk=rrel&cls=enternews&where=toppage" target="_blank" mon="ct=0&a=2&c=enternews">否认“地下女友” 孔令辉：我和马苏现在很好</a><i>14:31</i> </li>
+						<li><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%6e%72%2e%63%6e%2f%67%75%6e%64%6f%6e%67%2f%32%30%31%30%30%34%2f%74%32%30%31%30%30%34%31%35%5f%35%30%36%32%38%37%30%32%34%2e%68%74%6d%6c&clk=rrel&cls=enternews&where=toppage" target="_blank" mon="ct=0&a=2&c=enternews">吴镇宇护妻伤人留案底 黄秋生踢爆:又不是第一次</a><i>08:58</i> </li>
+						<li><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%72%6f%6c%6c%6e%65%77%73%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%31%38%36%32%2e%68%74%6d%6c&clk=rrel&cls=enternews&where=toppage" target="_blank" mon="ct=0&a=2&c=enternews">王学圻惠英红“据传”领跑影帝影后</a><i>14:37</i> </li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%76%69%64%65%6f%2e%73%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%65%6e%74%2f%76%2f%6d%2f%32%30%31%30%2d%30%34%2d%31%35%2f%31%34%32%31%36%38%35%36%30%2e%73%68%74%6d%6c&clk=rrel&cls=enternews&where=toppage" target="_blank" mon="ct=0&a=2&c=enternews">视频：闫妮化身包工头 与立威廉上演姐弟恋</a><i>14:21</i> </li>
+						<li><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%65%6e%74%65%72%74%61%69%6e%6d%65%6e%74%2e%64%62%77%2e%63%6e%2f%73%79%73%74%65%6d%2f%32%30%31%30%2f%30%34%2f%31%35%2f%30%35%32%34%35%35%31%38%30%2e%73%68%74%6d%6c&clk=rrel&cls=enternews&where=toppage" target="_blank" mon="ct=0&a=2&c=enternews">网友狠批台湾第一名模林志玲有明显O型腿</a><i>14:45</i> </li>
+						<li><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%61%67%72%69%2e%67%6f%76%2e%63%6e%2f%78%78%6c%62%2f%74%32%30%31%30%30%34%31%35%5f%31%34%36%37%31%30%31%2e%68%74%6d&clk=rrel&cls=enternews&where=toppage" target="_blank" mon="ct=0&a=2&c=enternews">赵本山出任首届中国农民艺术节形象大使</a><i>10:25</i> </li>
+						<li><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%30%32%32%6e%65%74%2e%63%6f%6d%2f%32%30%31%30%2f%34%2d%31%35%2f%34%34%33%32%33%34%32%35%32%35%31%37%36%30%31%2e%68%74%6d%6c&clk=rrel&cls=enternews&where=toppage" target="_blank" mon="ct=0&a=2&c=enternews">图文：成龙赴台买房密会房祖名 龙父子吃饭儿子买单</a><i>11:19</i> </li>
+						<li><a href="/n?cmd=2&class=enternews&page=%68%74%74%70%3a%2f%2f%65%6c%61%64%69%65%73%2e%73%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%6e%65%77%73%2f%32%30%31%30%2f%30%34%31%35%2f%31%31%30%32%39%38%35%33%36%33%2e%73%68%74%6d%6c&clk=rrel&cls=enternews&where=toppage" target="_blank" mon="ct=0&a=2&c=enternews">“卖淫门”牵出40女星 “淫媒”让拿证据抓人</a><i>11:02</i> </li>
+					</ul>
+				</div>
+				<div class="rightImg">
+					<table>
+						<tr><td><a href="http://ent.southcn.com/8/2010-04/15/content_11081261.htm" target="_blank" mon="ct=0&a=12&c=enternews"><img src="http://t2.baidu.com/it/u=%68%74%74%70%3a%2f%2f%65%6e%74%2e%73%6f%75%74%68%63%6e%2e%63%6f%6d%2f%38%2f%69%6d%61%67%65%73%2f%61%74%74%61%63%68%65%6d%65%6e%74%2f%6a%70%67%2f%73%69%74%65%34%2f%32%30%31%30%30%34%31%35%2f%35%33%2f%39%32%30%34%37%32%33%32%31%38%39%35%30%37%30%35%38%32%39%2e%6a%70%67&fm=30"></a><br><a href="http://ent.southcn.com/8/2010-04/15/content_11081261.htm" target="_blank" mon="ct=0&a=9&c=enternews">范冰冰讨厌男人话多自恋 赞李宇春很美很真实(图)</a></td></tr>
+						<tr><td><a href="http://ent.xinmin.cn/2010/04/15/4443197.html" target="_blank" mon="ct=0&a=12&c=enternews"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%6d%61%67%65%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%35%2f%32%30%31%30%30%34%31%35%30%37%32%38%32%35%31%38%33%36%37%31%2e%6a%70%67&fm=30"></a><br><a href="http://ent.xinmin.cn/2010/04/15/4443197.html" target="_blank" mon="ct=0&a=9&c=enternews">话题女星马诺“被离开” 不再回《非诚勿扰》</a></td></tr>
+					</table>
+				</div>
+				<div style="clear:both"></div>
+			</dd>
+		  </dl>
+		</div>
+		<div class="aside">
+			<dl class="aside_b">
+				<dt><span><div><a href="z/ent_blog/roll/" target="_blank">更多>></a></div><a href="z/ent_blog/roll/" target="_blank">娱乐 - 博客</a></span></dt>
+				<dd>
+					<ul class="list"><li><a href="http://lyuddd.home.news.cn/blog/a/0101000000000A9CFF8A2BB5.html" mon="ct=0&a=27&c=enternews&col=2"  target="_blank">与马苏分手，孔令辉为何会成为又一个“乒坛软蛋”</a></li>
+<li><a href="http://blog.huanqiu.com/?uid-174773-action-viewspace-itemid-590091" mon="ct=0&a=27&c=enternews&col=2"  target="_blank">凤姐向“花儿朵朵”导演组索要出场费侮辱了谁？</a></li>
+<li><a href="http://mama0709.home.news.cn/blog/a/0101000000000A9CF9FA84CA.html" mon="ct=0&a=27&c=enternews&col=2"  target="_blank">忘掉了“寡廉鲜耻”，明星还有存在的意义吗？（图）</a></li>
+<li><a href="http://blog.ifeng.com/article/4944783.html" mon="ct=0&a=27&c=enternews&col=2"  target="_blank">赵薇产后三大抉择引人关注（图）</a></li>
+<li><a href="http://cslr1840.blog.sohu.com/148430620.html" mon="ct=0&a=27&c=enternews&col=2"  target="_blank">兽兽复出大动作，欲加盟湖南卫视的真相</a></li>
+</ul><br>
+<ul class="list">
+<li><a href="http://blog.ifeng.com/article/4934792.html" mon="ct=0&a=27&c=enternews&col=2"  target="_blank">章子怡领衔十大做善事还饱受争议的明星（图）</a></li>
+<li><a href="http://wangbaosheng.home.news.cn/blog/a/0101000000000A9CEE9050EA.html" mon="ct=0&a=27&c=enternews&col=2"  target="_blank">柴静接棒刘芳菲欲成央视当家花旦，祝贺！但得不偿失</a></li>
+<li><a href="http://blog.ifeng.com/article/4930556.html" mon="ct=0&a=27&c=enternews&col=2"  target="_blank">范伟妻子首曝光说明了什么问题？（图）</a></li>
+
+
+                    </ul>
+				</dd>
+			</dl>
+            <dl class="aside_s hotwords">
+				<dt style="position:relative;"><span>娱乐新闻热搜词</span></dt>
+                <dd class="class_hotwords">
+                    <div>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=赵薇 女儿" target="_blank" mon="ct=0&a=28&col=13">赵薇 女儿</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=文强 死刑" target="_blank" mon="ct=0&a=28&col=13">文强 死刑</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=凌葳威" target="_blank" mon="ct=0&a=28&col=13">凌葳威</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=孔令辉牵手门" target="_blank" mon="ct=0&a=28&col=13">孔令辉牵手门</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=杨宝玲" target="_blank" mon="ct=0&a=28&col=13">杨宝玲</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=星巴克 免费" target="_blank" mon="ct=0&a=28&col=13">星巴克 免费</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=吴镇宇伤人案" target="_blank" mon="ct=0&a=28&col=13">吴镇宇伤人案</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=叶翠翠" target="_blank" mon="ct=0&a=28&col=13">叶翠翠</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=《山楂树》+张艺谋+开机" target="_blank" mon="ct=0&a=28&col=13">《山楂树》 开机</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=范冰冰+工作室" target="_blank" mon="ct=0&a=28&col=13">范冰冰 工作室</a>
+
+                    <span style="font-size:0;"></span>
+                    </div>
+                </dd>
+			</dl>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div class="area">
+		<div class="content">
+			<dl>
+				<dt class="tit"><!--ecombegin--><div><a href=/n?cmd=1&class=baojian&pn=1>保健养生</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=yiyao&pn=1>寻医问药</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=qinggan&pn=1>情感</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=netgames&pn=1>网络游戏</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=tvgames&pn=1>电视游戏</a></div><!--ecomend--><b><a href=/n?cmd=1&class=healthnews&pn=1  class="a2">健康</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href=/n?cmd=1&class=gamenews&pn=1  class="a2">游戏</a></b></dt>
+				<dd>
+                    <table><tr><td>
+						<div class="leftCont">
+							<h3><a class="f12" style="color:#666666;text-decoration:underline;" href=/n?cmd=1&class=healthnews&pn=1>健康</a></h3>
+							<ul class="list2">
+								<li><a href="/n?cmd=2&class=healthnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%72%6f%6c%6c%6e%65%77%73%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%32%31%31%38%2e%68%74%6d%6c&clk=rrel&cls=healthnews&where=toppage" target="_blank" mon="ct=0&a=2&c=healthnews">做好个人卫生 福建手足口病发病报告逐月减少</a><i>14:51</i></li>
+								<li><a href="/n?cmd=2&class=healthnews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%74%65%63%68%2d%66%6f%6f%64%2e%63%6f%6d%2f%6e%65%77%73%2f%32%30%31%30%2d%34%2d%31%35%2f%6e%30%33%36%35%33%39%39%2e%68%74%6d&clk=rrel&cls=healthnews&where=toppage" target="_blank" mon="ct=0&a=2&c=healthnews">减肥：想快速瘦身牢记“6多2少”（1）</a><i>11:28</i></li>
+								<li><a href="/n?cmd=2&class=healthnews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%67%6f%76%2e%63%6e%2f%67%7a%64%74%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%6f%6e%74%65%6e%74%5f%31%35%38%31%39%35%34%2e%68%74%6d&clk=rrel&cls=healthnews&where=toppage" target="_blank" mon="ct=0&a=2&c=healthnews">食品药品监管局要求加强抗震救灾药品等质量监管</a><i>14:41</i></li>
+								<li><a href="/n?cmd=2&class=healthnews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%30%32%32%6e%65%74%2e%63%6f%6d%2f%32%30%31%30%2f%34%2d%31%34%2f%35%32%34%34%36%38%32%34%32%35%31%33%33%37%30%2e%68%74%6d%6c&clk=rrel&cls=healthnews&where=toppage" target="_blank" mon="ct=0&a=2&c=healthnews">多吃维生素E可以改善粗糙皮肤</a><i>04-14 19:31</i></li>
+								<li><a href="/n?cmd=2&class=healthnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%71%71%2e%63%6f%6d%2f%61%2f%32%30%31%30%30%34%31%35%2f%30%30%31%38%38%37%2e%68%74%6d&clk=rrel&cls=healthnews&where=toppage" target="_blank" mon="ct=0&a=2&c=healthnews">北京首例贩卖人体器官案开庭 中介租房养供体</a><i>13:06</i></li>
+								<li><a href="/n?cmd=2&class=healthnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%65%32%31%2e%63%6e%2f%68%74%6d%6c%2f%32%30%31%30%2f%67%64%6a%79%2f%35%37%36%2f%32%30%31%30%30%34%31%35%31%30%30%34%33%32%5f%31%32%37%31%32%39%37%30%37%32%39%39%37%34%38%31%35%33%35%2e%68%74%6d&clk=rrel&cls=healthnews&where=toppage" target="_blank" mon="ct=0&a=2&c=healthnews">女大学生 请学会对男友说“不”</a><i>10:04</i></li>
+							</ul>
+						</div>
+						</td><td>
+						<div class="rightImg">
+							<table>
+								<tr><td class="unique"><a href="http://views.ce.cn/view/gov/201004/15/t20100415_21276904.shtml" target="_blank" mon="ct=0&a=12&c=healthnews"><img src="http://t2.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%31%2e%63%65%2e%63%6e%2f%76%69%65%77%73%2f%76%69%65%77%2f%67%6f%76%2f%32%30%31%30%30%34%2f%31%35%2f%57%30%32%30%31%30%30%34%31%35%32%35%35%32%33%36%34%32%35%31%33%35%2e%6a%70%67&fm=30"></a><br><a href="http://views.ce.cn/view/gov/201004/15/t20100415_21276904.shtml" target="_blank" mon="ct=0&a=9&c=healthnews">输血风险(图)</a></td></tr>
+							</table>
+						</div>
+						</td></tr>
+                    </table>
+                    <table><tr><td>
+						<div class="leftCont">
+							<h3><a class="f12" style="color:#666666;text-decoration:underline;" href=/n?cmd=1&class=gamenews&pn=1>游戏</a></h3>
+							<ul class="list2">
+								<li><a href="/n?cmd=2&class=gamenews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%72%6f%6c%6c%6e%65%77%73%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%35%32%33%35%34%2e%68%74%6d%6c&clk=rrel&cls=gamenews&where=toppage" target="_blank" mon="ct=0&a=2&c=gamenews">不妨学习韩国专治网游成瘾的“新拳法”</a><i>14:58</i></li>
+								<li><a href="/n?cmd=2&class=gamenews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%69%74%2e%63%6f%6d%2e%63%6e%2f%67%61%6d%65%73%2f%65%73%2f%73%63%32%2f%6e%65%77%73%2f%32%30%31%30%2f%30%34%2f%31%35%2f%30%39%2f%37%38%32%31%37%39%2e%68%74%6d%6c&clk=rrel&cls=gamenews&where=toppage" target="_blank" mon="ct=0&a=2&c=gamenews">《星际2》韩国被评为&quot;青少年不可用&quot;等级</a><i>09:15</i></li>
+								<li><a href="/n?cmd=2&class=gamenews&page=%68%74%74%70%3a%2f%2f%77%65%62%2e%64%75%6f%77%61%6e%2e%63%6f%6d%2f%31%30%30%34%2f%31%33%35%32%36%38%35%38%38%34%33%39%2e%68%74%6d%6c&clk=rrel&cls=gamenews&where=toppage" target="_blank" mon="ct=0&a=2&c=gamenews">《盘龙神墓记》生活有友谊而精彩</a><i>14:38</i></li>
+								<li><a href="/n?cmd=2&class=gamenews&page=%68%74%74%70%3a%2f%2f%77%61%6e%67%79%6f%75%2e%70%63%67%61%6d%65%73%2e%63%6f%6d%2e%63%6e%2f%78%77%6b%78%2f%67%6e%77%77%2f%31%30%30%34%2f%31%38%38%30%33%31%31%2e%68%74%6d%6c&clk=rrel&cls=gamenews&where=toppage" target="_blank" mon="ct=0&a=2&c=gamenews">《诛仙2》死亡竞技场 挑战PK极限!</a><i>11:32</i></li>
+								<li><a href="/n?cmd=2&class=gamenews&page=%68%74%74%70%3a%2f%2f%67%61%6d%65%6f%6e%6c%69%6e%65%2e%79%65%73%6b%79%2e%63%6f%6d%2f%34%34%2f%31%31%32%31%36%35%34%34%2e%73%68%74%6d%6c&clk=rrel&cls=gamenews&where=toppage" target="_blank" mon="ct=0&a=2&c=gamenews">4月16日截止“金页奖”报名 海选即将开启</a><i>13:35</i></li>
+								<li><a href="/n?cmd=2&class=gamenews&page=%68%74%74%70%3a%2f%2f%67%61%6d%65%73%2e%73%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%6f%2f%6e%2f%32%30%31%30%2d%30%34%2d%31%35%2f%31%34%35%37%33%39%31%36%36%38%2e%73%68%74%6d%6c&clk=rrel&cls=gamenews&where=toppage" target="_blank" mon="ct=0&a=2&c=gamenews">可爱BY2炫舞转型《成人礼》高调谈爱</a><i>14:57</i></li>
+							</ul>
+						</div>
+						</td><td>
+						<div class="rightImg">
+							<table>
+								<tr><td class="unique"><a href="http://it.southcn.com/9/2010-04/15/content_11090546.htm" target="_blank" mon="ct=0&a=12&c=gamenews"><img src="http://t1.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%74%2e%73%6f%75%74%68%63%6e%2e%63%6f%6d%2f%39%2f%69%6d%61%67%65%73%2f%61%74%74%61%63%68%65%6d%65%6e%74%2f%6a%70%67%2f%73%69%74%65%34%2f%32%30%31%30%30%34%31%35%2f%35%32%2f%34%36%37%39%34%38%35%30%37%32%31%30%30%34%32%37%34%34%2e%6a%70%67&fm=30"></a><br><a href="http://it.southcn.com/9/2010-04/15/content_11090546.htm" target="_blank" mon="ct=0&a=9&c=gamenews">“黑丝眼镜娘”盛大AllStar 现场将PK吕瑶</a></td></tr>
+							</table>
+						</div>
+						</td></tr>
+                    </table>
+                </dd>
+			</dl>
+		</div>
+		<div class="aside">
+			<dl class="aside_b">
+				<dt><span><div><a href="/n?cmd=1&class=baojian&pn=1" target="_blank">更多>></a></div><a href="/n?cmd=1&class=baojian&pn=1" target="_blank">保健养生</a></span></dt>
+				<dd>
+					<h4><a href="http://fashion.xinmin.cn/2010/04/15/4452187.html" target="_blank" class="a1" mon="ct=0&a=27&c=healthnews">四种水果面膜DIY 解决夏季皮肤问题</a></h4>
+					<table>
+						<tr>
+							<td valign="top"><a href="http://news.henanci.com/Pages/20104151435130.shtml" mon="ct=0&a=27&c=healthnews" target="_blank"><img src="http://t1.baidu.com/it/u=%68%74%74%70%3a%2f%2f%77%77%77%2e%68%65%6e%61%6e%63%69%2e%63%6f%6d%2f%50%69%63%54%69%74%6c%65%2f%32%30%31%30%2f%34%2f%31%35%2f%30%32%33%35%30%31%32%36%35%36%32%35%30%31%2e%6a%70%67&fm=30"></a></td>
+							<td valign="top">  您现在： 南方网首页>女性女性靓颜女性护肤  2010-04-15 11:52:23来源: 南方都市报网络版暂无网友评论  浏览字号： 大中小 | 打 ... </td>
+						</tr>
+					</table>
+					<ul class="list">
+						<li><a href="http://news.workercn.cn/contentfile/2010/04/15/145322251364850.html" target="_blank" mon="ct=0&a=27&c=healthnews">劳动午报：北大人民医院启动职工健康行动计划</a></li>
+						<li><a href="http://www.ha.xinhuanet.com/fuwu/yiliao/2010-04/15/content_19529719.htm" target="_blank" mon="ct=0&a=27&c=healthnews">老人健身 有法可依</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl class="aside_s">
+				<dt><span><div><a href="/n?cmd=1&class=netgames&pn=1" target="_blank">更多>></a></div><a href="/n?cmd=1&class=netgames&pn=1" target="_blank">网络游戏</a></span></dt>
+				<dd>
+					<ul class="list">
+						<li><a href="http://web.duowan.com/1004/135269874884.html"  target="_blank" mon="ct=0&a=28&c=gamenews">盘龙神墓记浅析阵型排布兵将搭配</a></li>
+						<li><a href="http://news.xinmin.cn/rollnews/2010/04/15/4452354.html"  target="_blank" mon="ct=0&a=28&c=gamenews">不妨学习韩国专治网游成瘾的“新拳法”</a></li>
+						<li><a href="http://games.sina.com.cn/o/n/2010-04-15/1455391667.shtml"  target="_blank" mon="ct=0&a=28&c=gamenews">《穿越火线》黄金家族打造枪战时尚潮流</a></li>
+						<li><a href="http://article.pchome.net/content-1101445.html"  target="_blank" mon="ct=0&a=28&c=gamenews">七大系统备阵 十万玩家迎《盘龙神墓记》新服</a></li>
+						<li><a href="http://games.sina.com.cn/o/n/2010-04-15/1450391660.shtml"  target="_blank" mon="ct=0&a=28&c=gamenews">震耳欲聋 《热血江湖》重现狮吼功</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+<!--ecombegin--><div align="center" class="ecom"><script>if(!g_f_js){var g_f_js=true;document.write('<script src=\'http://eiv.baidu.com/other/ff.js\'></'+'script>');}</script>
+
+
+
+<script>if (typeof(cf)=="function") {cf("http://drmcmm.baidu.com/media/id=nWTsn1mLrf&gp=402&time=nHcLnj6sP161n0.swf","984","90","http://www.baidu.com/adrc.php?t=00KW00c00f74w0m0C2sA07PBafjAEtuQ0000000000000000v3v1bh.THdCUvd-TA7MufK85yF9pywdgvD4rfK15yN-uWPbrHbLPjDYPWbdujR0IHdKwHRYwH6LfYn3nRc1rjT4njb3PWTvPH7DnW61fYP7w6K95ywlnAdWXW7_y-IuX-GDp1NrX-73HbwuPR4gRH72UH7JmNIwrRdlfH7Pph_kHYPpp7KRwhuPfdCsm-fsUywgnj-2UH-4mNfsIYG8HW7uUH-4mNfsUyPciMKfNDR-nYf0uHdCIZwsrBtEIAT8uLT8mvqVQhP8QvIsmzt0mLFW5HbsP1f","0");}</script>
+
+
+
+</div><!--ecomend-->
+	<div class="area">
+		<div class="content">
+		  <dl>
+		     <dt class="tit"><!--ecombegin--><div><a href=/n?cmd=1&class=exams&pn=1>考试</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=abroad&pn=1>留学</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=jiuye&pn=1>就业</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=cell&pn=1>手机</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=digital&pn=1>数码</a></div><!--ecomend--><b><a href=/n?cmd=1&class=edunews&pn=1  class="a2">教育</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href=/n?cmd=1&class=technnews&pn=1  class="a2">科技</a></b></dt>
+			  <dd>
+                    <table><tr><td>
+						<div class="leftCont">
+							<h3><a class="f12" style="color:#666666;text-decoration:underline;" href=/n?cmd=1&class=edunews&pn=1>教育</a></h3>
+							<ul class="list2">
+								<li><a href="/n?cmd=2&class=edunews&page=%68%74%74%70%3a%2f%2f%65%64%75%2e%68%73%77%2e%63%6e%2f%73%79%73%74%65%6d%2f%32%30%31%30%2f%30%34%2f%31%35%2f%30%35%30%34%38%36%31%30%35%2e%73%68%74%6d%6c&clk=rrel&cls=edunews&where=toppage" target="_blank" mon="ct=0&a=2&c=edunews">聊城大学2010年普通高等教育招生章程</a><i>15:03</i></li>
+								<li><a href="/n?cmd=2&class=edunews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%71%71%2e%63%6f%6d%2f%61%2f%32%30%31%30%30%34%31%35%2f%30%30%30%31%30%38%2e%68%74%6d&clk=rrel&cls=edunews&where=toppage" target="_blank" mon="ct=0&a=2&c=edunews">北大原校长许智宏：中国目前没有世界一流大学</a><i>01:21</i></li>
+								<li><a href="/n?cmd=2&class=edunews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%35%2f%34%34%34%37%33%32%37%2e%68%74%6d%6c&clk=rrel&cls=edunews&where=toppage" target="_blank" mon="ct=0&a=2&c=edunews">组图：华昌小学体育教师沈浩 师生爱父子情</a><i>10:18</i></li>
+								<li><a href="/n?cmd=2&class=edunews&page=%68%74%74%70%3a%2f%2f%65%6e%74%2e%73%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%76%2f%6d%2f%32%30%31%30%2d%30%34%2d%31%35%2f%30%33%31%38%32%39%32%39%37%34%30%2e%73%68%74%6d%6c&clk=rrel&cls=edunews&where=toppage" target="_blank" mon="ct=0&a=2&c=edunews">广电总局：屏蔽缩略词是误读 目的是规范外来词</a><i>03:18</i></li>
+								<li><a href="/n?cmd=2&class=edunews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%71%71%2e%63%6f%6d%2f%61%2f%32%30%31%30%30%34%31%35%2f%30%30%31%39%35%34%2e%68%74%6d&clk=rrel&cls=edunews&where=toppage" target="_blank" mon="ct=0&a=2&c=edunews">北京小升初政策出台 非京籍3至5年享同城待遇</a><i>13:26</i></li>
+								<li><a href="/n?cmd=2&class=edunews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%67%6f%76%2e%63%6e%2f%6a%72%7a%67%2f%32%30%31%30%2d%30%34%2f%31%35%2f%63%6f%6e%74%65%6e%74%5f%31%35%38%31%36%38%39%2e%68%74%6d&clk=rrel&cls=edunews&where=toppage" target="_blank" mon="ct=0&a=2&c=edunews">2010年度国家公务员录用考试查处违纪人员561名</a><i>10:50</i></li>
+							</ul>
+						</div>
+						</td><td>
+						<div class="rightImg">
+							<table>
+								<tr><td class="unique"><a href="http://www.ncxhw.com/content/2010-4/13/201041374714.htm" target="_blank" mon="ct=0&a=12&c=edunews"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%6e%6e%63%77%2e%63%6e%2f%70%64%66%2f%6e%63%72%62%6e%65%77%2f%72%65%73%2f%31%2f%32%30%31%30%30%34%31%32%2f%32%36%30%36%31%32%37%31%30%38%35%38%35%33%30%30%30%2e%6a%70%67&fm=30"></a><br><a href="http://www.ncxhw.com/content/2010-4/13/201041374714.htm" target="_blank" mon="ct=0&a=9&c=edunews">《世界日报》资助西华师大贫困生</a></td></tr>
+							</table>
+						</div>
+						</td></tr>
+                    </table>
+                    <table><tr><td>
+						<div class="leftCont">
+							<h3><a class="f12" style="color:#666666;text-decoration:underline;" href=/n?cmd=1&class=technnews&pn=1>科技</a></h3>
+							<ul class="list2">
+								<li><a href="/n?cmd=2&class=technnews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%63%68%69%6e%61%62%79%74%65%2e%63%6f%6d%2f%38%35%2f%31%31%32%31%36%35%38%35%2e%73%68%74%6d%6c&clk=rrel&cls=technnews&where=toppage" target="_blank" mon="ct=0&a=2&c=technnews">美国市场供不应求 苹果推迟iPad国际销售1个月</a><i>13:53</i></li>
+								<li><a href="/n?cmd=2&class=technnews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%70%63%70%6f%70%2e%63%6f%6d%2f%64%6f%63%2f%30%2f%35%32%31%2f%35%32%31%34%30%31%2e%73%68%74%6d%6c&clk=rrel&cls=technnews&where=toppage" target="_blank" mon="ct=0&a=2&c=technnews">微软被爆&quot;血汗代工&quot;数百童工超时工作</a><i>09:24</i></li>
+								<li><a href="/n?cmd=2&class=technnews&page=%68%74%74%70%3a%2f%2f%74%65%6c%65%63%6f%6d%2e%63%68%69%6e%61%62%79%74%65%2e%63%6f%6d%2f%32%30%38%2f%31%31%32%31%36%37%30%38%2e%73%68%74%6d%6c&clk=rrel&cls=technnews&where=toppage" target="_blank" mon="ct=0&a=2&c=technnews">华为称将不遗余力向北美扩张 未否认将购Palm</a><i>14:49</i></li>
+								<li><a href="/n?cmd=2&class=technnews&page=%68%74%74%70%3a%2f%2f%61%75%74%6f%2e%73%6f%68%75%2e%63%6f%6d%2f%32%30%31%30%30%34%31%35%2f%6e%32%37%31%35%33%32%39%35%38%2e%73%68%74%6d%6c&clk=rrel&cls=technnews&where=toppage" target="_blank" mon="ct=0&a=2&c=technnews">比亚迪2000万现金支援青海玉树地震灾区</a><i>14:44</i></li>
+								<li><a href="/n?cmd=2&class=technnews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%6e%62%64%2e%63%6f%6d%2e%63%6e%2f%6e%65%77%73%68%74%6d%6c%2f%32%30%31%30%30%34%31%35%2f%32%30%31%30%30%34%31%35%31%31%34%34%32%36%34%30%33%2e%68%74%6d%6c&clk=rrel&cls=technnews&where=toppage" target="_blank" mon="ct=0&a=2&c=technnews">外媒称惠普因涉嫌在德国和俄罗斯行贿而遭调查</a><i>11:41</i></li>
+								<li><a href="/n?cmd=2&class=technnews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%65%2e%63%6e%2f%78%77%7a%78%2f%67%6e%73%7a%2f%67%64%78%77%2f%32%30%31%30%30%34%2f%31%35%2f%74%32%30%31%30%30%34%31%35%5f%32%31%32%37%37%32%30%36%2e%73%68%74%6d%6c&clk=rrel&cls=technnews&where=toppage" target="_blank" mon="ct=0&a=2&c=technnews">北京联通二季度末启动小灵通转网 明年底全退出</a><i>07:41</i></li>
+							</ul>
+						</div>
+						</td><td>
+						<div class="rightImg">
+							<table>
+								<tr><td class="unique"><a href="http://news.xinmin.cn/rollnews/2010/04/13/4405385.html" target="_blank" mon="ct=0&a=12&c=technnews"><img src="http://t2.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%6d%61%67%65%2e%78%69%6e%6d%69%6e%2e%63%6e%2f%32%30%31%30%2f%30%34%2f%31%33%2f%32%30%31%30%30%34%31%33%30%35%32%35%30%39%33%31%38%39%30%39%2e%6a%70%67&fm=30"></a><br><a href="http://news.xinmin.cn/rollnews/2010/04/13/4405385.html" target="_blank" mon="ct=0&a=9&c=technnews">成都正申报三网融合示范城市(图)</a></td></tr>
+							</table>
+						</div>
+						</td></tr>
+                    </table>
+              </dd>
+		  </dl>
+		</div>
+		<div class="aside">
+			<dl class="aside_s">
+				<dt><span><div><a href="/n?cmd=1&class=cell&pn=1" target="_blank">更多>></a></div><a href="/n?cmd=1&class=cell&pn=1" target="_blank">手机新闻</a></span></dt>
+				<dd>
+					<ul class="list">
+						<li><a href="http://digi.hsw.cn/system/2010/04/15/050486088.shtml"  target="_blank" mon="ct=0&a=27&c=technnews">小猫也能玩iPad?---当猫咪遇上iPad</a></li>
+						<li><a href="http://www.enet.com.cn/article/2010/0415/A20100415640110.shtml"  target="_blank" mon="ct=0&a=27&c=technnews">联通力促海南旅游进入“高级定制”时代</a></li>
+						<li><a href="http://luxury.ce.cn/main/nanshi/201004/15/t20100415_21281245.shtml"  target="_blank" mon="ct=0&a=27&c=technnews">智能手机控制机器坦克</a></li>
+						<li><a href="http://mobile.pconline.com.cn/news/changshang/1004/2099701.html"  target="_blank" mon="ct=0&a=27&c=technnews">名车佳丽交相辉映 赛利思推名表概念手机</a></li>
+						<li><a href="http://article.pchome.net/content-1101434.html"  target="_blank" mon="ct=0&a=27&c=technnews">金属滑盖热 港行诺基亚6700S到货济南</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl class="aside_b">
+				<dt><span><div><a href="/n?cmd=1&class=discovery&pn=1" target="_blank">更多>></a></div><a href="/n?cmd=1&class=discovery&pn=1" target="_blank">科学探索</a></span></dt>
+				<dd>
+					<h4><a href="http://stock.sohu.com/20100415/n271534018.shtml" target="_blank" class="a1" mon="ct=0&a=28&c=technnews">奥巴马今日将宣布太空新政 再次受质疑焦头烂额</a></h4>
+					<table>
+						<tr>
+							<td valign="top"><a href="http://news.chinabyte.com/286/11210786.shtml" mon="ct=0&a=28&c=technnews" target="_blank"><img src="http://t1.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%6d%61%67%65%2e%74%69%61%6e%6a%69%6d%65%64%69%61%2e%63%6f%6d%2f%75%70%6c%6f%61%64%49%6d%61%67%65%73%2f%32%30%31%30%2f%31%30%32%2f%32%32%38%33%4b%5a%31%4c%55%4b%42%4d%2e%6a%70%67&fm=30"></a></td>
+							<td valign="top">  中新网4月15日电 据美国媒体14日报道，核安全峰会在一片和气中如愿落幕，奥巴马实现理想的道路正朝着预定的轨道前进，但美国航 ... </td>
+						</tr>
+					</table>
+					<ul class="list">
+						<li><a href="http://news.southcn.com/i/2010-04/15/content_11088299.htm"  target="_blank" mon="ct=0&a=28&c=technnews">科学家：强震集聚发生属正常 并未超出预估(图)</a></li>
+						<li><a href="http://news.xinhuanet.com/world/2010-04/15/c_1235219.htm"  target="_blank" mon="ct=0&a=28&c=technnews">美科学家首次制作出土星闪电视频</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div class="area">
+		<div class="content">
+		  <dl>
+			<dt class="tit"><!--ecombegin--><div><a href=/n?cmd=1&class=shyf&pn=1>社会与法</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=shwx&pn=1>社会万象</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=zqsk&pn=1>真情时刻</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=/n?cmd=1&class=qwys&pn=1>奇闻异事</a></div><!--ecomend--><b><a href=/n?cmd=1&class=socianews&pn=1  class="a2">社会</a></b>&nbsp;&nbsp;&nbsp;&nbsp;<a  href=/n?cmd=1&class=socianews&pn=1 class="ul">进入>></a></dt>
+			<dd>
+				<div class="leftCont">
+					<h2><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%73%63%74%76%2e%63%6f%6d%2f%73%68%78%77%2f%6d%73%6d%79%2f%32%30%31%30%30%34%2f%74%32%30%31%30%30%34%31%35%5f%33%35%31%35%36%37%2e%73%68%74%6d%6c&clk=lrel&cls=socianews&where=toppage" target="_blank" class="a1 f14" mon="ct=0&a=1&c=socianews">村民拒强拆遭殴打：官方称强拆合法 村民愧对政府</a></h2><i>08:55</i>
+					<ul class="list li2">
+						<li><a href="http://www.forex.com.cn/html/c326/bagua/2010-04/1511421.htm" target="_blank" mon="ct=0&a=2&c=socianews">官员称强拆合法 称喷灭火器为安全 戳房顶为救援</a></li>
+						<li><a href="http://ccvic.com/shehui/guoneiyaowen/20100415/138381.shtml" target="_blank" mon="ct=0&a=2&c=socianews">强拆使用灭火器 还有多少悲剧要上演？</a></li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%6e%65%77%73%2e%63%6f%6d%2e%63%6e%2f%73%68%2f%6e%65%77%73%2f%32%30%31%30%2f%30%34%2d%31%35%2f%32%32%32%36%37%39%33%2e%73%68%74%6d%6c&clk=rrel&cls=socianews&where=toppage" target="_blank" mon="ct=0&a=2&c=socianews">公安部派员协查“蒙城灭门案”现场警戒仍未解除</a><i>08:38</i> </li>
+						<li><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%6e%65%77%73%2e%63%6f%6d%2e%63%6e%2f%73%68%2f%6e%65%77%73%2f%32%30%31%30%2f%30%34%2d%31%35%2f%32%32%32%37%38%38%30%2e%73%68%74%6d%6c&clk=rrel&cls=socianews&where=toppage" target="_blank" mon="ct=0&a=2&c=socianews">广西旱区村民组长寻水累死 村民自发照顾其家小</a><i>12:26</i> </li>
+						<li><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%73%6f%63%69%65%74%79%2e%64%62%77%2e%63%6e%2f%73%79%73%74%65%6d%2f%32%30%31%30%2f%30%34%2f%31%35%2f%30%35%32%34%35%33%35%37%33%2e%73%68%74%6d%6c&clk=rrel&cls=socianews&where=toppage" target="_blank" mon="ct=0&a=2&c=socianews">合肥“艾滋女”发帖者被拘留8天 称为报复前女友</a><i>08:28</i> </li>
+						<li><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%31%36%33%2e%63%6f%6d%2f%31%30%2f%30%34%31%35%2f%30%39%2f%36%34%41%34%43%43%54%51%30%30%30%31%34%41%45%45%2e%68%74%6d%6c&clk=rrel&cls=socianews&where=toppage" target="_blank" mon="ct=0&a=2&c=socianews">江苏徐州一校园食堂广告牌惊现黄段子(图)</a><i>09:05</i> </li>
+						<li><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%73%6f%68%75%2e%63%6f%6d%2f%32%30%31%30%30%34%31%35%2f%6e%32%37%31%35%31%39%36%34%34%2e%73%68%74%6d%6c&clk=rrel&cls=socianews&where=toppage" target="_blank" mon="ct=0&a=2&c=socianews">成都火车东站现雷人“Z”字形错位斑马线(图)</a><i>08:22</i> </li>
+					</ul>
+					<ul class="list2">
+						<li><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%77%77%77%2e%63%68%69%6e%61%6e%65%77%73%2e%63%6f%6d%2e%63%6e%2f%73%68%2f%6e%65%77%73%2f%32%30%31%30%2f%30%34%2d%31%35%2f%32%32%32%36%37%33%31%2e%73%68%74%6d%6c&clk=rrel&cls=socianews&where=toppage" target="_blank" mon="ct=0&a=2&c=socianews">8旬捡破烂老翁捐出10万元积蓄救灾(图)</a><i>08:00</i> </li>
+						<li><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%77%6f%72%6b%65%72%63%6e%2e%63%6e%2f%63%6f%6e%74%65%6e%74%66%69%6c%65%2f%32%30%31%30%2f%30%34%2f%31%35%2f%30%38%34%37%31%39%33%34%34%31%36%31%32%39%38%2e%68%74%6d%6c&clk=rrel&cls=socianews&where=toppage" target="_blank" mon="ct=0&a=2&c=socianews">美女闹市裸奔疑因与男友吵架精神受到刺激</a><i>08:47</i> </li>
+						<li><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%73%63%6e%65%77%73%2e%6e%65%77%73%73%63%2e%6f%72%67%2f%73%79%73%74%65%6d%2f%32%30%31%30%2f%30%34%2f%31%35%2f%30%31%32%36%37%36%32%31%34%2e%73%68%74%6d%6c&clk=rrel&cls=socianews&where=toppage" target="_blank" mon="ct=0&a=2&c=socianews">遂宁一乡干部上班时间打牌被逮 坚持打完最后一把牌</a><i>10:14</i> </li>
+						<li><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%73%70%6f%72%74%73%2e%73%69%6e%61%2e%63%6f%6d%2e%63%6e%2f%6c%2f%32%30%31%30%2d%30%34%2d%31%35%2f%31%32%33%39%34%39%33%39%31%34%32%2e%73%68%74%6d%6c&clk=rrel&cls=socianews&where=toppage" target="_blank" mon="ct=0&a=2&c=socianews">南京竞彩达人连续10天中奖 打破最长中奖纪录(图)</a><i>12:39</i> </li>
+						<li><a href="/n?cmd=2&class=socianews&page=%68%74%74%70%3a%2f%2f%6e%65%77%73%2e%71%69%61%6e%6c%6f%6e%67%2e%63%6f%6d%2f%32%38%38%37%34%2f%32%30%31%30%2f%30%34%2f%31%35%2f%32%35%30%32%40%35%36%35%35%31%35%37%2e%68%74%6d&clk=rrel&cls=socianews&where=toppage" target="_blank" mon="ct=0&a=2&c=socianews">上海熊猫乳品案二审开庭 3名责任人认罪</a><i>10:52</i> </li>
+					</ul>
+				</div>
+				<div class="rightImg">
+					<table>
+						<tr><td><a href="http://news.sohu.com/20100414/n271489961.shtml" target="_blank" mon="ct=0&a=12&c=socianews"><img src="http://t2.baidu.com/it/u=%68%74%74%70%3a%2f%2f%70%68%6f%74%6f%63%64%6e%2e%73%6f%68%75%2e%63%6f%6d%2f%32%30%31%30%30%34%31%34%2f%49%6d%67%32%37%31%34%38%39%39%36%32%2e%6a%70%67&fm=30"></a><br><a href="http://news.sohu.com/20100414/n271489961.shtml" target="_blank" mon="ct=0&a=9&c=socianews">村民遭拆迁者灭火器喷射殴打 邻里出手相助(图)</a></td></tr>
+						<tr><td><a href="http://news.sina.com.cn/s/2010-04-14/041120067906.shtml" target="_blank" mon="ct=0&a=12&c=socianews"><img src="http://t3.baidu.com/it/u=%68%74%74%70%3a%2f%2f%69%33%2e%73%69%6e%61%69%6d%67%2e%63%6e%2f%64%79%2f%6f%2f%32%30%31%30%2d%30%34%2d%31%34%2f%31%32%37%31%31%38%39%35%34%33%5f%36%69%6d%50%6d%65%2e%6a%70%67&fm=30"></a><br><a href="http://news.sina.com.cn/s/2010-04-14/041120067906.shtml" target="_blank" mon="ct=0&a=9&c=socianews">男婴遭弃身现多处切口续：为19岁母亲所为</a></td></tr>
+					</table>
+				</div>
+				<div style="clear:both"></div>
+			</dd>
+		  </dl>
+		</div>
+		<div class="aside">
+			<dl class="aside_b">
+				<dt><span>热门点击</span></dt>
+				<dd>
+					<ul class="list">
+						<li><a href="http://news.sina.com.cn/s/2010-04-14/050120068144.shtml" target="_blank" mon="ct=0&a=27&col=7">副局长与女网友开房视频遭曝光续:当事人已停职</a></li>
+						<li><a href="http://ccvic.com/minsheng/minqing/20100414/137528.shtml" target="_blank" mon="ct=0&a=27&col=7">13岁少女被骗身陷"淫窝" 老爸佯装客人智救女儿</a></li>
+						<li><a href="http://gb.cri.cn/27824/2010/04/14/3365s2816292.htm" target="_blank" mon="ct=0&a=27&col=7">卫生部:血液检测存漏洞 公众尽量不要输血</a></li>
+						<li><a href="http://ent.xinmin.cn/2010/04/14/4420575.html" target="_blank" mon="ct=0&a=27&col=7">黎姿挺大肚买珠宝 被传怀上龙凤胎(图)</a></li>
+						<li><a href="http://news.ifeng.com/society/1/201004/0414_343_1602954.shtml" target="_blank" mon="ct=0&a=27&col=7">武汉夜总会提供裸陪卖淫服务 预订电话响不停(图)</a></li></ul><br><ul class="list">
+						<li><a href="http://yule.baidu.com/news/star/2010-04-14/111837259803.html" target="_blank" mon="ct=0&a=27&col=7">twins合体紧张备战个唱 阿娇晕倒阿sa懒理被丑化</a></li>
+						<li><a href="http://amuse.nen.com.cn/73748651528159232/20100414/2634021.shtml" target="_blank" mon="ct=0&a=27&col=7">范伟妻子杨宝玲身份被曝光:曾是一名护士</a></li>
+						<li><a href="http://news.xinmin.cn/shehui/2010/04/14/4423262.html" target="_blank" mon="ct=0&a=27&col=7">拆除人员戴头盔上房揭瓦 持灭火器喷射(图)</a></li>
+					</ul>
+				</dd>
+			</dl>
+            <dl class="aside_s hotwords">
+				<dt style="position:relative;"><span>社会新闻热搜词</span></dt>
+                <dd class="class_hotwords">
+                    <div>
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=女子闹市裸奔" target="_blank" mon="ct=0&a=28&col=14">女子闹市裸奔</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=工地门图片" target="_blank" mon="ct=0&a=28&col=14">工地门图片</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=赵光宜" target="_blank" mon="ct=0&a=28&col=14">赵光宜</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=苍井空微博网址" target="_blank" mon="ct=0&a=28&col=14">苍井空微博网址</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=闹市裸奔的女子" target="_blank" mon="ct=0&a=28&col=14">闹市裸奔的女子</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=湖北+自杀" target="_blank" mon="ct=0&a=28&col=14">湖北 自杀</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=司法局+劳教+唐山市" target="_blank" mon="ct=0&a=28&col=14">司法局 劳教</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=知识+匮乏+小学" target="_blank" mon="ct=0&a=28&col=14">知识 匮乏 小学</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=村支书+儿子" target="_blank" mon="ct=0&a=28&col=14">村支书 儿子</a>
+
+<a href="http://news.baidu.com/ns?cl=2&ct=9&rn=20&sp=hotquery&word=19岁+割喉+男婴" target="_blank" mon="ct=0&a=28&col=14">19岁 割喉 男婴</a>
+
+                    <span style="font-size:0;"></span>
+                    </div>
+                </dd>
+			</dl>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+</div>
+</div>
+<img src="http://news.baidu.com/mp/b.jpg?cmd=3&cy=0" style="display:none;">
+<img id="cgif" src="http://c.baidu.com/c.gif?t=5&p=1" style="display:none">
+<script type="text/javascript">
+on(window, 'load', function(e){
+    window.as2 = new AutoSuggest({
+        form : document.getElementById('sf2'),//sf为搜索框form的id
+        input : document.getElementById('wd2'),//wd为输入框的id
+        url : 'http://cjhq.baidu.com/suggest?code=',
+        id : 'suggest1',
+        needSubmitForm : true,
+        mutipleSupport : true,
+        tipInfo : '请使用半角逗号","分隔多只股票'
+    });
+});
+</script>
+<div id="ft" style="border-top:0px;"><p>文明办网举报电话：010-59922822 &nbsp;<a href="http://tousu.baidu.com/webmaster/add/#1" target="_blank" class="cy">投诉中心</a></p>
+<p>百度新闻搜索源于互联网新闻网站和频道，系自动分类排列，百度不刊登或转载任何完整的新闻内容</p>
+<font style="color:#7777CC;">&copy;2010 Baidu</font> <a href="http://www.baidu.com/duty/" class="cy">使用百度前必读</a> <a href="http://net.china.cn/chinese/index.htm" target=_blank><img src="http://gimg.baidu.com/img/net.gif"></a>&nbsp;<a href="http://www.bj.cyberpolice.cn/index.htm" target=_blank><img src="http://gimg.baidu.com/img/110.gif" alt="首都网络110报警服务"></a></div>
+</div>
+</body>
+</html>

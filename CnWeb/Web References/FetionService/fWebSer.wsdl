@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.139icq.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.139icq.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;&lt;font color='#0000ff' size='5'&gt;飞信WebService接口&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font color='#FF0000'&gt;声明：&lt;br&gt;1、本站飞信接口以学习为目的，不涉及任何商业利益。任何企业和个人与此接口有关的商业行为，请与移动公司联系。&lt;br&gt;2、本飞信接口后台服务程序有引用飞信客户端的DLL文件，调用正常编程引用所能看到的相关类及函数，不存在破解或重打包客户端等行为。&lt;br&gt;3、对本飞信接口如有任何疑问，请联系QQ：14334655&lt;br&gt;&lt;/font&gt;调用说明：&lt;br&gt;1、客户端必须支持Cookie，否则不可以使用。&lt;br&gt;C#调用WebService启用Cookie示例代码:&lt;br&gt;fWebSer fsms = new fWebSer();&lt;br&gt;fsms.CookieContainer = new CookieContainer();&lt;br&gt;2、客户端登录后应每间隔3秒至3分钟之间调用一次ReMsg函数接收事件信息(建议异步调用)，超过3分钟不调用可能因超时而注销。&lt;br&gt;接口引用地址: http://io2.139icq.com:88/fWebSer.asmx?WSDL 技术支持请访问: &lt;a target='_blank' href='http://blog.csdn.net/mywwl'&gt;http://blog.csdn.net/mywwl&lt;/a&gt;&lt;br&gt;</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.139icq.com/">
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fpass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Logout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogoutResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tofno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddFResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tofno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelFResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Send">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tofno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VipTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VipTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VipTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReMsg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xno" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mtx" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReMsgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReMsgResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddFSoapIn">
+    <wsdl:part name="parameters" element="tns:AddF" />
+  </wsdl:message>
+  <wsdl:message name="AddFSoapOut">
+    <wsdl:part name="parameters" element="tns:AddFResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelFSoapIn">
+    <wsdl:part name="parameters" element="tns:DelF" />
+  </wsdl:message>
+  <wsdl:message name="DelFSoapOut">
+    <wsdl:part name="parameters" element="tns:DelFResponse" />
+  </wsdl:message>
+  <wsdl:message name="FListSoapIn">
+    <wsdl:part name="parameters" element="tns:FList" />
+  </wsdl:message>
+  <wsdl:message name="FListSoapOut">
+    <wsdl:part name="parameters" element="tns:FListResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSoapIn">
+    <wsdl:part name="parameters" element="tns:Send" />
+  </wsdl:message>
+  <wsdl:message name="SendSoapOut">
+    <wsdl:part name="parameters" element="tns:SendResponse" />
+  </wsdl:message>
+  <wsdl:message name="VipTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:VipTime" />
+  </wsdl:message>
+  <wsdl:message name="VipTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:VipTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReMsgSoapIn">
+    <wsdl:part name="parameters" element="tns:ReMsg" />
+  </wsdl:message>
+  <wsdl:message name="ReMsgSoapOut">
+    <wsdl:part name="parameters" element="tns:ReMsgResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpGetIn">
+    <wsdl:part name="xno" type="s:string" />
+    <wsdl:part name="fpass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LogoutHttpGetIn">
+    <wsdl:part name="xno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LogoutHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AddFHttpGetIn">
+    <wsdl:part name="xno" type="s:string" />
+    <wsdl:part name="tofno" type="s:string" />
+    <wsdl:part name="msg" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddFHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DelFHttpGetIn">
+    <wsdl:part name="xno" type="s:string" />
+    <wsdl:part name="tofno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DelFHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="FListHttpGetIn">
+    <wsdl:part name="xno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHttpGetIn">
+    <wsdl:part name="xno" type="s:string" />
+    <wsdl:part name="tofno" type="s:string" />
+    <wsdl:part name="msg" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="VipTimeHttpGetIn">
+    <wsdl:part name="xno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VipTimeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ReMsgHttpGetIn">
+    <wsdl:part name="xno" type="s:string" />
+    <wsdl:part name="mtx" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ReMsgHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpPostIn">
+    <wsdl:part name="xno" type="s:string" />
+    <wsdl:part name="fpass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LogoutHttpPostIn">
+    <wsdl:part name="xno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LogoutHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AddFHttpPostIn">
+    <wsdl:part name="xno" type="s:string" />
+    <wsdl:part name="tofno" type="s:string" />
+    <wsdl:part name="msg" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddFHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DelFHttpPostIn">
+    <wsdl:part name="xno" type="s:string" />
+    <wsdl:part name="tofno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DelFHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="FListHttpPostIn">
+    <wsdl:part name="xno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHttpPostIn">
+    <wsdl:part name="xno" type="s:string" />
+    <wsdl:part name="tofno" type="s:string" />
+    <wsdl:part name="msg" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="VipTimeHttpPostIn">
+    <wsdl:part name="xno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VipTimeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ReMsgHttpPostIn">
+    <wsdl:part name="xno" type="s:string" />
+    <wsdl:part name="mtx" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ReMsgHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="fWebSerSoap">
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录飞信&lt;br&gt;带入参数：xno=登录号码,fpass=飞信密码</wsdl:documentation>
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">注销飞信&lt;br&gt;带入参数：xno=登录号码</wsdl:documentation>
+      <wsdl:input message="tns:LogoutSoapIn" />
+      <wsdl:output message="tns:LogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">添加好友&lt;br&gt;带入参数：xno=登录号码,tofno=预添加好友号码,msg=发送信息(5个汉字以内)</wsdl:documentation>
+      <wsdl:input message="tns:AddFSoapIn" />
+      <wsdl:output message="tns:AddFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">删除好友&lt;br&gt;带入参数：xno=登录号码,tofno=预删除好友号码</wsdl:documentation>
+      <wsdl:input message="tns:DelFSoapIn" />
+      <wsdl:output message="tns:DelFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回好友列表&lt;br&gt;带入参数：xno=登录号码&lt;br&gt;返回说明：每条记录间以换行符(“\n”)分开，信息间以“|”分开</wsdl:documentation>
+      <wsdl:input message="tns:FListSoapIn" />
+      <wsdl:output message="tns:FListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Send">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送信息&lt;br&gt;带入参数：xno=登录号码,tofno=目标好友,msg=信息内容</wsdl:documentation>
+      <wsdl:input message="tns:SendSoapIn" />
+      <wsdl:output message="tns:SendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VipTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回会员时间&lt;br&gt;带入参数：xno=登录号码&lt;br&gt;说明：对于免费接口，会员是否到期都可以使用</wsdl:documentation>
+      <wsdl:input message="tns:VipTimeSoapIn" />
+      <wsdl:output message="tns:VipTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReMsg">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回事件信息(用于接收各种信息)&lt;br&gt;带入参数：xno=登录号码,mtx=长连接等待(堵塞)事件时间[秒]&lt;br&gt;mtx参数特殊说明：为0将直接返回，此函数建议用异步调用，设置此值大于30以上(一般设为40)可以达到实时接收信息效果&lt;br&gt;返回说明：每条记录间以换行符(“\n”)分开，参数之间以“&amp;”分开，每参数格式为：参数名=值&lt;br&gt;返回参数说明：&lt;br&gt;(1)公共返回参数说明:com=事件类型&lt;br&gt;(2)各[事件类型]返回参数说明&lt;br&gt;com=rmsg     收到新信息，参数有：rfno=对方飞信号码，rmno=对方手机号码，fname=对方昵称，msg=新信息内容&lt;br&gt;com=sendok   每发成功一条返回的结果,参数有：rfno=目标飞信号码或rmno=目标手机号码，msg=信息内容&lt;br&gt;com=senderr  每发错误一条返回的结果,参数有：rfno=目标飞信号码或rmno=目标手机号码，msg=信息内容，errtxt=错误信息&lt;br&gt;com=loginok  登录成功,参数有：rfno=自己飞信号码，rmno=自己手机号码,fname=自己昵称&lt;br&gt;com=loginerr 登录错误返回的结果,参数有：rfno=登录飞信号码 或rmno=登录手机号码,errtxt=错误信息&lt;br&gt;com=fadd     被别人添加为好友时,参数有：rfno=对方飞信号码，rmno=对方手机号码，fname=对方昵称，msg=以“|”分开的新好友信息&lt;br&gt;com=list     好友列表完成&lt;br&gt;com=logout   被注销时&lt;br&gt;com=changed  好友状态改变时,参数有：rfno=对方飞信号码，rmno=对方手机号码，fname=对方昵称，msg=以“|”分开的好友信息&lt;br&gt;注意事项：同步调用间隔应不小于3秒或大于3分钟,实时性不高的同步调用请尽量间隔大些，实时性高建议用异步调用设置mtx值为40左右，登录后超过3分钟不调用此函数就超时。</wsdl:documentation>
+      <wsdl:input message="tns:ReMsgSoapIn" />
+      <wsdl:output message="tns:ReMsgSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="fWebSerHttpGet">
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录飞信&lt;br&gt;带入参数：xno=登录号码,fpass=飞信密码</wsdl:documentation>
+      <wsdl:input message="tns:LoginHttpGetIn" />
+      <wsdl:output message="tns:LoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">注销飞信&lt;br&gt;带入参数：xno=登录号码</wsdl:documentation>
+      <wsdl:input message="tns:LogoutHttpGetIn" />
+      <wsdl:output message="tns:LogoutHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">添加好友&lt;br&gt;带入参数：xno=登录号码,tofno=预添加好友号码,msg=发送信息(5个汉字以内)</wsdl:documentation>
+      <wsdl:input message="tns:AddFHttpGetIn" />
+      <wsdl:output message="tns:AddFHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">删除好友&lt;br&gt;带入参数：xno=登录号码,tofno=预删除好友号码</wsdl:documentation>
+      <wsdl:input message="tns:DelFHttpGetIn" />
+      <wsdl:output message="tns:DelFHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回好友列表&lt;br&gt;带入参数：xno=登录号码&lt;br&gt;返回说明：每条记录间以换行符(“\n”)分开，信息间以“|”分开</wsdl:documentation>
+      <wsdl:input message="tns:FListHttpGetIn" />
+      <wsdl:output message="tns:FListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Send">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送信息&lt;br&gt;带入参数：xno=登录号码,tofno=目标好友,msg=信息内容</wsdl:documentation>
+      <wsdl:input message="tns:SendHttpGetIn" />
+      <wsdl:output message="tns:SendHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VipTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回会员时间&lt;br&gt;带入参数：xno=登录号码&lt;br&gt;说明：对于免费接口，会员是否到期都可以使用</wsdl:documentation>
+      <wsdl:input message="tns:VipTimeHttpGetIn" />
+      <wsdl:output message="tns:VipTimeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReMsg">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回事件信息(用于接收各种信息)&lt;br&gt;带入参数：xno=登录号码,mtx=长连接等待(堵塞)事件时间[秒]&lt;br&gt;mtx参数特殊说明：为0将直接返回，此函数建议用异步调用，设置此值大于30以上(一般设为40)可以达到实时接收信息效果&lt;br&gt;返回说明：每条记录间以换行符(“\n”)分开，参数之间以“&amp;”分开，每参数格式为：参数名=值&lt;br&gt;返回参数说明：&lt;br&gt;(1)公共返回参数说明:com=事件类型&lt;br&gt;(2)各[事件类型]返回参数说明&lt;br&gt;com=rmsg     收到新信息，参数有：rfno=对方飞信号码，rmno=对方手机号码，fname=对方昵称，msg=新信息内容&lt;br&gt;com=sendok   每发成功一条返回的结果,参数有：rfno=目标飞信号码或rmno=目标手机号码，msg=信息内容&lt;br&gt;com=senderr  每发错误一条返回的结果,参数有：rfno=目标飞信号码或rmno=目标手机号码，msg=信息内容，errtxt=错误信息&lt;br&gt;com=loginok  登录成功,参数有：rfno=自己飞信号码，rmno=自己手机号码,fname=自己昵称&lt;br&gt;com=loginerr 登录错误返回的结果,参数有：rfno=登录飞信号码 或rmno=登录手机号码,errtxt=错误信息&lt;br&gt;com=fadd     被别人添加为好友时,参数有：rfno=对方飞信号码，rmno=对方手机号码，fname=对方昵称，msg=以“|”分开的新好友信息&lt;br&gt;com=list     好友列表完成&lt;br&gt;com=logout   被注销时&lt;br&gt;com=changed  好友状态改变时,参数有：rfno=对方飞信号码，rmno=对方手机号码，fname=对方昵称，msg=以“|”分开的好友信息&lt;br&gt;注意事项：同步调用间隔应不小于3秒或大于3分钟,实时性不高的同步调用请尽量间隔大些，实时性高建议用异步调用设置mtx值为40左右，登录后超过3分钟不调用此函数就超时。</wsdl:documentation>
+      <wsdl:input message="tns:ReMsgHttpGetIn" />
+      <wsdl:output message="tns:ReMsgHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="fWebSerHttpPost">
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录飞信&lt;br&gt;带入参数：xno=登录号码,fpass=飞信密码</wsdl:documentation>
+      <wsdl:input message="tns:LoginHttpPostIn" />
+      <wsdl:output message="tns:LoginHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">注销飞信&lt;br&gt;带入参数：xno=登录号码</wsdl:documentation>
+      <wsdl:input message="tns:LogoutHttpPostIn" />
+      <wsdl:output message="tns:LogoutHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">添加好友&lt;br&gt;带入参数：xno=登录号码,tofno=预添加好友号码,msg=发送信息(5个汉字以内)</wsdl:documentation>
+      <wsdl:input message="tns:AddFHttpPostIn" />
+      <wsdl:output message="tns:AddFHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">删除好友&lt;br&gt;带入参数：xno=登录号码,tofno=预删除好友号码</wsdl:documentation>
+      <wsdl:input message="tns:DelFHttpPostIn" />
+      <wsdl:output message="tns:DelFHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回好友列表&lt;br&gt;带入参数：xno=登录号码&lt;br&gt;返回说明：每条记录间以换行符(“\n”)分开，信息间以“|”分开</wsdl:documentation>
+      <wsdl:input message="tns:FListHttpPostIn" />
+      <wsdl:output message="tns:FListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Send">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送信息&lt;br&gt;带入参数：xno=登录号码,tofno=目标好友,msg=信息内容</wsdl:documentation>
+      <wsdl:input message="tns:SendHttpPostIn" />
+      <wsdl:output message="tns:SendHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VipTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回会员时间&lt;br&gt;带入参数：xno=登录号码&lt;br&gt;说明：对于免费接口，会员是否到期都可以使用</wsdl:documentation>
+      <wsdl:input message="tns:VipTimeHttpPostIn" />
+      <wsdl:output message="tns:VipTimeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReMsg">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回事件信息(用于接收各种信息)&lt;br&gt;带入参数：xno=登录号码,mtx=长连接等待(堵塞)事件时间[秒]&lt;br&gt;mtx参数特殊说明：为0将直接返回，此函数建议用异步调用，设置此值大于30以上(一般设为40)可以达到实时接收信息效果&lt;br&gt;返回说明：每条记录间以换行符(“\n”)分开，参数之间以“&amp;”分开，每参数格式为：参数名=值&lt;br&gt;返回参数说明：&lt;br&gt;(1)公共返回参数说明:com=事件类型&lt;br&gt;(2)各[事件类型]返回参数说明&lt;br&gt;com=rmsg     收到新信息，参数有：rfno=对方飞信号码，rmno=对方手机号码，fname=对方昵称，msg=新信息内容&lt;br&gt;com=sendok   每发成功一条返回的结果,参数有：rfno=目标飞信号码或rmno=目标手机号码，msg=信息内容&lt;br&gt;com=senderr  每发错误一条返回的结果,参数有：rfno=目标飞信号码或rmno=目标手机号码，msg=信息内容，errtxt=错误信息&lt;br&gt;com=loginok  登录成功,参数有：rfno=自己飞信号码，rmno=自己手机号码,fname=自己昵称&lt;br&gt;com=loginerr 登录错误返回的结果,参数有：rfno=登录飞信号码 或rmno=登录手机号码,errtxt=错误信息&lt;br&gt;com=fadd     被别人添加为好友时,参数有：rfno=对方飞信号码，rmno=对方手机号码，fname=对方昵称，msg=以“|”分开的新好友信息&lt;br&gt;com=list     好友列表完成&lt;br&gt;com=logout   被注销时&lt;br&gt;com=changed  好友状态改变时,参数有：rfno=对方飞信号码，rmno=对方手机号码，fname=对方昵称，msg=以“|”分开的好友信息&lt;br&gt;注意事项：同步调用间隔应不小于3秒或大于3分钟,实时性不高的同步调用请尽量间隔大些，实时性高建议用异步调用设置mtx值为40左右，登录后超过3分钟不调用此函数就超时。</wsdl:documentation>
+      <wsdl:input message="tns:ReMsgHttpPostIn" />
+      <wsdl:output message="tns:ReMsgHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="fWebSerSoap" type="tns:fWebSerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://www.139icq.com/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://www.139icq.com/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddF">
+      <soap:operation soapAction="http://www.139icq.com/AddF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelF">
+      <soap:operation soapAction="http://www.139icq.com/DelF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FList">
+      <soap:operation soapAction="http://www.139icq.com/FList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Send">
+      <soap:operation soapAction="http://www.139icq.com/Send" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VipTime">
+      <soap:operation soapAction="http://www.139icq.com/VipTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReMsg">
+      <soap:operation soapAction="http://www.139icq.com/ReMsg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="fWebSerSoap12" type="tns:fWebSerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://www.139icq.com/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap12:operation soapAction="http://www.139icq.com/Logout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddF">
+      <soap12:operation soapAction="http://www.139icq.com/AddF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelF">
+      <soap12:operation soapAction="http://www.139icq.com/DelF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FList">
+      <soap12:operation soapAction="http://www.139icq.com/FList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Send">
+      <soap12:operation soapAction="http://www.139icq.com/Send" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VipTime">
+      <soap12:operation soapAction="http://www.139icq.com/VipTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReMsg">
+      <soap12:operation soapAction="http://www.139icq.com/ReMsg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="fWebSerHttpGet" type="tns:fWebSerHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Login">
+      <http:operation location="/Login" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <http:operation location="/Logout" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddF">
+      <http:operation location="/AddF" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelF">
+      <http:operation location="/DelF" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FList">
+      <http:operation location="/FList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Send">
+      <http:operation location="/Send" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VipTime">
+      <http:operation location="/VipTime" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReMsg">
+      <http:operation location="/ReMsg" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="fWebSerHttpPost" type="tns:fWebSerHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Login">
+      <http:operation location="/Login" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <http:operation location="/Logout" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddF">
+      <http:operation location="/AddF" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelF">
+      <http:operation location="/DelF" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FList">
+      <http:operation location="/FList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Send">
+      <http:operation location="/Send" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VipTime">
+      <http:operation location="/VipTime" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReMsg">
+      <http:operation location="/ReMsg" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="fWebSer">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;&lt;font color='#0000ff' size='5'&gt;飞信WebService接口&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font color='#FF0000'&gt;声明：&lt;br&gt;1、本站飞信接口以学习为目的，不涉及任何商业利益。任何企业和个人与此接口有关的商业行为，请与移动公司联系。&lt;br&gt;2、本飞信接口后台服务程序有引用飞信客户端的DLL文件，调用正常编程引用所能看到的相关类及函数，不存在破解或重打包客户端等行为。&lt;br&gt;3、对本飞信接口如有任何疑问，请联系QQ：14334655&lt;br&gt;&lt;/font&gt;调用说明：&lt;br&gt;1、客户端必须支持Cookie，否则不可以使用。&lt;br&gt;C#调用WebService启用Cookie示例代码:&lt;br&gt;fWebSer fsms = new fWebSer();&lt;br&gt;fsms.CookieContainer = new CookieContainer();&lt;br&gt;2、客户端登录后应每间隔3秒至3分钟之间调用一次ReMsg函数接收事件信息(建议异步调用)，超过3分钟不调用可能因超时而注销。&lt;br&gt;接口引用地址: http://io2.139icq.com:88/fWebSer.asmx?WSDL 技术支持请访问: &lt;a target='_blank' href='http://blog.csdn.net/mywwl'&gt;http://blog.csdn.net/mywwl&lt;/a&gt;&lt;br&gt;</wsdl:documentation>
+    <wsdl:port name="fWebSerSoap" binding="tns:fWebSerSoap">
+      <soap:address location="http://io.feirobot.cn/fWebSer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="fWebSerSoap12" binding="tns:fWebSerSoap12">
+      <soap12:address location="http://io.feirobot.cn/fWebSer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="fWebSerHttpGet" binding="tns:fWebSerHttpGet">
+      <http:address location="http://io.feirobot.cn/fWebSer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="fWebSerHttpPost" binding="tns:fWebSerHttpPost">
+      <http:address location="http://io.feirobot.cn/fWebSer.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

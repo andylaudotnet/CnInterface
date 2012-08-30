@@ -1,0 +1,75 @@
+BODY {
+	BACKGROUND-COLOR: #f7f7f7;
+	font-size:12px;
+	font-family:@华文行楷;
+}
+FIELDSET {
+	BORDER-RIGHT: #ccc 1px dashed; PADDING-RIGHT: 10px; BORDER-TOP: #ccc 1px dashed; MARGIN-TOP: 20px; PADDING-LEFT: 10px; MARGIN-BOTTOM: 20px; PADDING-BOTTOM: 10px; BORDER-LEFT: #ccc 1px dashed; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px dashed
+}
+LEGEND {
+	BORDER-RIGHT: #333 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #333 1px solid; PADDING-LEFT: 6px; FONT-WEIGHT: bold; FONT-SIZE: 90%; BACKGROUND: #666; PADDING-BOTTOM: 2px; BORDER-LEFT: #333 1px solid; COLOR: #fff; LINE-HEIGHT: 1.1; PADDING-TOP: 2px; BORDER-BOTTOM: #333 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: -1px
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 175%; COLOR: #333; LINE-HEIGHT: 1.1; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: -1px
+}
+LABEL {
+	MARGIN-TOP: 3px; DISPLAY: block; PADDING-LEFT: 6px; FONT-WEIGHT: normal; FONT-SIZE: 100%; FLOAT: left; WIDTH: 140px; COLOR: #666; LINE-HEIGHT: 1.1; MARGIN-RIGHT: 2px; PADDING-TOP: 11px; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: -1px; HEIGHT: 32px; BACKGROUND-COLOR: #ffffff
+}
+.form {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#container {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN: auto; WIDTH: 750px; PADDING-TOP: 0px
+}
+
+#leftSide {
+	FLOAT: left; WIDTH: 530px; PADDING-TOP: 10px
+}
+#rightSide {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ccc 1px solid; MARGIN-TOP: 40px; PADDING-LEFT: 5px; FLOAT: right; PADDING-BOTTOM: 5px; FONT: 12px Arial; BORDER-LEFT: #ccc 1px solid; WIDTH: 200px; COLOR: #666666; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #fff
+}
+.clear {
+	CLEAR: both
+}
+.holder {
+	BACKGROUND-COLOR: #fff
+}
+.div_texbox {
+	MARGIN-TOP: 3px; PADDING-LEFT: 5px; FLOAT: right; PADDING-BOTTOM: 3px; WIDTH: 347px; PADDING-TOP: 5px; HEIGHT: 35px; BACKGROUND-COLOR: #e6e6e6
+}
+.div_texbox1 {
+	MARGIN-TOP: 3px; PADDING-LEFT: 5px; FLOAT: right; PADDING-BOTTOM: 3px; WIDTH: 147px; PADDING-TOP: 5px; HEIGHT: 35px; BACKGROUND-COLOR: #e6e6e6
+}
+.textbox {
+	PADDING-RIGHT: 5px;  PADDING-LEFT: 19px; PADDING-BOTTOM: 3px; font-size: 18px ; font-family:Arial 黑体; WIDTH: 285px; COLOR: #000000; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffffff
+}
+.textbox:focus {
+	BACKGROUND-COLOR: #f0ffe6
+}
+.textbox:hover {
+	BACKGROUND-COLOR: #f0ffe6
+}
+.username {
+	PADDING-RIGHT: 5px;  PADDING-LEFT: 19px;  PADDING-BOTTOM: 3px; FONT: 18px Arial; WIDTH: 285px; COLOR: #000000; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffffff
+}
+.username:focus {
+	BACKGROUND-COLOR: #f0ffe6
+}
+.username:hover {
+	BACKGROUND-COLOR: #f0ffe6
+}
+.password {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: left 50%; PADDING-LEFT: 19px; BACKGROUND-IMAGE: url(../images/16s.png); PADDING-BOTTOM: 3px; FONT: 18px Arial; WIDTH: 285px; COLOR: #999999; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffffff
+}
+.password:focus {
+	BACKGROUND-COLOR: #f0ffe6
+}
+.password:hover {
+	BACKGROUND-COLOR: #f0ffe6
+}
+.button_div {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 32px; BORDER-TOP: #ccc 1px solid; MARGIN-TOP: 3px; PADDING-LEFT: 32px; FLOAT: right; PADDING-BOTTOM: 3px; BORDER-LEFT: #ccc 1px solid; WIDTH: 287px; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px solid; HEIGHT: 35px; BACKGROUND-COLOR: #fff; TEXT-ALIGN: right
+}
+.buttons {
+	BORDER-RIGHT: #d8d8d0 2px solid; PADDING-RIGHT: 14px; BORDER-TOP: #fff 2px solid; PADDING-LEFT: 14px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #e3e3db; PADDING-BOTTOM: 6px; TEXT-TRANSFORM: uppercase; BORDER-LEFT: #fff 2px solid; COLOR: #989070; PADDING-TOP: 6px; BORDER-BOTTOM: #d8d8d0 2px solid; TEXT-DECORATION: none
+}

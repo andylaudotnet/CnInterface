@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv=content-type content="text/html;charset=gb2312" />
+        <title>接口 - 搜搜网页</title>
+        <script>
+            d = document;d.domain = "soso.com";
+			window.reportUrl=window.reportKey=window._$=window.popAds=window.on_click_qq=function(){};
+			(function(l,v,s){var D=true,j="soso",m=function(){},h={},B=["concat",screen],A=+new Date,q=window,t="prototype",u=function(){return +new Date};function y(b,c,a){if(q.attachEvent){b.attachEvent("on"+c,function(){a.call(b)})}else{b.addEventListener(c,a,false)}}function x(b){var f=0,e=0;b=""+b;for(var c=b.length-1;c>=0;c--){e=parseInt(b.charCodeAt(c),0);f=(f<<6&268435455)+e+(e<<14);if((e=f&266338304)!=0){f^=e>>21}}return f}function k(a){for(var c in a){try{delete a[c]}catch(b){}}}function r(b,a){var c=new Image(1,1);c.src=b;c.onload=function(){c.onload=null;(a||m)()}}M={ver:"1.0.0.1"};M.mm=function(b){if(!(this instanceof arguments.callee)){return new arguments.callee(b)}var a=this;a.e=[],a.name=b||"MoOnARk",a.i=v||"moonark.gif?";y(q,"load",function(){a.mark("loaded").send()});y(q,"beforeunload",function(){k(a)})};M.instance=function(a){if(a in h&&h.n instanceof M.mm){return h.n}return h.n=new M.mm(a)};M.mm[t]={send:function(a){var b=this;b.mark("hh",x(q.location)).mark("case",b.name).mark("ver",M.ver).mark("scr",B[1].width+"x"+B[1].height);r((a||b.i)+"?"+b.e.join("&"),s)},mark:function(c,b){var a=this,d="_st";c=c||"MARK";a.e.push(c.replace(/ /g,"_")[B[0]]("=",b||u()-A));return a},jsn:function(a){},qsa:function(a){}};window[j]=M.instance(l)})("sosotest","mark1.gif");
+        </script>
+        <link rel="search" type="application/opensearchdescription+xml" title="搜搜" href="http://cache.soso.com/web/soso.xml" />
+                <link rel="stylesheet" type="text/css" href="http://cache.soso.com/30d/css/web/swr30.css" />
+            
+        		<script>soso.mark('css_end');</script>
+    </head>
+    <body onLoad="d.flpage.reset();d.flso.reset();">
+        <!--head-->
+        <div id="s_page">
+            <div id="s_header">
+                <div id="s_nav">
+                    <ul id="s_bar">
+                        <li>
+                            <strong>网页</strong>
+                        </li>
+                        <li>
+                            <a href="http://image.soso.com/image.cgi?sc=img&w=">图片</a>
+                        </li>
+                        <li>
+                            <a href="http://video.soso.com/search/?w=">视频</a>
+                        </li>
+                        <li>
+                            <a href="http://music.soso.com/music.cgi?sc=mus&w=">音乐</a>
+                        </li>
+                        <li>
+                            <a href="http://sobar.soso.com/sobar.q?op=entry&pid=b.idx&w=">搜吧</a>
+                        </li>
+                        <li>
+                            <a href="http://wenwen.soso.com/z/SearchSolved.e?sp=S">问问</a>
+                        </li>
+                        <li>
+                            <a href="http://blog.soso.com/qz.q?sc=qz&op=blog.blog&ty=blog&w=">博客</a>
+                        </li>
+                        <li>
+                        	<a href="http://news.soso.com/n.q?sc=news&ty=c&w=">新闻</a>
+                        </li>
+                        <li>
+                            <a href="http://www.soso.com/more.shtml?w=">更多&raquo;</a>
+                        </li>
+                    </ul>
+                    <ul id="s_user">
+                    </ul>
+                </div>
+                <div id="s_search">
+                	<script>soso.mark('logo_start');</script>
+                    <div id="s_logo"><a href="http://www.soso.com/" title="到搜搜首页"><img src="http://cache.soso.com/30d/img/web/logo_s.gif" width="151" height="47" alt="到搜搜首页" /></a></div>
+                    <script>soso.mark('logo_end');</script>
+                    <form name="flpage" action="q" method="get">
+                        <input type="hidden" name="gid" value="" /><input type="hidden" name="cin" value="" /><input type="hidden" name="sc" value="web" /><input type="hidden" name="bs" value="接口" /><input type="hidden" name="ch" value="w.uf" /><input type="hidden" name="num" value="10" />
+                        <div id="s_search_form">
+                            <input name="w" smartPid='smb.rp' class="search_input" type="text" autocomplete="off" id="smart_input" value="接口" /><input value="搜 索" class="search_button" type="submit" />
+                        </div>
+                    </form>
+                    <div id="s_feeds">
+                        <ul>
+                            <li>
+                                <a href="http://help.soso.com/help_web.shtml" target="_blank">帮助</a><!--[if IE]>|<a href="javascript:void(0);" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.soso.com/');st_get(this,'w.sethome',0);">设搜搜为主页</a><![endif]-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="s_main">
+                <div class="nav">
+                    <div id="fh" class="n_l" ss_c="filter">
+                        <span>&laquo;隐藏左边栏</span>
+                    </div>
+                    <div class="n_r">
+                        搜索到约10,200,000项结果，用时0.021秒
+                    </div>
+                </div>
+                <table width="100%" cellspacing="0" cellpadding="0" id="main">
+                    <tr>
+                      <td width="130" rowspan="2" valign="top" id="jq2" >
+                      	<div id="filter">
+                            <ul id='cf'>
+                            <li><span>&gt;</span><strong>网页结果</strong></li>
+                            <li><a href="#">图片</a></li>
+                            <li><a href="#">视频</a></li>
+                            <li><a href="#">博客</a></li>
+                            <li><a href="#">新闻</a></li>                          
+                            </ul>
+                            <ul id='tf'>
+                            <li><span>&gt;</span><strong>全部时间</strong></li>
+                            <li><a href="#">一天内</a></li>
+                            <li><a href="#">一周内</a></li>
+                            <li><a href="#">一月内</a></li>
+                            <li><a href="#">一年内</a></li>
+                            <li><a href="#">自定日期范围</a></li>
+                            <li class="setdate"  style="width:82px;display:none;">从:<br /><input type="text" class="input_2" autocomplete="off" value="" id="ptfs" maxlength="8" /><em style="display:none;" id="tfwarn1">无效日期</em>到:<br /><input type="text" class="input_2" autocomplete="off" value="" id="ptfe" maxlength="8" /><em style="display:none;" id="tfwarn2">无效日期</em><input name="" type="button" value="搜索" class="button" id="ptfsbt"/></li>
+                            </ul>
+                            <ul id="sf">
+                            <li><span>&gt;</span><strong>全部来源</strong></li>
+                                                                                        <li><a href="#" title="太平洋电脑网">太平洋电脑网</a></li>
+                                                            <li><a href="#" title="IT168">IT168</a></li>
+                                                            <li><a href="#" title="中关村在线">中关村在线</a></li>
+                                                                      
+                            </ul>
+                            <ul>
+                            <li><span class="title">搜索历史</span>-<a id="clearhf" href="#" class="clear">清除</a></li>
+                                                            	                              	
+                                	<li><a href="/q?w=%BD%D3%BF%DA&sc=web&pid=c.fil.his&ch=w.fil.his" title="接口">接口</a></li>
+                                	                                
+                                                         </ul>
+                        </div>                                           
+                        </td>
+                        <td class="s_l">
+                                                                                                            
+                            <ol><li  class="topsp"  ><h3><a href="http://baike.soso.com/v77734.htm" id="res0" onClick="reportUrl(this,'1','1');st_get(this,'w.r',1);" target="_blank"><em>接口</em>_搜搜百科</a></h3><p>端口 计算机"端口"是英文port的译义,可以认为是计算机与外界通讯交流的出口。其中硬件领域的端口又称<em>接口</em>,如:usb端口、串行端口等。软件领域的端口一般指网络中面向连接服务和无连接服务的通信协议端口,是一种抽象的软件结构,包括一些数据结构和i...</p><div class="result_summary"><div class="url"><cite>baike.soso.com/v77734.htm&nbsp;2010-04-09</cite>-<a href="http://snapshot.soso.com/snap.cgi?d=2008267754857540180&w=%BD%D3%BF%DA&u=http://baike.soso.com/v77734.htm" target="_blank">网页快照</a></div>-<div class="preview" id="pws0"><span class="yl1" onFocus="blur();">预览</span></div></div></li><li  ><h3><a href="http://msdn.microsoft.com/zh-cn/library/87d83y5b(VS.80).aspx" id="res1" onClick="reportUrl(this,'1','2');st_get(this,'w.r',2);" target="_blank"><em>接口</em> (C#)</a></h3><p>11.2 结构<em>接口</em> 13 <em>接口</em></p><div class="result_summary"><div class="url"><cite>msdn.microsoft.com/zh-cn/library/87d83y5b(VS.8...&nbsp;2010-03-01</cite>-<a href="http://snapshot.soso.com/snap.cgi?d=18105250361476552006&w=%BD%D3%BF%DA&u=http://msdn.microsoft.com/zh-cn/library/87d83y5b(VS.80).aspx" target="_blank">网页快照</a></div>-<div class="preview" id="pws1"><span class="yl1" onFocus="blur();">预览</span></div></div></li><li  ><h3><a href="http://publish.it168.com/cWord/1194.shtml" id="res2" onClick="reportUrl(this,'1','3');st_get(this,'w.r',3);" target="_blank">外部端口术语解释|笔记本名词解释|什么是外部端口- IT168</a></h3><p>对于机器内部空间狭窄的笔记本 电脑，在内部能够实现的扩充非常有限，加上各个笔记本电脑厂商一向惯于根据机器的不同情况采用自己专用的内部<em>接口</em>和部件，内部扩充部件的通用性进一步减低，因此外部端口在笔记本电脑中就具有比台式机更加...</p><div class="result_summary"><div class="url"><cite>publish.it168.com/cWord/1194.shtml&nbsp;2010-03-30</cite>-<a href="http://snapshot.soso.com/snap.cgi?d=4277354867457504370&w=%BD%D3%BF%DA&u=http://publish.it168.com/cWord/1194.shtml" target="_blank">网页快照</a></div>-<div class="preview" id="pws2"><span class="yl1" onFocus="blur();">预览</span></div></div></li><li  ><h3><a href="http://product.pconline.com.cn/so/s27897/" id="res3" onClick="reportUrl(this,'1','4');st_get(this,'w.r',4);" target="_blank">VGA<em>接口</em>_笔记本_|&gt;&lt;|太平洋产品报价</a></h3><p>vga<em>接口</em>是一种d型<em>接口</em>，上面共有15针空，分成三排，每排五个。...</p><div class="result_summary"><div class="url"><cite>product.pconline.com.cn/so/s27897/&nbsp;2010-04-08</cite>-<a href="http://snapshot.soso.com/snap.cgi?d=5152867499280536010&w=%BD%D3%BF%DA&u=http://product.pconline.com.cn/so/s27897/" target="_blank">网页快照</a></div>-<div class="preview" id="pws3"><span class="yl1" onFocus="blur();">预览</span></div></div></li><script>soso.mark('first_screen');</script> <li  ><h3><a href="http://mobile.139shop.com/mobile/dictionary/79.htm" id="res4" onClick="reportUrl(this,'1','5');st_get(this,'w.r',5);" target="_blank">数据线<em>接口</em>_手机字典_手机大全_北斗手机网</a></h3><p>数据线<em>接口</em>   其他手机参数解释 网络制式 上市日期 手机制式 支持频段 网络连接 理论通话时间 理论待机时间 ...数据线<em>接口</em> 无线数据通讯 USB Wi-Fi功能 操作系统 处理器 支持Brew PDA功能 触摸屏 手写输入 流媒体 ...</p><div class="result_summary"><div class="url"><cite>mobile.139shop.com/mobile/dictionary/79.htm&nbsp;2010-04-08</cite>-<a href="http://snapshot.soso.com/snap.cgi?d=3987163058202706999&w=%BD%D3%BF%DA&u=http://mobile.139shop.com/mobile/dictionary/79.htm" target="_blank">网页快照</a></div>-<div class="preview" id="pws4"><span class="yl1" onFocus="blur();">预览</span></div></div></li><li  ><h3><a href="http://detail.zol.com.cn/product_param/index57.html" id="res5" onClick="reportUrl(this,'1','6');st_get(this,'w.r',6);" target="_blank">标准<em>接口</em> 笔记本电脑知识 ZOL术语</a></h3><p>AGP Pro<em>接口</em>与AGP 2.0同时推出，这是一种为了满足显示设备功耗日益加大的现实而研发的图形<em>接口</em>标准，应用该技术的...使得这种<em>接口</em>可以驱动功耗更大(25-110w)或者处理能力更强大的AGP显卡。这种标准其实是专为高端图形工作站而设计的，...</p><div class="result_summary"><div class="url"><cite>detail.zol.com.cn/product_param/index57.html&nbsp;2010-03-22</cite>-<a href="http://snapshot.soso.com/snap.cgi?d=16913057814946420596&w=%BD%D3%BF%DA&u=http://detail.zol.com.cn/product_param/index57.html" target="_blank">网页快照</a></div>-<div class="preview" id="pws5"><span class="yl1" onFocus="blur();">预览</span></div></div></li><li  ><h3><a href="http://api.good.gd/" id="res6" onClick="reportUrl(this,'1','7');st_get(this,'w.r',7);" target="_blank">API.good.gd &gt;&gt; Good.gd文件上传<em>接口</em>简介</a></h3><p>查看上传<em>接口</em>演示DEMO 想要在你的网站上播放Good.gd上的海量电子书、音视频或图片？ ...查看在线播放<em>接口</em>演示说明</p><div class="result_summary"><div class="url"><cite>api.good.gd/&nbsp;2010-04-06</cite>-<a href="http://snapshot.soso.com/snap.cgi?d=11069640531601744693&w=%BD%D3%BF%DA&u=http://api.good.gd/" target="_blank">网页快照</a></div>-<div class="preview" id="pws6"><span class="yl1" onFocus="blur();">预览</span></div></div></li><li  ><h3><div ss_c="nb.r"><a href="http://news.soso.com/n.q?sc=news&ty=c&w="  onClick="reportUrl(this,'1','8');st_get(this,'w.nb',8);return tp(this);" target="_blank"><em>接口</em>&nbsp;&nbsp;搜搜新闻</a></div></h3><p id="newsbox"><a href="http://tech.163.com/digi/10/0409/09/63QN6P27001618JO.html" onClick="reportUrl(this,'1','8');st_get(this,'w.nb.'+'1',8);" target="_blank">温控散热模组<em>接口</em>振华冰山金蝶700W到</a><cite>网易</cite><span>5小时前</span></a><br />编辑点评：振华冰山金蝶700W这款电源在设计方面相当不错，尤其是采用固定<em>接口</em>以及模组化<em>接口</em>，相当独特和个性化。同时采用14CM大型温控散热风扇，...<br /><a href="http://digi.qq.com/a/20100409/000581.htm" onClick="reportUrl(this,'1','8');st_get(this,'w.nb.'+'2',8);" target="_blank">带HDMI<em>接口</em>！丽讯D326MX投影机仅5899</a><cite>腾讯网</cite><span>7小时前</span></a><br /><a href="http://diy.yesky.com/monitor/gd/41/11206541.shtml" onClick="reportUrl(this,'1','8');st_get(this,'w.nb.'+'3',8);" target="_blank">双<em>接口</em>也廉价易美逊P2051显示器超值特惠</a><cite>天极网</cite><span>7小时前</span></a></p></li><li  ><h3><a href="http://bbs.pcpop.com/061102/754886.html" id="res8" onClick="reportUrl(this,'1','9');st_get(this,'w.r',9);" target="_blank">【GPS_<em>接口</em>】GPS论坛</a></h3><p>gps设备的<em>接口</em>可分为数据<em>接口</em>、电源<em>接口</em>和射频<em>接口</em>。各种<em>接口</em>的具体标准如下所示：数据/电源<em>接口</em>：国际...</p><div class="result_summary"><div class="url"><cite>bbs.pcpop.com/061102/754886.html&nbsp;2010-03-22</cite>-<a href="http://snapshot.soso.com/snap.cgi?d=9325487925148820232&w=%BD%D3%BF%DA&u=http://bbs.pcpop.com/061102/754886.html" target="_blank">网页快照</a></div>-<div class="preview" id="pws8"><span class="yl1" onFocus="blur();">预览</span></div></div></li><li  ><h3><a href="http://www.pch.com.cn/" id="res9" onClick="reportUrl(this,'1','10');st_get(this,'w.r',10);" target="_blank">空中<em>接口</em>学园</a></h3><p>交流有关GSM,CDMA,PHS等移动通信系统的空中<em>接口</em>知识。</p><div class="result_summary"><div class="url"><cite>www.pch.com.cn/&nbsp;2010-04-09</cite>-<a href="http://snapshot.soso.com/snap.cgi?d=5531593256658378749&w=%BD%D3%BF%DA&u=http://www.pch.com.cn/" target="_blank">网页快照</a></div>-<div class="preview" id="pws9"><span class="yl1" onFocus="blur();">预览</span></div></div></li><li  ><h3><a href="http://esales.ofcard.com/api/" id="res10" onClick="reportUrl(this,'1','11');st_get(this,'w.r',11);" target="_blank">API<em>接口</em>供货</a></h3><p>欧飞以后台<em>接口</em>供货的方式与合作网站进行点卡销售合作，不参与到合作网站该点卡内容的具体运营及客服工作，...欧飞为合作伙伴提供了数字卡密商品，游戏直充以及手机话费直充<em>接口</em>。 问：直充商品的充值时间大约是多长？  ...</p><div class="result_summary"><div class="url"><cite>esales.ofcard.com/api/&nbsp;2010-04-01</cite>-<a href="http://snapshot.soso.com/snap.cgi?d=17720611979798948789&w=%BD%D3%BF%DA&u=http://esales.ofcard.com/api/" target="_blank">网页快照</a></div>-<div class="preview" id="pws10"><span class="yl1" onFocus="blur();">预览</span></div></div></li></ol>
+                            <div id="ad_bottom" style="display:none;">
+								<h2>赞助商链接</h2>
+								<ol id="adlist_b"></ol>
+							</div>
+                            <div id="page">
+                               <div class="pg">
+                                 <span class="current">1</span>
+                                 <a href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p&num=10&gid=&cin=&site=&sf=&sd=&pg=2" class="flag_pg">2</a>
+                                 <a href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p&num=10&gid=&cin=&site=&sf=&sd=&pg=3" class="flag_pg">3</a>
+                                 <a href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p&num=10&gid=&cin=&site=&sf=&sd=&pg=4" class="flag_pg">4</a>
+                                 <a href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p&num=10&gid=&cin=&site=&sf=&sd=&pg=5" class="flag_pg">5</a>
+                                 <a href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p&num=10&gid=&cin=&site=&sf=&sd=&pg=6" class="flag_pg">6</a>
+                                 <a href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p&num=10&gid=&cin=&site=&sf=&sd=&pg=7" class="flag_pg">7</a>
+                                 <a href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p&num=10&gid=&cin=&site=&sf=&sd=&pg=8" class="flag_pg">8</a>
+                                 <a href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p&num=10&gid=&cin=&site=&sf=&sd=&pg=9" class="flag_pg">9</a>
+                                 <a href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p&num=10&gid=&cin=&site=&sf=&sd=&pg=10" class="flag_pg">10</a>
+                                 <a href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p&num=10&gid=&cin=&site=&sf=&sd=&pg=11" class="flag_pg">11</a>
+                                 <a class="next" href="/q?w=%BD%D3%BF%DA&lr=&sc=web&ch=w.p.b&num=10&gid=&cin=&site=&sf=&sd=&pg=2">下一页&gt;</a>
+                                                                </div>
+                            </div>
+                            <div class="k"></div>                          
+                        </td>
+                        <!--right side-->
+                        <td class="s_r"><div class="borl"><div class="c1" ss_c="w.r.fav"><h4>网友还在搜</h4><ol class="content"><li>&#8226;<a href="/q?w=%B6%AF%CC%AC%CD%F8%D2%B3%D3%EB%BE%B2%CC%AC%B5%C4%C7%F8%B1%F0&sc=web&pid=c.s&ch=w.fav" title="动态网页与静态的区别" class="f14">动态网页与静态的区别</a></li><li>&#8226;<a href="/q?w=%B9%CC%CA%BC%CC%EC%C6%F8&sc=web&pid=c.s&ch=w.fav" title="实时天气播报" class="f14">固始天气</a><span class="zdq" title="搜搜直达区-最新最准的搜索体验">&nbsp;&nbsp;</span></li><li>&#8226;<a href="/q?w=%BC%C6%CB%E3%BB%FA%D0%A1%B9%CA%D5%CF%C5%C5%B3%FD&sc=web&pid=c.s&ch=w.fav" title="计算机小故障排除" class="f14">计算机小故障排除</a></li><li>&#8226;<a href="/q?w=%C3%E6%CF%F2%B6%D4%CF%F3%B5%C4%B8%C5%C4%EE&sc=web&pid=c.s&ch=w.fav" title="面向对象的概念" class="f14">面向对象的概念</a></li><li>&#8226;<a href="/q?w=%CA%C2%BC%FE&sc=web&pid=c.s&ch=w.fav" title="事件" class="f14">事件</a></li><li>&#8226;<a href="/q?w=2010%CA%A8%D7%D3%D7%F9%B0%AE%C7%E9%D4%CB%CA%C6&sc=web&pid=c.s&ch=w.fav" title="2010狮子座爱情运势" class="f14">2010狮子座爱情运势</a></li><li>&#8226;<a href="/q?w=%C3%E6%CF%F2%B6%D4%CF%F3&sc=web&pid=c.s&ch=w.fav" title="面向对象" class="f14">面向对象</a></li><li>&#8226;<a href="/q?w=%B0%AE%B5%C4%C5%AE%C8%CB&sc=web&pid=c.s&ch=w.fav" title="爱的女人" class="f14">爱的女人</a></li><li>&#8226;<a href="/q?w=%B7%BF%B4%FB%CA%D7%B8%B6&sc=web&pid=c.s&ch=w.fav" title="房贷首付" class="f14">房贷首付</a></li><li>&#8226;<a href="/q?w=%B8%CF%BC%AF%CD%F8&sc=web&pid=c.s&ch=w.fav" title="赶集网" class="f14">赶集网</a></li></ol></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><div class="tj"><div ss_c="search.hint"><table cellpadding="0" cellspacing="0"><tr><th valign="top" rowspan="2"><b>相关搜索</b></th><td valign="top"><a href="/q?w=hdmi%BD%D3%BF%DA&sc=web&ch=w.h&gid=&cin=&num=10&lr=&htn=0&bs=%BD%D3%BF%DA">hdmi接口</a></td><td valign="top"><a href="/q?w=hdmi%BD%D3%BF%DA%D3%D0%CA%B2%C3%B4%D3%C3&sc=web&ch=w.h&gid=&cin=&num=10&lr=&htn=1&bs=%BD%D3%BF%DA">hdmi接口有什么用</a></td><td valign="top"><a href="/q?w=%B5%E7%C4%D4usb%BD%D3%BF%DA%C3%BB%B7%B4%D3%A6&sc=web&ch=w.h&gid=&cin=&num=10&lr=&htn=2&bs=%BD%D3%BF%DA">电脑usb接口没反应</a></td><td valign="top"><a href="/q?w=usb%BD%D3%BF%DA%C3%BB%B7%B4%D3%A6&sc=web&ch=w.h&gid=&cin=&num=10&lr=&htn=3&bs=%BD%D3%BF%DA">usb接口没反应</a></td><td valign="top"><a href="/q?w=vga%BD%D3%BF%DA&sc=web&ch=w.h&gid=&cin=&num=10&lr=&htn=4&bs=%BD%D3%BF%DA">vga接口</a></td></tr><tr><td valign="top"><a href="/q?w=usb%BD%D3%BF%DA&sc=web&ch=w.h&gid=&cin=&num=10&lr=&htn=5&bs=%BD%D3%BF%DA">usb接口</a></td><td valign="top"><a href="/q?w=usb%BD%D3%BF%DA%CE%DE%B7%A8%CA%B6%B1%F0u%C5%CC&sc=web&ch=w.h&gid=&cin=&num=10&lr=&htn=6&bs=%BD%D3%BF%DA">usb接口无法识别u盘</a></td><td valign="top"><a href="/q?w=dvi%BD%D3%BF%DA&sc=web&ch=w.h&gid=&cin=&num=10&lr=&htn=7&bs=%BD%D3%BF%DA">dvi接口</a></td><td valign="top"><a href="/q?w=sata%BD%D3%BF%DA&sc=web&ch=w.h&gid=&cin=&num=10&lr=&htn=8&bs=%BD%D3%BF%DA">sata接口</a></td><td valign="top"><a href="/q?w=aux%BD%D3%BF%DA&sc=web&ch=w.h&gid=&cin=&num=10&lr=&htn=9&bs=%BD%D3%BF%DA">aux接口</a></td></tr></table></div></div></td></tr>
+                </table>
+                                <div class="footer_search">
+                    <form name="flso" action="q" method="get">
+                        <input type="hidden" name="sc" value="web" /><input type="hidden" name="bs" value="接口" /><input type="hidden" name="ch" value="w.bf" /><input type="hidden" name="lr" value="" /><input type="hidden" name="gid" value="" /><input type="hidden" name="cin" value="" /><input type="hidden" name="num" value="10" /><input class="search_input" type="text" name="w" value="接口" /><input value="搜 索" class="search_button" type="submit" />
+                    </form>
+                </div>
+            </div>
+            <div id="s_footer">
+                <p id="s_copyright">
+                    Copyright &copy; 1998 - 2010 Tencent. All Rights Reserved.&nbsp;<a href="mailto:soso@tencent.com">举报不良信息</a>
+                </p>
+            </div>
+        </div>
+<script>var __kw = '%BD%D3%BF%DA',__aw = '接口',__pn = '1',__sd = '',__sf = '',__sset = '14320630535667583435|5057907303967456020|6819003768033221794',__tfmin='',__tfmax='';</script>
+<script>soso.mark('js_start');</script>
+<script type="text/javascript" src="/js/sosoweb_result_3398.js"></script>
+<script>soso.mark('js_end');</script>
+<script>soso.mark('afsjs_start');</script>
+<script type="text/javascript" src="http://www.google.cn/afsonline/show_afs_ads_cn.js"></script>
+<script>soso.mark('afsjs_end');</script>
+<script>soso.mark('anjs_start');</script>
+<script type="text/javascript" src="http://cache.soso.com/js/an.js"></script>
+<script>soso.mark('anjs_end');</script>
+</body>
+</html>
+<!-- stat=1 -->

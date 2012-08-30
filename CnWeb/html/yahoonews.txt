@@ -1,0 +1,1464 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>资讯中心-中国雅虎</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="keywords" content="新闻,资讯,军事,社会,国内新闻,国际新闻">
+<meta name="description" content="中国雅虎资讯中心频道,新闻,新闻中心,包含有时政新闻,国内新闻,国际新闻,社会新闻,时事报道评论,新闻图片,新闻专题,新闻论坛,军事,专业互联网新闻平台，最新新闻滚动播报。">
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<link href="http://cn.yimg.com/hpp/news/imggg/style22818[1].css" type="text/css" rel="stylesheet" />
+</head>
+<body><!-- SpaceID=95634229 loc=Z noad -->
+<div id="hd">
+<style>
+body{margin:0 auto;}
+.ycn-hd *{margin:0;padding:0;list-style-type:none;}
+.ycn-hd img{border:0;}
+.ycn-hd{font-size:12px;width:986px;color:#666;overflow:hidden;zoom:1;margin:0 auto;text-align:left;}
+.ycn-hd a:link,.ycn-hd a:visited{color:#333;text-decoration:none;font-family:"Arial";}
+.ycn-hd a:hover{color:#333;text-decoration:underline;}
+.ycn-hd .black{color:#000;}
+.ycn-hd legend{display:none;}
+.ycn-hd .ycn-info{float:left;}
+.ycn-hd .ycn-logo{float:left;}
+.ycn-hd .ycn-search{float:right;_width:358px;}
+.ycn-hd .ycn-search input{font-size:12px;padding:3px 2px 2px 4px;width:270px;border:1px solid #c1cad2;border-right:0;vertical-align:middle;height:18px;}
+.ycn-hd .ycn-search fieldset{border:0;}
+.ycn-hd .ycn-search button,.ycn-search .keyword,.ycn-hd,.ycn-topnav,.ycn-topnav-items li,.ycn-topnav-items,.ycn-topnav-items .ymail{background:url(http://cn.yimg.com/news/hp/1005/pagehead_icon2.png) left top no-repeat;}
+.ycn-hd .ycn-search button{border:0;width:72px;height:25px;cursor:pointer;vertical-align:middle;}
+.ycn-hd .ycn-search .keyword{background-position:2px -47px;padding:5px 0 0 20px;}
+.ycn-hd .ycn-search .keyword a{color:#999;}
+.ycn-hd .ycn-user{float:left;padding:4px 0 0 10px;line-height:20px;}
+.ycn-hd.ycn-user .ora{font-family:arial;color:#FF7800;}
+.ycn-hd .y-chan{padding:18px 18px 0;background:#fff;height:60px;}
+.ycn-hd .ycn-user .xiak{padding-left:10px;}
+.ycn-hd{background-position:left -358px;background-repeat:repeat-x;}
+.ycn-hd .ycn-topnav{padding: 10px 0 0 18px;height:48px;background-position:-58px -218px;}
+.ycn-hd .ycn-topnav-items li{background-position:right -163px;float:left;padding:0 15px 0 0;margin-right:13px;word-spacing:2px;}
+.ycn-hd ul.ycn-topnav-items{height:48px;background-position:right -306px;padding-right:18px;}
+.ycn-hd .ycn-topnav-items li span{white-space:nowrap;clear:both;display:block;padding:2px 0;}
+.ycn-hd .ycn-topnav-items .last{float:right;text-align:right;background:none;margin-right:0;padding:0;}
+.ycn-hd .ycn-topnav-items .ymail{background-position:left -94px ;padding-left:26px;}
+.ycn-hd .ycn-ad{padding-top:10px;text-align:center;background:#fff;}
+.ycn-hd a strong{font-weight:800;}
+</style>
+ <div class="ycn-hd">
+
+ <div class="ycn-topnav">
+<ul class="ycn-topnav-items">
+<li>
+<span><a href="http://news.cn.yahoo.com/"><strong>资讯</strong></a> <a href="http://news.cn.yahoo.com/shehuixinwen09/index.html">社会</a> <a href="http://mili.cn.yahoo.com/">军事</a> <a href="http://news.cn.yahoo.com/jdgz/index.html">焦点</a> <a href="http://news.cn.yahoo.com/expo2010/">世博</a></span>
+<span><a href="http://finance.cn.yahoo.com/"><strong>财经</strong></a> <a href="http://stock.cn.yahoo.com/">股票</a> <a href="http://yahoo.compass.cn/stock/index.php">行情</a> <a href="http://biz.cn.yahoo.com/fund/index.html">基金</a> <a href="http://biz.cn.yahoo.com/money/index.html">理财</a></span> </li>
+
+<li>
+<span><a href="http://ent.cn.yahoo.com/"><strong>娱乐</strong></a> <a href="http://ent.cn.yahoo.com/star/index.html">明星</a> <a href="http://ent.cn.yahoo.com/ys/index.html">电影</a> <a href="http://ent.cn.yahoo.com/tv/index.html">电视</a> <a href="http://ent.cn.yahoo.com/pic/index.html">图库</a></span>
+<span><a href="http://sports.cn.yahoo.com/"><strong>体育</strong></a> <a href="http://sports.cn.yahoo.com/basketball/nba/index.html">NBA</a></font> <a href="http://sports.cn.yahoo.com/foot.html">足球</a> <a href="http://caipiao.cn.yahoo.com/">彩票</a> <a href="http://2010.cn.yahoo.com/">世界杯</a></span> </li>
+
+<li><span><a href="http://lady.cn.yahoo.com/"><strong>时尚</strong></a> <a href="http://lady.cn.yahoo.com/beauty/index.html">美容</a></span> <span><a href="http://travel.cn.yahoo.com/"><strong>旅游</strong></a> <a href="http://nature.cn.yahoo.com/">自然</a></span></li>
+<li><span><a href="http://tech.cn.yahoo.com/"><strong>科技</strong></a> <a href="http://digi.cn.yahoo.com/">数码</a></span> <span><a href="http://autos.cn.yahoo.com/"><strong>汽车</strong></a> <a href="http://realestate.cn.yahoo.com/">房产</a></span></li>
+<li><span><a href="http://cul.cn.yahoo.com/"><strong>文化</strong></a> <a href="http://book.cn.yahoo.com/">读书</a> <a href="http://art.cn.yahoo.com/">艺术</a></span> <span><a href="http://bbs.cn.yahoo.com/"><strong>论坛</strong></a> <a href="http://man.cn.yahoo.com/renwu/80houriji/index.html">80后</a> <a href="http://ks.cn.yahoo.com/">知识堂</a></span></li>
+
+<li>
+<span><a href="http://baby.cn.yahoo.com/"><strong>育儿</strong></a> <a href="http://lady.cn.yahoo.com/astrology/index.html">星座</a> <a href="http://yahoo.aigou.com/">宠物</a> <a href="http://buy.cn.yahoo.com/">淘Club</a> <a href="http://madou.taobao.com/">淘女郎</a></span>
+<span><a href="http://overseas.cn.yahoo.com/"><strong>海外</strong></a> <a href="http://news.cn.yahoo.com/baozhai/index.html">报摘</a> <a href="http://man.cn.yahoo.com/">男人</a> <a href="http://health.cn.yahoo.com/">健康</a> <a href="http://newspic.cn.yahoo.com/">热图</a> <a href="http://news.cn.yahoo.com/weather/">天气</a></span> </li>
+
+<li class="last"><span><a href="http://cn.yahoo.com/"><strong>雅虎首页</strong></a></span><span><a href="http://mail.cn.yahoo.com/" class="ymail">邮箱</a></span></li>
+</ul>
+</div>
+ <div class="y-chan">
+ <div class="ycn-info">
+ <h1 class="ycn-logo"><a href="http://news.cn.yahoo.com/"><img src="http://cn.yimg.com/hpp/news/img/news_logo.gif" alt="雅虎新闻" title="雅虎新闻" /></a></h1>
+ <div class="ycn-user">
+ <p><a class="black" id="nav_login" href="http://entry.cn.yahoo.com/config/login/standard_login.html?.intl=cn&.done=http%3A%2F%2Fnews.cn.yahoo.com%2F">[登录]</a> 新用户? <a class="black" id="nav_register" href="http://member.cn.yahoo.com/cnreg/reginfo.html?id=65741&prop=life&done=http%3A%2F%2Fnews.cn.yahoo.com%2F">[注册]</a></p> </div>
+
+ </div>
+ <div class="ycn-search">
+ <form name="ycn-hd-srh" action="http://www.yahoo.cn/s" method="get">
+ <input type="hidden" name="pid" value="uni-header">
+ <input type="hidden" id="v" name="v" value="web">
+ <fieldset><legend>网页搜索</legend><input name="p" value="" size="34" /><button type="submit" title="网页搜索">网页搜索</button>
+ </fieldset>
+</form>
+
+ <!--<div class="keyword"><a href="#">牛仔裤</a> <a href="#">修身小脚裤</a> <a href="#">腰带</a> <a href="#">女士</a> <a href="#">MP5</a> <a href="#">香水</a> <a href="#">T恤</a> <a href="#">雪纺</a> <a href="#">真皮皮衣</a></div>-->
+ </div>
+ </div>
+ </div><style>
+.bannerad{width:950px; margin:auto; padding:auto; text-align:center}
+.bannerad a img {display:inline}
+.bannerad div {display:inline}
+</style>
+<div style="margin:10px auto;width:950px;">
+<div style="float:left;width:160px;">
+<!--SW1 Gif Popup-->
+<a href="http://cn.rd.yahoo.com/SIG=15ok4q208/M=759015.14114095.14033728.13315170/D=cnnewsgb/S=95634229:SW1/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=1ikULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6064336/R=0/SIG=113poe1t2/*http://80.cn.yahoo.com?f=E291_3_1" target="_blank"><img src="http://cn.yimg.com/a/hxli/759015_sw1_160_90_100416_2.png" width=160 height=90 border=0></a>
+<!--End--></div>
+<div style="float:left;margin-left:15px;">
+<!--CN FLASH8 W/O AD 20090201-->
+<div align="center">
+
+<script language=JavaScript>
+var yad_pos = "S", yad_url = new Array(), yad_w = "600", yad_h = "90", yad_ver = 8;
+yad_url[0] = "http://cn.rd.yahoo.com/SIG=15mvja81i/M=771849.14135555.14064535.13361297/D=cnnewsgb/S=95634229:S/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=tSkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099693/R=0/id=flash_click1/SIG=11auq99qn/*http://www.hkbea.com.cn/lccp/index.shtml";
+yad_url[2] = "http://cn.rd.yahoo.com/SIG=15mvja81i/M=771849.14135555.14064535.13361297/D=cnnewsgb/S=95634229:S/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=tSkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099693/R=1/id=flash_click2/*";
+yad_url[3] = "http://cn.rd.yahoo.com/SIG=15mvja81i/M=771849.14135555.14064535.13361297/D=cnnewsgb/S=95634229:S/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=tSkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099693/R=2/id=flash_click3/*";
+yad_url[4] = "http://cn.rd.yahoo.com/SIG=15mvja81i/M=771849.14135555.14064535.13361297/D=cnnewsgb/S=95634229:S/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=tSkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099693/R=3/id=flash_click4/*";
+yad_url[5] = "http://cn.rd.yahoo.com/SIG=15mvja81i/M=771849.14135555.14064535.13361297/D=cnnewsgb/S=95634229:S/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=tSkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099693/R=4/id=flash_click5/*";
+yad_url[6] = "http://cn.rd.yahoo.com/SIG=15mvja81i/M=771849.14135555.14064535.13361297/D=cnnewsgb/S=95634229:S/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=tSkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099693/R=5/id=flash_click6/*";
+var yad_swf = "http://cn.yimg.com/a/hxli/771849_s_60090_20100524.swf";
+var yad_aurl = "http://cn.rd.yahoo.com/SIG=15mvja81i/M=771849.14135555.14064535.13361297/D=cnnewsgb/S=95634229:S/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=tSkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099693/R=6/id=altimg/SIG=11auq99qn/*http://www.hkbea.com.cn/lccp/index.shtml";
+var yad_aimg = "http://cn.yimg.com/tutu/600x90.jpg";
+</script>
+<script src="http://cn.yimg.com/a/alen/js/cn_flash_general_20090427v2.js"></script>
+<noscript>
+<a href="http://cn.rd.yahoo.com/SIG=15mvja81i/M=771849.14135555.14064535.13361297/D=cnnewsgb/S=95634229:S/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=tSkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099693/R=7/id=noscript/SIG=11auq99qn/*http://www.hkbea.com.cn/lccp/index.shtml" target="_blank">
+<img src="http://cn.yimg.com/tutu/600x90.jpg" width="600" height="90" border="0">
+</a></noscript></div>
+<!--END CN FLASH8 W/O AD 20090201--></div>
+<div style="float:right;width:160px;">
+<!--SE1 Gif Popup-->
+<a href="http://cn.rd.yahoo.com/SIG=15oo692j0/M=759015.14114096.14033730.13315171/D=cnnewsgb/S=95634229:SE1/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=1ykULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6064341/R=0/SIG=113poe1t2/*http://80.cn.yahoo.com?f=E291_3_1" target="_blank"><img src="http://cn.yimg.com/a/hxli/759015_se1_160_90_100416.png" width=160 height=90 border=0></a>
+<!--End--></div>
+<div style="clear:both;"></div>
+</div> <style type="text/css">
+ <!--
+ body,button,ul,li,p,dl,dd,h1,h2,h3,h4,h5,h6,img,iframe,input,form,textarea{margin:0;padding:0;list-style-type:none;}
+ .fixclear {clear:both;zoom:1;}
+ .fixclear:after {clear:both;content:'';display:block;height:0;visibility:hidden;}
+ .tabswitch-content .tabswitch-item {display:none;}
+ .tabswitch-content .tabswitch-current {display:block;}
+ #hd,#bd,#ft{width:950px;margin:0 auto;}
+ #hd{width:986px;}
+ #hd .subject{font-size:12px;color:#858585;height:21px;line-height:22px;border:1px solid #EAEAEA;background:#FAFAFA;width:948px;margin:10px auto 0;}
+ #hd .subject a{text-decoration:none;font-size:12px;color:#000000;padding:0 10px;}
+ #hd .subject span{padding-left:30px;}
+ #hd .subject .title{padding:0;}
+ #y-nav .y-nav .current a,
+ #y-nav .y-nav .current span,
+ #y-nav .y-nav-left,
+ #y-nav .y-nav-right,
+ #y-nav .set-homepage{background:url(http://cn.yimg.com/hpp/news/imggg/y-nav-news.gif) no-repeat;}
+ #y-nav .y-nav .current a,
+ #y-nav .y-nav .current span,
+ #y-nav .y-nav-left,
+ #y-nav .y-nav-right{height:33px;float:left;}
+ #y-nav .y-nav ul,
+ #y-nav .y-sub-nav span{background:url(http://cn.yimg.com/hpp/news/imggg/y-nav-news.gif) repeat-x;}
+ #y-nav{width:950px;margin:0 auto;}
+ #y-nav a{color:#fff;font-size:14px;text-decoration:none;padding:0 12px;}
+ #y-nav a:hover {text-decoration:underline;}
+ #y-nav span{overflow:hidden;display:block;}
+ #y-nav li{float:left;line-height:33px;}
+ #y-nav .y-nav ul{background-position:0 -33px;padding-left:20px;}
+ #y-nav .y-nav div{float:left;width:944px;height:33px;overflow:hidden;position:relative;}
+ #y-nav .y-nav-left{background-position:0 -71px;width:3px;}
+ #y-nav .y-nav-right{background-position:-5px -71px;width:3px;}
+ #y-nav .y-nav .current a{color:#000;font-weight:700;background-position:0 0;padding-left:16px;}
+ #y-nav .y-nav .current span{background-position:-10px -71px;width:4px;}
+ #y-nav .set-homepage{position:absolute;top:10px;right:10px;width:65px;font-size:12px;background-position:-14px -73px;padding:0;}
+ #y-nav .set-homepage span{padding-left:15px;}
+ #y-nav .y-sub-nav{height:29px;font-size:12px;color:#868686;border:1px solid #bdbdbd;border-top:none;border-bottom:none;overflow:hidden;}
+ #y-nav .y-sub-nav a{color:#000;font-size:12px;padding:0 10px;}
+ #y-nav .y-sub-nav li{line-height:29px;}
+ #y-nav .y-sub-nav div{position:relative;bottom:3px;left:0;}
+ #y-nav .y-sub-nav span{background-position:0 -66px;height:5px;}
+ #y-nav .y-sub-nav ul{padding:0 20px;}
+ #y-nav .y-sub-nav .current a{font-weight:700;}
+ -->
+ </style>
+ <div id="y-nav">
+
+ <div class="y-nav fixclear"><span class="y-nav-left"></span>
+ <div>
+ <ul class="fixclear">
+ <li class="current"><a href="#" title="">首页</a><span></span></li>
+ <li><a href="http://news.cn.yahoo.com/cnnews/index.html" target=_blank title="">国内新闻</a><span></span></li>
+ <li><a href="http://news.cn.yahoo.com/world/index.html" target=_blank title="">国际新闻</a><span></span></li>
+ <li><a href="http://news.cn.yahoo.com/society/index.html" target=_blank title="">社会新闻</a><span></span></li>
+
+ <li><a href="http://mili.cn.yahoo.com/" target=_blank title="">军事新闻</a><span></span></li>
+ <li><a href="http://news.cn.yahoo.com/pic/" target=_blank title="">图片新闻</a><span></span></li>
+ <li><a href="http://news.cn.yahoo.com/gundong/" target=_blank title="">滚动新闻</a><span></span></li>
+ <li><a href="http://news.cn.yahoo.com/baozhai/" target=_blank title="">雅虎报摘</a><span></span></li>
+
+<li><a href="http://book.cn.yahoo.com/" target=_blank title="">雅虎读书</a><span></span></li>
+<li><a href="http://cul.cn.yahoo.com/" target=_blank title="">雅虎文化</a><span></span></li>
+
+</ul>
+ </div>
+ <span class="y-nav-right"></span></div>
+ <div class="y-sub-nav" style="display: none;">
+ <ul class="fixclear">
+ <li class="current"><a href="#" title="">女人论坛</a>|</li>
+ <li><a href="#" title="">女人</a>|</li>
+
+ <li><a href="#" title="">女人爱</a>|</li>
+ <li><a href="#" title="">女人论坛</a>|</li>
+ <li><a href="#" title="">女人爱晒</a>|</li>
+ <li><a href="#" title="">女人爱晒论坛</a>|</li>
+ <li><a href="#" title="">爱晒论坛</a></li>
+
+ </ul>
+ <div><span></span></div>
+ </div>
+ </div>
+ <div class="subject"><span><a href="http://news.cn.yahoo.com/expo2010/index.html" title="" target="_blank" >上海世博</a>|<a href="http://news.cn.yahoo.com/yinhangshishi/index.html" title="" target="_blank" >印度空难</a>|<a href="http://news.cn.yahoo.com/xinjiangdafazhan/index.html" title="" target="_blank" >新疆新政</a>| <a href="http://news.cn.yahoo.com/thailandredshirt/index.html" title="" target="_blank" >泰国动乱</a>|<a href="http://news.cn.yahoo.com/nanfangbaoyu/index.html" title="" target="_blank" >南方暴雨</a>|<a href="http://news.cn.yahoo.com/mozaixiagui/index.html" title="" target="_blank" >找回膝下黄金</a>|<a href="http://news.cn.yahoo.com/yixiang/index.html" title="" target="_blank" >异象</a>|<a href="http://news.cn.yahoo.com/renzhiqiang/index.html" title="" target="_blank" >全民公敌任志强</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<iframe border="0" frameborder="0" src="http://m.weather.com.cn/m/mk_yahoo/weather.htm" width="210" height="25" marginheight="0" marginwidth="0" style=" vertical-align:middle"></iframe></span> </div></div>
+
+<div id="bd">
+ <div class="show_box" id="show_box">
+<div class="showpic" ><a href="http://news.cn.yahoo.com/newspic/5712/1/#newspic" target="_blank"><img src="http://cn.yimg.com/xunzg/201005028015.jpg" width="500" height="250" alt="" /></a><div class="mask"></div>
+ <div class="linkbox"><a href="http://news.cn.yahoo.com/newspic/5712/1/#newspic" target="_blank">男子疑精神有问题持刀挑衅10余民警</a></div>
+ </div>
+ <div class="showpic" style="display: none;"><a href="http://news.cn.yahoo.com/10-05-/451/2kcew.html" target="_blank"><img src="http://cn.yimg.com/xzhg/xzg/201005028002.jpg" width="500" height="250" alt="" /></a><div class="mask"></div>
+ <div class="linkbox"><a href="http://news.cn.yahoo.com/10-05-/451/2kcew.html" target="_blank">周边国家疯狂驱赶中国渔民 某国军舰曾开枪</a></div>
+ </div>
+<div class="showpic" style="display: none;"><a href="http://news.cn.yahoo.com/newspic/5710/1/" target="_blank"><img src="http://cn.yimg.com/xzhg/xzg/201005028003.jpg" width="500" height="250" alt="" /></a><div class="mask"></div>
+
+ <div class="linkbox"><a href="http://news.cn.yahoo.com/newspic/5710/1/" target="_blank">罗马尼亚失火华商自救 消防员冷观</a></div>
+ </div>
+ <div class="showpic" style="display: none;"><a href="http://yxk.cn.yahoo.com/articles/20100528/360g.html" target="_blank"><img src="http://cn.yimg.com/xzhg/xzg/201005028004.jpg" width="500" height="250" alt="" /></a><div class="mask"></div>
+ <div class="linkbox"><a href="http://yxk.cn.yahoo.com/articles/20100528/360g.html" target="_blank">日首相称如中日因钓鱼岛发军事冲突 美将介入 </a></div>
+ </div> <div class="showtab"><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a></div>
+
+ <div class="rollbox"><a href="http://news.cn.yahoo.com/scrollnews/index.html" target="_blank" class="sign">滚动新闻</a>
+ <div class="overflow">
+ <div id="rtext" class="rtext" style="top: 0; left: 0;">
+<a href="http://news.cn.yahoo.com/10-05-/1060/2kcia.html" target="_blank" title="日本国际交流基金向农民工子弟学校捐赠图书
+">日本国际交流基金向农民工子弟学校捐赠图书</a> |
+<a href="http://news.cn.yahoo.com/10-05-/346/2kci4.html" target="_blank" title="媒体称印度总统访华系缓和之旅 为强化双边关系
+">媒体称印度总统访华系缓和之旅 为强化双边关系</a> |
+<a href="http://news.cn.yahoo.com/10-05-/976/2kci0.html" target="_blank" title="延安市政府原副秘书长敲诈煤老板200万 被判4年
+">延安市政府原副秘书长敲诈煤老板200万 被判4年</a> |
+<a href="http://news.cn.yahoo.com/10-05-/1514/2kchv.html" target="_blank" title="新疆24名副县缴工作抵押金 完成任务后3倍奖励
+">新疆24名副县缴工作抵押金 完成任务后3倍奖励</a> |
+
+<a href="http://news.cn.yahoo.com/10-05-/346/2kchs.html" target="_blank" title="南阳市民10元钱吃一碗面 幸运中得10万发票大奖
+">南阳市民10元钱吃一碗面 幸运中得10万发票大奖</a> |
+<a href="http://news.cn.yahoo.com/10-05-/539/2kcho.html" target="_blank" title="深圳2龄童因超龄被幼儿园拒收 家长批功利性强
+">深圳2龄童因超龄被幼儿园拒收 家长批功利性强</a> |
+<a href="http://news.cn.yahoo.com/10-05-/1063/2kchj.html" target="_blank" title="Google拒签停拍街景承诺书 港府强硬表态
+">Google拒签停拍街景承诺书 港府强硬表态</a> |
+<a href="http://news.cn.yahoo.com/10-05-/346/2kche.html" target="_blank" title="贵州黔西南州试行考察对象家庭财产报告制度
+">贵州黔西南州试行考察对象家庭财产报告制度</a> |
+<a href="http://news.cn.yahoo.com/10-05-/755/2kch5.html" target="_blank" title="药监失效危害甚于假药谋财害命
+">药监失效危害甚于假药谋财害命</a> |
+<a href="http://news.cn.yahoo.com/10-05-/1063/2kch2.html" target="_blank" title="以刀威胁不从就杀人 涉强暴女华裔美嫌犯受审
+">以刀威胁不从就杀人 涉强暴女华裔美嫌犯受审</a> |
+
+<a href="http://news.cn.yahoo.com/10-05-/1462/2kch0.html" target="_blank" title="北京小产权房仍在“野蛮生长”
+">北京小产权房仍在“野蛮生长”</a> |
+<a href="http://news.cn.yahoo.com/10-05-/1063/2kcgz.html" target="_blank" title="台“卫生署长”称癌症末期急救浪费生命遭质疑
+">台“卫生署长”称癌症末期急救浪费生命遭质疑</a> |
+<a href="http://news.cn.yahoo.com/10-05-/500/2kcgy.html" target="_blank" title="执业医师证网上张冠李戴 证书编码名字是别人
+">执业医师证网上张冠李戴 证书编码名字是别人</a> |
+<a href="http://news.cn.yahoo.com/10-05-/1063/2kcgw.html" target="_blank" title="香港迪斯尼指模系统被指收集个人资料 专员调查
+">香港迪斯尼指模系统被指收集个人资料 专员调查</a> |
+<a href="http://news.cn.yahoo.com/10-05-/1028/2kcgs.html" target="_blank" title="建筑的质量到底谁负责?
+">建筑的质量到底谁负责?</a> |
+ </div>
+ </div>
+
+ </div>
+ </div>
+<div class="main_news">
+ <h4><a href="http://news.cn.yahoo.com/10-05-/543/2kcdd.html" target="_blank">温家宝将会晤李明博</a>&nbsp <a href="http://news.cn.yahoo.com/10-05-/905/2kcdc.html" target="_blank">韩将详细说明天安号事件</a></h4>
+ <p><a href="http://news.cn.yahoo.com/10-05-/1037/2kccz.html" target="_blank">美称中将支持天安事件调查结果</a> | <a href="http://news.cn.yahoo.com/10-05-/1453/2kcf7.html" target="_blank">韩反潜实弹演习 </a> | <a href="http://news.cn.yahoo.com/10-05-/1037/2kcax.html" target="_blank">朝宣布七项反制措施</a></p>
+
+ <p><a href="http://news.cn.yahoo.com/10-05-/1072/2kc2u.html" target="_blank">韩将提交对朝新决议</a> | <a href="http://news.cn.yahoo.com/10-05-/533/2kc6v.html" target="_blank">美全力支持韩</a> | <a href="http://news.cn.yahoo.com/10-05-/1037/2kc63.html" target="_blank">俄将派专家组了解天安舰事件调查</a> </p>
+ <h4><a href="http://news.cn.yahoo.com/10-05-/488/2kcef.html" target="_blank">统计局发改委就农产品炒作表态 说法不一遭质疑</a></h4>
+ <p><a href="http://biz.cn.yahoo.com/10-05-/265/xau8.html" target="_blank">农产品涨价成接力赛</a> | <a href="http://news.cn.yahoo.com/10-05-/1462/2k92n.html" target="_blank">倒蒜成就大批富翁</a> | <a href="http://news.cn.yahoo.com/10-05-/451/2kc5y.html" target="_blank">年轻主妇写买菜时刻表应对</a></p>
+
+ <h4><a href="http://news.cn.yahoo.com/10-05-/1063/2kcdz.html" target="_blank">奥巴马政府发布新安全战略 放弃先发制人</a></h4>
+ <p><a href="http://news.cn.yahoo.com/10-05-/1037/2kccw.html" target="_blank">呼吁与中印合作</a> | <a href="http://news.cn.yahoo.com/10-05-/1028/2kcf6.html" target="_blank">“猛禽”战机进驻日本</a> | <a href="http://news.cn.yahoo.com/10-05-/1063/2kcda.html" target="_blank">美国恐怖分子呈现本土化趋势</a></p>
+ <h4><a href="http://news.cn.yahoo.com/10-05-/1493/2kce8.html" target="_blank">张悟本：背后有推手 下岗职工折腾成“神医”</a></h4>
+ <p><a href="http://news.cn.yahoo.com/10-05-/467/2kcec.html" target="_blank">曾下岗卖钙片</a> | <a href="http://news.cn.yahoo.com/10-05-/488/2kcee.html" target="_blank">北京卫生工商执法人员突查“悟本堂”</a> |<a href="http://news.cn.yahoo.com/10-05-/474/2kcdj.html" target="_blank">没有卫生许可证</a></p>
+
+ </div> <div class="spacer"></div>
+ <div class="con1">
+ <div class="col1">
+ <div>
+<!-- /SIG=15pne6p1j/M=763852.14114249.14033817.12303772/D=cnnewsgb/S=95634229:SHOW/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=0CkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6103097/R=0 -->
+<iframe src="http://api.ads.vip.cnh.yahoo.com/ads_area/ads_area.php?page=news&position=show_9" style="width:300px;height:200px;border:none; float:left;" scrolling="no" frameborder=0></iframe> </div>
+ <div class="spacer"></div>
+<style>
+#nlist1 li {margin-bottom:2px; _margin-bottom:5px; width:90%}
+</style>
+
+<div class="abox" id="hotnews">
+ <ul class="tab_1">
+ <li class="on">HOT新闻</li>
+ <li>HOT画报</li>
+ <li >HOT视频</li>
+ </ul>
+ <div class="body">
+ <ul class="nlist">
+
+<div id=nlist1>
+<li>
+<a href="http://news.cn.yahoo.com/10-05-/1502/2kc3r.html" target="_blank">富士康发生“12连跳” 郭台铭称没办法阻止</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/10-05-/866/2kc93.html" target="_blank">本田在华工厂因工人持续罢工全部停产
+</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/10-05-/1493/2kc4h.html" target="_blank">警方称天上人间后台强大 省部高官与花魁有染
+</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/10-05-/1495/2kc6p.html" target="_blank">邓玉娇已隐姓埋名孤独生活 拿省级财政工资
+</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/10-05-/545/2kc3f.html" target="_blank">郭台铭就富士康员工跳楼道歉 中央领导作批示
+</a>
+</li><li>
+
+<a href="http://news.cn.yahoo.com/10-05-/1063/2kc1k.html" target="_blank">四川百余人因信奉食疗养生生吃泥鳅进医院
+</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/10-05-/1418/2kc2z.html" target="_blank">杭州男子吸毒后驾车连撞16人 群众掀翻肇事车
+</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/10-05-/851/2kcae.html" target="_blank">大明湖底发现唐宋车辙 济南城史可能将改写(图)
+</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/10-05-/994/2kc66.html" target="_blank">妻子提前回家 老公与女下属跳楼(图)
+</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/10-05-/1063/2kc1u.html" target="_blank">江苏徐州300亩即将丰收麦子被铲建安置房(图)
+</a>
+</li></div>
+ </ul>
+
+ </div>
+ <div class="body" style="display: none;">
+ <ul class="nlist">
+<div id=nlist1>
+<li>
+<a href="http://news.cn.yahoo.com/newspic/5677/1/" target="_blank">天上人间“花魁”命案查出多省高官电话</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/newspic/5622/1/" target="_blank">钟莉颖再爆惊人言语 自称是最漂亮的援交女</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/newspic/5659/1/" target="_blank">全球超雷人警察故事</a>
+</li><li>
+
+<a href="http://news.cn.yahoo.com/newspic/5687/1/" target="_blank">台湾辣妈“哺乳照”网上爆红</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/newspic/5666/1/" target="_blank">男士文胸网上脱销</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/newspic/5701/1/" target="_blank">碎尸锅煮--盘点贪官杀情妇凶狠手段</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/newspic/4679/1/" target="_blank">上大校花陷“校鸡门”钟莉颖艳照曝光</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/newspic/4591/1/" target="_blank">俄罗斯美女演绎灰姑娘神奇经历</a>
+</li><li>
+<a href="http://news.cn.yahoo.com/newspic/5641/1/" target="_blank">80后山村代课9年不幸患白血病</a>
+
+</li><li>
+<a href="http://news.cn.yahoo.com/newspic/4540/1/" target="_blank">时下最红的十大网络美女排行榜</a>
+</li> </div>
+</ul>
+ </div>
+<div class="body" style="display: none;">
+ <ul class="nlist">
+<li style='margin-bottom:2px; _margin-bottom:5px; width:90%'><a href='http://news.cn.yahoo.com/xinhua/article.html?id=76715' target=_blank title=情侣雨中忘情拥吻 校园保安撑伞护航>情侣雨中忘情拥吻 校园保安撑伞护航...</a></li><li style='margin-bottom:2px; _margin-bottom:5px; width:90%'><a href='http://news.cn.yahoo.com/xinhua/article.html?id=76714' target=_blank title=张悟本:京城最牛神医还是最牛大忽悠?>张悟本:京城最牛神医还是最牛大忽悠?...</a></li><li style='margin-bottom:2px; _margin-bottom:5px; width:90%'><a href='http://news.cn.yahoo.com/xinhua/article.html?id=76661' target=_blank title=年过八旬老夫妇15年捐建32所希望小学>年过八旬老夫妇15年捐建32所希望小学...</a></li><li style='margin-bottom:2px; _margin-bottom:5px; width:90%'><a href='http://news.cn.yahoo.com/xinhua/article.html?id=76660' target=_blank title=世界十大新奇物种 迷幻又具特异功能>世界十大新奇物种 迷幻又具特异功能...</a></li><li style='margin-bottom:2px; _margin-bottom:5px; width:90%'><a href='http://news.cn.yahoo.com/xinhua/article.html?id=76659' target=_blank title=堪称一绝 牛人模仿14名巨星成名作>堪称一绝 牛人模仿14名巨星成名作...</a></li><li style='margin-bottom:2px; _margin-bottom:5px; width:90%'><a href='http://news.cn.yahoo.com/xinhua/article.html?id=76658' target=_blank title=“男版周迅”网络暴红 伪娘风竟成时髦>“男版周迅”网络暴红 伪娘风竟成时髦...</a></li><li style='margin-bottom:2px; _margin-bottom:5px; width:90%'><a href='http://news.cn.yahoo.com/xinhua/article.html?id=76657' target=_blank title=夫妻打架 竟拿婴儿撒气多次朝地摔打>夫妻打架 竟拿婴儿撒气多次朝地摔打...</a></li><li style='margin-bottom:2px; _margin-bottom:5px; width:90%'><a href='http://news.cn.yahoo.com/xinhua/article.html?id=76656' target=_blank title=洪晃徐静蕾自爆都是网购“败家女”>洪晃徐静蕾自爆都是网购“败家女”...</a></li><li style='margin-bottom:2px; _margin-bottom:5px; width:90%'><a href='http://news.cn.yahoo.com/xinhua/article.html?id=76634' target=_blank title=南非世界杯爆黑色新闻 开幕式歌手病逝>南非世界杯爆黑色新闻 开幕式歌手病逝...</a></li><li style='margin-bottom:2px; _margin-bottom:5px; width:90%'><a href='http://news.cn.yahoo.com/xinhua/article.html?id=76599' target=_blank title=实拍:智勇猫咪大战花蛇 神勇胜出>实拍:智勇猫咪大战花蛇 神勇胜出...</a></li> </ul>
+
+ </div>
+ </div> <div class="spacer"></div>
+ <div>
+<!-- /SIG=15o71ljvb/M=763852.14123890.14043028.12445535/D=cnnewsgb/S=95634229:NP1/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=tCkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6089892/R=0 -->
+<iframe src="http://api.ads.vip.cnh.yahoo.com/ads_area/ads_area.php?page=homepage&position=np1_0" style="width:300px;height:100px;border:none; float:left;" scrolling="no" frameborder=0></iframe> </div>
+ </div>
+ <div class="col2">
+ <div class="important_news">
+
+ <div class="head">
+ <a href="http://news.cn.yahoo.com/xinhua/list.html?id=4" target="_blank"><div class="title">
+ <h2>要闻</h2>
+ </div></a>
+ <div class="link"><a href="http://news.cn.yahoo.com/xinhua/list.html?id=4" target="_blank">更多>></a></div>
+ </div>
+ <div class="body">
+ <div class="news_block">
+
+ <div class="news_sign">国内</div>
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/976/2kcc8.html" target="_blank">黄光裕递交上诉状 称一审判决量刑罚金过重 </a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/1125/2kces.html" target="_blank">本田罢工事件调查：中日员工工资相差50倍</a></li>
+<li><a href="http://cq.cqnews.net/cqztlm/qt/2010wmcqx/" target="_blank">中国42家网媒重庆签署《红岩宣言》 </a></li>
+ </ul>
+ </div>
+
+ <div class="news_block">
+ <div class="news_sign">国际</div>
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/1063/2kcgg.html" target="_blank">印度两列火车相撞20人死 目击者称现场混乱</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/1057/2kcc7.html" target="_blank">欧盟仍未承认中国市场经济地位</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/1453/2kcf8.html" target="_blank">名模毒枭担心遭受性侵犯 拒进阿根廷监狱</a></li>
+ </ul>
+
+ </div>
+ <div class="news_block">
+ <div class="news_sign">社会</div>
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/1028/2kcd3.html" target="_blank">天上人间背景深厚 党媒刊文吁查其后台</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/545/2kcf2.html" target="_blank">湖南永江交通局被曝建别墅群 官方称为民居</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/660/2kce2.html" target="_blank">专家称六个月以上使用手机可能引发脑瘤</a></li>
+
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign">军事</div>
+ <ul class="list1">
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/363n.html" target="_blank">汉和称朝韩如开战 朝海军或采用自杀式攻击</a></li>
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/363c.html" target="_blank">台高层以私人身份访美 呼吁售台F-16战机</a></li>
+
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/3602.html" target="_blank">台被指可能协助日本与那国岛扩大防空识别圈</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign">文化</div>
+ <ul class="list1">
+ <li><a href="http://cul.cn.yahoo.com/10-05-/898/28n8v.html" target="_blank">余秋雨澄清病逝谣言 称网上有人故意造谣</a></li>
+
+ <li><a href="http://cul.cn.yahoo.com/10-05-/898/28n90.html" target="_blank">张艺谋获美国耶鲁大学艺术学荣誉博士学位</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/898/28n8q.html" target="_blank">王刚：没看新《三国》不能让古人说流行语</a></li>
+ </ul>
+ </div> <div class="mix_box">
+<style>
+#qxs_ad table{
+margin:0px;
+padding:0px;
+background-color:#FFF8EC;
+border:none;
+}
+#qxs_ad table tr{
+float:left;
+width:316px;
+margin-top:2px;
+}
+#qxs_ad table tr td{
+float:left;
+width:155px;
+padding:0px 0px 0px 0px;
+font-size:13px;
+color:#0000CC;
+height:20px;
+}
+#qxs_ad table tr td a{
+text-decoration:none;
+}
+#qxs_ad table tr td a:hover{
+text-decoration:underline;
+color:#FF9900;
+}
+</style> 
+<div id="qxs_ad">
+<table>
+<tr>
+<td>&nbsp;<a href="http://cn.rd.yahoo.com/SIG=15oevtrd1/M=769137.14083870.14013408.13394741/D=cnnewsgb/S=95634229:EU2/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=vikULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099619/R=0/SIG=10rb9udk2/*http://www.fagenhuosu.com" target="_blank">毛囊再生，轻松长新发</a></td>
+
+<td>&nbsp;<a href="http://cn.rd.yahoo.com/SIG=15oevtrd1/M=769137.14083870.14013408.13394741/D=cnnewsgb/S=95634229:EU2/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=vikULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099619/R=1/SIG=10oq6p6mp/*http://www.3qingcha.cn" target="_blank">喝茶除口臭，不惹人厌</a></td>
+</tr>
+<tr>
+<td>&nbsp;<a href="http://cn.rd.yahoo.com/SIG=15oevtrd1/M=769137.14083870.14013408.13394741/D=cnnewsgb/S=95634229:EU2/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=vikULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099619/R=2/SIG=10qdhb677/*http://www.luxiandan.cn/" target="_blank">欧美富婆抗衰新法</a></td>
+<td>&nbsp;<a href="http://cn.rd.yahoo.com/SIG=15oevtrd1/M=769137.14083870.14013408.13394741/D=cnnewsgb/S=95634229:EU2/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=vikULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099619/R=3/SIG=10p1i9i6l/*http://www.liyancha.cn/" target="_blank">神秘褪黑茶 全身亮白！</a></td>
+</tr>
+<tr>
+<td>&nbsp;<a href="http://cn.rd.yahoo.com/SIG=15oevtrd1/M=769137.14083870.14013408.13394741/D=cnnewsgb/S=95634229:EU2/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=vikULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099619/R=4/SIG=10vqdmott/*http://www.tiaojingquban.com/" target="_blank">古方补血调经根源祛斑</a></td>
+<td>&nbsp;<a href="http://cn.rd.yahoo.com/SIG=15oevtrd1/M=769137.14083870.14013408.13394741/D=cnnewsgb/S=95634229:EU2/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=vikULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099619/R=5/SIG=10s7gu6lb/*http://www.huchoujing.com/" target="_blank">不手术除狐臭只需一瓶</a></td>
+</tr>
+<tr>
+<td>&nbsp;<a href="http://cn.rd.yahoo.com/SIG=15oevtrd1/M=769137.14083870.14013408.13394741/D=cnnewsgb/S=95634229:EU2/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=vikULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099619/R=6/SIG=11467ki75/*http://uusee.haibao.org/yahoo/wang" target="_blank">免费丰胸-全国试用</a></td>
+
+<td>&nbsp;<a href="http://cn.rd.yahoo.com/SIG=15oevtrd1/M=769137.14083870.14013408.13394741/D=cnnewsgb/S=95634229:EU2/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=vikULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6099619/R=7/SIG=114929emh/*http://uusee.haibao.org/yahoo/9908" target="_blank">男人强肾补肾最新突破</a></td>
+</tr>
+</table>
+</div> </div>
+ </div>
+ </div>
+ </div>
+ <div class="col3">
+ <div class="bbox">
+ <div class="titlebar2">
+
+ <div class="title">
+ <h2>焦点关注</h2>
+ </div>
+ <div class="link"><a href="http://news.cn.yahoo.com/jdgz/index.html"target="_blank">更多>></a></div>
+ </div>
+ <div class="body">
+ <div class="picbox"><a href="http://news.cn.yahoo.com/jdgz/100528.html" target="_blank"><img src="http://cn.yimg.com/beibei/527/xiao.jpg" alt="" width="80" height="90" class="bor1" /></a></div>
+ <div class="textbox">
+
+ <p class="title"><a href="http://news.cn.yahoo.com/jdgz/100528.html" target="_blank">弱女子要遭受几重强奸？</a></p>
+ <p>从书记施暴至案件被曝光为止，整个进程中，很难看到公理…<a href="http://news.cn.yahoo.com/jdgz/100528.html" target="_blank" class="blue">[详细]</a></p>
+ </div>
+ <div class="spacer"></div>
+ <ul class="list1">
+<li><a href="http://news.cn.yahoo.com/jdgz/100527.html" target="_blank">物价疯涨：你压力大吗？</a></li>
+<li><a href="http://news.cn.yahoo.com/jdgz/100526.html" target="_blank">人民跳楼 人民币跳舞</a></li>
+
+<li><a href="http://news.cn.yahoo.com/jdgz/100525.html"target="_blank">人造生命开启潘多拉魔盒？</a></li>
+<li><a href="http://news.cn.yahoo.com/jdgz/100524.html"target="_blank">教授换偶与道德法律错位</a></li>
+<li><a href="http://news.cn.yahoo.com/jdgz/100523.html"target="_blank">娱乐到死 还是向死而生？</a></li>
+<li><a href="http://news.cn.yahoo.com/jdgz/100522.html"target="_blank">中国城市 为何“弱不禁雨”？</a></li>
+ </ul>
+ </div>
+ </div> <div class="spacer"></div>
+ <div class="bbox" id="hot-topic">
+
+ <div class="titlebar2">
+ <div class="title">
+ <h2>热点专题</h2>
+ </div>
+ </div>
+ <div class="body">
+ <div class="picbox"><a href="http://news.cn.yahoo.com/hukuntuoxian/index.html" target="_blank"><img src="http://cn.yimg.com/xunzg/201005024006.jpg" alt="" width="84" height="64" class="bor1" /></a></div>
+ <div class="textbox">
+
+ <p>沪昆铁路列车事故事故已造成19人死亡，重伤11人…<a href="http://news.cn.yahoo.com/hukuntuoxian/index.html" target="_blank">[详细]</a></p>
+ </div>
+ <div class="spacer"></div>
+ <ul class="list1">
+<li><a href="http://news.cn.yahoo.com/fushikang/index.html" target="_blank">雅虎新闻特刊：富士康员工坠楼之谜</a></li>
+ <li><a href="http://news.cn.yahoo.com/nanfangbaoyu/index.html" target="_blank">新闻专题：暴雨再临</a></li>
+ <li><a href="http://news.cn.yahoo.com/renzhiqiang/index.html" target="_blank">雅虎新闻特刊：全民公敌任志强？</a></li>
+
+ <li><a href="http://news.cn.yahoo.com/yinhangshishi/index.html" target="_blank">新闻专题：印客机失事159人遇难</a></li>
+ <li><a href="http://news.cn.yahoo.com/thailandredshirt/index.html" target="_blank">新闻专题：泰国红衫军大规模示威</a></li>
+ <li><a href="http://news.cn.yahoo.com/timianhezunyan/index.html" target="_blank">五一专题：中国民众生活变迁</a></li>
+ <li><a href="http://news.cn.yahoo.com/expo2010/index.html" target="_blank">专题：2010年上海世博会</a></li>
+ </ul>
+ </div>
+ </div> </div>
+
+ </div>
+ <div class="spacer"></div>
+ <div class="con2">
+ <div class="col1" id="survey">
+ <div class="titlebar1">
+ <div class="title">
+ <h2>每日调查</h2>
+ </div>
+
+ <div class="link"></div>
+ </div>
+ <div class="abox">
+<script src="http://sports.cn.yahoo.com/cn_poll_fe/jsquiz.php?poll_id=1907"></script>
+ </div>
+ <div class="spacer"></div>
+ <div>
+<!-- /SIG=15pne6p1j/M=763852.14114249.14033817.12303772/D=cnnewsgb/S=95634229:SHOW/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=0CkULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6103097/R=0 -->
+<iframe src="http://api.ads.vip.cnh.yahoo.com/ads_area/ads_area.php?page=news&position=show_9" style="width:300px;height:200px;border:none; float:left;" scrolling="no" frameborder=0></iframe> </div>
+
+ </div>
+ <div class="col2" id="domestic">
+ <div class="titlebar1">
+<a href="http://news.cn.yahoo.com/cnnews/index.html" target="_blank">
+ <div class="title">
+ <h2>国内</h2>
+ </div>
+</a>
+ <div class="link"><a href="http://news.cn.yahoo.com/xinhua/list.html?id=9" target="_blank">传媒聚焦</a> | <a href="ttp://news.cn.yahoo.com/xinhua/list.html?id=14" target="_blank">访谈频道</a></div>
+
+ </div>
+ <div class="body">
+ <div class="news_block">
+ <div class="news_sign2">高层</div>
+<ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/905/2kccx.html" target="_blank">中央部委联合调查组赴富士康调查自杀事件</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/691/2kcd7.html" target="_blank">发改委要求严打哄抬价格 省长亲抓“米袋子”</a></li>
+ </ul>
+
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">地方</div>
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/474/2kcdl.html" target="_blank">商务部原副司长邓湛卷入郭京毅案获刑12年</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/1493/2kcf4.html" target="_blank">北京欲建磁悬浮环评引争议 相关部门称达标</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/451/2kcf5.html" target="_blank">广东发布县委书记民意调查:90%以上民众满意</a></li>
+
+ <li><a href="http://biz.cn.yahoo.com/10-05-/33/xb7m.html" target="_blank">北京市发改委:天上人间高标价不在治理范围</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">民生</div>
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/1105/2kcdq.html" target="_blank">社科院经济学家:房价可能要跌40%至50%</a></li>
+
+ <li><a href="http://news.cn.yahoo.com/10-05-/1493/2kcg3.html" target="_blank">2020年北京地铁将达30条 四环内覆盖率95%</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/451/2kcex.html" target="_blank">广东菜价疯涨 市民路边开荒地种菜</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/451/2kcek.html" target="_blank">医生按进价触犯“潜规则” 药商停止其供货</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">港澳</div>
+
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/346/2kcge.html" target="_blank">亚洲经济回暖 香港上月出口增长22%</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/774/2kcgd.html" target="_blank">周星驰成香港创业板明星股东(图) </a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">台湾</div>
+
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/1059/2kccg.html" target="_blank">台“检察总长”证实扁家又汇回100万美元</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/346/2kcgf.html" target="_blank">台湾经济景气灯号连亮4盏红灯 史上首见</a></li>
+ </ul>
+ </div> </div>
+ </div>
+ <div class="col3">
+
+ <div class="cbox">
+ <div id="commentary">
+ <div class="titlebar2">
+ <div class="title">
+ <h2>雅虎时评</h2>
+ </div>
+ <div class="link"><a href="http://news.cn.yahoo.com/xinhua/list.html?id=10" target="_blank">更多>></a></div>
+ </div>
+
+ <div class="body">
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/1515/2kcaf.html"target="_blank">谁把生命当成了道具</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/984/2kcao.html"target="_blank">“奢侈品消费第一”忽悠谁</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/463/2kcaj.html"target="_blank">调控房价别忘了还有《价格法》</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/661/2kcab.html"target="_blank">富人移民 富了、跑了、还泼脏水？</a></li>
+ </ul> </div>
+
+ </div>
+ <div class="titlebar2">
+ <div class="title">
+ <h2>雅虎新华视频</h2>
+ </div>
+ <div class="link"><a href="http://news.cn.yahoo.com/xinhua/list.html?id=13" target="_blank">更多>></a></div>
+ </div>
+ <div class="body">
+
+ <ul class="llist">
+ <li><a href="http://news.cn.yahoo.com/xinhua/article.html?id=76486" target="_blank"><img src="http://cn.yimg.com/xunzg/201005028011.jpg" alt="" class="bor1" width="99" height="68" />香港众女星走光照</a></li>
+ <li><a href="http://news.cn.yahoo.com/xinhua/article.html?id=76513" target="_blank"><img src="http://cn.yimg.com/xzhg/xzg/201005028012.jpg" alt="" class="bor1" width="99" height="68" />男子穿性感女装</a></li>
+ <li><a href="http://news.cn.yahoo.com/xinhua/article.html?id=76484" target="_blank"><img src="http://cn.yimg.com/xzhg/xzg/201005028013.jpg " alt="" class="bor1" width="99" height="68" />非诚勿扰美女写真</a></li>
+ <li><a href="http://news.cn.yahoo.com/xinhua/article.html?id=76490" target="_blank"><img src="http://cn.yimg.com/xzhg/xzg/201005028014.jpg " alt="" class="bor1" width="99" height="68" />救护车色狼出没</a></li>
+ </ul> </div>
+
+ </div>
+ </div>
+ </div>
+ <div class="spacer"></div>
+ <div class="con2">
+ <div class="col1" id="global">
+ <div class="titlebar1">
+ <div class="title">
+ <h2>环球媒体连连看</h2>
+
+ </div>
+ <div class="link"></div>
+ </div>
+ <div class="abox">
+ <div class="picbox"><a href="http://news.cn.yahoo.com/10-05-/991/2kchp.html" target="_blank"><img src=" http://cn.yimg.com/xunzg/201005028021.jpg" width="84" height="64" class="bor1" alt="" /></a></div>
+ <div class="textbox">
+ <p>《卫报》：哥伦比亚性感名模安吉在全球通缉5个月后于阿根廷落网，涉嫌操控美女贩毒集团…<a href="http://news.cn.yahoo.com/10-05-/991/2kchp.html" target="_blank" class="blue">[详细]</a></p>
+ </div>
+
+ <div class="spacer"></div>
+ <div class="spacerline"></div>
+ <ul class="llist">
+ <li><a href="http://news.cn.yahoo.com/10-05-/991/2kci1.html" target="_blank"><img src="http://cn.yimg.com/xunzg/201005028022.jpg " alt="" width="85" height="112" />《世界报》</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/991/2kchu.html" target="_blank"><img src="http://cn.yimg.com/xunzg/201005028023.jpg" alt="" width="85" height="112" />《半岛电视台》</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/991/2kchx.html" target="_blank"><img src="http://cn.yimg.com/xunzg/201005028024.jpg" alt="" width="85" height="112" />《卫报》</a></li>
+ </ul>
+
+ </div> </div>
+ <div class="col2" id="international">
+ <div class="titlebar1">
+<a href="http://news.cn.yahoo.com/world/index.html" target="_blank">
+ <div class="title">
+ <h2>国际</h2>
+ </div>
+</a>
+ <div class="link"><a href="http://news.cn.yahoo.com/xinhua/list.html?id=7" target="_blank">新华国际</a> | <a href="http://overseas.cn.yahoo.com/index.html" target="_blank">雅虎海外</a></div>
+
+ </div>
+ <div class="body">
+ <div class="news_block">
+ <div class="news_sign2">亚太</div>
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/1063/2kcg5.html" target="_blank">日美就冲绳普天间机场搬迁问题发表共同声明</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/905/2kcdb.html" target="_blank">日本政府希望与温家宝磋商防海上冲突机制</a></li>
+
+ <li><a href="http://news.cn.yahoo.com/10-05-/1063/2kccj.html" target="_blank">东盟副秘书长:中国是世界走出经济衰退的动力</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">欧美</div>
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/1493/2kcel.html" target="_blank">墨西哥湾漏油难止 美媒发布会上将问责奥巴马</a></li>
+
+ <li><a href="http://news.cn.yahoo.com/10-05-/1057/2kcc4.html" target="_blank">俄罗斯期待美国解释为何在波兰部署爱国者导弹</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/451/2kcey.html" target="_blank">美国国会举行“人造生命”听证会</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">花边</div>
+ <ul class="list1">
+
+ <li><a href="http://news.cn.yahoo.com/10-05-/1453/2kcg0.html" target="_blank">女子冒充将军女嫁11军人 老公含海陆空三军</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/1063/2kcej.html" target="_blank">英国再现“开膛手” 40岁博士杀害多名妓女</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">其他</div>
+ <ul class="list1">
+
+ <li><a href="http://news.cn.yahoo.com/10-05-/1037/2kcdi.html" target="_blank">索马里过渡政府国防部长再遭袭击</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/1037/2kcdh.html" target="_blank">南太岛国瓦努阿图发生7.0级地震 </a></li>
+ </ul>
+ </div> </div>
+ </div>
+ <div class="col3" id="foreign-media">
+ <div class="cbox">
+
+ <div class="titlebar2">
+ <div class="title">
+ <h2>外媒看中国</h2>
+ </div>
+ <div class="link"></div>
+ </div>
+ <div class="body">
+ <p class="title"><a href="http://news.cn.yahoo.com/10-05-/991/2kcb3.html" target="_blank">日本时报：日本应该接受中国的崛起</a></p>
+
+ <p class="indent">日本不应有任何理由否认这一现实:中国在当今世界的舞台上即将取代日本的位置…</p>
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/991/2kcb5.html" target="_blank">海峡时报：大讲排场的中国婚礼回来了</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/994/2kbzu.html" target="_blank">联合早报：安徽省有个“欧元村”</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/1040/2kbvt.html" target="_blank">美媒称美军扩大秘密军事行动“备战”</a></li>
+ <li><a
+href="http://news.cn.yahoo.com/10-05-/994/2kbzw.html" target="_blank">美媒：中国人为了瘦身而战斗</a></li>
+
+ <li><a href="http://news.cn.yahoo.com/10-05-/994/2kbzy.html" target="_blank">英媒：中国还远不能与美国平起平坐</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/994/2kc00.html" target="_blank">加媒：中产阶层驱动中国汽车业</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/994/2kc02.html" target="_blank">日媒：中国升学期待与就业现实脱节</a></li>
+ </ul> </div>
+ </div>
+ </div>
+ </div>
+
+ <div class="spacer"></div>
+ <div class="con2">
+ <div class="col1" id="favorite">
+ <div class="titlebar1">
+ <div class="title">
+ <h2>大话红人</h2>
+ </div>
+ <div class="link"></div>
+
+ </div>
+ <div class="abox">
+ <ul class="llist">
+ <li><a href="http://news.cn.yahoo.com/10-05-/774/2kcgd.html" target="_blank"><img src="http://cn.yimg.com/news/hz/20100528005.jpg" alt="" width="109" height="109" class="bor1" />周星驰成明星股东</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/1493/2kce8.html" target="_blank"><img src="http://cn.yimg.com/news/hz/20100528004.jpg" alt="" width="109" height="109" class="bor1" />下岗“神医”张悟本</a></li>
+ </ul>
+ <ul class="list1">
+<li><a href="http://news.cn.yahoo.com/10-05-/346/2kci6.html" target="_blank">华东师范大学教学楼冠名“宋山木楼”被移除</a></li>
+
+<li><a href="http://news.cn.yahoo.com/10-05-/1495/2kc6p.html" target="_blank">邓玉娇已隐姓埋名孤独生活 拿省级财政工资</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1493/2kc6b.html" target="_blank">天上人间“花魁”命案仍未破 曾查出千万遗产</a></li>
+ <li><a href="http://news.cn.yahoo.com/10-05-/1515/2kbb8.html" target="_blank">中国留美博士因“言”惹祸 被当成恐怖分子</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1037/2kai6.html" target="_blank">局长女儿公考99分续:社保局局长温孝廉停职检查</a></li>
+ </ul> </div>
+ </div>
+ <div class="col2" id="community">
+ <div class="titlebar1">
+
+<a href="http://news.cn.yahoo.com/society/index.html" target="_blank">
+ <div class="title">
+ <h2>社会</h2>
+ </div>
+</a>
+ <div class="link"><a href="http://news.cn.yahoo.com/socialbaitai/list.html" target="_blank">社会百态</a> | <a href="http://news.cn.yahoo.com/socialcrime/list.html" target="_blank">法制天地</a> | <a href="http://news.cn.yahoo.com/yixiang/index.html" target="_blank">奇闻轶事</a></div>
+
+ </div>
+ <div class="body">
+ <div class="news_block">
+ <div class="news_sign2">百态</div>
+ <ul class="list1">
+ <li><a
+href="http://news.cn.yahoo.com/10-05-/1063/2kcfb.html" target="_blank">湘潭城管拍卖人行道称易管理 县政府责令纠正</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/991/2kcfz.html" target="_blank">8岁男童被父亲锁在灯柱上供人领养(组图)</a></li>
+ <li><a
+href="http://news.cn.yahoo.com/10-05-/1493/2kcea.html" target="_blank">湖南一妇女因家庭纠纷捆绑3名子女投水身亡</a></li>
+
+ <li><a href="http://news.cn.yahoo.com/10-05-/488/2kcdu.html" target="_blank">北京一小学进校需先刷学生卡 自动发平安短信</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">法制</div>
+ <ul class="list1">
+ <li><a
+href="http://news.cn.yahoo.com/10-05-/474/2kcfp.html" target="_blank">司机肇事逃逸引发8车连撞 6人受伤9车损毁(图)</a></li>
+
+<li><a
+href="http://news.cn.yahoo.com/10-05-/346/2kcfx.html" target="_blank">老板欠工资卖儿子抵债 入狱供出拐卖案</a></li>
+<li><a
+href="http://news.cn.yahoo.com/10-05-/573/2kcg4.html" target="_blank">妻子红杏出墙遭拍艳照 丈夫索照片被捅伤(图)</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">奇闻</div>
+ <ul class="list1">
+ <li><a
+href="http://news.cn.yahoo.com/10-05-/660/2kce2.html" target="_blank">专家称六个月以上使用无线固话可能引发脑瘤</a></li>
+
+ <li><a
+href="http://news.cn.yahoo.com/10-05-/1493/2kcem.html" target="_blank">报纸状告网站侵权 地方法院要求分案7706件</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">真情</div>
+ <ul class="list1">
+ <li><a href="http://news.cn.yahoo.com/10-05-/346/2kcfg.html" target="_blank">六旬老人换肾23年后执意捐献遗体回报社会</a></li>
+
+<li><a
+href="http://news.cn.yahoo.com/10-05-/1105/2kcfk.html" target="_blank">10岁孩子捡2月垃圾攒8元给妈妈买礼物(图)</a></li>
+ </ul>
+ </div> </div>
+ </div>
+ <div class="col3" id="fresh">
+ <div class="cbox">
+ <div class="titlebar2">
+ <div class="title">
+
+ <h2>新鲜语录</h2>
+ </div>
+ <div class="link"><a href="http://news.cn.yahoo.com/baozhai/" target="_blank">更多>></a></div>
+ </div>
+ <div class="body">
+ <p class="title"><a href="http://news.cn.yahoo.com/10-05-/1105/2kc9j.html"target="_blank">“他没资格代表我们”。</a></p>
+<p>—湘西溆浦县6444名选民投票罢免了县人大代表。</p>
+
+ <ul class="list1">
+ <p style="color: #000099;"><a href="http://news.cn.yahoo.com/10-05-/451/2kc9f.html"target="_blank"><strong>“没算过，不好算，很难算。”</strong></a></p>
+<p>—山西平鲁一价值数亿元国有煤矿以一万元卖给个人，政府部门负责人这样解释原因。</p>
+ <p style="color: #000099;"><a href="http://news.cn.yahoo.com/10-05-/876/2kc9o.html"target="_blank"><strong>“你可以不尊重甚至讨厌一个人，但你要尊重一个人的生命。”</strong></a></p>
+<p>—网友批评“余秋雨病故”闹剧。</p>
+</ul> </div>
+ </div>
+ </div>
+
+ </div>
+ <div class="spacer"></div>
+ <div class="con2">
+ <div class="col1" id="strong-pic">
+ <div class="titlebar1">
+<a href="http://mili.cn.yahoo.com/pic/index.html" target="_blank">
+ <div class="title">
+ <h2>强图打榜</h2>
+ </div>
+
+</a>
+ <div class="link"></div>
+ </div>
+ <div class="abox">
+ <div class="picbox"><a href="http://mili.cn.yahoo.com/newspic/680/1/" target="_blank" ><img src="http://cn.yimg.com/bmingh/hbm1005270132.jpg" alt="" width="260" height="101" /></a>
+ <p><a href="http://mili.cn.yahoo.com/newspic/674/1/" class="blue" target="_blank" >我战机数量缩减50% 但1/3可匹敌F16</a></p>
+ </div>
+ <ul class="llist">
+ <li><a href="http://mili.cn.yahoo.com/newspic/678/1/" target="_blank" ><img src="http://cn.yimg.com/bmingh/hbm1005270133.jpg" alt="" width="110" height="65" class="bor1" />美国运输机群</a></li>
+
+ <li><a href="http://mili.cn.yahoo.com/newspic/676/1/" target="_blank" ><img src="http://cn.yimg.com/bmingh/hbm1005270134.jpg" alt="" width="110" height="65" class="bor1" />我军3千战机需换</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="col2" id="military">
+ <div class="titlebar1">
+<a href="http://mili.cn.yahoo.com/" target="_blank">
+ <div class="title">
+ <h2>军情</h2>
+
+ </div>
+</a>
+ <div class="link"><a href="http://yxk.cn.yahoo.com/category/1237/index.html" target="_blank" >中国</a> | <a href="http://yxk.cn.yahoo.com/category/1238/index.html" target="_blank" >世界</a> | <a href="http://yxk.cn.yahoo.com/category/1239/index.html" target="_blank" >兵器</a> | <a href="http://yxk.cn.yahoo.com/category/1240/index.html" target="_blank" >军史</a> | <a href="http://mili.cn.yahoo.com/pic/index.html" target="_blank" >图库</a> | <a href="http://bbs.yahoo.cn/thread.php?fid=173" target="_blank" >论坛</a></div>
+
+ </div>
+ <div class="body">
+ <div class="news_block">
+ <div class="news_sign2">中国</div>
+ <ul class="list1">
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/3659.html" target="_blank" >中国10天内28名渔民在南沙被周边国家抓扣</a></li>
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/3657.html" target="_blank" >中国海巡21轮顺利抵达日本 参加联合演习</a></li>
+
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/363j.html" target="_blank" >美上将称中国维护南海东海主权自信与日俱增</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">环球</div>
+ <ul class="list1">
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/35zx.html" target="_blank" >美政府发布国家安全战略报告 放弃“先发制人”</a></li>
+
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/3602.html" target="_blank" >鸠山承诺时限逼近 冲绳审判美兵表反基地决心</a></li>
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/360b.html" target="_blank" >美批评者忧虑“人造生命”被用于制生物武器</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">兵器</div>
+ <ul class="list1">
+
+ <li><a href="http://mili.cn.yahoo.com/newspic/685/1/" target="_blank" >美军12架F-22A猛禽战机将再次临时部署日本</a></li>
+ <li><a href="http://mili.cn.yahoo.com/newspic/675/1/" target="_blank" >印度国产LCH攻击直升机首次进行飞行表演</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">博弈</div>
+ <ul class="list1">
+
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/360g.html" target="_blank" >日首相称如中日因钓鱼岛发军事冲突 美将介入</a></li>
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100528/363c.html" target="_blank" >台军高层以私人身份访美 呼吁售台F-16战机</a></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ <div class="col3" id="military-history">
+ <div class="cbox">
+
+ <div class="titlebar2">
+ <div class="title">
+ <h2>军史春秋</h2>
+ </div>
+ <div class="link"></div>
+ </div>
+ <div class="body">
+ <div class="picbox"><a href="http://mili.cn.yahoo.com/newspic/660/1/" target="_blank" ><img src="http://cn.yimg.com/bmingh/hbm1005240101210.jpg " alt="" width="80" height="90" class="bor1" /></a></div>
+
+ <div class="textbox">
+ <p class="title"><a href="http://mili.cn.yahoo.com/newspic/660/1/" target="_blank" >毛泽东与他的十位儿女</a></p>
+ <p>毛泽东作为父亲具有丰富、真挚的情感，他曾动情地说干革命是造福下一代…<a href="http://mili.cn.yahoo.com/newspic/660/1/" class="blue" target="_blank" >[详细]</a></p>
+ </div>
+ <div class="spacer"></div>
+ <ul class="list1">
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100514/30w3.html" target="_blank" >红27军政委王平向毛泽东要军费始末</a></li>
+
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100513/30r5.html" target="_blank" >二炮解密导弹档案 专家草稿纸用4麻袋</a></li>
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100511/2zm8.html" target="_blank" >揭秘：陈毅等老帅密议如何应对美苏</a></li>
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100510/2yza.html" target="_blank" >揭开国民党上将白崇禧暴毙台湾之谜</a></li>
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100430/2vi0.html" target="_blank" >抗美援朝谜团：朝求援信谁呈给毛泽东</a></li>
+ <li><a href="http://yxk.cn.yahoo.com/articles/20100510/2yz-.html" target="_blank" >二战期间苏联抓获德军奸细间谍近万人</a></li>
+ </ul> </div>
+
+ </div>
+ </div>
+ </div>
+ <div class="spacer"></div>
+ <div class="con2">
+ <div class="col1" id="culture-pic">
+ <div class="titlebar1">
+<a href="http://cul.cn.yahoo.com/pic/index.html" target="_blank">
+ <div class="title">
+
+ <h2>文化画册</h2>
+ </div>
+</a>
+ <div class="link"></div>
+ </div>
+ <div class="abox">
+ <div class="picbox"><a href="http://cul.cn.yahoo.com/pic/index.html" target="_blank"><img src="http://cn.yimg.com/cul/tuijian/20100527zx1.jpg" alt="" width="84" height="64" class="bor1" /></a></div>
+ <div class="textbox">
+ <p>朱镕基经典语录：你们照顾一下凤凰卫视的吴小莉小姐好不好，我很喜欢她…<a href="http://cul.cn.yahoo.com/pic/index.html" target="_blank">[详细]</a></p>
+
+ </div>
+ <div class="spacer"></div>
+ <div class="spacerline"></div>
+ <ul class="list1">
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=757" target="_blank">端庄贤淑气质过人 清末王妃公主们到底多漂亮</a></li>
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=761" target="_blank">英国公开大批二战期间航拍间谍照</a></li>
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=753" target="_blank">两蒋时期台湾的“反共”“反攻”标语</a></li>
+
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=744" target="_blank">艳丽而不低俗 红磨坊艳舞女郎旧影</a></li>
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=774" target="_blank">以芭蕾艺术为创意缔造珠宝传奇</a></li>
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=747" target="_blank">旧时究竟有多前卫 看看裸体婚礼</a></li>
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=728" target="_blank">1985新中国首次选美大赛回顾</a></li>
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=770" target="_blank">70年代外国记者镜头下的周恩来与中国</a></li>
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=767" target="_blank">自古红颜薄命 60年代香港绝色女星的坎坷星路</a></li>
+
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=764" target="_blank">中国1949：国民政府撤离南京实拍</a></li>
+ <li><a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=758" target="_blank">关乎爱，无关色！美丽情侣组照</a></li>
+ </ul> </div>
+ </div>
+ <div class="col2" id="culture">
+ <div class="titlebar1">
+<a href="http://cul.cn.yahoo.com/index.html" target="_blank">
+ <div class="title">
+
+ <h2>文化</h2>
+ </div>
+</a>
+ <div class="link"><a href="http://cul.cn.yahoo.com/pic/history/index.html" target="_blank" >老照片</a> | <a href="http://cul.cn.yahoo.com/yeshi/index.html" target="_blank" >秘闻</a> | <a href="http://cul.cn.yahoo.com/pic/photo/index.html" target="_blank" >摄影</a> | <a href="http://cul.cn.yahoo.com/pic/index.html" target="_blank" >图库</a> | <a href="http://cul.cn.yahoo.com/zhenpin/index.html" target="_blank" >收藏</a></div>
+
+ </div>
+ <div class="body">
+ <div class="news_block">
+ <div class="news_sign2">人文</div>
+ <ul class="list1">
+ <li><a href="http://cul.cn.yahoo.com/10-05-/898/28n8r.html" target="_blank">大众娱乐《三国》还是被《三国》娱乐</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/898/28n8t.html" target="_blank">陆川:没有精神、文化输出的中国影片是危机</a></li>
+
+ <li><a href="http://cul.cn.yahoo.com/10-05-/898/28n96.html" target="_blank">“养生明星”张悟本蹿红映衬媒体伦理短板</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/898/28n8p.html" target="_blank">棉棉告谷歌侵权案开庭 谷歌称不构成侵权</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+ <div class="news_sign2">历史</div>
+ <ul class="list1">
+
+ <li><a href="http://cul.cn.yahoo.com/10-05-/861/28n87.html" target="_blank">艾霞:民国第一位死于自杀的女影星</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/861/28n84.html" target="_blank">接受袁世凯温柔一刀终结清王朝的帝国皇后</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/861/28n83.html" target="_blank">陆小曼和胡蝶做过哪本杂志的封面女郎</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/861/28n85.html" target="_blank">奇特遭遇 一个曾经惊动中央军委的女文艺兵</a></li>
+ </ul>
+ </div>
+ <div class="news_block">
+
+ <div class="news_sign2">艺术</div>
+ <ul class="list1">
+ <li><a href="http://biz.cn.yahoo.com/10-05-/141/x89y.html" target="_blank">世界最贵邮票拍卖成交价逾230万美元</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/861/28n2v.html" target="_blank">意大利街头张贴“粉红希特勒”海报惹争议</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/898/28n8m.html" target="_blank">里奥·努奇领衔《弄臣》6月重返大剧院</a></li>
+ </ul>
+ </div>
+
+ <div class="news_block">
+ <div class="news_sign2">文学</div>
+ <ul class="list1">
+ <li><a href="http://cul.cn.yahoo.com/10-05-/900/28n14.html" target="_blank">冰心：想读《金瓶梅》不好意思去图书馆借</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/898/28n1m.html" target="_blank">《孙子兵法》海外受热捧 成美国军校必读书</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/900/28n16.html" target="_blank">“黄色”手抄本《少女之心》一代人的记忆</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/896/28mwy.html" target="_blank">荆轲刺秦未果真相：谁救了秦王 谁杀了荆轲</a></li>
+
+ </ul>
+ </div> </div>
+ </div>
+ <div class="col3" id="yuedu">
+ <div class="cbox">
+ <div class="titlebar2">
+ <div class="title">
+ <h2>悦读会</h2>
+
+ </div>
+ <div class="link"><a href="http://book.cn.yahoo.com/" target="_blank" >更多>></a></div>
+ </div>
+ <div class="body">
+ <div class="picbox"><a href="http://cul.cn.yahoo.com/pic/history/index.html" target="_blank"><img src="http://cn.yimg.com/cul/tuijian/20100526zx2.jpg" alt="" width="80" height="90" class="bor1" /></a></div>
+ <div class="textbox">
+ <p class="title"><a href="http://cul.cn.yahoo.com/pic/history/index.html">那些令人印象深刻的亲吻</a></p>
+ <p>或是离别，或是重逢。或是长幼之吻，或是爱人接吻。…<a href="http://cul.cn.yahoo.com/newspic/cul_newspic_article.html?id=763" target="_blank">[详细]</a></p>
+
+ </div>
+ <div class="spacer"></div>
+ <ul class="list1">
+ <li><a href="http://cul.cn.yahoo.com/10-05-/861/28n69.html" target="_blank">《红墙警卫》毛泽东向李连成三道歉</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/894/28ms8.html" target="_blank">“淫丧天香楼”的秦可卿是太子女儿吗</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/894/28ms9.html" target="_blank">不懂人际交往 王熙凤注定不是好领导</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/894/28msa.html" target="_blank">无瑕白玉妙玉为何会沦落为娼妓</a></li>
+
+ <li><a href="http://cul.cn.yahoo.com/10-05-/900/28n16.html" target="_blank">“黄色”《少女之心》知青的阅读记忆</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/861/28msy.html" target="_blank">《十月革命》斯大林据他人功绩为己有</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/861/28me8.html" target="_blank">《知青变形记》消灭身份 跨越生死</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/861/28mge.html" target="_blank">《哪种爱不千疮百孔》张爱玲的那些爱</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-05-/861/28m84.html" target="_blank">《革命与情爱》:女性身体的政治神话</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-04-/861/28lgg.html" target="_blank">《中国大趋势》约翰奈斯比特骗人之作</a></li>
+
+ <li><a href="http://cul.cn.yahoo.com/10-04-/861/28l5v.html" target="_blank">《女人当国》讲述一个人性化的慈禧</a></li>
+ <li><a href="http://cul.cn.yahoo.com/10-03-/861/28jbg.html" target="_blank">《一个人的城堡》 时间是个杂种</a></li>
+ </ul> </div>
+ </div>
+ </div>
+ </div>
+ <div class="spacer"></div>
+
+ <div class="con3" id="news-pic">
+ <div class="top">
+<a href="http://news.cn.yahoo.com/pic/" target="_blank">
+ <div class="title">
+ <h2>新闻画报</h2>
+ </div>
+</a>
+ <div class="link"><a href="http://news.cn.yahoo.com/tuzhiguoshi/index.html" target="_blank">图知国事</a> | <a href="http://news.cn.yahoo.com/shijiefengyun/index.html" target="_blank">世界风云</a> | <a href="http://news.cn.yahoo.com/wangluojiyi/index.html
+" target="_blank">网络记忆</a> | <a href="http://news.cn.yahoo.com/qiwenqushi/index.html" target="_blank">奇闻趣事</a></div>
+
+ </div>
+ <div class="abox">
+ <div class="pictorial_box"><a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5677" target="_blank"><img src="http://cn.yimg.com/xzhg/xzg/201005027015.jpg" alt=天上人间“花魁”命案查出多省高官电话 width="400" height="295" /></div><div class="top">
+ <ul class="llist">
+<li>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5713" target="_blank"><img src="http://x.limgs.cn/f1/g/100528/n201014708212430.jpg" width="158" height="118" alt="探秘富士康--郭台铭的“紫禁城”"></a>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5713" target="_blank" title="探秘富士康--郭台铭的“紫禁城”">探秘富士康--郭台铭...</a></li><li>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5712" target="_blank"><img src="http://x.limgs.cn/f1/g/100528/n201014708005640.jpg" width="158" height="118" alt="男子持刀挑衅10余民警"></a>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5712" target="_blank" title="男子持刀挑衅10余民警">男子持刀挑衅10余民警</a></li><li>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5710" target="_blank"><img src="http://x.limgs.cn/f1/g/100527/n201014621080441.jpg" width="158" height="118" alt="罗马尼亚失火华商自救 消防员冷观"></a>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5710" target="_blank" title="罗马尼亚失火华商自救 消防员冷观">罗马尼亚失火华商自救...</a></li><li>
+
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5687" target="_blank"><img src="http://x.limgs.cn/f1/g/100527/n201014612445684.jpg" width="158" height="118" alt="台湾辣妈“哺乳照”网上爆红"></a>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5687" target="_blank" title="台湾辣妈“哺乳照”网上爆红">台湾辣妈“哺乳照”网...</a></li><li>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5684" target="_blank"><img src="http://x.limgs.cn/f1/g/100527/n201014611410492.jpg" width="158" height="118" alt="昔日“连体兄弟” 今日走进学堂"></a>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5684" target="_blank" title="昔日“连体兄弟” 今日走进学堂">昔日“连体兄弟” 今...</a></li><li>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5682" target="_blank"><img src="http://x.limgs.cn/f1/g/100527/n201014611365456.jpg" width="158" height="118" alt="俄罗斯南部发生恐怖爆炸 50多人死伤"></a>
+<a href="http://news.cn.yahoo.com/newspic/news_newspic_article.html?id=5682" target="_blank" title="俄罗斯南部发生恐怖爆炸 50多人死伤">俄罗斯南部发生恐怖爆...</a></li> </ul>
+ </div>
+ </div>
+ </div>
+ <div class="spacer"></div>
+
+ <div class="con3" id="news-list">
+ <div class="top">
+ <div class="title">
+ <h2>新闻列表</h2>
+ </div>
+<div class="link"><a href="http://news.cn.yahoo.com/cnnews/index.html" target="_blank">国内</a> | <a href="http://news.cn.yahoo.com/world/index.html" target="_blank">国际</a> | <a href="http://mili.cn.yahoo.com/index.html
+" target="_blank">军事</a> | <a href="http://news.cn.yahoo.com/society/index.html" target="_blank">社会</a> | <a href="http://cul.cn.yahoo.com/" target="_blank">文化</a> | <a href="http://news.cn.yahoo.com/cn/minsheng/list.html" target="_blank">民生</a> </div>
+
+ </div>
+ <div class="land">
+ <div class="col" id="internal-news">
+ <div class="titlebar1">
+ <div class="title">国内新闻</div>
+ <div class="link"><a href="http://news.cn.yahoo.com/cnnews/index.html" target="_blank">更多>></a></div>
+ </div>
+ <div class="body">
+
+<ul class="list1">
+<li><a href="http://news.cn.yahoo.com/10-05-/1037/2kbgr.html" target="_blank" title="长深高速公路特大交通事故遇难者增至33人
+">长深高速公路特大交通事故遇难者增至33人</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/346/2kb4s.html" target="_blank" title="沪昆铁路客车脱线事故致江西境内九趟列车停运
+">沪昆铁路客车脱线事故致江西境内九趟列车停运</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1493/2kb3n.html" target="_blank" title="北京市公安局长率3000民警运动减压(组图)
+">北京市公安局长率3000民警运动减压(组图)</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/474/2kb3k.html" target="_blank" title="北京一超市出售活鳄鱼 当场宰杀引争议(图)
+">北京一超市出售活鳄鱼 当场宰杀引争议(图)</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1037/2kb2m.html" target="_blank" title="湖南桃江县6.5万学生因暴雨停课
+">湖南桃江县6.5万学生因暴雨停课</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1040/2kb2k.html" target="_blank" title="西南200余万人因旱灾返贫 经济损失超350亿元
+">西南200余万人因旱灾返贫 经济损失超350亿元</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kb2j.html" target="_blank" title="美将中国列入“国际盗版观察名单” 外交部反驳
+">美将中国列入“国际盗版观察名单” 外交部反驳</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kayw.html" target="_blank" title="“台第一美胸”闺房直击 穿情趣内衣犒赏男友">“台第一美胸”闺房直击 穿情趣内衣犒赏男友</a></li>
+
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kayu.html" target="_blank" title="两岸在台共商合作发展绿能产业 萧万长出席">两岸在台共商合作发展绿能产业 萧万长出席</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kaxf.html" target="_blank" title="云南富源法官嫖宿幼女一审被判无罪 二审判6年
+">云南富源法官嫖宿幼女一审被判无罪 二审判6年</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1516/2kaxe.html" target="_blank" title="浙江宁海361名村民状告省政府不作为胜诉
+">浙江宁海361名村民状告省政府不作为胜诉</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1493/2kaxb.html" target="_blank" title="海南女生被冒名念完大学案牵涉湖北教育厅
+">海南女生被冒名念完大学案牵涉湖北教育厅</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1028/2kax6.html" target="_blank" title="未来三天江南华南等地强降雨 部分地区有冰雹
+">未来三天江南华南等地强降雨 部分地区有冰雹</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1037/2kax2.html" target="_blank" title="2010年世界竞争力报告称中国领先英法日等国
+">2010年世界竞争力报告称中国领先英法日等国</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1037/2kawz.html" target="_blank" title="文强案影响深远 打黑除恶行动升至国家层面
+">文强案影响深远 打黑除恶行动升至国家层面</a></li>
+ </ul>
+ </div>
+
+ </div>
+ <div class="col" id="international-news">
+ <div class="titlebar1">
+ <div class="title">国际新闻 </div>
+ <div class="link"><a href="http://news.cn.yahoo.com/world/index.html" target="_blank">更多>></a></div>
+ </div>
+ <div class="body">
+<ul class="list1">
+
+<li><a href="http://news.cn.yahoo.com/10-05-/451/2kc5c.html" target="_blank" title="希拉里担心美国债务问题 道出心中最重要角色
+">希拉里担心美国债务问题 道出心中最重要角色</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1434/2kbgt.html" target="_blank" title="俄变态杀手猎杀妓女 剥皮缝制人皮夹克(图)
+">俄变态杀手猎杀妓女 剥皮缝制人皮夹克(图)</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/991/2kbde.html" target="_blank" title="英国百万英镑工程为不打扰母鹅孵蛋而停工(图)
+">英国百万英镑工程为不打扰母鹅孵蛋而停工(图)</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kb5a.html" target="_blank" title="印度发生14年来最严重空难 159人死7人幸存
+">印度发生14年来最严重空难 159人死7人幸存</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1037/2kb2l.html" target="_blank" title="朝鲜欲向韩派检查团遭拒 称韩国欲掩盖真相">朝鲜欲向韩派检查团遭拒 称韩国欲掩盖真相</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1037/2kayo.html" target="_blank" title="俄罗斯拟在地铁安装测爆仪确保公共交通安全
+">俄罗斯拟在地铁安装测爆仪确保公共交通安全</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kayn.html" target="_blank" title="西班牙法院判马德里机场爆炸3罪犯1040年监禁
+">西班牙法院判马德里机场爆炸3罪犯1040年监禁</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1037/2kayi.html" target="_blank" title="潘基文谴责一些国家武装派别在冲突中残害儿童
+">潘基文谴责一些国家武装派别在冲突中残害儿童</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1037/2kayg.html" target="_blank" title="伊拉克北部汽车炸弹袭击致20死50伤
+">伊拉克北部汽车炸弹袭击致20死50伤</a></li>
+
+<li><a href="http://news.cn.yahoo.com/10-05-/1493/2kax4.html" target="_blank" title="世界首例人造生命诞生 反对者称打开潘多拉魔盒
+">世界首例人造生命诞生 反对者称打开潘多拉魔盒</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1493/2kax1.html" target="_blank" title="人造生命显双刃剑效应 奥巴马下令评估伦理风险
+">人造生命显双刃剑效应 奥巴马下令评估伦理风险</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1028/2kamq.html" target="_blank" title="泰国现场直击:曼谷街头绷紧神经
+">泰国现场直击:曼谷街头绷紧神经</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kamg.html" target="_blank" title="巴黎博物馆毕加索油画等5幅画失窃 值5亿欧元
+">巴黎博物馆毕加索油画等5幅画失窃 值5亿欧元</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/346/2kam9.html" target="_blank" title="视频:泰国红衫军领导集体自首 曼谷全城宵禁
+">视频:泰国红衫军领导集体自首 曼谷全城宵禁</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kace.html" target="_blank" title="泰政府称曼谷部分地区局势失控 将继续清场行动
+">泰政府称曼谷部分地区局势失控 将继续清场行动</a></li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="col" id="military-news">
+ <div class="titlebar1">
+ <div class="title">军事新闻 </div>
+ <div class="link"><a href="http://mili.cn.yahoo.com/index.html" target="_blank" >更多>></a></div>
+ </div>
+ <div class="body last">
+<ul class="list1">
+<ul>
+<!--文章列表：-->
+
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/365b.html" title="越南称反对中国南海禁渔令将为渔民提供保护" target="_blank">越南称反对中国南海禁渔令将为渔民提供保护</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/3659.html" title="中国10天内28名渔民在南沙海域被周边国家抓扣" target="_blank">中国10天内28名渔民在南沙海域被周边国家抓</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/3657.html" title="中国海巡21轮顺利抵达日本 参加联合演习" target="_blank">中国海巡21轮顺利抵达日本 参加联合演习</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/3651.html" title="解放军中将：两岸打仗几率甚微 台海军事有默契" target="_blank">解放军中将：两岸打仗几率甚微 台海军事有默契</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/363p.html" title="朝鲜关闭朝韩应急通信线路 将反击韩越界行为" target="_blank">朝鲜关闭朝韩应急通信线路 将反击韩越界行为</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/363n.html" title="汉和称朝韩如开战 朝鲜海军或采用自杀式攻击" target="_blank">汉和称朝韩如开战 朝鲜海军或采用自杀式攻击</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/363j.html" title="美军上将称中国维护南海东海主权自信与日俱增" target="_blank">美军上将称中国维护南海东海主权自信与日俱增</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/363i.html" title="美扩建巴林第5舰队司令部基地 预计工程持续5年" target="_blank">美扩建巴林第5舰队司令部基地 预计工程持续5</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/363g.html" title="韩国海军在西部海域举行反潜训练 10余舰艇参加" target="_blank">韩国海军在西部海域举行反潜训练 10余舰艇参</a></li>
+
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/363e.html" title="印媒呼吁印度别与中国攀比 研发卫星导航不现实" target="_blank">印媒呼吁印度别与中国攀比 研发卫星导航不现实</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/363d.html" title="台军购美载重卡车加强防空战力 可用于全岛机动" target="_blank">台军购美载重卡车加强防空战力 可用于全岛机动</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/363c.html" title="台军高层以私人身份访美 呼吁售台F-16战机" target="_blank">台军高层以私人身份访美 呼吁售台F-16战机</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/363a.html" title="九成网民支持中国建网络司令部 有专家称没必要" target="_blank">九成网民支持中国建网络司令部 有专家称没必要</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/3638.html" title="台湾被指可能协助日本与那国岛扩大防空识别圈" target="_blank">台湾被指可能协助日本与那国岛扩大防空识别圈</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100528/3637.html" title="解放军演练红方战士随手扔垃圾致潜伏地点暴露" target="_blank">解放军演练红方战士随手扔垃圾致潜伏地点暴露</a></li>
+</ul>
+ </ul> </div>
+ </div>
+
+ <div class="col" id="community-news">
+ <div class="titlebar1">
+ <div class="title">社会新闻 </div>
+ <div class="link"><a href="http://news.cn.yahoo.com/society/index.html" target="_blank" >更多>></a></div>
+ </div>
+ <div class="body">
+<ul class="list1">
+<!--文章列表：-->
+<li><a href="http://yxk.cn.yahoo.com/articles/20100521/33un.html" title="北京圣丹文化传播野外生存集训致使人员重伤" target="_blank">北京圣丹文化传播野外生存集训致使人员重伤</a></li>
+
+<li><a href="http://yxk.cn.yahoo.com/articles/20100520/33fq.html" title="第七届世界旅游小姐全球总决赛香港落幕" target="_blank">第七届世界旅游小姐全球总决赛香港落幕</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100519/32vl.html" title="男子猝死网吧 家属认为放任超时上网索赔40万" target="_blank">男子猝死网吧 家属认为放任超时上网索赔40万</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100519/32v7.html" title="90后未婚妈妈卫生间产女捂死孩子 或判故意杀人" target="_blank">90后未婚妈妈卫生间产女捂死孩子 或判故意杀人</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100519/32sk.html" title="新疆死刑犯就医期逃跑 300武警携3万群众擒凶(图)" target="_blank">新疆死刑犯就医期逃跑 300武警携3万群众擒凶(</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100519/32js.html" title="赌徒父亲花2000元雇凶杀死亲生儿子 将儿媳拐卖" target="_blank">赌徒父亲花2000元雇凶杀死亲生儿子 将儿媳拐卖</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100518/3271.html" title="富士康员工坠亡调查 在苦熬中消耗青春" target="_blank">富士康员工坠亡调查 在苦熬中消耗青春</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100518/326u.html" title="办公室盛行偷菜 上班族售“牧草”赚外快" target="_blank">办公室盛行偷菜 上班族售“牧草”赚外快</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100518/326m.html" title="东莞今年将对上万名暗娼进行艾滋病防治干预" target="_blank">东莞今年将对上万名暗娼进行艾滋病防治干预</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100518/326k.html" title="调查称男司机认为女人开车是“杯具”" target="_blank">调查称男司机认为女人开车是“杯具”</a></li>
+
+<li><a href="http://yxk.cn.yahoo.com/articles/20100518/326h.html" title="车主用“向交警致敬”纸牌遮挡车牌被罚" target="_blank">车主用“向交警致敬”纸牌遮挡车牌被罚</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100518/3268.html" title="盗窃团伙巡游全国专偷别墅区 自称“凤凰传奇”" target="_blank">盗窃团伙巡游全国专偷别墅区 自称“凤凰传奇”</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100518/3265.html" title="西安一高中生因在校用手机遭学校劝退" target="_blank">西安一高中生因在校用手机遭学校劝退</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100518/3260.html" title="夫妻同在富士康打工 丈夫放狠话让妻子快去跳楼" target="_blank">夫妻同在富士康打工 丈夫放狠话让妻子快去跳楼</a></li>
+<li><a href="http://yxk.cn.yahoo.com/articles/20100518/325t.html" title="网友欲组团自费赴富士康调查频繁跳楼原因" target="_blank">网友欲组团自费赴富士康调查频繁跳楼原因</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="col" id="culture-news">
+
+ <div class="titlebar1">
+ <div class="title">文化新闻 </div>
+ <div class="link"><a href="http://cul.cn.yahoo.com/" target="_blank" >更多>></a></div>
+ </div>
+ <div class="body">
+<ul class="list1">
+<li><a href="http://cul.cn.yahoo.com/10-05-/861/28nck.html" target="_blank" title="趣闻:日本人为啥如此怕咱们以至不敢升国旗">趣闻:日本人为啥如此怕咱们以至不敢升国旗</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/861/28nc6.html" target="_blank" title="刘晓庆不接受宋祖德道歉坚持打官司
+">刘晓庆不接受宋祖德道歉坚持打官司</a></li>
+
+<li><a href="http://cul.cn.yahoo.com/10-05-/898/28nbz.html" target="_blank" title="著名国画大师萧朗逝世 享年94岁
+">著名国画大师萧朗逝世 享年94岁</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/861/28nbu.html" target="_blank" title="侯耀文生前物品首次曝光 玉石名表备受关注
+">侯耀文生前物品首次曝光 玉石名表备受关注</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/898/28nbn.html" target="_blank" title="五省七地掀大小乔“认亲”热 尽为经济利益
+">五省七地掀大小乔“认亲”热 尽为经济利益</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/899/28nbf.html" target="_blank" title="国家文物局:玉树地震损坏28处国保、省保文物
+">国家文物局:玉树地震损坏28处国保、省保文物</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/861/28nba.html" target="_blank" title="《天天向上》编导妖魔化娱记 汪涵出面道歉
+">《天天向上》编导妖魔化娱记 汪涵出面道歉</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/898/28nb5.html" target="_blank" title="娱乐圈假料何来?内地有名狗仔的不过10人
+">娱乐圈假料何来?内地有名狗仔的不过10人</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/898/28nb1.html" target="_blank" title="端午节姓“伍”姓“屈”?
+">端午节姓“伍”姓“屈”?</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/861/28naz.html" target="_blank" title="《收获》收入郭敬明文章是面对现实的无奈?
+">《收获》收入郭敬明文章是面对现实的无奈?</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/898/28nax.html" target="_blank" title="学者:“慎终追远”的季承是个好儿子
+">学者:“慎终追远”的季承是个好儿子</a></li>
+
+<li><a href="http://cul.cn.yahoo.com/10-05-/898/28naw.html" target="_blank" title="歌德学院总院主席:“网络是工具,图书是文化”
+">歌德学院总院主席:“网络是工具,图书是文化”</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/898/28nav.html" target="_blank" title="曹操高陵等入围“全国十大考古新发现”评选
+">曹操高陵等入围“全国十大考古新发现”评选</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/861/28nau.html" target="_blank" title="《收获》刊发郭敬明小说惹争议 与定位不符?
+">《收获》刊发郭敬明小说惹争议 与定位不符?</a></li>
+<li><a href="http://cul.cn.yahoo.com/10-05-/898/28nam.html" target="_blank" title="老外读《三国》:曹操家族爱抢妻 刘备不是同性恋
+">老外读《三国》:曹操家族爱抢妻 刘备不是同性恋</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="col" id="people-news">
+ <div class="titlebar1">
+
+ <div class="title">民生新闻</div>
+ <div class="link"><a href="http://news.cn.yahoo.com/cn/minsheng/list.html" target="_blank">更多>></a></div>
+ </div>
+ <div class="body last">
+<ul class="list1">
+<li><a href="http://news.cn.yahoo.com/10-05-/1493/2kcic.html" target="_blank" title="控制律师规模缺法律依据 被指影响公民信心
+">控制律师规模缺法律依据 被指影响公民信心</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/534/2kci9.html" target="_blank" title="《价格法》可以管炒绿豆不适用商品房?
+">《价格法》可以管炒绿豆不适用商品房?</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/533/2kcg2.html" target="_blank" title="广东卫生厅副厅长:完全可以实施全民免费医疗
+">广东卫生厅副厅长:完全可以实施全民免费医疗</a></li>
+
+<li><a href="http://news.cn.yahoo.com/10-05-/451/2kc5y.html" target="_blank" title="年轻主妇写买菜时刻表应对菜价上涨
+">年轻主妇写买菜时刻表应对菜价上涨</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kc5o.html" target="_blank" title="江苏徐州300亩即将丰收麦子被铲建安置房(组图)
+">江苏徐州300亩即将丰收麦子被铲建安置房(组图)</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1492/2kbpq.html" target="_blank" title="沈阳黑豆价为五花肉两倍 市民称养生节目推行情
+">沈阳黑豆价为五花肉两倍 市民称养生节目推行情</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1413/2kbfj.html" target="_blank" title="名人故里争夺战之诸葛亮故里:穿越历史的天空
+">名人故里争夺战之诸葛亮故里:穿越历史的天空</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1495/2kb16.html" target="_blank" title="本周焦点关注:城市弱不禁雨 楼市屡调屡败">本周焦点关注:城市弱不禁雨 楼市屡调屡败</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1364/2kary.html" target="_blank" title="廊坊富士康:两起未公开的“死亡报告”
+">廊坊富士康:两起未公开的“死亡报告”</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1055/2karv.html" target="_blank" title="“80后”大学生火烧毕业证引发反思
+">“80后”大学生火烧毕业证引发反思</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kaqy.html" target="_blank" title="难负重压 大陆留英学生患精神病人数上升
+">难负重压 大陆留英学生患精神病人数上升</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kaqw.html" target="_blank" title="代工之痛:499美元iPad中国组装费仅为11.2美元
+">代工之痛:499美元iPad中国组装费仅为11.2美元</a></li>
+
+<li><a href="http://news.cn.yahoo.com/10-05-/1055/2kaq9.html" target="_blank" title="中青报:尊重周正龙维权就是尊重自己的权利
+">中青报:尊重周正龙维权就是尊重自己的权利</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1125/2kaq5.html" target="_blank" title="被扭曲的“四级跳”:谁在转动药价的魔方
+">被扭曲的“四级跳”:谁在转动药价的魔方</a></li>
+<li><a href="http://news.cn.yahoo.com/10-05-/1063/2kapd.html" target="_blank" title="专家建议将校园安全教育常态化 不要临阵磨枪
+">专家建议将校园安全教育常态化 不要临阵磨枪</a></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="spacer"></div>
+
+ <div class="media_link">
+ <p class="title">合作媒体</p>
+ <ul class="llist">
+<li><a href="http://www.xinhua.org/" target=_blank >新华网</a></li>
+ <li><a href="http://www.chinanews.com.cn/" target=_blank >中国新闻网</a></li>
+ <li><a href="http://www.people.com.cn/" target=_blank >人民网</a></li>
+ <li><a href="http://www.jfdaily.com/" target=_blank >解放日报</a></li>
+
+ <li><a href="http://www.dayoo.com/" target=_blank >大洋网</a></li>
+ <li><a href="http://gzdaily.dayoo.com/html/2010-05/05/node_1.htm" target=_blank >广州日报</a></li> <li><a href="http://www.ycwb.com/" target=_blank >金羊网</a></li>
+ <li><a href="http://www.ycwb.com/ePaper/ycwb/html/2010-05/05/node_1.htm" target=_blank >羊城晚报</a></li>
+ <li><a href="http://www.ycwb.com/ePaper/xkb/html/2010-05/05/node_121.htm" target=_blank >新快报</a></li>
+ <li><a href="http://www.dzwww.com/" target=_blank >大众网</a></li>
+
+ <li><a href="http://www.newssc.org/" target=_blank >四川新闻网</a></li>
+ <li><a href="http://www.zjol.com.cn/" target=_blank >浙江在线</a></li>
+ <li><a href="http://zjdaily.zjol.com.cn/html/2010-05/05/node_18.htm" target=_blank >浙江日报</a></li>
+ <li><a href="http://zjdaily.zjol.com.cn/qjwb/html/2010-05/05/node_77.htm" target=_blank >钱江晚报</a></li>
+ <li><a href="http://zjdaily.zjol.com.cn/jrzb/html/2010-05/05/node_142.htm" target=_blank >今日早报</a></li>
+ <li><a href="http://paper.people.com.cn/jhsb/html/2010-05/04/node_403.htm" target=_blank >京华时报</a></li>
+
+ <li><a href="http://paper.people.com.cn/zgjjzk/html/2010-05/03/node_1422.htm" target=_blank >中国经济周刊</a></li>
+ <li><a href="http://www.people.com.cn/paper/tx_hqrw/060112.html" target=_blank >环球人物</a></li>
+ </ul> </div>
+</div><link rel="stylesheet" type="text/css" href="http://cn.yimg.com/article/css/100408/foot.css">
+<div class="yg-ft">
+<div class="yg-ft-services">
+ <a href="http://cn.about.yahoo.com/" target="_blank">关于雅虎</a> |
+ <a href="http://help.cn.yahoo.com/index.html" target="_blank">帮助中心</a> |
+ <a href="http://cn.yahoo.com/contact/index.html" target="_blank">联系我们</a> |
+ <a href="http://yahoocareer.aliyk.net.cn" target="_blank">诚聘英才</a> |
+ <a href="http://cn.promo.yahoo.com/docs/sales/" target="_blank">广告服务</a> [<a href="http://cn.yahoo.com/allservice/index.html" target="_blank">更多</a>]
+
+</div>
+<div class="yg-ft-announce">
+<a target="_blank" href="http://www.miibeian.gov.cn/">京ICP证000022号</a> <a target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0102000121100054"><img border="0" align="absmiddle" src="http://cn.yimg.com/i/lg/gs.gif"/></a> | <a target="_blank" href="http://cn.yimg.com/wy/ycn_20091123_1.gif">增值电信业务经营许可证B2-20090145</a> | <a target="_blank" href="http://cn.yahoo.com/licence/yjj0039.html">国家药监局(京)-经营性-2004-0039</a> | <a target="_blank" href="http://cn.yimg.com/wy/ycn_20091123_3.gif">文网文【2008】171号</a> | <a target="_blank" href="http://cn.yimg.com/wy/ycn_20091123_2.gif">广播电视节目制作经营许可证（京）字第659号</a><br/>Copyright &copy; 2010 Yahoo.com.cn 版权所有 不得转载 | <a target="_blank" href="http://misc.yahoo.com.cn/copyright.html">使用须知</a> | <a target="_blank" href="http://cn.yahoo.com/copyright2007/index.html">著作权声明</a><br/>
+
+</div>
+<div class="yg-ft-groups">
+阿里巴巴集团 - <a href="http://china.alibaba.com/" target=_blank>阿里巴巴</a> | <a
+href="http://www.taobao.com/" target=_blank>淘宝站</a> | <a
+href="http://www.alipay.com/" target=_blank>支付宝</a> | <a
+href="http://www.koubei.com/" target=_blank>口碑网</a>
+</div>
+<div>文明办网举报热线 010-65986060</div>
+
+</div>
+<!-- /SIG=15ng6dg66/M=770208.14152743.14064569.13422798/D=cnnewsgb/S=95634229:FW/Y=CN/EXP=1275022206/L=bE0Qc8qlZ61Bvy5ksGlpggTc242zkkv_L14ACtL0/B=tikULsqlaQk-/J=1275015006709357/K=Euq3R8CkSwhj1kPpjH27MA/A=6080480/R=0 -->
+<script src='http://cast.ra.icast.cn/p/?id=2046'></script><script type="text/javascript" src="http://cn.yimg.com/js/jquery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+//slide show
+var timeout = -1;
+var autoplay = -1;
+var delay = 100;
+$('#show_box .showtab a').hover(function(){
+ var index = $(this).index();
+ autoplay = window.clearInterval(autoplay);
+ timeout = window.clearTimeout(timeout);
+ timeout = window.setTimeout(function(){showPicBox(index);},delay);
+},function(){
+ autoplay = window.clearInterval(autoplay);
+ autoplay = window.setInterval(function(){showNextBox();},4000);
+});
+function showPicBox(index){
+ var all_a = $('#show_box .showtab a');
+ var all_box = $('#show_box .showpic');
+ all_a.not($(all_a.get(index)).addClass('on')).removeClass('on');
+ all_box.not($(all_box.get(index)).show(0)).hide(0);
+}
+function showNextBox(){
+ var index = $('#show_box .showtab a.on').index();
+ if(index == $('#show_box .showtab a').length - 1){
+ index = 0;
+ }else{
+ index = index + 1;
+ }
+ showPicBox(index);
+}
+showPicBox(0);
+autoplay = window.setInterval(function(){showNextBox();},4000);
+//tab
+$('#hotnews .tab_1 li').mouseenter(function(){
+ var i = $(this).index(),c = $('#hotnews>div');
+ $('#hotnews .tab_1 li').not($(this).addClass('on')).removeClass('on');
+ c.not($(c.get(i)).show()).hide();
+});
+//scroll news
+var scroller = $('#rtext'),html = scroller.html(),scrollInterval = -1,scrollTime = 120000,reset = 0;
+scroller.html( html + html + html);
+scrollInterval = window.setInterval(function(){
+ scroll(true);
+},scrollTime/4);
+function scroll(){
+ scroller.css({'left':reset}).stop().animate({'left':"-="+scroller.width()/3},scrollTime/3,'linear');
+}
+scroller.css('width','auto').hover(function(){
+ $('#rtext').stop();
+ scrollInterval = window.clearInterval(scrollInterval);
+},function(){
+ scrollInterval = window.clearInterval(scrollInterval);
+ scrollInterval = window.setInterval(function(){
+ scroll();
+ },scrollTime/3);
+ scroller.stop().animate({'left':"-="+scroller.width()/3},scrollTime/3,'linear');
+ if(parseInt(scroller.css('left')) < - scroller.width()/3){
+ reset = parseInt(scroller.css('left')) + scroller.width()/3;
+ }else{
+ reset = parseInt(scroller.css('left'));
+ }
+});
+scroll();
+});
+</script>
+</body>
+</html>

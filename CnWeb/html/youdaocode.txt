@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="http://shared.ydstatic.com/r/1.0/s/g.css?201003301" rel="stylesheet" />
+<title>接口 - 有道搜索</title>
+<link rel="search" type="application/opensearchdescription+xml" title="有道网页搜索" href="http://shared.ydstatic.com/plugins/search-provider.xml" />
+<link rel="shortcut icon" href="http://shared.ydstatic.com/images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<div id="t">
+  <div id="u">
+<a href="/skinchooser?back_url=http%3A%2F%2Fwww.youdao.com%2Fsearch%3Fq%3D%25E6%258E%25A5%25E5%258F%25A3%26ue%3Dutf8%26keyfrom%3Dweb.index">换肤</a>
+<span class="sl">|</span>
+<a href="/setting">设置</a>
+<span class="sl">|</span>
+<a href="http://account.youdao.com/login?back_url=http%3A%2F%2Fwww.youdao.com%2Fsearch%3Fq%3D%25E6%258E%25A5%25E5%258F%25A3%26ue%3Dutf8%26keyfrom%3Dweb.index">登录</a>
+</div>
+  <div id="n">
+    <a class="mn" id="mn" href="http://www.163.com/"><u>网易</u><s>▼</s></a>
+    <span class="sl">|</span>
+    <strong>网页</strong>
+    <a onclick='return seturl(this, "query", "image", "web.top");' href="http://image.youdao.com/">图片</a>
+    <a onclick='return seturl(this, "query", "news", "web.top");' href="http://news.youdao.com/">热闻</a>
+    <a onclick='return seturl(this, "query", "gouwu", "web.top");' href="http://gouwu.youdao.com/">购物</a>
+    <a onclick='return seturl(this, "query", "mp3", "web.top");' href="http://mp3.youdao.com/">音乐</a>
+    <a onclick='return seturl(this, "query", "video", "web.top");' href="http://video.youdao.com/">视频</a>
+    <a onclick='return seturl(this, "query", "dict", "web.top");' href="http://dict.youdao.com/">词典</a>
+    <a class="mn" id="mt" href="#"><u>更多</u><s>▼</s></a>
+</div></div>
+<form action="search" method="get" id="f">
+  <h1 id="yd"><a href="/">有道 - 网易旗下搜索</a></h1>
+  <div class="fc"  id="ts">
+    <div class="qc" id="qc">
+      <input type="hidden" name="lq" value="接口" />
+      <input type="hidden" name="ue" value="utf8" />
+                                          <input type="hidden" name="keyfrom" value="web.top" />
+      <input type=text id="query" class="q" name="q" value="接口" autocomplete="off"/>
+      <div class="aca" id="aca">▼</div>
+    </div>
+    <input type="submit" class="qb" name="btnSearchTop" value="搜 索"/>
+  </div>
+    <div class="ao">
+        <em><a href="http://www.youdao.com/2010?keyfrom=search.tip" target="_blank" style="color:#808080">预见未来-有道搜索2010版上线</a> - <a href="http://tie.youdao.com/tl_-6772679008933037203?keyfrom=search.tip" target="_blank" style="color:#808080">用户反馈</a></em>
+          </div>	
+    <div id="fbl"> </div>
+  <div id="fbr"> </div>
+</form>
+ <div id="w" class="cf">
+<div id="s">
+  <div id="sb"></div>
+  <div id="sc">
+    <ul id="cats">
+    <li><strong><span class="sp">&gt;</span>网页结果</strong></li>
+<li><a href="http://news.youdao.com/search?q=%E6%8E%A5%E5%8F%A3&keyfrom=web.precom" onclick="javascript:(new Image()).src='http://www.youdao.com/smartresult/ctlog?q=%E6%8E%A5%E5%8F%A3&pos=web.news&action=PRECOM_CLICK'">热闻</a></li>
+<li><a href="http://blog.youdao.com/search?q=%E6%8E%A5%E5%8F%A3&keyfrom=web.precom" onclick="javascript:(new Image()).src='http://www.youdao.com/smartresult/ctlog?q=%E6%8E%A5%E5%8F%A3&pos=web.blog&action=PRECOM_CLICK'">博客</a></li>
+<li><a href="search?q=%E6%8E%A5%E5%8F%A3&page=q&keyfrom=web.precom" onclick="javascript:(new Image()).src='http://www.youdao.com/smartresult/ctlog?q=%E6%8E%A5%E5%8F%A3&pos=web.wenda&action=PRECOM_CLICK'">问答</a></li>
+<li><a href="search?q=%E6%8E%A5%E5%8F%A3&scope=s&keyfrom=web.precom" onclick="javascript:(new Image()).src='http://www.youdao.com/smartresult/ctlog?q=%E6%8E%A5%E5%8F%A3&pos=web.forum&action=PRECOM_CLICK'">论坛</a></li>
+    </ul>
+            <div class="widget">
+	  <h2><span class="ti">按时间搜索</span></h2>
+      <ul>
+			<li><a href='search?q=%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.time&lq=%E6%8E%A5%E5%8F%A3&lm=1'>一天内</a></li>
+	<li><a href='search?q=%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.time&lq=%E6%8E%A5%E5%8F%A3&lm=7'>一周内</a></li>
+	<li><a href='search?q=%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.time&lq=%E6%8E%A5%E5%8F%A3&lm=30'>一月内</a></li>
+	<li><a href='search?q=%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.time&lq=%E6%8E%A5%E5%8F%A3&lm=360'>一年内</a></li>
+      </ul>
+    </div>
+            <div class="widget" id="recommenderWidget">
+  <h2><span class="ti">大家还在搜</span></h2>
+  <ul>
+            <li><a href='search?q=c%23%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.rc&lq=%E6%8E%A5%E5%8F%A3&rqp=0'>c#接口</a></li>
+            <li><a href='search?q=%E7%94%B5%E8%84%91%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.rc&lq=%E6%8E%A5%E5%8F%A3&rqp=1'>电脑接口</a></li>
+            <li><a href='search?q=%E9%80%9A%E4%BF%A1%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.rc&lq=%E6%8E%A5%E5%8F%A3&rqp=2'>通信接口</a></li>
+          </ul>
+</div>
+        <div class="widget" id="historyWidget">
+            <h2><span class="ti">搜索历史</span></h2>
+      <ul>
+                                <li><a href="search?q=%E6%8E%A5%E5%8F%A3&ue=utf8&amp;keyfrom=searchhistory">接口</a></li>
+                             <li><a href="http://www.youdao.com/history?a=browse&p=websearch&keyfrom=web">更多 »</a></li>
+      </ul>
+      <div id="historyActions"><a id="deleteHistory" href='search?q=%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=history.clear&lq=%E6%8E%A5%E5%8F%A3'>清除</a> - <a id="closeHistory" href='search?q=%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=history.close&lq=%E6%8E%A5%E5%8F%A3&oh=2'>关闭</a></div>
+           </div>
+  </div>
+</div>
+<div id="c" class="cf">
+<div title="关闭左栏导航" id="sideBarButton" class="">«</div>
+
+<div id="sp">
+  <h2>赞助商链接</h2>
+  <ul class="rz">
+                <li>
+            <a class="black" href='http://name.knet.cn/cn.dll?pid=l_yodao&name=%BD%D3%BF%DA' target=_blank onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', 'cnnic.right', 'CNNIC_CLICK');">
+          通用网址直达<span class="hl">接口 </span></a></li>
+        <li>
+      <a class="gray" href="http://a.youdao.com/yodao_promotion.html" target="_blank">在此展示您的推广信息</a>
+    </li>
+    </div>
+<h2 id="pt">
+<span class="fr">共约3230万条结果</span>
+网页结果
+</h2>
+<ul id="results" class="rz">
+        <li>
+<h3>
+<a href="http://detail.zol.com.cn/product_param/index1813.html" id="hitURL1" onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', '1.1', 'OPEN_HIT', '', '', '&attack=0&template=default');"  target="_blank"  ><span id="title1"><span class="hl">接口</span> GPS知识 ZOL术语 - 电脑价格</span></a>
+</h3>
+<div id="summary1"><p>GPS : <span class="hl">接口</span> GPS设备的<span class="hl">接口</span>可分为数据<span class="hl">接口</span>、电源<span class="hl">接口</span>和射频<span class="hl">接口</span>。各种<span class="hl">接口</span>的具体标准如下所示：数据/电源<span class="hl">接口</span>：国际标准20针（2×10）插头，RTCM104/RS-232、NMEA0183；射频<span class="hl">接口</span>：OSX（或MCX型，超小型，搭锁式）。...</p></div>
+<p class="s">
+<span class="l">电脑价格 - detail.zol.com.cn/product_param/index1813.html</span>
+ - <a id="snapshotLink1" href="cache?docid=CDAD20E81CDEE0C9&dc=00000049&eterms=FqzQIugzS0Q%3D&q=%E6%8E%A5%E5%8F%A3&url=http%3A%2F%2Fdetail.zol.com.cn%2Fproduct_param%2Findex1813.html" target="_blank" onclick="javascript:closePoptip('snapshotLink1')">快照</a>
+ - <span id="preview1" class="preview" pos="1" encodedQuery='%E6%8E%A5%E5%8F%A3' encodedEncryptedTerms='FqzQIugzS0Q%3D' docId='CDAD20E81CDEE0C9' sliceId='00000049' isAttack='0'><a class="yl">预览</a></span>
+</p>
+  </li>
+                    <li>
+<h3>
+<a href="http://www.beareyes.com.cn/2/lib/200512/02/20051202023_2.htm" id="hitURL2" onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', '2.1', 'OPEN_HIT', '', '', '&attack=0&template=default');"  target="_blank"  ><span id="title2">知识百宝囊--认清你身边的PC<span class="hl">接口</span>-网络频道 - 小熊在线</span></a>
+</h3>
+<div id="summary2"><p>知识百宝囊--认清你身边的PC<span class="hl">接口</span> ...USB IEEE 1394/ Firewire / i.Link / 火线 Cinch / RCA PS/2 键盘鼠标<span class="hl">接口</span> VGA显示器视频<span class="hl">接口</span> DVI数字视频<span class="hl">接口</span> RJ45 (LAN /ISDN) 网线<span class="hl">接口</span> RJ11 (Modem / 电话) S-Video (Hosiden)...</p></div>
+<p class="s">
+<span class="l">小熊在线 - www.beareyes.com.cn/2/lib... - 2005-11-30</span>
+ - <a href='search?q=related:http%3A%2F%2Fwww.beareyes.com.cn%2F2%2Flib%2F200512%2F02%2F20051202023_2.htm&start=0&ue=utf8&keyfrom=web.relatedpage&lq=%E6%8E%A5%E5%8F%A3' class="bluelinktext">类似网页</a> - <a id="snapshotLink2" href="cache?docid=0ED3C20E61D25E75&dc=00000075&eterms=FqzQIugzS0Q%3D&q=%E6%8E%A5%E5%8F%A3&url=http%3A%2F%2Fwww.beareyes.com.cn%2F2%2Flib%2F200512%2F02%2F20051202023_2.htm" target="_blank" onclick="javascript:closePoptip('snapshotLink1')">快照</a>
+ - <span id="preview2" class="preview" pos="2" encodedQuery='%E6%8E%A5%E5%8F%A3' encodedEncryptedTerms='FqzQIugzS0Q%3D' docId='0ED3C20E61D25E75' sliceId='00000075' isAttack='0'><a class="yl">预览</a></span>
+</p>
+  </li>
+                    <li>
+<h3>
+<a href="http://bbs.pcpop.com/061027/755274.html" id="hitURL3" onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', '3.1', 'OPEN_HIT', '', '', '&attack=0&template=default');"  target="_blank"  ><span id="title3">【激光打印机_<span class="hl">接口</span> 】激光打印机 论坛 - 泡泡产品论坛</span></a>
+</h3>
+<div id="summary3"><p>USB支持热插拔，即插即用的优点，所以USB<span class="hl">接口</span>已经成为MP3的最主要的<span class="hl">接口</span>方式。...并行<span class="hl">接口</span>： 并行<span class="hl">接口</span>又简称为“并口”，是一种增强了的双向并行传输<span class="hl">接口</span>。优点是不需在PC中用其它的卡，无限制连接数目（只要你有足够的端口），...</p></div>
+<p class="s">
+<span class="l">泡泡产品论坛 - bbs.pcpop.com/061027/755274.html - 2006-10-27</span>
+ - <a id="snapshotLink3" href="cache?docid=1531F2AF52F86E12&dc=00000012&eterms=FqzQIugzS0Q%3D&q=%E6%8E%A5%E5%8F%A3&url=http%3A%2F%2Fbbs.pcpop.com%2F061027%2F755274.html" target="_blank" onclick="javascript:closePoptip('snapshotLink1')">快照</a>
+ - <span id="preview3" class="preview" pos="3" encodedQuery='%E6%8E%A5%E5%8F%A3' encodedEncryptedTerms='FqzQIugzS0Q%3D' docId='1531F2AF52F86E12' sliceId='00000012' isAttack='0'><a class="yl">预览</a></span>
+</p>
+  </li>
+        <li>
+<h3>
+<a href="http://baike.baidu.com/view/159864.htm" id="hitURL4" onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', '4.1', 'OPEN_HIT', '', '', '&attack=0&template=default');"  target="_blank"  ><span id="title4"><span class="hl">接口</span> - 百度百科</span></a>
+</h3>
+<div id="summary4"><p>具体有与电视机相连的AV<span class="hl">接口</span>，与电脑主机相连的串口、USB<span class="hl">接口</span>、PCI<span class="hl">接口</span>、I-LINK(四针IEEE 1394<span class="hl">接口</span>)、连接声卡的MIDI<span class="hl">接口</span>、无线<span class="hl">接口</span>等等。...S/PDIF S/PDIF（Sony/Philips Digital Interface，索尼和飞利浦数字<span class="hl">接口</span>）是由SONY公...</p></div>
+<p class="s">
+<span class="l">百度百科 - baike.baidu.com/view/159864.htm</span>
+ - <a id="snapshotLink4" href="cache?docid=2E8CEB03F263DF39&dc=00000039&eterms=FqzQIugzS0Q%3D&q=%E6%8E%A5%E5%8F%A3&url=http%3A%2F%2Fbaike.baidu.com%2Fview%2F159864.htm" target="_blank" onclick="javascript:closePoptip('snapshotLink1')">快照</a>
+ - <span id="preview4" class="preview" pos="4" encodedQuery='%E6%8E%A5%E5%8F%A3' encodedEncryptedTerms='FqzQIugzS0Q%3D' docId='2E8CEB03F263DF39' sliceId='00000039' isAttack='0'><a class="yl">预览</a></span>
+</p>
+  </li>
+                    <li>
+<h3>
+<a href="http://tech.sina.com.cn/n/2005-01-25/1659514512.shtml" id="hitURL5" onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', '5.1', 'OPEN_HIT', '', '', '&attack=0&template=default');"  target="_blank"  ><span id="title5">笔记本关键字：<span class="hl">接口</span>类型_笔记本_科技时代_新浪网 - 新浪科技</span></a>
+</h3>
+<div id="summary5"><p>4处理器。不过随着DDR内存的流行，英特尔又开发了支持SDRAM及DDR内存...CPU插槽也改成了Socket 478，Socket 423<span class="hl">接口</span>也就销声匿迹了。...8个处理器。而且采用Slot 2<span class="hl">接口</span>的Pentium Ⅱ CPU都采用了当时最先进的0.25微米制造工艺。...</p></div>
+<p class="s">
+<span class="l">新浪科技 - tech.sina.com.cn/n/2005-01-25/165951... - 2005-01-25</span>
+ - <a id="snapshotLink5" href="cache?docid=864FDA1A230CBA13&dc=00000013&eterms=FqzQIugzS0Q%3D&q=%E6%8E%A5%E5%8F%A3&url=http%3A%2F%2Ftech.sina.com.cn%2Fn%2F2005-01-25%2F1659514512.shtml" target="_blank" onclick="javascript:closePoptip('snapshotLink1')">快照</a>
+ - <span id="preview5" class="preview" pos="5" encodedQuery='%E6%8E%A5%E5%8F%A3' encodedEncryptedTerms='FqzQIugzS0Q%3D' docId='864FDA1A230CBA13' sliceId='00000013' isAttack='0'><a class="yl">预览</a></span>
+</p>
+  </li>
+        <li>
+<h3>
+<a href="http://publish.it168.com/cWord/1521.shtml" id="hitURL6" onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', '6.1', 'OPEN_HIT', '', '', '&attack=0&template=default');"  target="_blank"  ><span id="title6"><span class="hl">接口</span>术语解释|电子辞典学习机名词解释|什么是<span class="hl">接口</span> - IT168</span></a>
+</h3>
+<div id="summary6"><p>当前位置:IT168术语详解首页 &gt; 电子... <span class="hl">接口 </span><span class="hl">接口 </span><span class="hl">接口</span>指电子辞典学习机与电脑的连接方式。<span class="hl">接口</span>技术是数码产品的最重要的指标之一，<span class="hl">接口</span>的速度和方便程度自然也会影响到电子辞典学习机的实用性和上传或下载电子书或是词典的速率。...</p></div>
+<p class="s">
+<span class="l">IT168 - publish.it168.com/cWord/1521.shtml</span>
+ - <a id="snapshotLink6" href="cache?docid=D3ACBBC65099289D&dc=0000001D&eterms=FqzQIugzS0Q%3D&q=%E6%8E%A5%E5%8F%A3&url=http%3A%2F%2Fpublish.it168.com%2FcWord%2F1521.shtml" target="_blank" onclick="javascript:closePoptip('snapshotLink1')">快照</a>
+ - <span id="preview6" class="preview" pos="6" encodedQuery='%E6%8E%A5%E5%8F%A3' encodedEncryptedTerms='FqzQIugzS0Q%3D' docId='D3ACBBC65099289D' sliceId='0000001D' isAttack='0'><a class="yl">预览</a></span>
+</p>
+  </li>
+        <li>
+<h3>
+<a href="http://product.pconline.com.cn/so/s25562/" id="hitURL7" onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', '7.1', 'OPEN_HIT', '', '', '&attack=0&template=default');"  target="_blank"  ><span id="title7">1×VGA<span class="hl">接口</span>_显卡_|&gt;&lt;|太平洋产品报价 - PCONLINE报价</span></a>
+</h3>
+<div id="summary7"><p>1×VGA<span class="hl">接口</span> 复制本页链接地址 各地报价： 全国 广州 北京 上海 深圳 广西 重庆 山东 江苏 香港 辽宁 福建 成都 西安 江西 湖南 武汉 内蒙古 黑龙江 浙江 河北 河南 最热门 最新 最便宜 最贵 推荐度高 1/430 下一页 显示： 列表 图片 文字 ...</p></div>
+<p class="s">
+<span class="l">PCONLINE报价 - product.pconline.com.cn/so/s25562/</span>
+ - <a id="snapshotLink7" href="cache?docid=9B8E0BEB58014467&dc=00000067&eterms=FqzQIugzS0Q%3D&q=%E6%8E%A5%E5%8F%A3&url=http%3A%2F%2Fproduct.pconline.com.cn%2Fso%2Fs25562%2F" target="_blank" onclick="javascript:closePoptip('snapshotLink1')">快照</a>
+ - <span id="preview7" class="preview" pos="7" encodedQuery='%E6%8E%A5%E5%8F%A3' encodedEncryptedTerms='FqzQIugzS0Q%3D' docId='9B8E0BEB58014467' sliceId='00000067' isAttack='0'><a class="yl">预览</a></span>
+</p>
+  </li>
+        <li>
+<h3>
+<a href="http://mobile.139shop.com/mobile/dictionary/79.htm" id="hitURL8" onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', '8.1', 'OPEN_HIT', '', '', '&attack=0&template=default');"  target="_blank"  ><span id="title8">数据线<span class="hl">接口</span>_手机字典_手机大全 - 北斗手机网</span></a>
+</h3>
+<div id="summary8"><p>高性价比手机 市场价:299元 特 价:99元 数据线<span class="hl">接口</span> 数据线<span class="hl">接口</span> 其他手机参数解释 手机制式分类 手机功能分类 手机外观分类 特色功能手机 电视购物手机</p></div>
+<p class="s">
+<span class="l">北斗手机网 - mobile.139shop.com/mobile/dictionary/79.htm</span>
+ - <a id="snapshotLink8" href="cache?docid=3784BB31AD3F5537&dc=00000037&eterms=FqzQIugzS0Q%3D&q=%E6%8E%A5%E5%8F%A3&url=http%3A%2F%2Fmobile.139shop.com%2Fmobile%2Fdictionary%2F79.htm" target="_blank" onclick="javascript:closePoptip('snapshotLink1')">快照</a>
+ - <span id="preview8" class="preview" pos="8" encodedQuery='%E6%8E%A5%E5%8F%A3' encodedEncryptedTerms='FqzQIugzS0Q%3D' docId='3784BB31AD3F5537' sliceId='00000037' isAttack='0'><a class="yl">预览</a></span>
+</p>
+  </li>
+                    <li>
+<h3>
+<a href="http://news.163.com/10/0408/15/63OPG88M000146BD.html" id="hitURL9" onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', '9.1', 'OPEN_HIT', '', 'lib=rtu', '&attack=0&template=default');"  target="_blank"  ><span id="title9"><span class="hl">接口</span>门频发 希捷睿翼移动硬盘步后尘_网易新闻中心</span></a>
+</h3>
+<div id="summary9"><p>继前不久西部数据新款3.5英寸My Book Essential移动硬盘出现USB<span class="hl">接口</span>与产品外壳出现偏差，导致“<span class="hl">接口</span>门”后，近日笔者收到消费者爆料：希捷睿翼2.5英寸移动硬盘也存在...他们也或多或少遇到过此种情况，由于USB<span class="hl">接口</span>焊接不牢固，...</p></div>
+<p class="s">
+<span class="l">网易新闻 - news.163.com/10/0408/15/63OPG88M... - 23小时前</span>
+ - <a id="snapshotLink9" href="cache?docid=9FA8EBA94A150119&dc=00000019&eterms=FqzQIugzS0Q%3D&q=%E6%8E%A5%E5%8F%A3&url=http%3A%2F%2Fnews.163.com%2F10%2F0408%2F15%2F63OPG88M000146BD.html" target="_blank" onclick="javascript:closePoptip('snapshotLink1')">快照</a>
+ - <span id="preview9" class="preview" pos="9" encodedQuery='%E6%8E%A5%E5%8F%A3' encodedEncryptedTerms='FqzQIugzS0Q%3D' docId='9FA8EBA94A150119' sliceId='00000019' isAttack='0'><a class="yl">预览</a></span>
+</p>
+  </li>
+                    <li>
+<h3>
+<a href="http://power.zol.com.cn/173/1730097.html" id="hitURL10" onclick="javascript:ct(this, '%E6%8E%A5%E5%8F%A3', '10.1', 'OPEN_HIT', '', 'lib=rtu', '&attack=0&template=default');"  target="_blank"  ><span id="title10"><span class="hl">接口</span>丰富静音好 金河田S500电源268元 - 机箱</span></a>
+</h3>
+<div id="summary10"><p>金河田 劲霸ATX-S500电源 <span class="hl">接口</span>线材 产品具备20+4PIN主供电<span class="hl">接口</span>，以及方6+2PIN的PCI-E显卡<span class="hl">接口</span>，可以满足主流游戏平台的扩展要求。另外，电源的SATA<span class="hl">接口</span>为分离式设计，玩家使用更为方便。 编辑点评： 金河田这款电源可以说中规...</p></div>
+<p class="s">
+<span class="l">机箱 - power.zol.com.cn/173/1730097.html - 6小时前</span>
+ - <a id="snapshotLink10" href="cache?docid=B851EDC8DFAB1C9E&dc=0000001E&eterms=FqzQIugzS0Q%3D&q=%E6%8E%A5%E5%8F%A3&url=http%3A%2F%2Fpower.zol.com.cn%2F173%2F1730097.html" target="_blank" onclick="javascript:closePoptip('snapshotLink1')">快照</a>
+ - <span id="preview10" class="preview" pos="10" encodedQuery='%E6%8E%A5%E5%8F%A3' encodedEncryptedTerms='FqzQIugzS0Q%3D' docId='B851EDC8DFAB1C9E' sliceId='0000001E' isAttack='0'><a class="yl">预览</a></span>
+</p>
+  </li>
+ </ul>
+ <div id="pagination">
+<span class="current-page">1</span>
+<a href='search?q=%E6%8E%A5%E5%8F%A3&start=10&ue=utf8&keyfrom=web.page2&lq=%E6%8E%A5%E5%8F%A3&timesort=0'>2</a>
+<a href='search?q=%E6%8E%A5%E5%8F%A3&start=20&ue=utf8&keyfrom=web.page3&lq=%E6%8E%A5%E5%8F%A3&timesort=0'>3</a>
+<a href='search?q=%E6%8E%A5%E5%8F%A3&start=30&ue=utf8&keyfrom=web.page4&lq=%E6%8E%A5%E5%8F%A3&timesort=0'>4</a>
+<a href='search?q=%E6%8E%A5%E5%8F%A3&start=40&ue=utf8&keyfrom=web.page5&lq=%E6%8E%A5%E5%8F%A3&timesort=0'>5</a>
+<a href='search?q=%E6%8E%A5%E5%8F%A3&start=50&ue=utf8&keyfrom=web.page6&lq=%E6%8E%A5%E5%8F%A3&timesort=0'>6</a>
+<a href='search?q=%E6%8E%A5%E5%8F%A3&start=60&ue=utf8&keyfrom=web.page7&lq=%E6%8E%A5%E5%8F%A3&timesort=0'>7</a>
+<a href='search?q=%E6%8E%A5%E5%8F%A3&start=70&ue=utf8&keyfrom=web.page8&lq=%E6%8E%A5%E5%8F%A3&timesort=0'>8</a>
+<a href='search?q=%E6%8E%A5%E5%8F%A3&start=80&ue=utf8&keyfrom=web.page9&lq=%E6%8E%A5%E5%8F%A3&timesort=0'>9</a>
+<a href='search?q=%E6%8E%A5%E5%8F%A3&start=90&ue=utf8&keyfrom=web.page10&lq=%E6%8E%A5%E5%8F%A3&timesort=0'>10</a>
+<a class="next-page" href='search?q=%E6%8E%A5%E5%8F%A3&start=10&ue=utf8&keyfrom=web.nextPage&lq=%E6%8E%A5%E5%8F%A3&timesort=0'>下一页</a>
+</div>
+<div id="relatedKeys"><table>
+  <tbody><tr>
+      <th colspan="5">相关搜索：</th>
+    </tr>
+                <tr>
+                        <td><a href='search?q=%E6%8E%A5%E5%8F%A3%E7%BD%91&start=0&ue=utf8&keyfrom=web.related.rq&lq=%E6%8E%A5%E5%8F%A3&rqp=0'>接口网</a></td>
+                                  <td><a href='search?q=usb%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.related.rq&lq=%E6%8E%A5%E5%8F%A3&rqp=1'>usb接口</a></td>
+                                  <td><a href='search?q=hdmi%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.related.rq&lq=%E6%8E%A5%E5%8F%A3&rqp=2'>hdmi接口</a></td>
+                                  <td><a href='search?q=%E7%9F%AD%E4%BF%A1%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.related.rq&lq=%E6%8E%A5%E5%8F%A3&rqp=3'>短信接口</a></td>
+                                  <td><a href='search?q=ide%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.related.rq&lq=%E6%8E%A5%E5%8F%A3&rqp=4'>ide接口</a></td>
+        </tr>
+                    <tr>
+                        <td><a href='search?q=dvi%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.related.rq&lq=%E6%8E%A5%E5%8F%A3&rqp=5'>dvi接口</a></td>
+                                  <td><a href='search?q=rs485%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.related.rq&lq=%E6%8E%A5%E5%8F%A3&rqp=6'>rs485接口</a></td>
+                                  <td><a href='search?q=1394%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.related.rq&lq=%E6%8E%A5%E5%8F%A3&rqp=7'>1394接口</a></td>
+                                  <td><a href='search?q=vga%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.related.rq&lq=%E6%8E%A5%E5%8F%A3&rqp=8'>vga接口</a></td>
+                                  <td><a href='search?q=rs232%E6%8E%A5%E5%8F%A3&start=0&ue=utf8&keyfrom=web.related.rq&lq=%E6%8E%A5%E5%8F%A3&rqp=9'>rs232接口</a></td>
+        </tr>
+                </tbody></table></div>
+<form method="get" action="search" id="bs">
+  <div class="fc">
+    <div class="qc">
+      <input type="hidden" name="lq" value="接口" />
+      <input type="hidden" name="ue" value="utf8" />
+                                          <input type=hidden name="keyfrom" value="web.bottom" />
+      <input type=text class="q" name="q" value="接口" autocomplete="off" />
+    </div>
+    <input type="submit" title="搜索" class="qb" value="搜 索" name="btnSearchBottom" />
+    <input type="submit" title="在结果中搜索" class="rqb" value="在结果中搜索" name="btnSearchInResult" />
+  </div>
+  <div class="ao"><em><a href="http://feedback.youdao.com/quality_report.jsp?q=%E6%8E%A5%E5%8F%A3&prodtype=websearch&email=">搜索结果不理想？请帮助我们改进</a></em></div> 
+</form>
+</div></div>
+
+<div id="b">
+  <p><a href="/">有道首页</a> - <a href="/help/">帮助</a> - <a href="/about/">关于有道</a> - <a href="http://i.youdao.com">官方博客</a><span id="cr">&copy;2010 网易公司 <a href="/terms/index.html">服务条款</a> 京ICP证080268号</span></p>
+</div>
+</body>
+<div id="ym" class="pm">
+  <ul>
+    <li><a onclick='return seturl(this, "query", "blog", "web.top");' href="http://blog.youdao.com/">博客</a></li>
+    <li><a href="http://tie.youdao.com/">快贴</a></li>
+    <li><a onclick='return seturl(this, "query", "ditu", "web.top");' href="http://ditu.youdao.com/">地图</a></li>
+    <li><a href="http://fanyi.youdao.com/">翻译</a></li>
+    <li class="sl"></li>
+    <li><a href="http://reader.youdao.com">阅读</a></li>
+    <li><a href="http://m.youdao.com/help">手机</a></li>
+    <li><a href="http://shuqian.youdao.com">书签</a></li>
+    <li><a href="http://cidian.youdao.com/">桌面词典</a></li>
+    <li class="sl"></li>
+   <li><a href="http://www.youdao.com/about/productlist.html">全部产品</a></li>
+  </ul>
+</div>
+<div id="nm" class="pm">
+  <ul>
+    <li><a target="_blank" href="http://www.163.com/">首页</a></li>
+    <li><a target="_blank" href="http://news.163.com/">新闻</a></li>
+    <li><a target="_blank" href="http://email.163.com/">邮箱</a></li>
+    <li><a target="_blank" href="http://blog.163.com/">博客</a></li>
+    <li><a target="_blank" href="http://photo.163.com/">相册</a></li>
+    <li><a target="_blank" href="http://nie.163.com/">游戏</a></li>
+    <li class="sl"></li>
+    <li><a target="_blank" href="http://sitemap.163.com/">全部产品</a></li>
+  </ul>
+</div>
+<div id="historyConfirm" class="pm">
+  <p>您确认要清除搜索历史么？</p>
+  <p class="buttons">
+    <input class="yes" onClick="deleteHistory();" type="button" value="确定" />
+    <input class="no" type="button" value="取消" />
+  </p>
+</div>
+<style></style>
+<script src="http://shared.ydstatic.com/js/suggest/autocomplete.r171052.js"></script>
+<script src="http://shared.ydstatic.com/js/jquery/1.3.2.js"></script>
+<script>
+var filterParams = "";
+var staticVersion = "1.0";
+var staticTimestamp= "201003301";
+function lazyLoadSkin(){document.styleSheets[document.styleSheets.length-1].cssText+="#f{background-image:url(http://shared.ydstatic.com/images/skins/default/skin-x.jpg)}" + "#fbl{background:url(http://shared.ydstatic.com/images/skins/default/skin_.jpg) left top}" + "#fbr{background:url(http://shared.ydstatic.com/images/skins/default/skin_.jpg) right -200px}" + " ";}
+document.write('<div style="position:absolute;z-index:9999;top:27px;right:0;width:45px;height:48px"><embed src="http://shared.ydstatic.com/r/1.0/p/dog-ear.swf" quality="high" width="45" height="48" wmode="transparent" type="application/x-shockwave-flash" allowScriptAccess="always" flashvars="backURL=http%3A%2F%2Fwww.youdao.com%2Fsearch%3Fq%3D%25E6%258E%25A5%25E5%258F%25A3%26ue%3Dutf8%26keyfrom%3Dweb.index" title="立即体验有道换肤！"></embed></div>');
+</script>
+<div id= "prv-window" class="prv-w" style="display:none;left:700px;top:300px;width:400px">
+  <div class="prv-t"><div class="prv-tl"><em></em></div><div class="prv-tr"><em></em></div><div class="prv-tc"><em></em></div></div>
+  <div class="prv-m">
+    <div class="prv-ml" style="top:60px"><div class="prv-mlt"><em></em></div><div class="prv-arr"><em></em></div><div class="prv-mlb"><em></em></div></div>
+    <div class="prv-mr"><em></em></div>
+    <div id="innerBox" class="prv-mc">
+      <div class="prv-bar">
+
+        <div class="prv-dog"><span class="sp dog-sigh">！</span> 访问该网站可能会损害您的计算机！</div>
+        <div id="title_text" class="prv-ti"></div>
+        <div id="find_next" class="prv-act gray">查找：
+                                        <a class="hl1" href="javascript:gotoNextKey(1)" title="寻找下一个“接口”">接口</a>
+                                                </div>
+        <a id="close_prv" class="prv-close" title="关闭"><em></em></a>
+      </div>
+      <div id="prv-contentid" class="prv-content" style="height:300px">
+        <div id="view_content" class="prv-wrapper"></div>
+      </div>
+    </div>
+  </div>
+  <div class="prv-b"><div class="prv-bl"><em></em></div><div class="prv-br"><em></em></div><div class="prv-bc"><em></em></div></div>
+</div>
+<div id="prv_pseudo" style="z-index:9998;"></div><script src="http://shared.ydstatic.com/r/1.0/j/nweb.js?201003301"></script>

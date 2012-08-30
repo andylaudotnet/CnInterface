@@ -1,0 +1,2522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> <meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<title>狗狗搜索-接口</title> 
+<link href="http://www.gougou.com/css/gougou44.css" rel="stylesheet" type="text/css" /> 
+<link rel="Shortcut Icon" href="http://img.gougou.com/image/so/gougou.ico"> 
+<link rel="search" type="application/opensearchdescription+xml" title="狗狗搜索" href="http://www.gougou.com/opensearch/gg.xml">
+<script>document.domain="gougou.com"</script>
+<script language="JavaScript" type="text/javascript" charset="gb2312">
+function $E(id){ return document.getElementById(id);};
+isUndef  = function(a){ return typeof a == "undefined";};
+isNull 	 = function(a){ return typeof a == "object" && !a; };
+var MAX=10000000;
+var g_lastwarn="";
+var g_lastzip="";
+var tmpthisid="";
+var tmpspacialbt="";
+var tmpbtid;
+var g_came;
+var g_type=-1;
+String.prototype.trim = function()
+{
+	return this.replace(new RegExp("(^[\\s]*)|([\\s]*$)", "g"), "");	
+};
+
+$P = function(parameter, url)
+{
+	url = isUndef(url) ? location.href : url;
+	var result = url.match(new RegExp("[\#|\?]([^#]*)[\#|\?]?"));
+	url = "&" + (isNull(result) ? "" : result[1]);	
+	result = url.match(new RegExp("&"+parameter+"=", "i"));
+	return isNull(result) ? undefined : url.substr(result.index+1).split("&")[0].split("=")[1];
+};
+
+var surl="http://www.gougou.com";
+
+function getOs()
+{ 
+    var OsObject = ""; 
+    if(navigator.userAgent.toLowerCase().indexOf("msie")>0) { 
+         return "0"; 
+    } 
+    if(window.navigator.appName == "Netscape"){ 
+         return "-1"; 
+    } 
+    if(navigator.userAgent.toLowerCase().indexOf("firefox")>0){ 
+         return "-1"; 
+    } 
+    if(navigator.userAgent.toLowerCase().indexOf("safari")>0) { 
+         return "1"; 
+    }  
+    if(navigator.userAgent.toLowerCase().indexOf("camino")>0){ 
+         return "2"; 
+    } 
+    if(navigator.userAgent.toLowerCase().indexOf("gecko/")>0){ 
+         return "3"; 
+    }
+} 
+
+
+function JSONscriptRequest(fullUrl) 
+{
+	if(fullUrl.indexOf("?")!=-1)
+		fullUrl=fullUrl+"&";
+	else
+		fullUrl=fullUrl+"?";
+    this.fullUrl = fullUrl; 
+    this.noCacheIE = '&noCacheIE=' + (new Date()).getTime();
+    this.headLoc = document.getElementsByTagName("head").item(0);
+    this.scriptId = 'JscriptId' + JSONscriptRequest.scriptCounter++;
+}
+
+JSONscriptRequest.scriptCounter = 1;
+
+JSONscriptRequest.prototype.buildScriptTag = function () 
+{
+	this.scriptObj = document.createElement("script");  
+	this.scriptObj.setAttribute("type","text/javascript");
+	var tmpurl=this.fullUrl+this.noCacheIE;
+	this.scriptObj.setAttribute("src",tmpurl);
+}
+
+JSONscriptRequest.prototype.removeScriptTag = function () 
+{
+	this.headLoc.removeChild(this.scriptObj);  
+}
+
+JSONscriptRequest.prototype.addScriptTag = function () 
+{
+    this.headLoc.appendChild(this.scriptObj);
+}
+
+function jump114()
+{
+	$E("aliquery").value=$E("dx114").value;
+	$E("alisumbit").submit();
+}
+
+function show_newfmt(kongjian)
+{
+	if(!isNull($E("format_menu")))
+	{if($E("format_menu").style.visibility == "visible")$E("format_menu").style.visibility ="hidden";}
+	
+	var lft = kongjian.offsetLeft-100;
+	$E("newfmt").style.left=lft + "px";
+	$E("newfmt").style.display="";
+}
+
+function close_newfmt()
+{
+	$E("newfmt").style.display="none";
+}
+
+function myescape(_key)
+{
+	try
+	{
+   		_key =decodeURIComponent(g_key);
+   		_key = encodeURIComponent(g_key);
+	}
+	catch(e)
+	{
+	     _key = encodeURIComponent(g_key);
+	}
+	return _key;
+}
+
+function setflcookie()
+{
+	if( $E("fenlei_num") )
+	{
+		var FlNum = $E("fenlei_num").value;
+		if(FlNum!="")
+			SetCookie("flnum",FlNum);
+	}
+	if( $E("last_fl") )
+	{
+		//alert('上一次:'+document.cookie);
+		var last_fl = $E("last_fl").value;SetCookie("last_fl",last_fl);
+		//alert('这一次:'+document.cookie);
+	}
+}
+
+function setmaincookie()
+{
+	if ( isUndef(g_suffix) || g_suffix == '-1' ) 
+		{
+			if( $E("format_str") )
+			{
+				var FmtStr = $E("format_str").value;SetCookie("format",FmtStr);
+			}
+			if( $E("format_num") )
+			{
+				var FmtNum = $E("format_num").value;
+				if(FmtNum!="")
+					SetCookie("fmtnum",FmtNum);
+			}
+		}
+}
+
+function loads()
+{
+	var temp_key;
+	try{ temp_key = decodeURIComponent(g_key).trim();}
+	catch(e){temp_key = g_key};
+	if((temp_key == "") || isUndef(temp_key))
+		window.location.href = "http://www.gougou.com";
+	else
+	{
+		if ( isUndef(g_page)) g_page=1;
+		if(isUndef(g_restype)) g_restype = -1;
+		if( isUndef(g_ty) ) g_ty = 0;
+		//if( $E("format_str") ){
+		
+		
+		if(isUndef(g_entryid))  g_entryid=-1;
+	 }
+}
+
+function SetCookie(name,value)
+{
+   var argv = SetCookie.arguments;
+   var argc = SetCookie.arguments.length;
+   var now=new Date(); 
+   var expireTime= new Date(now.valueOf()+ 24*60000*60); 
+   var expires = "24";
+   var path = (3 < argc) ? argv[3] : null;
+
+   var domain = (4 < argc) ? argv[4] : null;
+   var secure = (5 < argc) ? argv[5] : false;
+   document.cookie = name + "=" + value +
+     ((expires == null) ? "" : ("; expires=" + expireTime.toGMTString())) +
+     ((path == null) ? "" : ("; path=" + path)) +
+     ((domain == null) ? "" : ("; domain=" + domain)) +
+    ((secure == true) ? "; secure" : "");
+}
+
+function SetCookie_g(name,value)
+{
+   var argv = SetCookie_g.arguments;
+   var argc = SetCookie_g.arguments.length;
+   var now=new Date(); 
+   var expireTime= new Date(value); 
+   var expires = "24";
+   var path = (3 < argc) ? argv[3] : null;
+
+   //var domain = (4 < argc) ? argv[4] : null;
+   var domain = "gougou.com";
+   var secure = (5 < argc) ? argv[5] : false;
+   document.cookie = name + "=" + value +
+     ((expires == null) ? "" : ("; expires=" + expireTime.toGMTString())) +
+     ((path == null) ? "" : ("; path=" + path)) +
+     ((domain == null) ? "" : ("; domain=" + domain)) +
+    ((secure == true) ? "; secure" : "");
+}
+
+function getCookie (label)
+{
+	return isNull(document.cookie.match(new RegExp("(^"+label+"| "+label+")=([^;]*)"))) ? "" : decodeURIComponent(RegExp.$2);
+}
+
+function check(input)
+{
+	if(isUndef(g_restype))
+		g_restype=-1;
+	switch(g_restype)
+	{
+		case "-1":
+		{
+			surl = "http://www.gougou.com";
+			break;
+		}
+		case "1":
+		{
+			surl = "http://game.gougou.com";
+			break;
+		}
+		case "2":
+		{
+			surl = "http://soft.gougou.com";
+			break;
+		}
+		case "3":
+		{
+			surl = "http://book.gougou.com";
+			break;
+		}
+		case "6":
+		{
+			surl = "http://shouji.gougou.com";
+			break;
+		}
+		default:
+		{
+			break;	
+		}											
+	}	
+	var query;
+	if(isUndef(input))  
+		input=1;
+   	if (input != null && input == 2)
+		query = $E('s2').value;
+	else
+	{
+		query = $E('s1').value;
+	}
+	if( query != g_key)
+	{
+		g_key = query;
+		g_suffix = "";
+	}
+	$E('s2').value = $E('s1').value = query;
+	if(($E("s2").value.trim() == "") || ($E("s1").value.trim() == ""))
+		window.location.href = surl; 
+	else
+	{
+		g_key = g_key.trim();
+		if( g_key.indexOf("") != -1)
+		var encode_key = encodeURIComponent(g_key);
+		if(isUndef(g_restype))  
+			g_restype=-1;
+		if(isUndef(g_entryid))  
+			g_entryid=-1;
+		if(isUndef(g_pattern)) 
+			g_pattern = 0;
+		if( g_restype == -1 || g_restype == 1 || g_restype == 2)
+			judgetype();
+		if( g_ty == 4 && g_restype == -1 )
+			window.location.href = "http://movie.gougou.com/Sections/movies?search="+ encode_key+"&page=1&searchby=2&xmp="+g_xmp;
+		else if( g_ty == 3 && g_restype == -1 )
+		{
+			window.location.href = "http://shouji.gougou.com/search?search="+ encode_key + "&id=" + g_entryid + "&restype=6";
+		}
+		else
+		{
+			window.location.href = surl + "/search?search=" + encode_key + "&restype="+g_restype+"&id=" + g_entryid + "&ty=" + g_ty+ "&pattern=" + g_pattern+"&xmp="+g_xmp;
+		}
+	}
+}
+
+function judgetype()
+{
+	 g_ty = 0;
+   	if($E("ra_0").checked == true)
+       {g_suffix="";}
+	 else if($E("ra_1").checked == true)
+	 {g_ty = 1;}
+	 else if($E("ra_2").checked == true)
+	 {g_ty = 2;}
+	 /*else if($E("ra_3").checked == true)
+	   g_ty = 3;		  	      */
+	 else if($E("ra_4").checked == true)
+	 {g_ty = 4;}
+
+}
+
+function tongji(b,u,s) 
+{ 
+    var content = b;
+	var tit = u;
+	var  po = s;
+    window.setTimeout(function() { t(content,tit,po); }, 1); 
+} 
+
+
+function t(b,u,s)
+{
+	if(document.images)
+	{
+		var url = window.document.location.href;
+		var stime =new Date().getTime();
+		if(isUndef(b))
+			b="格式";
+		b=b.replace(/<[^<>]+>/g, "");
+		var img = new Image();
+		img.src="http://s.gougou.com/databack.gif?query=" + g_key +"&title=" + encodeURIComponent(b) + "&url=" + escape(u) + "&spos="+s+"&path="+ escape(url) +"&t="+ stime +"&pattern=0"+"&pid="+100;
+	}
+	return true;
+}
+
+function tongji_wlj(turl) 
+{
+    window.setTimeout(function() { t_wlj(turl); }, 1); 
+} 
+
+
+function t_wlj(turl)
+{
+	if(document.images)
+	{
+		var img = new Image();
+		img.src="http://mediapv.xunlei.com/fcg-bin/statextend?id=2034&url=" + turl;
+	}
+	return true;
+}
+
+function key_event(obj,t)
+{
+	var key;
+	if(document.all){
+		key=window.event.keyCode;
+	}else{
+		key=obj.which;
+	}
+	if ( key==13 && t==1 )
+	{
+		check(1); return false;
+	}
+	if ( key==13 && t==2 )
+	{
+		check(2); return false; 
+	}
+}
+
+function SortBy(type)
+{
+	switch(g_restype)
+	{
+		case "-1":
+		{
+			surl = "http://www.gougou.com";
+			break;
+		}
+		case "1":
+		{
+			surl = "http://game.gougou.com";
+			break;
+		}
+		case "2":
+		{
+			surl = "http://soft.gougou.com";
+			break;
+		}
+		case "3":
+		{
+			surl = "http://book.gougou.com";
+			break;
+		}
+		case "6":
+		{
+			surl = "http://shouji.gougou.com";
+			break;
+		}
+		default:
+		{
+			break;	
+		}											
+	}
+	if( isUndef(g_suffix) )		g_suffix = -1;
+	if( isUndef(g_r)) g_r = 0;
+	if( isUndef(g_ty)) g_ty = 0;
+	if( isUndef(g_pattern) ) g_pattern = 0;
+	if( isUndef(g_mask) ) g_mask = 0;
+	if( isUndef(g_st) ) g_st = -1;
+	var channel = $P("f");
+	if( isUndef(channel)) channel = 0;
+	if( isUndef(g_f) ) g_f = "";
+	var url;
+	if( type != g_sortby)
+	     url = surl + "/search?search=" + g_key +"&restype=" +g_restype  + "&sortby=" + type  +"&suffix=" + g_suffix + "&id=" + g_entryid + "&f=" + channel + "&ty=" + g_ty + "&pattern=" + g_pattern + "&al="+g_f + "&m=" +g_mask + "&st=" + g_st+"&imask=1&xmp="+g_xmp+"&fl="+g_fl+"&w="+g_w+"&z="+g_z;
+	else
+	{
+		if( g_r == 0 )
+			url = surl + "/search?search=" + g_key +"&restype=" +g_restype  + "&sortby=" + type  +"&suffix=" + g_suffix + "&id=" + g_entryid + "&r=1&f=" + channel + "&ty=" + g_ty + "&pattern=" + g_pattern+ "&al="+g_f+ "&m=" +g_mask+ "&st=" + g_st+"&imask=1&xmp="+g_xmp+"&fl="+g_fl+"&w="+g_w+"&z="+g_z;
+		else{
+			url = surl + "/search?search=" + g_key +"&restype=" +g_restype  + "&sortby=" + type  +"&suffix=" + g_suffix + "&id=" + g_entryid + "&r=0&f=" + channel + "&ty=" + g_ty + "&pattern=" + g_pattern+ "&al="+g_f+ "&m=" +g_mask+ "&st=" + g_st+"&imask=1&xmp="+g_xmp+"&fl="+g_fl+"&w="+g_w+"&z="+g_z;}
+	}
+	window.location.href = url;
+}
+
+function NewSortBy(type)
+{
+	if( isUndef(g_suffix) )		
+		g_suffix = -1;
+	if( isUndef(g_r)) g_r = 0;
+	if( isUndef(g_ty)) g_ty = 0;
+	var url;
+	url = surl + "/search?search=" + g_key +"&restype=" +g_restype  + "&sortby=" + type  +"&suffix=" + g_suffix + "&id=" + g_entryid + "&f=" + g_ty+"&fl="+g_fl+"&w="+g_w+"&z="+g_z;
+	window.location.href = url;
+}
+
+function newsuffix(isuffix)
+{
+	if( isUndef(g_r)) g_r = 0;
+	if( isUndef(g_ty)) g_ty = 0;
+	var url;
+	url = surl + "/search?search=" + g_key +"&restype=" +g_restype  + "&sortby=" + g_sortby  +"&suffix=" + isuffix + "&id=" + g_entryid + "&f=" + g_ty+"&fl="+g_fl+"&w="+g_w+"&z="+g_z;
+	window.location.href = url;
+}
+
+
+function showdesc(_items,_count,_cid,_vidtype,_restype,_cid2,spd)
+{   
+ 	var desc = "desc" + _items.toString();
+	var pic = "pic" + _items.toString();
+	var vid = "picview" + _items.toString();
+	if( _items < 0  )
+	 	desc = "ad_desc" + _items.toString();
+
+	if( $E(pic).innerHTML != "" ) 
+	{
+		$E(desc).style.display = "";
+		if( _items >  0 ){
+			var first = _cid.substr(0,2);
+			var last = _cid.substr(_cid.length-2,2);
+			var host =  _cid.substr(0,1).toLowerCase();	
+			var vidstr = "";	
+			for(var i= 1; i<=_count && i<4;i++)
+			{
+				var url = '<a onmousedown="return tongji(this.innerHTML,this.href,' + "'fr_rs_v_-1')" + '"'+" href=http://content.gougou.com/content?cid="+ _cid2 + "&search=" + g_key+ "&spd="+spd+" target=_blank >";
+				var img = "";
+				if( _vidtype == "vid" )
+					img = "<img src=http://vidview" +host+".xunlei.com/"+first+"/"+last+"/"+_cid+"/s0"+i.toString()+"_s.jpg />";
+				else{
+					img = "<img src=http://picview.xunlei.com/"+first+"/"+last+"/"+_cid+"/0"+i.toString()+"_s.jpg />";}
+				var _html = "<li>" + url + img + "<span></span></a></li>";
+				vidstr += _html;
+			}	
+			if( _count > 0 )
+				$E(vid).innerHTML = vidstr;	
+		}
+		
+		$E(pic).innerHTML = "<a class='close' id='pic"+_items+"' style='cursor:pointer' onclick=" + '"' + "javascript:closetab("+_items+","+_count+",'"+_cid+"','"+_vidtype+"',"+_restype+",'"+_cid2+"','"+spd+"')"+'" ></a>';
+	}
+}
+
+function closetab(tab,_count,_cid,_vid,_restype,_cid2,spd)
+{
+	var desc = "desc" + tab.toString();
+	if( tab < 0  )
+	 	desc = "ad_desc" + tab.toString();	
+	var pic = "pic" + tab.toString();
+	$E(desc).style.display="none";
+	$E(pic).innerHTML = "<a class='open' id='pic"+tab+"' style='cursor:pointer' onclick=" + '"' + "javascript:showdesc("+tab+","+_count+",'"+_cid+"','"+_vid+"',"+_restype+",'"+_cid2+"','"+spd+"')"+'" ></a>';
+}
+
+function add_favorite(t)
+{ 
+	if (document.all)  
+	{	if(t==1)
+			$E("homepage").setHomePage('http://www.gougou.com');
+		else
+		{
+			$E("homepage1").setHomePage('http://www.gougou.com');
+		}
+	}
+	else if (window.sidebar)  
+	window.sidebar.addPanel('狗狗资源搜索', 'http://www.gougou.com', "");
+	var ix = "ix_" + g_restype;
+	tongji("设狗狗资源搜索为首页 ","",ix);
+}
+
+function imgOnError(e)
+{
+	e.src="http://img.gougou.com/image/comm/no.gif";
+	e.onerror=null;
+	return true;
+}
+
+function addtolistandplay(movie)
+{
+	var dapctrl = new ActiveXObject("DapCtrl.DapCtrl");
+	dapctrl.Put("iPlayList", 0);
+	for(var j = 0; j < movie.smovies.length; j++)
+	{
+		var url = movie.smovies[j].vodurl + "&et=5&lt=30";
+		if (g_movielist[0].furl != "")
+		{
+			var st = "vod.txt";
+			dapctrl.Put("sCookieFileName", st);
+			dapctrl.Put("sCookie", g_movielist[0].furl);
+			url += "&su=" + st;
+		}					
+		dapctrl.Put("sPlayItem",url);
+	}
+	dapctrl.Put("iPlayList", 1);
+	dapctrl = null;
+}
+
+var mlist = new Array();
+
+var kd_url="";
+var object_id ="";
+var floatid = "";
+var suggestid="";
+
+function TrimSpace(str) 
+{ 
+    return str.replace(/\s/g,"");
+}
+
+function openxmp(mURL)
+{
+	try{
+		var myos=getOs();
+		if(myos!=0)
+		{
+			alert("只支持IE浏览器下直接播放!")
+			return;
+		}
+		else
+			$E("thisxmp").src=TrimSpace(mURL);
+	}
+	catch(e){}
+}
+
+function close_suggest(mURL)
+{
+	if(!isUndef(mURL))
+	{
+		if(mURL!='')
+			$E("thisxmp").src=mURL;
+	}
+	if(tmpthisid!="")
+		{$E(tmpthisid).style.display = "none";}
+}
+
+var d_button = "";
+
+
+function show_obj(objid)
+{
+	if(!isNull($E("newfmt")))
+		$E("newfmt").style.display="none";
+	var obj = $E(objid);
+	obj.style.visibility ="visible";
+}
+
+document.onclick = function ()
+{ 
+	if(!isNull($E("newfmt")))
+		$E("newfmt").style.display="none";
+	if(!isNull($E("format_menu")))
+		{if($E("format_menu").style.visibility == "visible")$E("format_menu").style.visibility ="hidden";}
+	hide_tuijian();
+};
+
+function winshow(cid,type,tit,singer)
+{
+	var url;
+	var tj;
+	var params;
+
+		if( tit!="" && singer!="")
+		{
+			url = "http://ting.blog.gougou.com/ting?cid=" + cid + "&ti=" + type + "&tit="+ encodeURIComponent(tit) + "&singer=" + encodeURIComponent(singer);
+			tj = "ar_rs_st_1_cr";
+		}
+		else
+		{
+			url = "http://ting.blog.gougou.com/ting?cid=" + cid + "&ti=" + type;
+			tj = "ar_rs_mv_1_cr";
+		}
+		params = "scrollbars=0,resizable=0,status=no,width=410, height=550";
+
+	var win = window.open(url,'ting',params);
+	win.focus();
+	tongji("","",tj);
+}
+
+var g_key = $P("search");
+var g_sortby = $P("sortby");
+if(isUndef(g_sortby)||g_sortby=='')
+	g_sortby='-1';
+
+var g_suffix = $P("suffix"); 
+if(isUndef(g_suffix)||g_suffix=='')
+	g_suffix='-1';
+var g_page = $P("page") ; 
+var g_restype = $P("restype");
+var g_entryid = $P("id");
+var g_r = $P("r");
+var g_ty = $P("ty");
+var g_pattern = $P("pattern");
+var g_f = $P("al");
+var g_mask = $P("m");
+var g_st = $P("st");
+var g_xmp = "0";
+if(isUndef(g_xmp)||g_xmp=='')
+	g_xmp=$P("xmp");
+if(isUndef(g_xmp)||g_xmp=='')
+	g_xmp='0';
+var g_fl =  $P("fl");
+var g_w = $P("w");
+var g_z = $P("z");
+if( isUndef(g_w) )		
+	g_w = -1;
+if( isUndef(g_z) )		
+	g_z = -1;
+if(isUndef(g_fl)||g_fl=='')
+	g_fl=-1;
+if(g_entryid < 9999999)
+{
+	g_entryid = parseInt(MAX) + parseInt(g_entryid);
+}
+
+var dis =1;
+var isFF=(navigator.userAgent.toLowerCase().indexOf("firefox")!=-1);
+function showMenu(i)
+{
+   if(i == 0)
+   {
+      if(isFF)
+	  {
+	      if(dis == 1)
+		  {
+		    dis =0;
+		  }
+		  else
+		  {
+		    $E("more_id").style.display = "none"; 
+		  }
+	  }
+	  else if(dis == 0)
+	  {
+	    $E("more_id").style.display = "none"; 
+	  }
+	  else
+	  {
+	     dis = 0;
+	  }
+       
+   }
+   else
+   {
+      dis = 1;
+      $E("more_id").style.display = "";  
+   }
+}
+
+function bofang(kongjian,tourl)
+{
+	//alert(kongjian);
+	
+	if(g_xmp==1)
+		openxmp(tourl);
+	else
+	{
+		kongjian.target="kankanWindow";
+		kongjian.href=tourl;
+	}
+	//alert(kongjian.innerHTML);
+}
+
+function show_vol2(kongjian,pos , purl,page ,event,kk)
+{
+	//alert('show_vol('+pos+','+purl+','+page+',event)');
+    var s_id = "";
+	s_id = "?";
+	
+	var total_page = 1;
+	var max_rec = 35;
+	var curr_page = page;
+	var vol_str = "";
+	var total = name_arr[pos].length > id_arr[pos].length ? id_arr[pos].length : name_arr[pos].length;
+	if(curr_page < 1 || isUndef(curr_page))
+		curr_page = 1;
+			
+	for(var i = (curr_page - 1)*max_rec ; i < curr_page*max_rec && i< total ; i++)
+		vol_str += "<li><a target='kankanWindow' href='" +purl+s_id +"subid=" + id_arr[pos][i] + "' onclick=\"return tongji(this.innerHTML,this.href,'kankan_vol_" +pos+ "')\" title='点击播放'>" +name_arr[pos][i]+ "</a></li>";
+	
+	var flipper = "";
+	if(0 == total % max_rec)
+		total_page = total / max_rec;
+	else
+		total_page = total / max_rec + 1;
+
+	total_page = parseInt(total_page);	
+	
+	if(1 == total_page)	
+	{
+		flipper = "<a class='pre'></a>";
+		flipper += "<span>" + name_arr[pos][0] + "-" + name_arr[pos][total-1] + "</span>";
+	}
+	else
+	{
+		var end = 0 ,end2 = 0;
+		
+		if(curr_page >1)
+			flipper = "<a style='cursor:pointer' class='pre' title='前一页' onclick=\"show_vol(this,"+pos+ ",'" +purl +"',"+ (curr_page-1)+")\"></a>";
+		else
+				flipper = "<a class='pre'></a>";
+	
+		if(curr_page >1 )
+		{
+		   if(curr_page == total_page && total_page >2)
+				flipper +="<a style='cursor:pointer' onclick=\"show_vol(this," +pos+ ",'" +purl +"',"+ (curr_page-2)+ ")\">" +name_arr[pos][(curr_page-3)*max_rec] +"-"+ name_arr[pos][(curr_page-2)*max_rec-1] + "</a>  ";	
+				
+			flipper +="<a style='cursor:pointer' onclick=\"show_vol(this," +pos+ ",'" +purl +"',"+ (curr_page-1)+ ")\">" +name_arr[pos][(curr_page-2)*max_rec] +"-"+ name_arr[pos][(curr_page-1)*max_rec-1] + "</a>  ";
+					
+		}
+			
+		var end = total > (curr_page * max_rec-1) ? (curr_page * max_rec -1): (total-1);
+		flipper += "<span>" + name_arr[pos][(curr_page-1)*max_rec] + "-" + name_arr[pos][end] + "</span>  ";
+		
+		if(curr_page < total_page)
+		{
+			end = (curr_page*max_rec) > total ? (total-1) : (curr_page*max_rec);
+			end2 = (curr_page+1)*max_rec > total ? (total-1) : (curr_page+1)*max_rec;
+
+			flipper +="<a style='cursor:pointer' onclick=\"show_vol(this," +pos+ ",'" +purl +"',"+ (curr_page+1)+ ")\">" +name_arr[pos][end] +"-"+ name_arr[pos][end2] + "</a>  ";
+			
+			if(1 == curr_page && total_page > 2)
+			{
+				end = (curr_page+1)*max_rec > total ? (total-1) : (curr_page+1)*max_rec;
+				end2 = (curr_page+2)*max_rec > total ? (total-1) : (curr_page+2)*max_rec;
+	
+				flipper +="<a style='cursor:pointer' onclick=\"show_vol(this," +pos+ ",'" +purl +"',"+ (curr_page+2)+ ")\">" +name_arr[pos][end] +"-"+ name_arr[pos][end2] + "</a>";			
+			}
+		}
+	}
+	if(curr_page < total_page)
+		flipper += "<a style='cursor:pointer' class='next' title='后一页' onclick=\"show_vol(this,"+pos+ ",'" +purl +"',"+ (curr_page+1)+")\"></a>";
+	else
+			flipper += "<a class='next'></a>";
+	
+	$E("vol").innerHTML = vol_str;
+	$E("vol_flip").innerHTML = flipper;
+
+	if(!isUndef(event))
+	{
+		var t=kongjian.offsetTop; var l=kongjian.offsetLeft;
+        while(kongjian=kongjian.offsetParent)
+        {
+			t+=kongjian.offsetTop;
+			l+=kongjian.offsetLeft;
+        }
+		//$E("vol_box").style.left = (event.clientX + document.body.scrollLeft -50) + "px";
+		if(kk==0)
+			$E("vol_box").style.left = "38%";
+		else
+			$E("vol_box").style.left = "1%";
+		var vtop =t+20;
+		$E("vol_box").style.top = vtop + "px";
+	}
+	$E("vol_box").style.display = "";
+	//alert($E("vol_box").innerHTML);
+	//var stat_pos = "kankan_mvol" + pos.toString();
+	//return tongji('更多&gt;&gt;' , '更多', stat_pos);
+}
+
+function show_vol(kongjian,pos , purl,page ,event,kk)
+{
+	//alert('show_vol('+pos+','+purl+','+page+',event)');
+    var s_id = "";
+	if(purl.indexOf("?")!=-1)
+	{
+	   s_id = "&";
+	}
+	else
+	{
+	   s_id = "?";
+	}
+	
+	var total_page = 1;
+	var max_rec = 35;
+	var curr_page = page;
+	var vol_str = "";
+	var total = name_arr[pos].length > id_arr[pos].length ? id_arr[pos].length : name_arr[pos].length;
+	if(curr_page < 1 || isUndef(curr_page))
+		curr_page = 1;
+			
+	if(g_xmp=='1')
+	{
+		for(var i = (curr_page - 1)*max_rec ; i < curr_page*max_rec && i< total ; i++)
+		{
+			vol_str += "<li><a style='cursor:pointer;' onclick=\"openxmp('" +purl+s_id +"subid=" + id_arr[pos][i] + "&idx="+ idx_arr[pos][i] + "')\" onmousedown=\"return tongji(this.innerHTML,this.href,'kankan_vol_" +pos+ "')\" title='点击播放'>" +name_arr[pos][i]+ "</a></li>";
+		}
+	}
+	else
+	{
+		for(var i = (curr_page - 1)*max_rec ; i < curr_page*max_rec && i< total ; i++)
+		{
+			vol_str += "<li><a target='kankanWindow' href='" +purl+s_id +"subid=" + id_arr[pos][i] + "' onclick=\"return tongji(this.innerHTML,this.href,'kankan_vol_" +pos+ "')\" title='点击播放'>" +name_arr[pos][i]+ "</a></li>";
+		}
+	}
+	
+	var flipper = "";
+	if(0 == total % max_rec)
+		total_page = total / max_rec;
+	else
+		total_page = total / max_rec + 1;
+
+	total_page = parseInt(total_page);	
+	
+	if(1 == total_page)	
+	{
+		flipper = "<a class='pre'></a>";
+		flipper += "<span>" + name_arr[pos][0] + "-" + name_arr[pos][total-1] + "</span>";
+	}
+	else
+	{
+		var end = 0 ,end2 = 0;
+		
+		if(curr_page >1)
+			flipper = "<a style='cursor:pointer' class='pre' title='前一页' onclick=\"show_vol(this,"+pos+ ",'" +purl +"',"+ (curr_page-1)+")\"></a>";
+		else
+				flipper = "<a class='pre'></a>";
+	
+		if(curr_page >1 )
+		{
+		   if(curr_page == total_page && total_page >2)
+				flipper +="<a style='cursor:pointer' onclick=\"show_vol(this," +pos+ ",'" +purl +"',"+ (curr_page-2)+ ")\">" +name_arr[pos][(curr_page-3)*max_rec] +"-"+ name_arr[pos][(curr_page-2)*max_rec-1] + "</a>  ";	
+				
+			flipper +="<a style='cursor:pointer' onclick=\"show_vol(this," +pos+ ",'" +purl +"',"+ (curr_page-1)+ ")\">" +name_arr[pos][(curr_page-2)*max_rec] +"-"+ name_arr[pos][(curr_page-1)*max_rec-1] + "</a>  ";
+					
+		}
+			
+		var end = total > (curr_page * max_rec-1) ? (curr_page * max_rec -1): (total-1);
+		flipper += "<span>" + name_arr[pos][(curr_page-1)*max_rec] + "-" + name_arr[pos][end] + "</span>  ";
+		
+		if(curr_page < total_page)
+		{
+			end = (curr_page*max_rec) > total ? (total-1) : (curr_page*max_rec);
+			end2 = (curr_page+1)*max_rec > total ? (total-1) : (curr_page+1)*max_rec;
+
+			flipper +="<a style='cursor:pointer' onclick=\"show_vol(this," +pos+ ",'" +purl +"',"+ (curr_page+1)+ ")\">" +name_arr[pos][end] +"-"+ name_arr[pos][end2] + "</a>  ";
+			
+			if(1 == curr_page && total_page > 2)
+			{
+				end = (curr_page+1)*max_rec > total ? (total-1) : (curr_page+1)*max_rec;
+				end2 = (curr_page+2)*max_rec > total ? (total-1) : (curr_page+2)*max_rec;
+	
+				flipper +="<a style='cursor:pointer' onclick=\"show_vol(this," +pos+ ",'" +purl +"',"+ (curr_page+2)+ ")\">" +name_arr[pos][end] +"-"+ name_arr[pos][end2] + "</a>";			
+			}
+		}
+	}
+	if(curr_page < total_page)
+		flipper += "<a style='cursor:pointer' class='next' title='后一页' onclick=\"show_vol(this,"+pos+ ",'" +purl +"',"+ (curr_page+1)+")\"></a>";
+	else
+			flipper += "<a class='next'></a>";
+	
+	$E("vol").innerHTML = vol_str;
+	$E("vol_flip").innerHTML = flipper;
+
+	if(!isUndef(event))
+	{
+		var t=kongjian.offsetTop; var l=kongjian.offsetLeft;
+        while(kongjian=kongjian.offsetParent)
+        {
+			t+=kongjian.offsetTop;
+			l+=kongjian.offsetLeft;
+        }
+		//$E("vol_box").style.left = (event.clientX + document.body.scrollLeft -50) + "px";
+		if(kk==0)
+			$E("vol_box").style.left = "38%";
+		else
+			$E("vol_box").style.left = "1%";
+		var vtop =t+20;
+		$E("vol_box").style.top = vtop + "px";
+	}
+	$E("vol_box").style.display = "";
+	//alert($E("vol_box").innerHTML);
+	//var stat_pos = "kankan_mvol" + pos.toString();
+	//return tongji('更多&gt;&gt;' , '更多', stat_pos);
+}
+
+function close_vol()
+{
+	if($E("vol_box").style.display == "")
+	{
+		$E("vol_box").style.display = "none";
+	}
+}
+
+function show_gvodurl(kongjian,event,szurl)
+{
+	tongji(kongjian.innerHTML,this.href,'ar_tp_gd_3');
+	
+	var hasgetted = false;
+	var headLoc = document.getElementsByTagName("head").item(0);
+	var ifr = document.createElement("script");
+	ifr.onreadystatechange = function(){
+    	//alert(1);
+    	if (ifr.readyState == "complete" || ifr.readyState == "loaded"){
+            if(!isUndef(xluncids))
+			{
+				for(var i=0; i<5; i++)
+				{
+					var li_id = "gvod_li_"+i;
+					var a_id =  "gvod_url_"+i;
+					if(!isUndef(xluncids[i]))
+					{
+						var p_url = xluncids[i].playurl;
+						$E(a_id).href = p_url;
+						$E(a_id).innerHTML = p_url;
+						$E(li_id).style.display = "";
+					}
+				}
+				if(!isUndef(event))
+				{
+					var t=kongjian.offsetTop; var l=kongjian.offsetLeft;
+    			    while(kongjian=kongjian.offsetParent)
+    			    {
+						t+=kongjian.offsetTop;
+						l+=kongjian.offsetLeft;
+    			    }
+    			    var vleft =l-125;
+					$E("gvod_show").style.left = vleft + "px";;
+					var vtop =t+20;
+					$E("gvod_show").style.top = vtop + "px";
+				}
+				$E("gvod_show").style.display = "";
+				hasgetted=true;
+				headLoc.removeChild(ifr);
+			}
+        }
+    };
+    ifr.onload = function(){
+    	if (!hasgetted){
+            if(!isUndef(xluncids))
+			{
+				for(var i=0; i<5; i++)
+				{
+					var li_id = "gvod_li_"+i;
+					var a_id =  "gvod_url_"+i;
+					if(!isUndef(xluncids[i]))
+					{
+						var p_url = xluncids[i].playurl;
+						$E(a_id).href = p_url;
+						$E(a_id).innerHTML = p_url;
+						$E(li_id).style.display = "";
+					}
+				}
+				if(!isUndef(event))
+				{
+					var t=kongjian.offsetTop; var l=kongjian.offsetLeft;
+    			    while(kongjian=kongjian.offsetParent)
+    			    {
+						t+=kongjian.offsetTop;
+						l+=kongjian.offsetLeft;
+    			    }
+    			    var vleft =l-125;
+					$E("gvod_show").style.left = vleft + "px";;
+					var vtop =t+20;
+					$E("gvod_show").style.top = vtop + "px";
+				}
+				$E("gvod_show").style.display = "";
+				hasgetted=true;
+				headLoc.removeChild(ifr);
+			}
+        }
+    };
+	ifr.setAttribute("type", "text/javascript");
+    ifr.setAttribute("charset", "utf-8");
+    ifr.setAttribute("src", szurl );
+    headLoc.appendChild(ifr);
+	//headLoc.removeChild(ifr);
+}
+
+function close_p_ad()
+{
+	$E("gvod_show").style.display = "none";
+}
+
+function show_over(k_id)
+{
+	//alert(k_id);
+	$E(k_id).className = "click";
+}
+
+function close_over(k_id)
+{
+	$E(k_id).className = "";
+}
+
+function tongji_spacial(vod)
+{
+	var tpkey = 'ar_'+vod+'_'+tmpthisid+'_cr';
+	tongji('gvodplay',window.location.href,tpkey);
+}
+
+function closebt(k_id)
+{
+	$E(k_id).style.display="none";
+}
+
+function getActiveXObject()
+{
+	if (window.XMLHttpRequest)	
+			return new XMLHttpRequest();
+		var XMLHTTP = ["Msxml2.XMLHTTP.6.0",
+					   "Msxml2.XMLHTTP.5.0",
+					   "Msxml2.XMLHTTP.4.0",
+					   "Msxml2.XMLHTTP.3.0",
+					   "Msxml2.XMLHTTP.2.6",
+					   "Microsoft.XMLHTTP.1.0",
+					   "Microsoft.XMLHTTP.1",
+					   "Microsoft.XMLHTTP"];
+		for (var i=0; i<XMLHTTP.length; i++){
+			try{
+				return new ActiveXObject(XMLHTTP[i]);
+			}catch (e){}
+		}
+}
+function r(f)
+{
+	//alert(1);
+	var myos3=getOs();
+	if(myos3=='-1')
+	{
+		var s=f;
+		var h=s.indexOf('//')+2;
+		//alert(h);
+		return h==1?'':s.substr(h);
+	}
+	else
+	{
+		var s='['+f+']';
+		var h=s.indexOf('/*<!--')+6,t=s.lastIndexOf('-->*/');
+		return h==5||t==-1?'':s.substring(h,t);
+	}
+}
+
+function close_btspacial()
+{
+	if(tmpspacialbt!="")
+		{$E(tmpspacialbt).style.display = "none";}
+}
+
+function getList(vulr,showlayer,tohers,w)
+{
+	close_vol();
+	var ss2='['+vulr+']';
+	
+	if(g_xmp==1)
+	{
+		if(ss2=="[function (){/**/}]")
+		{
+			if(g_lastwarn!=""&&g_lastwarn!=showlayer)
+				 $E(g_lastwarn).innerHTML="";
+			var salert = "";
+			if(w==1)
+			{
+				tmpspacialbt = "ts01";
+				salert += "<div class='select_num' id='ts01'>";
+				salert += "<h4>温馨提示</h4><p><span class='icon_alert'></span>暂无此资源BT文件列表信息</p>";
+				salert += "<div class='notice_s'><a style='cursor:pointer;' onclick='close_btspacial()' class='close_btn'></a></div>";
+				$E(showlayer).innerHTML=salert;
+				$E(showlayer).style.display="";
+				g_lastwarn=showlayer;
+			}
+			else
+			{
+				 var sparam = tohers;
+				 //alert('tohers:'+tohers);
+				 var indexh = 0;
+				 var indexe = sparam.indexOf("&end=");
+				 var param = sparam.substring(indexh,indexe);
+				 var tmpURL="http://xmp.kankan.xunlei.com/play.html?"+param;
+				 
+				 tmpspacialbt = "ts01";
+			     salert += "<div class='select_num' id='ts01'>";
+			     salert += "<h4>温馨提示</h4><p><span class='icon_alert'></span>暂无BT文件列表信息，将按照默认顺序播放。</p>";
+			     salert += "<div class='notice_s'><a style='cursor:pointer;' onmousedown='tongji_spacial(3)' onclick=\"close_btspacial();openxmp('"+tmpURL+"&bt=1');\">知道了，开播吧！</a></div>";
+				 salert += "<a style='cursor:pointer;' onclick='close_btspacial()' class='close_btn'></a></div>";
+				 $E(showlayer).innerHTML=salert;
+				if(g_came!='1')
+				{
+					$E(showlayer).style.left='';
+					$E(showlayer).style.marginLeft='-100px';
+				}
+				else
+				{
+					$E(showlayer).style.left='40%';
+					$E(showlayer).style.marginLeft='-255px';
+				}
+				 $E(showlayer).style.display="";
+				 g_lastwarn=showlayer;
+			}
+		}
+		else
+		{
+			if(g_lastwarn!=""&&g_lastwarn!=showlayer)
+				 $E(g_lastwarn).innerHTML="";
+			var tmp_url = r(vulr);
+			var tmplayer =showlayer;
+			$E(tmplayer).style.left='40%';
+			$E(tmplayer).style.marginLeft="-255px";
+			$E(tmplayer).style.display="";
+			
+			$E(tmplayer).innerHTML=tmp_url;
+			g_lastwarn=tmplayer;
+		}
+	}
+	else
+	{
+		if(ss2=="[function (){/**/}]")
+		{
+			if(g_lastwarn!=""&&g_lastwarn!=showlayer)
+				$E(g_lastwarn).innerHTML="";
+			var salert = "";
+			if(w==1)
+			{
+				tmpspacialbt = "ts01";
+				salert += "<div class='select_num' id='ts01'>";
+				salert += "<h4>温馨提示</h4><p><span class='icon_alert'></span>暂无此资源BT文件列表信息</p>";
+				salert += "<div class='notice_s'><a style='cursor:pointer;' onclick='close_btspacial()' class='close_btn'></a></div>";
+				$E(showlayer).innerHTML=salert;
+				$E(showlayer).style.display="";
+				g_lastwarn=showlayer;
+			}
+			else
+			{
+				if(g_type==0)
+				{
+					 var scid = tohers;
+					 //alert('tohers:'+tohers);
+					 var indexh = scid.indexOf("CID=")+4;
+					 var indexe = scid.indexOf("&query=");
+					 var cid=scid.substring(indexh,indexe);
+					//alert('cid:'+cid);
+					 var shead = cid.substring(0,2);
+					 var sback = cid.substr(cid.length-2);
+					 var btdownurl=shead+"/"+sback+"/"+cid+".torrent";
+					 //alert('btdownurl:'+btdownurl);
+					 
+					 tmpspacialbt = "ts01";
+				     salert += "<div class='select_num' id='ts01'>";
+				     salert += "<h4>温馨提示</h4><p><span class='icon_alert'></span>暂无BT文件列表信息，将按照默认顺序播放。</p>";
+				     salert += "<div class='notice_s'><a onmousedown='tongji_spacial(3)' onclick='close_btspacial()' href='http://121.9.244.130/index.jsp?"+tohers+"&url=http://119.147.41.56/"+btdownurl+"' target='_blank'>知道了，开播吧！</a></div>";
+				     
+					 salert += "<a style='cursor:pointer;' onclick='close_btspacial()' class='close_btn'></a></div>";
+				}
+				else if(g_type==1)
+				{
+					 var sparam = tohers;
+					 //alert('tohers:'+tohers);
+					 var indexh = 0;
+					 var indexe = sparam.indexOf("&end=");
+					 var param = sparam.substring(indexh,indexe);
+					 var tmpURL="http://xmp.kankan.xunlei.com/play.html?"+param;
+					 tmpspacialbt = "ts01";
+				     salert += "<div class='select_num' id='ts01'>";
+				     salert += "<h4>温馨提示</h4><p><span class='icon_alert'></span>暂无BT文件列表信息，将按照默认顺序播放。</p>";
+				     salert += "<div class='notice_s'><a style='cursor:pointer;' onmousedown='tongji_spacial(3)' onclick=\"close_btspacial();openxmp('"+tmpURL+"&bt=1');\">知道了，开播吧！</a></div>";
+					 salert += "<a style='cursor:pointer;' onclick='close_btspacial()' class='close_btn'></a></div>";
+				}
+				else
+					alert("自动识别错误!");
+				 $E(showlayer).innerHTML=salert;
+				 if(g_came!='1')
+				{
+					$E(showlayer).style.left='';
+					$E(showlayer).style.marginLeft='-100px';
+				}
+				else
+				{
+					$E(showlayer).style.left='40%';
+					$E(showlayer).style.marginLeft='-255px';
+				}
+				 $E(showlayer).style.display="";
+				 g_lastwarn=showlayer;
+			}
+		}
+		else
+		{
+			if(g_lastwarn!=""&&g_lastwarn!=showlayer)
+				 $E(g_lastwarn).innerHTML="";
+			var tmp_url = r(vulr);
+			var tmplayer =showlayer;
+			
+			$E(tmplayer).style.left='40%';
+			$E(tmplayer).style.marginLeft="-255px";
+			$E(tmplayer).style.display="";
+			
+			$E(tmplayer).innerHTML=tmp_url;
+			g_lastwarn=tmplayer;
+		}
+	}
+}
+
+function gOrx(xmp_or_gvod)
+{
+	g_type=xmp_or_gvod;
+	//alert('after gOrx,the param type is: '+g_type);
+}
+
+function showwarn(foken,showlayer,govd_url,xmp_url,item,fflag,speed,came,_type)
+{
+	if(_type==-1)
+		_type=g_type;
+	//alert(_type);
+	g_came=came;
+	if(foken==2)
+	{return;}
+	else if(foken==1)
+	{
+		if(g_xmp==1)
+			openxmp(xmp_url);
+		else
+		{
+			if(_type==1)
+				openxmp(xmp_url);
+			else if(_type==0)
+				window.open(govd_url);
+			else//	XMP安装浮层
+			{
+	     		window.open(govd_url);//暂时GOVD
+	     		return;
+	     	}
+		}
+	}
+	else if(foken==0)
+	{
+		if(g_lastwarn!=""&&g_lastwarn!=showlayer)
+			 $E(g_lastwarn).innerHTML="";
+		 var salert = "";
+		 tmpthisid = "ts" + item;
+	     salert += "<div class='select_num' id='ts"+item+"'>";
+	     var tishitongji=0;
+	     if(fflag>1024&&speed>1)
+	     {
+	     	tishitongji=1;
+	     	salert += "<h4>温馨提示</h4><p><span class='icon_alert'></span>您点播的资源码率较高:<br/>1M带宽：建议缓冲一段时间后再观看<br/>2M带宽：基本流畅，有时需缓冲片刻<br/>3M带宽：能流畅播放</p>";
+	     }
+	     else if(speed==0)
+	     {
+	     	tishitongji=2;
+	     	salert += "<h4>温馨提示</h4><p><span class='icon_alert'></span>暂无此资源的播放速度信息，可能会不流畅，建议您选择其它资源点播或下载后观看。</p>";
+	     }
+	     else
+	     {
+	     	tishitongji=2;
+	     	salert += "<h4>温馨提示</h4><p><span class='icon_alert'></span>根据我们的测试，您选择的资源在线播放可能会比较不流畅，狗狗建议您采用下载的方式观看。</p>";
+	     }
+	     if(g_xmp==1)
+	     {
+	     	salert += "<div class='notice_s'><a style='cursor:pointer;' onmousedown='tongji_spacial("+tishitongji+")' onclick=\"close_suggest();openxmp('"+xmp_url+"')\">知道了，开播吧！</a></div>";
+	     }
+	     else
+	     {
+	     	if(_type==1)
+	     		salert += "<div class='notice_s'><a style='cursor:pointer;' onmousedown='tongji_spacial("+tishitongji+")' onclick=\"close_suggest();openxmp('"+xmp_url+"')\">知道了，开播吧！</a></div>";
+	     	else if(_type==0)
+	     		salert += "<div class='notice_s'><a onmousedown='tongji_spacial("+tishitongji+")' onclick='close_suggest()' href='"+govd_url+"' target='_blank'>知道了，开播吧！</a></div>";
+	     	else// xmp 安装浮层
+	     	{
+	     		//alert("两个都没装！");
+	     		salert += "<div class='notice_s'><a onmousedown='tongji_spacial("+tishitongji+")' onclick='close_suggest()' href='"+govd_url+"' target='_blank'>知道了，开播吧！</a></div>";
+	     		return;
+	     	}
+	     }
+		 salert += "<a style='cursor:pointer;' onclick='close_suggest()' class='close_btn'></a></div>";
+		 $E(showlayer).innerHTML=salert;
+		 $E(showlayer).style.display="";
+		 g_lastwarn=showlayer;
+	}
+	else
+	{
+		if(g_lastwarn!=""&&g_lastwarn!=showlayer)
+			 $E(g_lastwarn).innerHTML="";
+		
+		var reqxmp=0;
+		if(_type==1)
+			reqxmp=1;
+		else if(_type==0)
+			reqxmp=0;
+		else//XMP安装浮层
+		{
+	     	//alert("两个都没装！");
+	     	reqxmp=0;
+	     	return;
+	    }	
+		
+		//add
+		var salert = "";
+		tmpthisid = "ts" + item;
+		salert += "<div class='select_num' id='ts"+item+"' style='text-align:center'>";
+		salert += "<img src='http://img.gougou.com/web/loading.gif'></img><a style='cursor:pointer;' onclick='close_suggest()' class='close_btn'></a><div>列表加载中...</div>"
+		$E(showlayer).innerHTML=salert;
+		if(isUndef(came))
+		{
+			$E(showlayer).style.left='';
+			$E(showlayer).style.marginLeft='-100px';
+		}
+		else
+		{
+			$E(showlayer).style.left='40%';
+			$E(showlayer).style.marginLeft='-255px';
+		}
+		
+		$E(showlayer).style.display="";
+		g_lastwarn=showlayer;
+		//add end
+		var myos=getOs();
+		
+		var res = "";
+		if(_type==0)
+			res=govd_url;
+		else if(_type==1)
+			res=xmp_url;
+		
+		var res2 = res.substr(res.indexOf('?'));
+		res2 = res2.replace(/\#/g,"");
+		res2 = res2.replace(/\*/g,"");
+		res2 = res2.replace(/\(/g,"");
+		res2 = res2.replace(/\)/g,"");
+		var stime =new Date().getTime();
+		
+		var req="http://btinfo.sandai.net/bt_filelist_cid"+res2+"&p=1&n=10&h="+showlayer+"&v=1&o="+myos+"&cf=f&t="+stime+"&xmp="+reqxmp;
+		//alert(req);
+		var jsonReq  =new JSONscriptRequest(req);
+		jsonReq.buildScriptTag(); 
+		jsonReq.addScriptTag();
+	}
+}
+
+function showwarn2(foken,showlayer,govd_url,xmp_url,item,fflag,speed,came,_type)
+{
+		if(_type==-1)
+			_type=g_type;
+		var reqxmp=0;
+		if(_type==1)
+			reqxmp=1;
+		else if(_type==0)
+			reqxmp=0;
+		if(g_lastwarn!=""&&g_lastwarn!=showlayer)
+			 $E(g_lastwarn).innerHTML="";
+
+		var salert = "";
+		tmpthisid = "ts" + item;
+		salert += "<div class='select_num' id='ts"+item+"' style='text-align:center'>";
+		salert += "<img src='http://img.gougou.com/web/loading.gif'></img><a style='cursor:pointer;' onclick='close_suggest()' class='close_btn'></a><div>列表加载中...</div>"
+		$E(showlayer).innerHTML=salert;
+		if(isUndef(came))
+		{
+			$E(showlayer).style.left='';
+			$E(showlayer).style.marginLeft='-100px';
+		}
+		else
+		{
+			$E(showlayer).style.left='40%';
+			$E(showlayer).style.marginLeft='-255px';
+		}
+		
+		$E(showlayer).style.display="";
+		g_lastwarn=showlayer;
+		//add end
+		var myos=getOs();
+		
+		var res = "";
+		if(_type==0)
+			res=govd_url;
+		else if(_type==1)
+			res=xmp_url;
+		
+		var res2 = res.substr(res.indexOf('?'));
+		res2 = res2.replace(/\#/g,"");
+		res2 = res2.replace(/\*/g,"");
+		res2 = res2.replace(/\(/g,"");
+		res2 = res2.replace(/\)/g,"");
+		var stime =new Date().getTime();
+		
+		var req="http://btinfo.sandai.net/bt_filelist_cid"+res2+"&p=1&n=10&h="+showlayer+"&v=1&o="+myos+"&cf=f&t="+stime+"&xmp="+reqxmp+"&w=1";
+		//alert(req);
+		var jsonReq  =new JSONscriptRequest(req);
+		jsonReq.buildScriptTag(); 
+		jsonReq.addScriptTag();
+	
+}
+
+function gopage(g_page)
+{
+	var myos2=getOs();
+	var stime =new Date().getTime();
+	var req2="http://btinfo.sandai.net/bt_filelist_cid?"+g_page+"&o="+myos2+"&cf=a&t="+stime;
+	//alert(req2);
+	var jsonReq  =new JSONscriptRequest(req2);
+	jsonReq.buildScriptTag(); 
+	jsonReq.addScriptTag();
+	
+	/*
+	if(req!=null)
+	{
+		req.open("GET","test.html?"+g_page, true);
+		req.onreadystatechange = function(){
+			if(req.readyState == 4 && req.status == 200){
+				$E(g_place).style.marginLeft="-525px";
+	        	$E(g_place).innerHTML=req.responseText;
+	    	}
+		};
+		req.send(null);
+	}
+	*/
+}
+
+function resetmoinfo()
+{
+	//alert("resetmoinfo()");
+	if(!isUndef($E("spacial_movie"))||!isNull($E("spacial_movie")))
+	{
+		if($E("spacial_movie").innerHTML=="《》")
+			$E("spamoinfo").style.display="none";
+	}
+}
+
+function getlev(fen)
+{
+	var tmpfen = Math.ceil(Math.floor(fen)/2);
+	if(tmpfen < 1)
+		return "";
+	else
+		return " s" + tmpfen;
+}
+
+function mycallback(getretrun)
+{
+	if(!isUndef(getretrun)&&!isNull(getretrun))
+	{
+		$E("smallmovieinfo").style.display="none";
+		var sethtml="";
+		if(getretrun.vod_url==false)
+		{
+			sethtml  +="<div class=\"pic\"><img src=\""+getretrun.big_poster+"\"/><a target=\"_blank\" style=\"color:gray;cursor:default\" href=\"#\"></a></div>";
+			sethtml  += "<h4><a target=\"_blank\" style=\"color:gray;cursor:default\" href=\"#\"><font color=\"red\">"+getretrun.title+"</font></a> <em>"+getretrun.version+" <a target=\"_blank\" href=\""+getretrun.topic_url+"\">官网</a></em></h4>";
+		}
+		else	
+		{
+			sethtml  +="<div class=\"pic\"><img src=\""+getretrun.big_poster+"\"/><a target=\"_blank\" href=\""+getretrun.vod_url+"\"></a></div>";
+			sethtml  += "<h4><a target=\"_blank\" href=\""+getretrun.vod_url+"\"><font color=\"red\">"+getretrun.title+"</font></a> <em>"+getretrun.version+" <a target=\"_blank\" href=\""+getretrun.topic_url+"\">官网</a></em></h4>";
+		}
+		sethtml  += "<p>"+getretrun.attract+" <span class=\"score"+getlev(getretrun.rating)+"\"><strong>"+getretrun.rating+"</strong></span><em>("+getretrun.comment_num+"人评)</em></p>";
+		sethtml  += "<p>导演： ";
+		for(var i=0; i<getretrun.director.length; i++)
+		{
+			if(i>0)
+				sethtml+=" |&nbsp;";
+			sethtml  += "<a target=\"_blank\" href=\""+getretrun.director[i].url+"\">"+getretrun.director[i].name+"</a> ";
+		}
+		sethtml  += "　　主演： ";
+		for(var i=0; i<getretrun.actor.length; i++)
+		{
+			if(i>0)
+				sethtml+=" |&nbsp;";
+			sethtml  += "<a target=\"_blank\" href=\""+getretrun.actor[i].url+"\">"+getretrun.actor[i].name+"</a> ";
+		}
+		sethtml  += "</p>";
+		if(getretrun.vod_url==false)
+			sethtml  += "<p><a target=\"_blank\" style=\"color:gray;cursor:default\" href=\"#\">观看</a> | <a target=\"_blank\" href=\""+getretrun.date_url+"\">影片详情</a> | <a target=\"_blank\" href=\""+getretrun.comment_url+"\">影评</a><em>("+getretrun.comment_num+")</em></p>"
+		else
+			sethtml  += "<p><a target=\"_blank\" href=\""+getretrun.vod_url+"\">观看</a> | <a target=\"_blank\" href=\""+getretrun.date_url+"\">影片详情</a> | <a target=\"_blank\" href=\""+getretrun.comment_url+"\">影评</a><em>("+getretrun.comment_num+")</em></p>"
+		$E("topicmovieinfo").innerHTML=sethtml;
+		$E("topicmovieinfo").style.display="";
+	}
+}
+
+
+function mycallback2(getretrun,num)
+{
+	var kk_keyword_infos = '接口';
+	for(var i=0;i<num;i++)
+	{
+		var mname=getretrun[i][1];
+		if(kk_keyword_infos==mname)
+		{
+			var mid=getretrun[i][0];
+			var req="http://movie.xunlei.com/topic/to_gougou/"+mid+".html";
+			var jsonReq  =new JSONscriptRequest(req);
+			jsonReq.buildScriptTag();
+			jsonReq.addScriptTag();
+		}
+	}
+}
+
+function gettopic()
+{
+	if(g_xmp!='1')
+	{
+		var req="http://movie.xunlei.com/topic/to_gougou/all_movie.html";
+		var jsonReq2  =new JSONscriptRequest(req);
+		jsonReq2.buildScriptTag();
+		jsonReq2.addScriptTag();
+	}
+}
+
+function close_zip(showlayer)
+{
+	$E(showlayer).innerHTML="";
+	$E(showlayer).style.display="none";
+}
+
+function close_filelist()
+{
+	$E("zip_filelist").style.display="none";
+	$E("zip_filelist").innerHTML="";
+}
+
+function zipcallback(getretrun)
+{
+	if(g_lastzip!="")
+	{
+		$E(g_lastzip).style.display="none";
+		$E(g_lastzip).innerHTML="";
+	}
+	if(!isUndef(getretrun)&&!isNull(getretrun))
+	{
+		var salert = "<h3>文件列表<em>文件数"+getretrun.filenum+"，解压后"+getretrun.unzipsize+"</em><a style='cursor:pointer;overflow:hidden;' onclick='close_filelist()' class=\"close\">关闭</a></h3>";
+		salert +=    "<div class=\"inner\"><ul>";
+		salert +=    "<li class=\"title\"><span class=\"name\">文件名</span> <span class=\"type\">类型</span> <span class=\"size\">大小</span></li>"
+		for(var i=0; i<getretrun.filelist.length; i++)
+		{
+			salert += "<li";
+			if((i+3)%2!=0)
+				salert += " class=\"alt\"";
+			salert += "><span class=\"name\">"+getretrun.filelist[i].name+"</span> <span class=\"type\">"+getretrun.filelist[i].type+"</span> <span class=\"size\">"+getretrun.filelist[i].size+"</span></li>";
+		}
+		salert += "</ul></div>";
+		$E("zip_filelist").innerHTML=salert;
+		$E("zip_filelist").style.left=$E(g_lastzip).style.left;
+		$E("zip_filelist").style.top=$E(g_lastzip).style.top;
+		$E("zip_filelist").style.display="";
+	}
+	else
+	{
+		var salert = "<div class='select_num' style='text-align:center'>";
+		salert += "<img src='http://img.gougou.com/web/error.gif'></img><a style='cursor:pointer;' onclick=\"close_zip('"+g_lastzip+"')\" class='close_btn'></a><div>抱歉，查询超时！请重试。</div>"
+		$E(g_lastzip).innerHTML=salert;
+	}
+}
+
+function getzipinfo(m_cid,showlayer,item,kongjian)
+{
+	$E("zip_filelist").style.display="none";
+	var req="http://content.gougou.com/getzip?cid="+m_cid;;
+	var jsonReq3  =new JSONscriptRequest(req);
+	jsonReq3.buildScriptTag();
+	jsonReq3.addScriptTag();
+	
+	if(g_lastzip!=""&&g_lastzip!=showlayer)
+		$E(g_lastzip).innerHTML="";
+	
+	var salert = "";
+	tmpthisid = "ts" + item;
+	salert += "<div class='select_num' id='ts"+item+"' style='text-align:center'>";
+	salert += "<img src='http://img.gougou.com/web/loading.gif'></img><a style='cursor:pointer;' onclick=\"close_zip('"+showlayer+"')\" class='close_btn'></a><div>列表加载中...</div>"
+	$E(showlayer).innerHTML=salert;
+	
+	var t=kongjian.offsetTop; var l=kongjian.offsetLeft;
+	while(kongjian=kongjian.offsetParent)
+	{
+		t+=kongjian.offsetTop;
+		l+=kongjian.offsetLeft;
+	}
+	var vleft =l;
+	var vtop =t;
+	$E(showlayer).style.left=vleft + "px";
+	$E(showlayer).style.top=vtop + "px";
+	
+	$E(showlayer).style.display="";
+	g_lastzip=showlayer;
+}
+
+function close_coo(kid,losetime)
+{
+	var endtime = losetime*1000;
+	$E(kid).style.display="none";
+	SetCookie_g(kid,endtime);
+}
+
+function positeTopCoo(kname)
+{
+	var now=new Date();
+	var losetime = now.getTime();
+	if(getCookie("top_coo")>=losetime)
+	{
+		$E("top_coo").style.display="none";
+		return;
+	}
+	var newfuncsnames = document.getElementsByName(kname);
+	if(!isUndef(newfuncsnames)&&!isNull(newfuncsnames))
+	{
+		if(!isUndef(newfuncsnames[0])&&!isNull(newfuncsnames[0]))
+		{
+			var kongjian = newfuncsnames[0];
+			var t=kongjian.offsetTop; var l=kongjian.offsetLeft;
+			while(kongjian=kongjian.offsetParent)
+			{
+				t+=kongjian.offsetTop;
+				l+=kongjian.offsetLeft;
+			}
+			var vleft =l-19;
+			var vtop =t-89;
+			//if(isFirefox=navigator.userAgent.indexOf("Firefox")>0)	
+				//vtop = t-104;
+			$E("top_coo").style.left=vleft + "px";
+			$E("top_coo").style.top=vtop + "px";
+		}
+		else
+			$E("top_coo").style.display="none";
+	}
+	else
+		$E("top_coo").style.display="none";
+	
+	if($E("top_coo").style.display!="none")//发PV
+	{
+		document.write("<img src='http://s.gougou.com/st.gif?query=pv&pattern=471&url=http://www.gougou.com' style='display:none'>");
+	}
+}
+
+function dingwei_tj(kongjian_id,off_id)
+{
+	//alert(0);
+	var kongjian = $E(kongjian_id);
+	var off = $E(off_id);
+	var t=kongjian.offsetTop; 
+	var l=kongjian.offsetLeft;
+	while(kongjian=kongjian.offsetParent)
+	{
+		t+=kongjian.offsetTop;
+		l+=kongjian.offsetLeft;
+	}
+	var vleft =l+off.clientWidth-150;
+	var vtop =t-22;
+			
+	$E("hyts").style.left=vleft + "px";
+	$E("hyts").style.top=vtop + "px";
+	$E("hyts").style.display="";
+	//document.write("<img src='http://s.gougou.com/st.gif?query=pv&pattern=473&url=http://www.gougou.com' style='display:none'>");
+	//alert(1);
+}
+
+function h_tuijian(bl,kongjian_id,event)
+{
+	var kongjian=$E(kongjian_id);
+	var kongjian2=$E(kongjian_id);
+	var t=kongjian.offsetTop; 
+	while(kongjian=kongjian.offsetParent)
+	{
+		t+=kongjian.offsetTop;
+	}
+	var d_limit_d=t+kongjian2.clientHeight;
+	var d_limit_t=t;
+	var cursor_point_d=event.clientY+document.documentElement.scrollTop+5;
+	var cursor_point_t=event.clientY+document.documentElement.scrollTop-9;
+	//alert(d_limit_t+'|'+d_limit_d+'::'+cursor_point_t+'|'+cursor_point_d);
+	if("TJ"==bl&& (cursor_point_t < d_limit_t)||(cursor_point_d > d_limit_d))
+		hide_tuijian();
+}
+
+function special_pv()
+{
+	var img = new Image();
+	img.src='http://s.gougou.com/st.gif?query=pv&pattern=473&url=http://www.gougou.com';
+}
+
+function s_tuijian(bl,kj,kj2)
+{
+	if("TJ"==bl)
+		dingwei_tj(kj,kj2);
+}
+
+function hide_tuijian()
+{
+	if(!isNull($E("hyts")))
+		$E("hyts").style.display="none";
+}
+
+function close_red()
+{
+	$E('div_red').style.display="none";
+}
+
+function show_red()
+{
+	$E('div_red').style.display="";
+}
+
+function piliang(f_url,f_cid,f_name)
+{
+	f_name=f_name+'.XV';
+	var isIE=(navigator.userAgent.toLowerCase().indexOf("msie")!=-1);
+	if(!isIE)
+	{
+		alert("迅雷批量下载只支持IE浏览器！");
+		return;
+	}
+	var thunder_instance;
+	try{
+		thunder_instance = new Thunder(true,false);
+	}
+	catch(e)	
+	{
+		thunder_instance=null;
+	}
+	if(!isUndef(thunder_instance)&&!isNull(thunder_instance))
+	{
+		var selected = [];
+		try
+		{
+			var xmp = new ActiveXObject("dapctrl.dapctrl");
+			var ver = xmp.GetThunderVer("KANKAN", "INSTALL");
+			ver = parseInt(ver,10);
+		    if(ver>=340)//是装的
+		    {
+			     
+			}
+			else//没装的
+			{
+				selected.push({cid:"32190DCD051683421A62464E346506B8B1C34696", url:"http://xmp.down.sandai.net/kankan/XMPSetup_3.4.0.340-www.exe", refer:location.href, name:"请先安装迅雷看看播放器3.4.0.340.exe"});
+			}
+		}
+		catch(e)
+		{
+		   selected.push({cid:"32190DCD051683421A62464E346506B8B1C34696", url:"http://xmp.down.sandai.net/kankan/XMPSetup_3.4.0.340-www.exe", refer:location.href, name:"请先安装迅雷看看播放器3.4.0.340.exe"});
+		}
+		selected.push({cid:f_cid, url:f_url, refer:location.href, name:f_name});
+		thunder_instance.batch(selected,location.href);
+	}
+	else
+		alert("请先下载并且安装迅雷！");
+}
+
+
+</script>
+
+</head>
+<body onclick="showMenu(0)" onload="loads()" >
+<div class="gougouSearchBox">
+	<div class="ggLogo"><a href="http://www.gougou.com" title="返回狗狗首页"><img src="http://img.gougou.com/logo/www.gif" alt="狗狗搜索" /></a></div>
+	<div class="ggSearchMain">
+		
+		<div class="ggMenu"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_jp_-1_17')" href="http://web.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&id=10000001">网页</a><span>全部</span><a onmousedown="return tongji(this.innerHTML,this.href,'ar_jp_-1_4')" href="http://movie.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&id=10000001&xmp=0">影视</a><a onmousedown="return tongji(this.innerHTML,this.href,'ar_jp_-1_15')"  href="http://video.gougou.com/search?s=%e6%8e%a5%e5%8f%a3&id=10000001&xmp=0">在线视频<em style="font-size:9px; font-style:normal; color:#f00;text-decoration:none;position:relative;top:-8px;">new</em></a><a href="http://shouji.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&id=10000001" onclick="return tongji(this.innerHTML,this.href,'ar_jp_-1_6');">手机视频</a><a onmousedown="return tongji(this.innerHTML,this.href,'ar_jp_-1_16')"  href="http://hd.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&id=10000001">高清</a><a onmousedown="return tongji(this.innerHTML,this.href,'br_jp_3_0')"  href="http://mp3.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&id=10000001">音乐</a><a style="cursor:pointer;" onclick="showMenu(1)" class="more">更多</a>
+			<ul id="more_id" class="moreList" style="display:none" onclick="showMenu(1)">
+				<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_jp_-1_3')"  href="http://book.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=3&id=10000001">书籍</a></li>
+				<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_jp_-1_18')"  href="http://pic.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&id=10000001">图片</a></li>
+				<li><a href="http://game.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=1&id=10000001" onclick="return tongji(this.innerHTML,this.href,'ar_jp_-1_1');">游戏</a></li>
+				<li><a href="http://soft.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=2&id=10000001" onclick="return tongji(this.innerHTML,this.href,'ar_jp_-1_2');">软件</a></li>
+				<li><a href="http://blog.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&id=10000001" onclick="return tongji(this.innerHTML,this.href,'ar_jp_-1_10');">全集</a></li>
+				
+			</ul>
+		</div>
+		<div class="searchInput">
+			<input id="s1" type="text" onkeydown='return key_event(event,1);' value="接口" />
+			<button type="submit" id="btn" onclick="check(1);">狗狗搜索</button>
+			<a href="http://helpbbs.xunlei.com/thread.php?fid=12"  target="_blank">有奖反馈</a>
+		</div>
+		
+		
+		<!--div class="hotWord">热门：</div-->	
+		<div class="searchRadios" style="display:">
+			<input type="radio" name="d" id="ra_0" checked="checked" /><label for="ra_0">全部</label>
+			<input type="radio" name="d" id="ra_1" /><label for="ra_1">BT</label>
+			<input type="radio" name="d" id="ra_2" /><label for="ra_2">电驴</label>
+			<!--input type="radio" name="d" id="ra_3" /><label for="ra_3">手机视频</label-->
+			<input type="radio" name="d" id="ra_4" /><label for="ra_4">影片信息(按演员、导演、片名)</label>
+		</div>
+		
+	</div>
+</div>
+
+<div class="ggBar" style="display:"><span class="set"><a id="homepage" style="cursor:pointer;" onclick="this.style.behavior='url(#default#homepage)';javascript:add_favorite(1);">把狗狗设为主页</a></span>找到12153个搜索结果</div>
+<div class="ggBar" style="display:none"></div>
+
+
+<div class="topAD">
+	
+	
+		<a  href="http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1270742466142&position=609&location=http%3a%2F%2Fdn.uuu9.com%2Fvideo%2F" target="_blank" ><img src="http://biz5.sandai.net/portal/image/39/n1270198902039.gif" /></a>
+	
+</div>	
+
+
+<div style="" class="ggSideBox">
+
+<!--div style="display:">
+	<script type="text/JavaScript"> 
+	alimama_pid="mm_10839307_870523_7812202"; 
+	alimama_titlecolor="0000FF"; 
+	alimama_descolor ="000000"; 
+	alimama_bgcolor="FFFFFF"; 
+	alimama_bordercolor="E6E6E6"; 
+	alimama_linkcolor="008000"; 
+	alimama_bottomcolor="FFFFFF"; 
+	alimama_anglesize="0"; 
+	alimama_bgpic="0"; 
+	alimama_icon="0"; 
+	alimama_sizecode="35"; 
+	alimama_width=210; 
+	alimama_height=180;
+	alimama_type=2; 
+	</script> 
+	<script src="http://a.alimama.cn/inf.js" type=text/javascript> 
+	</script>
+</div-->
+<!--div class="taobaoBox" style="display:none" onclick="tongji('淘宝广告','','right_ad_taobao')">
+	<a href="" target="_blank"><img src=""/></a>
+	<h3><a href="" target="_blank">更多<font color="red">接口</font>相关的玩偶、书籍、原声大碟等</a></h3>
+	<address>
+		<a>www.taobao.com</a>
+	</address>
+</div-->
+
+	<div class="ggPicAd" style="margin-top:10px"><a href='http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1269500916811&position=565&location=http%3A%2F%2Fallyes.nie.163.com%2Fmain%2Fadfclick%3Fdb%3Dafanie%26bid%3D9117%2C4509%2C190%26cid%3D465%2C33%2C1%26sid%3D9373%26show%3Dignore%26url%3Dhttp%3A%2F%2Fysg.163.com%2Ffab.html
+' target=_blank><img src="http://biz5.sandai.net/portal/image/86/n1270199471286.gif"/></a></div>
+
+	<div class="ggPicAd" style="margin-top:10px"><a href='http://click.cm.sandai.net/UClick?gs=cmuclick&ad=10566889&position=566&location=http%3A%2F%2Fwww.17gou.com%2Fsaleto.php%3Fid%3D38%26ADKEY%3D0528132571
+' target=_blank><img src="http://biz5.sandai.net/portal/image/57/n1270719534357.gif"/></a></div>
+
+	<div class="ggPicAd" style="margin-top:10px"><a href='http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1270031575196&position=566&location=http%3A%2F%2F211.94.190.80%2Fhtml.ng%2Fparams.styles%3Dclickcmd%26adspec%3DFlash%26adtype%3Dpip%26affiliate%3Dxunlei%26campaignid%3D2423%26channel%3Dchinaren%26log%3D0%3F
+' target=_blank><img src="http://biz5.sandai.net/portal/image/91/n1270710141291.gif"/></a></div>
+
+	<div class="ggPicAd" style="margin-top:10px"><a href='http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1269500929327&position=567&location=http%3A%2F%2Fwww.vancl.com%2F%3Fsource%3Dxunleiggsstl3
+' target=_blank><img src="http://biz5.sandai.net/portal/image/66/n1270018923766.gif"/></a></div>
+
+	<div class="ggPicAd" style="margin-top:10px"><a href='http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1269500929338&position=568&location=http%3A%2F%2Fwww.vancl.com%2F%3Fsource%3Dxunleiggsstl4
+' target=_blank><img src="http://biz5.sandai.net/portal/image/44/n1270018945944.gif"/></a></div>
+
+	<div class="ggPicAd" style="margin-top:10px"><a href='http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1270104893746&position=568&location=http%3A%2F%2Fclick.mediav.com%2Fc%3Ftype%3D2%26db%3Dmediav%26pub%3D255_3800_30437%26cus%3D9_56_1197_1257_1167%26url%3Dhttp%3A%2F%2Funion.360buy.com%2Funion_default.aspx%3Funion_Id%3D234%26website_id%3Dkankan_lamu%26eu_id%3D101%26pagetype%3D8%26directtype%3D0%26returl%3D%252fShopCampaign%252fmarketexpand.aspx%26_mvsrc%3D255_3800_30437%26_mvcam%3D9_56_1197_1257_1167%26_mven%3Db04933d82d
+' target=_blank><img src="http://biz5.sandai.net/portal/image/43/n1270712005643.gif"/></a></div>
+
+	<div class="ggPicAd" style="margin-top:10px"><a href='http://click.cm.sandai.net/UClick?gs=cmuclick&ad=10597193&position=569&location=http%3A%2F%2Fwww.17gou.com%2Fsaleto.php%3Fid%3D6%26ADKEY%3D7072201485
+' target=_blank><img src="http://biz5.sandai.net/portal/image/94/n1270520121894.gif"/></a></div>
+
+	<div class="ggPicAd" style="margin-top:10px"><a href='http://click.cm.sandai.net/UClick?gs=cmuclick&ad=10597458&position=570&location=http%3A%2F%2Fwww.lvshou28.com%2F%3Fadsfromgg
+' target=_blank><img src="http://biz5.sandai.net/portal/image/58/n1270628085258.gif"/></a></div>
+
+	<div class="ggPicAd" style="margin-top:10px"><a href='http://click.cm.sandai.net/UClick?gs=cmuclick&ad=10594833&position=574&location=http%3A%2F%2Fwww.30dao50.com%2Fzhuanti%2Fcasio.shtml%3Futm_source%3Dxunlei%26utm_medium%3Dgougoutonglan7%26utm_content%3D%25E5%258D%25A1%25E8%25A5%25BF%25E6%25AC%25A7%25E5%2585%25A8%25E7%2590%2583%25E9%2599%2590%25E9%2587%258F%25E6%258A%25A2%25E8%25B4%25AD488%25E5%2585%2583%26utm_campaign%3Dad01
+' target=_blank><img src="http://biz5.sandai.net/portal/image/34/n1270722392834.jpg"/></a></div>
+
+
+</div>
+
+<!--红宝石-->
+<div id="div_red" class="ruby_wp" style="left:50%;top:50%;z-index:99;display:none">
+   <div class="ruby_main">
+     <a style="cursor:pointer" class="ruby_close" onclick="close_red()"></a>
+       <div class="ruby_con">  
+           <div class="rc_top">    
+                <p class="rc_title"><span class="c_org">红宝石专享高清正版下载</span></p>
+               <p class="rc_dianshu"></p>    
+           </div>
+           <div class="rc_min">
+               <p class="rcm_btn_con">
+                   <a onmousedown="tongji(this.innerHTML,this.href,'fr_rs_h1g_cr');" style="display:;cursor:pointer;" class="btn_g1" onclick="piliang('','','');">下载高清正版1G版</a>
+                   <a onmousedown="tongji(this.innerHTML,this.href,'fr_rs_h4g_cr');" style="display:;cursor:pointer;" class="btn_g2" onclick="piliang('','','');">下载高清正版4G版</a>
+               </p>
+               <p class="rcm_move_pho"><img src="" alt="" title="" /></p> 
+         </div>
+           <div class="rc_footer">   
+             <div class="rcf_left">
+               <P class="rcf_zhide">值得冒险吗？免费影视下载往往画质差、速度慢、有病毒、无字幕……</P>
+               <P class="rcf_yijian c_org">一键操作，高清正版影视快速下</P>      
+             </div>
+              <P class="rcf_kaitong"><a href="http://vip.xunlei.com/active/redstone.html" target="_blank" class="btn_kt" title="开通红宝石"></a></P>
+           </div>
+       </div>
+   </div>
+ 
+</div> <!--/ruby_wp-->
+
+
+
+<input type="hidden" id="format_str" value="55 47 39 34 28 11 20 43 27 30 5 32 19 38 9 3 48 13 49 37 0 ">
+<input type="hidden" id="format_num" value="1 1 1 1 2 3 3 9 13 13 29 39 40 50 77 121 217 630 1878 9010 15 ">
+<input type="hidden" id="fenlei_num" value="12153 12 14 0 310 1 3 ">
+<input type="hidden" id="last_fl" value="0">
+<script>
+var name_arr = new Array();
+var id_arr = new Array();
+var idx_arr = new Array();
+var g_hasgvod='';
+setmaincookie();
+setflcookie();
+</script>
+<script charset="utf-8" src=""></script>
+<div id="vol_box" class="volumeBox" style="display:none">
+    <h4 id="vol_flip"></h4>
+	<ul id="vol"></ul>
+	<a style="cursor:pointer" title="关闭" onclick="close_vol()" class="close_btn"></a>
+</div>
+<div class="gvodlayer" id="gvod_show" style="display:none;background:#fff;z-index:999">
+	<h3>选择播放地址<a style="cursor:pointer" onclick="close_p_ad()" class="close">关闭</a></h3>
+	<ul>
+		<li style="display:none" id="gvod_li_0" onclick="return tongji(this.innerHTML,this.href,'ar_gvoid_1_cr')" onmouseover="show_over('gvod_li_0')" onmouseout="close_over('gvod_li_0')"><a id="gvod_url_0" href="#" target="_blank">http://bbs.blueidea.com/frame.pho?...</a></li>
+		<li style="display:none" id="gvod_li_1" onclick="return tongji(this.innerHTML,this.href,'ar_gvoid_2_cr')" onmouseover="show_over('gvod_li_1')" onmouseout="close_over('gvod_li_1')"><a id="gvod_url_1" href="#" target="_blank">http://bbs.blueidea.com/frame.pho?...</a></li>
+		<li style="display:none" id="gvod_li_2" onclick="return tongji(this.innerHTML,this.href,'ar_gvoid_3_cr')" onmouseover="show_over('gvod_li_2')" onmouseout="close_over('gvod_li_2')"><a id="gvod_url_2" href="#" target="_blank">http://bbs.blueidea.com/frame.pho?...</a></li>
+		<li style="display:none" id="gvod_li_3" onclick="return tongji(this.innerHTML,this.href,'ar_gvoid_4_cr')" onmouseover="show_over('gvod_li_3')" onmouseout="close_over('gvod_li_3')"><a id="gvod_url_3" href="#" target="_blank">http://bbs.blueidea.com/frame.pho?...</a></li>
+		<li style="display:none" id="gvod_li_4" onclick="return tongji(this.innerHTML,this.href,'ar_gvoid_5_cr')" onmouseover="show_over('gvod_li_4')" onmouseout="close_over('gvod_li_4')"><a id="gvod_url_4" href="#" target="_blank">http://bbs.blueidea.com/frame.pho?...</a></li>
+	</ul>
+</div>
+<div id="zip_filelist" class="file_list_layer" style="left:50%;display:none;z-index:99;">
+</div>
+<div class="ggContent">
+	<div class="if_box">您要找的是不是：<a style="font-size:13px" onmousedown="return tongji(this.innerHTML,this.href,'c_0');"  href="http://www.gougou.com/search?search=%e5%80%9f%e5%8f%a3&id=10000001&xmp=0">借口</a>&nbsp;&nbsp;</div>
+	<div id="tianwen" class="gmae_tg" style="display:none">
+	    <p><a href="http://advstat.xunlei.com/TClick?cf=2&gs=xunleiwentian&tt=http%3A%2F%2Fwt.xunlei.com%2Fwelcome%3Fadvid%3D0000900006xunleiwentian00001%26gs%3Dxunleiwentian&linkid=xxx&location=http%3A%2F%2Fwt.xunlei.com%2Fwelcome%3Fadvid%3D0000900006xunleiwentian00001%26gs%3Dxunleiwentian&rf=&ul=" target="_blank">《问天OL》霸气不删档封测</a></p>
+	    <p>09年最武仙巨作现在加入还有50元的好礼相送哦！</p>
+	    <p class="xl_dw"><a target="_blank" href="http://advstat.xunlei.com/TClick?cf=2&gs=xunleiwentian&tt=http%3A%2F%2Fwt.xunlei.com%2Fwelcome%3Fadvid%3D0000900006xunleiwentian00001%26gs%3Dxunleiwentian&linkid=xxx&location=http%3A%2F%2Fwt.xunlei.com%2Fwelcome%3Fadvid%3D0000900006xunleiwentian00001%26gs%3Dxunleiwentian&rf=&ul=">迅雷首款独立运营游戏</a></p>
+    </div>
+    <script>if("show_TW"==""){$E("tianwen").style.display="none";}</script>
+	
+	
+	
+	<div class="jieguo_bq" style="display:none">
+	  <p>根据相关法律法规，部分结果未予显示。您可以查看以下网站搜索结果：</p>
+		<ul>
+			
+		</ul>
+	
+	</div>
+	
+	<div id="topicmovieinfo" class="publish" style="display:none">
+	</div>
+	
+	<!--iframe id="off_box" frameborder="0" scrolling="no" width="720" height=160px  style="display:none"></iframe-->
+	<p class="ggUU" style="display:none;">下载更快更方便、内容更多更可靠，点这里用<a target="_blank" id="uu_href" href="http://hallres.uu.xunlei.com/gamehall/popularize/download.html?gameid=">迅雷游游高速下载“”&gt;&gt;</a></p>
+	
+	
+	<div class="kankanList" style="display:none">
+		
+	</div>
+	
+	<div class="kankanList" style="display:none">
+		
+	</div>
+	
+	<div class="kankanList" style="display:none">
+		
+	</div>
+	
+	
+	
+	<h2 style="display:none;">高清资源下载</h2>
+	<table style="display:none;" border="0" cellspacing="0" cellpadding="0" class="ggTable">
+	
+	
+	
+	
+	
+	</table>
+	
+	<h2 style=";">下载资源 &nbsp;&nbsp;<em style="font-weight:normal;color:#2c2c2c;">分类：<span style="color:#2c2c2c;">全部(12153)</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></h2>
+	<div style="display:none;position:absolute;left:390px;background-color:#f4f7fc;z-index:999;" class="volumeBox2" id="newfmt" >
+		<ul>
+			<li>全部</li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=57&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">MMF</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=49&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">WMA</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=41&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">RMVB</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=36&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">PPT</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=30&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">MP4</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=13&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">DOC</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=22&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">JAR</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=45&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">TXT</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=29&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">MP3</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=32&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">MPG</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=7&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">AVI</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=34&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">PDF</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=21&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">ISO</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=40&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">RM</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=11&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">CSF</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=5&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">ASF</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=50&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">WMV</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=15&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">EXE</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=51&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">ZIP</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=39&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">RAR</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=2&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">其他</a></li> 
+		</ul>
+		<!--a style="cursor:pointer" title="关闭" onclick="close_newfmt()" class="close_btn"></a-->
+	</div>
+	
+	
+     	
+	
+	
+	<div id="hyts" class="vip_pop" style="display:none"><p>迅雷会员可使用会员高速通道下载此资源。<a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_real_lj')" href="http://vip.xunlei.com/freedom/exclusive_channel.html?referfrom=gougou" target="_blank">了解会员下载</a></p></div>
+	<script>if(''=='TJ'){special_pv()}</script>
+	<table border="0" cellspacing="0" cellpadding="0" class="ggTable" style="display:;">
+	
+	
+	
+	
+	
+
+	
+	
+		
+
+
+
+		
+		
+
+
+		<tr>
+			<th class="op tw01">&nbsp;</th>
+			<th class="name tw02">名称</th>
+			<th class="tw05"><a title="按大小排序" style="cursor:pointer" onclick="javascript:SortBy(6)">大小</a></th>
+			<th class="tw05"><a style="cursor:pointer" onmouseover="show_obj('format_menu');">格式</a>
+				<ul class="format" style="visibility:hidden;" id="format_menu" >
+					<li>全部</li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=57&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">MMF</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=49&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">WMA</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=41&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">RMVB</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=36&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">PPT</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=30&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">MP4</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=13&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">DOC</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=22&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">JAR</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=45&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">TXT</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=29&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">MP3</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=32&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">MPG</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=7&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">AVI</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=34&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">PDF</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=21&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">ISO</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=40&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">RM</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=11&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">CSF</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=5&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">ASF</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=50&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">WMV</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=15&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">EXE</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=51&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">ZIP</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=39&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">RAR</a></li> <li><a onmousedown="return tongji(this.innerText,this.href,'ar_rs_suf')" href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=2&id=10000001&ty=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=1&z=0">其他</a></li> 
+				</ul>			
+			</th>
+			<th class="tw13"><a style="cursor:pointer"  title="按发布时间排序" onClick="javascript:SortBy(7)">发布时间</a></th>
+			<th class="tw07">评论</th>
+		</tr>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+		<tr>
+			<td class="op" id="pic1"><a class='open'  style='cursor:pointer' onclick="javascript:showdesc(1,0,'B810A16EFE0D4580EEBA57DD8D1B221E899BD997','',4,'B810A16EFE0D4580EEBA57DD8D1B221E899BD997','9&embody=0&query=%e6%8e%a5%e5%8f%a3')" ></a></td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_1_cr')" href="http://119.147.41.16/down?cid=B810A16EFE0D4580EEBA57DD8D1B221E899BD997&t=2&fmt=&usrinput=接口&dt=2264000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>DirectX Redistributable V9.28.1886┊应用程序的<font color="RED">接口</font>文件┊多国语言官方安装版</a></td>
+			<td>104M</td>
+			<td>EXE</td>
+			<td>2010-02-07</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_1')" href="http://content.gougou.com/content?cid=B810A16EFE0D4580EEBA57DD8D1B221E899BD997&t=2&fmt=-&usrinput=接口&dt=2264000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>13条</a>
+			<div class="layer" id="oneplace1" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+			<tr id="desc1" style="display:none">
+				<td class="op">&nbsp;</td>
+				<td colspan="7" class="expend">
+					<p>DirectX Runtimes包含了各种多媒体应用程序所需的影音API接口文件，尤其是可以更好地支持最新地3D游戏，重要性无需赘言，因此强烈推荐更新，以避免某些新程序无法运行。 DirectX SDK内不但有DirectX Runtimes，还包含了在C、C++、C#环境下创建DirectX兼容程序所需要的各种工具、程序、示例、文档、Runtime Debug文件等等。当然它是为开发人员准备的，普通用户可以忽略！关键字：</p>
+				</td>
+			</tr>		
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic2">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_2_cr')" href="http://119.147.41.16/down?cid=C7B0FE002603A9641754C4D6324408F197B169EA&t=1&fmt=&usrinput=接口&dt=2058000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>DirectX9.0c Redistributable(March2009)┊应用程序<font color="RED">接口</font>┊多国语言官方完整版</a></td>
+			<td>92.4M</td>
+			<td>EXE</td>
+			<td>2009-09-12</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_2')" href="http://content.gougou.com/content?cid=C7B0FE002603A9641754C4D6324408F197B169EA&t=1&fmt=-&usrinput=接口&dt=2058000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>112条</a>
+			<div class="layer" id="oneplace2" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic3">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_3_cr')" href="http://119.147.41.16/down?cid=EA29223DF4B94A1ADCC6636D42B7BD32C2DA1516&t=1&fmt=&usrinput=接口&dt=2044000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>DirectX End-User Runtimes 2007.10.25┊应用程序<font color="RED">接口</font> (API)┊多国语言完整版</a></td>
+			<td>64.1M</td>
+			<td>EXE</td>
+			<td>2008-04-15</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_3')" href="http://content.gougou.com/content?cid=EA29223DF4B94A1ADCC6636D42B7BD32C2DA1516&t=1&fmt=-&usrinput=接口&dt=2044000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>36条</a>
+			<div class="layer" id="oneplace3" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic4"><a class='open'  style='cursor:pointer' onclick="javascript:showdesc(4,0,'8BA2CBBDD1BE28BDFD7FD6CFAC68B7F5EEB934F1','',4,'8BA2CBBDD1BE28BDFD7FD6CFAC68B7F5EEB934F1','9&embody=0&query=%e6%8e%a5%e5%8f%a3')" ></a></td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_4_cr')" href="http://119.147.41.16/down?cid=8BA2CBBDD1BE28BDFD7FD6CFAC68B7F5EEB934F1&t=2&fmt=&usrinput=接口&dt=2016000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>DirectX End-User Runtimes 2007.04_官方简体中文特别版_应用程序<font color="RED">接口</font>(API)</a></td>
+			<td>48.9M</td>
+			<td>EXE</td>
+			<td>2007-06-18</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_4')" href="http://content.gougou.com/content?cid=8BA2CBBDD1BE28BDFD7FD6CFAC68B7F5EEB934F1&t=2&fmt=-&usrinput=接口&dt=2016000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>9条</a>
+			<div class="layer" id="oneplace4" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+			<tr id="desc4" style="display:none">
+				<td class="op">&nbsp;</td>
+				<td colspan="7" class="expend">
+					<p>这是本年度DirectX的最后一次更新了,期待DX10的早日来临,喜欢玩新游戏的朋友(例如FS X,DX最近几次更新都和它有关)和程序员们请尽快更新以取得最新的特性. </p>
+				</td>
+			</tr>		
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic5"><a class='open'  style='cursor:pointer' onclick="javascript:showdesc(5,0,'79FD48F44B74482A5466F130C40D6E17C3606CEE','',4,'79FD48F44B74482A5466F130C40D6E17C3606CEE','9&embody=0&query=%e6%8e%a5%e5%8f%a3')" ></a></td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_5_cr')" href="http://119.147.41.16/down?cid=79FD48F44B74482A5466F130C40D6E17C3606CEE&t=2&fmt=&usrinput=接口&dt=2010000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>摄像头拍照 6.0.0 绿色免费版 支持USB摄像头及所有支持DirectShow<font color="RED">接口</font>的摄影机拍照</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('79FD48F44B74482A5466F130C40D6E17C3606CEE','oneplace5','5',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共5个文件】</a></a></td>
+			<td>545K</td>
+			<td>RAR</td>
+			<td>2009-02-02</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_5')" href="http://content.gougou.com/content?cid=79FD48F44B74482A5466F130C40D6E17C3606CEE&t=2&fmt=-&usrinput=接口&dt=2010000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace5" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+			<tr id="desc5" style="display:none">
+				<td class="op">&nbsp;</td>
+				<td colspan="7" class="expend">
+					<p>   展示照片,需要给自己的聊友传照片,手机里的照片传不到网上,怎么办?    选择CamCap, 一切问题都轻松解决!    支持USB摄像头及所有WDM驱动的摄影机拍照,完美支持XP SP3与Vista; 照片存储为图像质量较好压缩比例较大的JPG格式。    此版本为试用版，照片有字幕;正式版本字幕将消失.    另：可根据您的需要增加功能。 质数科技    Prime Number Science Technology 作者长期从事一线软件开发工作、具有丰富的实践经验。 承接信息管理类软件开发、音视频系统开发、电子邮件收发系统开发、 网络通信系统开发、各种工具软件、数据统计/分析系统、 以及其他...</p>
+				</td>
+			</tr>		
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic6">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_6_cr')" href="http://119.147.41.16/down?cid=C9251FB54E1FBFEE5A2EA9C5A97B12C648158FEA&t=2&fmt=&usrinput=接口&dt=2008000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>企业那谁<font color="RED">接口</font>注册</a></td>
+			<td>10.6M</td>
+			<td>EXE</td>
+			<td>2010-03-22</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_6')" href="http://content.gougou.com/content?cid=C9251FB54E1FBFEE5A2EA9C5A97B12C648158FEA&t=2&fmt=-&usrinput=接口&dt=2008000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace6" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic7">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_7_cr')" href="http://119.147.41.16/down?cid=C1418B3209058C5C3A3EA9D017D14426D60F74D3&t=2&fmt=&usrinput=接口&dt=2006000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>Brother DCP-7010用于并行_USB<font color="RED">接口</font>的WHQL认证的打印机驱动程序和扫描仪驱动程序</a></td>
+			<td>4.51M</td>
+			<td>EXE</td>
+			<td>2007-12-22</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_7')" href="http://content.gougou.com/content?cid=C1418B3209058C5C3A3EA9D017D14426D60F74D3&t=2&fmt=-&usrinput=接口&dt=2006000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace7" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic8">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_8_cr')" href="http://119.147.41.16/down?cid=C66DAEC598B69E86DDF0525B47FFE68B98536765&t=4&fmt=&usrinput=接口&dt=2006000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>电脑维修视频教程包括19讲之主板的各个部件包括电阻电容.插槽和<font color="RED">接口</font>的介绍</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('C66DAEC598B69E86DDF0525B47FFE68B98536765','oneplace8','8',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共1个文件】</a></a></td>
+			<td>12.3M</td>
+			<td>RAR</td>
+			<td>2009-06-16</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_8')" href="http://content.gougou.com/content?cid=C66DAEC598B69E86DDF0525B47FFE68B98536765&t=4&fmt=-&usrinput=接口&dt=2006000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace8" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic9"><a class='open'  style='cursor:pointer' onclick="javascript:showdesc(9,0,'606B5638CE5E141F8F79AB8A48BA0F75A34275E3','',4,'606B5638CE5E141F8F79AB8A48BA0F75A34275E3','9&embody=0&query=%e6%8e%a5%e5%8f%a3')" ></a></td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_9_cr')" href="http://119.147.41.16/down?cid=606B5638CE5E141F8F79AB8A48BA0F75A34275E3&t=2&fmt=&usrinput=接口&dt=2006000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>DirectX SDK 9.27.1734(August 2009) 多国语言官方安装版 应用程序<font color="RED">接口</font>文件</a></td>
+			<td>553M</td>
+			<td>EXE</td>
+			<td>2009-09-10</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_9')" href="http://content.gougou.com/content?cid=606B5638CE5E141F8F79AB8A48BA0F75A34275E3&t=2&fmt=-&usrinput=接口&dt=2006000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=3&bp=1#com_anchor"  target='_blank'>4条</a>
+			<div class="layer" id="oneplace9" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+			<tr id="desc9" style="display:none">
+				<td class="op">&nbsp;</td>
+				<td colspan="7" class="expend">
+					<p>DirectX Runtimes包含了各种多媒体应用程序所需的影音API接口文件，尤其是可以更好地支持最新地3D游戏，重要性无需赘言，因此强烈推荐更新，以避免某些新程序无法运行。 DirectX SDK内不但有DirectX Runtimes，还包含了在C、C++、C#环境下创建DirectX兼容程序所需要的各种工具、程序、示例、文档、Runtime Debug文件等等。当然它是为开发人员准备的，普通用户可以忽略！</p>
+				</td>
+			</tr>		
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic10">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_10_cr')" href="http://119.147.41.16/down?cid=FDF17E9F0983799D80B0DB7F76C5A373997A2EB7&t=2&fmt=&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>混凝土排水管道基础及<font color="RED">接口</font>(04S516)</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('FDF17E9F0983799D80B0DB7F76C5A373997A2EB7','oneplace10','10',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共1个文件】</a></a></td>
+			<td>1.00M</td>
+			<td>RAR</td>
+			<td>2008-05-28</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_10')" href="http://content.gougou.com/content?cid=FDF17E9F0983799D80B0DB7F76C5A373997A2EB7&t=2&fmt=-&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace10" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic11">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_11_cr')" href="http://119.147.41.16/down?cid=B16AEB6F179D2A2546F11AD5B0264E66C0C81941&t=2&fmt=&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>高级配置与电源<font color="RED">接口</font>驱动程序 WIN XP 版 ACPI_XP_080630</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('B16AEB6F179D2A2546F11AD5B0264E66C0C81941','oneplace11','11',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共24个文件】</a></a></td>
+			<td>5.14M</td>
+			<td>ZIP</td>
+			<td>2008-07-25</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_11')" href="http://content.gougou.com/content?cid=B16AEB6F179D2A2546F11AD5B0264E66C0C81941&t=2&fmt=-&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace11" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic12">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_12_cr')" href="http://119.147.41.16/down?cid=B61066F2FCDDB1DCE6393BD55DC9F1A5D5AEA15E&t=2&fmt=&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>ACPI_XP_071011高级配置与电源<font color="RED">接口</font>驱动程序</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('B61066F2FCDDB1DCE6393BD55DC9F1A5D5AEA15E','oneplace12','12',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共11个文件】</a></a></td>
+			<td>4.49M</td>
+			<td>ZIP</td>
+			<td>2007-11-29</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_12')" href="http://content.gougou.com/content?cid=B61066F2FCDDB1DCE6393BD55DC9F1A5D5AEA15E&t=2&fmt=-&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace12" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic13"><a class='open'  style='cursor:pointer' onclick="javascript:showdesc(13,0,'9C8D3396F1F9222FE5A17418933E792A1097D723','vid',4,'9C8D3396F1F9222FE5A17418933E792A1097D723','0&embody=2&query=%e6%8e%a5%e5%8f%a3')" ></a></td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_13_cr')" href="http://119.147.41.16/down?cid=9C8D3396F1F9222FE5A17418933E792A1097D723&t=4&fmt=&usrinput=接口&dt=2004000&ps=1024_768&rt=608kbs&plt=1417&spd=0"   target='_blank'>Lesson 13BJ-EPM240学习板实验6——VGA<font color="RED">接口</font>实验</a></td>
+			<td>105M</td>
+			<td>WMV</td>
+			<td>2009-12-19</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_13')" href="http://content.gougou.com/content?cid=9C8D3396F1F9222FE5A17418933E792A1097D723&t=4&fmt=flv&usrinput=接口&dt=2004000&ps=1024_768&rt=608kbs&plt=1417&spd=0&movieq=3&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace13" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+			<tr id="desc13" style="display:none">
+				<td class="op">&nbsp;</td>
+				<td colspan="7" class="expend">
+					<p></p>
+				</td>
+			</tr>		
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic14">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_14_cr')" href="http://119.147.41.16/down?cid=BF8E92B15FB0AAFAB159571E9A0BF51F4411E1EE&t=4&fmt=&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>十二月 15 20.29 [第九章 <font color="RED">接口</font>]</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('BF8E92B15FB0AAFAB159571E9A0BF51F4411E1EE','oneplace14','14',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共277个文件】</a></a></td>
+			<td>30.4M</td>
+			<td>RAR</td>
+			<td>2009-01-23</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_14')" href="http://content.gougou.com/content?cid=BF8E92B15FB0AAFAB159571E9A0BF51F4411E1EE&t=4&fmt=-&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace14" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic15">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_15_cr')" href="http://119.147.41.16/down?cid=46B9C92624E8D3D7A02C49C865640B58438343B2&t=2&fmt=&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>全球短信免费发 V1.51┊利用国外免费短信网站的<font color="RED">接口</font>制作┊简体中文绿色免费版</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('46B9C92624E8D3D7A02C49C865640B58438343B2','oneplace15','15',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共4个文件】</a></a></td>
+			<td>1.30M</td>
+			<td>RAR</td>
+			<td>2010-04-05</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_15')" href="http://content.gougou.com/content?cid=46B9C92624E8D3D7A02C49C865640B58438343B2&t=2&fmt=-&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace15" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic16">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_16_cr')" href="http://119.147.41.16/down?cid=271E8BEA1FBF80CE12AF7CB67B3ECBA947890442&t=4&fmt=&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>传智播客JDBC_标准DataSource<font color="RED">接口</font>及数据源的总结介绍</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('271E8BEA1FBF80CE12AF7CB67B3ECBA947890442','oneplace16','16',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共3个文件】</a></a></td>
+			<td>9.76M</td>
+			<td>RAR</td>
+			<td>2009-01-17</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_16')" href="http://content.gougou.com/content?cid=271E8BEA1FBF80CE12AF7CB67B3ECBA947890442&t=4&fmt=-&usrinput=接口&dt=2004000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace16" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic17">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_17_cr')" href="http://119.147.41.16/down?cid=EBD02708082FB01247DEC2B69FD12F1354E8C25D&t=2&fmt=&usrinput=接口&dt=2002000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>花钱买来的lpc2103开发板的资料,里面有各种<font color="RED">接口</font>的驱动程序,很好用</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('EBD02708082FB01247DEC2B69FD12F1354E8C25D','oneplace17','17',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共646个文件】</a></a></td>
+			<td>2.23M</td>
+			<td>RAR</td>
+			<td>2009-11-23</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_17')" href="http://content.gougou.com/content?cid=EBD02708082FB01247DEC2B69FD12F1354E8C25D&t=2&fmt=-&usrinput=接口&dt=2002000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace17" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic18"><a class='open'  style='cursor:pointer' onclick="javascript:showdesc(18,0,'EBD09D15ED7CFFF6D039CC317B25F102003CCA7B','vid',4,'EBD09D15ED7CFFF6D039CC317B25F102003CCA7B','0&embody=12&query=%e6%8e%a5%e5%8f%a3')" ></a></td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_18_cr')" href="http://119.147.41.16/down?cid=EBD09D15ED7CFFF6D039CC317B25F102003CCA7B&t=4&fmt=&usrinput=接口&dt=2002000&ps=476_316&rt=960kbs&plt=137&spd=0"   target='_blank'><font color="RED">接口</font>类元件的焊接</a></td>
+			<td>16.2M</td>
+			<td>WMV</td>
+			<td>2009-04-16</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_18')" href="http://content.gougou.com/content?cid=EBD09D15ED7CFFF6D039CC317B25F102003CCA7B&t=4&fmt=flv&usrinput=接口&dt=2002000&ps=476_316&rt=960kbs&plt=137&spd=0&movieq=4&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace18" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+			<tr id="desc18" style="display:none">
+				<td class="op">&nbsp;</td>
+				<td colspan="7" class="expend">
+					<p></p>
+				</td>
+			</tr>		
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic19"><a class='open'  style='cursor:pointer' onclick="javascript:showdesc(19,0,'EC4C646F6AD8F6832C91E4D7770A77A5010C6607','',4,'EC4C646F6AD8F6832C91E4D7770A77A5010C6607','9&embody=0&query=%e6%8e%a5%e5%8f%a3')" ></a></td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_19_cr')" href="http://119.147.41.16/down?cid=EC4C646F6AD8F6832C91E4D7770A77A5010C6607&t=2&fmt=&usrinput=接口&dt=2002000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>3DSP创蕊PCI/miniPCI<font color="RED">接口</font>(Wlan+蓝牙)双无线网卡驱动For Win2000/XP/2003/Vista 2009年7月29日发布</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('EC4C646F6AD8F6832C91E4D7770A77A5010C6607','oneplace19','19',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共47个文件】</a></a></td>
+			<td>51.8M</td>
+			<td>ZIP</td>
+			<td>2009-08-10</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_19')" href="http://content.gougou.com/content?cid=EC4C646F6AD8F6832C91E4D7770A77A5010C6607&t=2&fmt=-&usrinput=接口&dt=2002000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace19" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+			<tr id="desc19" style="display:none">
+				<td class="op">&nbsp;</td>
+				<td colspan="7" class="expend">
+					<p>3DSP创蕊PCI/miniPCI接口(Wlan+蓝牙)双无线网卡驱动For Win2000/XP/2003/Vista（2009年7月29日发布）用于3DSP创蕊PCI/miniPCI接口双无线网卡的驱动 </p>
+				</td>
+			</tr>		
+		
+
+								
+
+		<tr>
+			<td class="op" id="pic20">&nbsp;</td>
+			<td class="name"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_t_20_cr')" href="http://119.147.41.16/down?cid=D4D4EFD8180AEB22584E3FA0CAC8B1B359E0E93C&t=2&fmt=&usrinput=接口&dt=2002000&ps=0_0&rt=0kbs&plt=0&spd=9"   target='_blank'>手机USB<font color="RED">接口</font>通用驱动程序</a>&nbsp;&nbsp;<a onmousedown="return tongji(this.innerHTML,this.href,'ar_zip_0')" onclick="getzipinfo('D4D4EFD8180AEB22584E3FA0CAC8B1B359E0E93C','oneplace20','20',this)" style="cursor:pointer;color:#536DBC;" ><img name='zip_img' style="position:relative;top:3px;" src="http://img.gougou.com/web/zip.png"></img>【共18个文件】</a></a></td>
+			<td>118K</td>
+			<td>RAR</td>
+			<td>2007-06-17</td>
+			<td><a onmousedown="return tongji(this.innerHTML,this.href,'ar_rs_p_20')" href="http://content.gougou.com/content?cid=D4D4EFD8180AEB22584E3FA0CAC8B1B359E0E93C&t=2&fmt=-&usrinput=接口&dt=2002000&ps=0_0&rt=0kbs&plt=0&spd=9&movieq=1&bp=1#com_anchor"  target='_blank'>0条</a>
+			<div class="layer" id="oneplace20" style="margin-left:-120px;margin-top:-78px;"></div></td>
+		</tr>
+		
+
+								
+
+
+
+
+</table>
+	<div class="main_tig_co" id="top_coo" style="display:none">
+		<div class="mtc_info">   
+		   <h6>酷功能提示：</h6>
+		   <a class="mtc_guanbi" style="cursor:pointer" onclick="close_coo('top_coo','')">关闭</a>
+		   <p><a onmousedown="return tongji(this.innerHTML,this.href,'ar_top_tip')" href="" target="_blank"><span>[详情]</span></a></p>
+		</div>
+	</div>
+	<script>positeTopCoo('')</script>
+	<ul class="ggPager">
+		<li>1</li> <li><a href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=1&page=2&id=10000001&f=0&r=0&ty=0&b=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=0&z=0">[2]</a></li> <li><a href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=1&page=3&id=10000001&f=0&r=0&ty=0&b=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=0&z=0">[3]</a></li> <li><a href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=1&page=4&id=10000001&f=0&r=0&ty=0&b=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=0&z=0">[4]</a></li> <li><a href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=1&page=5&id=10000001&f=0&r=0&ty=0&b=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=0&z=0">[5]</a></li> <li><a href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=1&page=6&id=10000001&f=0&r=0&ty=0&b=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=0&z=0">[6]</a></li> <li><a href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=1&page=7&id=10000001&f=0&r=0&ty=0&b=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=0&z=0">[7]</a></li> <li><a href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=1&page=8&id=10000001&f=0&r=0&ty=0&b=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=0&z=0">[8]</a></li> <li><a href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=1&page=9&id=10000001&f=0&r=0&ty=0&b=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=0&z=0">[9]</a></li> <li><a  href="http://www.gougou.com/search?search=%e6%8e%a5%e5%8f%a3&restype=-1&sortby=8&suffix=1&page=2&id=10000001&f=0&r=0&ty=0&b=0&pattern=0&al=&m=0&st=-1&imask=1&xmp=0&fl=0&w=0&z=0">下一页</a></li> 
+	</ul>
+	<p class="ggNote">欢迎你给狗狗搜索“<a href="http://helpbbs.xunlei.com/thread.php?fid=12" target="_blank">提意见和建议</a>”</p>
+	
+	
+</div>
+
+
+
+
+<div class="ggRelate">
+	<div class="ggCatalog" style="display:block">
+		<div>
+			<h4>相关搜索</h4>
+			<ul>		
+				
+					<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_bt_cl_0');"  href="http://www.gougou.com/search?search=%e8%ae%a1%e7%ae%97%e6%9c%ba%e6%8e%a5%e5%8f%a3%e9%80%9a%e8%af%86%e5%a4%a7%e5%85%a8&xmp=0&restype=-1&id=10000001">计算机接口通识大全</a></li>		
+				
+					<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_bt_cl_0');"  href="http://www.gougou.com/search?search=%e8%b4%ba%e5%96%9c%e5%a4%9a%e9%80%94%e5%be%84%e6%94%af%e4%bb%98%e6%8e%a5%e5%8f%a3&xmp=0&restype=-1&id=10000001">贺喜多途径支付接口</a></li>		
+				
+					<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_bt_cl_0');"  href="http://www.gougou.com/search?search=%e8%ae%a1%e7%ae%97%e6%9c%ba%e6%8e%a5%e5%8f%a3%e7%9f%a5%e8%af%86%e5%a4%a7%e5%85%a8&xmp=0&restype=-1&id=10000001">计算机接口知识大全</a></li>		
+				
+					<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_bt_cl_0');"  href="http://www.gougou.com/search?search=%e7%9f%ad%e4%bf%a1%e7%bd%91%e5%85%b3%e6%8e%a5%e5%8f%a3%e6%ba%90%e4%bb%a3%e7%a0%81&xmp=0&restype=-1&id=10000001">短信网关接口源代码</a></li>		
+				
+					<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_bt_cl_0');"  href="http://www.gougou.com/search?search=%e5%9f%ba%e4%ba%8e%e6%8e%a5%e5%8f%a3%e7%9a%84%e7%a8%8b%e5%ba%8f%e8%ae%be%e8%ae%a1&xmp=0&restype=-1&id=10000001">基于接口的程序设计</a></li>		
+				
+					<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_bt_cl_0');"  href="http://www.gougou.com/search?search=%e5%be%ae%e6%9c%ba%e5%8e%9f%e7%90%86%e4%b8%8e%e6%8e%a5%e5%8f%a3%e6%8a%80%e6%9c%af&xmp=0&restype=-1&id=10000001">微机原理与接口技术</a></li>		
+				
+					<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_bt_cl_0');"  href="http://www.gougou.com/search?search=%e9%87%91%e7%a8%8e%e5%bc%80%e7%a5%a8%e6%8e%a5%e5%8f%a3%e8%bd%af%e4%bb%b6&xmp=0&restype=-1&id=10000001">金税开票接口软件</a></li>		
+				
+					<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_bt_cl_0');"  href="http://www.gougou.com/search?search=%e7%94%b5%e8%84%91%e5%b8%b8%e7%94%a8%e6%8e%a5%e5%8f%a3%e8%b5%84%e6%96%99&xmp=0&restype=-1&id=10000001">电脑常用接口资料</a></li>		
+				
+					<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_bt_cl_0');"  href="http://www.gougou.com/search?search=%e8%b4%a2%e5%8a%a1%e6%8e%a5%e5%8f%a3%e7%a8%8b%e5%ba%8f%e6%ba%90%e7%a0%81&xmp=0&restype=-1&id=10000001">财务接口程序源码</a></li>		
+				
+					<li><a onmousedown="return tongji(this.innerHTML,this.href,'ar_bt_cl_0');"  href="http://www.gougou.com/search?search=%e5%be%ae%e6%9c%ba%e6%8e%a5%e5%8f%a3%e6%8a%80%e6%9c%af&xmp=0&restype=-1&id=10000001">微机接口技术</a></li>		
+				
+			</ul>
+		</div>
+	</div>
+	<iframe id=bd_relevant src="http://web.gougou.com/bc1?search=%e6%8e%a5%e5%8f%a3&id=10000001" scrolling=no frameborder=0 width="100%" height=0></iframe>
+	
+	<!--div class="ggMay" style="display:none">
+		<h4>您可能还喜欢...</h4>
+		<ul>
+			
+		</ul>
+	</div-->
+</div>
+
+<div class="ggAD" style="display:">
+	<div class="fttxt"><table border="0" cellspacing="1" cellpadding="0" class="ggADTable"><tr><td><a href=http://click.cm.sandai.net/UClick?gs=cmuclick&ad=10614202&position=47&location=http%3A%2F%2Fg.miaozhen.com%2Fr.gif%3F%255Ek%3D251%255Ep%3D1Wh0%255Eo%3Dhttp%3A%2F%2Fwww.emoney.cn%2Fdianjin%2Fhd%2Fssl2%2Fxunlei5.html%3Fozc%3D2%26ozs%3D316
+ target=_blank>不花一分钱，用L2炒股软件</a></td><td><a href=http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1269228542762&position=40&location=http%3A%2F%2Fnews.uuu9.com%2F2010%2F201004%2F130910.shtml
+ target=_blank>精美魔兽世界扑克牌</a></td><td><a href=http://click.cm.sandai.net/UClick?gs=cmuclick&ad=10630132&position=41&location=http%3A%2F%2Fwww.wl588588.cn%2Fad%2Fxunlei01%2F
+ target=_blank>重大利空：A股将暴跌！</a></td><td><a href=http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1269228542429&position=38&location=http%3A%2F%2Fnews.uuu9.com%2F2010%2F201004%2F130842.shtml
+ target=_blank>游戏原画东方女性美</a></td></tr><tr><td><a href=http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1268881796921&position=830&location=http%3A%2F%2Fwww.shopin.net%2Findex.html%3Fcid%3Dxunlei2
+ target=_blank>AD休闲全国唯一折扣店</a></td><td><a href=http://click.cm.sandai.net/UClick?gs=cmuclick&ad=10661029&position=831&location=http%3A%2F%2Freg.hw99.com%2Febook%2Fd21_20090726%2Fxunlei.html
+ target=_blank>狂喜：点击体验汉王电纸书</a></td><td><a href=http://click.cm.sandai.net/UClick?gs=cmuclick&ad=10659335&position=832&location=http%3A%2F%2Freg.hw99.com%2Fezhaike%2Fxunlei_20080905%2F
+ target=_blank>奇！资料一刷进笔中！</a></td><td><a href=http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1268881796970&position=833&location=http%3A%2F%2Fwww.wanhaosimu.com+
+ target=_blank>★★公开3只暴涨黑马股票★★</a></td></tr><tr><td></td><td></td><td></td><td></td></tr></table></div>
+	<div class="ggBanner" style="display:">
+	
+	<div class="content">
+		<a href="http://click.cm.sandai.net/UClick?gs=cmuclick&ad=1269500917930&position=576&location=http%3A%2F%2Fadvstat.xunlei.com%2FTClick%3Fcf%3D2%26gs%3Dxlyingxiong%26tt%3Dhttp%253A%252F%252Fyx.xunlei.com%252Fwelcome%252F%253Fadvid%253D0000400026xunleiyingxiong00064%2526gs%253Dxlyingxiong%26linkid%3Dxxx%26location%3Dhttp%253A%252F%252Fyx.xunlei.com%252Fwelcome%252F%253Fadvid%253D0000400026xunleiyingxiong00064%2526gs%253Dxlyingxiong%26rf%3D%26ul%3D
+" target="_blank" style="position:absolute; bottom:0; width:100%;height:86px;"><img src="http://img.gougou.com/image/comm/spacer.gif" width="100%" height="86" /></a>
+		<object type="application/x-shockwave-flash" data="http://biz5.sandai.net/portal/image/58/n1270017426758.swf" width="100%" height="86">
+		<param name="movie" value="http://biz5.sandai.net/portal/image/58/n1270017426758.swf " />
+		<param name="wmode" value="transparent">
+		</object>
+	</div>
+	
+	
+	</div>
+</div>
+<form id="alisumbit" style="display:none" target="_blank" action="http://114search.118114.cn/search_web.html">
+	<input name="id" type=text value="3035"/>
+	<input name="kw" type=text id="aliquery"/>
+	<input name="nid" type=text value="8mXE8dxvSOSlXoAO6DKWxg%3D%3D"/>
+	<input name="st" type=text value="web"/>
+	<input name="param3" type=text value="index"/>
+	<input name="param1" type=text value=""/>
+	<input name="param2" type=text value=""/>
+</form>
+<div class="ggFootSearch" style="margin-top:15px;">
+	<div class="searchInput">
+		<input type="text" id="s2" onkeydown='return key_event(event,2);' value="接口"/>
+		<button type="submit" onclick="check(2);">狗狗搜索</button>
+		<a href="http://helpbbs.xunlei.com/thread.php?fid=12" target="_blank">有奖反馈</a></div>
+</div>
+
+<div class="ggCopyright"><p class="ggNote2">以上内容系自动搜索生成的结果，排列及分类仅为方便使用，狗狗与内容的出处无关。使用前，请参阅“<a href="http://www.gougou.com/duty/copyright.html" target="_blank">著作权保护声明</a>”</p>&copy;2009 Gougou <a style="cursor:pointer;" id="homepage1" onclick="this.style.behavior='url(#default#homepage)';javascript:add_favorite(2);">把狗狗设为主页</a> | <a href="http://pstatic.xunlei.com/about/product/down_xl5.htm" target="_blank">下载迅雷</a> | <a href="http://www.gougou.com/duty/duty.html" target="_blank">免责声明</a> | <a href="http://www.sznet110.gov.cn/index.jsp" target="_blank">有害内容举报</a> | <a href="http://union.xunlei.com" target="_blank">迅雷联盟</a></div>
+<div id="foot"></div>
+
+<div class="tigs_rg" id="bt_coo" style="display:none;">
+   	<div class="tmain_pa">
+		<h6></h6>
+		<a class="tr_guanbi" style="cursor:pointer;" onclick="close_coo('bt_coo','')">关闭</a>
+		<p></p>
+		<p class="tr_ljty"><a onmousedown="return tongji(this.innerHTML,this.href,'ar_btm_tip')" href="" target="_blank"></a></p>
+	</div>
+</div>
+<script>
+	$E("bt_coo").style.top=document.documentElement.scrollTop+document.documentElement.clientHeight-$E("bt_coo").offsetHeight+'px';
+	var now=new Date();
+	var losetime = now.getTime();
+	if(getCookie("bt_coo")>=losetime)
+		$E("bt_coo").style.display="none";
+	if($E("bt_coo").style.display!="none")//发PV
+	{
+		document.write("<img src='http://s.gougou.com/st.gif?query=pv&pattern=472&url=http://www.gougou.com' style='display:none'>");
+	}
+	setTimeout(function(){$E("bt_coo").style.display="none";},15000);
+</script>
+<iframe id="thisxmp" style="display:none;" width=0 height=0 ></iframe>
+</body>
+<script type="text/javascript">
+var isFF=(navigator.userAgent.toLowerCase().indexOf("firefox")!=-1);
+function getPeerid()
+{
+	var peeridobj;
+	var peerId;
+	if( isFF )
+		 peerId = 100;
+  else{
+		try
+		{peeridobj = new ActiveXObject("MediaAddin.MediaComm");}
+		catch (e){}
+		if (peeridobj != null && typeof(peeridobj) != "undefined"){peerId = peeridobj.peerid;}else{peerId=101;}
+	}
+	return peerId;
+}
+var g_peerid = getPeerid();
+
+var m = new Date();
+var p = window.document.location.href;
+var s_key = "%e6%8e%a5%e5%8f%a3";
+var s_params = "&e=0&u=95&t=12153&pattern=0&type=-1";
+if(isUndef(g_hasgvod)||g_hasgvod=='')
+{var g_hasgvod='0';}
+document.write("<img src= http://s.gougou.com/st.gif?query=" + s_key +"&pattern="+ g_hasgvod + "&url="+ escape(p) + s_params + "&pid=" + g_peerid + "&m=" + m + " width='0' height='0' style=display:none>");	
+
+</script>
+<script language="JavaScript" type="text/javascript" src="http://www.gougou.com/js/input-ac.js"></script>
+<script>
+setupAC(document.getElementById("s1"),document.getElementById("btn"));
+window.onscroll=function(){
+	$E("bt_coo").style.top=document.documentElement.scrollTop+document.documentElement.clientHeight-$E("bt_coo").offsetHeight+'px';
+	//alert($E("bt_coo").style.top);
+}
+</script>
+<script src="http://xmp.kankan.xunlei.com/ggtj.html"></script>
+</html>

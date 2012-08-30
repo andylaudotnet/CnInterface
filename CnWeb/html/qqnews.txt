@@ -1,0 +1,2017 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>腾讯首页</title>
+<script src="http://mat1.qq.com/js/speed_v1.9-min.js"></script><!--[if !IE]>|xGv00|8415e91ece979a7cbf039b2d7ebd6c28<![endif]-->
+<style>
+body{margin:0;padding:0 0 12px 0;font-size:12px;line-height:22px;font-family:"宋体","Arial Narrow";background:#fff;}form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}input,select{font-size:12px;line-height:16px;}img{border:0;}ul,li{list-style-type:none;}
+.tc{text-align:center;}.tl{text-align:left;}.tr{text-align:right;}
+.dis{display:block;}.undis{display:none;}
+.fl{float:left;}.fr{float:right;}.cl{clear:both;}.fb{font-weight:bold;}.fnb{font-weight:200;margin-left:-1px;}
+.fc30{color:#303030;font-family:"宋体","Arial Narrow";}.fchot{color:#ff0700}.f11{font-size:12px;font-family:tahoma;}
+h3{font-size:14px;}
+h4{font-size:14px;font-weight:normal;text-align:center;cursor:pointer;overflow:hidden;}
+h4 a{width:100%;height:100%;display:block;}
+a{color:#00007F;text-decoration:none;}
+a:hover{color:#bd0a01;text-decoration:underline;}
+a.lcblue{color:#0F479C;}.lchot,a.lchot{color:#bd0a01;}.black,a.black{color:#000;}
+.hr_6,.hr_10{font-size:1px;line-height:1px;clear:both;}
+.hr_6{height:6px;}.hr_10{height:10px;}
+/*迷你导航*/
+#miniNav{height:22px;border-bottom:1px solid #e6e6e6;background:#f8f8f8;color:#a1a0a0;text-align:center;line-height:14px;}
+#miniNav img{margin-bottom:4px;border:0;}
+#miniNav div{width:894px;margin:0 auto;font-size:12px;padding-top:4px; font-family:"宋体","Arial Narrow";}
+#miniNav span{display:block;float:right;}
+#miniNav a{color:#a1a0a0;margin:0 3px;font-size:12px;text-decoration:none;padding:1px 3px 1px 3px;display:block;float:right;}
+#miniNav a:hover{color:#fff;background:#929292;}
+#miniNav .qq{font-family:Verdana;margin-top:-2px;}
+/*顶部910导航*/
+#TextNav a{margin:2px 0;padding:2px 3px 0px 3px;font-size:12px;font-family:"宋体","Arial Narrow";}
+#TextNav a.lcnew{background:url(http://img1.qq.com/news/pics/9468/9468357.gif) no-repeat 31px -37px;}
+#TextNav a:hover{color:#fff;text-decoration:none;}
+#TextNav a.lcnew:hover{color:#fff;background-image:url(http://img1.qq.com/news/pics/9468/9468357.gif);background-position:31px -37px; background-repeat:no-repeat;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari 3.0 and Opera 9 rules here */
+#TextNav *{font-family:STSong;}
+}
+/*世博板块*/
+.expo_nav{width:910px;height:55px; margin:0 auto;}
+.expo_nav div{ float:left;padding-top:7px; font-size:12px;line-height:22px;}
+.expo_nav .b{margin-right:3px; font-weight:bold;}
+.expo_nav .line{width:18px;height:55px;padding:0; background:url(http://mat1.qq.com/www/iskin/skin4/expo_line.gif) 9px -1px no-repeat;}
+.expo_logo{width:126px;height:50px;padding-top:5px; text-align:center;}
+/*soso*/
+#Soso{width:912px;height:78px;margin:0 auto;}
+#Soso_Left{padding:5px 0 0 25px;width:225px;margin:0 10px 0 0;float:left;}
+#Wealth{line-height:18px;height:54px;padding-bottom:7px;margin-top:-9px;margin-left:-5px;cursor:pointer;width:170px;}
+#Wealth *{line-height:18px;}
+#Wealth h6{font-size:13px;padding-top:20px;}
+#Wealth span.img{float:left;display:block;padding-top:8px}
+#Wealth p{float:left;margin:0;padding:0;}
+#Wealth div{font-size:12px;font-family:tahoma,宋体;width:100px;}
+/*皮肤列表*/
+#Skin div {float:left}
+#SkinList {width:56px;height:11px;overflow:hidden;display:block;}
+#Skin li{float:left;width:14px;height:11px;cursor:pointer;}
+
+#def div,#s1 div,#s2 div,#s3 div,#s4 div,#s5 div,#s6 div,#s7 div,#s8 div,#s9 div,#sar div
+{background-image:url(http://mat1.gtimg.com/www/iskin09/skinbt.png);background-repeat:no-repeat;}
+#def div{background-position:0 0;}
+#s1 div{background-position:0 -11px;}
+#s2 div{background-position:0 -22px;}
+#s3 div{background-position:0 -33px;}
+#s4 div{background-position:0 -44px;}
+#s5 div{background-position:0 -55px;}
+#s6 div{background-position:0 -66px;}
+#s7 div{background-position:0 -77px;}
+#s8 div{background-position:0 -88px;}
+#s9 div{background-position:0 -99px;}
+#sar{cursor:pointer;}
+#sar div{background-position:-10px -110px;}
+#sar div.s{background-position:0 -110px;}
+
+/*soso输入框区域*/
+#SosoArea{width:470px;padding:9px 0 0 0;float:left;}
+#sosoFod{padding-left:14px;height:25px;}
+#sosoFod h3{float:left;width:37px;height:26px;font-size:12px;font-weight:200;padding-left:10px;cursor:pointer;}
+#sosoFod #sosoqzone {width:50px;padding-left:3px;}
+#sosoFod #sosoqzone div{margin-top:-1px;font-size:12px;}
+#SosoArea input.w{width:392px;height:22px;border:0;padding:4px 3px 0 3px;margin-right:6px;line-height:18px;font-size:14px;}
+#SosoArea input.bot{border:0;width:51px;height:27px;padding-top:2px;}
+#SosoArea table{line-height:17px;}
+#SosoArea table a{color:#fff;}
+#SosoAd{float:left;}
+#sosoLogo {position:absolute;margin:26px 0 0 -80px;}
+.more{position:absolute;background:#fff;margin:-2px 0 0 -5px!important;margin:16px 0 0 -46px;z-index:10000;border:1px solid #B2D0EA;}
+.more a{width:55px;display:block;padding-left:5px;}
+.more ul{list-style-type:none;margin:0;padding:0;}
+.more li{line-height:24px;list-style-type:none;margin:0;padding:0;text-align:left;}
+.more li a,.more li a:visited{color:#3B5995;text-decoration:none;font-size:12px;}
+.more li a:hover{background:#D6E9F8;color:#3B5995;text-decoration:none;font-size:12px;}
+/*内容部分通用class*/
+.cArea{width:910px;margin:0 auto;clear:both;z-index:1;}
+.txArea{width:714px;float:left;}
+.resArea{width:296px;float:left;}
+.proArea{width:409px;float:right;}
+.adArea{width:186px;float:right}
+.adMArea{clear:both;padding-top:10px;}
+.imgArea{height:108px;background:url(http://mat1.gtimg.com/www/iskin09/s01/skin1v3.png) 0 107px no-repeat;}
+.imgRArea,.imgRArea1{float:left;padding-top:4px;}
+.imgLAreapic{float:left; width:128px;height:100px;padding-top:2px;text-align:center;}
+.imgLAreapic img{width:115px;height:70px;border:#dddddd 1px solid;margin-bottom:2px;}
+.imgLAreapic a.t{display:block;width:117px;height:21px;margin:0 auto;font-size:12px;color:#333;line-height:20px; background:#f1f1f1;}
+.textArea{padding:4px 0 0 0;line-height:23px;clear:both;}
+.res_b,.pro_b{height:2px;}
+.dotline{font:0;line-height:0;height:1px;background:url(http://mat1.gtimg.com/www/iskin09/s01/skin1v3.png) top repeat-x;clear:both;}
+.vico{padding-right:21px;background:url(http://mat1.gtimg.com/www/iskin09/vico1.png) right center no-repeat;}
+.lico_Sports{padding-left:28px;background:url(http://mat1.gtimg.com/www/iskin09/liveico.png) left 2px no-repeat;}
+/*产品导航区域*/
+#proNav{width:286px;height:154px;font-size:12px;line-height:16px;overflow:hidden;padding:4px 0 0 10px;margin-bottom:10px;}
+#proNav div{clear:both;height:22px;}
+#proNav span{display:block;float:left;padding:3px 4px 0 0;font-weight:bold;}
+#proNav a{text-decoration:none;padding:2px 3px 0 3px;display:block; float:left;height:17px;}
+#proNav a.m{text-decoration:underline;margin-left:2px;}
+#proNav a.m:hover{color:#fff;text-decoration:underline;}
+#proNav a.qq{font-family:Tahoma,宋体;text-decoration:none;margin-top:-1px;}
+#proNav a.lchot{color:#bd0a01;}
+#proNav a.wap{text-decoration:none;padding:2px 1px 0 2px;display:block; float:left;height:17px;}
+/*中间广告区域*/
+#proAd{padding-bottom:4px;height:114px;width:409px;overflow:visible;}
+#proAdFlash {position:absolute;width:409px;z-index:500;}
+/*中间链接区域*/
+#proArea_banner{height:40px;margin-bottom:10px;padding-left:16px;font-size:14px;line-height:40px;color:#3d464b;}
+#proArea_banner .tahoma{font-family:Tahoma;}
+
+/*内容链接颜色控制*/
+#NewsInfo a.lchot,#sportsInfo a.lchot,#financeInfo a.lchot,#techInfo a.lchot,#carInfo a.lchot,#eduInfo a.lchot,
+#vfoucsInfo a.lchot,#entInfo a.lchot,#gameInfo a.lchot,#comicInfo a.lchot,#bookInfo a.lchot,#ladyInfo a.lchot,#blogInfo a.lchot,#comicInfo a.lchot{color:#bd0a01;}
+#NewsInfo a.black,#sportsInfo a.black,#financeInfo a.black,#techInfo a.black,#carInfo a.black,#eduInfo a.black,
+#vfoucsInfo a.black,#entInfo a.black,#gameInfo a.black,#comicInfo a.black,#bookInfo a.black,#ladyInfo a.black,#blogInfo a.black,#comicInfo a.black{color:#000;}
+#NewsInfo a.black:hover,#sportsInfo a.black:hover,#financeInfo a.black:hover,#techInfo a.black:hover,#carInfo a.black:hover,#eduInfo a.black:hover,
+#vfoucsInfo a.black:hover,#entInfo a.black:hover,#gameInfo a.black:hover,#comicInfo a.black:hover,#bookInfo a.black:hover,#ladyInfo a.black:hover,#blogInfo a.black:hover,#comicInfo a.black:hover{color:#000;}
+/*左边频道栏目*/
+#News,#finance,#car,#tech,#edu,#kid,#astro{height:27px;}
+#NewsInfo,#financeInfo,#carInfo,#techInfo,#eduInfo,#kidInfo,#astroInfo{padding:6px 4px 0 2px;color:#BAB9B9;font-size:12px;line-height:23px;}
+#NewsInfo{height:586px;padding-top:3px;}
+#NewsInfo h3 a:hover{color:#bd0a01;text-decoration:underline;}
+#financeInfo{height:565px;}
+#carInfo,#techInfo,#eduInfo,#kidInfo{height:260px;}
+#astroInfo{height:212px;}
+
+#NewsInfo .imgRArea li,#NewsInfo .imgRArea1 li,#financeInfo .imgRArea li,#carInfo .imgRArea li,#techInfo .imgRArea li,#eduInfo .imgRArea li,#kidInfo .imgRArea li,#astroInfo .imgRArea li{padding-left:12px;font-size:14px;background:url(http://mat1.gtimg.com/www/iskin09/s01/skin1v3.png) -396px -262px no-repeat;}
+
+#NewsInfo a,#financeInfo .textArea a,#carInfo .textArea a,#techInfo .textArea a,#eduInfo .textArea a,#kidInfo .textArea a,#astroInfo .textArea a{font-size:14px;}
+
+/*新闻中心*/
+#News h4{float:left;width:83px;height:20px;line-height:20px;margin-right:1px;padding-top:3px;}
+#News h4.s,#News h4.s1{font-weight:bold;}
+#News span h4 {width:82px;padding-left:4px}
+#News span h4.s {width:86px;}
+#News span h4.s1 {width:102px;}
+#News span h4.s0 {width:102px;}
+#News span h4 a{display:inline;}
+/*地方新闻定制页卡*/
+#tailor div{float:left;margin-left:5px;width:auto; cursor:pointer;}
+#tailor div.i{padding-top:3px;width:17px;height:12px;}
+#tailor div.io{padding-top:3px;width:17px;height:12px;}
+#tailorInfo .textArea{line-height:23px;}
+#tailorInfo .imgRArea1 {width:276px;text-align:right;}
+#tailorInfo .imgRArea1 li{display:inline;background:url(http://img1.qq.com/news/pics/9468/9468357.gif) no-repeat -26px 7px;}
+#tailorInfo .imgLAreapic a.t{display:block;width:117px;height:21px;margin:0 auto;font-size:12px;color:#333;line-height:20px; background:#f1f1f1;}
+.height1{height:9px;background:url(http://mat1.gtimg.com/www/iskin09/s01/skin1v3.png) 0 2px repeat-x;clear:both;}
+
+/*财经证券*汽车房产*科技旅游*教育出国*儿童育儿*星座婚恋健康*世界杯*/
+#finance h4,#car h4,#tech h4,#edu h4,#kid h4,#astro h4,#sports h4{float:left;width:73px;height:20px;margin-right:1px;padding-top:3px;font-weight:200;line-height:20px;text-align:center;overflow:hidden;}
+#finance h4.s,#car h4.s,#tech h4.s,#edu h4.s,#kid h4.s,#astro h4.s,#sports h4.s{font-weight:bold;}
+
+#map{position:absolute;margin:0 0 0 -2px;border-bottom:1px solid #8DC0E8;height:280px;z-index:999}
+
+/*中间一栏*/
+#today,#vfoucs,#video,
+#sports,#ent,#lady,#blog,#book,#game,#comic{width:385px;height:21px;padding:2px 12px 0 12px;font-size:14px;font-weight:bold;overflow:hidden;}
+#expo{width:385px;height:21px;padding:2px 12px 0 12px;font-size:14px;font-weight:bold;}
+
+#vfoucs .fr,#video .fr,#sports .fr,
+#ent .fr,#lady .fr,#blog .fr,#book .fr,#game .fr,#comic .fr,#expo .fr,#expo .fr{font-size:12px;font-weight:normal;}
+
+#todayInfo,#vfoucsInfo,#videoInfo,#sportsInfo,#entInfo,#ladyInfo,#blogInfo,#bookInfo,#gameInfo,#comicInfo,#expoInfo{width:387px;padding:10px 14px 0 6px;font-size:14px;line-height:24px;color:#BAB9B9;}
+
+#todayInfo .textArea,#vfoucsInfo .textArea,#videoInfo .textArea,#sportsInfo .textArea,#entInfo .textArea,#ladyInfo .textArea,#blogInfo .textArea,#bookInfo .textArea,#gameInfo .textArea,#comicInfo .textArea{line-height:24px;margin-top:4px;padding:0; overflow:hidden;}
+
+#todayInfo .textArea,#videoInfo .textArea{height:72px;}
+#videoInfo .textArea{clear:none;height:auto;}
+#videoInfo .textArea .fr{float:left;}
+#videoInfo .videoWrap{*zoom:1;position:relative;padding-top:4px;}
+#videoInfo .videoWrap:after{content:"";display:block;clear:both;}
+#videoInfo .videoWrap .fr{float:left;width:260px;}
+#videoInfo .textArea .fr_expo{width:100%;}
+#videoInfo .vedioTextb{float:left;font-size:14px;line-height:24px;}
+#vfoucsInfo .textArea{height:96px;margin:0;}
+#sportsInfo .textArea,#entInfo .textArea,#ladyInfo .textArea,#blogInfo .textArea,#bookInfo .textArea,#gameInfo .textArea{height:144px;}
+#comicInfo .textArea{height:96px;}
+
+#vfoucsInfo .fl,#gameInfo .fl,
+#vfoucsInfo .fr,#gameInfo .fr{width:190px;}
+
+#todayInfo{height:104px;padding-top:6px;}
+#vfoucsInfo{height:105px;padding-top:6px;}
+#videoInfo{height:151px;padding-top:3px;position:relative;overflow:hidden;}
+#sportsInfo,#entInfo,#ladyInfo,#blogInfo,#bookInfo,#gameInfo{height:260px;}
+#comicInfo{height:212px;}
+
+/*今日话题*/
+#today .fr{font-size:12px; font-weight:normal;}
+#todayInfo h1{padding-top:2px;font-size:14px;font-weight:bold; text-align:center;}
+#todayInfo h1 a:hover{color:#bd0a01;}
+#todayInfo h1 a.lchot{color:#bd0a01;}
+
+/*视觉焦点*/
+#vfoucs{width:385px;height:21px;padding:2px 12px 0 12px;font-weight:bold;overflow:hidden;}
+#vfoucs .fr{font-size:12px; font-weight:normal;}
+#vfoucsInfo .imgArea{width:388px;height:100px;padding:0 0 8px 5px;text-align:center;background:none;}
+
+/*影视视频*/
+#video{width:385px;height:21px;padding:2px 12px 0 12px;font-weight:bold;overflow:hidden;}
+#video .fr{font-size:12px; font-weight:normal;}
+#video .fr a{display:block;width:198px;overflow:hidden;text-align:right;}
+#video .fr a.lchot{color:#bd0a01;}
+#videoInfo .pop{padding:3px 9px 2px 9px;_padding-bottom:0px;font-size:12px; text-align:center;background:url(http://mat1.gtimg.com/www/iskin09/nvbg1.png) -20px 0 no-repeat;}
+#videoInfo .pop a:hover{ text-decoration:none;}
+#videoInfo .imgArea{height:110px;padding:5px 0 0 5px;text-align:center; background:none;position:absolute;right:12px;top:5px;}
+#videoInfo .imgLAreapic{float:right; width:125px;height:110px;padding-top:5px;text-align:center;}
+#videoInfo .imgLAreapic img{width:115px;height:70px;margin-bottom:2px;padding:2px 2px 14px 2px; background:url(http://mat1.gtimg.com/www/iskin09/nvbg1.png) -20px -30px no-repeat;border:none;}
+#videoInfo .imgLAreapic a.t{display:block;width:117px;height:21px;margin:0 auto;font-size:12px;color:#333;line-height:20px;}
+
+/*财经1210*/
+.modstocknum {height:90px;margin:10px 0 6px 0;}
+#stocknum {position: absolute; margin-left:130px;width:153px;height:17px;background:url(http://mat1.gtimg.com/www/iskin09/stockcard.png) 1px 0 no-repeat;}
+#stocknum div{float:right;width:50px;height:14px;margin-left:1px;padding-top:2px;border-bottom:#ddd 1px solid;line-height:14px;color:#5f5f5f;background:url(http://mat1.gtimg.com/www/iskin09/stockcard.png) -51px 0 no-repeat;text-align:center; cursor:pointer;}
+#stocknum .s{color:#bd0a01;border-bottom:#fff 1px solid;background:url(http://mat1.gtimg.com/www/iskin09/stockcard.png) 0 0 no-repeat;}
+#stocknum div a{color:#5f5f5f;}
+#stocknum .s a{color:#bd0a01;}
+#stocknumInfo .leftz{float:left;width:117px;height:87px;padding-left:5px;}
+#stocknumInfo .leftz img{ border:#ddd 1px solid;}
+#stocknumInfo .rightz{float:right;width:156px;height:68px;padding-top:22px;line-height:22px;color:#1f376d;}
+#stocknumInfo .red{color:#bd0a01;padding-right:4px;}
+#stocknumInfo .black{color:#000;padding-right:4px;}
+#stocknumInfo .green{color:#093;padding-right:4px;}
+#stocknumInfo .rightz a{font-size:12px;}
+#stocknumInfo input.w{display:block; float:left;width:108px;padding:1px;line-height:15px;color:#5f5f5f; border:#7f9db9 1px solid;}
+#stocknumInfo input.i{display:block; float:right;width:34px;height:18px;padding:1px;line-height:15px;border:#c2c2c0 1px solid; background:#fff;cursor:pointer;}
+#container-GP input.w{display:block; float:left;width:108px;padding:1px;line-height:15px;color:#5f5f5f; border:#7f9db9 1px solid;}
+#container-GP input.i{display:block; float:right;width:34px;height:18px;padding:1px;line-height:15px;border:#c2c2c0 1px solid; background:#fff;cursor:pointer;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari 3.0 and Opera 9 rules here */
+#stocknumInfo .i{margin-top:2px;line-height:13px;}
+#container-GP input.i{margin-top:2px;line-height:13px;}
+
+}
+
+/*体育世界杯*/
+#sports{width:397px;height:27px;padding:0 12px 0 0;}
+#sportsInfo{padding-top:6px;}
+
+/*广告区域*/
+#richAd{margin-bottom:10px;}
+/*广告区域标题*/
+.adArea h5{font-size:12px;font-weight:bold;margin:-8px 6px 4px 0;line-height:20px;border-bottom:#d4d4d4 1px solid;}
+.adArea a.lchot{color:#bd0a01;}
+#adAreaAInfo,#adAreaBInfo,#adAreaC,#adAreaD,#adAreaE,#adAreaP,#adAreaDi,#adAreaS{padding:10px 8px 10px 14px;font-size:12px; font-family:"宋体","Arial Narrow";}
+.adAreaA_b,.adAreaB_b,.adAreaA_t{height:2px;}
+.adAreaB_b{margin-bottom:10px}
+
+/*广告页卡*教育培训等*/
+#adAreaA{width:186px;height:23px;}
+#adAreaA h3{float:right;margin-right:1px;padding-top:2px;line-height:21px;font-weight:normal;font-size:12px;text-align:center;cursor:pointer;}
+#adAreaA span h3{margin:0;}
+#adAreaA h3{width:46px;}
+#adAreaA h3.s{width:45px;font-weight:bold;}
+#adAreaAInfo{height:435px;padding:4px 6px 9px 14px;line-height:22px;}
+#adAreaAInfo a{font-size:12px;font-family:"宋体","Arial Narrow";}
+#adAreaAInfo .midtext{padding-right:8px;}
+#adAreaAInfo .midtext .fl{font-weight:bold;color:#5f5f5f;font-size:12px;margin-left:-5px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari 3.0 and Opera 9 rules here */
+#adAreaAInfo{line-height:21px;}
+
+}
+/*新硬广*/
+#adAreaBbox{width:186px;height:230px;margin-bottom:8px;}
+/*重点推荐*//*时尚拍品*//*商讯动态*//*热门搜索*/
+#adAreaC,#adAreaE,#adAreaP,#adAreaDi,#adAreaS{height:271px;}
+#adAreaC h5,#adAreaD h5,#adAreaE h5,#adAreaP h5,#adAreaDi h5,#adAreaS h5{margin-top:-5px;}
+
+#adAreaP .imgArea,#adAreaDi .imgArea{height:76px;background:url(http://mat1.gtimg.com/www/iskin09/s01/skin1v3.png) 0 75px no-repeat;}
+#adAreaP .imgLAreapic,#adAreaDi .imgLAreapic{float:left; width:68px;height:76px;padding-top:2px;text-align:left;}
+#adAreaP .imgLAreapic img,#adAreaDi .imgLAreapic img{width:60px;height:60px;border:#dddddd 1px solid;}
+#adAreaP .imgRArea,#adAreaDi .imgRArea{float:left;padding-top:4px;line-height:20px;}
+#adAreaP .textArea,#adAreaDi .textArea{color:#bab9b9;}
+
+#adAreaS .textArea{line-height:23px;}
+#adAreaS h5{padding-left:12px;background:url(http://mat1.gtimg.com/www/iskin09/s01/skin1v3.png) -400px -135px no-repeat;}
+
+/*腾讯动态*/
+#adAreaD{height:230px;padding:6px 10px 7px 14px;}
+#adAreaD li{background:url(http://mat1.gtimg.com/www/iskin09/s01/skin1v3.png) -400px -312px no-repeat;padding:0 0 0 8px;font-size:12px;font-family:"宋体","Arial Narrow";}
+/*页脚版权*/
+.footernew {width:910px;height:100px;color:#515151;text-align:center;font-size:12px;line-height:24px;margin:12px auto 0 auto;overflow:hidden;}
+.footheight{height:60px;}
+.footernew a {color:#515151;text-decoration:none;}
+.footernew a.lchot {color:#bd0a01;}
+.footernew a:hover {color:#bd0a01;text-decoration:underline;}
+.footernew a:visited {color:#515151;}
+.footernew div{width:546px; margin:0 auto;}
+.footernew p{float:left;width:120px;height:50px;border:1px solid #d2d2d2;padding:0;line-height:20px; margin:6px;font-size:12px;}
+.footernew .fl{float:left;padding:3px;}
+.footernew .fr{float:right; width:72px;padding:5px 3px 0 3px;}
+
+
+/*世博*/
+#expoInfo .imgLAreapic{float:right;}
+#expoInfo .imgRArea{width:260px;padding-top:0px;margin-top:-2px;}
+#expoInfo .imgLAreapic{width:126px;padding-top:2px;}
+#expoInfo .imgArea{background:none;height:103px;}
+#expo .logo_expo{background:url(http://mat1.gtimg.com/www/iskin09/expo.png) no-repeat;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mat1.gtimg.com/www/iskin09/expo.png',sizingMethod='scale');display:-moz-inline-stack;display:inline-block;vertical-align:-3px;width:31px;height:31px;float:left;margin-top:-10px;position:relative;}
+
+
+</style>
+<!--[if ie 6]>
+<style>
+div,p,li{overflow:hidden;}
+#sosoFod{margin-bottom:0;}
+#SosoArea input.w{background-attachment:fixed;}
+#tailor div{float:left;margin-left:3px}
+#tailorInfo .imgRArea1{padding-left:0;}
+#tailorInfo .textArea{line-height:24px;}
+#proArea_banner img{margin-bottom:0;}
+#proArea_banner {height:40px;margin-bottom:10px;padding:2px 0 0 16px;line-height:40px;}
+#NewsInfo,#financeInfo,#carInfo,#techInfo,#eduInfo,#kidInfo,#astroInfo{line-height:24px;}
+.textArea{line-height:24px;}
+</style>
+<![endif]-->
+<!--[if ie 7]>
+<style>
+div,p,li{overflow:hidden;}
+#sosoFod{margin-bottom:0;}
+#NewsPat{height:1px;line-height:0;margin-bottom:-6px;}
+.cl{height:0;line-height:0;width:0}
+#tailorInfo .imgLAreapic img{margin-bottom:4px;}
+#tailorInfo .imgRArea1{padding-left:0;}
+#tailorInfo .textArea{line-height:24px;}
+.more{position:relative;width:58px;}
+#NewsInfo,#financeInfo,#carInfo,#techInfo,#eduInfo,#kidInfo,#astroInfo{line-height:24px;}
+.textArea{line-height:24px;}
+</style>
+<![endif]-->
+<link id="cssChange" href="http://www.qq.com/iskin09/s01/s1v1.0.5.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+//<![CDATA[
+
+var MiniSite=new Object();
+MiniSite.Browser={
+	ie:/msie/.test(window.navigator.userAgent.toLowerCase()),
+	moz:/gecko/.test(window.navigator.userAgent.toLowerCase()),
+	opera:/opera/.test(window.navigator.userAgent.toLowerCase()),
+	safari:/safari/.test(window.navigator.userAgent.toLowerCase())
+};
+MiniSite.$=function(s){
+	return(typeof s=='object')?s:document.getElementById(s);
+};
+MiniSite.JsLoader={
+	load:function(sUrl,fCallback){
+		var _script=document.createElement('script');
+		_script.setAttribute('charset','gb2312');
+		_script.setAttribute('type','text/javascript');
+		_script.setAttribute('src',sUrl);
+		document.getElementsByTagName('head')[0].appendChild(_script);
+		if(MiniSite.Browser.ie){
+			_script.onreadystatechange=function(){
+				if(this.readyState=='loaded'||this.readyStaate=='complete'){
+					fCallback();
+				}
+			};
+		}else if(MiniSite.Browser.moz){
+			_script.onload=function(){
+				fCallback();
+			};
+		}else{
+			fCallback();
+		}
+	}
+};
+MiniSite.Cookie={
+	set:function(name,value,expires,path,domain){
+		if(typeof expires=="undefined"){
+			expires=new Date(new Date().getTime()+24*3600*1000);
+		}
+		document.cookie=name+"="+escape(value)+((expires)?"; expires="+expires.toGMTString():"")+((path)?"; path="+path:"; path=/")+((domain)?";domain="+domain:"");
+	},
+	get:function(name){
+		var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+		if(arr!=null){
+			return unescape(arr[2]);
+		}
+		return null;
+	},
+	clear:function(name,path,domain){
+		if(this.get(name)){
+			document.cookie=name+"="+((path)?"; path="+path:"; path=/")+((domain)?"; domain="+domain:"")+";expires=Fri, 02-Jan-1970 00:00:00 GMT";
+		}
+	}
+};
+MiniSite.Home={
+	defaultprovince:4,
+	timelapse:null,
+	Provinc:{"北京市":4,"上海市":28,"天津市":5,"重庆市":19,"香港":32,"澳门":33,"台湾省":31,"云南省":20,"内蒙古":9,"吉林省":2,"四川省":18,"宁夏":14,"安徽省":26,"山东省":8,"山西省":15,"广东省":0,"广西":22,"新疆":10,"江苏省":17,"江西省":27,"河北省":6,"河南省":7,"浙江省":29,"海南省":23,"湖北省":25,"湖南省":24,"甘肃省":12,"福建省":30,"西藏":11,"贵州省":21,"辽宁省":3,"陕西省":16,"青海":13,"黑龙江省":1},
+	insertFlash:function(elm,url,w,h){
+		if(!document.getElementById(elm))
+			return;
+		var str='';
+		str+='<object width="'+w+'" height="'+h+'" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0">';
+		str+='<param name="movie" value="'+url+'">';
+		str+='<param name="wmode" value="transparent">';
+		str+='<param name="quality" value="autohigh">';
+		str+='<param name="allowScriptAccess" value="always" > ';
+		str+='<embed width="'+w+'" height="'+h+'" src="'+url+'" quality="autohigh" wmode="opaque" type="application/x-shockwave-flash" plugspace="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>';
+		str+='</object>';
+		document.getElementById(elm).innerHTML=str;
+	},
+	_ip:"",/*省,市*/
+	_print:function(province){
+		try{setdef();}catch(e){}
+	},
+	print:function(){
+		var ok=function(){
+			MiniSite.Home._print();
+		}
+		if(!MiniSite.Cookie.get("qq_index_ip_1hrcache")){
+			//MiniSite.Home.timelapse=setTimeout(ok,20000);
+			MiniSite.JsLoader.load("http://fw.qq.com:80/ipaddress",function(){
+				if(MiniSite.Home.timelapse!=null){
+					clearTimeout(MiniSite.Home.timelapse);
+				};
+				if(typeof IPData!="undefined"){
+					var expires=new Date(new Date().getTime()+3600*1000);
+					MiniSite.Cookie.set('qq_index_ip_1hrcache',IPData[2]+','+IPData[3],expires);
+					MiniSite.Home._ip = IPData[2]+','+IPData[3];
+					MiniSite.Home._print(IPData[2]);
+				}else{
+					//MiniSite.Home._print();
+				}
+			});
+		}else{
+			var ipAddress=MiniSite.Cookie.get("qq_index_ip_1hrcache");
+			var ipAddressArr=ipAddress.split(",");
+			return MiniSite.Home._print(ipAddressArr[0]);
+		}
+	}
+}
+//alert(MiniSite.Cookie.get("qq_index_ip_1hrcache"));
+//if(!MiniSite.Cookie.get("qq_index_ip_1hrcache")){MiniSite.Home.print();}
+	window.onerror = function()
+	{
+		return true;
+	}
+
+	if (!window._sT)
+	{window._sT = window.setTimeout;window.setTimeout = function(fCallback, nDelay, oObject){if (typeof fCallback == 'function'){if (!oObject){oObject = window;}var argu = Array.prototype.slice.call(arguments, 3);var newFunc = (function(){ fCallback.apply(oObject, argu); });	return window._sT(newFunc, nDelay);	}return window._sT(fCallback, nDelay);};}
+
+	var marTime = new Array();
+	var marWay = new Array();
+	var moveTime = new Array();
+	moveTime[0] = 0;
+	moveTime[1] = 0;
+	var speed = 30;
+	var fodTime = 0;
+	var proFlog = 0;
+	var proTime = 0;
+
+	var gh=window.location.host;
+	var gu=gh?"http://"+gh:"http://www.qq.com";gp=[];
+gp["News"]=["2","/site/area/area_bj.htm"];
+//gp["finance"]=["2","/site/finance/stockinfo09.htm"];
+gp["stocknum"]=["3","",""];
+gp["sports"]=["2","/site/sports/wcinfo0412.htm"];
+gp["car"]=["2","/site/house/houseinfo09.htm"];
+gp["tech"]=["2","/site/travel/travelinfo09.htm"];
+gp["edu"]=["2",""];
+gp["kid"]=["2","/site/baby/babyinfo09.htm"];
+gp["astro"]=["3","/site/lady/emoinfo09.htm","/site/marry/marryinfo09.htm"];
+gp["adAreaA"]=["4","/qqad/qqadn/textad_con2.htm","/qqad/qqadn/textad_con3.htm","/qqad/qqadn/textad_con4.htm"];
+gp["adAreaB"]=["3","/qqad/qqadn/card_adcon2_v3.htm","/qqad/qqadn/card_adcon3_v3.htm"];
+	function $(o){ return (typeof o == "object")?o:document.getElementById(o);}
+	function CreatAjax(a,b,c){var obj=CreatXmlRequest();obj.open('GET', a);obj.setRequestHeader("If-Modified-Since","0");obj.send(null);obj.onreadystatechange = function() {if(obj.readyState == 4 && obj.status == 200){b(c,obj.responseText);}}}
+	function CreatXmlRequest() {var obj = null;try {obj = new XMLHttpRequest();} catch (e) {try {obj = new ActiveXObject("Msxml2.XMLHTTP");} catch (e) {obj = new ActiveXObject("Microsoft.XMLHTTP");}}return obj;}
+	function parseInfo(a,b,c){a.obj.innerHTML=b;swLabs(a.obj,a.sid,a.snum);}
+	
+	function swTabs(e){if(typeof e=="string"){e=$(e);}var isAjax,gPath,sobject;var cls="s";if(e.id!="defTail"&&e.id!="tailorxxx"){var tmp=e.id.split("_");var sid=tmp[0];var snum=tmp[1];gPath=gu+gp[sid][snum-1];sobject=$(sid+"_"+snum+"_Info");}else if(e.id=="defTail"){sid=e.id;snum=1;sobject=$("defTailInfo");}else if(e.id=="tailorxxx"){sid=e.id;snum=2;gPath=gu+gp["News"][snum-1];sobject=$("tailorInfo");if(e.className=="s0"||e.className=="s1"){cls="s1";}}e.className=cls;if(snum!=1){if(sobject.innerHTML==""){CreatAjax(gPath,parseInfo,{obj:sobject,sid:sid,snum:snum});isAjax=true;}}if(!isAjax){swLabs(sobject,sid,snum)}tmp=gPath=sobject=isAjax=maxItemNum=null;}
+	function swLabs(sobject,sid,snum){var maxItemNum;var tailorxxx=$("tailorxxx");var cls="";try{var i=1;maxItemNum=(sid=="defTail"||sid=="tailorxxx")?gp["News"][0]:gp[sid][0];while(i<=maxItemNum){if(i!=snum){var tmp1,tmp2;if(sid=="defTail"){tmp1=tailorxxx;tmp2=$("tailorInfo");if(tailorxxx.className=="s0"||tailorxxx.className=="s1"){cls="s0";}}else if(sid=="tailorxxx"){tmp1=$("defTail");tmp2=$("defTailInfo");if(tailorxxx.className=="s0"||tailorxxx.className=="s1"){tailorxxx.className="s1";}}else{tmp1=$(sid+"_"+i);tmp2=$(sid+"_"+i+"_Info");}tmp1.className=cls;tmp2.className="undis";}i++}}catch(e){}sobject.className="dis";}
+	function loadNewsMap(){MiniSite.Home.insertFlash("map","http://www.qq.com/map.swf",294,280);}
+	function tagOver(a){clearTimeout(fodTime);fodTime=0;fodTime = setTimeout(function(){swTabs(a)},100);if(a.id=="defTail"){$("map").className="undis";}if(a.id=="tailorxxx"&&$("map").innerHTML==""){setTimeout(function(){loadNewsMap();},300);}}
+	function tagOut(a){clearTimeout(fodTime);fodTime=0;}
+
+	function getNames(obj,name,tij){var plist = $(obj).getElementsByTagName(tij);var rlist = new Array();for(i=0;i<plist.length;i++){if(plist[i].getAttribute("name") == name){rlist[rlist.length] = plist[i];}}return rlist;}
+
+	function cplay(){var o,n,t,na,c1,c2;o = $(arguments[0]);num=arguments[1];t=arguments[2];n=arguments[3];c1=arguments[4];c2=arguments[5];var f=getNames(o,n,t);for(i=0;i<f.length;i++){if(i == num){f[i].className = c1;}else{f[i].className = c2;}}}
+
+	function formatPageZone()
+	{var o1=$(arguments[0]);var o2=$(arguments[0]+"Info");var t1=arguments[1];var n1=arguments[2];var t2=arguments[3];var n2=arguments[4];var c1,c2,c3,c4,c5;		if(arguments.length>5){c1=arguments[5];c2=arguments[6];c3=arguments[7];c4=arguments[8];c5=arguments[9]}		else{c1="s";c2="";c3="dis";c4="undis"}var f=getNames(o1,n1,t1);for(i=0;i<f.length;i++){f[i].value = i;f[i].onclick=function(){fod(o1,o2,this.value,t1,n1,t2,n2,c1,c2,c3,c4)};			f[i].onmouseover=function(){cplay(o1,this.value,t1,n1,c5,c2);};f[i].onmouseout=function(){cplay(o1,this.value,t1,n1,c2,c5);}}}
+
+	function send_request(url)
+	{http_request = false;if(window.XMLHttpRequest)	{http_request = new XMLHttpRequest();if(http_request.overrideMimeType){http_request.overrideMimeType('text/xml');}		}else if (window.ActiveXObject)	{try{ http_request = new ActiveXObject("Msxml2.XMLHTTP");}catch (e){try { http_request = new ActiveXObject("Microsoft.XMLHTTP"); }catch (e)	{}}}if (!http_request){window.alert("不能创建XMLHttpRequest对象实例.");return false; }http_request.onreadystatechange = loadPage;	http_request.open("GET", url, true);	http_request.send(null);}
+
+	function loadPage()
+	{var ChangeInfo=$("tailorInfo");if(http_request.readyState == 4){var xmldom = http_request.responseXML;var map = $("map");if(xmldom.documentElement.text){				ChangeInfo.innerHTML = xmldom.documentElement.text;}else{ChangeInfo.innerHTML = xmldom.documentElement.textContent;}/*$("tailorArrow").onclick = function(){	if(map.className=="dis"){map.className="undis";}else{map.className="dis";}};$("tailorArrow").onmouseover = function(){this.className="io";};	$("tailorArrow").onmouseout = function(){this.className="i";};*/map.className="undis";}else{ChangeInfo.innerHTML = "<div style='margin:40px auto;width:140px;text-center:center'>正在载入内容....<br />请稍侯!</div>";}}
+	function tail()
+	{var name = arguments[0];var tailorxxx = $("tailorxxx");var tailorTitle = $("tailorTitle");strings = "<!--<div>--><a href='"+area[name].l+"' target='_blank'>"+area[name].n+"</a><!--</div><div id='tailorArrow' class='i'></div>-->";tailorTitle.innerHTML = strings;if(area[name].n.length > 4){if($("defTail").className == ""){tailorxxx.className = "s1";}else{tailorxxx.className = "s0";			};}else{if($("defTail").className == ""){tailorxxx.className = "s";}else{tailorxxx.className = "";};};send_request("http://www.qq.com/site/area/"+area[name].u);MiniSite.Cookie.set("qq_index_local",name);}	
+	//广东0、北京4、陕西16、四川18、重庆19、湖北25、上海28
+	var _wip=/^(0|4|16|18|19|25|28)$/i;
+
+function getExpires(a){//a:day
+	var expires=new Date(new Date().getTime()+(a?a:1)*24*3600*1000);
+	return expires;
+}
+
+function setdefSkin(){
+	var expires = getExpires(90);
+	var n =  MiniSite.Cookie.get("qq_index_skin");
+	if(n!=null){
+		call_0410("UNKNOWN","skin",n);
+		var m = MiniSite.Cookie.get("qq_index_skin_def2010_2");//qq_index_skin_def
+		if(!m){
+			setSkin(0);//0
+			MiniSite.Cookie.set("qq_index_skin_def2010_2","true",expires);
+		}else{
+			setSkin(n);
+		}
+			
+	}else{
+		call_0410("UNKNOWN","skin",0);
+		MiniSite.Cookie.set("qq_index_skin_def2010_2","true",expires);
+	}
+}
+	/*function setdefSkin()
+	{var n =  MiniSite.Cookie.get("qq_index_skin");if(n!=null){call_0410("UNKNOWN","skin",n);setSkin(n);}else{call_0410("UNKNOWN","skin",0);}}*/
+
+	function setdef(){
+		var n=MiniSite.Cookie.get("qq_index_ip_1hrcache");
+		if(!n) n=MiniSite.Home._ip?MiniSite.Home._ip:null;
+		if(n!=null){
+			//alert(MiniSite.Home.Provinc)
+			var p=n.split(",")[0];
+			n=MiniSite.Home.Provinc[p];
+			if(_wip.test(n)){
+				$("tailorForIP").style.display="block";
+				tail(n);
+			}
+		}else{
+			MiniSite.Home.print()
+		}
+	}
+	var json ="[{n:'广东新闻',u:'gd09.xml',l:'http://gd.qq.com'},{n:'黑龙江新闻',u:'hlj.xml',l:'http://news.qq.com/hlj/index.htm'},{n:'吉林新闻',u:'jl.xml',l:'http://news.qq.com/jl/index.htm'},{n:'辽宁新闻',u:'ln.xml',l:'http://news.qq.com/ln/index.htm'},{n:'北京新闻',u:'bj09.xml',l:'http://bj.qq.com'},{n:'天津新闻',u:'tj.xml',l:'http://news.qq.com/tj/index.htm'},{n:'河北新闻',u:'hb.xml',l:'http://news.qq.com/hebei/index.htm'},{n:'河南新闻',u:'hen.xml',l:'http://news.qq.com/henan/index.htm'},{n:'山东新闻',u:'sd.xml',l:'http://sd.qq.com'},{n:'内蒙古新闻',u:'nmg.xml',l:'http://news.qq.com/nmg/index.htm'},{n:'新疆新闻',u:'xj.xml',l:'http://news.qq.com/xj/index.htm'},{n:'西藏新闻',u:'xz.xml',l:'http://news.qq.com/xz/index.htm'},{n:'甘肃新闻',u:'gs.xml',l:'http://news.qq.com/gs/index.htm'},{n:'青海新闻',u:'qh.xml',l:'http://news.qq.com/qh/index.htm'},{n:'宁夏新闻',u:'nx.xml',l:'http://news.qq.com/nx/index.htm'},{n:'山西新闻',u:'sx.xml',l:'http://news.qq.com/sx/index.htm'},{n:'陕西新闻',u:'shanx09.xml',l:'http://xian.qq.com'},{n:'江苏新闻',u:'jians.xml',l:'http://js.qq.com'},{n:'四川新闻',u:'sc09.xml',l:'http://cd.qq.com'},{n:'重庆新闻',u:'cq09.xml',l:'http://cq.qq.com'},{n:'云南新闻',u:'yn.xml',l:'http://news.qq.com/yn/index.htm'},{n:'贵州新闻',u:'gz.xml',l:'http://news.qq.com/gz/index.htm'},{n:'广西新闻',u:'gx.xml',l:'http://news.qq.com/gx/index.htm'},{n:'海南新闻',u:'hain.xml',l:'http://news.qq.com/hainan/index.htm'},{n:'湖南新闻',u:'hun.xml',l:'http://news.qq.com/hunan/index.htm'},{n:'湖北新闻',u:'hub09.xml',l:'http://hb.qq.com'},{n:'安徽新闻',u:'ah.xml',l:'http://news.qq.com/ah/index.htm'},{n:'江西新闻',u:'jx.xml',l:'http://news.qq.com/jx/index.htm'},{n:'上海新闻',u:'sh09.xml',l:'http://sh.qq.com'},{n:'浙江新闻',u:'zj.xml',l:'http://zj.qq.com'},{n:'福建新闻',u:'fj.xml',l:'http://news.qq.com/fj/index.htm'},{n:'福建新闻',u:'fj.xml',l:'http://news.qq.com/fj/index.htm'},{n:'广东新闻',u:'gd09.xml',l:'http://gd.qq.com'},{n:'广东新闻',u:'gd09.xml',l:'http://gd.qq.com'}]";
+	eval("area="+json);
+
+
+	var cssList = new Array("s01/s1v1.0.5.css","s02/s2v1.0.5a.css","s03/s3v1.0.5a.css","s04/s4v1.0.5a.css","s05/s5v1.0.5.css","s06/s6v1.0.5.css","s07/s7v1.0.5.css","s08/s8v1.0.5.css","s09/s9v1.0.5.css","s10/s10v1.0.5.css")
+
+	function setSkin(n){var expires = getExpires(90);var css = $("cssChange");var cssurl = "http://www.qq.com/iskin09/";cssurl +=cssList[n];css.href=cssurl;MiniSite.Cookie.set("qq_index_skin",n,expires);}
+
+	function formatSkin()
+	{var p = $("SkinList").getElementsByTagName("li");var s = $("sar");for(i=0;i<p.length;i++){p[i].num = i;p[i].onclick = function(){setSkin(this.num);}}s.onclick = function() { openSkin("sar","SkinList",140,56,2,0); };}
+
+	function _openSkin(o1,o2,max,min,speed,n)
+	{ return openSkin(o1,o2,max,min,speed,n);}
+
+	function _closeSkin(o1,o2,max,min,speed,n)
+	{ return closeSkin(o1,o2,max,min,speed,n);}
+
+	//n=0 skin n=1 pro
+	function openSkin(o1,o2,max,min,speed,n)
+	{var a = $(o1);	var s = $(o2);var w = s.offsetWidth;var move=function(){w+=speed;if(w>=max){w = max;s.style.width = w+"px";				if(moveTime[n]){window.clearInterval(moveTime[n]);}if(n){$("pro_arrow").className = "al";$("pro_arrow").onclick = function() {closeSkin(o1,o2,max,min,speed,n);}				}else{a.innerHTML = "<div class='s'><img src='http://img1.qq.com/news/pics/9471/9471252.gif' alt='收缩' /></div>";a.onclick = function() {closeSkin(o1,o2,max,min,speed,n);}}}else{s.style.width = w + "px";if(n){}else{s.style.display = "block";};}};moveTime[n] = window.setInterval(move,5);}
+
+	function closeSkin(o1,o2,max,min,speed,n)
+	{var a = $(o1);var s = $(o2);var w = s.offsetWidth;var move = function(){w-=speed;if(w<=min){w = min;s.style.width = w + "px";if(n){				$("pro_arrow").className = "ar";$("pro_arrow").onclick = function() {openSkin(o1,o2,max,min,speed,n);};}else{a.innerHTML = "<div><img src='http://img1.qq.com/news/pics/9471/9471252.gif' alt='更多皮肤' /></div>";a.onclick = function() { openSkin(o1,o2,max,min,speed,n);}	};		if(moveTime[n]){window.clearInterval(moveTime[n]);}}else{s.style.display = "block";s.style.width = w + "px";};};moveTime[n] = window.setInterval(move,5);}
+
+function loadJS(url,load)
+{
+	var _script = document.createElement('script');
+	_script.setAttribute('type','text/javascript');
+	_script.setAttribute('src',url);
+	document.getElementsByTagName('head')[0].appendChild(_script);
+	if(!load)	return;
+	if(document.all){
+		_script.onreadystatechange = function(){
+			if (this.readyState=='loaded' || this.readyState=='complete')
+			{
+				load();
+			}
+		};
+	}else{
+		_script.onload = function(){
+			load();
+		};
+	}
+}
+
+	function loadPng(o)
+	{if(MiniSite.Browser.ie){try{var img = o;var imgName = o.src.toUpperCase();if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+	{var imgID = (img.id) ? "id='" + img.id + "' " : "";var imgClass = (img.className) ? "class='" + img.className + "' " : "";var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' ";var imgStyle = "display:inline-block;" + img.style.cssText;if (img.align == "left") imgStyle = "float:left;" + imgStyle;if (img.align == "right") imgStyle = "float:right;" + imgStyle;if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle ;   var strNewHTML = "<span " + imgID + imgClass + imgTitle + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src=\'" + img.src + "\', sizingMethod='image');\"></span>"; img.outerHTML = strNewHTML;			}}	catch (e){}}}
+
+function call_0410(type,item,page)
+{try{var purl='';if (type == "A"){purl = window.event.srcElement.href;}else if (type == "IMG"){purl = window.event.srcElement.parentNode.href;};var iurl = 'http://trace.qq.com/collect?pj=1001&item='+item+'&page='+page+'&url='+purl+'&rnd='+Math.random();var img  = new Image(1,1);img.onerror = function (){};img.src	 = iurl;	} catch (e) {}}
+
+function register0410(item,page) 
+{try{var type = window.event.srcElement.tagName;if (type == "A" || type == "IMG" ) {call_0410(type,item, page);}return true;}catch(e){}}
+
+//]]>
+</script><!--[if !IE]>|xGv00|6e5dd838c2c8563b810097412a58a28b<![endif]-->
+<base target="_blank">
+</head>
+<body onload="document.execCommand('BackgroundImageCache',false,true)">
+<script language="javascript" type="text/javascript" defer>
+			try{
+				if(document.charset == 'utf-8'){
+						window.location.href = window.location.href;
+				}
+			}catch(e){}
+</script>
+<script>
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  
+                        }  
+                        catch (e) 
+ { 
+                                alert("抱歉！您的浏览器不支持直接设为首页。请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为“true”，点击“加入收藏”后忽略安全提示，即可设置成功。");  
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+</script>
+<div id="miniNav" onClick="register0410('mininav',1);">
+		<div><a href="http://service.qq.com/">腾讯客服</a><span>·</span><a href="http://www.qq.com/map/">导航</a><span>·</span><a href="http://pay.qq.com/">充值</a><span>·</span><a href="javascript:void(0)" onClick="SetHome(this,window.location)" target="_top">设为首页</a><span>·</span><a href="http://3gqq.qq.com/">手机腾讯网</a><span>·</span><a href="http://mail.qq.com" class="qq">QQ邮箱<img src="http://img1.qq.com/news/pics/9499/9499745.gif" /></a></div>
+</div><!--[if !IE]>|xGv00|74067e4e1afb8bcf65265e2b54d770d5<![endif]-->
+<div class="expo_nav" id="TextNav" onClick="register0410('topnav',1);">
+	<div class="expo_logo"><img src="http://mat1.qq.com/www/iskin/skin4/expotclogo.gif" width="100" height="45" border="0" usemap="#Map" />
+		<map name="Map" id="Map">
+			<area shape="rect" coords="1,1,45,45" href="http://2010.qq.com/" target="_self" />
+			<area shape="rect" coords="56,1,99,45" href="http://www.qq.com/" target="_self" />
+		</map>
+	</div>
+	<div>
+		<a target="_self" href="http://news.qq.com/" class="b">新闻</a><a target="_self" href="http://blog.qq.com/">博客</a><a target="_self" href="http://bbs.qq.com/">论坛</a><a target="_self" href="http://view.news.qq.com/">评论</a><br />
+		<a target="_self" href="http://finance.qq.com/" class="b">财经</a><a target="_self" href="http://finance.qq.com/stock/">证券</a><a target="_self" href="http://finance.qq.com/hk/">港股</a><a target="_self" href="http://finance.qq.com/fund/">基金</a></div>
+	<div class="line"></div>
+	<div>
+		<a target="_self" href="http://ent.qq.com/" class="b">娱乐</a><a target="_self" href="http://ent.qq.com/newxw/">明星</a><a target="_self" href="http://ent.qq.com/movie/">电影</a><a target="_self" href="http://yue.qq.com/">音乐</a><br />
+		<a target="_self" href="http://sports.qq.com/" class="b">体育</a><a target="_self" href="http://sports.qq.com/nba/" style="font-family:Arial;padding-top:0;padding-bottom:3px;">NBA</a><a href="http://sports.qq.com/lottery/" target="_self">彩票</a><a href="http://worldcup.qq.com/" target="_self">世界杯</a></div>
+	<div class="line"></div>
+	<div>
+		<a target="_self" href="http://auto.qq.com/" class="b">汽车</a><a target="_self" href="http://www.fangqq.com/">房产</a><a target="_self" href="http://www.joyhouse.com.cn/">家居</a><a target="_self" href="http://hea.qq.com/">家电</a><br />
+		<a target="_self" href="http://tech.qq.com/" class="b">科技</a><a target="_self" href="http://digi.tech.qq.com/">数码</a><a target="_self" href="http://digi.tech.qq.com/mobile/">手机</a><a target="_self" href="http://download.tech.qq.com/">下载</a></div>
+	<div class="line"></div>
+	<div>
+		<a target="_self" href="http://lady.qq.com/" class="b">女性</a><a target="_self" href="http://lady.qq.com/emo/emotio.shtml">情感</a><a target="_self" href="http://baby.qq.com/">育儿</a><br />
+		<a target="_self" href="http://luxury.qq.com/" class="b">时尚</a><a target="_self" href="http://www.paipai.com/">购物</a><a target="_self" href="http://www.itravelqq.com/">旅游</a></div>
+	<div class="line"></div>
+	<div>
+		<a target="_self" href="http://book.qq.com/" class="b">读书</a><a target="_self" href="http://book.qq.com/yc/index.htm">原创</a><a target="_self" href="http://edu.qq.com/">教育</a><a target="_self" href="http://abroad.qq.com/">出国</a><br />
+		<a target="_self" href="http://games.qq.com/" class="b">游戏</a><a target="_self" href="http://comic.qq.com/">动漫</a><a target="_self" href="http://flash.qq.com/">动画</a><a target="_self" href="http://astro.lady.qq.com/">星座</a></div>
+	<div class="line"></div>
+	<div>
+		<a target="_self" href="http://bb.news.qq.com/" class="b">视频</a><a target="_self" href="http://zhibo.bb.qq.com/">直播</a><a target="_self" href="http://pp.qq.com/">图片</a><br />
+		<a target="_self" href="http://2010.qq.com/" class="b lchot">世博</a><a target="_self" href="http://gongyi.qq.com/">公益</a><a target="_self" href="http://kid.qq.com/">儿童</a></div><!--[if !IE]>|xGv00|776944f01310e27b6cb15e3a6658cb7d<![endif]-->
+</div>
+<div class="cl"></div>
+<div id="Soso" onclick="register0410('sobar',1);">
+	<div id="Soso_Left">
+		<div id="Wealth"></div><!--[if !IE]>|xGv00|ccecb3638c47deca829764be4bddac8c<![endif]-->
+		<div id="Skin">
+			<div id="SkinList">
+				<ul>
+					<li id="def">
+						<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="默认" /></div>
+					</li>
+					<li id="s1">
+						<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="淡蓝" /></div>
+					</li>
+					<li id="s2">
+						<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="宁夏" /></div>
+					</li>
+					<li id="s3">
+						<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="新绿" /></div>
+					</li>
+					<li id="s4">
+						<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="世博"/></div>
+					</li>
+					<li id="s5">
+						<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="水墨" /></div>
+					</li>
+					<li id="s6">
+						<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="星空" /></div>
+					</li>
+					<li id="s7">
+						<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="春节" /></div>
+					</li>
+					<li id="s8">
+						<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="咖啡" /></div>
+					</li>
+					<li id="s9">
+						<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="紫色" /></div>
+					</li>
+				</ul>
+			</div>
+			<div id="sar">
+				<div><img src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="展开" /></div>
+			</div>
+			<div class="cl"></div>
+		</div>
+		<script type="text/javascript">formatSkin();setdefSkin();</script>
+	</div>
+	<div id="SosoArea">
+<div id="sosoLogo"><a href="http://www.soso.com"><img width="72" height="24" src="http://mat1.gtimg.com/www/iskin09/spacer.gif" alt="soso" /></a></div>
+<form name="frm_head" id="frm_head" action="http://www.soso.com/q" onsubmit="return sosoValidate();" method="GET" target="_blank">
+<input type="hidden" name="sp" value="S" />
+<input type="hidden" name="sc" value="web" />
+<input type="hidden" name="cid" value="w.q.in.sb.web" />
+<input type="hidden" name="ch" value="w.q.in.sb.web" />
+<input type="hidden" name="ty" value="1" />
+<input type="hidden" name="bn" value="" />
+<input type="hidden" name="op" value="entry" />
+<input type="hidden" name="kw" value="" />
+<input type="hidden" name="source" value="" />
+<div id="sosoFod">
+  <h3 class="s1" id="sosoweb" onmouseover="delaySubSearch('web');" onmouseout="cancelDelay()" onclick="sosoSubSearch('web');goSearch()">网页</h3>
+  <h3 class="s2" id="sosoimg"  onmouseover="delaySubSearch('img');" onmouseout="cancelDelay()" onclick="sosoSubSearch('img');goSearch()">图片</h3>
+   <h3 class="s2" id="sosovid" onmouseover="delaySubSearch('vid');" onmouseout="cancelDelay()" onclick="sosoSubSearch('vid');goSearch()">视频</h3>
+  <h3 class="s2" id="sosomus"  onmouseover="delaySubSearch('mus');" onmouseout="cancelDelay()" onclick="sosoSubSearch('mus');goSearch()">音乐</h3>
+  <h3 class="s2" id="sososoba" onmouseover="delaySubSearch('soba');" onmouseout="cancelDelay()" onclick="sosoSubSearch('soba');goSearch()">搜吧</h3>
+  <h3 class="s2" id="sosowenwen" onmouseover="delaySubSearch('wenwen');" onmouseout="cancelDelay()" onclick="sosoSubSearch('wenwen');goSearch()">问问</h3>
+  <h3 class="s2" id="sosoqz" onmouseover="delaySubSearch('qz');" onmouseout="cancelDelay()" onclick="sosoSubSearch('qz');goSearch()">博客</h3>
+  <h3 class="s2" onmouseover="sm(event);" style="cursor:pointer;">更多▼
+  <div name="tm" id="tm" class="more" onclick="stopB(event)" style="display:none;">
+  <ul><li><a href="http://zh.soso.com/int.cgi?sc=int&w=" onclick="return tp(this);" target="_blank">综合</a></li>
+    <li><a href="http://news.soso.com/n.q?sc=news&ty=c&w=" onclick="return tp(this);" target="_blank">新闻</a></li>  
+    <li><a href="http://dict.soso.com/d.q?sc=dict&w=" onclick="return tp(this);" target="_blank">词典</a></li>
+    <li><a href="http://life.soso.com" target="_blank">生活</a></li>
+    <li><a href="http://baike.soso.com/Search.e?sp=S" onClick="return tp(this);" target="_blank">百科</a></li>
+    <li style="border-top:1px solid #B2D0EA;"><a href="http://www.soso.com/more.shtml" target="_blank">所有产品</a></li></ul>
+  </div>
+  </h3>
+</div>
+<div>
+  <div class="fl">
+	<input class="w" id="smart_input" style="COLOR: #424242" name="w" smartPid="w.q.web.sb" autocomplete="off" />
+  </div>
+  <div class="fl">
+    <input type="submit" class="bot" value="搜 索" align="absmiddle" style="cursor:pointer;"/>
+  </div>
+</div>
+<div class="cl"></div>
+</form>
+<script type="text/javascript">
+var sosoInitHint="";var sosoCurrHighLight=$("sosoweb"),frm_head=$('frm_head'),delayId=null;var sosoTmpArr=['bfadb6fbccd8c8cb'];var sosoTmpArr2=['bfadb6fbccd8c8cb'];var sosoRandom=Math.floor(Math.random()*sosoTmpArr.length);sosoInitHint=sosoTmpArr[sosoRandom];sosoInitKw=sosoTmpArr2[sosoRandom];window.setTimeout(setFun,1);function setFun()
+{return;frm_head=$('frm_head');frm_head.w.value=sosoInitHint;}
+var sosoInitHint2=sosoInitHint;function trim(str){return str.replace(/(^\s*)|(\s*$)/g,"");}
+function sosoValidate(){wval=trim(frm_head.w.value);if((wval==sosoInitHint2)||(wval==sosoInitHint))
+{frm_head.w.value="";frm_head.w.style.color="#424242";if(frm_head.sc.value=="web")
+{frm_head.w.value=sosoInitKw;frm_head.action="http://www.soso.com/q";}
+return true;}
+if(frm_head.sc.value=="post")
+{frm_head.bn.value=frm_head.w.value;frm_head.op.value="entry";}
+else if(frm_head.sc.value=="wenwen"&&wval!="")
+{window.open("http://wenwen.soso.com/z/SearchSolved.e?cid=w.q.in.sb.ww&sp=S"+encodeURIComponent(frm_head.w.value),"_blank");return false;}
+else if(frm_head.sc.value=="vid"&&wval!="")
+{window.open("http://video.soso.com/search/?cid=w.q.in.vid&w="+encodeURIComponent(frm_head.w.value),"_blank");return false;}
+return true;}
+function delaySubSearch(sc){if(delayId)clearTimeout(delayId);delayId=setTimeout(function(){sosoSubSearch(sc);},500);}
+function cancelDelay(){if(delayId)clearTimeout(delayId);}
+function sosoSubSearch(sc){changePage(sc);frm_head.w.blur();frm_head.sc.value=sc;wval=trim(frm_head.w.value);if(sc=="img")
+{frm_head.action="http://image.soso.com/image.cgi";}
+else if(sc=="vid")
+{frm_head.action="http://video.soso.com/search/";}
+else if(sc=="mus")
+{frm_head.action="http://music.soso.com/music.cgi";frm_head.source.value="2";}
+else if(sc=="qz")
+{frm_head.op.value="blog.blog";frm_head.ty.value="blog";frm_head.action="http://blog.soso.com/qz.q";}
+else if(sc=="soba"){frm_head.sc.value="post";frm_head.action="http://post.soso.com/sobar.q";}
+else if(sc=="wenwen")
+{frm_head.sc.value="wenwen";frm_head.action="http://wenwen.soso.com/z/SearchSolved.e";}
+else
+{frm_head.action="http://www.soso.com/q";}
+frm_head.w.focus();}
+function changePage(sc){if(sosoCurrHighLight==null){sosoCurrHighLight=$("sosoweb");}
+sosoCurrHighLight.className="s2";sosoCurrHighLight=$("soso"+sc);sosoCurrHighLight.className="s1";frm_head.sc.value=sc;frm_head.cid.value="w.q.in.sb."+sc;}
+function goSearch(){if(!sosoValidate())
+return false;frm_head.submit();frm_head.bn.value="";}
+function togDispMore(e){stopB(e);var elems=document.getElementsByName('tm');for(var i=0;i<elems.length;i++){var obj=elems[i],dp="";if(obj.style.display==""){dp="none";}obj.style.display=dp;}return false;}
+function stopB(e){if(!e)e=window.event;e.cancelBubble=true;}
+document.onmouseup=function(event){var elems=document.getElementsByName('tm');if(elems[0].style.display==""){togDispMore(event);}}
+function tp(obj){var frm_head_w=document.frm_head.w.value;if(frm_head_w.length>0&&(frm_head_w!=sosoInitHint&&frm_head_w!=sosoInitHint2))
+{var oh=obj.href;obj.href=obj.href.replace(/w=.+/g,"w=");obj.href=obj.href.replace(/SearchSolved\.e\?sp=S.+/g,"SearchSolved.e?sp=S");obj.href=obj.href.replace(/Search\.e\?sp=S.+/g,"Search.e?sp=S");
+var qw=document.frm_head.w.value.trim();if(obj.href.indexOf("wenwen")!=-1||obj.href.indexOf("baike")!=-1||obj.href.indexOf("video")!=-1)
+{obj.href=obj.href+encodeURIComponent(qw);}else{obj.href=obj.href+qw;}}else{obj.href="http://"+obj.hostname;}}
+String.prototype.trim=function()
+{return this.replace(/(^\s*)|(\s*$)/g,'');}
+var st='';function sm(event)
+{clearTimeout(st);eventSrc=event.srcElement||event.target;o=$('tm');if(eventSrc.tagName=="H3")
+{tt=setTimeout(function(){o.style.display="block";document.onmousemove=cp;},800);}else
+{clearTimeout(st);o.style.display="block";document.onmousemove=cp;}}
+function cp(event)
+{evt=window.event?window.event:event;var pointer=function(event){return{x:event.pageX||(event.clientX+
+(document.documentElement.scrollLeft||document.body.scrollLeft)),y:event.pageY||(event.clientY+
+(document.documentElement.scrollTop||document.body.scrollTop))};}(evt);l=o.offsetLeft;t=o.offsetTop-20;r=l+o.offsetWidth;b=o.offsetTop+o.offsetHeight;py=pointer.y;px=pointer.x;if((py>t&&py<b&&px>l&&px<r)){}
+else{st=setTimeout(function(){o.style.display="none";},500);document.onmousemove=function(){};}}
+</script>
+</div><!--[if !IE]>|xGv00|ff0b9c037c7c920d2ad71334b829505c<![endif]-->
+	<div id="SosoAd">
+		<!--QQCOM_sosobutton2_div AD begin...."l=QQCOM_sosobutton2&log=off"-->
+<div id="QQCOM_sosobutton2" style="width:172px;height:73px;"></div>
+<!--QQCOM_sosobutton2 AD end --><!--[if !IE]>|xGv00|7db91c22fc3b3abb464e86a4e4ec300e<![endif]-->
+	</div>
+
+
+
+	<div class="cl"></div>
+</div>
+<!--QQ_Full_div AD begin...."l=QQ_Full&log=off"-->
+<div id="QQ_Full" style="width:910px; margin:0 auto; display:none;"></div>
+<!--QQ_Full AD end --><!--[if !IE]>|xGv00|1b4dcf64205eddb24872f76843ced48c<![endif]-->
+<div class="hr_6"></div>
+<div class="cArea">
+	<div class="txArea">
+		<div class="resArea">
+			<div id="proNav"  onclick="register0410('proarea',1);">
+	<div><span>通信</span><a href="http://mail.qq.com/" class="qq">QQ邮箱</a><a href="http://pc.qq.com/" class="qq">QQ软件</a><a href="http://show.qq.com/" class="qq">QQ秀</a><a href="http://vip.qq.com/" class="qq">QQ会员</a><a href="http://id.qq.com/">号码</a><a href="http://www.heyyo.com/">和悦</a></div>
+	<div><span>社区</span><a href="http://qzone.qq.com/" class="qq">QQ空间</a><a href="http://photo.qq.com/">相册</a><a href="http://music.qq.com/">音乐</a><a href="http://live.qq.com/" class="qq">QQLive</a><a href="http://video.qq.com/">播客</a><a href="http://xiaoyou.qq.com" class="qq">QQ校友</a></div>
+	<div><span>休闲</span><a href="http://qqgame.qq.com/?ADTAG=media.free.qqcom.index_navigation" class="qq">QQ游戏</a><a href="http://pet.qq.com/?ADTAG=media.free.qqcom.index_navigation" class="qq">QQ宠物</a><a href="http://x5.qq.com/?ADTAG=media.free.qqcom.index_navigation" class="qq">QQ炫舞</a><a href="http://qqtang.qq.com/?ADTAG=media.free.qqcom.index_navigation" class="qq">QQ堂</a><a href="http://r2.qq.com/?ADTAG=media.free.qqcom.index_navigation" class="qq">QQ音速</a></div>
+	<div><span>网游</span><a href="http://dm.qq.com/?ADTAG=media.free.qqcom.index_navigationn" class="lchot">大明龙权</a><a href="http://xx.qq.com/?ADTAG=media.free.qqcom.index_navigation">寻仙</a><a href="http://sg.qq.com/?ADTAG=media.free.qqcom.index_navigation" class="qq">QQ三国</a><a href="http://ffo.qq.com/?ADTAG=media.free.qqcom.index_navigation">自由幻想</a><a href="http://sl.qq.com/?ADTAG=media.free.qqcom.index_navigation">丝路</a><a href="http://zg.qq.com/?ADTAG=media.free.qqcom.index_navigation">烽火</a></div>
+	<div><span>竞技</span><a href="http://cf.qq.com/?ADTAG=media.free.qqcom.index_navigation">穿越火线</a><a href="http://dnf.qq.com/?ADTAG=media.free.qqcom.index_navigation">地下城与勇士</a><a href="http://ava.qq.com/?ADTAG=media.free.qqcom.index_navigation">战地之王</a><a href="http://speed.qq.com/?ADTAG=media.free.qqcom.index_navigation">QQ飞车</a></div>
+	<div><span>手机</span><a href="http://m.qq.com">无线</a><a href="http://mq.qq.com" class="qq">超级QQ</a><a href="http://mgame.qq.com">手机游戏</a><a href="http://mobile.qq.com" class="qq">手机QQ</a><a href="http://mobile.qq.com/qqbrowser/">手机浏览器</a></div>
+	<div><span>商务</span><a href="http://www.paipai.com/?ADTAG=132.3.1">拍拍</a><a href="https://www.tenpay.com/">财付通</a><a href="http://pay.qq.com/" class="qq">QQ充值</a><a href="http://life.tenpay.com/creditcard/">还款</a><a href="http://life.tenpay.com/mobile/index.shtml">充话费</a><a href="http://fanli.qq.com/">返利</a><a href="http://www.qq.com/map/" class="m">更多</a></div>
+</div><!--[if !IE]>|xGv00|a9326846dce12dc51ae4ebfa0692aa1e<![endif]-->
+			<div id="News">
+				<h4 id="defTail" class="s" name="d" onmouseover="tagOver(this)" onmouseout="tagOut(this)"><a href="http://news.qq.com/">新闻中心</a></h4>
+				<div id="tailorForIP" style="display:none;float:left;">
+					<h4 id="tailorxxx" name="d" onmouseover="tagOver(this)" onmouseout="tagOut(this)"> <span id="tailorTitle" class="t"></span> </h4>
+				</div>
+
+<!--[if !IE]>|xGv00|c921f57b2fdeb55afcccf6cf72ae406a<![endif]-->
+			</div>
+			<div id="NewsInfo">
+				<div id="defTailInfo" name="f" class="dis"  onclick="register0410('news',1);">
+				<link href="" rel="stylesheet" type="text/css"><h3><span class="fnb">·</span><a href="http://news.qq.com/zt2010/yushudizhen/" class="black">青海强震617人遇难</a> <a href="http://news.qq.com/zt/2010/yushuzhibo/index.htm" class="black">灾情直击</a>  <a href="http://news.qq.com/zt/2010/yushuzhibo/qhws.htm" class="black">视频直播</a></h3>
+
+　<span class="fc30"><a>灾情</a>| </span><a href="http://news.qq.com/a/20100415/001810.htm">313人失踪</a>  <a href="http://news.qq.com/a/20100415/000542.htm">玉树3县仍失去联系</a> <a href="http://news.qq.com/l/12712057119/list_12712057119.htm">快讯</a><br />
+　<span class="fc30"><a>现场</a>| </span><a href="http://news.qq.com/a/20100415/002212.htm">部分人哭泣</a> <a href="http://news.qq.com/a/20100415/002182.htm">重伤员头部被砸</a> <a href="http://news.qq.com/a/20100415/000938.htm">组图纪录</a><br />
+
+　<span class="fc30"><a>救援</a>| </span><a href="http://news.qq.com/a/20100415/001998.htm">空军大规模空运</a> <a href="http://news.qq.com/a/20100415/000822.htm">公安部驰援</a> <a href="http://news.qq.com/photon/tpyk/dzfm15.htm">媒体封面</a><br />
+
+　<span class="fc30"><a>预警</a>| </span><a href="http://news.qq.com/a/20100415/001782.htm">鼠疫形势严峻</a> <a href="http://news.qq.com/a/20100415/001831.htm">余震750次 需防大余震</a><br />
+
+　<span class="fc30"><a>视频</a>| </span><a href="http://news.qq.com/a/20100415/002099.htm" class="vico">僧侣捐帐篷</a> <a href="http://news.qq.com/a/20100415/000966.htm">深夜搭手术台</a> </a> <a href="http://news.qq.com/zt/2010/yushuvideo/" class="vico">专题</a><br />
+
+
+
+　<span class="fc30"><a>捐款</a>| </span><a href="http://gongyi.qq.com/a/20100414/000007.htm">腾讯捐首批善款200万</a> <a href="http://gongyi.qq.com/qinghai.htm"><font color=blue>网友捐款入口</font></a><br />
+
+<h3><span class="fnb">·</span><a href="http://news.qq.com/a/20100415/000298.htm">温家宝在人民日报发表文章纪念胡耀邦</a></h3>
+·<a href="http://news.qq.com/a/20100415/000207.htm">李长春为土耳其海峡大学孔子学院揭牌(图)</a><br />
+
+·<a href="http://news.qq.com/a/20100415/002003.htm">收入分配改革6年难定 官员称阻力是富人</a><br />
+
+·<a href="http://finance.qq.com/zt2010/wangyi2010/index.htm">国开行原副行长王益受贿千万被判死缓(图)</a><br />
+
+
+
+<p class="dotline height1"></p>
+
+
+<h3><span class="fnb">·</span><a href="http://finance.qq.com/zt2010/Q1data/index.htm">一季度GDP同比增11.9% CPI同比涨2.2%</a></h3>
+
+
+·<a href="http://finance.qq.com/a/20100415/000504.htm">新加坡允许新元升值 或引亚洲国家争相效仿</a><br />
+
+·<a href="http://news.qq.com/a/20100415/000263.htm">湖南医院用工业氧续：开除党籍者仍领工资</a><br />
+
+
+
+
+·<a href="http://news.qq.com/a/20100415/000304.htm">云南大理确认洱海填湖建别墅违规 称已处罚</a><br />
+
+
+
+·<a href="http://news.qq.com/a/20100415/001749.htm">朝鲜在金日成诞辰日前晋升百名高级军官</a><br />
+·<a href="http://news.qq.com/a/20100415/002245.htm">伊朗称已经生产出5公斤纯度为20%浓缩铀</a><br />
+
+<h3><span class="fnb">·</span><a href="http://news.qq.com/a/20100415/000200.htm">文强被判死刑拟上诉</a> <a href="http://news.qq.com/a/20100415/000565.htm">重庆市民放炮庆祝</a></h3>
+
+·<a href="http://news.qq.com/a/20100415/000203.htm">湖北在押者溺死洗漱池续：调查组称系自杀</a><br />
+
+·<a href="http://news.qq.com/a/20100415/000269.htm" class="vico">北京村民阻强拆被打 官员称其愧对政府</a><br />
+
+
+·<a href="http://news.qq.com/a/20100415/000831.htm">美媒称互联网不能成为“低级趣味的天堂”</a><br />
+·<a href="http://news.qq.com/dashi.htm">大师</a><span class="fc30"> | </span><a href="http://news.qq.com/zt/2010/dashi/topic_html/zhangsizhi.htm ">张思之：虽一生驯服 律师良心仍在</a><br />
+
+·<a href="http://news.qq.com/photon/tpyk/zhongguorendeyitian.htm">中国人的一天</a><span class="fc30"> | </span><a href="http://news.qq.com/photon/act/zhongguorendeyitian/105.htm">乐观母亲下岗创业</a> <a href="http://news.qq.com/photon/tpyk/zhongguorendeyitian100.htm">百期特刊</a><br />
+
+
+
+
+
+·<a href="http://news.qq.com/zt/2010/wscq/index.htm">我是传奇</a><span class="fc30"> | </span><a href="http://act3.news.qq.com/3898/work/show-id-26858.html">小年夜我陪父亲在医院度过</a><br />
+
+<!--[if !IE]>|xGv00|4e796e3b71ee908427098116d620cc39<![endif]-->
+
+				<!--end-->
+				</div>
+				<div id="map" class="undis"></div>
+				<div name="f" class="undis" id="tailorInfo" onclick="register0410('news',2);"></div>
+			</div>
+			<div class="res_b"></div>
+		</div>
+		<script type="text/javascript">
+				var mapTime = 0;
+				var newsMap=$("map");
+				$("tailorTitle").onmouseover = function(){newsMap.className="undis";}
+				newsMap.onmouseover = function(){clearTimeout(mapTime);newsMap.className="dis";}
+				newsMap.onmouseout = function(){newsMap.className="undis";}
+				setdef();
+			</script>
+		<div class="proArea">
+<div id="proAd" onClick="register0410('proad',1);">
+<!--QQCOM_Extend_Video_div AD begin...."l=QQCOM_Extend_Video&log=off"-->
+<div id="QQCOM_Extend_Video" style="width:409px;height:114px;overflow:visible;"></div>
+<!--QQCOM_Extend_Video AD end --><!--[if !IE]>|xGv00|a2361a71e10df8b2b2cdc57d5bc7c47c<![endif]-->
+</div><!--[if !IE]>|xGv00|cb83eea7bdb976dc241c1af9c0df3c00<![endif]-->
+			<div id="proArea_banner" class="tc"  style="padding:0;" onclick="register0410('hottxt',1);">
+<div class="fl" style="padding-left:16px;"><a href="http://my2010.qq.com/"><img src="http://mat1.gtimg.com/www/iskin09/icityiexpo.png" width="74" height="24"  align="absmiddle" onload="loadPng(this)"  style="margin-top:8px;_margin-top:6px;"/></a></div><div class="fl" style="margin-left:12px;padding-top:1px;"> <a href="http://2010.qq.com/" >距世博开幕 <span class="lchot fb" id="timeDate">..</span> 天</a>　<a href="http://v2010bmw.qq.com/grab.html
+">志愿者接力！点亮QQ图标</a></div>
+</div>
+
+<script>
+
+/*<![CDATA[*/
+                        
+var now = new Date(2010, 04-1, 15, 16, 01, 30);
+
+/*]]>*/  
+
+function createtime(){
+
+var grt= new Date("05/02/2010 00:00:00");//月日年
+
+now.setTime(now.getTime()+250);
+days = (grt - now) / 1000 / 60 / 60 / 24;
+dnum = Math.floor(days);
+hours = (grt - now) / 1000 / 60 / 60 - (24 * dnum);
+hnum = Math.floor(hours);
+if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+minutes = (grt - now) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+mnum = Math.floor(minutes);
+if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+seconds = (grt - now) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+snum = Math.round(seconds);
+if(String(snum).length ==1 ){snum = "0" + snum;}
+
+document.getElementById("timeDate").innerHTML = dnum;
+//document.getElementById("times").innerHTML = hnum + "<span class='text'>时</span>" + mnum + "<span class='text'>分</span>" + snum + "<span class='text'>秒</span>" ;
+}
+
+setInterval("createtime()",0);               
+</script><!--[if !IE]>|xGv00|3301b55ece3daff822e2fb53d104c085<![endif]-->
+			<div id="today" onclick="register0410('today',1);"> 
+				<span class="fl"><a href="http://view.news.qq.com/">今日话题</a><!--[if !IE]>|xGv00|15321f607c2dc4c6296e4f9d04e4b288<![endif]--></span>
+				<span class="fr"><!--todaylinks--><!--[if !IE]>|xGv00|7d1c6c8c991d407e9007a6bf1ec9eeeb<![endif]--></span> 
+			</div>
+			<div id="todayInfo" onclick="register0410('today',1);">
+				<H1><A href="http://view.news.qq.com/zt/2010/2012end/index.htm">灾难频发 末日恐慌不必有</A></H1>
+<DIV class=textArea>
+·<A href="http://view.news.qq.com/zt/2010/yzz/index.htm">当知名副教授超生</A>　<A href="http://view.news.qq.com/zt/2010/jsb/index.htm">精神病人杀人怎么办</A>　<A href="http://view.news.qq.com/zt/2010/ybj/index.htm">酒后乱性啥背景</A><br/>
+	 ·<a href="http://view.news.qq.com/">评论</a> <span class="fc30"> |</span> <a href="http://view.news.qq.com/a/20100415/000023.htm">玉树抗震，我们的十条建言</a>　<a href="http://view.news.qq.com/a/20100415/000027.htm">输血风险的皮球踢不得</a><br />
+	·<a href="http://blog.qq.com/thought/">思想</a> <span class="fc30"> | <a href="http://view.news.qq.com/a/20100415/000018.htm">“高油价时代”真不是时候</a>　<a href="http://view.news.qq.com/a/20100413/000036.htm">章东磐：父辈的抗战史</a></span>
+</div><!--[if !IE]>|xGv00|634d91079224165cd1a4608475bffec0<![endif]-->
+			</div>
+			<div class="pro_b"></div>
+			<div class="hr_10"></div>
+
+			<div id="expo">
+								<span class="fl"><span class="logo_expo"></span><a href="http://2010.qq.com/">上海世博会</a></span>
+				<span class="fr"><a href="http://2010.qq.com/">腾讯网-世博会唯一互联网高级赞助商</a></span><!--[if !IE]>|xGv00|5828da44cd558c8d7b93a34acad6ab30<![endif]-->
+			</div>
+			<div id="expoInfo" onclick="register0410('bb',1);">
+				<div class="imgArea">
+					<div class="imgRArea">
+·<a href="http://2010.qq.com/" target="_blank">世博将迎15至24个高温天 上海4月降冰</a><br />
+·<a href="http://2010.qq.com/a/20100415/000111.htm" target="_blank">日本游客或超百万</a> <a href="http://2010.qq.com/a/20100415/000159.htm" target="_blank">开幕将邀台湾各界</a><br />
+·<a href="http://2010.qq.com/a/20100415/000051.htm" target="_blank">齐达内将领军欧洲明星队PK中国男足</a><br />
+·<a href="http://2010.qq.com/zt/2010/gonglue/1.htm" target="_blank">攻略</a><span class="fc30"> | </span><a href="http://2010.qq.com/zt/2010/gonglue/lmsb.htm" target="_blank">情侣观园指南</a> <a href="http://2010.qq.com/zt/2010/gonglue/xiaochi.htm" target="_blank">尝小吃</a> <a href="http://2010.qq.com/zt/2010/gonglue/lipin.htm" target="_blank">怎样赚钱</a><br />
+</div>
+<div class="imgLAreapic"><a href="http://2010.qq.com/a/20100414/000303.htm"><img src="http://img1.gtimg.com/2010/pics/31989/31989509.jpg"  alt="杭州启动世博安保" width="115" height="70" border="0" /></a><br/>
+<a href="http://2010.qq.com/a/20100414/000303.htm" class="t">杭州启动世博安保</a></div>
+<!--[if !IE]>|xGv00|4bdc9ff7fc95640928707b29236759b2<![endif]-->
+				</div>
+			</div>
+			<div class="pro_b"></div>
+			<div class="hr_10"></div>
+
+			<div id="video">
+				<span class="fl vico"><a href="http://bb.news.qq.com/">热播视频</a><!--[if !IE]>|xGv00|487be0fc4300fdbc2c482429653a60f9<![endif]--></span>
+				<span class="fr"><!--访谈链接-->
+<!--[if !IE]>|xGv00|38edc94269f206a38823c5929b7d8f24<![endif]--></span>
+			</div>
+			<div id="videoInfo" onclick="register0410('bb',1);">
+				<div class="videoWrap">
+  <div class="fr">
+·<a href="http://news.qq.com/a/20100415/001910.htm">玉树小学教室倒塌</a> <a href="http://news.qq.com/a/20100415/000624.htm">武警抢救被埋女孩</a><br />
+·<a href="http://news.qq.com/a/20100415/000568.htm">实拍冰岛沉睡两百年冰川火山再喷发</a><br />
+·<a href="http://bb.news.qq.com/a/20100415/000006.htm">北京暴力拆迁队持灭火器喷射村民现场</a><br />
+·<a href="http://sports.qq.com/nbavideo/">火箭谢幕战主场不敌黄蜂 阿里扎三双</a><br />
+·<a href="http://news.qq.com/a/20100415/001926.htm">赵薇剖腹产女</a>	<a href="http://ent.qq.com/a/20100415/000090.htm">台湾40余女星涉嫌卖淫</a>						</div>
+					<div class="imgLAreapic">
+						<a href="http://news.qq.com/a/20100415/000638.htm"><img src="http://img1.gtimg.com/bb/pics/31988/31988233.jpg" alt="震区灾民安置点露天过夜 医疗救援紧急进行" /></a><br/><a href="http://news.qq.com/a/20100415/000638.htm" class="t">震区连夜救援画面</a>
+					</div>
+				</div>
+				<div class="vedioTextb">·<span class="pop"><a href="http://live.qq.com/">影视</a></span> <a href="http://live.qq.com/cover/8/8c0r2gs66hvo5u8.html">收视冠军-灿烂的遗产</a> <a href="http://live.qq.com/detail/a/a6ijuwqdxr3rxlc.html">大女当嫁</a> <a href="http://live.qq.com/detail/w/wr8sc0uanjpa83s.html">爱杀17</a> <a href="http://live.qq.com/detail/d/dhr1qwnju9rl2z3.html">东方茱丽叶</a></div><!--[if !IE]>|xGv00|ba0a7ffcc5bf92ba184c3b67632c2aec<![endif]-->
+			</div>
+
+			<div class="pro_b"></div>
+			<div class="hr_10"></div>
+			<div id="vfoucs">
+				<a href="http://pp.qq.com/">视觉焦点</a><!--[if !IE]>|xGv00|beaf73329cc7befd629e7a8765fff129<![endif]-->
+			</div>
+			<div id="vfoucsInfo" onclick="register0410('vfoucs',1);">
+				<div class="imgArea">
+					<div class="imgLAreapic">
+							<a href="http://news.qq.com/a/20100415/000165.htm"><img src="http://img1.gtimg.com/news/pics/31987/31987752.jpg" alt="玉树受灾儿童露天睡觉" /></a><br />
+							<a class="t" href="http://news.qq.com/a/20100415/000165.htm">受灾儿童露天睡觉</a>  
+						</div>
+						<div class="imgLAreapic">
+							<a href="http://sports.qq.com/a/20100415/000445.htm#p=1"><img src="http://img1.gtimg.com/sports/pics/31994/31994385.jpg" alt="姚明含泪心系青海" /></a><br />
+							<a class="t" href="http://sports.qq.com/a/20100415/000445.htm#p=1">姚明含泪心系青海</a>  
+						</div>
+						<div class="imgLAreapic">
+							<a href="http://blog.qq.com/pic/"><img src="http://img1.gtimg.com/blog/pics/31987/31987386.jpg" alt="实拍曼谷红衫军示威" /></a><br />
+							<a class="t" href="http://blog.qq.com/pic/">实拍曼谷红衫军示威</a>  
+						</div><!--[if !IE]>|xGv00|fc7d5ba60bd33bda0da00321b62f65b6<![endif]-->
+				</div>
+			</div>
+			<div class="pro_b"></div>
+		</div>
+	</div>
+	<div class="adArea" onclick="register0410('adarea',1);">
+		<style type="text/css" media="screen">
+#ppInfo{padding-top:23px;width:186px;overflow:hidden;margin-bottom:10px;position:relative;color:#5f5f5f}
+#ppMenu{color:#5f5f5f;height:23px;overflow:hidden;position:absolute;top:1px;text-align:center;}
+#ppMain{height:100%;border:solid #d4d4d4;border-width:1px 1px 0;overflow:hidden;}
+#ppFoot{height:3px;background:url(http://mat1.qq.com/zonetenpay/images/20081201/scale_01_bg.png) 0 -33px no-repeat;overflow:hidden;}
+#ppMenu ul{height:23px;overflow:hidden;}
+#ppMenu ul li{width:60px;height:23px;float:left;overflow:hidden;background:url(http://mat1.qq.com/zonetenpay/images/20081201/scale_01_bg.png) -63px 0 no-repeat;text-align:center;cursor:pointer;color:#5f5f5f;font-size:12px;margin-right:3px}
+#ppMenu ul li.ppMenuHere{background:url(http://mat1.qq.com/zonetenpay/images/20081201/scale_01_bg.png) 0 0 no-repeat;font-weight:bold; width:60px}
+#ppMenu ul li#ppMenu2{margin-right:0}
+#ppMainDesc{height:276px; overflow:hidden}
+#ppMainDesc *{font-family:simsun}
+#ppMainDesc ul{padding:0 10px;margin-top:4px;}
+#ppMainDesc li{border-bottom:1px dashed #c6c6c6;zoom:1;padding:8px 0;vertical-align:bottom;}
+#ppMainDesc li:after{clear:both;content:"";display:block;height:0;line-height:0;visibility:hidden;}
+#ppMainDesc li.nbor{border-bottom:none;}
+#ppMainDesc a {cursor:pointer;color:#5f5f5f;font-size:12px;}
+#ppMainDesc span {display:block;line-height:normal;}
+#ppMainDesc em {display:inline-block;-moz-box-align:center;-moz-box-pack:center;vertical-align:bottom;background-image:url(http://mat1.qq.com/zonetenpay/images/scale_img/scale_100412.jpg); background-repeat:no-repeat;}
+#ppMainDesc .scale1 {background-position:0 0;}
+#ppMainDesc .scale2 {background-position:0 -77px;}
+#ppMainDesc .scale3 {background-position:0 -154px;}
+#ppMainDesc .scale4 {background-position:-76px 0;}
+#ppMainDesc .scale5 {background-position:-76px -77px;}
+#ppMainDesc .scale6 {background-position:-76px -154px;}
+#ppMainDesc .scale7 {background-position:-152px 0;}
+#ppMainDesc .scale8 {background-position:-152px -77px;}
+#ppMainDesc .scale9 {background-position:-152px -154px;}
+.ppbigimg{float:left;}
+.ppbigimg em{width:75px;height:75px}
+.ppimgtxt{float:left;line-height:17px;width:89px;}
+.ppimgtxt p.title{line-height:15px;margin-bottom:5px;padding-top:2px;}
+.ppimgtxt dfn{color:#a1a0a0;font-style:normal;}
+.ppimgtxt *{font-size:12px}
+.ppimgtxt span{color:#0f307f;display:block;padding:3px 0}
+.ppscale em{width:45px;height:41px}
+.ppscale{padding:10px 0 0 12px}
+.ppscale li{float:left;width:57px;white-space:nowrap}
+.ppscale span{display:block;margin-top:10px;width:48px;text-align:center}
+#ppMainDesc a:link,#ppMainDesc a:visited,#ppMainDesc a:hover,#ppMainDesc a:active{text-decoration:none;}
+</style>
+<div id="ppInfo" onMouseOver="if(ppRoll) clearInterval(ppRoll)" onMouseOut="ppRoll=setInterval('callPPRoll()',6000)">
+  <div id="ppMenu">
+    <ul>
+      <li id="ppMenu0" onMouseOver="setTimeout('showPPInfoMenu(0)',100)" onClick="register0410('pai2009',1);">超值热卖</li>
+      <li id="ppMenu1" onMouseOver="setTimeout('showPPInfoMenu(1)',100)" onClick="register0410('pai2009',2);">放心正品</li>
+      <li id="ppMenu2" onMouseOver="setTimeout('showPPInfoMenu(2)',100)" onClick="register0410('pai2009',3);">最热卖场</li>
+    </ul>
+  </div>
+  <div id="ppMain">
+    <div id="ppMainDesc">
+		<div id="ppMainDesc0">
+			<ul>
+				<li>
+					<a href="http://www.paipai.com/mall/20501.shtml?PTAG=10001.3.18">
+					<div class="ppimgtxt">
+						<p class="title">女装流行关键字<br />捕捉当季热点</p>
+						<p><dfn>时尚精品推荐</dfn></p>
+						<p><span>快去看看吧</span></p>
+					</div>
+					<div class="ppbigimg">
+						<em class="scale1"></em>
+					</div>
+					</a>
+				</li>
+				<li>
+					<a href="http://sse1.paipai.com/0,28009-0,35741/s-hc26ysjkzj9pmzyyya--1-40-80-35741--3-4-3--8000-10000-2-2--1152-1-0-sf,3.html?PTAG=10001.3.19">
+					<div class="ppimgtxt">
+						<p class="title">笔记本内胆包<br />外观精美漂亮</p>
+						<p><dfn>防水\防震\防尘</dfn></p>
+						<p><span>本本贴身保镖</span></p>
+					</div>
+					<div class="ppbigimg">
+						<em class="scale2"></em>
+					</div>
+                    </a>
+				</li>
+				<li class="nbor">
+					<a href="http://sse1.paipai.com/0,221360-0,222142/s-448555q44a--1-40-80-222142--3-4-3----2-2-512-1152-1-0-sf,21-sf,3-pi,3247413a3c33363738393a3b3c3d3e3f2021205527225223282d2a2e2c245d5a-sf,3.html?PTAG=10001.3.20">
+					<div class="ppimgtxt">
+						<p class="title">十字绣纸巾盒<br />立体绣更好玩</p>
+						<p><dfn>甜美可爱</dfn></p>
+						<p><span>简单又漂亮</span></p>
+					</div>
+					<div class="ppbigimg">
+						<em class="scale3"></em>
+					</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="ppMainDesc1">
+            <ul>
+				<li>
+					<a href="http://service.paipai.com/cgi-bin/go?pageId=10001&domainId=3&linkId=27&url=http://shop.qq.com/act/miaosha1/">
+					<div class="ppimgtxt">
+						<p class="title">1000件正品 <br />品牌秒杀</p>
+						<p><dfn>低至1折 </dfn></p>
+						<p><span>限时限量</span></p>
+					</div>
+					<div class="ppbigimg">
+						<em class="scale4"></em>
+					</div>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.paipai.com/shang/search_list.shtml?type=203617&keyWord=casio&PTAG=10001.3.28">
+					<div class="ppimgtxt">
+						<p class="title">流行时尚手表<br />尚品会优质卖家</p>
+						<p><dfn>100%品质认证</dfn></p>
+						<p><span>彰显腕上魅力</span></p>
+					</div>
+					<div class="ppbigimg">
+						<em class="scale5"></em>
+					</div>
+					</a>
+				</li>
+				<li class="nbor">
+					<a href="http://list1.paipai.com/0,204260-0,204280-0,204927/l---1-40-15-204927--1-4-3----2-2--131200-1-0-sf,3.html?PTAG=10001.3.29">
+					<div class="ppimgtxt">
+						<p class="title">诺基亚E71<br />超薄金属机身</p>
+						<p><dfn>时尚全键盘</dfn></p>
+						<p><span>商务强机</span></p>
+					</div>
+					<div class="ppbigimg">
+						<em class="scale6"></em>
+					</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+        <div id="ppMainDesc2">
+			<ul>
+				<li>
+					<a href="http://www.paipai.com/mall/lady/xiu/12/?PTAG=10001.3.42">
+					<div class="ppimgtxt">
+						<p class="title">准备出游着装啦<br />掌握各地流行</p>
+						<p><dfn>优质卖家推荐</dfn></p>
+						<p><span>全场包邮</span></p>
+					</div>
+					<div class="ppbigimg">
+						<em class="scale7"></em>
+					</div>
+					</a>
+				</li>
+                <li>
+					<a href="http://www.paipai.com/mls/?PTAG=10001.3.43">
+					<div class="ppimgtxt">
+						<p class="title">满立减满立送<br />店铺促销精选</p>
+						<p><dfn>超值限时特惠</dfn></p>
+						<p><span>周周有惊喜！</span></p>
+					</div>
+					<div class="ppbigimg">
+						<em class="scale8"></em>
+					</div>
+					</a>
+				</li>
+                <li class="nbor">
+					<a href="http://www.paipai.com/buyervip/try.shtml?PTAG=10001.3.44">
+					<div class="ppimgtxt">
+						<p class="title">3万商品免费领<br />试吃试用</p>
+						<p><dfn>全面升级</dfn></p>
+						<p><span>先到先得!</span></p>
+					</div>
+					<div class="ppbigimg">
+						<em class="scale9"></em>
+					</div>
+					</a>
+				</li>
+                </ul>
+		</div>
+    </div>
+  </div>
+  <div id="ppFoot"></div>
+</div>
+<script type="text/javascript">
+function showPPInfoMenu(num){
+	for(var i=0;i<3;i++){
+		$("ppMenu"+i).className="";
+		$("ppMainDesc"+i).style.display="none";
+	}
+	$("ppMenu"+num).className="ppMenuHere";
+	$("ppMainDesc"+num).style.display="";
+}	
+showPPInfoMenu(0);
+var ppRollTime=1;
+function callPPRoll(){
+	if(ppRollTime<15){
+		showPPInfoMenu(ppRollTime%3);
+		ppRollTime++;
+	}else clearInterval(ppRoll);
+}
+var ppRoll=setInterval("callPPRoll()",6000);
+</script><!--[if !IE]>|xGv00|d3003ffa7d91d5e4aafcc535844e9794<![endif]-->
+		<div id="adAreaA"> <span>
+			<h3 id="adAreaA_4" name="f" onmouseover="tagOver(this)" onmouseout="tagOut(this)"><a href="http://abroad.qq.com">出国</a></h3>
+			</span>
+			<h3 id="adAreaA_3" name="f" onmouseover="tagOver(this)" onmouseout="tagOut(this)"><a href="http://gaokao.qq.com/">招生</a></h3>
+			<h3 id="adAreaA_2" name="f" onmouseover="tagOver(this)" onmouseout="tagOut(this)"><a href="http://edu.qq.com/">培训</a></h3>
+			<h3 id="adAreaA_1" name="f" class="s" onmouseover="tagOver(this)" onmouseout="tagOut(this)"><a href="http://edu.qq.com/">教育</a></h3>
+		</div>
+<script type="text/javascript">(function(){var r = parseInt(Math.random()*4+1);if(r<=0)	r=1;if(r>4)	r=4; var c = document.getElementById("adAreaA_"+r);tagOver(c);})()</script>
+		<div id="adAreaAInfo">
+			<div id="adAreaA_1_Info" name="f" class="dis" style="height:220px;" onclick="register0410('adarean',1);">
+				<span id="QQ_SX_JY_TEXT"></span>
+			</div>
+			<div id="adAreaA_2_Info" name="f" class="undis" onclick="register0410('adarean',2);">
+				<span id="QQ_SX_PX_TEXT"></span>
+			</div>
+			<div id="adAreaA_3_Info" name="f" class="undis" onclick="register0410('adarean',3);">
+					<span id="QQ_SX_ZS_TEXT"></span>
+			</div>
+			<div id="adAreaA_4_Info" name="f" class="undis" onclick="register0410('adarean',4);">
+					<span id="QQ_SX_LX_TEXT"></span>
+			</div>
+			<div class="midtext"><span class="fl">【商讯】</span><span class="fr">
+					<span id="QQ_SX_MIDDLE_TEXT"></span>
+			</span></div>
+			<div class="cl"></div>
+			<div>
+					<span id="QQ_SX_BOTTOM_TEXT"></span>
+				<!--QQ_SX_D_button1_div AD begin...."l=QQ_SX_D_button1&log=off"-->
+<div id="QQ_SX_D_button1" style="width:155px;height:35px;"></div>
+<!--QQ_SX_D_button1 AD end --><!--[if !IE]>|xGv00|937d2c14aab30d5ce5fd9ab86f88fdc4<![endif]-->
+			</div>
+		</div>
+		<div class="adAreaA_b"></div>
+	</div>
+</div>
+<script>try{QosS.topSpan("www.qq.com", 30);}catch(e){}</script>
+<script>
+	if(typeof wenzilian_need_block=='undefined'){var wenzilian_need_block=(function(){var ad_block_list=["1,021,","1,015,","1,030,017","1,030,012"];var getCookie=function(name){var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));if(arr!=null)return unescape(arr[2]);return null};var arr_indexOf=function(arr,o){if(arr.indexOf){return arr.indexOf(o)}for(var i=0;i<arr.length;i++){if(arr[i]===o){return i}}return-1};var fn_need_block=function(){var ac=getCookie('ac');if(!ac){return false}if(arr_indexOf(ad_block_list,ac)==-1){return false}return true};return fn_need_block()})();var str_format=function(s,config,reserve){return s.replace(/\{([^}]*)\}/g,(typeof config=='object')?function(m,i){var ret=config[i];return ret==null&&reserve?m:ret}:config)}}
+(function(id) {
+	var container = document.getElementById(id);
+	var innerHTML = [];
+	
+	innerHTML.push(str_format('<a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158301&loc=QQ_SX_JY_Test1&url=http://www.qinzhe.com/chinese/index.aspx': 'http://adsclick.qq.com/adsclick?oid=1158301&loc=QQ_SX_JY_Test1&url=http://www.qinzhe.com/chinese/index.aspx',
+		inner: wenzilian_need_block? '中国打破了世界软件巨头规则': '中国打破了世界软件巨头规则'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_JY_Test1&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158609&loc=QQ_SX_JY_Test2&url=http://www.gaokao600.cn/?ad=78002': 'http://adsclick.qq.com/adsclick?oid=1158609&loc=QQ_SX_JY_Test2&url=http://www.gaokao600.cn/?ad=78002',
+		inner: wenzilian_need_block? '２０１０高考--选择题不丢分': '２０１０高考--选择题不丢分'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_JY_Test2&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158305&loc=QQ_SX_JY_Test3&url=http://www.zqyxxy.com/': 'http://adsclick.qq.com/adsclick?oid=1158305&loc=QQ_SX_JY_Test3&url=http://www.zqyxxy.com/',
+		inner: wenzilian_need_block? '中青营销学院正式上线啦！': '中青营销学院正式上线啦！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_JY_Test3&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158610&loc=QQ_SX_JY_Test4&url=http://www.huore8.cn/': 'http://adsclick.qq.com/adsclick?oid=1158610&loc=QQ_SX_JY_Test4&url=http://www.huore8.cn/',
+		inner: wenzilian_need_block? '<span style="color:#bd0a01">２０１０高考—顶尖考试技巧</span>': '<span style="color:#bd0a01">２０１０高考—顶尖考试技巧</span>'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_JY_Test4&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158611&loc=QQ_SX_JY_Test5&url=http://www.zexiao.com/2010zx/net/201003020001.html': 'http://adsclick.qq.com/adsclick?oid=1158611&loc=QQ_SX_JY_Test5&url=http://www.zexiao.com/2010zx/net/201003020001.html',
+		inner: wenzilian_need_block? '2010年招生　校长不看后悔！': '2010年招生　校长不看后悔！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_JY_Test5&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158612&loc=QQ_SX_JY_Test6&url=http://www.zexiao.com/': 'http://adsclick.qq.com/adsclick?oid=1158612&loc=QQ_SX_JY_Test6&url=http://www.zexiao.com/',
+		inner: wenzilian_need_block? '我选择　我相信　我择校': '我选择　我相信　我择校'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_JY_Test6&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158613&loc=QQ_SX_JY_Test7&url=http://www.zexiao.com/2010zx/net/201003020001.html': 'http://adsclick.qq.com/adsclick?oid=1158613&loc=QQ_SX_JY_Test7&url=http://www.zexiao.com/2010zx/net/201003020001.html',
+		inner: wenzilian_need_block? '打造优秀团队之经典课程！': '打造优秀团队之经典课程！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_JY_Test7&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158614&loc=QQ_SX_JY_Test8&url=http://www.zexiao.com/zhaopin/index.html': 'http://adsclick.qq.com/adsclick?oid=1158614&loc=QQ_SX_JY_Test8&url=http://www.zexiao.com/zhaopin/index.html',
+		inner: wenzilian_need_block? '招聘：准备好了吗？就要你！': '招聘：准备好了吗？就要你！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_JY_Test8&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158615&loc=QQ_SX_JY_Test9&url=http://www.zexiao.com/': 'http://adsclick.qq.com/adsclick?oid=1158615&loc=QQ_SX_JY_Test9&url=http://www.zexiao.com/',
+		inner: wenzilian_need_block? '轻松择校，前途无忧！！': '轻松择校，前途无忧！！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_JY_Test9&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158616&loc=QQ_SX_JY_Test10&url=http://www.zexiao.com/2010zx/net/201003020002.html': 'http://adsclick.qq.com/adsclick?oid=1158616&loc=QQ_SX_JY_Test10&url=http://www.zexiao.com/2010zx/net/201003020002.html',
+		inner: wenzilian_need_block? '中国教育界2010年超级盛事！': '中国教育界2010年超级盛事！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_JY_Test10&log=off"-->
+	
+	container.innerHTML = innerHTML.join('');	
+})('QQ_SX_JY_TEXT');
+
+</script>
+<!--[if !IE]>|xGv00|7a655a15e58f71a0476bc83a3f5e97ed<![endif]-->
+<script>
+	if(typeof wenzilian_need_block=='undefined'){var wenzilian_need_block=(function(){var ad_block_list=["1,021,","1,015,","1,030,017","1,030,012"];var getCookie=function(name){var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));if(arr!=null)return unescape(arr[2]);return null};var arr_indexOf=function(arr,o){if(arr.indexOf){return arr.indexOf(o)}for(var i=0;i<arr.length;i++){if(arr[i]===o){return i}}return-1};var fn_need_block=function(){var ac=getCookie('ac');if(!ac){return false}if(arr_indexOf(ad_block_list,ac)==-1){return false}return true};return fn_need_block()})();var str_format=function(s,config,reserve){return s.replace(/\{([^}]*)\}/g,(typeof config=='object')?function(m,i){var ret=config[i];return ret==null&&reserve?m:ret}:config)}}
+(function(id) {
+	var container = document.getElementById(id);
+	var innerHTML = [];
+	
+	innerHTML.push(str_format('<a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158669&loc=QQ_SX_PX_Test1&url=http://www.qinzhe.com/chinese/index.aspx': 'http://adsclick.qq.com/adsclick?oid=1158669&loc=QQ_SX_PX_Test1&url=http://www.qinzhe.com/chinese/index.aspx',
+		inner: wenzilian_need_block? '中国打破了世界软件巨头规则': '中国打破了世界软件巨头规则'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_PX_Test1&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158671&loc=QQ_SX_PX_Test2&url=http://www.zexiao.com/': 'http://adsclick.qq.com/adsclick?oid=1158671&loc=QQ_SX_PX_Test2&url=http://www.zexiao.com/',
+		inner: wenzilian_need_block? '轻松择校　前途无忧！！': '轻松择校　前途无忧！！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_PX_Test2&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158672&loc=QQ_SX_PX_Test3&url=http://www.zqyxxy.com/': 'http://adsclick.qq.com/adsclick?oid=1158672&loc=QQ_SX_PX_Test3&url=http://www.zqyxxy.com/',
+		inner: wenzilian_need_block? '中青营销学院正式上线啦！': '中青营销学院正式上线啦！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_PX_Test3&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158673&loc=QQ_SX_PX_Test4&url=http://www.zexiao.com/': 'http://adsclick.qq.com/adsclick?oid=1158673&loc=QQ_SX_PX_Test4&url=http://www.zexiao.com/',
+		inner: wenzilian_need_block? '我选择　我相信　我择校': '我选择　我相信　我择校'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_PX_Test4&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158676&loc=QQ_SX_PX_Test5&url=http://www.zexiao.com/2010zx/net/201003020001.html': 'http://adsclick.qq.com/adsclick?oid=1158676&loc=QQ_SX_PX_Test5&url=http://www.zexiao.com/2010zx/net/201003020001.html',
+		inner: wenzilian_need_block? '2010年招生　校长不看后悔！': '2010年招生　校长不看后悔！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_PX_Test5&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158677&loc=QQ_SX_PX_Test6&url=http://www.zexiao.com/2010zx/net/201003020002.html': 'http://adsclick.qq.com/adsclick?oid=1158677&loc=QQ_SX_PX_Test6&url=http://www.zexiao.com/2010zx/net/201003020002.html',
+		inner: wenzilian_need_block? '中国教育机构营销排行榜！': '中国教育机构营销排行榜！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_PX_Test6&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158678&loc=QQ_SX_PX_Test7&url=http://www.zexiao.com/2010zx/net/201003020001.html': 'http://adsclick.qq.com/adsclick?oid=1158678&loc=QQ_SX_PX_Test7&url=http://www.zexiao.com/2010zx/net/201003020001.html',
+		inner: wenzilian_need_block? '打造优秀团队之经典课程！': '打造优秀团队之经典课程！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_PX_Test7&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158680&loc=QQ_SX_PX_Test8&url=http://www.zexiao.com/2010zx/net/201003020001.html': 'http://adsclick.qq.com/adsclick?oid=1158680&loc=QQ_SX_PX_Test8&url=http://www.zexiao.com/2010zx/net/201003020001.html',
+		inner: wenzilian_need_block? '招生成功宝典，你看了吗？': '招生成功宝典，你看了吗？'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_PX_Test8&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158681&loc=QQ_SX_PX_Test9&url=http://www.huore8.cn': 'http://adsclick.qq.com/adsclick?oid=1158681&loc=QQ_SX_PX_Test9&url=http://www.huore8.cn',
+		inner: wenzilian_need_block? '<span style="color:#bd0a01">２０１０高考－顶尖考试技巧</span>': '<span style="color:#bd0a01">２０１０高考－顶尖考试技巧</span>'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_PX_Test9&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158682&loc=QQ_SX_PX_Test10&url=http://www.gaokao600.cn/?ad=78002': 'http://adsclick.qq.com/adsclick?oid=1158682&loc=QQ_SX_PX_Test10&url=http://www.gaokao600.cn/?ad=78002',
+		inner: wenzilian_need_block? '２０１０高考--选择题不丢分': '２０１０高考--选择题不丢分'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_PX_Test10&log=off"-->
+	
+	container.innerHTML = innerHTML.join('');	
+})('QQ_SX_PX_TEXT');
+
+</script>
+<!--[if !IE]>|xGv00|1a4aa9a18d545d858e9349346d2d20af<![endif]-->
+<script>
+	if(typeof wenzilian_need_block=='undefined'){var wenzilian_need_block=(function(){var ad_block_list=["1,021,","1,015,","1,030,017","1,030,012"];var getCookie=function(name){var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));if(arr!=null)return unescape(arr[2]);return null};var arr_indexOf=function(arr,o){if(arr.indexOf){return arr.indexOf(o)}for(var i=0;i<arr.length;i++){if(arr[i]===o){return i}}return-1};var fn_need_block=function(){var ac=getCookie('ac');if(!ac){return false}if(arr_indexOf(ad_block_list,ac)==-1){return false}return true};return fn_need_block()})();var str_format=function(s,config,reserve){return s.replace(/\{([^}]*)\}/g,(typeof config=='object')?function(m,i){var ret=config[i];return ret==null&&reserve?m:ret}:config)}}
+(function(id) {
+	var container = document.getElementById(id);
+	var innerHTML = [];
+	
+	innerHTML.push(str_format('<a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158726&loc=QQ_SX_ZS_Test1&url=http://www.qinzhe.com/chinese/index.aspx': 'http://adsclick.qq.com/adsclick?oid=1158726&loc=QQ_SX_ZS_Test1&url=http://www.qinzhe.com/chinese/index.aspx',
+		inner: wenzilian_need_block? '中国打破了世界软件巨头规则': '中国打破了世界软件巨头规则'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_ZS_Test1&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158810&loc=QQ_SX_ZS_Test2&url=http://www.gaokao600.cn/?ad=78002': 'http://adsclick.qq.com/adsclick?oid=1158810&loc=QQ_SX_ZS_Test2&url=http://www.gaokao600.cn/?ad=78002',
+		inner: wenzilian_need_block? '２０１０高考--选择题不丢分': '２０１０高考--选择题不丢分'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_ZS_Test2&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158811&loc=QQ_SX_ZS_Test3&url=http://www.zexiao.com/': 'http://adsclick.qq.com/adsclick?oid=1158811&loc=QQ_SX_ZS_Test3&url=http://www.zexiao.com/',
+		inner: wenzilian_need_block? '轻松择校，前途无忧！！': '轻松择校，前途无忧！！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_ZS_Test3&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158727&loc=QQ_SX_ZS_Test4&url=http://www.zexiao.com/2010zx/net/201003020001.html': 'http://adsclick.qq.com/adsclick?oid=1158727&loc=QQ_SX_ZS_Test4&url=http://www.zexiao.com/2010zx/net/201003020001.html',
+		inner: wenzilian_need_block? '招生成功宝典，你看了吗？': '招生成功宝典，你看了吗？'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_ZS_Test4&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158812&loc=QQ_SX_ZS_Test5&url=http://www.zqyxxy.com/': 'http://adsclick.qq.com/adsclick?oid=1158812&loc=QQ_SX_ZS_Test5&url=http://www.zqyxxy.com/',
+		inner: wenzilian_need_block? '中青营销学院正式上线啦！': '中青营销学院正式上线啦！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_ZS_Test5&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158813&loc=QQ_SX_ZS_Test6&url=http://www.zexiao.com/2010zx/net/201003020002.html': 'http://adsclick.qq.com/adsclick?oid=1158813&loc=QQ_SX_ZS_Test6&url=http://www.zexiao.com/2010zx/net/201003020002.html',
+		inner: wenzilian_need_block? '2010全国院校招生形势分析会': '2010全国院校招生形势分析会'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_ZS_Test6&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158920&loc=QQ_SX_ZS_Test7&url=http://cms.zexiao.com/htm/zhnews/guanggaobaojia.html': 'http://adsclick.qq.com/adsclick?oid=1158920&loc=QQ_SX_ZS_Test7&url=http://cms.zexiao.com/htm/zhnews/guanggaobaojia.html',
+		inner: wenzilian_need_block? '高考频道广告位火热招商中！': '高考频道广告位火热招商中！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_ZS_Test7&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1161817&loc=QQ_SX_ZS_Test8&url=http://cms.zexiao.com/htm/zhnews/20100104020.html': 'http://adsclick.qq.com/adsclick?oid=1161817&loc=QQ_SX_ZS_Test8&url=http://cms.zexiao.com/htm/zhnews/20100104020.html',
+		inner: wenzilian_need_block? '首页文字链火热招商进行中！': '首页文字链火热招商进行中！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_ZS_Test8&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1161825&loc=QQ_SX_ZS_Test9&url=http://www.huore8.cn/': 'http://adsclick.qq.com/adsclick?oid=1161825&loc=QQ_SX_ZS_Test9&url=http://www.huore8.cn/',
+		inner: wenzilian_need_block? '<span style="color:#bd0a01">２０１０高考－顶尖考试技巧</span>': '<span style="color:#bd0a01">２０１０高考－顶尖考试技巧</span>'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_ZS_Test9&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1162558&loc=QQ_SX_ZS_Test10&url=http://www.qinzhe.com/chinese/tutorial2.htm': 'http://adsclick.qq.com/adsclick?oid=1162558&loc=QQ_SX_ZS_Test10&url=http://www.qinzhe.com/chinese/tutorial2.htm',
+		inner: wenzilian_need_block? 'Excel服务器认证工程师招生': 'Excel服务器认证工程师招生'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_ZS_Test10&log=off"-->
+	
+	container.innerHTML = innerHTML.join('');	
+})('QQ_SX_ZS_TEXT');
+
+</script>
+<!--[if !IE]>|xGv00|a8ea43887cd170d0805481503a977237<![endif]-->
+<script>
+	if(typeof wenzilian_need_block=='undefined'){var wenzilian_need_block=(function(){var ad_block_list=["1,021,","1,015,","1,030,017","1,030,012"];var getCookie=function(name){var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));if(arr!=null)return unescape(arr[2]);return null};var arr_indexOf=function(arr,o){if(arr.indexOf){return arr.indexOf(o)}for(var i=0;i<arr.length;i++){if(arr[i]===o){return i}}return-1};var fn_need_block=function(){var ac=getCookie('ac');if(!ac){return false}if(arr_indexOf(ad_block_list,ac)==-1){return false}return true};return fn_need_block()})();var str_format=function(s,config,reserve){return s.replace(/\{([^}]*)\}/g,(typeof config=='object')?function(m,i){var ret=config[i];return ret==null&&reserve?m:ret}:config)}}
+(function(id) {
+	var container = document.getElementById(id);
+	var innerHTML = [];
+	
+	innerHTML.push(str_format('<a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158765&loc=QQ_SX_LX_Test1&url=http://liuxue.neworiental.org/Portals/58/qt/special/workshop/index.html': 'http://adsclick.qq.com/adsclick?oid=1158765&loc=QQ_SX_LX_Test1&url=http://liuxue.neworiental.org/Portals/58/qt/special/workshop/index.html',
+		inner: wenzilian_need_block? '美国顶尖名校Workshop预约': '美国顶尖名校Workshop预约'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_LX_Test1&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158763&loc=QQ_SX_LX_Test2&url=http://www.51qiantu.com/qq_ad_03.html': 'http://adsclick.qq.com/adsclick?oid=1158763&loc=QQ_SX_LX_Test2&url=http://www.51qiantu.com/qq_ad_03.html',
+		inner: wenzilian_need_block? '２０１０世界大学最新排名！': '２０１０世界大学最新排名！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_LX_Test2&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158764&loc=QQ_SX_LX_Test3&url=http://www.igo.cn/zt/gz/2010mxzs/': 'http://adsclick.qq.com/adsclick?oid=1158764&loc=QQ_SX_LX_Test3&url=http://www.igo.cn/zt/gz/2010mxzs/',
+		inner: wenzilian_need_block? '<span style="color:#bd0a01">美国前100名校巡展广州站</span>': '<span style="color:#bd0a01">美国前100名校巡展广州站</span>'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_LX_Test3&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158766&loc=QQ_SX_LX_Test4&url=http://www.ceate.cn/content.php?contents=dgxxzyjs&title=dgxxzyjs': 'http://adsclick.qq.com/adsclick?oid=1158766&loc=QQ_SX_LX_Test4&url=http://www.ceate.cn/content.php?contents=dgxxzyjs&title=dgxxzyjs',
+		inner: wenzilian_need_block? '镀金德国高级汽车技师证书': '镀金德国高级汽车技师证书'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_LX_Test4&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158767&loc=QQ_SX_LX_Test5&url=http://www1.eic.org.cn/': 'http://adsclick.qq.com/adsclick?oid=1158767&loc=QQ_SX_LX_Test5&url=http://www1.eic.org.cn/',
+		inner: wenzilian_need_block? '教育成就未来　留学改变人生': '教育成就未来　留学改变人生'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_LX_Test5&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158768&loc=QQ_SX_LX_Test6&url=http://www.cedca.cn/thread.php?forumid=4385': 'http://adsclick.qq.com/adsclick?oid=1158768&loc=QQ_SX_LX_Test6&url=http://www.cedca.cn/thread.php?forumid=4385',
+		inner: wenzilian_need_block? '耶鲁等美国名校审核内部信息': '耶鲁等美国名校审核内部信息'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_LX_Test6&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158769&loc=QQ_SX_LX_Test7&url=http://edu.qq.com/a/20100412/000241.htm': 'http://adsclick.qq.com/adsclick?oid=1158769&loc=QQ_SX_LX_Test7&url=http://edu.qq.com/a/20100412/000241.htm',
+		inner: wenzilian_need_block? '申请美高校 Zinch成择校利器': '申请美高校 Zinch成择校利器'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_LX_Test7&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1112760&loc=QQ_SX_LX_Test8&url=http://www.paipai.com/': 'http://adsclick.qq.com/adsclick?oid=1112760&loc=QQ_SX_LX_Test8&url=http://www.paipai.com/',
+		inner: wenzilian_need_block? '腾讯拍拍网　　　　免费开店': '腾讯拍拍网　　　　免费开店'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_LX_Test8&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158771&loc=QQ_SX_LX_Test9&url=http://liuxue.neworiental.org/Portals/58/qt/special/2010.04summerschool/index.html': 'http://adsclick.qq.com/adsclick?oid=1158771&loc=QQ_SX_LX_Test9&url=http://liuxue.neworiental.org/Portals/58/qt/special/2010.04summerschool/index.html',
+		inner: wenzilian_need_block? '新东方美国名校2010夏季课程': '新东方美国名校2010夏季课程'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_LX_Test9&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1158772&loc=QQ_SX_LX_Test10&url=http://www.igo.cn/zt/201003juniors/?utm_source=qq&utm_medium=banner&utm_content=qqads1&utm_campaign=igo': 'http://adsclick.qq.com/adsclick?oid=1158772&loc=QQ_SX_LX_Test10&url=http://www.igo.cn/zt/201003juniors/?utm_source=qq&utm_medium=banner&utm_content=qqads1&utm_campaign=igo',
+		inner: wenzilian_need_block? '海外读高中　申请流程！': '海外读高中　申请流程！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_LX_Test10&log=off"-->
+	
+	container.innerHTML = innerHTML.join('');	
+})('QQ_SX_LX_TEXT');
+
+</script>
+<!--[if !IE]>|xGv00|906c1b7ddc76c26e7d5cba5f730a2656<![endif]-->
+<script>
+	if(typeof wenzilian_need_block=='undefined'){var wenzilian_need_block=(function(){var ad_block_list=["1,021,","1,015,","1,030,017","1,030,012"];var getCookie=function(name){var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));if(arr!=null)return unescape(arr[2]);return null};var arr_indexOf=function(arr,o){if(arr.indexOf){return arr.indexOf(o)}for(var i=0;i<arr.length;i++){if(arr[i]===o){return i}}return-1};var fn_need_block=function(){var ac=getCookie('ac');if(!ac){return false}if(arr_indexOf(ad_block_list,ac)==-1){return false}return true};return fn_need_block()})();var str_format=function(s,config,reserve){return s.replace(/\{([^}]*)\}/g,(typeof config=='object')?function(m,i){var ret=config[i];return ret==null&&reserve?m:ret}:config)}}
+(function(id) {
+	var container = document.getElementById(id);
+	var innerHTML = [];
+	
+	innerHTML.push(str_format('<a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1112763&loc=QQ_SX_M_Test1&url=http://show.qq.com': 'http://adsclick.qq.com/adsclick?oid=1112763&loc=QQ_SX_M_Test1&url=http://show.qq.com',
+		inner: wenzilian_need_block? '体验时尚，QQ秀！': '体验时尚，QQ秀！'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_M_Test1&log=off"-->
+	
+	container.innerHTML = innerHTML.join('');	
+})('QQ_SX_MIDDLE_TEXT');
+
+</script>
+<!--[if !IE]>|xGv00|f9add1a8b22c246ec84366d3f92566b7<![endif]-->
+<script>
+	if(typeof wenzilian_need_block=='undefined'){var wenzilian_need_block=(function(){var ad_block_list=["1,021,","1,015,","1,030,017","1,030,012"];var getCookie=function(name){var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));if(arr!=null)return unescape(arr[2]);return null};var arr_indexOf=function(arr,o){if(arr.indexOf){return arr.indexOf(o)}for(var i=0;i<arr.length;i++){if(arr[i]===o){return i}}return-1};var fn_need_block=function(){var ac=getCookie('ac');if(!ac){return false}if(arr_indexOf(ad_block_list,ac)==-1){return false}return true};return fn_need_block()})();var str_format=function(s,config,reserve){return s.replace(/\{([^}]*)\}/g,(typeof config=='object')?function(m,i){var ret=config[i];return ret==null&&reserve?m:ret}:config)}}
+(function(id) {
+	var container = document.getElementById(id);
+	var innerHTML = [];
+	
+	innerHTML.push(str_format('<a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1112764&loc=QQ_SX_D_Test1&url=http://live.qq.com/': 'http://adsclick.qq.com/adsclick?oid=1112764&loc=QQ_SX_D_Test1&url=http://live.qq.com/',
+		inner: wenzilian_need_block? '最新高清电影、电视剧在线看': '最新高清电影、电视剧在线看'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_D_Test1&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1112765&loc=QQ_SX_D_Test2&url=http://pet.qq.com/web07/index.shtml': 'http://adsclick.qq.com/adsclick?oid=1112765&loc=QQ_SX_D_Test2&url=http://pet.qq.com/web07/index.shtml',
+		inner: wenzilian_need_block? 'QQ宠物　　让你感受爱与被爱': 'QQ宠物　　让你感受爱与被爱'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_D_Test2&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1112766&loc=QQ_SX_D_Test3&url=http://vip.music.qq.com/index.html': 'http://adsclick.qq.com/adsclick?oid=1112766&loc=QQ_SX_D_Test3&url=http://vip.music.qq.com/index.html',
+		inner: wenzilian_need_block? '绿钻体验精彩的数字音乐生活': '绿钻体验精彩的数字音乐生活'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_D_Test3&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1112767&loc=QQ_SX_D_Test4&url=http://qdou.qq.com/': 'http://adsclick.qq.com/adsclick?oid=1112767&loc=QQ_SX_D_Test4&url=http://qdou.qq.com/',
+		inner: wenzilian_need_block? '小游戏大奖品，尽在Q豆乐园': '小游戏大奖品，尽在Q豆乐园'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_D_Test4&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1112768&loc=QQ_SX_D_Test5&url=http://desktop.qq.com/cgi-bin/jump?oid=339&url=http://tt.qq.com': 'http://adsclick.qq.com/adsclick?oid=1112768&loc=QQ_SX_D_Test5&url=http://desktop.qq.com/cgi-bin/jump?oid=339&url=http://tt.qq.com',
+		inner: wenzilian_need_block? '下载最新奥运版腾讯TT浏览器': '下载最新奥运版腾讯TT浏览器'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_D_Test5&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1112769&loc=QQ_SX_D_Test6&url=http://desktop.qq.com/cgi-bin/jump?oid=338&url=http://py.qq.com': 'http://adsclick.qq.com/adsclick?oid=1112769&loc=QQ_SX_D_Test6&url=http://desktop.qq.com/cgi-bin/jump?oid=338&url=http://py.qq.com',
+		inner: wenzilian_need_block? 'QQ拼音　　29套精美皮肤奉献': 'QQ拼音　　29套精美皮肤奉献'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_D_Test6&log=off"-->
+	
+	innerHTML.push(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+		clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1112770&loc=QQ_SX_D_Test7&url=http://vip.qq.com/': 'http://adsclick.qq.com/adsclick?oid=1112770&loc=QQ_SX_D_Test7&url=http://vip.qq.com/',
+		inner: wenzilian_need_block? 'ＱＱ会员，尊享网络世界特权': 'ＱＱ会员，尊享网络世界特权'
+	}));
+	//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_SX_D_Test7&log=off"-->
+	
+	container.innerHTML = innerHTML.join('');	
+})('QQ_SX_BOTTOM_TEXT');
+
+</script>
+<!--[if !IE]>|xGv00|9dd5bbbf09b4f9b4fbebfd313eb79bb9<![endif]-->
+<script type="text/javascript" src="http://www.qq.com/js/ping_qqcom_v2.1.2.js"></script>
+<script type="text/javascript">if(typeof(pgvMain) == 'function')pgvMain();</script>
+<script type="text/javascript" src="http://www.qq.com/js/smart_for_qq_v2.0.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+function weatherLoad()
+{
+	MiniSite.Weather.print("Wealth");
+}
+loadJS("http://www.qq.com/js/j.soso.weatherV1.5.4.js",weatherLoad);	
+/*]]>*/
+</script>
+<script src="http://adsfile.qq.com/web/AD2v2.3.js" type="text/javascript"></script>
+<style>.absolute{position:absolute;}</style>
+<!--[if !IE]>|xGv00|a3e078f8ca2f3cb6e24592dde0d711d0<![endif]-->
+<script src="http://l.qq.com/lview?c=www&loc=QQCOM_Width2,QQCOM_Width3,QQ_BackPopWin,QQ_Full,QQCOM_Button1,QQCOM_Button2,QQCOM_MIND_STREAM,QQ_SX_D_button1,QQCOM_Extend_Video,QQCOM_sosobutton2,WWW_RM_RightMove1,QQ_HP_Upright"></script> 
+<!--QQCOM_sosobutton2_script AD begin..."l=QQCOM_sosobutton2&log=off"-->
+<script>AD2.render('QQCOM_sosobutton2')</script>
+<!--QQCOM_sosobutton2_script AD end --><!--[if !IE]>|xGv00|57ad1a99fa4639c8d656d86daee4ae2b<![endif]-->
+<!--QQ_SX_D_button1_script AD begin..."l=QQ_SX_D_button1&log=off"-->
+<script>AD2.render('QQ_SX_D_button1')</script>
+<!--QQ_SX_D_button1_script AD end --><!--[if !IE]>|xGv00|612adc19cb3c41cdd38dce8f4d6a31b9<![endif]-->
+<!--QQCOM_Extend_Video_script AD begin..."l=QQCOM_Extend_Video&log=off"-->
+<script>AD2.render('QQCOM_Extend_Video')</script>
+<!--QQCOM_Extend_Video_script AD end --><!--[if !IE]>|xGv00|a364c7522d359a2e459fa4f1f3bd6b51<![endif]-->
+<div class="hr_10"></div>	
+<div class="cArea">
+		<div class="txArea">
+		<!--QQCOM_Width2_div AD begin...."l=QQCOM_Width2&log=off"-->
+<div id="QQCOM_Width2" style="width:714px;height:90px;"></div>
+<!--QQCOM_Width2 AD end --><!--[if !IE]>|xGv00|5dcba0fbb22ad5336a45697190997a58<![endif]-->
+		<!--QQCOM_Width2_script AD  begin-->
+<script>AD2.render('QQCOM_Width2')</script>
+<!--QQCOM_Width2_script AD end --><!--[if !IE]>|xGv00|e422e6248e1527b09adab365e08627e9<![endif]--></div>
+	<div class="adArea" onclick="register0410('paipay',1);"><style type="text/css" media="screen">
+#charge_content{
+	font-family:"宋体";
+	font-size:12px;
+	background:url(http://mat1.gtimg.com/zonetenpay/images/2009/06/charge_bg_090618.png) no-repeat;
+	width:186px;
+	height:90px;
+}
+#charge_content *{
+	margin:0;
+	padding:0;
+}
+#charge_content a:link,#charge_content a:visited{
+	text-decoration:none;
+}
+#charge_content .charge-nav span{
+	font-weight:700;
+	color:#605f5d;
+	margin-right:13px;
+}
+#charge_content .charge-nav{
+	margin:0 0 0 42px;
+             padding-top:8px;
+	height:23px;
+}
+#charge_content .charge-nav a{
+	display:inline-block;
+	padding:0 6px;
+	line-height:normal;
+}
+.charge-nav a:link,.charge-nav a:visited,.charge-nav a:hover,.charge-nav a:active{
+	color:#0d3081;
+}
+#charge_content .charge-nav a.n{
+	border-left:1px solid #d5d5d5;
+}
+#charge_content .charge-wrap{
+	padding-left:10px;
+}
+.charge-wrap select{
+	width:80px;
+}
+.charge-wrap input{
+	width:76px;
+}
+#charge_content .charge-wrap p{
+	margin-bottom:5px;
+	zoom:1;
+}
+#charge_content .charge-wrap p:after{
+	clear:both;
+	content:"";
+	display:block;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+}
+#charge_content .charge-wrap{
+	padding-top:4px;
+}
+.charge-wrap span{
+	float:left;
+}
+ .charge-wrap em{
+	 color:#ff4e00;
+	 font-style:normal;
+	 font-weight:700;
+}
+#charge_content .charge-wrap span.r{
+	padding-left:5px;
+}
+#charge_content .charge-wrap cite{
+	font-style:normal;
+	cursor:pointer;
+	margin-top:1px;
+	display:inline-block;
+	border:1px solid #c2c2c0;
+	padding:0 5px;
+	height:17px;
+	line-height:17px;
+	background:url(http://mat1.gtimg.com/zonetenpay/images/2009/06/charge_bg_090618.png) 0 -91px repeat-x;
+}
+</style>
+
+<script type="text/javascript">
+	function $E(e){return document.getElementById(e);}
+	function submitRequest(a){
+		var b=a;
+		var c=$E("chgmobile");
+		var d=$E("chgmobile2");
+		if(c.value==""){
+			alert("请输入手机号码。");
+			c.focus();
+			return;
+		}
+		if(d && d.value==""){
+			alert("请确认您输入的手机号码。");
+			d.focus();
+			return;
+		}
+		if(!c.value.match(/^(13[0-9]{9}|15[0-9]{9})$/)){
+			alert("您输入的手机号码不正确，请重新输入！");
+			c.focus();
+			return;
+		}
+		if(d && c.value!=d.value){
+			alert("您两次输入的手机号码不一致，请重新输入！");
+			d.focus();
+			return;
+		}
+		var e=$E("chargeAutoPrix").value;
+		if(e=="30000"&&c.value.match(/^(13[0-3][0-9]{8}|153[0-9]{8})$/)){
+			alert("联通号码暂不支持300元充值！");
+			$E("chargeAutoPrix").focus();
+			return;
+		}
+		para="tid=01001001&anonyuser=1&uin="+c.value+"&chgmobile="+c.value+"&amount="+e+"&chargeway="+b+"&bankid=0&PTAG=30053.20.8&attach=paipai";
+		window.open("http://pay.paipai.com/cgi-bin/pay_mobile_card?"+para);
+	};
+</script>
+
+<div id="charge_content">
+	<p class="charge-nav"><span>充话费</span><a href="http://www.paipai.com/chong/charge_index_games.shtml?PTAG=10001.8.1" target="_blank">充网游</a><a class="n" href="http://www.paipai.com/chong/charge_index_qb.shtml?PTAG=10001.8.2" target="_blank">充Q币</a></p>
+  <div class="charge-wrap">
+  	<p><span><label title="请输入手机号" for="chargeAutoPrix">面　值：</label><select id="chargeAutoPrix" name="chargeAutoPrix">
+        <option value="5000" selected="selected">50 元</option>
+        <option value="10000">100 元</option>
+        <option value="30000">300 元</option>
+			</select></span><span class="r"><em>9.8x折</em></span></p>
+    <p><span><label title="请输入手机号" for="chgmobile">手机号：</label><input type="text" name="chgmobile" id="chgmobile" maxlength="11" /></span><span class="r"><cite onclick="submitRequest(1)">充值</cite></span></p>
+  </div>
+</div><!--[if !IE]>|xGv00|291bf0d02c5ef3dc5a0cd7a86da2c67a<![endif]--></div>
+</div>
+<div class="hr_10"></div>	
+	<div class="cArea">
+		<div class="txArea">
+			<div class="resArea">
+				<div id="finance">
+					<h4 id="finance_1" class="s" name="d"><a href="http://finance.qq.com/">财经</a></h4>
+<div class="fr" style="width:114px;padding-top:2px;font-size:12px;color:#bab9b9;"><a href="http://finance.qq.com/stock/">A股</a> | <a href="http://finance.qq.com/hk/index.htm">港股</a> | <a href="http://finance.qq.com/usstock/">美股</a></div>
+<!--[if !IE]>|xGv00|1e6248480e62eaa22c683e23d57c0457<![endif]-->
+				</div>
+				<div id="financeInfo">
+					<div id="finance_1_Info" name="f" class="dis" onclick="register0410('finance',1);">
+					<div class="imgArea">
+	<div class="imgLAreapic">
+	<a href="http://finance.qq.com/zt/2010/GDP/index.htm"><img src="http://img1.gtimg.com/finance/pics/31964/31964532.jpg" alt="财经观察：GDP增速再临两位数的警示"></a><br />
+        <a class="t" href="http://finance.qq.com/zt/2010/GDP/index.htm">GDP增速加快的警示</a></div>
+	<div class="imgRArea">
+		<ul>
+
+<li><a href="http://finance.qq.com/l/scroll.htm">24小时财经滚动新闻</a></li>
+<li><a href="http://finance.qq.com/a/20100415/000021.htm">力拓被迫重组中国业务</a></li>
+<li><a href="http://finance.qq.com/a/20100415/000540.htm">太子奶否认破产清盘</a></li>
+<li><a href="http://finance.qq.com/a/20100415/000548.htm">黄光裕案启动质证程序</a></li>
+</ul>
+	</div>
+</div><!--[if !IE]>|xGv00|fd17c6558a5ddd05a08d7605fabf0990<![endif]-->
+					<div class="textArea">
+					·<a href="http://finance.qq.com/zt2010/Q1data/index.htm" class="fb">一季度GDP增速重回两位数</a> <a href="http://finance.qq.com/a/20100415/003705.htm" class="fb">统计局详解</a><br />
+·<a href="http://finance.qq.com/a/20100414/005701.htm">国务院：实行差别化房贷</a> <a href="http://finance.qq.com/a/20100415/001906.htm">新一轮政策将出台</a><br />
+·<a href="http://finance.qq.com/a/20100415/004033.htm">我国今年住房用地计划拟供应量为18万公顷</a><br />
+·<a href="http://finance.qq.com/a/20100415/000181.htm">土地增值税5年流失2万亿 专家建议全面清算</a><br />
+·<a href="http://finance.qq.com/a/20100415/002082.htm">张红力任工行副行长 外资高管加盟国有大行</a><br />
+·<a href="http://blog.qq.com/finance/"><b>专栏</b></a><span class="fc30"> | </span><a href="http://blog.qq.com/qzone/622006290/1271223388.htm">FT网：人民币升值解决不了贸易失衡</a><br /><!--[if !IE]>|xGv00|e73205ba60f4230cd893480c0782c969<![endif]-->
+					<div class="dotline" style="margin-top:5px;"></div>				
+					<div class="modstocknum" style="position:relative;">
+	<div id="container-GP" style="width:152px;position:absolute;top:68px;left:131px;"></div>
+	<div id="stocknum">
+		<div id="stocknum_2" class="d"><a style="font-size:12px;" href="http://stockhtm.finance.qq.com/astock/ggcx/DJI.htm" target="_blank">道指</a></div>
+		<div id="stocknum_3" class="d"><a style="font-size:12px;" href="http://stockhtm.finance.qq.com/hk/ggcx/HSI.htm" target="_blank">恒指</a></div>
+		<div id="stocknum_1" class="s"><a style="font-size:12px;" href="http://stockhtm.finance.qq.com/hqing/zhishu/000001.htm" target="_blank">上证</a></div>
+	</div>
+	<div id="stocknumInfo">
+		<div id="stocknum_1_Info" class="dis">
+			<div class="leftz"> <a href="http://stockhtm.finance.qq.com/hqing/zhishu/000001.htm" target="_blank"><img id="stocknum_img_GP" width="115" height="85"></a> </div>
+			<div class="rightz" style="height:44px;"> <span id="stocknum_hq0_GP">--</span> <span id="stocknum_hq1_GP">--</span> <span id="stocknum_hq2_GP">--</span><br />
+				<a href="http://stockapp.finance.qq.com/pstock/" target="_blank">自选股</a> | <a href="http://stockhtm.finance.qq.com/hcenter/index.htm" target="_blank">行情</a> | <a href="http://finance.qq.com/stock/zlzc.htm" target="_blank">主力动向</a><br />
+</div>
+		</div>
+		<div id="stocknum_2_Info" class="undis">
+			<div class="leftz"> <a href="http://stockhtm.finance.qq.com/astock/ggcx/DJI.htm" target="_blank"><img id="stocknum_img_AS" width="115" height="85"></a> </div>
+			<div class="rightz" style="height:44px;"> <span id="stocknum_hq0_AS">--</span> <span id="stocknum_hq1_AS">--</span> <span id="stocknum_hq2_AS">--</span><br />
+				<a href="http://stockhtm.finance.qq.com/hcenter/index.htm?page=900" target="_blank">环球股指</a><br />
+			</div>
+		</div>
+		<div id="stocknum_3_Info" class="undis">
+			<div class="leftz"> <a href="http://stockhtm.finance.qq.com/hk/ggcx/HSI.htm" target="_blank"><img id="stocknum_img_HK" width="115" height="85"></a> </div>
+			<div class="rightz" style="height:44px;"> <span id="stocknum_hq0_HK">--</span> <span id="stocknum_hq1_HK">--</span> <span id="stocknum_hq2_HK">--</span><br />
+				<a href="http://stockhtm.finance.qq.com/hcenter/index.htm?page=407" target="_blank">港股实时行情</a><br />
+			</div>
+		</div>
+	</div>
+</div><!--[if !IE]>|xGv00|653be8ee1cdfffacab15358298cc3ceb<![endif]-->
+					<div class="cl"></div>
+					·<a href="http://finance.qq.com/a/20100415/004808.htm" target="_blank">A股静待股指期货开市 沪指微跌1点报3165</a><br/>
+·<a href="http://finance.qq.com/zt/2009/guzhiqihuo/" target="_blank">期指周五上市六猜想：会否引领大盘创新高</a><br/>
+·<a href="http://finance.qq.com/a/20100415/002003.htm" target="_blank">部分基金公司下发内部文件：暂停买创业板</a><br />
+·<a href="http://finance.qq.com/a/20100415/001401.htm" target="_blank">青海玉树发生地震 上市公司未受影响(附股)</a><br/>
+·<a href="http://finance.qq.com/usstock/"><b>美股</b></a><span class="fc30"> | </span> <a href="http://finance.qq.com/a/20100415/003193.htm">伯南克称美国经济将缓慢复苏</a> <a href="http://stockhtm.finance.qq.com/hcenter/index.htm?page=900">股指</a><br />
+·<a href="http://finance.qq.com/a/20100415/000429.htm" target="_blank">希腊发债受热捧 金融大鳄索罗斯带头唱空</a> <a href="http://finance.qq.com/l/usstock/news.htm"></a><br />
+·<a href="http://finance.qq.com/hk/index.htm"><b>港股</b></a><span class="fc30"> | </span> <a href="http://finance.qq.com/a/20100415/004227.htm" target="_blank">恒指半日涨0.39%报22207</a> <a href="http://finance.qq.com/hk/hk_weekly/2010409.htm" target="_blank">实时行情</a><br />
+·<a href="http://finance.qq.com/a/20100415/001462.htm" target="_blank">社保基金小幅减持工行H股 套现9636万港元</a><!--[if !IE]>|xGv00|f89893dc7171fe6cb4aa1ed63a6de15b<![endif]-->	
+					</div>
+					</div>
+				</div>
+				<div class="res_b"></div>
+			</div>
+			<div class="proArea">
+				<div id="sports">
+					<!--include virtual="/indexn/sportstags.htm"-->
+<h4 id="sports_1" class="s" name="d" onmouseover="tagOver(this)" onmouseout="tagOut(this)"><a href="http://sports.qq.com">体育</a></h4>
+<h4 id="sports_2" class="d" name="d" onmouseover="tagOver(this)" onmouseout="tagOut(this)"><a href="http://worldcup.qq.com/">世界杯</a></h4>
+<div class="fr" style="width:90px;padding-top:2px;">
+	<div class="fl" style="padding-top:4px;"><img src="http://mat1.qq.com/www/images/allskin/nike.png" onload="loadPng(this)" /></div>
+	<div class="fr"><a href="http://c.l.qq.com/adsclick?seq=20100107000099&loc=hdjc" class="fb">加入酷跑</a></div>
+</div>
+					 <!--end-->
+				</div>
+				<div id="sportsInfo">
+					<div id="sports_1_Info" name="f" class="dis" onclick="register0410('sports',1);">
+					<div class="imgArea">
+  <div class="imgLAreapic"><a href="http://sports.qq.com/a/20100415/000197.htm"><img src="http://img1.gtimg.com/sports/pics/31977/31977641.jpg" alt="坎贝尔遭热刺球迷侮辱" width="115" height="70" border="0"/></a><br />
+  <a href="http://sports.qq.com/a/20100415/000197.htm" target="_blank" class="t">热刺球迷侮辱坎贝尔</a></div>
+    <div class="imgRArea">
+·<a href="http://sports.qq.com/nba/" target="_blank">NBA常规赛结束 季后赛对阵出炉</a> <a href="http://sports.qq.com/a/20100415/001097.htm" target="_blank">赛程表</a><br>
+·<a href="http://sports.qq.com/a/20100414/001515.htm" target="_blank">十一运女飞人禁赛四年 终身禁入国家队</a><br>
+·<a href="http://sports.qq.com/isocce/Spain.htm" target="_blank">西甲-巴萨3-0七连胜 妖星45米吊射破门</a><br>
+·<a href="http://sports.qq.com/isocce/England.htm" target="_blank">英超-阿森纳1-2负热刺 90后小将世界波</a><br>
+</div>
+
+</div>
+<div class="textArea">
+·<a href="http://sports.qq.com/a/20100415/000651.htm" target="_blank">阿里扎三双火箭收官战落败</a> <a href="http://sports.qq.com/a/20100415/000795.htm" target="_blank">易建联两双篮网双加时不敌热火</a><br>
+·<a href="http://sports.qq.com/a/20100415/000999.htm" target="_blank">霍华德蝉联封盖篮板王创历史</a> <a href="http://sports.qq.com/a/20100415/000578.htm" target="_blank">姚明：尽力援助玉树地震灾区</a><br>
+·<a href="http://sports.qq.com/others/badminton.htm" target="_blank">羽球亚锦赛林丹一日双赛进16强</a> <a href="http://sports.qq.com/a/20100415/000352.htm" target="_blank">马苏：孔令辉太单纯被利用</a><br>
+·<a href="http://worldcup.qq.com/" target="_blank" class="fb lchot">世界杯</a> <a href="http://worldcup.qq.com/visit/" target="_blank">32强探营：专访澳超豪门CEO</a> <a href="http://baobei.worldcup.qq.com/" target="_blank">今日宝贝：快女选手</a><br>
+
+<!--[if !IE]>|xGv00|fc07c790fb95dfb6bc369e209a341d3f<![endif]-->
+·<a href="http://sports.qq.com/lottery/" target="_blank">彩票-男子100元中8亿</a> <a href="http://hoop.qq.com/" target="_blank">灌篮-姚明领衔NBA世界杯足球队名单</a><br>
+·<a href="http://blog.qq.com/sports/">专栏</a> <span class="fc30"> | </span><a href="http://blog.qq.com/qzone/250607350/1271289675.htm" target="_blank">田协为何要对女飞人开恩</a> <a href="http://blog.qq.com/qzone/622001181/1271267006.htm" target="_blank">段暄：不靠谱的黑人朋友</a><!--[if !IE]>|xGv00|95eed6d50bb913831b8f45c623c054e4<![endif]-->	
+</div> 
+
+<!--[if !IE]>|xGv00|3a5ec53dc5e55ec697a9987306e340b3<![endif]-->
+					</div>
+					<div id="sports_2_Info" name="f" class="undis" onclick="register0410('sports',2);"></div>					
+				</div>
+				<div class="pro_b"></div>
+				<div class="hr_10"></div>
+				<div id="ent">
+					<span class="fl"><a href="http://ent.qq.com/">娱乐</a>·<a href="http://yue.qq.com/">音乐</a>·<a href="http://ent.qq.com/movie/">电影</a></span>
+<span class="fr"><a href="http://123.qq.com/" class="fb">蒙牛酸酸乳中联榜</a></span><!--[if !IE]>|xGv00|081edfe3f56cce61510901b259d315a3<![endif]-->
+				</div>
+				<div id="entInfo" onclick="register0410('ent',1);">
+					<div class="imgArea">
+  <div class="imgLAreapic">
+    <a href="http://ent.qq.com/a/20100415/000036.htm#p=1" target="_blank"><img src="http://img1.gtimg.com/ent/pics/31984/31984556.jpg"  alt="林志玲否认扮丑博出位 拍日剧稳坐主角位置"></a><br/><a class="t" href="http://ent.qq.com/a/20100415/000036.htm#p=1" target="_blank">林志玲拍日剧做主角</a></div>
+<div class="imgRArea">
+·<a href="http://ent.qq.com/zt2010/zwyhy/index.htm" class="rlk"  target="_blank">赵薇剖腹因妊娠反应大 幕后有神秘团队</a><br />
+·<a href="http://ent.qq.com/zt/2010/29hkfa/index.htm" class="rlk"  target="_blank">香港金像奖投票已结束</a> <a href="http://ent.qq.com/a/20100414/000573.htm" class="rlk"  target="_blank">独家专访任达华</a><br />·<a href="http://ent.qq.com/a/20100415/000045.htm#p=1" class="rlk"  target="_blank">独家：高希希称新《三国》30年难超越</a><br />
+·<a href="http://ent.qq.com/a/20100415/000030.htm" target="_blank">专访经理人霍汶希：细述Twins重建之路</a><br />
+
+
+</div>
+</div>
+<div class="textArea">
+·<a href="http://ent.qq.com/a/20100415/000040.htm#p=1" class="rlk"  target="_blank">汤唯拒当未婚妈妈</a> <a href="http://ent.qq.com/a/20100415/000077.htm" class="rlk"  target="_blank">明星微博打情骂俏</a>  <a href="http://ent.qq.com/a/20100415/000058.htm#p=1" class="rlk" target="_blank">萧亚轩哽咽吊祭亡母</a><br />
+·<a href="http://ent.qq.com/a/20100415/000037.htm"  target="_blank">《东风雨》首映</a>   <a href="http://ent.qq.com/a/20100415/000252.htm" class="rlk"  target="_blank">姜武造型似张纪中</a>  <a href="http://ent.qq.com/a/20100415/000039.htm" class="rlk" target="_blank">央视：不会辞退刘芳菲</a><br />
+·<a href="http://ent.qq.com/a/20100415/000032.htm" class="rlk" target="_blank">曾轶可入围最佳作曲</a> <a href="http://ent.qq.com/a/20100415/000065.htm#p=1" class="rlk" target="_blank">伍佰与蔡依林飙舞</a> <a href="http://ent.qq.com/a/20100415/000061.htm#p=1" class="rlk"  target="_blank">房祖名谈择偶标准</a><br />
+
+
+·<a href="http://ent.qq.com/picture.shtml">组图</a><span class="fc30"> | </span><a href="http://ent.qq.com/a/20100415/000056.htm#p=1" class="rlk"  target="_blank">言承旭上康熙狂喷小S</a> <a href="http://ent.qq.com/a/20100415/000048.htm#p=1" class="rlk"  target="_blank">刘惜君个唱将演唱原创歌曲</a><br />
+
+
+·<a href="http://ent.qq.com/m_mv/clip/monline.htm">新歌</a> <span class="fc30"> | </span><a href="http://datalib.ent.qq.com/album/24245/">BY2《成人礼》</a> <a href="http://datalib.ent.qq.com/album/24262/">麦当娜《Sticky & Sweet Tour》</a><br />
+
+
+·<a href="http://ent.qq.com/video.htm">视频</a><span class="fc30"> | </span><a href="http://ent.qq.com/a/20100415/000095.htm">周润发欲豪掷2.6亿购豪宅</a> <a href="http://ent.qq.com/a/20100415/000004.htm">豪门女星刘涛王艳复出</a><br />
+
+
+
+ 
+</div> <!--[if !IE]>|xGv00|8720a0ca21d5949a221694b103f5ed4c<![endif]-->			
+				</div>	
+				<div class="pro_b"></div>
+			</div>
+			
+		</div>
+		<div class="adArea">
+			<div id="adAreaBbox">
+				<!--QQ_HP_Upright_div AD begin...."l=QQ_HP_Upright&log=off"-->
+<div id="QQ_HP_Upright" style="width:186px;height:230px;"></div>
+<!--QQ_HP_Upright AD end --><!--[if !IE]>|xGv00|6e5ea828fdd193016656e56145070716<![endif]-->
+				<!--QQ_HP_Upright_script AD begin..."l=QQ_HP_Upright&log=off"-->
+<script>AD2.render('QQ_HP_Upright')</script>
+<!--QQ_HP_Upright_script AD end --><!--[if !IE]>|xGv00|cd1a2bfe0e139d3ba4208292aafc80bb<![endif]-->
+			</div>
+			<div><!--QQCOM_Button1_div AD begin...."l=QQCOM_Button1&log=off"-->
+<div id="QQCOM_Button1" style="width:186px;height:56px;"></div>
+<!--QQCOM_Button1 AD end --><!--[if !IE]>|xGv00|79b2972507dff27e7cd0a711a1630e62<![endif]-->
+			<!--QQCOM_Button1_script AD  begin-->
+<script>AD2.render('QQCOM_Button1')</script>
+<!--QQCOM_Button1_script AD end --><!--[if !IE]>|xGv00|b8ee304fde99d0c6b0294f423b9d0033<![endif]--></div>
+			<div class="hr_10"></div>
+			<div class="adAreaA_t"></div>
+			<div id="adAreaC">
+				<h5>重点推荐</h5>
+				<script>
+	if(typeof wenzilian_need_block=='undefined'){var wenzilian_need_block=(function(){var ad_block_list=["1,021,","1,015,","1,030,017","1,030,012"];var getCookie=function(name){var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));if(arr!=null)return unescape(arr[2]);return null};var arr_indexOf=function(arr,o){if(arr.indexOf){return arr.indexOf(o)}for(var i=0;i<arr.length;i++){if(arr[i]===o){return i}}return-1};var fn_need_block=function(){var ac=getCookie('ac');if(!ac){return false}if(arr_indexOf(ad_block_list,ac)==-1){return false}return true};return fn_need_block()})();var str_format=function(s,config,reserve){return s.replace(/\{([^}]*)\}/g,(typeof config=='object')?function(m,i){var ret=config[i];return ret==null&&reserve?m:ret}:config)}}
+
+document.write(str_format('<a href="{clickurl}" target="_blank">{inner}</a>', {
+	clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1011890&loc=QQ_2_Text1&url=http://tt.qq.com/': 'http://adsclick.qq.com/adsclick?oid=1168557&loc=QQ_2_Text1&url=http://www.sdgj.net.cn/qq/zs/sy/zdtj/1.html',
+	inner: wenzilian_need_block? 'TT浏览器：快速、稳定、安全': '关注：４只上市新股连续暴涨'
+}));
+//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_2_Text1&log=off"-->
+
+document.write(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+	clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1168562&loc=QQ_2_Text2&url=http://www.sdgj.net.cn/qq/zs/sy/zdtj/2.html': 'http://adsclick.qq.com/adsclick?oid=1168562&loc=QQ_2_Text2&url=http://www.sdgj.net.cn/qq/zs/sy/zdtj/2.html',
+	inner: wenzilian_need_block? '瑞士名牌手表－－火爆抢购！': '瑞士名牌手表－－火爆抢购！'
+}));
+//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_2_Text2&log=off"-->
+
+document.write(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+	clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1011903&loc=QQ_2_Text3&url=http://portal.tenpay.com/mobile/index.shtml?posid=10&actid=1&opid=27&whoid=10': 'http://adsclick.qq.com/adsclick?oid=1168563&loc=QQ_2_Text3&url=http://www.sdgj.net.cn/qq/zs/sy/zdtj/3.html',
+	inner: wenzilian_need_block? '手机话费折扣充值实惠看得见': '推荐：明日放量上涨８只金股'
+}));
+//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_2_Text3&log=off"-->
+
+document.write(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+	clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1168568&loc=QQ_2_Text4&url=http://www.8588.cn/?y_d=17': 'http://adsclick.qq.com/adsclick?oid=1168568&loc=QQ_2_Text4&url=http://www.8588.cn/?y_d=17',
+	inner: wenzilian_need_block? '小本创业　　热门好项目': '小本创业　　热门好项目'
+}));
+//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_2_Text4&log=off"-->
+
+document.write(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+	clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1168569&loc=QQ_2_Text5&url=http://www.3158.cn/?site=qqsy1': 'http://adsclick.qq.com/adsclick?oid=1168569&loc=QQ_2_Text5&url=http://www.3158.cn/?site=qqsy1',
+	inner: wenzilian_need_block? '3158致富网 让您轻松当老板!': '3158致富网 让您轻松当老板!'
+}));
+//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_2_Text5&log=off"-->
+
+document.write(str_format('<br /><a href="{clickurl}" target="_blank">{inner}</a>', {
+	clickurl: wenzilian_need_block? 'http://adsclick.qq.com/adsclick?oid=1168570&loc=QQ_2_Text6&url=http://www.4kuai.com/?cna_sid=1680559&cna_id=20': 'http://adsclick.qq.com/adsclick?oid=1168570&loc=QQ_2_Text6&url=http://www.4kuai.com/?cna_sid=1680559&cna_id=20',
+	inner: wenzilian_need_block? '<span style="color:#bd0a01">警惕：九成家长不会教孩子！</span>': '<span style="color:#bd0a01">警惕：九成家长不会教孩子！</span>'
+}));
+//<!--"http://adsview.qq.com/adsview?c=www&l=QQ_2_Text6&log=off"-->
+
+document.write(str_format('<br /><a href="{clickurl}" target="_blank">{

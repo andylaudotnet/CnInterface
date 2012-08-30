@@ -1,0 +1,142 @@
+SELECT * FROM [Cn_InterfaceVideo] WHERE [CnWebName] = @CnWebName
+
+
+IF NOT EXISTS(SELECT 1 FROM [Cn_InterfaceVideo] WHERE [CnWebName] = @CnWebName)
+BEGIN
+INSERT INTO [Cn_InterfaceVideo]
+           ([CnWebName]
+           ,[CnWebUrl]
+           ,[CnVideoTitle001]
+           ,[CnVideoHref001]
+           ,[CnVideoSrc001]
+           ,[CnVideoTitle002]
+           ,[CnVideoHref002]
+           ,[CnVideoSrc002]
+           ,[CnVideoTitle003]
+           ,[CnVideoHref003]
+           ,[CnVideoSrc003]
+           ,[CnVideoTitle004]
+           ,[CnVideoHref004]
+           ,[CnVideoSrc004]
+           ,[CnVideoTitle005]
+           ,[CnVideoHref005]
+           ,[CnVideoSrc005]
+           ,[CnVideoTitle006]
+           ,[CnVideoHref006]
+           ,[CnVideoSrc006]
+           ,[CnUpdateTime])
+     VALUES
+           @CnWebName
+           ,@CnWebUrl
+           ,@CnVideoTitle001
+           ,@CnVideoHref001
+           ,@CnVideoSrc001
+           ,@CnVideoTitle002
+           ,@CnVideoHref002
+           ,@CnVideoSrc002
+           ,@CnVideoTitle003
+           ,@CnVideoHref003
+           ,@CnVideoSrc003
+           ,@CnVideoTitle004
+           ,@CnVideoHref004
+           ,@CnVideoSrc004
+           ,@CnVideoTitle005
+           ,@CnVideoHref005
+           ,@CnVideoSrc005
+           ,@CnVideoTitle006
+           ,@CnVideoHref006
+           ,@CnVideoSrc006
+END
+ELSE
+BEGIN
+UPDATE [Cn_InterfaceVideo]
+   SET [CnWebName] = @CnWebName
+      ,[CnWebUrl] = @CnWebUrl
+      ,[CnVideoTitle001] = @CnVideoTitle001
+      ,[CnVideoHref001] = @CnVideoHref001
+      ,[CnVideoSrc001] = @CnVideoSrc001
+      ,[CnVideoTitle002] = @CnVideoTitle002
+      ,[CnVideoHref002] = @CnVideoHref002
+      ,[CnVideoSrc002] = @CnVideoSrc002
+      ,[CnVideoTitle003] = @CnVideoTitle003
+      ,[CnVideoHref003] = @CnVideoHref003
+      ,[CnVideoSrc003] = @CnVideoSrc003
+      ,[CnVideoTitle004] = @CnVideoTitle004
+      ,[CnVideoHref004] = @CnVideoHref004
+      ,[CnVideoSrc004] = @CnVideoSrc004
+      ,[CnVideoTitle005] = @CnVideoTitle005
+      ,[CnVideoHref005] = @CnVideoHref005
+      ,[CnVideoSrc005] = @CnVideoSrc005
+      ,[CnVideoTitle006] = @CnVideoTitle006
+      ,[CnVideoHref006] = @CnVideoHref006
+      ,[CnVideoSrc006] = @CnVideoSrc006
+      ,[CnUpdateTime] = getdate()
+ WHERE [CnWebName]=@CnWebName
+END
+
+
+
+select top 22 *  from Cn_InterfaceInfo  order by id desc
+
+
+
+INSERT INTO [Cn_InterfaceParse]
+           ([ParseName]
+           ,[ParseStatus]
+           ,[SiteSoureName]
+           ,[SiteSoureEncodeNo]
+           ,[SiteSoureUrl]
+           ,[CnTypeID]
+           ,[CnListUrl]
+           ,[CnListXPath]
+           ,[CnListRegex]
+           ,[CnInterfaceNameXPath]
+           ,[CnInterfaceNameRegex]
+           ,[CnInterfaceXPath]
+           ,[CnInterfaceRegex]
+           ,[CnInterfaceTimeXPath]
+           ,[CnInterfaceTimeRegex]
+           ,[CnInterfaceTimeFormat])
+     VALUES
+           ('天空软件接口'
+           ,1
+           ,'天空软件'
+           ,936
+           ,'http://www.skycn.com/'
+           ,6
+           ,'http://www.skycn.com/search.php?ss_name=%BD%D3%BF%DA&sf=&get=down_times'
+           ,''
+           ,''
+           ,''
+           ,''
+           ,''
+           ,''
+           ,''
+           ,''
+           ,'')
+
+
+
+
+declare @i int
+set @i=1
+while @i<30
+begin
+    insert into Cn_InterfaceInfo
+	(CnInterfaceTypeID,CnInterfaceName,CnInterfaceUrl,CnInterfaceInfo,CnInterfaceSource,CnInterfaceSourceUrl)
+	values 
+	(
+	1,
+	'火车时刻接口0'+cast(@i as varchar(10)),
+	'http://webservice.webxml.com.cn/WebServices/TrainTimeWebService.asmx',
+	'WebXml.com.cn 火车时刻表 WEB 服务提供：站站查询；车次查询；车站所有车次查询。本火车时刻表 WEB 服务提供的列车时刻表数据仅供参考，如有异议以当地铁路部门颁布为准。此火车时刻表Web Services请不要用于任何商业目的，若有需要请联系我们，欢迎技术交流。 QQ：8409035使用本站 WEB 服务请注明或链接本站：http://www.webxml.com.cn/ 感谢大家的支持！',
+	'上海思集信息科技有限公司',
+	'http://www.webxml.com.cn'
+	)
+   set @i=@i+1
+end 
+--select * from Cn_InterfaceInfo order by id desc
+
+
+SELECT  * FROM  sf_catch
+select top 5 * from sf_Article order by id desc

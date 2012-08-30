@@ -1,0 +1,1162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+<title>56.com - 中国最大的视频分享网站,在线视频观看,视频搜索,视频上传及分享互动</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="keywords" content="视频,在线视频,免费视频,视频搜索,视频播放,上传视频,相册视频,美女视频,电影电视剧" />
+<meta name="description" content="56.com拥有数量巨大的原创视频库、及完整影视库，从观看视频、上传视频、到分享视频都拥有极佳的用户体验；56.com目前是中国最大的视频分享平台，在此平台能与众多的网友进行视频分享、互动、娱乐……" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://so.56.com/opensearch/provider.xml" title="56视频" />
+<link href="http://s1.56img.com/admin/style/blue_2010/home/home_v3.61.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8">
+<!--
+try{document.domain="56.com";}catch (e){};
+var ___script___ = {include:function(){}};
+var _page_ = {channel:'index'};
+var hh;
+//-->
+</script>
+</head>
+<body>
+<!-- header_v2-->
+<div class="header_v3">
+	<!--= logo -->
+	<a href="http://www.56.com" title="56.com - 中国最大的视频分享网站,在线视频观看,视频搜索,视频上传及分享互动" class="logo">56.com</a>
+	<!--= navigation -->
+	<div class="navigation">
+		<ul>
+			<li class="active"><a href="http://www.56.com">首&nbsp;页</a></li>
+			<li><a href="http://video.56.com/">视&nbsp;频</a></li>
+			<li><a psyhz="3" href="http://zhibo.56.com/">直&nbsp;播</a><span class="pro_beta">btea</span></li>
+			<li><a href="http://www.56.com/w11/space_index.phtml">空&nbsp;间</a></li>
+			<li><a href="http://tieba.56.com/">我&nbsp;贴</a></li>
+			<li><a href="http://photo.56.com/">相&nbsp;册</a></li>
+
+		</ul>
+	</div>
+	<!--= chn_nav -->
+	<div class="chn_nav">
+		<a href="http://news.56.com" target="_blank">资讯</a><a href="http://dv.56.com/" target="_blank">原创</a><a href="http://ent.56.com/" target="_blank">娱乐</a><a href="http://tv.56.com/" target="_blank">影视</a><a href="http://games.56.com/" target="_blank">游戏</a><a href="http://sport.56.com/" target="_blank">体育</a><a href="http://weiqi.56.com/" target="_blank">围棋</a><a href="http://v16.56.com/acss/acss.php?atable=201005&targetUrl=http%3A%2F%2F56.500wan.com%2F&aid=2139" class="red" target="_blank">彩票</a><a href="http://auto.56.com" target="_blank">汽车</a><a href="http://mm.56.com" target="_blank">美女主播</a><a href="javascript:;" class="icon_more" onmouseover="document.getElementById('chnMoreList').style.display='block'" onmouseout="tt = setTimeout(function(){document.getElementById('chnMoreList').style.display='none';},3000);">&gt;&gt;</a>
+		<div id="chnMoreList" class="more_chn" onmouseover="this.style.display='block';clearTimeout(tt);" onmouseout="this.style.display='none'">
+			<ul>
+				<li><a href="http://expo.56.com" target="_blank">世博</a></li>
+				<li><a href="http://lady.56.com/" target="_blank">女性</a></li>
+				<li><a href="http://baby.56.com/" target="_blank" class="last">母婴</a></li>
+				<li><a href="http://travel.56.com/">旅游</a></li>
+				<li><a href="http://2010.56.com/" target="_blank">亚运</a></li>
+				<li><a href="http://so.56.com/videolist-type-hot_t-_c-8.html">动漫</a></li>
+				<li><a href="http://so.56.com/videolist-v-_type-hot_t-week_c-10.html">科教</a></li>
+				<li><a href="http://huoxing.56.com/">火星</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<!--= sys_info -->
+	<div class="sys_info" id="sys_info">
+
+	</div>
+	<!--= search -->
+	<div class="search">
+		<form onsubmit="return searchSubmit()" target="_blank" method="get" accept-charset="utf-8" action="http://so.56.com/index" name="search" >
+			<!--== so_sup -->
+			<div id="search_gui" class="so_sup">
+						<a href="http://news.56.com/sp/fsk" target="_blank">富士康</a>
+						<a href="http://sport.56.com/worldcup2010/" target="_blank">世界杯</a>
+						<a href="http://ent.56.com/sp/superboy2010" target="_blank" class="last">快乐男声</a>
+						</div>
+			<div id="search_ext" class="so_sup" style="display:none;">
+					<label for="ra1"><input type="radio" value="1" name="st" id="ra1"/>进入贴吧</label>
+					<label for="ra2"><input type="radio" value="2" name="st" checked="checked" id="ra2"/>搜索帖子</label>
+			</div>
+			<!--== so -->
+			<div class="so">
+				<!--=== so_option -->
+				<div class="so_option" onmouseout="hh = setTimeout(function(){document.getElementById('soOption').style.display='none';clearTimeout(hh);},4000)">
+	            	<span onclick="document.getElementById('soOption').style.display='block';clearTimeout(hh);" class="so_sel" id="soType">视频</span>
+	            	<a onclick="if(document.getElementById('soOption').style.display == 'none'){ document.getElementById('soOption').style.display='block'; } else {document.getElementById('soOption').style.display='none';} clearTimeout(hh);" class="so_v" href="javascript:;">v</a>
+	                <ul style="display: none;" class="so_option_list" id="soOption" onmouseover="document.getElementById('soOption').style.display='block';clearTimeout(hh);">
+	                    <li><a onclick="document.getElementById('soType').innerHTML = '视频';document.getElementById('type').value = '';document.search.action = 'http://so.56.com/index';document.getElementById('soOption').style.display='none';document.getElementById('search_gui').style.display='';document.getElementById('search_ext').style.display='none';clearTimeout(hh);" href="javascript:;">视频</a></li>
+	                    <li><a onclick="document.getElementById('soType').innerHTML = '专辑';document.getElementById('type').value = 'album';document.search.action = 'http://so.56.com/index';document.getElementById('soOption').style.display='none';document.getElementById('search_gui').style.display='';document.getElementById('search_ext').style.display='none';clearTimeout(hh);" href="javascript:;">专辑</a></li>
+	                    <li><a onclick="document.getElementById('soType').innerHTML = '贴吧';document.getElementById('type').value = 'tieba';document.search.action = 'http://tieba.56.com/so';document.getElementById('soOption').style.display='none';document.getElementById('search_ext').style.display='';document.getElementById('search_gui').style.display='none';clearTimeout(hh);" href="javascript:;">贴吧</a></li>
+	                </ul>
+	            </div>
+				<!--=== so_input -->
+				<div class="so_input">
+				    <input type="text" onfocus="document.charset='utf-8';this.className='inp_search';" autocomplete="off" value="" class="inp_search" name="key" id="Search_input" maxlength="60"/>
+                    <input type="button" class="btn_search" value="搜索" id="Search_btn" onclick="document.search.submit();"/>
+                    <input type="hidden" value="utf-8" name="charset"/>
+                    <input type="hidden" value="" name="type" id="type"/>
+                    <input type="hidden" value="" name="bn" id="bn"/>
+                    <input type="hidden" value="" name="kw" id="kw"/>
+					<div id="showJKL" style="display:none;">
+					</div>
+				</div>
+			</div><!--== so End -->
+			<!--== so_sub -->
+			<div class="so_sub"><a href="http://top.56.com/" target="_blank">排行榜</a><a href="http://so.56.com/videolist-type-new_t-week_c-_key-.html" target="_blank">最新视频</a><a href="http://so.56.com/videolist-type-hot_t-week_c-_key-.html" class="last" target="_blank">最热视频</a></div>
+		 </form>
+	</div><!--= search End -->
+</div><!-- header_v2 End -->
+
+<!-- top ad -->
+<div class="ad_950x50">
+	<script>
+	ad_56com_cid=10;
+	ad_56com_width=950;
+	ad_56com_height=50;
+	</script>
+	<script src=http://acs.56.com/ac/acs56.js></script>
+</div>
+<!-- wrap -->
+<div class="wrap clearfix">
+	<!--= main -->
+	<div class="main">
+		<!--== hot_show -->
+		<div class="hot_show clearfix">
+						<!--=== video_show -->
+			<div class="show_photo">
+				<div class="title"><h2 class="th">今日热点</h2></div>
+				<div class="video" id="index_video"></div>
+				<h3 id="videoshow_title" class="vt"><a href="http://www.56.com/w15/play_album-aid-8147064_vid-NTIwOTQ4ODA.html" target="_blank">朝鲜十万人集会谴责韩国制造天安号事件</a></h3>
+				<p id="videoshow_info"><em class="cms"><a href="http://www.56.com/w15/play_album-aid-8147064_vid-NTIwOTQ4ODA.html#CommentPlace" target="_blank">74</a></em>朝鲜：随时与来犯敌人“决一死战”<a href="http://www.56.com/w15/play_album-aid-8147064_vid-NTIwOTQ4ODA.html" target="_blank" class="last">详情</a></p>
+				<div class="tieba">
+					<div class="title"><span class="side"><a href="http://tieba.56.com/index.php?action=Rank&do=Recommend" class="alt">更多</a></span><h2><a href="http://tieba.56.com/">贴吧热议</a></h2></div>
+					<ul>
+											<li>
+						<span>[<a href="http://tieba.56.com/v/bn-%E7%94%B5%E5%BD%B1" target="_blank">电影</a>]</span><a href="http://tieba.56.com/v?tn=2265716" title="阿娇方力申拍《出水芙蓉》 “湿身”照首曝光" target="_blank">阿娇方力申拍《出水芙蓉》 “湿身”照首曝光</a>
+						</li>
+												<li>
+						<span>[<a href="http://tieba.56.com/v/bn-%E5%AF%8C%E5%A3%AB%E5%BA%B7" target="_blank">富士康</a>]</span><a href="http://tieba.56.com/v/tn-2268069" title="富士康老板郭台铭背后几个惊艳的女人-组图" target="_blank">富士康老板郭台铭背后几个惊艳的女人-组图</a>
+						</li>
+												<li>
+						<span>[<a href="http://tieba.56.com/v/bn-%E7%94%B5%E5%BD%B1" target="_blank">电影</a>]</span><a href="http://tieba.56.com/v?tn=2261192" title="周润发受伤赤膊露纹身 巩俐柔情关怀夫妻情深" target="_blank">周润发受伤赤膊露纹身 巩俐柔情关怀夫妻情深</a>
+						</li>
+											</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+			var videodata ="videodata=http://f0.r.56.com/f0.c52.56.com/flvdownload/3/16/127526356385hd.flv_^_http://s1.56img.com/images/index/1005/0531taj.jpg_^_52094880_^^_http://f3.r.56.com/f3.c55.56.com/flvdownload/0/25/127521520490hd.flv_^_http://s2.56img.com/images/index/1005/chhet.jpg_^_52082303_^^_http://f7.r.56.com/f7.c52.56.com/flvdownload/3/12/127517032016hd.flv_^_http://s3.56img.com/images/index/1005/laher.jpg_^_52066437&";			var videoinfo = [{info:'<em class="cms"><a href="http://www.56.com/w15/play_album-aid-8147064_vid-NTIwOTQ4ODA.html#CommentPlace" target="_blank">74</a></em>朝鲜：随时与来犯敌人“决一死战”<a href="http://www.56.com/w15/play_album-aid-8147064_vid-NTIwOTQ4ODA.html" target="_blank" class="last">详情</a>'},{info:'<em class="cms"><a href="http://www.56.com/u42/v_NTIwODIzMDM.html#CommentPlace" target="_blank">162</a></em>朝首次召开记者会称若遭制裁不惜一战<a href="http://www.56.com/u42/v_NTIwODIzMDM.html" target="_blank" class="last">详情</a>'},{info:'<em class="cms"><a href="http://www.56.com/u16/v_NTIwNjY0Mzc.html#CommentPlace" target="_blank">154</a></em>恐怖分子向人群射击并投掷手榴弹<a href="http://www.56.com/u16/v_NTIwNjY0Mzc.html" target="_blank" class="last">详情</a>'},];			var videotitle =[{title:'<a href="http://www.56.com/w15/play_album-aid-8147064_vid-NTIwOTQ4ODA.html" target="_blank">朝鲜十万人集会谴责韩国制造天安号事件</a>'},{title:'<a href="http://www.56.com/u42/v_NTIwODIzMDM.html" target="_blank">朝鲜否认击沉天安号 称若战争将使用核武</a>'},{title:'<a href="http://www.56.com/u16/v_NTIwNjY0Mzc.html" target="_blank">巴基斯坦拉合尔遇袭 93人死亡</a>'},];			</script>			<div class="show_video">
+			<div class="title"><span class="side"><a href="http://news.56.com" target="_blank" class="last">更多热点</a></span></div>
+									<dl class="v1">
+								<dt>
+									<a href="http://www.56.com/u47/v_NTIwOTg3NjQ.html" target="_blank" class="img"><img src="http://s2.56img.com/images/index/1005/wjbs.jpg" alt="温家宝访日:绝不延续仇恨" /></a>
+									<a href="http://www.56.com/u47/v_NTIwOTg3NjQ.html" target="_blank">温家宝访日:绝不延续仇恨</a></dt>
+								    <dd>
+								    <a href="http://www.56.com/u47/v_NTIwOTg3NjQ.html#CommentPlace" target="_blank"><em class="cms">268</em></a>播放:<span>9,403</span></dd>
+							</dl>
+						  						<dl class="v2">
+								<dt>
+									<a href="http://www.56.com/u83/v_NTIwOTUwMTY.html" target="_blank" class="img"><img src="http://s3.56img.com/images/index/1005/zhdiyi.jpg" alt="中石油首度登顶全球500强" /></a>
+									<a href="http://www.56.com/u83/v_NTIwOTUwMTY.html" target="_blank">中石油首度登顶全球500强</a></dt>
+								    <dd>
+								    <a href="http://www.56.com/u83/v_NTIwOTUwMTY.html#CommentPlace" target="_blank"><em class="cms">135</em></a>播放:<span>11,255</span></dd>
+							</dl>
+						  						<dl class="v3">
+								<dt>
+									<a href="http://www.56.com/u93/v_NTIxMDQyNjY.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1005/zcyj.jpg" alt="韩迷追星致世博严重拥挤" /></a>
+									<a href="http://www.56.com/u93/v_NTIxMDQyNjY.html" target="_blank">韩迷追星致世博严重拥挤</a></dt>
+								    <dd>
+								    <a href="http://www.56.com/u93/v_NTIxMDQyNjY.html#CommentPlace" target="_blank"><em class="cms">378</em></a>播放:<span>10,270</span></dd>
+							</dl>
+						  						<dl class="v4">
+								<dt>
+									<a href="http://www.56.com/w44/play_album-aid-8173882_vid-NTIxMDAwNDI.html" target="_blank" class="img"><img src="http://s2.56img.com/images/index/1005/e0531-01-4.jpg" alt="Selina男友大喊：我爱你" /></a>
+									<a href="http://www.56.com/w44/play_album-aid-8173882_vid-NTIxMDAwNDI.html" target="_blank">Selina男友大喊：我爱你</a></dt>
+								    <dd>
+								    <a href="http://www.56.com/w44/play_album-aid-8173882_vid-NTIxMDAwNDI.html#CommentPlace" target="_blank"><em class="cms">86</em></a>播放:<span>42,127</span></dd>
+							</dl>
+						  						<dl class="v5">
+								<dt>
+									<a href="http://www.56.com/w93/play_album-aid-8173664_vid-NTIwOTkzOTc.html" target="_blank" class="img"><img src="http://s3.56img.com/images/index/1005/0531gg.jpg" alt="台广告再度涉性遭狠批" /></a>
+									<a href="http://www.56.com/w93/play_album-aid-8173664_vid-NTIwOTkzOTc.html" target="_blank">台广告再度涉性遭狠批</a></dt>
+								    <dd>
+								    <a href="http://www.56.com/w93/play_album-aid-8173664_vid-NTIwOTkzOTc.html#CommentPlace" target="_blank"><em class="cms">103</em></a>播放:<span>201,002</span></dd>
+							</dl>
+						  						<dl class="v6">
+								<dt>
+									<a href="http://www.56.com/u28/v_NTIwOTUwNDk.html" target="_blank" class="img"><img src="http://img.v19.56.com/images/15/25/galastrii56olo56i56.com_sc_mp4_12752641077hd.jpg" alt="世乒赛中国女团痛失9连冠" /></a>
+									<a href="http://www.56.com/u28/v_NTIwOTUwNDk.html" target="_blank">世乒赛中国女团痛失9连冠</a></dt>
+								    <dd>
+								    <a href="http://www.56.com/u28/v_NTIwOTUwNDk.html#CommentPlace" target="_blank"><em class="cms">116</em></a>播放:<span>8,649</span></dd>
+							</dl>
+						  			</div>
+		</div><!--== hot_show End -->
+
+		<!--== video_list[4合1] -->
+		<div class="video_list chn_4in1">
+			<div class="title">
+				<ul class="clearfix">
+				<li><h2 class="ct_expo"><a href="http://sport.56.com/worldcup2010/" target="_blank">世界杯</a></h2></li><li><h2 class="ct_ba"><a href="http://ent.56.com/" target="_blank">娱乐</a></h2></li><li><h2 class="ct_fashion"><a href="http://sport.56.com/" target="_blank">体育</a></h2></li><li class="last"><h2 class="ct_le"><a href="http://dv.56.com/" target="_blank">拍客</a></h2></li>				</ul>
+			</div>
+			<div class="content">
+								<dl>
+					<dt>
+						<a href="http://www.56.com/u49/v_NTIwOTUzMzQ.html" target="_blank" class="img"><img src="http://img.v19.56.com/images/0/24/galastrii56olo56i56.com_sc_mp4_127526492073hd.jpg" alt="热身赛：英格兰2-1逆转日本" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u49/v_NTIwOTUzMzQ.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u49/v_NTIwOTUzMzQ.html" target="_blank">热身赛：英格兰2-1逆转日本</a></dt>
+										<dd>会员:<a href="http://galastri.56.com/" target="_blank">galastri</a></dd>
+						
+					<dd>播放:<span>3,155</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/w43/play_album-aid-8174237_vid-NTIxMDMyMjc.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1005/e0531-12-2.jpg" alt="陈楚生深圳演唱会精彩回顾 与李宗盛隔空对唱" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/w43/play_album-aid-8174237_vid-NTIxMDMyMjc.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/w43/play_album-aid-8174237_vid-NTIxMDMyMjc.html" target="_blank">陈楚生深圳演唱会精彩回顾 与李宗盛隔空对唱</a></dt>
+										<dd>官网:<a href="http://ent.56.com" target="_blank">56娱乐</a></dd>
+					
+					<dd>播放:<span>4,758</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u49/v_NTIxMDIxOTg.html" target="_blank" class="img"><img src="http://img.v19.56.com/images/18/23/tjstjqcni56olo56i56.com_zhajm_12752835868hd.jpg" alt="昔日骄傲女乒、女足、女排同一天遭遇滑铁卢" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u49/v_NTIxMDIxOTg.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u49/v_NTIxMDIxOTg.html" target="_blank">昔日骄傲女乒、女足、女排同一天遭遇滑铁卢</a></dt>
+										<dd>会员:<a href="http://tjstjqcn.56.com/" target="_blank">大田</a></dd>
+						
+					<dd>播放:<span>837</span></dd>
+				</dl>
+							<dl class="last">
+					<dt>
+						<a href="http://www.56.com/u37/v_NTIwODE5NDY.html" target="_blank" class="img"><img src="http://s2.56img.com/dv/images/upload/paike/2010/03/0531-01.jpg" alt="遵化双园村民遭不人道待遇" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u37/v_NTIwODE5NDY.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u37/v_NTIwODE5NDY.html" target="_blank">遵化双园村民遭不人道待遇</a></dt>
+										<dd>会员:<a href="http://sunwei8632budui.56.com/" target="_blank">sunwei8632budui</a></dd>
+						
+					<dd><a href="http://www.56.com/u37/v_NTIwODE5NDY.html#CommentPlace" target="_blank"><em class="cms">206</em></a>播放:<span>5,075</span></dd>
+				</dl>
+						</div>
+		</div><!--==/ video_list[4合1] -->
+
+		<!--== ad_620x90[通栏广告位] -->
+		<div class="ad_620x90">
+			<script type="text/javascript">
+			ad_56com_cid=11;
+			ad_56com_width=620;
+			ad_56com_height=90;
+			</script>
+			<script type="text/javascript" src=http://acs.56.com/ac/acs56.js></script>
+		</div>
+
+
+		<!--== video_list[娱乐明星] -->
+		<div class="video_list chn_fun">
+			<!--=== title -->
+			<div class="title" id="com_56_fun">
+				<div class="side"><a href="http://ent.56.com/" target="_blank">更多娱乐</a><a href="http://video.56.com/videolist-type-hot_t-_c-25.html" target="_blank" class="last">更多电影</a></div>
+				<h2><a href="http://ent.56.com/" target="_blank">娱乐</a><a href="http://video.56.com/videolist-type-hot_t-_c-25.html" target="_blank" class="last">电影</a></h2>
+			</div>
+			<div class="content">
+												<dl>
+					<dt>
+						<a href="http://www.56.com/u90/v_NTIwNTQxMDM.html" target="_blank" class="img"><img src="http://s3.56img.com/images/index/1005/e0531-03.jpg" alt="超女艾梦萌当街撒泼视频曝光 与男子斗殴连爆粗口" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u90/v_NTIwNTQxMDM.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u90/v_NTIwNTQxMDM.html" target="_blank">
+						超女艾梦萌当街撒泼视频曝光 与男子斗殴连爆粗口</a></dt>
+										<dd>会员:<a href="http://shuijingbeideai.56.com/" target="_blank">
+					水晶杯的爱					</a></dd>
+											<dd><a href="http://www.56.com/u90/v_NTIwNTQxMDM.html#CommentPlace" target="_blank"><em class="cms">206</em></a>播放:<span>35,835</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u40/v_NTIwMzkwOTM.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1005/e0531-10.jpg" alt="周星驰任上市公司CEO 新长江七号票房看齐阿凡达" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u40/v_NTIwMzkwOTM.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u40/v_NTIwMzkwOTM.html" target="_blank">
+						周星驰任上市公司CEO 新长江七号票房看齐阿凡达</a></dt>
+										<dd>会员:<a href="http://abc735600.56.com/" target="_blank">
+					民主					</a></dd>
+											<dd><a href="http://www.56.com/u40/v_NTIwMzkwOTM.html#CommentPlace" target="_blank"><em class="cms">39</em></a>播放:<span>5,846</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u13/v_NTIwNDQ5NjI.html" target="_blank" class="img"><img src="http://s2.56img.com/images/index/1005/tv053103.jpg" alt="《巫师学徒》首支制作特辑 新片花贝鲁奇亮相" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u13/v_NTIwNDQ5NjI.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u13/v_NTIwNDQ5NjI.html" target="_blank">
+						<span class="icon_hd" title="高清"></span>《巫师学徒》首支制作特辑 新片花贝鲁奇亮相</a></dt>
+										<dd>会员:<a href="http://zouxiating.56.com/" target="_blank">
+					zouxiating					</a></dd>
+											<dd>播放:<span>2,476</span></dd>
+				</dl>
+							<dl class="last">
+					<dt>
+						<a href="http://www.56.com/u68/v_NTExMTk5NjE.html " target="_blank" class="img"><img src="http://s3.56img.com/images/tuiguang/201004/gongji_140x84_0504.JPG" alt="法国公鸡，懂得入^_^ " /></a>
+												<a  href="http://www.56.com/u68/v_NTExMTk5NjE.html " target="_blank">
+						法国公鸡，懂得入^_^ </a></dt>
+										<dd>官网:<a href="http://lecoqsportif2010.56.com/" target="_blank">法国公鸡</a></dd>
+										<dd><a href="http://www.56.com/u68/v_NTExMTk5NjE.html #CommentPlace" target="_blank"><em class="cms">521</em></a>播放:<span>661,310</span></dd>
+				</dl>
+			
+			</div>
+
+		</div><!--==/ video_list[娱乐明星] -->
+
+		<!--== video_list[电影电视剧] -->
+		<div class="video_list chn_film">
+			<!--=== title -->
+			<div class="title" id="com_56_tv">
+				<div class="side"><a href="http://video.56.com/videolist-type-hot_t-_c-35.html" target="_blank" class="alt">更多电视剧</a></div>
+				<h2><a href="http://video.56.com/videolist-type-hot_t-_c-35.html" target="_blank">电视剧</a></h2>
+			</div>
+			<div class="content">
+												<dl>
+					<dt>
+						<a href="http://www.56.com/u12/v_NTIwOTAwMTc.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1005/tv053102.jpg" alt="MBC韩剧《金首露》第1集" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u12/v_NTIwOTAwMTc.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u12/v_NTIwOTAwMTc.html" target="_blank">
+						MBC韩剧《金首露》第1集</a></dt>
+										<dd>会员:<a href="http://lyz05021113.56.com/" target="_blank">
+					&rarr;Tonight&larr;					</a></dd>
+											<dd>播放:<span>718</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u86/v_NTIwOTM3ODc.html" target="_blank" class="img"><img src="http://s2.56img.com/images/index/1005/tv053101.jpg" alt="台湾偶像剧《泡沫之夏》第1集" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u86/v_NTIwOTM3ODc.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u86/v_NTIwOTM3ODc.html" target="_blank">
+						台湾偶像剧《泡沫之夏》第1集</a></dt>
+										<dd>会员:<a href="http://y90177.56.com/" target="_blank">
+					第11放映室					</a></dd>
+											<dd><a href="http://www.56.com/u86/v_NTIwOTM3ODc.html#CommentPlace" target="_blank"><em class="cms">53</em></a>播放:<span>5,646</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/w43/play_album-aid-7910708_vid-NTIwNDgwODM.html" target="_blank" class="img"><img src="http://s3.56img.com/images/index/1004/tv040602.jpg" alt="KBS韩剧《丈夫死了》第10集 " /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/w43/play_album-aid-7910708_vid-NTIwNDgwODM.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/w43/play_album-aid-7910708_vid-NTIwNDgwODM.html" target="_blank">
+						KBS韩剧《丈夫死了》第10集 </a></dt>
+										<dd>会员:<a href="http://adu5678.56.com/" target="_blank">
+					我爱你					</a></dd>
+											<dd>播放:<span>279,189</span></dd>
+				</dl>
+							<dl class="last">
+					<dt>
+						<a href="http://www.56.com/u86/v_NTE5MjcwMjc.html" target="_blank" class="img"><img src="http://img.v139.56.com/images/3/15/sagarti56olo56i56.com_127469683023hd_1.jpg" alt="亲历世博美女志愿者的动感一天" /></a>
+												<a  href="http://www.56.com/u86/v_NTE5MjcwMjc.html" target="_blank">
+						亲历世博美女志愿者的动感一天</a></dt>
+										<dd>官网:<a href="http://www.56.com/h44/u_sagart.html" target="_blank">sagart</a></dd>
+										<dd><a href="http://www.56.com/u86/v_NTE5MjcwMjc.html#CommentPlace" target="_blank"><em class="cms">64</em></a>播放:<span>191,560</span></dd>
+				</dl>
+						</div>
+		</div><!--== video_list[电影电视剧] End-->
+
+		<!--== video_list[综艺音乐] 原 [娱乐频道] -->
+		<div class="video_list chn_arts">
+			<!--=== title -->
+			<div class="title" id="com_56_fun">
+				<div class="side"><a href="http://ent.56.com/?do=ZYJM" target="_blank">更多综艺</a><a href="http://ent.56.com/?do=MusicVideo" target="_blank" class="last">更多音乐</a>
+				</div>
+				<h2><a href="http://ent.56.com/?do=ZYJM" target="_blank">综艺</a><a href="http://ent.56.com/?do=MusicVideo" target="_blank" class="last">音乐</a></h2>
+			</div>
+			<div class="content">
+												<dl>
+					<dt>
+						<a href="http://www.56.com/u80/v_NTIwOTA4Nzc.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1005/e0531-09.jpg" alt="Power星期天：爆笑猜词接唱花样百出 05-30" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u80/v_NTIwOTA4Nzc.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u80/v_NTIwOTA4Nzc.html" target="_blank">
+						Power星期天：爆笑猜词接唱花样百出 05-30</a></dt>
+										<dd>会员:<a href="http://klksy.56.com/" target="_blank">
+					莫离寒 吴宗宪全球后援会					</a></dd>
+											<dd>播放:<span>3,112</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/w98/play_album-aid-7872048_vid-NTIwOTExNzI.html" target="_blank" class="img"><img src="http://s2.56img.com/images/index/1005/e0531-07.jpg" alt="非诚勿扰：迎来豪宅男 胡元君牵手花美男 05-30" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/w98/play_album-aid-7872048_vid-NTIwOTExNzI.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/w98/play_album-aid-7872048_vid-NTIwOTExNzI.html" target="_blank">
+						非诚勿扰：迎来豪宅男 胡元君牵手花美男 05-30</a></dt>
+										<dd>会员:<a href="http://jria89.56.com/" target="_blank">
+					锋玥残影					</a></dd>
+											<dd><a href="http://www.56.com/w98/play_album-aid-7872048_vid-NTIwOTExNzI.html#CommentPlace" target="_blank"><em class="cms">58</em></a>播放:<span>12,562,493</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/w23/play_album-aid-8174395_vid-NTIxMDQ2ODc.html" target="_blank" class="img"><img src="http://s3.56img.com/images/index/1005/e0531-13.jpg" alt="实拍周笔畅广州演唱会 化身冷艳女王致敬王菲" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/w23/play_album-aid-8174395_vid-NTIxMDQ2ODc.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/w23/play_album-aid-8174395_vid-NTIxMDQ2ODc.html" target="_blank">
+						实拍周笔畅广州演唱会 化身冷艳女王致敬王菲</a></dt>
+										<dd>官网:<a href="http://ent.56.com" target="_blank">56娱乐</a></dd>
+										<dd>播放:<span>351</span></dd>
+				</dl>
+							<dl class="last">
+					<dt>
+						<a href="http://www.56.com/w74/play_album-aid-8173467_vid-NTIwNTA4MDQ.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1005/zhangshaohan0527.jpg" alt="张韶涵再度上海开唱 化身“外星公主”" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/w74/play_album-aid-8173467_vid-NTIwNTA4MDQ.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/w74/play_album-aid-8173467_vid-NTIwNTA4MDQ.html" target="_blank">
+						张韶涵再度上海开唱 化身“外星公主”</a></dt>
+										<dd>官网:<a href="http://idaocao_com.v.56.com/" target="_blank">idaocao_com</a></dd>
+										<dd>播放:<span>16,725</span></dd>
+				</dl>
+						</div>
+		</div><!--== video_listt[综艺音乐] 原 [娱乐频道] End-->
+
+		<!--== ad_620x90[通栏广告位] -->
+		<div class="ad_620x90">
+			<script type="text/javascript">
+			ad_56com_cid=30;
+			ad_56com_width=620;
+			ad_56com_height=90;
+			</script>
+			<script type="text/javascript" src=http://acs.56.com/ac/acs56.js></script>
+		</div>
+
+		<!--== video_list [原创|拍客] 原 [原创频道] -->
+		<div class="video_list chn_original">
+			<!--=== title -->
+			<div class="title" id="com_56_original">
+				<div class="side"><a href="http://dv.56.com/" target="_blank">更多原创</a><a href="http://dv.56.com/?do=Dv56" target="_blank" class="last">更多拍客</a></div>
+				<h2><a href="http://dv.56.com/" target="_blank">原创</a><a href="http://dv.56.com/?do=Dv56" target="_blank" class="last">拍客</a></h2>
+			</div>
+
+			<div class="content">
+												<dl>
+					<dt>
+						<a href="http://www.56.com/u29/v_NTIwOTM3MzA.html" target="_blank" class="img"><img src="http://s2.56img.com/dv/images/upload/2010/05/0531-03.jpg" alt="爆笑喜剧《大学进行式》第三集《XX的一天》" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u29/v_NTIwOTM3MzA.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u29/v_NTIwOTM3MzA.html" target="_blank">
+						爆笑喜剧《大学进行式》第三集《XX的一天》</a></dt>
+										<dd>会员:<a href="http://dijiuyingxiang.56.com/" target="_blank">
+					第九映像					</a></dd>
+											<dd>播放:<span>1,214</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u87/v_NTIwMzg5NjQ.html" target="_blank" class="img"><img src="http://s3.56img.com/dv/images/upload/2010/05/0531-01.jpg" alt="天剩我才第一季第二集：登陆日" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u87/v_NTIwMzg5NjQ.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u87/v_NTIwMzg5NjQ.html" target="_blank">
+						天剩我才第一季第二集：登陆日</a></dt>
+										<dd>会员:<a href="http://yyetsnet.56.com/" target="_blank">
+					YYeTs人人影视					</a></dd>
+											<dd>播放:<span>556</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u54/v_NTIwOTc4OTE.html" target="_blank" class="img"><img src="http://s1.56img.com/dv/images/upload/paike/2010/03/0531-03.jpg" alt="实拍凤姐当街发飙打人 " /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u54/v_NTIwOTc4OTE.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u54/v_NTIwOTc4OTE.html" target="_blank">
+						实拍凤姐当街发飙打人 </a></dt>
+										<dd>会员:<a href="http://longshao1978.56.com/" target="_blank">
+					龙少					</a></dd>
+											<dd><a href="http://www.56.com/u54/v_NTIwOTc4OTE.html#CommentPlace" target="_blank"><em class="cms">147</em></a>播放:<span>16,304</span></dd>
+				</dl>
+							<dl class="last">
+					<dt>
+						<a href="http://www.56.com/u13/v_NTIwNjMxNzg.html" target="_blank" class="img"><img src="http://s2.56img.com/dv/images/upload/paike/2010/03/0531-02.jpg" alt="内蒙武川一中教师学生集体罢课" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u13/v_NTIwNjMxNzg.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u13/v_NTIwNjMxNzg.html" target="_blank">
+						内蒙武川一中教师学生集体罢课</a></dt>
+										<dd>会员:<a href="http://li8818979.56.com/" target="_blank">
+					li8818979					</a></dd>
+											<dd>播放:<span>2,081</span></dd>
+				</dl>
+						</div>
+		</div><!--== video_list [原创|拍客] 原 [原创频道] End-->
+
+
+		<!--== video_list[美女主播火星] 原 [美女主播] -->
+		<div class="video_list chn_mm">
+			<!--=== title -->
+			<div class="title" id="com_56_mm">
+				<div class="side"><a href="http://mm.56.com/" target="_blank">更多美女</a><a href="http://dv.56.com/?do=MarsOriginal" target="_blank" class="last">更多火星</a></div>
+				<h2><a href="http://mm.56.com/" target="_blank">美女主播</a><a href="http://dv.56.com/?do=MarsOriginal" target="_blank" class="last">火星</a></h2>
+			</div>
+
+			<div class="content">
+												<dl>
+					<dt>
+						<a href="http://www.56.com/u85/v_NTIwMjY4MTg.html" target="_blank" class="img"><img src="http://s2.56img.com/mm/images/201005/3103.jpg" alt="晴空月月新歌《忘记时间》" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u85/v_NTIwMjY4MTg.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u85/v_NTIwMjY4MTg.html" target="_blank">
+						晴空月月新歌《忘记时间》</a></dt>
+										<dd>会员:<a href="http://aa75125.56.com/" target="_blank">
+					晴空月月					</a></dd>
+											<dd><a href="http://www.56.com/u85/v_NTIwMjY4MTg.html#CommentPlace" target="_blank"><em class="cms">47</em></a>播放:<span>2,152</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u93/v_NTIwNTg5NDY.html" target="_blank" class="img"><img src="http://s2.56img.com/mm/images/201005/3102.jpg" alt="乖乖小猪翻唱《一定要爱你》" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u93/v_NTIwNTg5NDY.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u93/v_NTIwNTg5NDY.html" target="_blank">
+						乖乖小猪翻唱《一定要爱你》</a></dt>
+										<dd>会员:<a href="http://ourbaby.56.com/" target="_blank">
+					乖乖小猪					</a></dd>
+											<dd><a href="http://www.56.com/u93/v_NTIwNTg5NDY.html#CommentPlace" target="_blank"><em class="cms">79</em></a>播放:<span>3,041</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u24/v_NDM3NTM2MTM.html" target="_blank" class="img"><img src="http://s3.56img.com/dv/images/upload/2010/05/0531-05.jpg" alt="中国咏春拳和巴西柔术切磋" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u24/v_NDM3NTM2MTM.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u24/v_NDM3NTM2MTM.html" target="_blank">
+						中国咏春拳和巴西柔术切磋</a></dt>
+										<dd>会员:<a href="http://yingyangyongchun.56.com/" target="_blank">
+					武汉咏春拳					</a></dd>
+											<dd>播放:<span>16,912</span></dd>
+				</dl>
+							<dl class="last">
+					<dt>
+						<a href="http://www.56.com/u66/v_NTE4MjI5MDM.html" target="_blank" class="img"><img src="http://s1.56img.com/dv/images/upload/2010/05/0531-04.jpg" alt="花美男神奇的眼睛有点恐怖" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u66/v_NTE4MjI5MDM.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u66/v_NTE4MjI5MDM.html" target="_blank">
+						花美男神奇的眼睛有点恐怖</a></dt>
+										<dd>会员:<a href="http://pazei.56.com/" target="_blank">
+					pazei					</a></dd>
+											<dd><a href="http://www.56.com/u66/v_NTE4MjI5MDM.html#CommentPlace" target="_blank"><em class="cms">87</em></a>播放:<span>7,028</span></dd>
+				</dl>
+						</div>
+		</div><!--== video_list[美女主播火星] 原 [美女主播]End-->
+
+		<!--== ad_620x90[通栏广告位] -->
+		<div class="ad_620x90">
+			<script type="text/javascript">
+			ad_56com_cid=13;
+			ad_56com_width=620;
+			ad_56com_height=90;
+			</script>
+			<script type="text/javascript" src=http://acs.56.com/ac/acs56.js></script>
+		</div>
+
+		<!--== video_list [汽车体育] 原 [体育] -->
+		<div class="video_list chn_trip">
+			<!--=== title -->
+			<div class="title" id="com_56_auto">
+				<div class="side"><a href="http://auto.56.com/" target="_blank">更多汽车</a><a href="http://sport.56.com/" target="_blank" class="last">更多体育</a></div>
+				<h2><a href="http://auto.56.com/" target="_blank">汽车</a><a href="http://sport.56.com/" target="_blank" class="last">体育</a></h2>
+			</div>
+
+			<div class="content">
+												<dl>
+					<dt>
+						<a href="http://www.56.com/u21/v_NTIxMDE2NDI.html" target="_blank" class="img"><img src="http://s2.56img.com/images/index/1005/auto05312.jpg" alt="跑车四门风暴 阿斯顿马丁Rapide" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u21/v_NTIxMDE2NDI.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u21/v_NTIxMDE2NDI.html" target="_blank">
+						<span class="icon_hd" title="高清"></span>跑车四门风暴 阿斯顿马丁Rapide</a></dt>
+										<dd>会员:<a href="http://zhutao2001.56.com/" target="_blank">
+					滔滔					</a></dd>
+											<dd>播放:<span>281</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u29/v_NTE5MjM2MjY.html" target="_blank" class="img"><img src="http://s3.56img.com/images/index/1005/auto05311.jpg" alt="百米加速仅2.2秒 布加迪威龙再升级" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u29/v_NTE5MjM2MjY.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u29/v_NTE5MjM2MjY.html" target="_blank">
+						百米加速仅2.2秒 布加迪威龙再升级</a></dt>
+										<dd>会员:<a href="http://abc735600.56.com/" target="_blank">
+					民主					</a></dd>
+											<dd>播放:<span>3,460</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u85/v_NTIwOTczMDY.html" target="_blank" class="img"><img src="http://img.v19.56.com/images/0/17/aaa1sssi56olo56i56.com_127527113686hd.jpg" alt="法国：埃菲尔铁塔上挑战轮滑跳跃" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u85/v_NTIwOTczMDY.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u85/v_NTIwOTczMDY.html" target="_blank">
+						法国：埃菲尔铁塔上挑战轮滑跳跃</a></dt>
+										<dd>会员:<a href="http://aaa1sss.56.com/" target="_blank">
+					12700					</a></dd>
+											<dd>播放:<span>3,498</span></dd>
+				</dl>
+							<dl class="last">
+					<dt>
+						<a href="http://www.56.com/u95/v_NTIwOTQ3NjQ.html" target="_blank" class="img"><img src="http://img.v19.56.com/images/0/12/ivan415i56olo56i56.com_127526299155hd.jpg" alt="2010年湖人VS凯尔特人总决赛宣传片：为了荣耀" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u95/v_NTIwOTQ3NjQ.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u95/v_NTIwOTQ3NjQ.html" target="_blank">
+						2010年湖人VS凯尔特人总决赛宣传片：为了荣耀</a></dt>
+										<dd>会员:<a href="http://ivan415.56.com/" target="_blank">
+					ivan415					</a></dd>
+											<dd>播放:<span>8,056</span></dd>
+				</dl>
+						</div>
+		</div><!--== video_list [汽车体育] 原 [体育]  End-->
+
+		<!--== video_list[游戏·推广] -->
+		<div class="video_list chn_game">
+			<!--=== title -->
+			<div class="title" id="com_56_game">
+				<div class="side"><a href="http://games.56.com/" target="_blank" class="last">更多游戏</a></div>
+				<h2><a href="http://games.56.com/" target="_blank">游戏</a><a href="http://comic.56.com/" target="_blank" class="last">推广</a></h2>
+			</div>
+			<div class="content">
+												<dl>
+					<dt>
+						<a href="http://www.56.com/u74/v_NTIxMDMxMDM.html" target="_blank" class="img"><img src="http://img.v19.56.com/images/20/1/bage8408i56olo56i56.com_zhajm_12752858474hd.jpg" alt="DOTA 分路决定胜负[CMSTORM]DTS vs NV" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u74/v_NTIxMDMxMDM.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u74/v_NTIxMDMxMDM.html" target="_blank">
+						DOTA 分路决定胜负[CMSTORM]DTS vs NV</a></dt>
+										<dd>会员:<a href="http://bage8408.56.com/" target="_blank">
+					bage8408					</a></dd>
+											<dd>播放:<span>89</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u45/v_NTIwNzQ1NjI.html" target="_blank" class="img"><img src="http://img.v19.56.com/images/13/17/blood1214i56olo56i56.com_127519599812hd.jpg" alt="网友自制NBA 2K10凯尔特人视频" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u45/v_NTIwNzQ1NjI.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u45/v_NTIwNzQ1NjI.html" target="_blank">
+						网友自制NBA 2K10凯尔特人视频</a></dt>
+										<dd>会员:<a href="http://blood1214.56.com/" target="_blank">
+					blood1214					</a></dd>
+											<dd>播放:<span>1,691</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u36/v_NTIwNzMwNTc.html" target="_blank" class="img"><img src="http://img.v19.56.com/images/17/26/shuxiaolei56olo56i56.com_12751917193hd.jpg" alt="穿越火线疯狂宝贝静像电影首发" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u36/v_NTIwNzMwNTc.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u36/v_NTIwNzMwNTc.html" target="_blank">
+						<span class="icon_hd" title="高清"></span>穿越火线疯狂宝贝静像电影首发</a></dt>
+										<dd>会员:<a href="http://shuxiaole.56.com/" target="_blank">
+					乐乐					</a></dd>
+											<dd><a href="http://www.56.com/u36/v_NTIwNzMwNTc.html#CommentPlace" target="_blank"><em class="cms">33</em></a>播放:<span>5,674</span></dd>
+				</dl>
+							<dl class="last">
+					<dt>
+						<a href="http://www.56.com/u18/v_NTIwNzMyMTU.html" target="_blank" class="img"><img src="http://img.v19.56.com/images/19/29/yinshuasanbani56olo56i56.com_127519216595hd.jpg" alt="一周CS集锦：再现手枪秀" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u18/v_NTIwNzMyMTU.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u18/v_NTIwNzMyMTU.html" target="_blank">
+						<span class="icon_hd" title="高清"></span>一周CS集锦：再现手枪秀</a></dt>
+										<dd>会员:<a href="http://yinshuasanban.56.com/" target="_blank">
+					 红色GIS					</a></dd>
+											<dd><a href="http://www.56.com/u18/v_NTIwNzMyMTU.html#CommentPlace" target="_blank"><em class="cms">22</em></a>播放:<span>2,339</span></dd>
+				</dl>
+						</div>
+		</div><!--== video_list[游戏·推广] End-->
+
+		<!--== video_list[女性·母婴] -->
+		<div class="video_list chn_female">
+			<!--=== title -->
+			<div class="title" id="com_56_female">
+				<div class="side"><a href="http://lady.56.com/" target="_blank">更多女性</a><a href="http://baby.56.com/" target="_blank" class="last">更多母婴</a></div>
+				<h2><a href="http://lady.56.com/" target="_blank">女性</a><a href="http://baby.56.com/" target="_blank" class="last">母婴</a></h2>
+			</div>
+
+			<div class="content">
+												<dl>
+					<dt>
+						<a href="http://www.56.com/u31/v_NTIwOTc4Njg.html" target="_blank" class="img"><img src="http://s2.56img.com/mm/images/201005/3105.jpg" alt="越南妞Elly出新照  “波”袭整个东南亚" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u31/v_NTIwOTc4Njg.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u31/v_NTIwOTc4Njg.html" target="_blank">
+						越南妞Elly出新照  “波”袭整个东南亚</a></dt>
+										<dd>会员:<a href="http://y19850531.56.com/" target="_blank">
+					简单的生活					</a></dd>
+											<dd>播放:<span>12,914</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u49/v_NTIwNjQ4ODY.html" target="_blank" class="img"><img src="http://s2.56img.com/mm/images/201005/3104.jpg" alt="摸胸抓胯下 女护士猥亵假男人遭批" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u49/v_NTIwNjQ4ODY.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u49/v_NTIwNjQ4ODY.html" target="_blank">
+						摸胸抓胯下 女护士猥亵假男人遭批</a></dt>
+										<dd>会员:<a href="http://xyytwz.56.com/" target="_blank">
+					xyytwz					</a></dd>
+											<dd><a href="http://www.56.com/u49/v_NTIwNjQ4ODY.html#CommentPlace" target="_blank"><em class="cms">31</em></a>播放:<span>16,855</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u24/v_NDg4ODI1MTc.html" target="_blank" class="img"><img src="http://s2.56img.com/mm/images/201005/3108.jpg" alt="康吉今天怎么了？我喜欢画画儿" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u24/v_NDg4ODI1MTc.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u24/v_NDg4ODI1MTc.html" target="_blank">
+						康吉今天怎么了？我喜欢画画儿</a></dt>
+										<dd>会员:<a href="http://iamkangji.56.com/" target="_blank">
+					iamkangji					</a></dd>
+											<dd>播放:<span>31</span></dd>
+				</dl>
+							<dl class="last">
+					<dt>
+						<a href="http://www.56.com/u38/v_NTIwNzg3Nzk.html" target="_blank" class="img"><img src="http://s2.56img.com/mm/images/201005/3107.jpg" alt="超可爱小胖仔50天啦" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u38/v_NTIwNzg3Nzk.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u38/v_NTIwNzg3Nzk.html" target="_blank">
+						超可爱小胖仔50天啦</a></dt>
+										<dd>会员:<a href="http://ss520ly.56.com/" target="_blank">
+					ss520ly					</a></dd>
+											<dd>播放:<span>1,577</span></dd>
+				</dl>
+						</div>
+		</div><!--== video_list[女性·母婴] End-->
+
+		<!--== ad_620x90[通栏广告位] End-->
+		<div class="ad_620x90">
+			<script>
+			ad_56com_cid=29;
+			ad_56com_width=620;
+			ad_56com_height=90;
+			</script>
+			<script src=http://acs.56.com/ac/acs56.js></script>
+		</div>
+		<!--== video_list[财富科技] -->
+		<div class="video_list chn_wealth">
+			<!--=== title -->
+			<div class="title" id="com_56_wealth">
+				<div class="side"><a href="http://news.56.com/?do=Wealth" target="_blank">更多财富</a><a href="http://news.56.com/?do=Tec" target="_blank" class="last">更多科技</a></div>
+				<h2><a href="http://news.56.com/?do=Wealth" target="_blank">财富</a><a href="http://news.56.com/?do=Tec" target="_blank" class="last">科技</a></h2>
+			</div>
+			<div class="content">
+												<dl>
+					<dt>
+						<a href="http://www.56.com/u43/v_NTIwOTcxNzY.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1005/caisu.jpg" alt="《财经郎眼》郎咸平解读蔬菜涨价的原因" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u43/v_NTIwOTcxNzY.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u43/v_NTIwOTcxNzY.html" target="_blank">
+						《财经郎眼》郎咸平解读蔬菜涨价的原因</a></dt>
+										<dd>会员:<a href="http://soige.56.com/" target="_blank">
+					soige					</a></dd>
+											<dd>播放:<span>455</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u54/v_NTIwOTkwMzU.html" target="_blank" class="img"><img src="http://s2.56img.com/images/index/1005/zhouru.jpg" alt="周杰伦入选全球百大商界创意人 名列第70" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u54/v_NTIwOTkwMzU.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u54/v_NTIwOTkwMzU.html" target="_blank">
+						周杰伦入选全球百大商界创意人 名列第70</a></dt>
+										<dd>会员:<a href="http://aaa1sss.56.com/" target="_blank">
+					12700					</a></dd>
+											<dd>播放:<span>903</span></dd>
+				</dl>
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u72/v_NTIwOTg2MTM.html" target="_blank" class="img"><img src="http://s3.56img.com/images/index/1005/iped.jpg" alt="日媒曝中国山寨ipad亮相深圳 取名iped" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u72/v_NTIwOTg2MTM.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u72/v_NTIwOTg2MTM.html" target="_blank">
+						日媒曝中国山寨ipad亮相深圳 取名iped</a></dt>
+										<dd>会员:<a href="http://zuotian_578.56.com/" target="_blank">
+					zuotian_578					</a></dd>
+											<dd><a href="http://www.56.com/u72/v_NTIwOTg2MTM.html#CommentPlace" target="_blank"><em class="cms">21</em></a>播放:<span>1,763</span></dd>
+				</dl>
+							<dl class="last">
+					<dt>
+						<a href="http://www.56.com/u69/v_NTIwOTc1NTQ.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1005/snjd.jpg" alt="不一样的感受 ipad上体验三款经典游戏" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u69/v_NTIwOTc1NTQ.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>						<a  href="http://www.56.com/u69/v_NTIwOTc1NTQ.html" target="_blank">
+						不一样的感受 ipad上体验三款经典游戏</a></dt>
+										<dd>会员:<a href="http://zuotian_578.56.com/" target="_blank">
+					zuotian_578					</a></dd>
+											<dd>播放:<span>2,524</span></dd>
+				</dl>
+						</div>
+		</div><!--== video_list[财富科技] End-->
+		<!--== video_list[用户推荐看看] -->
+		<div class="video_list chn_kankan">
+			<!--=== title -->
+			<div class="title" id="com_56_kankan">
+				<div class="side"><a href="http://video.56.com/videolist-type-ding_t-_c-_key-.html" target="_blank" class="last">更多推荐</a></div>
+				<h2><a href="http://video.56.com/videolist-type-ding_t-_c-_key-.html">用户推荐</a></h2>
+			</div>
+			<div class="content">
+				<!--[用户推荐视频]-->
+							<dl>
+					<dt>
+						<a href="http://www.56.com/u35/v_NTIwNTkzMjg.html" target="_blank" class="img"><img src="http://s2.56img.com/images/index/1005/fuexin.jpg" alt="芙蓉面自荐去富士康工作 开价年薪一百万" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u35/v_NTIwNTkzMjg.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>
+						<a href="http://www.56.com/u35/v_NTIwNTkzMjg.html" target="_blank">芙蓉面自荐去富士康工作 开价年薪一百万</a></dt>
+											<dd>会员:<a href="http://tongzhimianjie.56.com/" target="_blank">面姐</a></dd>
+									<dd><span class="dig_up">100</span><span class="dig_down">2,025</span></dd>
+					</dl>
+									<dl>
+					<dt>
+						<a href="http://www.56.com/u98/v_NTIwNjI4MjM.html" target="_blank" class="img"><img src="http://s3.56img.com/images/index/1005/chyif.jpg" alt="非诚勿扰：心动女生陈怡凡人气爆棚 05-29" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u98/v_NTIwNjI4MjM.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>
+						<a href="http://www.56.com/u98/v_NTIwNjI4MjM.html" target="_blank">非诚勿扰：心动女生陈怡凡人气爆棚 05-29</a></dt>
+											<dd>会员:<a href="http://jswszy.56.com/" target="_blank">jswszy</a></dd>
+									<dd><span class="dig_up">2,687</span><span class="dig_down">434</span></dd>
+					</dl>
+									<dl>
+					<dt>
+						<a href="http://www.56.com/u59/v_NTIwNjM2NjQ.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1005/zhdg.jpg" alt="快乐大本营：周杰伦遭遇三度PK 05-29" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u59/v_NTIwNjM2NjQ.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>
+						<a href="http://www.56.com/u59/v_NTIwNjM2NjQ.html" target="_blank">快乐大本营：周杰伦遭遇三度PK 05-29</a></dt>
+											<dd>会员:<a href="http://jswszy.56.com/" target="_blank">jswszy</a></dd>
+									<dd><span class="dig_up">12,147</span><span class="dig_down">1,242</span></dd>
+					</dl>
+									<dl class="last">
+					<dt>
+						<a href="http://www.56.com/u71/v_NTIwNjY4NDQ.html" target="_blank" class="img"><img src="http://img.v138.56.com/images/20/16/v-rossii56olo56i56.com_127517298385hd.jpg" alt="超可爱的外国宝宝吵架【HD中文字幕】" /></a>
+						<a href="http://w.56.com/addvideo.php?action=select&videoUrl=http://www.56.com/u71/v_NTIwNjY4NDQ.html" target="_blank" title="添加到视频专辑" class="add_to_album"></a>
+						<a href="http://www.56.com/u71/v_NTIwNjY4NDQ.html" target="_blank">超可爱的外国宝宝吵架【HD中文字幕】</a></dt>
+											<dd>会员:<a href="http://v-rossi.56.com/" target="_blank">v-rossi</a></dd>
+									<dd><span class="dig_up">1,208</span><span class="dig_down">26</span></dd>
+					</dl>
+								</div>
+		</div><!--== video_list[用户推荐看看] End-->	</div><!--= main End -->
+	<!--= side -->
+	<div class="side">
+		<div class="ad_300x60 ad_first">
+		 <script>
+			ad_56com_cid=89;
+			ad_56com_width=300;
+			ad_56com_height=50;
+		</script>
+		<script src=http://acs.56.com/ac/acs56.js></script>
+		</div>
+
+		
+		<!--== login -->
+		<div class="login" id="login">
+
+		</div><!--== login End-->
+
+		<div id="none_recoid"></div>
+
+		<!--== ad_player -->
+		<!--flash播放器广告位置-->
+		<script>
+			ad_56com_cid=81;
+			ad_56com_width=300;
+			ad_56com_height=241;
+		</script>
+		<script src=http://acs.56.com/ac/acs56.js></script>
+		<!--== ad_player End-->
+		<!-- ad-->
+		<div class="ad_300x50">
+			<script type="text/javascript">
+			ad_56com_cid=84;
+			ad_56com_width=300;
+			ad_56com_height=50;
+			</script>
+			<script type="text/javascript" src=http://acs.56.com/ac/acs56.js></script>
+		</div>
+		<!-- ad end-->
+		<!--== video_24th[24小时最多 Add by Sonic 2009-10-27] -->
+		<div class="video_24th">
+			<div class="title2">
+				<ul class="tab_1">
+					<li id="tab_24th_1" class="active"><a href="http://so.56.com/videolist-type-hot.html" target="_blank">24小时最多观看</a></li>
+					<li id="tab_24th_2"><a href="http://so.56.com/videolist-type-ding_t-_c-_key-.html" target="_blank">24小时最多推荐</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<ul id="con_24th_1">
+									<li  class="top"><em>1</em><a href="http://www.56.com/u59/v_NTIwNjM2NjQ.html" target="_blank" title="快乐大本营20100529魔术秀">快乐大本营20100529魔…</a><span class="play">173,409</span></li>
+										<li  class="top"><em>2</em><a href="http://www.56.com/u34/v_NTIwNDU0MjM.html" target="_blank" title="佛山中学生群殴老师视频曝光">佛山中学生群殴老师视频曝光</a><span class="play">142,587</span></li>
+										<li  class="top"><em>3</em><a href="http://www.56.com/u53/v_NTIwMjk0MjY.html" target="_blank" title="硕士偷入女厕所窥美女被抓">硕士偷入女厕所窥美女被抓</a><span class="play">117,507</span></li>
+										<li ><em>4</em><a href="http://www.56.com/u53/v_NTIwNDU0NDI.html" target="_blank" title="方正女人干架NB">方正女人干架NB</a><span class="play">116,289</span></li>
+										<li ><em>5</em><a href="http://www.56.com/u15/v_NTIwNTQxMTY.html" target="_blank" title="韩国“Android女” 人美唱功绝">韩国“Android女” 人…</a><span class="play">73,108</span></li>
+										<li ><em>6</em><a href="http://www.56.com/u20/v_NTIwNjkzNDU.html" target="_blank" title="广东某主持人照片被盗用成“天上人间头牌”">广东某主持人照片被盗用成“天…</a><span class="play">65,545</span></li>
+										<li ><em>7</em><a href="http://www.56.com/u63/v_NTIwNzYzNDA.html" target="_blank" title="长春女子穿三点在泥浆里踢足球">长春女子穿三点在泥浆里踢足球</a><span class="play">62,236</span></li>
+										<li ><em>8</em><a href="http://www.56.com/u16/v_NTIwNjY0Mzc.html" target="_blank" title="拉合尔遇袭至少93人死亡 今年最惨重袭击">拉合尔遇袭至少93人死亡 今…</a><span class="play">46,508</span></li>
+									</ul>
+				<ul id="con_24th_2" style="display:none;">
+									<li  class="top"><em>1</em><a href="http://www.56.com/u59/v_NTIwNjM2NjQ.html" target="_blank" title="快乐大本营20100529魔术秀">快乐大本营20100529魔术…</a><span class="play">12,147</span></li>
+										<li  class="top"><em>2</em><a href="http://www.56.com/u50/v_NTIwNjk4MTU.html" target="_blank" title="暴汗网友翻唱 伤心的时候可以听情歌">暴汗网友翻唱 伤心的时候可以听…</a><span class="play">2,472</span></li>
+										<li  class="top"><em>3</em><a href="http://www.56.com/u43/v_NTIwNjY4MTY.html" target="_blank" title="闫凤娇裸照破绽百出 似自拍">闫凤娇裸照破绽百出 似自拍</a><span class="play">1,272</span></li>
+										<li ><em>4</em><a href="http://www.56.com/u71/v_NTIwNjY4NDQ.html" target="_blank" title="超可爱的外国宝宝吵架【HD中文字幕】">超可爱的外国宝宝吵架【HD中文…</a><span class="play">1,208</span></li>
+										<li ><em>5</em><a href="http://www.56.com/u66/v_NTIwNzUxOTk.html" target="_blank" title="真人秀20100529非诚勿扰 第30期">真人秀20100529非诚勿扰…</a><span class="play">712</span></li>
+										<li ><em>6</em><a href="http://www.56.com/u86/v_NTIwNzE3ODc.html" target="_blank" title="台惊现内衣大盗 家藏女性内衣裤超过1300件">台惊现内衣大盗 家藏女性内衣裤…</a><span class="play">628</span></li>
+										<li ><em>7</em><a href="http://www.56.com/u20/v_NTIwNjkzNDU.html" target="_blank" title="广东某主持人照片被盗用成“天上人间头牌”">广东某主持人照片被盗用成“天上…</a><span class="play">496</span></li>
+										<li ><em>8</em><a href="http://www.56.com/u90/v_NTIwNjYzMzU.html" target="_blank" title="厄瓜多尔通古拉瓦火山喷发岩浆和火山灰">厄瓜多尔通古拉瓦火山喷发岩浆和…</a><span class="play">446</span></li>
+									</ul>
+
+			</div>
+		</div><!--==/ video_24th[24小时最多 Add by Sonic 2009-10-27] -->
+
+		<!--== hot_hd[热播剧场 Add by Sonic 2009-6-3] -->
+		<div class="hot_hd">
+			<div class="title2"><span class="side"><a href="http://tv.56.com/" target="_blank">更多</a></span><a href="http://tv.56.com/beinggirl/" target="_blank" class="link_whisper" title="护舒宝欢乐剧场">护舒宝欢乐剧场</a><h2><a href="http://tv.56.com/" target="_blank">56首播剧场</a></h2></div>
+			<div class="content" id='hot_hd_1'>
+				<!--=== hd_list -->
+				<dl id="main_show_t1" class="main_show">
+					<dt><a href="http://www.56.com/w22/album-aid-8032261.html" target="_blank"><img src="http://s2.56img.com/images/index/1004/dayahuan856.jpg" alt="大丫鬟" /><span>大丫鬟</span></a></dt>
+					<dd>这是一个全新灰姑娘故事，小丫环成长史和奋斗史。</dd>
+				</dl>
+				<dl id="main_show_t2" class="main_show" style="display:none;">
+					<dt><a href="http://www.56.com/w33/album-aid-7981186.html" target="_blank"><img src="http://s3.56img.com/images/index/1003/sufei346.jpg" alt="苏菲日记II" /><span>苏菲日记II</span></a></dt>
+					<dd>中国版《苏菲日记》取材于八零至九零后的“Y一代”年轻人。</dd>
+				</dl>
+				<!--=== hd_list -->
+				<ul id="hd_list_t1" class="hd_list clearfix">
+									<li>
+						<a href="http://www.56.com/w27/album-aid-8140579.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1005/ezuo05.jpg" alt="绿光森林" /></a>
+						<a href="http://www.56.com/w27/album-aid-8140579.html" target="_blank">绿光森林</a>
+					</li>
+										<li>
+						<a href="http://www.56.com/w52/album-aid-8094947.html" target="_blank" class="img"><img src="http://s2.56img.com/images/index/1005/ezuo04.jpg" alt="你永远不会独行" /></a>
+						<a href="http://www.56.com/w52/album-aid-8094947.html" target="_blank">你永远不会独行</a>
+					</li>
+										<li class="alt">
+						<a href="http://www.56.com/w61/album-aid-8140613.html" target="_blank" class="img"><img src="http://s3.56img.com/images/index/1005/ezuo03.jpg" alt="西街少年" /></a>
+						<a href="http://www.56.com/w61/album-aid-8140613.html" target="_blank">西街少年</a>
+					</li>
+					
+				</ul>
+				<p class="add_hsb"><a href="http://tv.56.com/beinggirl/" target="_blank">护舒宝快乐剧场:</a><a href="http://www.56.com/w13/play_album-aid-7499676_vid-NDUwMTYxMDI.html" target="_blank">无敌珊宝妹</a> <a href="http://www.56.com/w74/play_album-aid-4728366_vid-MzA5NzA5NTY.html" target="_blank">太阳的女儿</a></p>
+
+				<dl class="nearly_tieba">
+					<dt>相关贴吧:</dt>
+					<dd>
+											<a href="http://tieba.56.com/v?bn=%E5%8E%9F%E6%9D%A5%E6%88%91%E4%B8%8D%E5%B8%85" target="_blank">原来我不帅</a>
+											<a href="http://tieba.56.com/v?bn=%E8%8A%B1%E6%A0%B7%E7%94%B7%E5%AD%90" target="_blank">花样男子</a>
+											<a href="http://tieba.56.com/v?bn=%E9%A3%8E%E4%BA%912" target="_blank">风云2</a>
+											<a href="http://tieba.56.com/v?bn=%E4%BB%99%E5%89%91%E5%A5%87%E4%BE%A0%E4%BC%A0%E4%B8%89" target="_blank">仙剑3</a>
+										</dd>
+				</dl>
+
+			</div>
+
+						<div class="content" id='hot_hd_2' style="display:none;">
+				<!--=== hd_list -->
+				<dl class="main_show">
+					<dt><a href="http://www.56.com/w33/album-aid-7981186.html" target="_blank"><img src="http://s3.56img.com/images/index/1003/sufei346.jpg" alt="苏菲日记II" /><span>苏菲日记II</span></a></dt>
+					<dd>中国版《苏菲日记》取材于八零至九零后的“Y一代”年轻人。</dd>
+				</dl>
+				<!--=== hd_list -->
+				<ul class="hd_list clearfix">
+									<li>
+						<a href="http://www.56.com/w95/album-aid-8099529.html" target="_blank" class="img"><img src="http://s2.56img.com/images/index/1005/ezuo02.jpg" alt="王子变青蛙" /></a>
+						<a href="http://www.56.com/w95/album-aid-8099529.html" target="_blank">王子变青蛙</a>
+					</li>
+										<li>
+						<a href="http://www.56.com/w21/album-aid-8094916.html" target="_blank" class="img"><img src="http://s3.56img.com/images/index/1005/ezuo01.jpg" alt="恶作剧2吻" /></a>
+						<a href="http://www.56.com/w21/album-aid-8094916.html" target="_blank">恶作剧2吻</a>
+					</li>
+										<li class="alt">
+						<a href="http://www.56.com/w15/album-aid-8047473.html" target="_blank" class="img"><img src="http://s1.56img.com/images/index/1004/tianyagv34.jpg" alt="天涯歌女" /></a>
+						<a href="http://www.56.com/w15/album-aid-8047473.html" target="_blank">天涯歌女</a>
+					</li>
+					
+				</ul>
+				<p class="add_hsb"><a href="http://tv.56.com/beinggirl/" target="_blank">护舒宝快乐剧场:</a><a href="http://www.56.com/w13/play_album-aid-7499676_vid-NDUwMTYxMDI.html" target="_blank">无敌珊宝妹</a> <a href="http://www.56.com/w74/play_album-aid-4728366_vid-MzA5NzA5NTY.html" target="_blank">太阳的女儿</a></p>
+
+				<dl class="nearly_tieba">
+					<dt>相关贴吧:</dt>
+					<dd>
+											<a href="http://tieba.56.com/v?bn=%E5%8E%9F%E6%9D%A5%E6%88%91%E4%B8%8D%E5%B8%85" target="_blank">原来我不帅</a>
+											<a href="http://tieba.56.com/v?bn=%E8%8A%B1%E6%A0%B7%E7%94%B7%E5%AD%90" target="_blank">花样男子</a>
+											<a href="http://tieba.56.com/v?bn=%E9%A3%8E%E4%BA%912" target="_blank">风云2</a>
+											<a href="http://tieba.56.com/v?bn=%E4%BB%99%E5%89%91%E5%A5%87%E4%BE%A0%E4%BC%A0%E4%B8%89" target="_blank">仙剑3</a>
+										</dd>
+				</dl>
+
+			</div>
+					</div><!--== hot_hd End[Add by Sonic 2009-6-3] -->
+
+		<div class="web_game">
+			<div class="title2"><span class="side"><a href="http://youxi.56.com/" target="_blank">更多</a></span><h2>网页游戏</h2></div>
+			<div class="content">
+				<dl class="main_show">
+					<dt><a href="http://zhanguo.56.com/?act=reg" target="_blank"><img src="http://s2.56img.com/js/promo/webgame/zgcq.jpg" alt="战国春秋" />战国春秋</a></dt>
+					<dd>《战国春秋》中国第一谋略游戏，5月28日14：00正式开启&nbsp;&nbsp;<a href="http://zhanguo.56.com/?act=reg" target="_blank">详情</a></dd>
+				</dl>
+				<ul class="list">
+									<li><a href="http://moli.56.com/" target="_blank">魔力学堂</a></li>
+										<li><a href="http://ddt.56.com/" target="_blank">弹弹堂</a></li>
+										<li><a href="http://xj.56.com/" target="_blank">56仙剑 </a></li>
+										<li class="alt"><a href="http://wulin.56.com/" target="_blank">武林传奇</a></li>
+										<li><a href="http://hero.56.com/" target="_blank">武林英雄</a></li>
+										<li><a href="http://shangye.56.com/" target="_blank">商业大亨</a></li>
+										<li><a href="http://diguo.56.com/" target="_blank">帝国重生</a></li>
+										<li class="alt"><a href="http://koudai.56.com/" target="_blank">口袋精灵</a></li>
+									</ul>
+			</div>
+		</div>
+		<div class="ad_300x50">
+			<script type="text/javascript">
+			ad_56com_cid=85;
+			ad_56com_width=300;
+			ad_56com_height=50;
+			</script>
+			<script type="text/javascript" src=http://acs.56.com/ac/acs56.js></script>
+		</div>
+
+		<!--== top_list -->
+					<div class="top_list">
+				<div class="title2"><span class="side"><a href="http://top.56.com/" target="_blank">更多</a></span><h2>搜索榜</h2></div>
+				<div class="content">
+						<ul class="t1">
+							<li><strong>电视剧</strong></li>
+								<li><em class="u">01</em><a class="TopVideoPic" href="http://so.56.com/index?type=video&key=%C5%AE%CD%F5%B0%EC%B9%AB%CA%D2" target="_blank" >女王办公室</a></li>
+							<li><em class="u">02</em><a class="TopVideoPic" href="http://so.56.com/index?type=video&key=%BE%CD%CF%EB%C0%B5%D7%C5%C4%E3" target="_blank" >就想赖着你</a></li>
+							<li><em class="u">03</em><a class="TopVideoPic" href="http://so.56.com/index?type=video&key=%D6%D5%BC%AB%C8%FD%B9%FA" target="_blank" >终极三国</a></li>
+							<li><em>04</em><a class="TopVideoPic" href="http://so.56.com/index?type=video&key=%BD%F0%B7%DB%CA%C0%BC%D2" target="_blank" >金粉世家</a></li>
+							<li><em>05</em><a class="TopVideoPic" href="http://so.56.com/index?type=video&key=%CF%C2%D2%BB%D5%BE%D0%D2%B8%A3" target="_blank" >下一站幸福</a></li>
+						</ul><ul class="t2">
+							<li><strong>动漫</strong></li>
+								<li><em class="u">01</em><a class="TopVideoPic" href="http://so.56.com/index?type=video&key=%CE%D2%BD%D0mt" target="_blank" >我叫mt</a></li>
+							<li><em class="u">02</em><a class="TopVideoPic" href="http://so.56.com/index?type=video&key=%BC%D2%CD%A5%BD%CC%CA%A6" target="_blank" >家庭教师</a></li>
+							<li><em class="u">03</em><a class="TopVideoPic" href="http://so.56.com/index?type=video&key=%C6%DF%C1%FA%D6%E9z" target="_blank" >七龙珠z</a></li>
+							<li><em>04</em><a class="TopVideoPic" href="http://so.56.com/index?type=video&key=%D1%FD%BE%AB%B5%C4%CE%B2%B0%CD" target="_blank" >妖精的尾巴</a></li>
+							<li><em>05</em><a class="TopVideoPic" href="http://so.56.com/index?type=video&key=%CF%B2%D1%F3%D1%F3%D3%EB%BB%D2%CC%AB%C0%C7" target="_blank" >喜洋洋与灰太狼</a></li>
+						</ul>				</div>
+			</div>
+				<!--== top_list End -->
+		<!--== 56zhibo_60 -->
+		<div class="founding_60">
+			<div class="title2"><span class="side"><a href="http://zhibo.56.com/" target="_blank">更多</a></span><h2><a href="http://zhibo.56.com/" target="_blank">56直播</a></h2></div>
+			<div class="content">
+				<dl class="clearfix">
+					<dt><a href="http://zhibo.56.com/16" target="_blank"><img src="http://s3.56img.com/images/index/1005/0525he2.jpg" alt="青海卫视" />青海卫视</a></dt>
+					<dd>17:20 花儿朵朵ting&nbsp;&nbsp;<a href="http://zhibo.56.com/16" target="_blank">详情</a></dd>
+				</dl>
+				<ul class="c3">
+									<li><a href="http://zhibo.56.com/7" target="_blank">深圳卫视</a></li>
+										<li><a href="http://zhibo.56.com/21" target="_blank">CCTV体育</a></li>
+										<li><a href="http://zhibo.56.com/15" target="_blank">广东卫视</a></li>
+										<li><a href="http://zhibo.56.com/8" target="_blank">浙江卫视</a></li>
+										<li><a href="http://zhibo.56.com/3" target="_blank">天元围棋</a></li>
+										<li><a href="http://zhibo.56.com/19" target="_blank">江西卫视</a></li>
+										<li><a href="http://zhibo.56.com/22" target="_blank">南方影视</a></li>
+										<li><a href="http://zhibo.56.com/20" target="_blank">河南卫视</a></li>
+										<li><a href="http://zhibo.56.com/17" target="_blank">东方卫视 </a></li>
+									</ul>
+			</div>
+		</div><!--==/ founding_60  -->
+		<div class="founding_60">
+			<div class="title2"><span class="side"><a href=" http://ent.56.com/sp/star" target="_blank">更多</a></span><h2><a href=" http://ent.56.com/sp/star" target="_blank">56星访谈</a></h2></div>
+			<div class="content">
+				<dl class="clearfix">
+					<dt><a href="http://www.56.com/u59/v_NTE4MzA5OTI.html" target="_blank"><img src="http://s1.56img.com/images/index/1005/yl052107.jpg" alt="56独家专访传媒大奖女新人徐佳莹" />56独家专访传媒大奖女新人徐佳莹</a></dt>
+					<dd>徐佳莹凭优秀唱功在一片惊呼声中连获数奖。&nbsp;&nbsp;<a href="http://www.56.com/u59/v_NTE4MzA5OTI.html" target="_blank">详情</a></dd>
+				</dl>
+				<ul>					<li><a href="http://www.56.com/u81/v_NTEzMDU0Nzg.html" target="_blank">萧煌奇：没了双眼但拥有好嗓子</a></li>
+										<li><a href="http://www.56.com/u45/v_NTExODc4NzQ.html" target="_blank">专访亚洲级唱跳天团组合MIC</a></li>
+										<li><a href="http://www.56.com/u13/v_NTExOTIwNjY.html" target="_blank">彩虹大明星黄立行做客56网</a></li>
+										<li><a href="http://www.56.com/u38/v_NTExOTYyMjc.html" target="_blank">56独家专访风一样的男子陈晓东</a></li>
+									</ul>
+			</div>
+		</div><!--==/ founding_60  -->
+
+		<div class="ad_300x50">
+			<script type="text/javascript">
+			ad_56com_cid=86;
+			ad_56com_width=300;
+			ad_56com_height=50;
+			</script>
+			<script type="text/javascript" src=http://acs.56.com/ac/acs56.js></script>
+		</div>
+
+
+		<!--== founding_60 -->
+		<div class="founding_60">
+			<div class="title2"><span class="side"><a href="http://video.56.com/videolist-v-sp_type-new.html" target="_blank">更多</a></span><h2><a href="http://v.56.com/special/zht/" target="_blank">专题策划</a></h2></div>
+			<div class="content">
+				<dl class="clearfix">
+					<dt><a href="http://news.56.com/sp/fsk" target="_blank"><img src="http://s2.56img.com/images/index/1005/0525fsk.jpg" alt="富士康之殇" />富士康之殇</a></dt>
+					<dd>26日晚富士康龙华园区一员工坠楼身亡，这是今年第12个坠楼。<a href="http://news.56.com/sp/fsk" target="_blank">详情</a></dd>
+				</dl>
+				<ul>
+					<li><a href="http://ent.56.com/sp/2010flower" target="_blank">2010花儿朵朵全程报道 </a></li>
+					<li><a href="http://sport.56.com/sp/cg" target="_blank">畅游南非世界杯十大场馆 </a></li>
+					<li><a href="http://baby.56.com/sp/61baby" target="_blank">六一儿童节宝宝讲故事大赛</a></li>
+					<li><a href="http://sport.56.com/sp/56zjss" target="_blank">56世界杯，历届世界杯最佳射手评选 </a></li>
+				</ul>
+			</div>
+		</div><!--== founding_60 End -->
+
+		<div class="ad_300x50">
+			<script type="text/javascript">
+			ad_56com_cid=54;
+			ad_56com_width=300;
+			ad_56com_height=50;
+			</script>
+			<script type="text/javascript" src=http://acs.56.com/ac/acs56.js></script>
+		</div>
+
+		<!--== tvstation -->
+		<div class="star_times">
+		    <div class="title2"><h2><a href="http://v.56.com/special/coop/" target="_blank">电视台节目</a></h2><span class="side"><a href="http://v.56.com/special/coop/" class="last" target="_blank">更多</a></span></div>
+
+			<div class="content">
+				<dl class="clearfix">
+					<dt><a href="http://www.56.com/h12/u_jstvfcwr.html" target="_blank"><span><img src="http://s3.56img.com/images/index/1004/2140.jpg" alt="江苏卫视《非诚勿扰》" /></span></a></dt>
+					<dd><a href="http://www.56.com/h12/u_jstvfcwr.html" target="_blank">江苏卫视《非诚勿扰》</a></dd>
+					<dd>一档大型婚恋交友节目，为广大单身男女提供公开的婚恋交友平台。</dd>
+				</dl>
+				<ul class="clearfix">
+					<li><a href="http://www.56.com/h27/u_hntvyihubaiying.html" target="_blank"><img src="http://s1.56img.com/images/index/56zhibo/yugao/58-58.jpg" alt="一呼百应" />一呼百应</a></li>
+					<li><a href="http://www.56.com/h82/u_reboyinyuejie.html" target="_blank"><img src="http://s2.56img.com/images/index/56zhibo/kuainan/hy60-60.jpg" alt="热波音乐节" />热波音乐节</a></li>
+					<li><a href="http://www.56.com/h67/u_yuepaiyuegao.html" target="_blank"><img src="http://s3.56img.com/images/index/1004/2139.jpg" alt="广东卫视" />广东卫视</a></li>
+					<li class="last"><a href="http://hybzb.56.com/" target="_blank"><img src="http://s1.56img.com/images/index/1004/2141.jpg" alt="华娱卫视" />华娱卫视</a></li>
+				</ul>
+			</div>
+		</div><!--== tvstation End -->
+
+		<div class="ad_300x50">
+			<script type="text/javascript">
+			ad_56com_cid=87;
+			ad_56com_width=300;
+			ad_56com_height=50;
+			</script>
+			<script type="text/javascript" src=http://acs.56.com/ac/acs56.js></script>
+		</div>
+		<!--== cooperation -->
+		<div class="cooperation">
+			<div class="title2"><span class="side"><a href="http://v.56.com/special/coop/" target="_blank">更多</a></span><h2>合作专区</h2></div>
+			<div class="content">
+				<div id="cooperationImg">
+					 	<p class="img">
+			            <a href="http://beachhoney.56.com" target="_blank"><img alt="沙滩宝贝" src="http://s2.56img.com/images/tuiguang/201001/shatanbb260x30_0112.gif"/></a>
+			            </p>
+
+						<p class="img" style="display:none;">
+			            <a href="http://tools.tiancity.com/count.asp?id=9776&acode=100511V091sz019" target="_blank"><img alt="寻找安娜" src="http://s3.56img.com/images/tuiguang/201005/shijitc_26030_0510.gif"/></a>
+			            </p>
+
+						<p class="img" style="display:none;">
+			            <a href="http://www.kingstonblog.com.cn/vogue" target="_blank"><img alt="KINGSTON" src="http://s1.56img.com/images/tuiguang/201004/tianlan_260-30_0427.jpg"/></a>
+			            </p>
+
+					    <p class="img" style="display:none;">
+						<a href="http://v16.56.com/acss/acss.php?atable=201005&targetUrl=http%3A%2F%2Fhsmc.movie.mtime.com%2Fvideo%2Findex.html&aid=2150" target="_blank"><img alt="迪士尼" src="http://s2.56img.com/images/tuiguang/201005/disney_260x30_0531.gif"/></a>
+						</p>
+
+				</div>
+				<ul>
+                             <li><a href="http://huodong.56.com/kache/ " target="_blank">“陕汽杯”2010全国超级卡车大赛</a></li>
+							 <li><a href="http://v16.56.com/acss/acss.php?atable=201005&targetUrl=http%3A%2F%2Fkankan.56.com%2Fv%2FMTI1MDQ2.html%20&aid=2149" target="_blank">韩国巨星RAIN的真实生活</a></li>
+							 <!-- <li><a href="http://v16.56.com/acss/acss.php?atable=201004&targetUrl=http%3A%2F%2Fprincess.56.com%2F%3Fctpath%3D6655d504351e4b3e9ea23ae3218173bf&aid=2132" target="_blank">申请嘉年华邀请函 赢公主加冕大奖</a></li> -->
+							<li><a href="http://huodong.56.com/huaxun/" target="_blank">精彩视频：股指期货上市交易，大盘该何去何从？</a></li>
+							<li><a href="http://tieba.56.com/v?tn=2127465" target="_blank">2010 CGOC听课证线上购买系统开启</a></li>
+						    <!-- <li><a href="http://beachhoney.56.com/" target="_blank">青春性感比基尼2010沙滩宝贝等你来挑战</a></li> -->
+
+
+
+				</ul>
+<!--				<p class="more"><a href="http://v.56.com/special/main/" target="_blank">[更多精彩]</a></p>-->
+			</div>
+		</div><!--== cooperation End -->
+
+		<div class="dynamic">
+			<div class="title2"><span class="side"><a href="http://www.56.com/intro_events.html" target="_blank">更多</a></span><h2><a href="http://www.56.com/intro_events.html" target="_blank">56动态</a></h2></div>
+			<div class="content">
+
+				<ul>
+				<li><a href="http://www.56.com/about/media/intro_100326.html" target="_blank">证券日报：版权保护亟待与时俱进</a></li>
+				<li><a href="http://www.56.com/about/media/intro_100312.html" target="_blank">中国传媒科技：做好内容 突出原创</a></li>
+				<li><a href="http://www.56.com/about/dongtai/dongtai_100512.html" target="_blank">56网联手“最体育”强强打造“翔视界”</a></li>
+				<li><a href="http://www.56.com/about/dongtai/dongtai_100413.html" target="_blank">56网推直播频道 欲寻求视频领域新蓝海</a></li>
+				<li><a href="http://huodong.56.com/yuekan/9/" target="_blank">《5言6语》第9期重磅推出</a></li>
+				</ul>
+<!--				<p class="more"><a href="http://www.56.com/intro_worldfocus.html" target="_blank">[更多精彩]</a></p>-->
+			</div>
+		</div>
+
+		<div class="ad_300x90">
+			<script>
+			ad_56com_cid=88;
+			ad_56com_width=300;
+			ad_56com_height=90;
+			</script>
+			<script src=http://acs.56.com/ac/acs56.js></script>
+		</div>	</div><!--= side End -->
+</div><!-- wrap -->
+<div class="footer_v2 clearfix">
+		<ul class="nav">
+		<li><a href="http://www.56.com/intro.html" target=_blank>关于56网</a></li>
+		<li><a href="http://www.56.com/intro_us_en.html" target=_blank>About us</a></li>
+		<li><a href="http://www.56.com/intro_events.html" target=_blank>公司动态</a></li>
+		<li><a href="http://www.56.com/intro_worldfocus.html" target=_blank>媒体关注</a></li>
+		<li><a href="http://www.56.com/intro_contactus.html" target=_blank>联系我们</a></li>
+		<li><a href="http://www.56.com/intro_law.html" target=_blank>网站协议</a></li>
+		<li><a href="http://www.56.com/intro_advertise.html" target=_blank>广告服务</a></li>
+		<li><a href="http://www.56.com/hr/intro_56.html" target=_blank>加入56网</a></li>
+		<li><a href="http://www.56.com/help/" target=_blank>帮助中心</a></li>
+		<li class=last><a href="http://www.56.com/intro_idea.html" target=_blank>意见反馈</a></li>
+		</ul>
+    <div class="net_alerm">
+	    <a href="http://210.76.65.188/newwebsite/index.htm" target="_blank"><img alt="56.com" src="http://s1.56img.com/admin/images/net_cq1.jpg"/></a>
+	    <a href="http://210.76.65.188/netalarm/index.jsp" target="_blank"><img alt="56.com" src="http://s2.56img.com/admin/images/net_cq2.jpg"/></a>
+	    <a href="http://210.76.65.188/webrecord/innernet/Welcome.jsp?bano=4419003012781" target="_blank"><img alt="56.com" src="http://s3.56img.com/admin/images/net_cq3.jpg"/></a>
+    </div>
+    <div class="cert">
+        <p><span>网络视听许可证1908336</span><span>节目制作经营许可证粤第735号</span><span>文网文[2007]013号</span><span>粤通管BBS【2009】第175号</span><a class="hidden" href="http://www.56.com/w11/list.html">视频总览</a>&nbsp;&nbsp;<a href="http://www.56.com/w11/alist.html" class="hidden">专辑总览</a>&nbsp;&nbsp;<a href="http://www.56.com/help/sitemap.html" class="hidden">网站地图</a></p>
+        <p><a target="_blank" href="http://www.miibeian.gov.cn/">粤ICP证B220041027</a><span>药品服务许可证(粤2009-0009)</span><span>增值电信业务经营许可证B2-20090492</span></p>
+        <p class="alt">Copyright &copy;2010 56.com 版权所有</p>
+    </div>
+</div>
+<iframe name="add_favorite" id="add_favorite" src="http://www.56.com/domain.html" marginwidth="0" marginheight="0" frameborder="0" width="0" scrolling="no" height="0"></iframe>
+<script src="http://www.56.com/js/fly56/home_lib091127_e.js?v=97300" type="text/javascript" charset="gb2312"></script>
+<script src="http://s3.56img.com/js/common/uaction_1.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+if(typeof(stat_urls)!="undefined")stat_urls();	//2009-10-21 18:00 zhys9
+</script>
+<script src="http://s1.56img.com/js/fly56/JKL_1.1.2.js" charset="gb2312" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+<!--
+var jLoad = new JKLoad("jLoad");
+jLoad.FN  = 'search';
+jLoad.II  = 'Search_input';
+jLoad.SI  = 'Search_btn';
+var isReady=0;
+function ready(){
+		_.r(_h.ready(videodata,'sys_info','login'));
+		isReady=1;
+};
+(function(){
+		if(isReady)return ;
+		if(document.documentElement.doScroll){
+			(function(){
+				try{
+					document.documentElement.doScroll("left");
+				}catch(e){
+					setTimeout(arguments.callee,0);
+					return;
+				}
+				ready();
+			})();
+		}else{
+			document.addEventListener("DOMContentLoaded",function(){
+				document.removeEventListener("DOMContentLoaded",arguments.callee,false);
+				ready();
+			},false);
+		}
+	})();
+var webid='i';
+//-->
+</script>
+<script language="javascript" src="http://s2.56img.com/js/56stat.js"></script>
+</body>
+</html>

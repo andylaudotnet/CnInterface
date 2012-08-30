@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ExcecuteCmds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cmd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ABEConnStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isClose" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcecuteCmdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcecuteCmdsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAVXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="startCity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endCity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flightDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="carrier" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="option" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stop" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ABEConnStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAVXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAVXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRawDataFromABE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cmd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ABEConnStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRawDataFromABEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRawDataFromABEResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExcecuteCmdsSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcecuteCmds" />
+  </wsdl:message>
+  <wsdl:message name="ExcecuteCmdsSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcecuteCmdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAVXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAVXML" />
+  </wsdl:message>
+  <wsdl:message name="GetAVXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAVXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRawDataFromABESoapIn">
+    <wsdl:part name="parameters" element="tns:GetRawDataFromABE" />
+  </wsdl:message>
+  <wsdl:message name="GetRawDataFromABESoapOut">
+    <wsdl:part name="parameters" element="tns:GetRawDataFromABEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcecuteCmdsHttpGetIn">
+    <wsdl:part name="cmd" type="s:string" />
+    <wsdl:part name="ABEConnStr" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+    <wsdl:part name="isClose" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExcecuteCmdsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAVXMLHttpGetIn">
+    <wsdl:part name="startCity" type="s:string" />
+    <wsdl:part name="endCity" type="s:string" />
+    <wsdl:part name="flightDate" type="s:string" />
+    <wsdl:part name="startTime" type="s:string" />
+    <wsdl:part name="carrier" type="s:string" />
+    <wsdl:part name="option" type="s:string" />
+    <wsdl:part name="stop" type="s:string" />
+    <wsdl:part name="ABEConnStr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAVXMLHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRawDataFromABEHttpGetIn">
+    <wsdl:part name="cmd" type="s:string" />
+    <wsdl:part name="ABEConnStr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRawDataFromABEHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ExcecuteCmdsHttpPostIn">
+    <wsdl:part name="cmd" type="s:string" />
+    <wsdl:part name="ABEConnStr" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+    <wsdl:part name="isClose" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExcecuteCmdsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAVXMLHttpPostIn">
+    <wsdl:part name="startCity" type="s:string" />
+    <wsdl:part name="endCity" type="s:string" />
+    <wsdl:part name="flightDate" type="s:string" />
+    <wsdl:part name="startTime" type="s:string" />
+    <wsdl:part name="carrier" type="s:string" />
+    <wsdl:part name="option" type="s:string" />
+    <wsdl:part name="stop" type="s:string" />
+    <wsdl:part name="ABEConnStr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAVXMLHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRawDataFromABEHttpPostIn">
+    <wsdl:part name="cmd" type="s:string" />
+    <wsdl:part name="ABEConnStr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRawDataFromABEHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="ABEServiceSoap">
+    <wsdl:operation name="ExcecuteCmds">
+      <wsdl:input message="tns:ExcecuteCmdsSoapIn" />
+      <wsdl:output message="tns:ExcecuteCmdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAVXML">
+      <wsdl:input message="tns:GetAVXMLSoapIn" />
+      <wsdl:output message="tns:GetAVXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRawDataFromABE">
+      <wsdl:input message="tns:GetRawDataFromABESoapIn" />
+      <wsdl:output message="tns:GetRawDataFromABESoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ABEServiceHttpGet">
+    <wsdl:operation name="ExcecuteCmds">
+      <wsdl:input message="tns:ExcecuteCmdsHttpGetIn" />
+      <wsdl:output message="tns:ExcecuteCmdsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAVXML">
+      <wsdl:input message="tns:GetAVXMLHttpGetIn" />
+      <wsdl:output message="tns:GetAVXMLHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRawDataFromABE">
+      <wsdl:input message="tns:GetRawDataFromABEHttpGetIn" />
+      <wsdl:output message="tns:GetRawDataFromABEHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ABEServiceHttpPost">
+    <wsdl:operation name="ExcecuteCmds">
+      <wsdl:input message="tns:ExcecuteCmdsHttpPostIn" />
+      <wsdl:output message="tns:ExcecuteCmdsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAVXML">
+      <wsdl:input message="tns:GetAVXMLHttpPostIn" />
+      <wsdl:output message="tns:GetAVXMLHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRawDataFromABE">
+      <wsdl:input message="tns:GetRawDataFromABEHttpPostIn" />
+      <wsdl:output message="tns:GetRawDataFromABEHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ABEServiceSoap" type="tns:ABEServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExcecuteCmds">
+      <soap:operation soapAction="http://tempuri.org/ExcecuteCmds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAVXML">
+      <soap:operation soapAction="http://tempuri.org/GetAVXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRawDataFromABE">
+      <soap:operation soapAction="http://tempuri.org/GetRawDataFromABE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ABEServiceHttpGet" type="tns:ABEServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ExcecuteCmds">
+      <http:operation location="/ExcecuteCmds" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAVXML">
+      <http:operation location="/GetAVXML" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRawDataFromABE">
+      <http:operation location="/GetRawDataFromABE" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ABEServiceHttpPost" type="tns:ABEServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ExcecuteCmds">
+      <http:operation location="/ExcecuteCmds" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAVXML">
+      <http:operation location="/GetAVXML" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRawDataFromABE">
+      <http:operation location="/GetRawDataFromABE" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ABEService">
+    <wsdl:port name="ABEServiceSoap" binding="tns:ABEServiceSoap">
+      <soap:address location="http://59.151.1.234/Default.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ABEServiceHttpGet" binding="tns:ABEServiceHttpGet">
+      <http:address location="http://59.151.1.234/Default.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ABEServiceHttpPost" binding="tns:ABEServiceHttpPost">
+      <http:address location="http://59.151.1.234/Default.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

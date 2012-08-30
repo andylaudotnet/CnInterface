@@ -1,0 +1,123 @@
+<SCRIPT   LANGUAGE="JavaScript">
+      function killErrors() {
+          return true;
+      }
+      window.onerror = killErrors;   
+  </SCRIPT> 
+<SCRIPT>
+var $=function(s){return(typeof s=="object")?s:document.getElementById(s);};function CheckStockInput(s){s=s.replace(/ /ig,"");if(s==""||s=="代码/名称/拼音"){return 1;}if(/^[\*\/0-9a-zA-Z\u4e00-\u9fa5]+$/.test(s)){if(/[\\\/<>#\$&]/g.test(s)){return 2;}else{return 0;}}else{return 2;}}
+var Browser=new Object();Browser.ua=window.navigator.userAgent.toLowerCase();Browser.ie=/msie/.test(Browser.ua);String.prototype.trim=function(){return this.replace(/^\s*|\s*$/ig,"");};var Element={remove:function(){for(var i=0;i<arguments.length;i++){try{$(arguments[i]).parentNode.removeChild($(arguments[i]));}catch(e){}}}};var JsLoader={load:function(sId,sUrl,oOption){var _oOption=new Object();if(typeof oOption=="function")_oOption.onSuccess=oOption;else _oOption=oOption;_oOption.decay=_oOption.decay||1;_oOption.delay=_oOption.delay||1000;_oOption.count=_oOption.count||0;if(_oOption.timer)window.clearTimeout(_oOption.timer);Element.remove(sId);var _script=document.createElement("script");_script.setAttribute("id",sId);_script.setAttribute("type","text/javascript");_script.setAttribute("src",sUrl);document.getElementsByTagName("head")[0].appendChild(_script);_oOption.timer=window.setTimeout(function(){if($(sId))if(--_oOption.decay){_oOption.count++;JsLoader.load(sId,sUrl,_oOption);}else{if(typeof _oOption.onFailure=="function"){_oOption.onFailure();}}},_oOption.delay);if(Browser.ie){_script.onreadystatechange=function(){if(this.readyState=="loaded"||this.readyState=="complete"){Element.remove(_script);window.clearTimeout(_oOption.timer);if(typeof _oOption.isSuccess=="function"){if(!_oOption.isSuccess()){if(--_oOption.decay){_oOption.count++;JsLoader.load(sId,sUrl,_oOption);}else{if(typeof _oOption.onFailure=="function"){_oOption.onFailure();}}return;}}if(typeof _oOption.onSuccess=="function")_oOption.onSuccess();}};}else{_script.onload=function(){Element.remove(_script);window.clearTimeout(_oOption.timer);if(typeof _oOption.isSuccess=="function"){if(!_oOption.isSuccess()){if(--_oOption.decay){_oOption.count++;JsLoader.load(sId,sUrl,_oOption);}else{if(typeof _oOption.onFailure=="function"){_oOption.onFailure();}}return;}}if(typeof _oOption.onSuccess=="function")_oOption.onSuccess();};}}};
+// 查询
+function fm_submit(){if(typeof sug=="object"&&sug._keydown>0)return false;if(CheckStockInput($("cl").value)==1){alert("请输入查询条件：代码/名称/拼音");return false;}else if(CheckStockInput($("cl").value)==2){alert("证券代码输入错误");return false;}else{var formx=$("form_stockserach");formx.ZHENGQUANDM.value=$("cl").value.split(".")[0];if($("qc_type").value=="HK"){formx.action="http://stock.finance.qq.com/cgi-bin/hk/hk_ggcx";}else if($("qc_type").value=="JJ"){formx.action="http://stock.finance.qq.com/cgi-bin/fund/djj_jjcx";}else if($("qc_type").value=="AS"){formx.action="http://stock.finance.qq.com/cgi-bin/astock/as_ggcx";}else{formx.action="http://stock.finance.qq.com/cgi-bin/sstock/ggcx";}return true;}}
+//查询
+var sug = new ObjSuggest($("cl"),$("qc_type"));
+</SCRIPT>
+<!--[if !IE]>|xGv00|4bbbc031cc68b763ccd55f7a79461536<![endif]-->
+<DIV style="TEXT-ALIGN: center"><IFRAME id=iRealStock name=iRealStock 
+marginWidth=0 marginHeight=0 src="Flash实时行情图_腾讯证券_files/realstock.htm" 
+frameBorder=0 width=912 scrolling=no height=478></IFRAME></DIV>
+<SCRIPT>
+/*<![CDATA[*/
+//common.js
+var $=function(s){return(typeof s=="object")?s:document.getElementById(s);};var Browser=new Object();Browser.ua=window.navigator.userAgent.toLowerCase();Browser.ie=/msie/.test(Browser.ua);String.prototype.trim=function(){return this.replace(/^\s*|\s*$/ig,"");};var Element={remove:function(){for(var i=0;i<arguments.length;i++){try{$(arguments[i]).parentNode.removeChild($(arguments[i]));}catch(e){}}}};var JsLoader={load:function(sId,sUrl,oOption){var _oOption=new Object();if(typeof oOption=="function")_oOption.onSuccess=oOption;else _oOption=oOption;_oOption.decay=_oOption.decay||1;_oOption.delay=_oOption.delay||1000;_oOption.count=_oOption.count||0;if(_oOption.timer)window.clearTimeout(_oOption.timer);Element.remove(sId);var _script=document.createElement("script");_script.setAttribute("id",sId);_script.setAttribute("type","text/javascript");_script.setAttribute("src",sUrl);document.getElementsByTagName("head")[0].appendChild(_script);_oOption.timer=window.setTimeout(function(){if($(sId))if(--_oOption.decay){_oOption.count++;JsLoader.load(sId,sUrl,_oOption);}else{if(typeof _oOption.onFailure=="function"){_oOption.onFailure();}}},_oOption.delay);if(Browser.ie){_script.onreadystatechange=function(){if(this.readyState=="loaded"||this.readyState=="complete"){Element.remove(_script);window.clearTimeout(_oOption.timer);if(typeof _oOption.isSuccess=="function"){if(!_oOption.isSuccess()){if(--_oOption.decay){_oOption.count++;JsLoader.load(sId,sUrl,_oOption);}else{if(typeof _oOption.onFailure=="function"){_oOption.onFailure();}}return;}}if(typeof _oOption.onSuccess=="function")_oOption.onSuccess();}};}else{_script.onload=function(){Element.remove(_script);window.clearTimeout(_oOption.timer);if(typeof _oOption.isSuccess=="function"){if(!_oOption.isSuccess()){if(--_oOption.decay){_oOption.count++;JsLoader.load(sId,sUrl,_oOption);}else{if(typeof _oOption.onFailure=="function"){_oOption.onFailure();}}return;}}if(typeof _oOption.onSuccess=="function")_oOption.onSuccess();};}}};
+var UrlParser=function(sUrl){this.__construct(sUrl);};UrlParser.prototype={__construct:function(sUrl){this._href=sUrl||document.location.href;},getDomain:function(){if(this._href.match(new RegExp('^(([a-z]+)://([^\\/]+)\/?)(.*)','i'))){return RegExp.$1;}else{return null;}},getParam:function(sName){if(this._href.match(new RegExp("(&|\\u003F)"+sName+"=([^&]*)(&|$)"))){return RegExp.$2;}else{return null;}}};
+
+var Url=new UrlParser(window.location.href);
+var g_vCode=Url.getParam("c");
+var g_vType=Url.getParam("t");
+if(g_vCode==null) g_vCode="000001";
+if(g_vType==null) g_vType="1";
+if (g_vCode.toUpperCase()=="IXIC"||g_vCode.toUpperCase()==".IXIC") document.location.href="http://stock.finance.qq.com/astock/ggcx/IXIC.htm";
+if (g_vCode.toUpperCase()=="HSI"||g_vCode.toUpperCase()=="HSCEI"||g_vCode.toUpperCase()=="HSCCI") document.location.href="http://stock.finance.qq.com/hk/ggcx/"+g_vCode.toUpperCase()+".htm";
+JsLoader.load("_ggcx_r_script","http://stock.finance.qq.com/cgi-bin/sstock/ggcx_r?ZHENGQUANDM="+g_vCode+"&ZHENGQUANLX="+g_vType,function()
+{
+	if(typeof v_info!="undefined"&&v_info!=null)
+	{
+		if (v_info==-1) document.location.href="http://finance.qq.com/";
+		else
+		{
+			var zqdm=g_vCode;
+			var zqlx=g_vType;
+			var type="";
+			if (typeof v_zqdm!="undefined"&&v_zqdm!=null) zqdm=v_zqdm;
+			else document.location.href="http://finance.qq.com/";
+			if (typeof v_zqlx!="undefined"&&v_zqlx!=null) zqlx=v_zqlx;
+			else document.location.href="http://finance.qq.com/"; 
+			if (typeof v_type!="undefined"&&v_type!=null) type=v_type;
+			else document.location.href="http://finance.qq.com/";
+			
+			if (v_zqlx=="1") $("iRealStock").src="http://qq.compass.cn/stock/realstock.php?query=0&code=sh"+zqdm;
+			else if(v_zqlx=="51") $("iRealStock").src="http://qq.compass.cn/stock/realstock.php?query=0&code=sz"+zqdm;
+			else GetToUrl(zqdm,type);
+		}
+	}
+	else  document.location.href="http://finance.qq.com/";
+});
+
+function GetToUrl(zqdm,type)
+{
+	if (type == "SS")	document.location.href="http://stock.finance.qq.com/sstock/ggcx/"+zqdm+".shtml";
+	else if (type == "ZS")	document.location.href="http://stock.finance.qq.com/hqing/zhishu/"+zqdm+".htm";
+	else if (type == "HK")	document.location.href="http://stock.finance.qq.com/hk/ggcx/"+zqdm+".htm";
+	else if (type == "AS")	document.location.href="http://stock.finance.qq.com/astock/ggcx/"+zqdm.toUpperCase()+".htm";
+	else if (type == "JJ")	document.location.href="http://stock.finance.qq.com/fund/djj_jjcx/"+zqdm+".htm";
+	else document.location.href="http://finance.qq.com/";
+}
+/*]]>*/
+</SCRIPT>
+
+
+
+<SCRIPT language=javascript>
+
+if(typeof(pgvMain) == 'function')
+
+     pgvMain();
+
+</SCRIPT>
+
+<STYLE>#CopyRight2008 {
+	CLEAR: both; FONT-SIZE: 12px; MARGIN: 0px auto; COLOR: black
+}
+#CopyRight2008 .en {
+	FONT-FAMILY: Arial
+}
+#CopyRight2008 A {
+	COLOR: black; TEXT-DECORATION: none
+}
+#CopyRight2008 A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+</STYLE>
+
+
+<DIV style="DISPLAY: none"><!-- START NNR Site Census V5.1 --><!-- COPYRIGHT 2004 Nielsen // Netratings -->
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+	var _rsCI="cn-tencent";
+	var _rsCG="0";
+	var _rsDT=0;
+	var _rsDU=0; 
+	var _rsDO=0; 
+	var _rsX6=0;  
+	var _rsSI=escape(window.location);
+	var _rsLP=location.protocol.indexOf('https')>-1?'https:':'http:';
+	var _rsRP=escape(document.referrer);
+	var _rsND=_rsLP+'//secure-cn.imrworldwide.com/';
+
+	if (parseInt(navigator.appVersion)>=4)
+	{
+		var _rsRD=(new Date()).getTime();
+		var _rsSE=1;	
+		var _rsSV="";
+		var _rsSM=0.01;
+		_rsCL='<scr'+'ipt language="JavaScript" type="text/javascript" src="'+_rsND+'v51.js"><\/scr'+'ipt>';
+	}
+	else
+	{
+		_rsCL='<img src="'+_rsND+'cgi-bin/m?ci='+_rsCI+'&cg='+_rsCG+'&si='+_rsSI+'&rp='+_rsRP+'">';
+	}
+	document.write(_rsCL);
+//-->
+</SCRIPT>
+<NOSCRIPT><IMG alt="" src=""> </NOSCRIPT><!-- END NNR Site Census V5.1 --></DIV><!--[if !IE]>|xGv00|1a74b9a68cd65148cfd20dfe1f855c7a<![endif]--><!--[if !IE]>|xGv00|b52cea79dfc9ba6f4f095ebe6ab39eb8<![endif]-->

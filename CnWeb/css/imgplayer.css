@@ -1,0 +1,34 @@
+
+/*CSS for all begin*/
+ul, ol, li, img {margin:0; padding:0; border:0;}
+
+/*播放器样式  开始 */
+#ImgPlayer{width:430px; height:303px; overflow:hidden; border:1px #BDCBD7 solid; padding:1px 3px 0 1px;margin-left:140px;}
+#ImgBlk{width:427px; height:240px; padding:4px 12px 0 1px; float:left;}
+#ss_img_div{width:427px; height:240px; overflow:hidden; border:1px #BDCBD7 solid; text-align:center;}
+#ss_img_div img{border:0px #000 solid;}
+#ImgNum{height:37px; overflow:hidden;}
+#ImgNum ul{width:373px; padding:0 0 0 0; float:left; cursor:default;}
+#ImgNum li{width:30px; height:25px; line-height:25px; overflow:hidden; padding:6px 0 0 0; text-align:center;font-size:12px; float:left; margin-right:5px; cursor:pointer;}
+#ImgNum li.itemOff{background:url(../imgtemp/news_pic_ws_002.gif) no-repeat bottom; color:#000;}
+#ImgNum li.itemOff:hover{color:#A80000;}
+#ImgNum li.itemOn{background:url(../imgtemp/news_pic_ws_003.gif) no-repeat bottom; color:#A80000; font-weight:bold; height:25px; line-height:25px; padding:6px 0 0 0;}
+#ImgNum li.itemPageOn{background:url(../imgtemp/news_pic_ws_002.gif) no-repeat bottom;color:#A80000;font-weight:bold; height:25px; line-height:25px; padding:6px 0 0 0;}
+#ImgNum div{float:left; width:50px; text-align:left; padding:4px 0 0 0; margin:10px 0 0 0; height:15px; line-height:15px; cursor:pointer; font-size:12px; color:#7D98BF;}
+#Play{background:url(../imgtemp/news_pic_ws_004.gif) no-repeat bottom right;}
+#Pause{background:url(../imgtemp/news_pic_ws_005.gif) no-repeat bottom right;}
+#TxtBlk{width:6px; float:left;}
+#Txt{padding:15px 10px 0 10px; text-align:left; height:280px; border:1px #D7E5F5 solid; border-left:none; background:url(../imgtemp/news_pic_ws_006.gif) repeat-x bottom;}
+#Txt h2{color:#A80000; text-align:center; font-size:18px; font-family:"黑体"; font-weight:normal; padding:1px 0 5px 0; background:none;}
+#Txt h2 a,#Txt h2 a:visited{color:#A80000; text-decoration:none;}
+#Txt h2 a:hover,#Txt h2 a:active{color:#A80000; text-decoration:underline;}
+#con{text-align:left; color:#344F71; line-height:21px;}
+#date_PN{text-align:left; font-size:12px;}
+#date{padding:12px 0 0 8px; color:#5C5C5C; width:200px; float:left; text-align:center}
+#PN{float:left; width:100px; padding:11px 0 0 0; background:url(../imgtemp/news_pic_ws_007.gif) no-repeat 50px 9px;}
+#PN #pre{display:block; float:left; width:42px; padding:0 0 0 8px; background:url(../imgtemp/news_pic_ws_008.gif) no-repeat 0 3px; text-decoration:none; color:#009;}
+#PN #next{display:block; float:left; width:44px; padding:0 0 0 6px; background:url(../imgtemp/news_pic_ws_009.gif) no-repeat 44px 3px; text-decoration:none; color:#009;}
+#PN #pre:visited,#PN #next:visited{color:#009;}
+#PN #pre:hover,#PN #next:hover{text-decoration:underline;}
+/*播放器样式  结束*/
+

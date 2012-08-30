@@ -1,0 +1,810 @@
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<!--pagetitle:接口-->
+<title>接口&nbsp;-&nbsp;搜狗搜索</title>
+<style>
+/*提示文字1*/
+.tinytip {font-size:80%;padding-left:10px;}
+.tinytip b{ font-weight:normal;}
+body .site_tip{ font-weight:normal; font-weight:bold; padding-left:10px; font-size:90%; line-height:2; margin-bottom:5px;}
+body .site_tip font{ font-size:100%;}
+body .site_tip a{ font-weight:normal;}
+/*提示文字1 End*/
+
+body,td,.p1,.p2,.i{font-family:arial}
+img {border:none}
+body{margin:0;background-color:#fff;color:#000;padding:10px;word-break:break-all;word-wrap:break-word;}
+table{border:0}
+TD{/*FONT-SIZE:9pt;*/LINE-HEIGHT:18px;}
+.f14{FONT-SIZE:14px}
+.f10{font-size:10.5pt}
+.f16{font-size:16px;font-family:Arial}
+.c{color:#7777CC;}
+.p1{LINE-HEIGHT:120%;margin-left:-12pt}
+.p2{width:100%;LINE-HEIGHT:120%;margin-left:-12pt}
+.i{font-size:16px}
+.t{COLOR:#0000cc;TEXT-DECORATION:none}
+a.t:hover{TEXT-DECORATION:underline}
+.p{padding-left:10px;font-size:14px;}
+.p a {display:inline-block; padding:3px 8px; line-height:normal; border:1px solid #B5CEE7; color:#261CDC; text-decoration:none; vertical-align:middle;}
+.p a:visited {color:#810081;}
+.p a:hover {background:#261CDC; color:#fff;}
+.np{font-family:simsun;}
+.f{line-height:120%;font-size:100%;width:38em;padding-left:10px;word-break:break-all;word-wrap:break-word;} 
+.h{margin-left:8px;width:100%}
+.s{width:8%;padding-left:10px; height:25px;}
+.m,a.m:link{COLOR:#666;font-size:100%;}
+a.m:visited{COLOR:#660066;}
+.g{color:#008000; font-size:12px;}
+.r{ word-break:break-all;cursor:hand;width:238px;}
+.bi {background-color:#E8F3FF;height:22px;margin-bottom:12px;border-top:1px solid #B1C9E4; font-size:73%;}
+.pl{padding-left:3px;height:8px;padding-right:2px;font-size:14px;}
+.Tit{height:21px; font-size:14px;}
+.Tit a{color:#261cdc}
+.fB{ font-weight:bold;}
+.mo,a.mo:link,a.mo:visited{COLOR:#666666;font-size:100%;line-height:10px;}
+.htb{margin-bottom:5px;}
+#ft{clear:both;line-height:20px;background:#e6e6e6;text-align:center}
+#ft,#ft *{color:#77C;font-size:12px;font-family:Arial}
+#ft span{color:#666}
+form{margin:0;position:relative;z-index:9}
+.jc a{color:#c60a00}
+#interrelated {padding: 7px 10px 20px;} 
+#interrelated table {border-collapse: collapse;text-align: left;} 
+#interrelated td {padding: 0 30px 10px 0;vertical-align:top;font-size:90%;} #interrelated th {font-weight: bold;vertical-align: top;font-size:90%;}
+.sidebox {border-left:1px solid #DEDEE7;padding:0 10px;}
+.urlinfo {padding:10px 0 0 0;line-height:2;}
+.pageinfo,.pageinfo a:link,.pageinfo a:visited{
+	color: #9C9C9C;
+	margin:0;
+	padding:0;
+}
+.url,.url a:visited {
+	color: #008000;
+}
+.url{
+	padding-bottom: 17px;
+}
+.url strong {
+	font-weight: bold;
+	color: #008000;
+}
+
+.tg {
+	width: 65%;
+	border-collapse: collapse;
+	background: #F5F5F5;
+	font-size: 13px;
+	line-height: 19px;
+	margin:0 0 15px 6px;
+}
+.tg td {
+	padding: 2px 4px;
+}
+.tg h2 {
+	font-size: 16px;
+	font-weight: normal;
+	margin:0;
+	padding:0;
+}
+.tg h2 img {
+	vertical-align: middle;
+}
+.tg div {
+	width: 510px;
+}
+.tg2 {
+	float: right;
+	font-size: 12px;
+	color:#666;
+}
+.tg2 a, .tg2 a:visited, .tg3 a:visited {
+	color: #666;
+	text-decoration: none;
+}
+
+</style>
+<script type="text/javascript">
+//以下为纯静态的全局js
+function checkImage(theImg,d){
+	if(theImg.width>=theImg.height){
+		theImg.width=d;
+	}
+	if(theImg.width<theImg.height){
+		theImg.height=d;
+	}
+}
+function regulateImage ( theImg,h,w ){
+	var imgw = theImg.width;
+	var imgh = theImg.height;
+	var rw = w/imgw;
+	var rh = h/imgh;
+	var r = 1;
+	if( rh < rw ){
+		r=rh;
+	}else{
+		r=rw;
+	}
+	theImg.width = imgw * r;
+	theImg.height = imgh * r;  
+}
+function SIR(frm){if( oldQuery!= frm.query.value ) { frm.query.value = oldQuery + ' ' + frm.query.value; return true; }return false;}
+function rescape(s) {
+	var r = ""
+	if (typeof(s) == "undefined")
+		return r
+	for (var i=0;i<s.length; i++) {
+		var c = s.charAt(i);
+		if( typeof(escapespacial[c]) != "undefined")
+			r=r+escapespacial[c];
+		else
+			r=r+escape(c);
+	}
+	return r;
+}
+function navBar(l,txt,esc){
+	if(!txt) return;
+	if(l.tagName.toUpperCase()!="A") return;
+	var idx = l.href.indexOf(txt);
+	if(idx<0) return;
+	idx = idx + txt.length;
+	var ele = document.getElementById("searchForm");
+	if( !ele || !ele.query) return;
+	var q = ele.query.value;
+	if(esc){
+		q = rescape(q);
+	}
+	l.href=l.href.substr(0,idx) + q;
+}
+
+function search(query){
+	var w=document.searchForm;
+	w.query.value=query;
+	w.submit();
+	return true;
+}
+function sogou_debug(e){
+	if( e!= null){
+		var k,v;
+		for( k in e){
+			v = e[k];
+			if(! window.confirm("key: " + k  + ", val: " + v + "<br>" ) ){
+				break;
+			}
+		}
+	}
+}
+
+function s(o,p,po){
+    var w=document.searchForm.query;
+    var h=""+o.href;
+    var q=encodeURIComponent(w.value);
+    if(h.indexOf("kw=")>0)
+    {
+        o.href=h.replace(new RegExp("kw=[^&$]*"),"kw="+q)
+    }
+    else{
+        o.href+="?p="+p+"&kw="+q
+    }
+    if (po&&po.length>0) 
+        o.href+="#"+po;
+}
+
+function sogou_adclk(evt,ele){
+	if(typeof(uigs_para)!="undefined"){
+		ele.href=ele.href+"&ml="+uigs_para['mml']+'&mc='+(new Date().getTime()-sogou_last_mousedown_time);
+	}
+	return true;
+}
+//以下为动态的全局js
+
+
+var location;
+</script>
+<script type="text/javascript">
+var Clipbrd = {
+	copytext:function(str){
+		window.clipboardData.setData("Text",str);
+	},
+	paste:function(_obj) {
+		if (_obj) {
+			var o = document.getElementById("marstest");
+			o.value=window.clipboardData.getData("text");
+			if (o.value != "null")
+				_obj.value=o.value;
+		}
+	},
+	first:true,
+	disRemind:function(_obj){
+		if(_obj.innerHTML=="输入你想要转换的简体字" && this.first){
+			_obj.innerHTML="";
+			this.first = false;
+		}
+	}
+};
+var keywords=new Array();
+var keywords_string="接口";
+keywords=keywords_string.split(' ');
+var uuid="f4ec1bde-d93b-45e6-85f2-fb7605362ee3";
+
+var escapespacial={"¤":"%A1%E8","§":"%A1%EC","¨":"%A1%A7","°":"%A1%E3","±":"%A1%C0","·":"%A1%A4","×":"%A1%C1","à":"%A8%A4","á":"%A8%A2","è":"%A8%A8","é":"%A8%A6","ê":"%A8%BA","ì":"%A8%AC","í":"%A8%AA","ò":"%A8%B0","ó":"%A8%AE","÷":"%A1%C2","ù":"%A8%B4","ú":"%A8%B2","ü":"%A8%B9","+":"%2B"};
+var oldQuery="接口";
+if (top.location != self.location) {top.location=self.location;}
+</script>
+</head>
+<body link="#261cdc" onload="if(document.searchForm){document.searchForm.reset();}if(document.searchForm1){document.searchForm1.reset();}">
+
+
+
+<style type="text/css">
+.picad{ padding-bottom:5px;}
+.adtitle{overflow-y: hidden; height: 1.2em; line-height:1.2;}
+
+
+.quickspread{background:#E8F3FF;overflow:hidden;padding:0 3px;line-height:29px;height:30px;word-break:normal;width:217px} 
+
+.sidebox2 {padding: 3px;border: 1px solid #E9E9E9;margin-top: 15px;font-size: 80%;}
+.sidebox2 h3 {font-size: 93%;line-height: 22px;padding: 0 8px;font-weight: normal;background: #ECF5FE;margin:0 0 6px;}
+.tiny-list1 {list-style: disc; margin:0; padding:0 0 0 18px;}
+.tiny-list1 li {padding: 0;margin:0 0 6px;}
+
+.adlink{ font-size:73%;}
+
+
+
+
+
+
+.sort{ font-weight:bold; margin-left:10px; font-size:90%;}
+.requerytip {font-size:80%; padding-left:10px; font-weight:bold;}
+.requerytip a {font-weight:normal}
+
+.provider {
+	width: 65%;
+	border-collapse: collapse;
+	background: #F5F5F5;
+	font-size: 13px;
+	line-height: 19px;
+	margin:0 0 15px 10px;
+}
+.provider td {
+	padding: 2px 4px;
+}
+.provider h2 {
+	font-size: 16px;
+	font-weight: normal;
+	margin:0;
+	padding:0;
+}
+.provider h2 img {
+	vertical-align: middle;
+}
+.provider div {
+	width: 510px;
+}
+#topbar{
+	position:absolute;
+	border: 1px solid black;
+	padding: 2px;
+	background-color: lightyellow;
+	width: 620px;
+	visibility: hidden;
+	z-index: 100;
+}
+
+
+  
+
+/*VR*/
+/*tpl01.xsl*/
+.vrnews {line-height:1.4; color:#9C9C9C; width:600px; margin-left:10px;} 
+.vrnews ul {list-style:none; margin:0; padding:0}
+.vrnews h2 {font-weight:normal; font-size:100%; margin:0; padding:0;}
+.vrnewsbox {border-collapse:collapse;font-size:80%;}
+.vrnewsbox td {vertical-align:top}
+.vrnewsbox p {margin:0; padding:0}
+/*tpl03.xsl*/
+.tvguide{ font-size:100%;}
+.tvguide td {padding-left:30px;}
+/*tpl04.xsl和tpl05.xsl*/
+.rate {
+	border-collapse:collapse;
+	width:82.7%;
+	border:1px solid #B1C9E4;
+	font-size:80%;
+	margin-top:4px;
+}
+.rate td, .rate th {
+	padding:0 5px;
+	border:1px solid #E9E9E9;
+}
+.rate td {
+	height:25px;
+}
+.rate th {
+	height:22px;
+	background:#F1F8FF;
+	text-align:left;
+	font-weight:normal;
+}
+/*tpl06.xsl*/
+.mapbox {font-size:80%;border-collapse:collapse; margin-left:10px;} 
+.mapbox td {vertical-align:top;}
+.mff {width:31em;}
+/*cache child*/
+.child{background: url(http://www.sogou.com/images/ui/arrow.gif) no-repeat 10px 4px; padding-left:10px;}
+/*tpl08-19*/
+.vrbox {padding-left:10px;}
+
+
+ 
+.omission{font-size:90%; margin-left:10px;}
+ 
+
+
+
+
+.sogou{color:#008000; font-weight:bold; font-size:12px;} 
+.rightlogo {float:right;}
+.buttonface1 {
+	height:25px;
+	line-height:18px;
+	width:78px;
+}
+  
+.query {width:370px; font:16px arial;}
+#search-box2 {padding-left:10px;height: 40px;background: #E8F3FF;clear: both;border-top:30px solid #FFF;}
+#search-box2 div {padding: 9px 0 0;}
+#search-box2 form {height: 40px;}
+#search-box2 * {vertical-align: middle;}
+.buttonface2 {
+	height:25px;
+	width:117px;
+}
+  
+#footer {line-height: 50px;height: 40px;font-size: 80%;color: #9C9C9C;text-align: center;clear: both;}
+.terms {color: #9C9C9C;}
+  
+</style>
+
+
+
+
+<table width="100%" height="54" align="center" cellpadding="0" cellspacing="0" id="header">
+  <tr valign=middle>
+    <td valign="top" nowrap><a href="/?&p=40040100&dp=1&w=01019900&dr=1">
+		<img id="top_form_logo" src="/images/logo_s.gif" alt="搜狗" width="150" height="45" border="0" /></a>
+	</td>
+    <td width="100%" valign="top" style="padding-left:12px;">
+    	<div class="rightlogo"></div>
+    	<div class="Tit">
+    		<a href="http://news.sogou.com/news?query=%BD%D3%BF%DA" id=sogou_news onclick="navBar(this,'query=',true);">新闻</a>&nbsp;&nbsp;&nbsp;<strong>网页</strong>&nbsp;&nbsp;&nbsp;<a href="http://mp3.sogou.com/music.so?&class=1&p=40010200&query=%BD%D3%BF%DA" id=sogou_music onclick="navBar(this,'query=',true)">音乐</a>&nbsp;&nbsp;&nbsp;<a href="http://pic.sogou.com/pics?p=40230504&query=%BD%D3%BF%DA" id=sogou_pic onclick="navBar(this,'query=',true)">图片</a>&nbsp;&nbsp;&nbsp;<a href="http://v.sogou.com/v?p=40230608&query=%BD%D3%BF%DA" onclick="navBar(this,'query=',true)" id="sogou_video">视频</a>&nbsp;&nbsp;&nbsp;	<a href="http://wenda.sogou.com/search?p=58041300&query=%BD%D3%BF%DA" onclick="navBar(this,'query=',true)" id="sogou_wenda">问答</a>&nbsp;&nbsp;&nbsp;	<a href="http://map.sogou.com/new/#lq=接口" id=sogou_maps onclick="navBar(this,'#lq=',false)">地图</a>&nbsp;&nbsp;&nbsp;<a href="http://bbs.sogou.com/t?p=40230450&s=%BD%D3%BF%DA" id=sogou_sb onclick="navBar(this,'s=',true)">说吧</a>&nbsp;&nbsp;&nbsp;<a href="http://www.sogou.com/docs/more.htm">更多</a>
+    	</div>
+		<table cellspacing="0" cellpadding="0">
+		  <tr>
+		    <td valign="top" nowrap>
+		    	<form name="searchForm" id="searchForm" >
+			        <input name="query" id="upquery" type="text" style="width:360px" class="i" size="35" value="接口" autocomplete="off"/>
+					<input type="hidden" name="sourceid"/>
+					<input type="hidden" name="_ast" value="1270795776"><input type="hidden" name="_asf" value="www.sogou.com"><input type="hidden" name="w" value="01029901"/><input type="submit" uigs="searchBtn" id="searchBtn" class="buttonface1" value="搜狗搜索" />
+						<input type="hidden" name="num" value="10"/><input type="hidden" name="p" value="40040100"/><input type="hidden" name="dp" value="1"/>
+		        	&nbsp;
+		      </form>
+		     </td>
+		    <td valign="middle" nowrap><font size="-1"><a href="http://www.sogou.com/advanced/advanced.html" onclick="s(this,'')">高级搜索</a>&nbsp;|&nbsp;<a href="http://www.sogou.com/docs/help/help.htm">帮助</a></font></td>
+		  	
+		  </tr>
+		</table>
+	</td>
+    <td></td>
+  </tr>
+</table>
+ 
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="bi" id="result-bar">
+  <tr>
+    <td nowrap>&nbsp;&nbsp;&nbsp;
+	    <!--[if IE]>
+			<a id="sogou_shhead" href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.sogou.com');">设搜狗为首页</a>&nbsp;&nbsp;
+		<![endif]-->
+		
+			<a href="?query=%BD%D3%BF%DA&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776&tro=on" 
+			style="color:#00c;text-decoration:underline">按时间排序</a>
+		
+    </td>
+    <td id="top_separator_right" align="right" nowrap>
+    找到 28,906,630 <!--resultbarnum:28,906,630-->个网页，用时 0.072 <!--resultbartime:0.072-->秒
+	</td>
+  </tr>
+</table>
+<p class="skip" style="display:none"><a href="#content">跳至搜索结果</a></p>
+ 
+
+
+<table width="30%" border="0" cellpadding="0" cellspacing="0" align="right" id="sidebar">
+	<tr>
+		<td align="left">
+			<div class="sidebox">
+
+ 		
+<div id="ec_im_container"><div class="r" id="bdfs0">
+	<div class="adtitle">
+		<a href="http://a1click.cpc.sogou.com/bill_search?p=nZNhLHDgBCOas7TGlxcllRfClZlxB@0rlF5baNm27iJNllllxklylG@UhrEpdETFsdolllll&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMjM1OTExNDcmcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;uta=http://www.smarter.com.cn/search.php%3Fq=%25CF%25D4%25CA%25BE%25C6%25F7%25BD%25D3%25BF%25DA%26source=sogou_cn_013_keyword_%25CF%25D4%25CA%25BE%25C6%25F7%25BD%25D3%25BF%25DA&amp;url=http%3A%2F%2Fwww.smarter.com.cn%2F" onclick="return sogou_adclk(event,this)" id="rleadad0" target=_blank><font size="3">显示器<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>哪里卖的最便..</font></a>
+		
+	</div>
+	<a href="http://a1click.cpc.sogou.com/bill_search?p=nZNhLHDgBCOas7TGlxcllRfClZlxB@0rlF5baNm27iJNllllxklylG@UhrEpdETFsdolllll&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMjM1OTExNDcmcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;uta=http://www.smarter.com.cn/search.php%3Fq=%25CF%25D4%25CA%25BE%25C6%25F7%25BD%25D3%25BF%25DA%26source=sogou_cn_013_keyword_%25CF%25D4%25CA%25BE%25C6%25F7%25BD%25D3%25BF%25DA&amp;url=http%3A%2F%2Fwww.smarter.com.cn%2F" style="text-decoration: none;" id="rleadad0" target=_blank onclick="return sogou_adclk(event,this)">
+		<font size="-1" color="#000000">聪明点比较购物，成就网购达人，快来s<br>marter.com.cn</font><br>
+		<font size="-1" color="#008000">www.smarter.com.cn/</font>
+	</a>
+</div><br/><div class="r" id="bdfs0">
+	<div class="adtitle">
+		<a href="http://a1click.cpc.sogou.com/bill_search?p=80MTFuhGsiJas7TGlxDllGiIxllxW6zTlFy6Zdm27iJNllllxklyl7@EHDjd1E@zl2olll==&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMjQ3OTA3MTEmcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;url=http://www.bjpenghui.com" onclick="return sogou_adclk(event,this)" id="rleadad1" target=_blank><font size="3">北京鹏辉专供消防<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>承..</font></a>
+		
+	</div>
+	<a href="http://a1click.cpc.sogou.com/bill_search?p=80MTFuhGsiJas7TGlxDllGiIxllxW6zTlFy6Zdm27iJNllllxklyl7@EHDjd1E@zl2olll==&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMjQ3OTA3MTEmcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;url=http://www.bjpenghui.com" style="text-decoration: none;" id="rleadad1" target=_blank onclick="return sogou_adclk(event,this)">
+		<font size="-1" color="#000000">消防<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>价格合理。从事消防产品的批<br>发销售与维护维修，010-87360360。</font><br>
+		<font size="-1" color="#008000">www.bjpenghui.com</font>
+	</a>
+</div><br/><div class="r" id="bdfs0">
+	<div class="adtitle">
+		<a href="http://a1click.cpc.sogou.com/bill_search?p=QKUCdK$$emqas7TGlxcllnX$xllxE3ijlFqoiNm27iJNllllxklyxagXe2vTora31GUlllll&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMzIyODgzMjImcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;url=http://www.2office.cn/loginIndex.do" onclick="return sogou_adclk(event,this)" id="rleadad2" target=_blank><font size="3">电脑发彩信/彩信 / 群短..</font></a>
+		
+	</div>
+	<a href="http://a1click.cpc.sogou.com/bill_search?p=QKUCdK$$emqas7TGlxcllnX$xllxE3ijlFqoiNm27iJNllllxklyxagXe2vTora31GUlllll&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMzIyODgzMjImcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;url=http://www.2office.cn/loginIndex.do" style="text-decoration: none;" id="rleadad2" target=_blank onclick="return sogou_adclk(event,this)">
+		<font size="-1" color="#000000">适合投票、报表采集、微博、互动；支<br>持第三方调用<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>，彩信群发，超便宜</font><br>
+		<font size="-1" color="#008000">www.2office.cn/</font>
+	</a>
+</div><br/><div class="r" id="bdfs0">
+	<div class="adtitle">
+		<a href="http://a1click.cpc.sogou.com/bill_search?p=bo@J8UnPfdJas7TGlxcllaXWxllxLrWklFUC5Nm27iJNllllxklyxrEXHrEnEERDCEjEMklllll=&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMzExMTEwNzImcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;url=http://www.zddlbzc.com/product11.asp" onclick="return sogou_adclk(event,this)" id="rleadad3" target=_blank><font size="3">高品质剧毒物包装机在无..</font></a>
+		
+	</div>
+	<a href="http://a1click.cpc.sogou.com/bill_search?p=bo@J8UnPfdJas7TGlxcllaXWxllxLrWklFUC5Nm27iJNllllxklyxrEXHrEnEERDCEjEMklllll=&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMzExMTEwNzImcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;url=http://www.zddlbzc.com/product11.asp" style="text-decoration: none;" id="rleadad3" target=_blank onclick="return sogou_adclk(event,this)">
+		<font size="-1" color="#000000">全电脑控制，空中量自动调节，带有标<br>准通讯<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>，可与中央控制系统联网。</font><br>
+		<font size="-1" color="#008000">www.zddlbzc.com/</font>
+	</a>
+</div><br/><div class="r" id="bdfs0">
+	<div class="adtitle">
+		<a href="http://a1click.cpc.sogou.com/bill_search?p=qTOXz2K10Bdas7TGlxcllGuUxllxk7ThlFyfmNm27iJNllllxklyjGEqZzzhc7rU17tlMkll&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMjUzNDk2MTgmcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;url=http://www.taimeiquan.com/product/gb/productlist.asp%3FsortID=83" onclick="return sogou_adclk(event,this)" id="rleadad4" target=_blank><font size="3">专业生产握力测试仪--北..</font></a>
+		
+	</div>
+	<a href="http://a1click.cpc.sogou.com/bill_search?p=qTOXz2K10Bdas7TGlxcllGuUxllxk7ThlFyfmNm27iJNllllxklyjGEqZzzhc7rU17tlMkll&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMjUzNDk2MTgmcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;url=http://www.taimeiquan.com/product/gb/productlist.asp%3FsortID=83" style="text-decoration: none;" id="rleadad4" target=_blank onclick="return sogou_adclk(event,this)">
+		<font size="-1" color="#000000">通过USB<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>与计算机通讯，简便快捷，<br>数据不丢失。</font><br>
+		<font size="-1" color="#008000">www.taimeiquan.com/</font>
+	</a>
+</div><br/><div class="r" id="bdfs0">
+	<div class="adtitle">
+		<a href="http://a1click.cpc.sogou.com/bill_search?p=TM5WGW0gG@Jas7TGlxclla5yxllxZl57lFF8WHm27iJNllllxklyj7bE7EQfcr5pCH0wEb8Mlllwek==&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMjkzNjExMzImcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;url=http://www.zzjinheng.com.cn/" onclick="return sogou_adclk(event,this)" id="rleadad5" target=_blank><font size="3">金恒汽车衡称重软件0371..</font></a>
+		 	
+			<a href="http://sogou.koocall.com/ppc/sougou.jsp?id=1763592" id="rleadad5" target="_blank"><img src="/images/tel1.v1.gif" align="absmiddle"/></a>
+		
+	</div>
+	<a href="http://a1click.cpc.sogou.com/bill_search?p=TM5WGW0gG@Jas7TGlxclla5yxllxZl57lFF8WHm27iJNllllxklyj7bE7EQfcr5pCH0wEb8Mlllwek==&amp;q=cGlkPXNvZ291JnI9MSZoPTE2ODUxNjE1OSZ2PTEmYz1MJnB2aWQ9MTRkNDVhM2ZlMTY2ZTVmYjAwMDAwMDAwMjkzNjExMzImcmVmPWh0dHA6Ly93d3cuc29nb3UuY29tLwA=&amp;url=http://www.zzjinheng.com.cn/" style="text-decoration: none;" id="rleadad5" target=_blank onclick="return sogou_adclk(event,this)">
+		<font size="-1" color="#000000">红绿灯视频监控，较强的防作弊措施，<br>有多种仪表<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>程序。可实现无人值守</font><br>
+		<font size="-1" color="#008000">www.zzjinheng.com.cn/</font>
+	</a>
+</div><br/></div>
+ 
+ 
+
+<div class="quickspread">	
+	<a href="http://www.sogou.com/fuwu/?w=01020102" target="_blank" style="font-size: 16px" id="sogou_rfuwu">
+
+到搜狗快速推广您的产品！
+
+</a>
+</div>
+<br/>
+ 
+<a class="adlink" href="http://lk.brand.sogou.com/search_ad.php?url=http%3A%2F%2Fname.knet.cn%2Fcn.dll%3Fpid%3Dl_sogou%26name%3D%25BD%25D3%25BF%25DA&adid=71" onclick="return sogou_adclk(event,this)" target="_blank">通址直达<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>，由此进入</a><br/>
+<a class="adlink" href="http://lk.brand.sogou.com/search_ad.php?url=http%3A%2F%2Fsou.58.com%2F%3Fkey2%3D%25E6%258E%25A5%25E5%258F%25A3&adid=734" onclick="return sogou_adclk(event,this)" target="_blank">最新<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>，点此进入！</a><br/>
+<a class="adlink" href="http://lk.brand.sogou.com/search_ad.php?url=http%3A%2F%2Fwww.sogou.com%2Fonccc%2Fbzt.do%3Fp%3D39350100&adid=736" onclick="return sogou_adclk(event,this)" target="_blank">寻宝大搜索礼品免费拿</a><br/>
+<a class="adlink" href="http://lk.brand.sogou.com/search_ad.php?url=http%3A%2F%2Fwww.sogou.com%2Fonccc%2Fbzt.do%3Fp%3D39350100&adid=717" onclick="return sogou_adclk(event,this)" target="_blank">义乌小商品免费兑换</a><br/>
+<a class="adlink" href="http://lk.brand.sogou.com/search_ad.php?url=http%3A%2F%2Fwww.sogou.com%2Fonccc%2Fbzt.do%3Fp%3D39350100&adid=718" onclick="return sogou_adclk(event,this)" target="_blank">搜关键词免费赢礼品！</a><br/>
+<a class="adlink" href="http://lk.brand.sogou.com/search_ad.php?url=http%3A%2F%2Fwww.120ask.com%2Fasksg.asp%3Ftitle%3D%25BD%25D3%25BF%25DA&adid=508" onclick="return sogou_adclk(event,this)" target="_blank">到有问必答网问<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>健康问题</a><br/>
+<a class="adlink" href="http://lk.brand.sogou.com/search_ad.php?url=http%3A%2F%2Fsearch.china.alibaba.com%2Fsearch%2Foffer_search.htm%3Fkeywords%3D%25BD%25D3%25BF%25DA%26tracelog%3Dwb_sougo_0911&adid=635" onclick="return sogou_adclk(event,this)" target="_blank">找更多<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>，上阿里巴巴</a><br/>
+
+ 
+			</div>
+
+ 
+
+ 
+
+		</td>
+	</tr>
+</table>
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+	
+	<!--a-->
+	
+		
+<!--m--><table border="0" cellpadding="0" cellspacing="0" id="1">
+<tr>
+<td class="f"><a target="_blank" class="ff" name="dttl" href="http://www.hudong.com/wiki/%E6%8E%A5%E5%8F%A3" id="sogou_vr_200501_0"><font color=#c60a00><!--red_beg-->接口<!--red_end--></font>_互动百科</a>
+<br>
+<font size="-1">
+<!--summary_beg--><font color=#c60a00><!--red_beg-->接口<!--red_end--></font>九大视频<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>全接触,<font color=#c60a00><!--red_beg-->接口<!--red_end--></font><font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型 <font color=#c60a00><!--red_beg-->接口<!--red_end--></font>指的是MD产品具有哪些输入输出的<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>.首先作为MD产品,耳机的输出<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>自然是必须有的.除了基本的耳机输出<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>之外,录放型产品还应该具有线路输入的<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>,这样才能够...<!--summary_end--><br>
+<font color="#008000">www.hudong.com/wiki/%E6%8E%A5%E5%8F%A3 - 50K - 2008-12-17</font></font></td>
+</tr>
+</table>
+<!--STATUS VR OK-->
+<!--VR TYPE:200501,RANK:0-->
+<!--n--><br>
+
+
+	
+		
+<table border="0" cellpadding="0" cellspacing="0" id="1"><tr><td class=f>
+		    <!--m--><!--awbg2--><a class="ff" id="uigs1" href="http://baike.baidu.com/view/159864.htm" target="_blank"  name="dttl"><!--awed2--><!--resulttitle:接口_百度百科--><font color=#c60a00><!--red_beg-->接口<!--red_end--></font>_百度百科</a><br><font size="-1" id="cacheresult_summary_1"><!--summary_beg-->释义 词目:<font color=#c60a00><!--red_beg-->接口<!--red_end--></font> 拼音:jīe kǒu 英文:interface 基本解释 <font color=#c60a00><!--red_beg-->接口<!--red_end--></font> jiēkǒu [take up sb.'s remark]∶接着别人的话[说]妈妈的话一落音,她就<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>谈了起来 [interface;joint]∶两个物体的口子相连接这里正是新沟跟旧...<!--summary_end--><br><font color="#008000" id="cacheresult_info_1">baike.baidu.com/.../159864.htm&nbsp;-&nbsp;56k<!--resultinfosize:56k-->&nbsp;-&nbsp;2010-02-17<!--resultinfodate:2010-02-17--></font>&nbsp;-&nbsp;<!--resultsnap_beg--><a id="sogou_snapshot_1" href="/websnapshot?url=http%3A%2F%2Fbaike.baidu.com%2Fview%2F159864.htm&did=f203eb8c2eab4b39-e507502fef4d2600&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&w=01020400" target="_blank" style="color: #7575F8;"><!--resultsnap_end-->搜狗快照</a>&nbsp;-&nbsp;<a name="sogou_preview_links" id="sogou_preview_1" style="color: #7575F8;" href="javascript:void(null);" onclick="sogou_preview_swap('sogou_preview_1', 'link_1');" sogou_preview_title="<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>_百度百科" sogou_preview_link="http://baike.baidu.com/view/159864.htm" url="/websearch/snapshot_preview.jsp?url=http%3A%2F%2Fbaike.baidu.com%2Fview%2F159864.htm&did=f203eb8c2eab4b39-e507502fef4d2600&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&title=%BD%D3%BF%DA_%B0%D9%B6%C8%B0%D9%BF%C6">网页预览</a><!--n--><br><a class="m" id="sogou_sis_1" href="?query=site:baike.baidu.com+%BD%D3%BF%DA&p=40040100&dp=1&w=01020300">baike.baidu.com站内的其它相关信息</a></font></td></tr></table><br><div id="sogou_preview_1_line" class="myline" style="display:none;height:2px;width:400px;margin:0;padding:0;background:#A5C6EC;position:absolute;top:179px;left:381px;overflow:hidden;"></div><div id="sogou_preview_1_div" style="background:none;height:700px;width:700px; margin:0 ;padding:0;display: none;position:absolute;top:0;left:538px; z-index:100000;" ></div><div id="sogou_preview_1_shade" style="margin:0;padding:0;position:absolute;left:541px;display:none;background:#9C9C9C;z-index:99999;"></div>
+
+
+			
+
+
+	
+		
+<table border="0" cellpadding="0" cellspacing="0" id="1"><tr><td class=f>
+		    <!--m--><!--awbg3--><a class="ff" id="uigs2" href="http://detail.zol.com.cn/product_param/index1706.html" target="_blank"  name="dttl"><!--awed3--><!--resulttitle:接口 U盘知识 ZOL术语--><font color=#c60a00><!--red_beg-->接口<!--red_end--></font> U盘知识 ZOL术语</a><br><font size="-1" id="cacheresult_summary_2"><!--summary_beg--><font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型是指该便携存储产品所采用的与电脑系统相连接的<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>规格.目前的便携存储产品基本都采...USB 2.0<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>能提供480Mbps的数据传输率.但这些都是该<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>理想状态下所能达到的最大数据传输...<!--summary_end--><br><font color="#008000" id="cacheresult_info_2">detail.zol.com.cn/...1706.html&nbsp;-&nbsp;24k<!--resultinfosize:24k-->&nbsp;-&nbsp;2天前<!--resultinfodate:2010-04-07--></font>&nbsp;-&nbsp;<!--resultsnap_beg--><a id="sogou_snapshot_2" href="/websnapshot?url=http%3A%2F%2Fdetail.zol.com.cn%2Fproduct_param%2Findex1706.html&did=19dab51daf1bad64-f41f7cc63ab9ca20&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&w=01020400" target="_blank" style="color: #7575F8;"><!--resultsnap_end-->搜狗快照</a>&nbsp;-&nbsp;<a name="sogou_preview_links" id="sogou_preview_2" style="color: #7575F8;" href="javascript:void(null);" onclick="sogou_preview_swap('sogou_preview_2', 'link_2');" sogou_preview_title="<font color=#c60a00><!--red_beg-->接口<!--red_end--></font> U盘知识 ZOL术语" sogou_preview_link="http://detail.zol.com.cn/product_param/index1706.html" url="/websearch/snapshot_preview.jsp?url=http%3A%2F%2Fdetail.zol.com.cn%2Fproduct_param%2Findex1706.html&did=19dab51daf1bad64-f41f7cc63ab9ca20&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&title=%BD%D3%BF%DA+U%C5%CC%D6%AA%CA%B6+ZOL%CA%F5%D3%EF">网页预览</a><!--n--></td></tr></table><br><div id="sogou_preview_2_line" class="myline" style="display:none;height:2px;width:400px;margin:0;padding:0;background:#A5C6EC;position:absolute;top:179px;left:381px;overflow:hidden;"></div><div id="sogou_preview_2_div" style="background:none;height:700px;width:700px; margin:0 ;padding:0;display: none;position:absolute;top:0;left:538px; z-index:100000;" ></div><div id="sogou_preview_2_shade" style="margin:0;padding:0;position:absolute;left:541px;display:none;background:#9C9C9C;z-index:99999;"></div>
+
+
+			
+
+
+	
+		
+<table border="0" cellpadding="0" cellspacing="0" id="1"><tr><td class=f>
+		    <!--m--><!--awbg4--><a class="ff" id="uigs3" href="http://www.beareyes.com.cn/2/lib/200512/02/20051202023_2.htm" target="_blank"  name="dttl"><!--awed4--><!--resulttitle:知识百宝囊——认清你身边的PC接口::小熊在线-网络频道-->知识百宝囊——认清你身边的PC<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>::小熊在线-网络频道</a><br><font size="-1" id="cacheresult_summary_3"><!--summary_beg-->[文章简介]阅读 人次 这篇文章包罗万象,为新用户和经历问题的使用者提供帮助.通过大量图片和注释,将告诉你电脑各种<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>、插槽、插头的作用…… (5075 字)<!--summary_end--><br><font color="#008000" id="cacheresult_info_3">www.beareyes.com.cn/...3_2.htm&nbsp;-&nbsp;27k<!--resultinfosize:27k-->&nbsp;-&nbsp;2005-12-01<!--resultinfodate:2005-12-01--></font>&nbsp;-&nbsp;<!--resultsnap_beg--><a id="sogou_snapshot_3" href="/websnapshot?url=http%3A%2F%2Fwww.beareyes.com.cn%2F2%2Flib%2F200512%2F02%2F20051202023_2.htm&did=610ec2d30e88928c-0bffb6f843d086d0&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&w=01020400" target="_blank" style="color: #7575F8;"><!--resultsnap_end-->搜狗快照</a>&nbsp;-&nbsp;<a name="sogou_preview_links" id="sogou_preview_3" style="color: #7575F8;" href="javascript:void(null);" onclick="sogou_preview_swap('sogou_preview_3', 'link_3');" sogou_preview_title="知识百宝囊——认清你身边的PC<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>::小熊在线-网络频道" sogou_preview_link="http://www.beareyes.com.cn/2/lib/200512/02/20051202023_2.htm" url="/websearch/snapshot_preview.jsp?url=http%3A%2F%2Fwww.beareyes.com.cn%2F2%2Flib%2F200512%2F02%2F20051202023_2.htm&did=610ec2d30e88928c-0bffb6f843d086d0&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&title=%D6%AA%CA%B6%B0%D9%B1%A6%C4%D2%A1%AA%A1%AA%C8%CF%C7%E5%C4%E3%C9%ED%B1%DF%B5%C4PC%BD%D3%BF%DA%3A%3A%D0%A1%D0%DC%D4%DA%CF%DF-%CD%F8%C2%E7%C6%B5%B5%C0">网页预览</a><!--n--><br><a class="m" id="sogou_sis_3" href="?query=site:www.beareyes.com.cn+%BD%D3%BF%DA&p=40040100&dp=1&w=01020300">www.beareyes.com.cn站内的其它相关信息</a></font></td></tr></table><br><div id="sogou_preview_3_line" class="myline" style="display:none;height:2px;width:400px;margin:0;padding:0;background:#A5C6EC;position:absolute;top:179px;left:381px;overflow:hidden;"></div><div id="sogou_preview_3_div" style="background:none;height:700px;width:700px; margin:0 ;padding:0;display: none;position:absolute;top:0;left:538px; z-index:100000;" ></div><div id="sogou_preview_3_shade" style="margin:0;padding:0;position:absolute;left:541px;display:none;background:#9C9C9C;z-index:99999;"></div>
+
+
+			
+
+
+	
+		
+<table border="0" cellpadding="0" cellspacing="0" id="1"><tr><td class=f>
+		    <!--m--><!--awbg5--><a class="ff" id="uigs4" href="http://detail.zol.com.cn/product_param/index2585.html" target="_blank"  name="dttl"><!--awed5--><!--resulttitle:接口的几种类型 移动硬盘知识 ZOL术语--><font color=#c60a00><!--red_beg-->接口<!--red_end--></font>的几种类型 移动硬盘知识 ZOL术语</a><br><font size="-1" id="cacheresult_summary_4"><!--summary_beg--><font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型是指该移动硬盘所采用的与电脑系统相连接的<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>种类,并不是其内部硬盘的<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型.因为...因此<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>就决定着其与系统连接的性能表现和数据传输速度.选择移动硬盘时,首先要考虑的就是其<font color=#c60a00><!--red_beg-->接<!--red_end--></font>...<!--summary_end--><br><font color="#008000" id="cacheresult_info_4">detail.zol.com.cn/...2585.html&nbsp;-&nbsp;24k<!--resultinfosize:24k-->&nbsp;-&nbsp;2010-03-16<!--resultinfodate:2010-03-16--></font>&nbsp;-&nbsp;<!--resultsnap_beg--><a id="sogou_snapshot_4" href="/websnapshot?url=http%3A%2F%2Fdetail.zol.com.cn%2Fproduct_param%2Findex2585.html&did=b07988e76e1bad64-f41f7cc63ab9ca20&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&w=01020400" target="_blank" style="color: #7575F8;"><!--resultsnap_end-->搜狗快照</a>&nbsp;-&nbsp;<a name="sogou_preview_links" id="sogou_preview_4" style="color: #7575F8;" href="javascript:void(null);" onclick="sogou_preview_swap('sogou_preview_4', 'link_4');" sogou_preview_title="<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>的几种类型 移动硬盘知识 ZOL术语" sogou_preview_link="http://detail.zol.com.cn/product_param/index2585.html" url="/websearch/snapshot_preview.jsp?url=http%3A%2F%2Fdetail.zol.com.cn%2Fproduct_param%2Findex2585.html&did=b07988e76e1bad64-f41f7cc63ab9ca20&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&title=%BD%D3%BF%DA%B5%C4%BC%B8%D6%D6%C0%E0%D0%CD+%D2%C6%B6%AF%D3%B2%C5%CC%D6%AA%CA%B6+ZOL%CA%F5%D3%EF">网页预览</a><!--n--><br><a class="m" id="sogou_sis_4" href="?query=site:detail.zol.com.cn+%BD%D3%BF%DA&p=40040100&dp=1&w=01020300">detail.zol.com.cn站内的其它相关信息</a></font></td></tr></table><br><div id="sogou_preview_4_line" class="myline" style="display:none;height:2px;width:400px;margin:0;padding:0;background:#A5C6EC;position:absolute;top:179px;left:381px;overflow:hidden;"></div><div id="sogou_preview_4_div" style="background:none;height:700px;width:700px; margin:0 ;padding:0;display: none;position:absolute;top:0;left:538px; z-index:100000;" ></div><div id="sogou_preview_4_shade" style="margin:0;padding:0;position:absolute;left:541px;display:none;background:#9C9C9C;z-index:99999;"></div>
+
+
+			
+
+
+	
+		
+<table border="0" cellpadding="0" cellspacing="0" id="1"><tr><td class=f>
+		    <!--m--><!--awbg6--><a class="ff" id="uigs5" href="http://bbs.pcpop.com/061011/754916.html" target="_blank"  name="dttl"><!--awed6--><!--resulttitle:【数码摄像机_PC接口类型 】数码摄像机 论坛-->【数码摄像机_PC<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型 】数码摄像机 论坛</a><br><font size="-1" id="cacheresult_summary_5"><!--summary_beg-->PC<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>是指数码摄像头和计算机之间连接时的端口,目前市面上所有的数码摄像头均为USB<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>.... ... POPEditor 级别:列兵 威望:0 性别:男 发帖数:0 贡献币:0 回帖数:0 来自:其它 查看博客文集 泡泡网...<!--summary_end--><br><font color="#008000" id="cacheresult_info_5">bbs.pcpop.com/...1/754916.html&nbsp;-&nbsp;71k<!--resultinfosize:71k-->&nbsp;-&nbsp;2008-06-17<!--resultinfodate:2008-06-17--></font>&nbsp;-&nbsp;<!--resultsnap_beg--><a id="sogou_snapshot_5" href="/websnapshot?url=http%3A%2F%2Fbbs.pcpop.com%2F061011%2F754916.html&did=22614080e284236c-c6fa4ed75d67b130&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&w=01020400" target="_blank" style="color: #7575F8;"><!--resultsnap_end-->搜狗快照</a>&nbsp;-&nbsp;<a name="sogou_preview_links" id="sogou_preview_5" style="color: #7575F8;" href="javascript:void(null);" onclick="sogou_preview_swap('sogou_preview_5', 'link_5');" sogou_preview_title="【数码摄像机_PC<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型 】数码摄像机 论坛" sogou_preview_link="http://bbs.pcpop.com/061011/754916.html" url="/websearch/snapshot_preview.jsp?url=http%3A%2F%2Fbbs.pcpop.com%2F061011%2F754916.html&did=22614080e284236c-c6fa4ed75d67b130&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&title=%A1%BE%CA%FD%C2%EB%C9%E3%CF%F1%BB%FA_PC%BD%D3%BF%DA%C0%E0%D0%CD+%A1%BF%CA%FD%C2%EB%C9%E3%CF%F1%BB%FA+%C2%DB%CC%B3">网页预览</a><!--n--><br><a class="m" id="sogou_sis_5" href="?query=site:bbs.pcpop.com+%BD%D3%BF%DA&p=40040100&dp=1&w=01020300">bbs.pcpop.com站内的其它相关信息</a></font></td></tr></table><br><div id="sogou_preview_5_line" class="myline" style="display:none;height:2px;width:400px;margin:0;padding:0;background:#A5C6EC;position:absolute;top:179px;left:381px;overflow:hidden;"></div><div id="sogou_preview_5_div" style="background:none;height:700px;width:700px; margin:0 ;padding:0;display: none;position:absolute;top:0;left:538px; z-index:100000;" ></div><div id="sogou_preview_5_shade" style="margin:0;padding:0;position:absolute;left:541px;display:none;background:#9C9C9C;z-index:99999;"></div>
+
+
+			
+
+
+	
+		
+<table border="0" cellpadding="0" cellspacing="0" id="1"><tr><td class=f>
+		    <!--m--><!--awbg7--><a class="ff" id="uigs6" href="http://www.raid-recovery.org/" target="_blank"  name="dttl"><!--awed7--><!--resulttitle:Raid数据恢复-北京北亚数据恢复中心 4006-505-808(深圳,浙江,上...-->Raid数据恢复-北京北亚数据恢复中心 4006-505-808(深圳,浙江,上...</a><br><font size="-1" id="cacheresult_summary_6"><!--summary_beg-->数据恢复 北亚数据恢复中心目前对外提供服务,内容包括RAID磁盘阵列的数据恢复,硬盘开盘数据恢复,UNIX数据恢复,MAC数据恢复,数据库数据修复,U盘、数码产品数据恢复等服务.网站提供免费数据恢复...<!--summary_end--><br><font color="#008000" id="cacheresult_info_6">www.raid-recovery.org/&nbsp;-&nbsp;18k<!--resultinfosize:18k-->&nbsp;-&nbsp;2010-03-04<!--resultinfodate:2010-03-04--></font>&nbsp;-&nbsp;<!--resultsnap_beg--><a id="sogou_snapshot_6" href="/websnapshot?url=http%3A%2F%2Fwww.raid-recovery.org%2F&did=c5e8e0ada5e69602-cb60c979e384bd70&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&w=01020400" target="_blank" style="color: #7575F8;"><!--resultsnap_end-->搜狗快照</a>&nbsp;-&nbsp;<a name="sogou_preview_links" id="sogou_preview_6" style="color: #7575F8;" href="javascript:void(null);" onclick="sogou_preview_swap('sogou_preview_6', 'link_6');" sogou_preview_title="Raid数据恢复-北京北亚数据恢复中心 4006-505-808(深圳,浙江,上..." sogou_preview_link="http://www.raid-recovery.org/" url="/websearch/snapshot_preview.jsp?url=http%3A%2F%2Fwww.raid-recovery.org%2F&did=c5e8e0ada5e69602-cb60c979e384bd70&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&title=Raid%CA%FD%BE%DD%BB%D6%B8%B4-%B1%B1%BE%A9%B1%B1%D1%C7%CA%FD%BE%DD%BB%D6%B8%B4%D6%D0%D0%C4+4006-505-808%28%C9%EE%DB%DA%2C%D5%E3%BD%AD%2C%C9%CF...">网页预览</a><!--onlyhitanchor--><!--n--></td></tr></table><br><div id="sogou_preview_6_line" class="myline" style="display:none;height:2px;width:400px;margin:0;padding:0;background:#A5C6EC;position:absolute;top:179px;left:381px;overflow:hidden;"></div><div id="sogou_preview_6_div" style="background:none;height:700px;width:700px; margin:0 ;padding:0;display: none;position:absolute;top:0;left:538px; z-index:100000;" ></div><div id="sogou_preview_6_shade" style="margin:0;padding:0;position:absolute;left:541px;display:none;background:#9C9C9C;z-index:99999;"></div>
+
+
+			
+
+
+	
+		
+<table border="0" cellpadding="0" cellspacing="0" id="1"><tr><td class=f>
+		    <!--m--><!--awbg8--><a class="ff" id="uigs7" href="http://publish.it168.com/cWord/205.shtml" target="_blank"  name="dttl"><!--awed8--><!--resulttitle:接口类型术语解释|激光打印机名词解释|什么是接口类型- IT168--><font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型术语解释|激光打印机名词解释|什么是<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型- IT168</a><br><font size="-1" id="cacheresult_summary_7"><!--summary_beg--><font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型也就是指打印机与计算机之间采用的<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型,通过这项指标也可以间接反映出打印机输出速...这种<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型的打印机则无法使用,因此其适用范围并不广泛.而USB<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>依靠其支持热插拔和输出速...<!--summary_end--><br><font color="#008000" id="cacheresult_info_7">publish.it168.com/...205.shtml&nbsp;-&nbsp;12k<!--resultinfosize:12k-->&nbsp;-&nbsp;2009-12-06<!--resultinfodate:2009-12-06--></font>&nbsp;-&nbsp;<!--resultsnap_beg--><a id="sogou_snapshot_7" href="/websnapshot?url=http%3A%2F%2Fpublish.it168.com%2FcWord%2F205.shtml&did=e2be7c58501bfdb9-c5a4be51fd57b140&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&w=01020400" target="_blank" style="color: #7575F8;"><!--resultsnap_end-->搜狗快照</a>&nbsp;-&nbsp;<a name="sogou_preview_links" id="sogou_preview_7" style="color: #7575F8;" href="javascript:void(null);" onclick="sogou_preview_swap('sogou_preview_7', 'link_7');" sogou_preview_title="<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型术语解释|激光打印机名词解释|什么是<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型- IT168" sogou_preview_link="http://publish.it168.com/cWord/205.shtml" url="/websearch/snapshot_preview.jsp?url=http%3A%2F%2Fpublish.it168.com%2FcWord%2F205.shtml&did=e2be7c58501bfdb9-c5a4be51fd57b140&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&title=%BD%D3%BF%DA%C0%E0%D0%CD%CA%F5%D3%EF%BD%E2%CA%CD%7C%BC%A4%B9%E2%B4%F2%D3%A1%BB%FA%C3%FB%B4%CA%BD%E2%CA%CD%7C%CA%B2%C3%B4%CA%C7%BD%D3%BF%DA%C0%E0%D0%CD-+IT168">网页预览</a><!--n--><br><a class="m" id="sogou_sis_7" href="?query=site:publish.it168.com+%BD%D3%BF%DA&p=40040100&dp=1&w=01020300">publish.it168.com站内的其它相关信息</a></font></td></tr></table><br><div id="sogou_preview_7_line" class="myline" style="display:none;height:2px;width:400px;margin:0;padding:0;background:#A5C6EC;position:absolute;top:179px;left:381px;overflow:hidden;"></div><div id="sogou_preview_7_div" style="background:none;height:700px;width:700px; margin:0 ;padding:0;display: none;position:absolute;top:0;left:538px; z-index:100000;" ></div><div id="sogou_preview_7_shade" style="margin:0;padding:0;position:absolute;left:541px;display:none;background:#9C9C9C;z-index:99999;"></div>
+
+
+			
+
+
+	
+		
+<table border="0" cellpadding="0" cellspacing="0" id="1"><tr><td class=f>
+		    <!--m--><!--awbg9--><a class="ff" id="uigs8" href="http://tech.sina.com.cn/n/2005-01-25/1659514512.shtml" target="_blank"  name="dttl"><!--awed9--><!--resulttitle:笔记本关键字:接口类型_笔记本_科技时代_新浪网-->笔记本关键字:<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型_笔记本_科技时代_新浪网</a><br><font size="-1" id="cacheresult_summary_8"><!--summary_beg-->我们知道,CPU需要通过某个<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>与主板连接的才能进行工作.CPU经过这么多年的发展,采用的<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>方式有引脚式、卡式、触点式、针脚式等.而目前CPU的<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>都是针脚式<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>,对应到主板上就有相应的...<!--summary_end--><br><font color="#008000" id="cacheresult_info_8">tech.sina.com.cn/...4512.shtml&nbsp;-&nbsp;67k<!--resultinfosize:67k-->&nbsp;-&nbsp;2005-01-25<!--resultinfodate:2005-01-25--></font>&nbsp;-&nbsp;<!--resultsnap_beg--><a id="sogou_snapshot_8" href="/websnapshot?url=http%3A%2F%2Ftech.sina.com.cn%2Fn%2F2005-01-25%2F1659514512.shtml&did=231ada4f860ddb95-86907783d4cca6e0&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&w=01020400" target="_blank" style="color: #7575F8;"><!--resultsnap_end-->搜狗快照</a>&nbsp;-&nbsp;<a name="sogou_preview_links" id="sogou_preview_8" style="color: #7575F8;" href="javascript:void(null);" onclick="sogou_preview_swap('sogou_preview_8', 'link_8');" sogou_preview_title="笔记本关键字:<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>类型_笔记本_科技时代_新浪网" sogou_preview_link="http://tech.sina.com.cn/n/2005-01-25/1659514512.shtml" url="/websearch/snapshot_preview.jsp?url=http%3A%2F%2Ftech.sina.com.cn%2Fn%2F2005-01-25%2F1659514512.shtml&did=231ada4f860ddb95-86907783d4cca6e0&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&title=%B1%CA%BC%C7%B1%BE%B9%D8%BC%FC%D7%D6%3A%BD%D3%BF%DA%C0%E0%D0%CD_%B1%CA%BC%C7%B1%BE_%BF%C6%BC%BC%CA%B1%B4%FA_%D0%C2%C0%CB%CD%F8">网页预览</a><!--n--></td></tr></table><br><div id="sogou_preview_8_line" class="myline" style="display:none;height:2px;width:400px;margin:0;padding:0;background:#A5C6EC;position:absolute;top:179px;left:381px;overflow:hidden;"></div><div id="sogou_preview_8_div" style="background:none;height:700px;width:700px; margin:0 ;padding:0;display: none;position:absolute;top:0;left:538px; z-index:100000;" ></div><div id="sogou_preview_8_shade" style="margin:0;padding:0;position:absolute;left:541px;display:none;background:#9C9C9C;z-index:99999;"></div>
+
+
+			
+
+
+	
+		
+<table border="0" cellpadding="0" cellspacing="0" id="1"><tr><td class=f>
+		    <!--m--><!--awbg10--><a class="ff" id="uigs9" href="http://q.yesky.com/group/review-18206708.html" target="_blank"  name="dttl"><!--awed10--><!--resulttitle:DVI-I还是DVI-D?DVI接口详细介绍_ LG液晶显示器-->DVI-I还是DVI-D?DVI<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>详细介绍_ LG液晶显示器</a><br><font size="-1" id="cacheresult_summary_9"><!--summary_beg-->如今带有DVI<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>的液晶显示器十分普及,另外配备同样<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>的显示卡也很常见,如此配合起来导致了DVI大行其道,而传统的VGA<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>由于不能和数字信号完全匹配,因此逐渐走向没落. 说到DVI<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>,很多朋友...<!--summary_end--><br><font color="#008000" id="cacheresult_info_9">q.yesky.com/...w-18206708.html&nbsp;-&nbsp;42k<!--resultinfosize:42k-->&nbsp;-&nbsp;2009-09-02<!--resultinfodate:2009-09-02--></font>&nbsp;-&nbsp;<!--resultsnap_beg--><a id="sogou_snapshot_9" href="/websnapshot?url=http%3A%2F%2Fq.yesky.com%2Fgroup%2Freview-18206708.html&did=ed0671655dba0910-5c9654bf36a86ac0&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&w=01020400" target="_blank" style="color: #7575F8;"><!--resultsnap_end-->搜狗快照</a>&nbsp;-&nbsp;<a name="sogou_preview_links" id="sogou_preview_9" style="color: #7575F8;" href="javascript:void(null);" onclick="sogou_preview_swap('sogou_preview_9', 'link_9');" sogou_preview_title="DVI-I还是DVI-D?DVI<font color=#c60a00><!--red_beg-->接口<!--red_end--></font>详细介绍_ LG液晶显示器" sogou_preview_link="http://q.yesky.com/group/review-18206708.html" url="/websearch/snapshot_preview.jsp?url=http%3A%2F%2Fq.yesky.com%2Fgroup%2Freview-18206708.html&did=ed0671655dba0910-5c9654bf36a86ac0&encodedQuery=%BD%D3%BF%DA&query=%BD%D3%BF%DA&&p=40040100&dp=1&title=DVI-I%BB%B9%CA%C7DVI-D%3FDVI%BD%D3%BF%DA%CF%EA%CF%B8%BD%E9%C9%DC_+LG%D2%BA%BE%A7%CF%D4%CA%BE%C6%F7">网页预览</a><!--n--></td></tr></table><br><div id="sogou_preview_9_line" class="myline" style="display:none;height:2px;width:400px;margin:0;padding:0;background:#A5C6EC;position:absolute;top:179px;left:381px;overflow:hidden;"></div><div id="sogou_preview_9_div" style="background:none;height:700px;width:700px; margin:0 ;padding:0;display: none;position:absolute;top:0;left:538px; z-index:100000;" ></div><div id="sogou_preview_9_shade" style="margin:0;padding:0;position:absolute;left:541px;display:none;background:#9C9C9C;z-index:99999;"></div>
+
+
+			
+
+
+	
+	<!--z-->
+	
+	
+ 
+
+
+ 
+ 
+ 
+	
+
+
+<div id="interrelated">
+  <table id="hint_container">
+	<tr>
+	  <th rowspan="2">相关搜索&nbsp;&nbsp;&nbsp;</th>
+      		<td><a href="?user_ip=219.141.179.146&sourceid=hint&bh=1&hintidx=0&query=aux%BD%D3%BF%DA&&p=40040100&dp=1&w=01020600" id="sogou_99999_1"
+				>aux接口</a></td>
+				      		<td><a href="?user_ip=219.141.179.146&sourceid=hint&bh=1&hintidx=1&query=ps2%BD%D3%BF%DA&&p=40040100&dp=1&w=01020600" id="sogou_99999_2"
+				>ps2接口</a></td>
+				      		<td><a href="?user_ip=219.141.179.146&sourceid=hint&bh=1&hintidx=2&query=pci%BD%D3%BF%DA&&p=40040100&dp=1&w=01020600" id="sogou_99999_3"
+				>pci接口</a></td>
+				      		<td><a href="?user_ip=219.141.179.146&sourceid=hint&bh=1&hintidx=3&query=sata%BD%D3%BF%DA&&p=40040100&dp=1&w=01020600" id="sogou_99999_4"
+				>sata接口</a></td>
+				      		<td><a href="?user_ip=219.141.179.146&sourceid=hint&bh=1&hintidx=4&query=usb%BD%D3%BF%DA&&p=40040100&dp=1&w=01020600" id="sogou_99999_5"
+				>usb接口</a></td>
+				    <tr>
+      		<td><a href="?user_ip=219.141.179.146&sourceid=hint&bh=1&hintidx=5&query=dvi%BD%D3%BF%DA&&p=40040100&dp=1&w=01020600" id="sogou_99999_6"
+				>dvi接口</a></td>
+				      		<td><a href="?user_ip=219.141.179.146&sourceid=hint&bh=1&hintidx=6&query=%B1%CA%BC%C7%B1%BE%BD%D3%BF%DA&&p=40040100&dp=1&w=01020600" id="sogou_99999_7"
+				>笔记本接口</a></td>
+				      		<td><a href="?user_ip=219.141.179.146&sourceid=hint&bh=1&hintidx=7&query=%B5%E7%D4%B4%BD%D3%BF%DA&&p=40040100&dp=1&w=01020600" id="sogou_99999_8"
+				>电源接口</a></td>
+				      		<td><a href="?user_ip=219.141.179.146&sourceid=hint&bh=1&hintidx=8&query=ps+2%BD%D3%BF%DA&&p=40040100&dp=1&w=01020600" id="sogou_99999_9"
+				>ps 2接口</a></td>
+				      		<td><a href="?user_ip=219.141.179.146&sourceid=hint&bh=1&hintidx=9&query=1+2g+%BD%D3%BF%DA&&p=40040100&dp=1&w=01020600" id="sogou_99999_10"
+				>1 2g 接口</a></td>
+					</tr>
+</table></div><!--hint:aux接口#*#ps2接口#*#pci接口#*#sata接口#*#usb接口#*#dvi接口#*#笔记本接口#*#电源接口#*#ps 2接口#*#1 2g 接口#*#-->
+ 
+ 
+
+<br clear="all"/>
+<div class="p" id="pagebar_container">&nbsp;&nbsp;<strong>1</strong>&nbsp;&nbsp;<a id="sogou_page_2" href="?query=%BD%D3%BF%DA&page=2&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">2</a>&nbsp;<a id="sogou_page_3" href="?query=%BD%D3%BF%DA&page=3&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">3</a>&nbsp;<a id="sogou_page_4" href="?query=%BD%D3%BF%DA&page=4&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">4</a>&nbsp;<a id="sogou_page_5" href="?query=%BD%D3%BF%DA&page=5&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">5</a>&nbsp;<a id="sogou_page_6" href="?query=%BD%D3%BF%DA&page=6&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">6</a>&nbsp;<a id="sogou_page_7" href="?query=%BD%D3%BF%DA&page=7&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">7</a>&nbsp;<a id="sogou_page_8" href="?query=%BD%D3%BF%DA&page=8&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">8</a>&nbsp;<a id="sogou_page_9" href="?query=%BD%D3%BF%DA&page=9&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">9</a>&nbsp;<a id="sogou_page_10" href="?query=%BD%D3%BF%DA&page=10&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">10</a>&nbsp;<a id="sogou_page_11" href="?query=%BD%D3%BF%DA&page=11&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">11</a>&nbsp;<a id="sogou_page_12" href="?query=%BD%D3%BF%DA&page=12&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776">12</a>&nbsp;<a id="sogou_next" href="?query=%BD%D3%BF%DA&page=2&p=40040100&dp=1&w=01019900&dr=1&_asf=www.sogou.com&_ast=1270795776" class="np">下一页&gt;</a><br>
+	</div><br/> 
+
+<div id="search-box2">
+	<form name="searchForm1" id="searchForm1">
+		<div>
+		<img src="http://www.sogou.com/images/ui/so_icon.gif" alt="" />
+		
+			  <input id="bottom_form_querytext" name="query" type="text" class="query" size="32" value="接口"/>
+			  <input type="hidden" name="num" value="10"/>
+			<input type="hidden" name="p" value="40040100"/><input type="hidden" name="dp" value="1"/><input type="hidden" name="w" value="01029902"/><input type="hidden" name="_ast" value="1270795776"><input type="hidden" name="_asf" value="www.sogou.com"><input id="bottom_form_searchBt" type="submit" uigs="searchBtBottom" class="buttonface1" value="搜狗搜索"/><input type="hidden" name="insite" value=""/>
+		</div>
+	</form>
+</div>
+<a name="pageEnd"></a>
+ 
+
+<div id="footer">
+	<!--[if IE]><a id="sogou_hpfooter" href="#pageEnd" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.sogou.com');">设为首页</a> | <![endif]-->
+	<a id="sogou_webhelp" href="http://www.sogou.com/docs/help/help.htm">搜索帮助</a>
+	 | <a id="sogou_feedback"
+	  href="http://www.sogou.com/feedback/?product=%CD%F8%D2%B3%CB%D1%CB%F7&p=40040100&dp=1&w=01023100" target="_blank">
+	  对结果不满意?</a>
+	 &copy; 2010 SOGOU.COM <a href="http://www.sogou.com/docs/terms.htm" target="_blank" class="terms">免责声明</a>
+</div>
+ 
+
+
+<script type="text/javascript">
+ function addOpenSearch(name,ext,cat,pid,meth)
+{
+ if ((typeof window.external == "object") && ((typeof window.external.AddSearchProvider == "unknown") || (typeof window.external.AddSearchProvider == "function"))) {
+ // See bugs 430058/430067/430070 for Camino
+ if (((typeof window.external.AddSearchProvider == "unknown") || (window.navigator.vendor == 'Camino'))&& meth == "p") {
+ alert("This plugin uses POST which is not currently supported by your browser's implementation of OpenSearch.");
+ } else {
+ window.external.AddSearchProvider(
+ "http://mycroft.mozdev.org/installos.php/" + pid + "/" + name + ".xml");
+ }
+ } else {
+ alert("You will need a browser which supports OpenSearch to install this plugin.");
+ }
+}
+ 
+ 
+ var adContent = document.getElementById('adContent');
+var foldSpan = document.getElementById("sogou_abtest_ad");
+function displayOrNot(){
+//根据展示状态，展示或者隐藏广告
+	var displayTag = adContent.style.display;
+	if(displayTag == 'none')
+		isShow = false;
+	else
+		isShow = true;
+	if(isShow){
+		adContent.style.display='none';
+		foldSpan.innerHTML = "展开搜狗推广服务";
+	}else {
+		adContent.style.display='';
+		foldSpan.innerHTML = "收起搜狗推广服务";	
+	}
+}
+ 
+</script>
+ <script src="/js/preview_v.1.0.js" type="text/javascript"></script>
+
+</body>
+
+<script type="text/javascript" src="http://www.sogou.com/js/pvinsight.js"></script>
+<img src="http://www.sogou.com/img/fav.ico?1270795725228" height="0" border="0" width="0">
+
+
+
+<script type="text/javascript">
+uigs_para={"uigs_productid":"web","uigs_pbtag":"A","uigs_cookie":"SUID","abtestid":"",'query':'%BD%D3%BF%DA','rn':28906630,'stype':0,'htn':10,'qcn':0,'hbn':0,'uuid':'f4ec1bde-d93b-45e6-85f2-fb7605362ee3','vr':'200501_0','adn':0,'adltbn':0,'adltan':0,'qflag':0,'qtype':0,'warnLevel':127,'scrnwi':screen.width,'scrnhi':screen.height};
+</script>
+<script type="text/javascript">
+var sogou_last_mousedown_time = 0;
+var sogou_mousemove_distance = 0;
+var sogou_old_document_click = document.onclick;
+var sogou_old_document_mousedown = document.onmousedown;
+var sogou_old_document_mousemove = document.onmousemove;
+document.onclick = function (evt){
+uigs_para['mmc']=(new Date().getTime() - sogou_last_mousedown_time);
+if(typeof(sogou_old_document_click)=="function")sogou_old_document_click(evt);
+}
+document.onmousemove = function (evt){
+uigs_para['mml']=(++sogou_mousemove_distance);
+if(typeof(sogou_old_document_mousemove)=="function")sogou_old_document_mousemove(evt);
+}
+document.onmousedown = function (evt){
+sogou_last_mousedown_time = new Date().getTime();
+if(typeof(sogou_old_document_mousedown)=="function")sogou_old_document_mousedown(evt);
+}
+</script>
+<script type="text/javascript" src="http://pb.sogou.com/pb.js"></script>
+
+<!-- CT 0:0 1:6 2:0 3:7 4:0 5:0 6:0 7:0 -->
+
+<script type="text/javascript">
+var SugPara = {
+    "enableSug":true,
+    "sugType":"web",
+    "domain":"sugg.sogou.com",
+    "productId":"web",
+    "inputid":"upquery",
+    "submitId":"searchBtn",
+    "suggestRid":"01025001",
+    "normalRid":"01029901",
+    "sugLeft":1,
+    "abtestid":""
+}
+</script>
+<script type="text/javascript" src="/js/sugg_ajaj_v.1.8.js"></script>
+</html>
+<!--cc423a4841719886-->
+
+
+<!--STATUS total 10 time 77 page 2 maxEnd 1000 totalItems 28906630-->
+<!--real_pageno:1-->
+<!--zly-->
+
+<!-- uuid in summary log: f4ec1bde-d93b-45e6-85f2-fb7605362ee3 --> 
+

@@ -1,0 +1,10 @@
+<script LANGUAGE="Javascript">
+i=0;
+function f_wave()
+{i=i-4;
+showimg.style.filter="Wave(Freq=1,LightStrength=20,Phase=" + i + ")";
+setTimeout("f_wave()",100);
+}
+window.onload=f_wave;</script>
+<IMG src="logo_cninterface.gif" ID=showimg> 
+
